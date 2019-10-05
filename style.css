@@ -1,0 +1,132 @@
+/*--------footer--------*/
+.footer{
+    clear: both;
+    width: 100%;
+    display: table;
+    background-color: #fff;
+    padding: 100px 90px 30px;
+
+}
+/*.footer:before{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}*/
+.footersection
+{
+    width:23%;
+    float:left;
+    margin-right:29px;
+    margin-top:20px;
+}
+.footersection:last-child
+{
+    margin-right:0px;
+}
+.footersection h4
+{
+    color:#000;
+    font-size:21px;
+    padding-bottom:10px;
+    text-transform:capitalize;
+    position:relative;
+    margin-top: 0px;
+}
+.footersection p
+{
+    color:#000;
+    font-size:14px;
+    margin-top:10px;
+}
+.footermenu
+{
+    list-style-type:none;
+    margin-top:0px;
+}
+.footermenu li
+{
+}
+.footermenu li a
+{
+    color:#000;
+    text-decoration:none;
+    font-size:18px;
+    margin-bottom: 7px;
+    display: inline-block;
+    font-weight:400;
+    transition:all .5s;
+    position: relative;
+
+}
+.footermenu li a:before{
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  content: "";
+  height: 1px;
+  background-color: #000;
+  left: 0px;
+  bottom: 0px;
+  transition: all 0.5s;
+}
+.footermenu li a:hover:before
+{
+    width: 100%;
+    transition:all .5s;
+}
+.socialicons
+{
+    list-style-type:none;
+}
+.socialicons li
+{
+    float:left;
+    margin-right:22px;
+}
+.socialicons li a
+{
+    outline:none;
+    color:#000;
+    font-size:20px;
+    transition: all 0.3s;
+}
+.socialicons li a:hover
+{
+    color:#555;
+}
+.footer_addre
+{
+    width:100%;
+    float:left;
+    margin-bottom:20px;
+}
+.add_icon
+{
+    float:left;
+    width:10%;
+}
+.add_text
+{
+    float:right;
+    width:89%;
+    color:#000;
+    font-size:18px;
+    line-height: 24px;
+}
+.copyright
+{
+    width:100%;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    clear: both;
+    color:#000;
+    font-size:16px;
+    margin-top: 10px;
+    text-align:left;
+    display: inline-block;
+}
+/*--------footer_end--------*/
