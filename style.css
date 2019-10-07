@@ -174,8 +174,45 @@ font-size: 1.4rem;
   width:50px;      
   height: auto;
 } 
+/* Counter*/
+.count p{
+color: 	hsl(201, 98%, 48%);
+}
+.count .fa{
+  font-size:30px;
+}
+.count .fa-user{
+  color:#b761df; 
+}
+.icon-bg1{
+  width: 50px;
+  height: 50px;
+  background:rgba(88, 124, 223, 0.2) ;
+  align-items: center;
+}
+.icon-bg2{
+  width: 50px;
+  height: 50px;
+  background:rgba(211, 223, 97, 0.2) ;
+  align-items: center;
+}
+.icon-bg3{
+  width: 50px;
+  height: 50px;
+  background:rgba(97, 223, 135, 0.2) ;
+  align-items: center;
+}
+.icon-bg4{
+  width: 50px;
+  height: 50px;
+  background:rgba(183, 97, 223,.2) ;
+  align-items: center;
+}
+/* Counter End */
+
+
 /* Footer */
-.mastfoot,.fa{
+.mastfoot,.socialIcons .fa{
   color: rgba(255, 255, 255, .5);
 }
 
@@ -189,3 +226,4 @@ font-size: 1.4rem;
 .socialIcons{
   font-size:20px;
 }
+/* Footer End */
