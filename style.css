@@ -186,6 +186,9 @@ font-size: 1.4rem;
 }
 
 /* Counter*/
+.stats-container{
+  background-color: rgba(32, 201, 151,0.1);
+}
 .count p{
 color: 	hsl(201, 98%, 48%);
 }
