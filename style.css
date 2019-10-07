@@ -175,10 +175,17 @@ font-size: 1.4rem;
   height: auto;
 } 
 /* Footer */
-.mastfoot {
+.mastfoot,.fa{
   color: rgba(255, 255, 255, .5);
 }
 
 .footer-logo{
   max-width:120px;
+}
+.footer{
+ background-color:#1f2443;
+ color: #fff;
+}
+.socialIcons{
+  font-size:20px;
 }
