@@ -132,7 +132,15 @@ color:#161C2D;
   /* padding: 0.1rem 1rem;
   margin:0 0.6rem; */
 }
-
+.carousel-control-prev,.carousel-control-next {  
+  opacity: 1;
+}
+.carousel-control-prev{
+  left: -70px;
+}
+.carousel-control-next{
+  right: -70px;
+}
 .slide-2 img{
   max-width:50%;
 }
@@ -186,6 +194,9 @@ font-size: 1.4rem;
 
  
 /* Our Success */
+.success-container{
+  background-color: #ffffff;
+}
 .controls .fa{
   font-size: 40px;
   width: 50px;
