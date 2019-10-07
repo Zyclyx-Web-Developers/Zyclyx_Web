@@ -178,3 +178,7 @@ font-size: 1.4rem;
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+.footer-logo{
+  max-width:120px;
+}
