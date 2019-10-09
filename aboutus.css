@@ -1,0 +1,15 @@
+.featurette-image{
+    width: 400px;
+    height: auto;
+  }
+  .container{
+    background-image: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
+    min-height: 80vh;
+  }
+  /*vision*/
+  .Vision-text{
+    line-height:2.5rem;
+  }
+
+
+  /*vision end*/
