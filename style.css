@@ -189,17 +189,23 @@ color:#2B354F;
 }
 /*Our Services*/
 .service {
-  box-shadow:0 0 3px 2px rgba(23, 70, 224,0.3);
-  height: 250px;
-  width: 420px;
-  margin:  15px;
-  padding:  15px;
+ 
+  padding: 20px;
+  margin: 10px 10px;
+  border:1px solid #ccc;
+}
+.service:hover{  
+  background-image: linear-gradient(145deg, rgb(93, 141, 238),rgb(8, 31, 77));
+  color: #fff;
+  transition: all .2s ease-in-out; 
 }
 .service h3{
 font-size: 1.4rem;
 }
-.service p{
-  color:#384C74;  
+
+.service-row{
+  display: flex;
+  justify-content: center;
 }
 .service-icon {
   /* background-color: rgba(51, 94, 233,0.1); */
