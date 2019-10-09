@@ -16,8 +16,6 @@ a:hover {
   background-color: #335EEA;
   border: .05rem solid #fff;
 }
-
-
 /* Base structure*/
 
 html,
@@ -84,7 +82,16 @@ body {
     float: right;
   }
 }
-
+.nav-item{
+  font-weight: bold;  
+}
+.nav-link{
+  color: rgb(7, 7, 7) !important;
+}
+.nav-link:hover{
+  color:#335EEA !important;
+  border-bottom:2px solid rgba(51, 94, 234,0.25);
+}
 
 /*Cover - Home Page */
 .cover-text{
@@ -245,6 +252,8 @@ color: 	hsl(201, 98%, 48%);
   height: 50px;
   background:rgba(97, 223, 135, 0.2) ;
   align-items: center;
+
+
 }
 .icon-bg4{
   width: 50px;
