@@ -1,0 +1,61 @@
+.header-intro{
+    margin-bottom: 3rem;
+    min-height:300px;    
+    background-color: #006aff;
+    
+    color: #F9FBFD;
+}
+.header-intro span,.openings-count{
+    font-size: 0.8rem;     
+    padding: 8px 14px;
+    border-radius:1rem;
+     color: #fff !important;            
+     background: #6610f2;
+     font-weight: 700;
+}
+.openings-count{
+    background:#6610f2;
+    font-weight: 700;         
+}
+.header-intro h1{
+ font-size: 3rem;
+ color: #ffffff;
+}
+.header-intro p{
+    font-size: 1.2rem;
+    color: #F9FBFD;
+}
+.accordion > .card:first-of-type {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion > .card {
+  overflow: hidden;
+}
+.card {
+  transition: all 0.2s ease-in-out;
+}
+.card a{
+    text-decoration: none;
+}
+.accordion .card .card-header {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.5rem !important;
+  padding: 1.5rem;
+}
+.accordion > .card .card-header {
+  margin-bottom: -1px;
+}
+.accordion .card .card-header a .rotate-icon {
+  line-height: 1.25;
+  transition: transform 0.2s ease-in-out;
+}
+.card-title a:focus,
+.card-title a:hover {
+  color: #006aff;
+}
+.accordion .card .card-header a:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
