@@ -42,7 +42,7 @@
               <div class="collapse navbar-collapse nav-dropdown" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-dropdown" href="#" id="navbarDropdown" role="button"
@@ -101,10 +101,10 @@
                     </div>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Careers <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="careers.html">Careers <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="contactus.html">Contact<span class="sr-only">(current)</span></a>
                   </li>
                 </ul>
               </div>
@@ -426,76 +426,69 @@
       <div class="col-5 contact-img">
         <img  src="./images/undraw_contact_us_15o2.svg" alt="">
       </div>
-      <div class="col-5 mx-auto">
+      <div class="col-12 col-md-6 col-lg-5 ml-auto">
         <h3>Get In Touch</h3>
         <p>Consult our experts about your project</p>
-        <form class="needs-validation" novalidate>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="firstName">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
+        <form class="d-flex justify-content-between align-items-center mb-4">
+            <div class="w-90">
+                <div class="row my-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Company Name">
+                    </div>
+                </div>
+                <!-- <div class="row my-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                        <!-- <div class="col form-group">
+                            <label for="exampleFormControlFile1">Resume</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div> 
+                    </div>
+                </div> -->
+                <div class="row my-3">
+                  <div class="col text-left">
+                      <label for="country">How did you hear about us</label>
+                      <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Company website</option>
+                        <option>Google search</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col">
+                      <div class="col form-group">
+                          <label for="exampleFormControlFile1">Upload an RFP/RFI</label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                  </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col">
+                      <button class="btn btn-primary btn-lg hvr-wobble-vertical" type="submit">Submit</button>
+                  </div>
+                </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Company name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="country">How did you hear about us</label>
-              <select class="custom-select d-block w-100" id="country" required>
-                <option value="">Choose...</option>
-                <option>Company website</option>
-                <option>Google search</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Upload an RFP/RFI</label>
-              <input type="file" class="form-control p-0" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid file is required.
-              </div>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-9 mx-auto">
-              <label for="Textarea1">Message for us</label>
-              <textarea class="form-control" id="Textarea1" rows="3"></textarea>
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-        </form>
+        </form>         
       </div>
     </section>
      
