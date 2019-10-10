@@ -229,17 +229,40 @@ font-size: 1.4rem;
   width: 50px;
   height: auto;
 }
+ 
+/* 
+.service-row{
+  -webkit-animation: scale 0.4s ease-in-out;
+  animation: scaledown 0.4s linear;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+.service-row:hover{
+  z-index: 100;
+  -webkit-animation: scale 0.4s ease-in-out;
+  animation: scaledown 0.4s linear;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+@keyframes scaledown{
+  0%{
+    -webkit-trasform:scale(1.1);
+    trasform:scale(1.1);
+  }
+  100%{
+    -webkit-trasform:scale(1.1);
+    trasform:scale(1.1);
+  }
+} */
 
-/* Contact us */
+
+/*Service End*/
 
  
-.contact-img img{
-   max-width: 100%;
-   display: inline-block;
-   height: 100%;
-   vertical-align: middle; 
-}
-.contact {
+/* Contact us */
+
+.contact{
+ 
   background: #ffffff;
   /* background-image: url('./images/undraw_contact_us_15o2.svg'); */
   background-size: cover;
