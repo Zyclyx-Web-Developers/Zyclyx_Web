@@ -1,0 +1,18 @@
+.contact-intro{
+    background-color: #6f42c1;
+    margin-bottom: 3rem;
+    min-height:350px;             
+    color: #F9FBFD;
+}
+
+.contact-intro .description{
+    font-size: 1.1rem;
+}
+
+.description .socialIcons .fa{
+    color: #fff !important;
+    font-size: 1.6rem;
+}
+.socialIcons {
+    list-style-type: none;
+}
