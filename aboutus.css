@@ -31,7 +31,7 @@
   -webkit-text-fill-color: transparent;
 }
 .Header1{
-  background-image: url(./docs/AI-3.jpg);
+  /* background-image: url(./docs/AI-3.jpg); */
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
