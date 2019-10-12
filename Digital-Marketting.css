@@ -74,23 +74,36 @@ Header  - Logo, navbar
 /* End of Header sections */
 /* Header */
 .Header-img{    
-    background-image:url("./docs/across.png");
+    background-image:url("./docs/digital-marketting2.jpg");
     background-attachment:scroll;
     background-repeat:no-repeat;
     background-size:cover;
     height:300px;
     padding: 90px;
+    background-position: 0 -300px;
 }
 /* Header End */
 /* Content-section */
 
 .service-offering{    
-    background-image:url("./docs/AI-3.jpg");
+    background-image:url("./docs/digital-marketting.jpg");
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
     height:600px;
     padding: 90px;
+}
+.overlay{
+  position: relative;
+}
+.overlay::before{
+  position:absolute;
+  content:"";
+  top:0;
+ bottom:0;
+ left:0;
+ width:100%;
+background-color: rgba(0, 0, 0, 0.692);
 }
 /*Content-Section End*/
 /* .service-offering */

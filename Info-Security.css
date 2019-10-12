@@ -72,9 +72,16 @@ Header  - Logo, navbar
 
  
 /* End of Header sections */
+
+.text{
+  line-height: 1.6em;
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 15px;
+}
 /* Header */
 .Header-img{    
-    background-image:url("./docs/across.png");
+    background-image:url("./docs/info-security.jpg");
     background-attachment:scroll;
     background-repeat:no-repeat;
     background-size:cover;
@@ -85,12 +92,24 @@ Header  - Logo, navbar
 /* Content-section */
 
 .service-offering{    
-    background-image:url("./docs/AI-3.jpg");
+    background-image:url("./docs/info-security2.jpg");
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
     height:600px;
     padding: 90px;
+}
+.overlay{
+  position: relative;
+}
+.overlay::before{
+  position:absolute;
+  content:"";
+  top:0;
+ bottom:0;
+ left:0;
+ width:100%;
+background-color: rgba(0, 0, 0, 0.692);
 }
 /*Content-Section End*/
 /* .service-offering */
