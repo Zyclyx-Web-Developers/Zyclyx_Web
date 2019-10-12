@@ -1,0 +1,29 @@
+{
+  "name": "zyclyxnode",
+  "version": "1.0.0",
+  "description": "ZyclyxRegisterCode",
+  "main": "Register.js",
+  "scripts": {
+    "test": "node Register.js"
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "passport",
+    "express"
+  ],
+  "author": "Pavan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.4",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "jsonwebtoken": "^7.4.3",
+    "multer": "^1.4.2",
+    "mysql": "^2.14.1",
+    "nodemailer": "^6.3.0",
+    "path": "^0.12.7"
+  }
+}
