@@ -18,6 +18,7 @@ body {
   text-align: justify;
   font-family: sans-serif;
   font-size: 15px;
+}
 /* Navigation bar - Header */
  
 .lead{
@@ -94,7 +95,18 @@ Header  - Logo, navbar
     background-repeat:no-repeat;
     background-size:cover;
     height:600px;
-    padding: 90px;
+    padding: 40px 90px 90px 90px;
+}
+.overlay{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #000;
 }
 /*Content-Section End*/
 /* .service-offering */
