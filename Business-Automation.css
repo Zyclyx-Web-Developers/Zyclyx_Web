@@ -79,13 +79,15 @@ Header  - Logo, navbar
 /* End of Header sections */
 /* Header */
 .Header-img{    
-    background-image:url("./docs/across.png");
+    background-image:url("./images/business_automation/DBA2.jpg");
+
     background-attachment:scroll;
     background-repeat:no-repeat;
     background-size:cover;
     height:300px;
     padding: 90px;
 }
+ 
 /* Header End */
 /* Content-section */
 
@@ -94,20 +96,24 @@ Header  - Logo, navbar
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
-    height:600px;
-    padding: 40px 90px 90px 90px;
+    padding: 40px 40px 40px 110px;
 }
-.overlay{
+/* .overlay{
   position: relative;
 }
-.overlay{
+.overlay::before{
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  background: #000;
+  background: rgba(0, 0, 0,0.7);
 }
+.overlay h1, .overlay h2{
+  position: relative;
+  z-index: 99;
+} */
 /*Content-Section End*/
 /* .service-offering */
 .service p{
@@ -116,7 +122,10 @@ Header  - Logo, navbar
     align-items: center;
 }
 /* .service-offering End */
-
+.service-text{
+  width: 320px;
+  text-align: justify;
+}
 /*sections*/
 
 .sec img{
