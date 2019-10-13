@@ -74,7 +74,8 @@ Header  - Logo, navbar
 /* End of Header sections */
 /* Header */
 .Header-img{    
-    background-image:url("./docs/across.png");
+    background-image:url("./images/AI-1.jpg");
+    background-position: 0px -50px;
     background-attachment:scroll;
     background-repeat:no-repeat;
     background-size:cover;
