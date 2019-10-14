@@ -200,12 +200,12 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-header .container {
+.home-video .container {
   position: relative;
   z-index: 2;
 }
 
-header .overlay {
+.home-video .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,10 +217,10 @@ header .overlay {
 }
 
 @media (pointer: coarse) and (hover: none) {
-  header {
+.home-video {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
-  header video {
+  .home-video video {
     display: none;
   }
 }
