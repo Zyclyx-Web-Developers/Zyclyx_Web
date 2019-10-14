@@ -62,18 +62,10 @@ users.post('/Register',upload.single('file'),function(req,res){
     var CurrentPosition=req.body.CurrentPosition;
     var CurrentAnualCTC=req.body.CurrentAnualCTC;
     var noticePeriod=req.body.noticePeriod;
-    var file='http://localhost:3000/Images/'+req.file.originalname;
+    var file='http://192.168.1.56:3000/Images/'+req.file.originalname;
    
     var name=firstname+' '+lastname;
-// var details={
-//  'firstname':req.body.firstname,
-//     'lastname':req.body.lastname,
-//     'mail':req.body.mail,
-//      'company':req.body.company,
-//      'message':req.body.message
-     
-// }
-//var name=firstname+' '+lastname;
+
     console.log(name,mail,company,message,mobile,gender,DOB,highQuali,YearOfPass,nationality,Address,city,state,ZipCode,Country,EmployeeType,AreaOfExpert,experience,CurrentCompany,CurrentPosition,CurrentAnualCTC,noticePeriod,file+'  details are')
     var appData = {
         "error": 1,

@@ -16,8 +16,14 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.get('/',function(req,res){
+app.get('/Index',function(req,res){
         res.sendFile(path.join(__dirname+'/Index.html'))
+})
+app.get('/AdminRegister',function(req,res){
+    res.sendFile(path.join(__dirname+'/AdminRegister.html'))//Admin register
+})
+app.get('/AdminLogin',function(req,res){
+    res.sendFile(path.join(__dirname+'/AdminLogin.html'))
 })
 app.get('/PostJob',function(req,res){
    res.sendFile(path.join(__dirname+'/NewJob.html'))//new job
@@ -91,7 +97,7 @@ var SearchJob=require('./SearchJob');{
     app.use('/SearchJob',SearchJob)
 }
 
-app.listen(port,function(){
+app.listen(port,'192.168.1.56',function(){
     console.log("Server is running on port: "+port);
 })
 

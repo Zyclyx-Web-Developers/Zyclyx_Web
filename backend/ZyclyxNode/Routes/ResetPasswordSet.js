@@ -35,18 +35,33 @@ var storage = multer.diskStorage({
             res.status(200).json(appData);
         }
         else{
-            connection.query('update adminregister set password=? where username=?',[bcrypt.hashSync(password,10),email],function(err,data){
-                if(err){
-                    console.log(err)
-                    appData['data']='Please provide valid email'
-                    res.status(200).json(appData)
+            connection.query('select * from adminregister where username=?',[email],function(err,data){
+                if(data.length>0){
+                  console.log('ok')
+                  connection.query('update adminregister set password=? where username=?',[bcrypt.hashSync(password,10),email],function(err,data){
+                    if(err){
+                        console.log(err)
+                       
+                        appData['data']='Please provide valid email'
+                        res.status(200).json(appData)
+                    }
+                    else{
+                        console.log('updated')
+                        console.log(data[0])
+                        appData['data']='Password updated';
+                        res.status(201).json(appData)
+                    }
+                })
+
                 }
                 else{
-                    console.log('updated')
-                    appData['data']='Password updated';
-                    res.status(201).json(appData)
+                  console.log('not ok')
+                  appData['data']='Email not found'
+                  res.status(200).json(appData)
                 }
-            })
+      
+              })
+           
         }
     })
 }

@@ -6,6 +6,7 @@ var bcrypt=require('bcrypt')
 var port = process.env.PORT || 3000;
 var database=require('../Routes/Database/DBConnections');
 var multer=require('multer');
+var path=require('path');
 var fs=require('fs');
 var http=require('http');
 var jwt=require('jsonwebtoken')
@@ -26,7 +27,7 @@ var storage = multer.diskStorage({
 }
    
   var upload = multer({ storage: storage })
-  users.post('/AdminLogin',upload.single(''),verifyToken,function(req,res){
+  users.post('/AdminLogin',upload.single(''),function(req,res){
     
       var username=req.body.username;
       var password=req.body.password;
@@ -40,12 +41,14 @@ var storage = multer.diskStorage({
                  console.log(err)
               }
               else{
+                if(data.length>0){
                 console.log('data retrieved'+data[0]);
               console.log(bcrypt.compareSync(password,data[0].password));
               if(bcrypt.compareSync(password,data[0].password)){
                let token=jwt.sign(data[0],process.env.secretkey,{
                 
                    expiresIn:1440
+                   
                })
              
                appData['data']=token;
@@ -55,20 +58,56 @@ var storage = multer.diskStorage({
                
                console.log(token, username)
                console.log('authentication done')
-              // res.redirect('/Users/data');
-          
-res.sendFile('F:/ZyclyxNodeDummy/Routes/Index.html')
-              // res.status(200).json(appData);
+               console.log(data[0].status)
+               if(data[0].status=='new'){
+                 console.log('in if new')
+                connection.query('update adminregister set status=? where username=?',['old',username],function(err,data){
+                  if(err){
+                    console.log(err)
+                   
+                  }
+                  else{
+                    console.log('done')
+                   res.redirect('/ResetPasswordSet')
+    
+                  }
+                })
               }
+            
+              else{
+
+
+                res.redirect('/index')
+                            
+                              }
+
+              
+                            }
+         
+        
+              
+            
+              else{
+                console.log('invalid password ')
+                appData['data']='Invalid password '
+                res.status(200).json(appData)
               }
+            }
+            else{
+              console.log('Invalid email')
+              appData['data']='invalid email'
+              res.status(200).json(appData);
+            }
+            }
           });
+        
 
       })
 
   })
 
   function verifyToken(req,res,next){
-      var token=req.body.token|| req.headers['token'];
+      var token=req.body.token || req.headers['token'];
       if(token){
       jwt.verify(token,process.env.secretkey,function(err){
           if(err){
