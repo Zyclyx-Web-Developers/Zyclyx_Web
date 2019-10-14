@@ -68,13 +68,14 @@ body {
 /* 
 ======= NAVIGATION BAR =======
 */
+
 .navbar {
-  background-color: rgba(51, 94, 234, 0.1) !important;
+  background-color: rgb(51, 94, 234) !important;
   padding: 0;
 }
 
 .master-nav .logo img {
-  max-width: 150px;
+  max-width: 180px;
 }
 
 .master-nav .nav-item {
@@ -173,6 +174,57 @@ body {
  Home Page
 -----------------
 */
+
+/* video */
+.home-video {
+  position: relative;
+  background-color:#335EEA;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-video video {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+/* video */
 .cover-heading{
   color: #161C2D;
 }
@@ -321,7 +373,7 @@ background-color: rgba(0, 165, 79,0.2);
 ======= SERVICES ========
 */
 .services{
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
 }
 
 .main-service { 
@@ -368,6 +420,7 @@ font-size: 1.4rem;
 
 .industry{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px !important;
+  transition: all 0.02s ease-in;
 }
 
 .industries-title{
@@ -375,6 +428,15 @@ font-size: 1.4rem;
   font-size: 1.8rem;
 }
 
+.industry:hover{
+  text-decoration: none;
+  text-decoration-color: #335EEA;
+  -moz-transform: translate(0, -2px);
+  -ms-transform: translate(0, -2px);
+  -o-transform: translate(0, -2px);
+  -webkit-transform: translate(0, -2px);
+  transform: translate(0, -5px)
+}
 /* 
 ======= INDUSTRIES =======
 */
