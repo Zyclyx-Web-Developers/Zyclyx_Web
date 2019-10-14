@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
+        <link rel="stylesheet" href="./Registration.css">
+<style>
+
+    h1 {
+        position: relative;
+        font-size: 30px;
+        z-index: 1;
+        overflow: hidden;
+        text-align: center;
+    }
+    h1:before, h1:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 25%;
+        height: 1px;
+        content: '\a0';
+        background-color:#a3c09d;
+    }
+    h1:before {
+        margin-left: -28%;
+        text-align: right;
+    }
+    h1::after{
+        margin-left:10px;
+    }
+    .color {
+        background-color: #ccc;
+    }
+.input-group-text {
+    color: #000;            
+}
+body{
+background:#63738a;
+}
+.form-control
+ {
+    min-height: 28px;
+    border-radius: 5px; 
+    border:1px solid #a3c09d;          
+}
+.section{
+    background-color: #ccc;
+}
+.login-btn{
+    min-height: 28px;
+    border-radius: 18px;
+    border:1px solid #a3c09d; 
+    background-color: green;
+    color: aliceblue;
+    text-align: center;
+    padding: 0.5rem 3rem;
+    transition: all 1s ease-in-out;
+}
+.login-btn:hover{
+    background-color:transparent;
+    color: black;
+    transform: translateY(-10%);
+}
+</style>
+    </head>
+<body>
+ <form action="/AdminRegister/AdminRegister" method="POST" enctype="multipart/form-data">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center"> 
+                                
+                        <div class="containar rounded"style="padding: 0px"> 
+                                <div class="container mb-4">
+                                        <h1 class="">Register</h1>
+                                        <p class=" my-3 text-muted">Create your own account.</p>
+                                    </div>                                            
+                            
+                                <div class="row my-3">
+                                  <div class="col">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First name">
+                                  </div>
+                                  <div class="col">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last name">
+                                  </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                      <input type="text" class="form-control" name="username" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                      <input type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                      <input type="password" class="form-control" name="confirmpassword" placeholder="ConfirmPassword">
+                                    </div>
+                                </div>
+                             
+                            
+                            <div class="form-group py-3">
+                                <button type="submit" class="btn-block login-btn float-left">Submit</button>
+                            </div>                       
+                   <p class="p-3">Already have an account?<a href="AdminLogin"> Sign in </a></p>
+                </div>
+            </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <br>
+        </div>
+    </form>
+</body>
+</html>
