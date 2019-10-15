@@ -114,3 +114,20 @@
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
+/* Footer */
+.mastfoot,
+.socialIcons .fa {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-logo {
+  max-width: 200px;
+}
+.footer {
+  background-color: #1f2443;
+  color: #fff;
+}
+.socialIcons {
+  font-size: 20px;
+}
+/* Footer End */
