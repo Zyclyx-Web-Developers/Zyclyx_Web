@@ -41,24 +41,39 @@ p{
 }
     
 .info{
-    min-height: 50px;
     color: #fff;
     background: linear-gradient(145deg, #499aff, #0956b4);
     position: relative;
     transform: translateY(-50%);    
     z-index: 99;
-    padding: 20px;
-    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.507);
+    padding: 10px;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px #0956b496;
+}
+.info-btn{
+    min-height: 50px;
+    color: #fff;
+    background: linear-gradient(145deg, #499aff, #0956b4);
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px #0956b496;
 }
 .form-group input{
     border: none;
     outline: none;
-    background: #f0efef;
-    color: #fff;
-    border-radius: 4px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
+    outline: none !important;
+}
+.form-group input:focus{
+    border: none;
+    outline: none;
 }
 .getintouch-form{
-    border: 1px solid;
+    background: #fff;
+    box-shadow: 0px 0px 8px -5px;
 }
 /* .contact-info .col{
     text-align: center;
