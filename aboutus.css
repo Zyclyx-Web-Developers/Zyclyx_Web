@@ -110,35 +110,3 @@
   margin: 1px;
   }
   /*Client End*/
-  /* Footer */
-.mastfoot,.socialIcons .fa{
-  color: rgba(255, 255, 255, .5);
-}
-
-.footer-logo{
-  max-width:120px;
-}
-.footer{
- background-color:#1f2443;
- color: #fff;
- padding-top: 8.5rem;
-}
-.socialIcons{
-  font-size:20px;
-}
-.StayIn{
-  bottom: -70px;
-  width: 1000px;
-  position: relative;
-  background: #fff;
-  box-sizing: border-box;
-  border-radius:4px;
-  margin: 0 auto;
-  }
-  .StayIn-text{
-    font-size: 25px;
-    margin-bottom: 0px;
-  }
-  
-
-/* Footer End */

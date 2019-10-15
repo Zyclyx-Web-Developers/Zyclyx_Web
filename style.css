@@ -65,65 +65,7 @@ body {
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
-/* Navigation bar - Header */
-/* 
-======= NAVIGATION BAR =======
-*/
 
-.navbar {
-  background-color: rgb(51, 94, 234) !important;
-  padding: 0;
-}
-
-.master-nav .logo img {
-  max-width: 180px;
-}
-
-.master-nav .nav-item {
-  padding: 10px;
-}
-.master-nav .nav-link {
-  color: #2b354f !important;
-}
-.master-nav .nav-link:hover {
-  color: #335eea !important;
-  font-weight: 500;
-}
-.master-nav .nav-link:focus {
-  color: #335eea !important;
-}
-.master-nav .nav-item .active {
-  color: #335eea !important;
-}
-
-.master-nav .dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-.master-nav .dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-  pointer-events: none;
-}
-
-.master-nav .dropdown-menu {
-  margin-top: 0;
-}
-
-.master-nav .dropdown-two-col {
-  width: 400px;
-}
-.master-nav .dropdown-menu {
-  border: transparent !important;
-  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1) !important;
-  left: -85px;
- 
-}
-.master-nav .dropdown-item {
-  padding: 12px 15px;
-}
-/* 
-======= END - NAVIGATION BAR =======
-*/
 
 /* Change this breakpoint if you change the breakpoint of the navbar */
 @media (min-width: 992px) {
@@ -394,14 +336,14 @@ background-color: rgba(0, 165, 79,0.2);
 /*
 ======= SERVICES ========
 */
-.services{
-  /* background-color: #f0f0f0; */
-  /* background-color: rgba(255, 7, 58,0.1);
+/* .services{
+  background-color: #f0f0f0;
+   background-color: rgba(255, 7, 58,0.1);
   background-color: #6C8AEC;
-  background-color: #1b2a2f; */
-  /* background-image: url("./images/Rose-Petals.svg");
-  background-size: cover */
-}
+  background-color: #1b2a2f; 
+  background-image: url("./images/Rose-Petals.svg");
+  background-size: cover 
+} */
 
 .main-service { 
   padding: 20px;
@@ -658,22 +600,6 @@ width: 80%;
   align-items: center;
 }
 /* Counter End */
-/* Footer */
-.mastfoot,
-.socialIcons .fa {
-  color: rgba(255, 255, 255, 0.5);
-}
 
-.footer-logo {
-  max-width: 200px;
-}
-.footer {
-  background-color: #1f2443;
-  color: #fff;
-}
-.socialIcons {
-  font-size: 20px;
-}
-/* Footer End */
 
 
