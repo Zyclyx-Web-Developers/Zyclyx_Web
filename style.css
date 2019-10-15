@@ -447,7 +447,8 @@ font-size: 1.4rem;
 
 .industry{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px !important;
-  transition: all 0.02s ease-in;
+  transition: all 0.2s ease-in;
+  border-radius: 8px;
 }
 
 .ind-caption{
@@ -474,6 +475,78 @@ font-size: 1.4rem;
   -o-transform: translate(0, -2px);
   -webkit-transform: translate(0, -2px);
   transform: translate(0, -5px)
+}
+
+.ind-1 svg{
+  fill:#28a745;
+}
+.ind-1:hover{
+  background-color: #28a745;
+  color:#fff;
+}
+.ind-1:hover svg{
+  fill:#ffffff;
+   
+}
+.ind-2 svg{
+  fill:#6610f2;
+}
+.ind-2:hover{
+  background-color: #6610f2;
+  color:#fff;
+}
+.ind-2:hover svg{
+  fill:#ffffff;
+   
+}
+
+
+.ind-3 svg{
+  fill:#fd7e14;
+}
+.ind-3:hover{
+  background-color: #fd7e14;
+  color:#fff;
+}
+.ind-3:hover svg{
+  fill:#ffffff;
+   
+}
+
+.ind-4 svg{
+  fill:#335eea;
+}
+.ind-4:hover{
+  background-color: #335eea;
+  color:#fff;
+}
+.ind-4:hover svg{
+  fill:#ffffff;
+   
+}
+
+.ind-5 svg{
+  fill:#17a2b8;
+}
+.ind-5:hover{
+  background-color: #17a2b8;
+  color:#fff;
+}
+.ind-5:hover svg{
+  fill:#ffffff;
+   
+}
+
+.ind-6 svg{
+  fill:#e83e8c;
+}
+.ind-6:hover{
+  background-color: #e83e8c;
+  color:#fff;
+}
+.ind-6:hover svg{
+  fill:#ffffff;
+   
 }
 /* 
 ======= INDUSTRIES =======
@@ -603,17 +676,4 @@ width: 80%;
 }
 /* Footer End */
 
-.industry svg{
-  fill:#28a745;
-}
-.industry:hover{
-  background-color: #28a745;
-  color:#fff;
-}
-.industry:hover svg{
-  fill:#ffffff;
-   
-}
-.i-2 svg{
-  fill:"#6610f2";
-}
+
