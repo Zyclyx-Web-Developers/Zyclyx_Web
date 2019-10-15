@@ -46,17 +46,30 @@ users.post('/AdminRegister',upload.single(''),function(req,res){
         }
         else{
             console.log('connected to database')
-            connection.query('insert into adminregister values(?,?,?,?)',[username,bcrypt.hashSync(password, 10),'NULL',name],function(err,data){
-           if(err){
-               console.log(err)
-               appData['data']='Problem while connecting with database'
-               res.status(200).json(appData);
-           }
-           else{
-           appData['data']='details stored'
-           res.status(201).json(appData);
-           }
-            })    
+            connection.query('select username from adminregister where username=?',[username],function(err,rows){
+                 if(rows.length>0)
+                {
+                console.log(rows+'data exists');
+                appData['data']='Email already exists'
+                res.status(200).json(appData)
+                }
+                else{
+
+                
+                connection.query('insert into adminregister values(?,?,?,?)',[username,bcrypt.hashSync(password, 10),'NULL',name],function(err,data){
+                    if(err){
+                        console.log(err)
+                        appData['data']='Problem while connecting with database'
+                        res.status(200).json(appData);
+                    }
+                    else{
+                    appData['data']='details stored'
+                    res.status(201).json(appData);
+                    }
+                     })   
+                    }
+            })
+            
            
         }
     })

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Newjobpost.css">
+<style>
+.input-group-text {
+    color: #000;            
+}
+body{
+background:#8a3c78;
+}
+s
+.body-sec{
+  background-image: url("./bg1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;    
+}
+.overlay{
+    position: relative;
+    }
+    .overlay::before{
+        position: absolute;
+        content:"";
+        top: 0;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .login-btn{
+        min-height: 28px;
+        border-radius: 5px;
+        border:1px solid #a3c09d; 
+        background-color: green;
+        color: aliceblue;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        transition: all 1s ease-in-out;
+    }
+    .login-btn:hover{
+        background-color:transparent;
+        color: black;
+        transform: translateY(-10%);
+    }
+</style>
+
+</head>
+
+<body>
+    <form action="/HRNewJobPost/HRNewJobPost" method="POST" enctype="multipart/form-data">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center">
+
+                <div class="containar rounded" style="padding: 0px">
+                    <div class="container mb-4">
+                        <h4 class="">Job Posting Form</h4>
+                    </div>
+                    <form>
+                        <div class="row my-3">
+                                <div class="col-6">
+                                        <input type="text" class="form-control" name="job" placeholder="Enter job in a short form">
+                                    </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="jobtitle" placeholder="Job Title">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="designation" placeholder="Designation">
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="department" placeholder="Department">
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="form-group col">
+                                <select class="form-control" name="jobtype" id="exampleFormControlSelect1">
+                                    <option value="-1">Job Type</option>
+                                    <option value="fulltime">Fulltime</option>
+                                    <option value="parttime">Parttime</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="positions" placeholder="No.of Positions">
+                            </div>
+                        </div>
+
+
+                        <div class="row my-3">
+                            <div class="col">
+                                <textarea type="text" class="form-control" name="description" placeholder="Job Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="skills" placeholder="Required Skills">
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="qualification" placeholder="Qualification">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">StartDate</span>
+                                </div>
+                                <input type="date" aria-label="" name="startdate" class="form-control">
+                                <div class="input-group-prepend">
+                                        <span class="input-group-text">EndDate</span>
+                                    </div>
+                                <input type="date" aria-label="" name="enddate" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="experience" placeholder="Required Experience">
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-6">
+                                        <select class="form-control" name="shifts" id="exampleFormControlSelect1">
+                                                <option value="-1">Shifts</option>
+                                                <option value="dayshifts">day-shifts</option>
+                                                <option value="nightshifts">Night-shifts</option>
+                                                <option value="rotationalshifts">Rotational-shifts</option>
+
+                                            </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" name="workhours" placeholder="Work Hours">
+                                    </div>
+                            </div>
+
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="phonenumber" placeholder="Phonenumber">
+                            </div>
+                        </div>
+                        <div class="form-group py-3">
+                            <input type="Submit" value="submit" class="btn-block login-btn float-left"><br>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <br>
+    </div>
+</form>
+</body>
+
+</html>

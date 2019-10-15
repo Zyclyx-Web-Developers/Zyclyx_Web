@@ -24,11 +24,21 @@ var storage = multer.diskStorage({
 
 users.post('/HRNewJobPost',upload.single(''),function(req,res){
     var job=req.body.job;
-    var jobname=req.body.jobname;
+    var jobtitle=req.body.jobtitle;
+    var designation=req.body.designation;
+    var department=req.body.department;
+    var jobtype=req.body.jobtype;
+    var positions=req.body.positions;
     var description=req.body.description;
+    var skills=req.body.skills;
+    var qualification=req.body.qualification;
+    var startdate=req.body.startdate;
+    var enddate=req.body.enddate;
     var experience=req.body.experience;
+    var shifts=req.body.shifts;
+    var workhours=req.body.workhours;
    // var jid='ZYX_'+id+'_'+00001
-    console.log(jobname,description,experience+ ' job details are')
+    console.log(jobtitle,designation,department,jobtype,positions,description,skills,qualification,startdate,enddate,experience,shifts,workhours+ ' job details are')
    var id=0;
     database.connection.getConnection(function(err,connection){
         if(err){
@@ -56,7 +66,7 @@ users.post('/HRNewJobPost',upload.single(''),function(req,res){
                     }
                     var jid='ZYX_'+job+'_'+id;
                     console.log(id+' outside')
-                    connection.query('insert into jobs values(?,?,?,?,?,?)',[jobname,description,experience,'active',jid,id],function(err,data){
+                    connection.query('insert into jobs values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[id,jid,jobtitle,designation,department,jobtype,positions,description,skills,qualification,startdate,enddate,experience,shifts,workhours,'active'],function(err,data){
                         if(err){
                             console.log(err+' error in query')
                             res.send('Query not valid')

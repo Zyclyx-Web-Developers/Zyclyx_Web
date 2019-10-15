@@ -16,8 +16,8 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.get('/Index',function(req,res){
-        res.sendFile(path.join(__dirname+'/Index.html'))
+app.get('/JobApplication',function(req,res){
+        res.sendFile(path.join(__dirname+'/JobApplication.html'))
 })
 app.get('/AdminRegister',function(req,res){
     res.sendFile(path.join(__dirname+'/AdminRegister.html'))//Admin register
@@ -25,8 +25,8 @@ app.get('/AdminRegister',function(req,res){
 app.get('/AdminLogin',function(req,res){
     res.sendFile(path.join(__dirname+'/AdminLogin.html'))
 })
-app.get('/PostJob',function(req,res){
-   res.sendFile(path.join(__dirname+'/NewJob.html'))//new job
+app.get('/HRNewJobPost',function(req,res){
+   res.sendFile(path.join(__dirname+'/HRNewJobPost.html'))//new job
 })
 app.get('/UpdateStatus',function(req,res){
     res.sendFile(path.join(__dirname+'/UpdateStatus.html'))//Update status
@@ -46,12 +46,16 @@ app.get('/ResetPassword', function(req,res){
 app.get('/ResetPasswordSet',function(req,res){
     res.sendFile(path.join(__dirname+'/ResetPasswordSet.html'))//Reset password set
 })
+app.get('/AdminHome',function(req,res){
+    res.sendFile(path.join(__dirname+'/AdminHome.html'))
+})
 
-var Users = require('./Users');{
+var Users = require('./Users');
+{
 app.use('/users',Users);
 }
  var AdminRegister=require('./AdminRegister');
- {
+{
  app.use('/AdminRegister', AdminRegister);
 }
 var AdminLogin=require('./AdminLogin');{
@@ -76,10 +80,7 @@ var AllJobs=require('./AllJobs');
 var Enquiries=require('./Enquiries');{
     app.use('/Enquiries',Enquiries);
 }
-var GetEnquiries= require('./GetEnquiries');
-{
-app.use('/GetEnquiries',GetEnquiries);
-}
+
 var ForgotPassword=require('./ForgotPassword');
 {
 app.use('/ForgotPassword',ForgotPassword);
@@ -95,6 +96,9 @@ var ResetPasswordSet=require('./ResetPasswordSet');{
 }
 var SearchJob=require('./SearchJob');{
     app.use('/SearchJob',SearchJob)
+}
+var ViewEnquiries=require('./ViewEnquiries');{
+    app.use('/ViewEnquiries',ViewEnquiries)
 }
 
 app.listen(port,'192.168.1.56',function(){

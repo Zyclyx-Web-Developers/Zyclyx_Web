@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  
+
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HRM Project</title>
+
+  <!-- Bootstrap -->
+  
+
+  <link href='Bikin/css/bootstrap.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='Bikin/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='Bikin/css/animate.css'>
+  <link rel='stylesheet' href='Bikin/css/overwrite.css'>
+  <link href='Bikin/css/animate.min.css' rel='stylesheet'>
+  <link href='Bikin/css/style.css' rel='stylesheet'>
+  
+    
+  <!-- =======================================================
+    Theme Name: Bikin
+    Theme URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  <style type="text/css">
+    a{
+      color:white;
+    }
+  </style>
+<script type='text/javascript'>
+   function showAdd(){
+           window.open('signin1.html');
+        }
+</script>
+
+ 
+</head>
+
+<body>
+ 
+    <nav class='navbar navbar-fixed-top' role='banner'>
+      <div class='container '>
+        <div class='navbar-header'>
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                        <span class='sr-only'>Toggle navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+          <a class='navbar-brand bg-dark' ><img src='Bikin/img/ZYCLYX1.png' height='45px' width='200px'></a>
+        </div>
+        <div class='collapse navbar-collapse navbar-right'>
+          <ul class='nav navbar-nav'>
+            <li><a href='#feature'>Features</a></li>
+            <li><a href='#gallery'>Gallery</a></li>
+        
+            <li><a href='#our-team'>Our Team</a></li>
+            <li><a href='#contact'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+
+  <!--/header-->
+<div class='slider'>
+    <div id='about-slider'>
+      <div id='carousel-slider' class='carousel slide' data-ride='carousel'>
+        <!-- Indicators -->
+       
+
+        <div class='carousel-inner'>
+          <div class='item active'>
+            <img src='Bikin/img/bgb 1.jpg' class='img-responsive' alt=''>
+            <div class='carousel-caption'>
+              <div class='wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+                <h2><span>Welcome to Zyclyx</span></h2>
+              </div>
+              <div class='wow fadeInUp' data-wow-offset='0' data-wow-delay='0.6s'>
+                <p></p>
+              </div>
+              <div class='wow fadeInUp' data-wow-offset='0' data-wow-delay='0.9s'>
+                <form class='form-inline'>
+                  <div class='form-group'>  
+                    
+                  
+                    <a href="AdminLogin.html" button type='livedemo' name='LiveDemo' class='btn btn-primary btn-lg text-center' required='required'>Admin</button></a>
+                  </div>
+                  <div class='form-group'>
+                    
+			<a href="EmpSignIn.html"button  class='btn btn-primary btn-lg text-center' required='required'>Employee</button></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+  </div>
+
+
+  <div id='feature'>
+    <div class='container'>
+      <div class='row'>
+        <div class='text-center'>
+          <h3>Features</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit<br>amet consectetur adipisicing elit</p>
+        </div>
+        <div class='col-md-3 wow fadeInRight' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+            <div class='hi-icon-wrap hi-icon-effect'>
+             <i class="fa fa-cogs" aria-hidden="true"></i>
+              <h2>Robotic Process Automation</h2>
+              <p>Innovating, Inventing and Automating high quality business processes to reduce operations cost and maximize performance.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-3 wow fadeInRight' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+            <div class='hi-icon-wrap hi-icon-effect'>
+              <i class='fa fa-heart-o'></i>
+              <h2>Artificial Intelligence</h2>
+              <p>Augmenting technology by exterminating humans for deep integration into learning and reasoning through the invention of Artificial Intelligence.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-3 wow fadeInLeft' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+            <div class='hi-icon-wrap hi-icon-effect'>
+              <i class='fa fa-cloud'></i>
+              <h2>Deep Learning</h2>
+              <p>To Automate predictive analysis for emulating the learning approach used by humans. It identifies, prepares and analyses algorithms performance against unlabeled data to be trained.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-3 wow fadeInLeft' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+            <div class='hi-icon-wrap hi-icon-effect'>
+              <i class='fa fa-camera'></i>
+              <h2>Internet of Things</h2>
+              <p>Creating an unprecedented amount of data analytics for streaming the ever-growing network of virtual and physical objects via the Internet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='gallery'>
+    <div class='container'>
+      <div class='text-center'>
+        <h3>Gallery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit<br>amet consectetur adipisicing elit</p>
+      </div>
+      <div class='row'>
+        <figure class='effect-chico'>
+          <div class='col-md-3 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+            <a href='D:/Website/Bikin/img/work/1.jpg' class='flipLightBox'>
+						<img src='D:/Website/Bikin/img/work/1.jpg' class='img-responsive' alt=''>
+						</a>
+          </div>
+        </figure>
+        <figure class='effect-chico'>
+          <div class='col-md-3 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+            <a href='D:/Website/Bikin/img/work/2.jpg' class='flipLightBox'>
+						<img src='D:/Website/Bikin/img/work/2.jpg' class='img-responsive' alt=''>
+						</a>
+          </div>
+        </figure>
+        <figure class='effect-chico'>
+          <div class='col-md-3 wow fadeInDown' data-wow-offset='0' data-wow-delay='0.3s'>
+            <a href='D:/Website/Bikin/img/work/3.jpg' class='flipLightBox'>
+						<img src='D:/Website/Bikin/img/work/3.jpg' class='img-responsive' alt=''>
+						</a>
+          </div>
+        </figure>
+        <figure class='effect-chico'>
+          <div class='col-md-3 wow fadeInDown' data-wow-offset='0' data-wow-delay='0.3s'>
+            <a href='D:/Website/Bikin/img/work/4.jpg' class='flipLightBox'>
+						<img src='D:/Website/Bikin/img/work/4.jpg' class='img-responsive' alt=''>
+						</a>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class='gallery'>
+      <div class='container'>
+        <div class='row'>
+          <figure class='effect-chico'>
+            <div class='col-md-3 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+              <a href='D:/Website/Bikin/img/work/5.jpg' class='flipLightBox'>
+							<img src='D:/Website/Bikin/img/work/5.jpg' class='img-responsive' alt=''>
+							</a>
+            </div>
+          </figure>
+          <figure class='effect-chico'>
+            <div class='col-md-3 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+              <a href='D:/Website/Bikin/img/work/6.jpg' class='flipLightBox'>
+							<img src='D:/Website/Bikin/img/work/6.jpg' class='img-responsive' alt=''>
+							</a>
+            </div>
+          </figure>
+          <figure class='effect-chico'>
+            <div class='col-md-3 wow fadeInDown' data-wow-offset='0' data-wow-delay='0.3s'>
+              <a href='D:/Website/Bikin/img/work/7.jpg' class='flipLightBox'>
+							<img src='D:/Website/Bikin/img/work/7.jpg' class='img-responsive' alt=''>
+							</a>
+            </div>
+          </figure>
+          <figure class='effect-chico'>
+            <div class='col-md-3 wow fadeInDown' data-wow-offset='0' data-wow-delay='0.3s'>
+              <a href='D:/Website/Bikin/img/work/8.jpg' class='flipLightBox'>
+							<img src='D:/Website/Bikin/img/work/8.jpg' class='img-responsive' alt=''>
+							</a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/#gallery-->
+
+  <div class='parallax-window' style='background-image:url(D:/Website/Bikin/img/3.png); background-repeat: no-repeat;background-attachment: fixed;background-size:cover;'>
+    <div class='col-md-6 col-md-offset-3'>
+      <div class='text-center'>
+        <div class='wow bounceIn' data-wow-offset='0' data-wow-delay='0.2s'>
+          <h2>Parallax Landing Page</h2>
+        </div>
+        <div class='wow bounceIn' data-wow-offset='0' data-wow-delay='0.6s'>
+          <p>In a elit in lorem congue varius Sed nec arcu<br> ullamcorp-er tellus ut dignissim nisi risus non tortor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='sub-parallax'>
+      <div class='text-center'>
+        <div class='col-md-12'>
+          <div class='wow bounceIn' data-wow-offset='0' data-wow-delay='0.9s'>
+            <form class='form-inline'>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/#parallax-window-->
+
+  
+  <!--/#pricing-->
+
+  <div id='our-team'>
+    <div class='container'>
+      <div class='text-center'>
+        <h3>Our Team</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit<br>amet consectetur adipisicing elit</p>
+      </div>
+      <div class='row'>
+        <div class='col-md-4 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+            <!-- <img src='D:/Website/Bikin/img/team/1.png' alt=''> -->
+            <h2>John Doe</h2>
+            <h4>Founder & CEO</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+          </div>
+        </div>
+        <div class='col-md-4 wow bounceInDown' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+          <!--   <img src='D:/Website/Bikin/img/team/2.png' alt=''> -->
+            <h2>John Doe</h2>
+            <h4>Creative Director</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+          </div>
+        </div>
+        <div class='col-md-4 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.3s'>
+          <div class='text-center'>
+          <!--   <img src='D:/Website/Bikin/img/team/3.png' alt=''> -->
+            <h2>John Smith</h2>
+            <h4>Creative Director</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='team'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-3 wow fadeInRight' data-wow-offset='0' data-wow-delay='0.3s'>
+            <div class='text-center'>
+             <!--  <img src='D:/Website/Bikin/img/team/team1.jpg' class='img-responsive' alt=''> -->
+              <h2>John Doe</h2>
+              <h4>Founder & CEO</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+            </div>
+          </div>
+          <div class='col-md-3 wow fadeInRight' data-wow-offset='0' data-wow-delay='0.3s'>
+            <div class='text-center'>
+            <!--   <img src='D:/Website/Bikin/img/team/team2.jpg' class='img-responsive' alt=''> -->
+              <h2>John Doe</h2>
+              <h4>Creative Director</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+            </div>
+          </div>
+          <div class='col-md-3 wow fadeInLeft' data-wow-offset='0' data-wow-delay='0.3s'>
+            <div class='text-center'>
+             <!--  <img src='D:/Website/Bikin/img/team/team3.jpg' class='img-responsive' alt=''> -->
+              <h2>John Smith</h2>
+              <h4>Creative Director</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+            </div>
+          </div>
+          <div class='col-md-3 wow fadeInLeft' data-wow-offset='0' data-wow-delay='0.3s'>
+            <div class='text-center'>
+              <!-- <img src='D:/Website/Bikin/img/team/team4.jpg' class='img-responsive' alt=''> -->
+              <h2>John Smith</h2>
+              <h4>Creative Director</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/#our-team-->
+
+  <footer>
+    <div id='contact'>
+      <div class='container'>
+        <div class='text-center'>
+          <h3>Contact Us</h3>
+          <hr>
+        </div>
+      </div>
+      <div class='container'>
+        <div class='row'>
+          
+
+          <div class='col-md-6 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.4s'>
+            <h2>Contact Info</h2>
+            <ul>
+              <li><i class='fa fa-home fa-2x' style='padding: 5px;'></i> 3rd Floor,Pearl Enclave,Road No.5, Banjara Hills,Hyderabad.</li>
+              <hr>
+              <li><i class='fa fa-phone fa-2x' style='padding: 5px;'></i> +91 40 2354 9363</li>
+              <hr>
+              <li><i class='fa fa-envelope fa-2x' style='padding: 5px;'></i> <a href='www.zyclyx.com'>www.zyclyx.com</a></li>
+            </ul>
+          </div>
+
+          <div class='col-md-6 wow fadeInUp' data-wow-offset='0' data-wow-delay='0.6s'>
+            <div id='sendmessage'>Your message has been sent. Thank you!</div>
+            <div id='errormessage'></div>
+            <form action='' method='post' role='form' class='contactForm'>
+              <div class='form-group'>
+                <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars' />
+                <div class='validation'></div>
+              </div>
+              <div class='form-group'>
+                <input type='email' class='form-control' name='email' id='email' placeholder='Your Email' data-rule='email' data-msg='Please enter a valid email' />
+                <div class='validation'></div>
+              </div>
+              <div class='form-group'>
+                <input type='text' class='form-control' name='subject' id='subject' placeholder='Subject' data-rule='minlen:4' data-msg='Please enter at least 8 chars of subject' />
+                <div class='validation'></div>
+              </div>
+              <div class='form-group'>
+                <textarea class='form-control' name='message' rows='5' data-rule='required' data-msg='Please write something for us' placeholder='Message'></textarea>
+                <div class='validation'></div>
+              </div>
+
+              <button type='submit' class='btn btn-theme pull-left'>SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/#contact-->
+    <div class='container'>
+      <div class='sub-footer'>
+        <div class='text-center'>
+          <div class='col-md-12'>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='text-center'>
+      <div class='copyright'>
+        &copy;All rights reserved. © 2019 - Zyclyx
+        <div class='credits'>
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bikin
+          -->
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src='js/jquery-2.1.1.min.js'></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src='js/bootstrap.min.js'></script>
+  <script src='js/parallax.min.js'></script>
+  <script src='js/wow.min.js'></script>
+  <script src='js/jquery.easing.min.js'></script>
+  <script type='text/javascript' src='js/fliplightbox.min.js'></script>
+  <script src='js/functions.js'></script>
+  <script src='contactform/contactform.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+            <a href="/CandidateProfile/CandidateProfile" class="btn btn-info" role="button">Candiadate Profiles</a><br>
+            <a href="/AllJobs/AllJobs" class="btn btn-info" role="button">All Jobs</a><br>
+
+            <a href="/ViewEnquiries/ViewEnquiries" class="btn btn-info" role="button">View Enquiries</a><br>
+            <a href="JobApplication" class="btn btn-info" role="button">Post a new job</a><br>
+
+ 
+
+    </form>
+    <form action="/SearchJob/SearchJob" method="POST" enctype="multipart/form-data">
+        <input type="text" name="job"><br>
+        <input type="submit" value="View job"><br>
+            
+    </form>
+    <form action="/UpdateStatus/UpdateStatus" method="POST" enctype="multipart/form-data">
+            <input type="submit" value="Close job"><br>
+    </form>
+</body>
+</html>

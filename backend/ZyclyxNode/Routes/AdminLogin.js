@@ -27,7 +27,7 @@ var storage = multer.diskStorage({
 }
    
   var upload = multer({ storage: storage })
-  users.post('/AdminLogin',upload.single(''),function(req,res){
+  users.post('/AdminLogin',upload.single(''),verifyToken,function(req,res){
     
       var username=req.body.username;
       var password=req.body.password;
@@ -46,7 +46,7 @@ var storage = multer.diskStorage({
               console.log(bcrypt.compareSync(password,data[0].password));
               if(bcrypt.compareSync(password,data[0].password)){
                let token=jwt.sign(data[0],process.env.secretkey,{
-                
+               
                    expiresIn:1440
                    
                })
@@ -108,7 +108,9 @@ var storage = multer.diskStorage({
 
   function verifyToken(req,res,next){
       var token=req.body.token || req.headers['token'];
+      console.log(token+' token')
       if(token){
+        
       jwt.verify(token,process.env.secretkey,function(err){
           if(err){
               appData['data']='invalid token';

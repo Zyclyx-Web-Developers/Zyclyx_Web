@@ -1,0 +1,692 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./job application form.css">
+
+<style>
+.input-group-text {
+    color: #000;            
+}
+body{
+background:#8a3c78;
+}
+s
+.body-sec{
+  background-image: url("./bg1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;    
+}
+.overlay{
+    position: relative;
+    }
+    .overlay::before{
+        position: absolute;
+        content:"";
+        top: 0;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .login-btn{
+        min-height: 28px;
+        border-radius: 5px;
+        border:1px solid #a3c09d; 
+        background-color: green;
+        color: aliceblue;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        transition: all 1s ease-in-out;
+    }
+    .login-btn:hover{
+        background-color:transparent;
+        color: black;
+        transform: translateY(-10%);
+    }
+</style>
+</head>
+<body> 
+    <form action="/Users/Register" method="POST" enctype="multipart/form-data">
+        <div class="container ">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center"> 
+                                    
+                            <div class="containar rounded"style="padding: 0px"> 
+                                    <div class="container mb-4">
+                                            <h4 class="">Job Application Form</h4>                                           
+                                        </div>                                            
+                                
+                                    <div class="row my-3">
+                                      <div class="col-6">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First name">
+                                      </div>
+                                      <div class="col-6">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last name">
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="row my-3">
+                                        <div class="col">
+                                          <input type="email" class="form-control" name="mail" placeholder="Email">
+                                        </div>                                   
+                                        <div class="col">
+                                          <input type="text" class="form-control" name="phonenumber" placeholder="Phonenumber">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="gender" id="exampleFormControlSelect1">
+                                                      <option value="-1">Gender</option>
+                                                      <option value="male">Male</option>
+                                                      <option value="female">Female</option>                                                      
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                    <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="country" id="exampleFormControlSelect2">
+                                                      <option value="-1">Country</option>
+                                                      <option value="india">India</option>
+                                                      <option value="others">Others</option>                                                      
+                                                    </select>
+                                                  </div>
+                                     </div>
+                                     <div class="row my-3">
+                                            <div class="col">
+                                                    <input type="text" class="form-control" name="qualification" placeholder="Qualification">
+                                                  </div>
+                                     </div>
+                                     <div class="row my-3">
+                                            <div class="col">
+                                                    <input type="text" class="form-control" name="expertise" placeholder="Area of Expertise">
+                                                  </div>
+                                                  
+                                     </div>
+                                     <div class="row my-3">   
+                                        <div class="input-group col">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="">Experience</span>
+                                            </div>                                                                                             
+                                                <select class="form-control" name="experienceyears" id="exampleFormControlSelect3">
+                                                  <option value="-1">Years</option>
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option> 
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option> 
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>  
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                  <option value="10">10</option>                                                    
+                                                </select>
+                                              
+                                                                                             
+                                                  <select class="form-control" name="experiencemonths" id="exampleFormControlSelect3">
+                                                    <option value="-1">Months</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option> 
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option> 
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option> 
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option> 
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option> 
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>                                                    
+                                                  </select>
+                                                </div>
+                                          </div>
+                                 </div> 
+
+                                     <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="position" id="exampleFormControlSelect3">
+                                                      <option>Position Applying for</option>
+                                                      <option>1</option>
+                                                      <option>2</option>                                                      
+                                                    </select>
+                                                  </div>
+                                     </div> 
+                                                                        
+                                     <div class="row my-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control" name="currentcompany" placeholder="Current Company">
+                                          </div>
+                                            <div class="col-6">
+                                              <input type="text" class="form-control" name="currentctc" placeholder="Current CTC">
+                                            </div>
+                                            <div class="col-6">
+                                              <input type="text" class="form-control" name="expectedctc" placeholder="Expected CTC">
+                                            </div>
+                                          </div>
+                                          <div class="row my-3">
+                                             
+                                       </div> 
+
+                                          <div class="row my-3">
+                                              <div class="col-6">
+                                                <input type="text" class="form-control" name="noticeperiod" placeholder="Notice Period">
+                                              </div>
+                                              <div class="col-6">
+                                                <input type="text" class="form-control" name="currentlocation" placeholder="Current Location">
+                                              </div>
+                                            </div>
+
+                                          <div class="row my-3">
+                                          <div class="input-group mb-3 col">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume</span>
+                                                </div> 
+                                                <div class="custom-file">
+                                                  <input type="file" class="custom-file-input" name="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                  <label class="custom-file-label" for="inputGroupFile01">Add your CV</label>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="row my-3">
+                                          <div class="input-group col">
+                                                 <div class="input-group-prepend">
+                                                  <span class="input-group-text">Additional Information</span>
+                                                </div> 
+                                                <textarea class="form-control" name="additionalinformation" placeholder="Skills set" aria-label="With textarea"></textarea>
+                                              </div>
+                                            </div>  
+                                                           
+                                <div class="form-group py-3">
+                                    <input type="submit" value="Submit" class="btn-block login-btn float-left">
+                                </div>          
+                       </div>
+                </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <br>
+            </div> 
+          </form>   
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./job application form.css">
+
+<style>
+.input-group-text {
+    color: #000;            
+}
+body{
+background:#8a3c78;
+}
+s
+.body-sec{
+  background-image: url("./bg1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;    
+}
+.overlay{
+    position: relative;
+    }
+    .overlay::before{
+        position: absolute;
+        content:"";
+        top: 0;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .login-btn{
+        min-height: 28px;
+        border-radius: 5px;
+        border:1px solid #a3c09d;
+        background-color: green;
+        color: aliceblue;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        transition: all 1s ease-in-out;
+    }
+    .login-btn:hover{
+        background-color:transparent;
+        color: black;
+        transform: translateY(-10%);
+    }
+</style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
+  <script type="text/javascript">
+      function checkForm(form)
+      {
+        //Retrieving the values from elements
+        var firstName=document.getElementById("firstname").value;
+        console.log(firstName);
+         var lastName=document.getElementById("lastname").value;
+        var email=document.getElementById("Email").value;
+        var phno=document.getElementById("mobile").value;
+        var qualific=document.getElementById("quali").value;
+        var areaOfExpert=document.getElementById("areaOfExpertise").value;
+        var CurrComp=document.getElementById("CurrentCompany").value;
+        var CurrLoc=document.getElementById("CurrentLocation").value;
+        var currCTC=document.getElementById("CurrCTC").value;
+        var ExpCTC=document.getElementById("expCTC").value;
+        var notice=document.getElementById("NP").value
+
+        //validate first name
+        if (firstName=="" || firstName==null)
+        {
+          swal("Error!", "Please enter your first name!", "error");
+            //window.alert("Error: Please enter your name! ");
+            form.firstname.focus();
+            return false;
+        }
+        re=/^[a-zA-Z\s]+$/;
+        if (!re.test(firstName)) {
+            swal("Error!", "Please enter valid first name!", "error");
+            //window.alert("Error: Please enter valid name!");
+            form.firstname.focus();
+            return false;
+        }
+         //validate last name
+        if (lastName=="" || lastName==null)
+        {
+          swal("Error!", "Please enter your last name!", "error");
+            //window.alert("Error: Please enter your name! ");
+            form.lastname.focus();
+            return false;
+        }
+        re=/^[a-zA-Z\s]+$/;
+        if (!re.test(lastName)) {
+            swal("Error!", "Please enter valid last name!", "error");
+            //window.alert("Error: Please enter valid name!");
+            form.lastname.focus();
+            return false;
+        }
+        //validate email
+        if(email=="")
+        {
+            swal("Error!", "Please enter your emailid!", "error");
+            //window.alert("Error: Please enter your emailid!");
+            form.Email.focus();
+            return false;
+        }
+         re = /^([A-Za-z0-9_\-\.])+([A-Za-z0-9_\-\.])+([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+         if (!re.test(email))
+         {
+            swal("Error!", "Please enter valid emailId!", "error");
+            //window.alert("Error: Please enter valid emailid!");
+            form.Email.focus();
+            return false;
+         }
+         //validate mobile number
+         if(phno=="")
+         {
+            swal("Error!", "Please enter your mobile number!","error");
+            //window.alert("Error: Please enter mobile number");
+            form.mobile.focus();
+            return false;
+         }
+          re = /^[6-9]\d{9}$/;
+          if (!re.test(phno))
+          {
+            swal("Error!", "Please enter valid mobile number!", "error");
+
+            //window.alert("Error: Please enter valid mobile number!");
+            form.mobile.focus();
+            return false;
+          }
+          //validate gender
+          var e = document.getElementById("ddlgender");
+                var gender = e.options[e.selectedIndex].value;
+                if(gender==-1)
+                {
+                    swal("Error!", "Please select your Gender!", "error");
+                  //window.alert("Error:Please select a country!");
+                   return false;
+                }
+          //validate country
+          var e = document.getElementById("ddlCountry");
+                var strUser = e.options[e.selectedIndex].value;
+                if(strUser==-1)
+                {
+                    swal("Error!", "Please select your country!", "error");
+                  //window.alert("Error:Please select a country!");
+                   return false;
+                }
+       
+        if(qualific=="")
+        {
+            swal("Error!", "Please enter your qualification!", "error");
+            //window.alert("Error: Please enter qualification!");
+            form.quali.focus();
+            return false;
+        }
+        //validate Area of expert field
+        if(areaOfExpert=="")
+        {
+            swal("Error!", "Please enter your area of expert field", "error");
+            //window.alert("Error: Please enter area of Expertise field!");
+            form.areaOfExpertise.focus();
+            return false;
+        }
+        //validate experience years
+            var exp=document.getElementById("expYears");
+            var ExpYears=exp.options[exp.selectedIndex].value;
+            if (ExpYears==-1)
+            {
+                swal("Error!", "Please select year!", "error");
+                //window.alert("Error: Please select year!");
+                return false;
+            }
+            //validate experience months
+              var exp1=document.getElementById("expMonths");
+            var ExpMonths=exp1.options[exp1.selectedIndex].value;
+            if (ExpMonths==-1)
+            {
+                swal("Error!", "Please select month!", "error");
+                //window.alert("Error: Please select month!");
+                return false;
+            }
+        //validate position
+        var pos=document.getElementById("ddlPosition");
+        var posApply=pos.options[pos.selectedIndex].value;
+            if(posApply==-1)
+            {
+                swal("Error!", "Please select position!", "error");
+
+                //window.alert("Error: Please select position!");
+                return false;
+
+            }
+           
+            //validate current company
+            if(CurrComp=="")
+            {
+                swal("Error!","Please enter your current company!", "error");
+                //window.alert("Error: Please enter current company!");
+                form.CurrentCompany.focus();
+                return false;
+
+            }
+            //validate current CTC
+            if(currCTC=="")
+            {
+                swal("Error!", "please enter your current CTC!", "error");
+
+                //window.alert("Error: Please enter current CTC!");
+                form.CurrCTC.focus();
+                return false;
+
+            }
+            //validate expected CTC
+            if(ExpCTC=="")
+            {
+                swal(" Error!", "Please enter expected CTC!", "error");
+                //window.alert("Error: Please enter expected CTC!");
+                form.expCTC.focus();
+                return false;
+            }
+            //validate notice
+            if(notice=="")
+            {
+                swal("Error!", "Please enter notice period!", "error");
+                //window.alert("Error: Please enter notice period!");
+                form.NP.focus();
+                return false;
+            }
+            //validate current location
+            if(CurrLoc=="")
+            {
+                swal("Error!", "Please enter your current location!", "error");
+                //window.alert("Error: Please enter current location!");
+                form.CurrentLocation.focus();
+                return false;
+            }
+           
+           
+            //validate file upload
+            var file=document.getElementById("fileUpload").value;
+            if(file=="")
+            {
+                swal("Error!", "Please upload a file!", "error");
+                //window.alert("Error: Please upload a file!");
+                return false;
+            }
+            var ext = file.substring(file.lastIndexOf('.') + 1);
+          if(ext == "txt" || ext == "pdf" || ext == "doc" || ext=="docx")
+            {
+               
+            }
+                else
+            {
+                swal("Error!", "Please upload doc or pdf or txt only!", "error");
+                //window.alert("Upload doc or pdf or txt file only!");
+
+            return false;
+            }
+            var oFile = document.getElementById("fileUpload").files[0];
+
+            if (oFile.size > 2097152) // 2 mb for bytes.
+            {
+                swal("Error!", "Please upload File size must under 2mb!", "error");
+                //alert("File size must under 2mb!");
+                return false;
+            }
+            var skill=document.getElementById("skills").value;
+            if(skill=="")
+            {
+                swal("Error!", "Please enter your skills!", "error");
+                //window.alert("Error: Please enter your skills!");
+                form.skills.focus();
+                return false;
+            }
+        return true;
+
+       
+      }
+  </script>
+</head>
+<body>
+    <form action="/Users/Register" method="POST" enctype="multipart/form-data" name="form"
+    onsubmit="return checkForm(this)">
+        <div class="container ">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center">
+                                   
+                            <div class="containar rounded"style="padding: 0px">
+                                    <div class="container mb-4">
+                                            <h4 class="">Job Application Form</h4>                                          
+                                        </div>                                            
+                               
+                                    <div class="row my-3">
+                                      <div class="col-6">
+                                        <input type="text" class="form-control" name="firstname"
+                                        placeholder="First name" id="firstname" autocomplete="off">
+                                      </div>
+                                      <div class="col-6">
+                                        <input type="text" class="form-control" name="lastname"
+                                        placeholder="Last name" id="lastname" autocomplete="off">
+                                      </div>
+                                    </div>
+                                 
+                                    <div class="row my-3">
+                                        <div class="col">
+                                          <input type="text" class="form-control" name="mail" placeholder="Email"
+                                          id="Email" autocomplete="off">
+                                        </div>                                  
+                                        <div class="col">
+                                          <input type="text" class="form-control" name="phonenumber"
+                                          placeholder="Phonenumber" id="mobile" maxlength="10">
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="gender"
+                                                    id="ddlgender">
+                                                      <option value="-1">Gender</option>
+                                                      <option value="male">Male</option>
+                                                      <option value="female">Female</option>                                                      
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                    <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="country"
+                                                    id="ddlCountry">
+                                                      <option value="-1">Country</option>
+                                                      <option value="india">India</option>
+                                                      <option value="others">Others</option>                                                      
+                                                    </select>
+                                                  </div>
+                                     </div>
+                                     <div class="row my-3">
+                                            <div class="col">
+                                                    <input type="text" class="form-control" name="qualification" placeholder="Qualification" id="quali" autocomplete="off">
+                                                  </div>
+                                     </div>
+                                     <div class="row my-3">
+                                            <div class="col">
+                                                    <input type="text" class="form-control" name="expertise" placeholder="Area of Expertise" id="areaOfExpertise">
+                                                  </div>
+                                                 
+                                     </div>
+                                     <div class="row my-3">  
+                                        <div class="input-group col">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="">Experience</span>
+                                            </div>                                                                                            
+                                                <select class="form-control" name="experienceyears"
+                                                id="expYears">
+                                                  <option value="-1">Years</option>
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>  
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                  <option value="10">10</option>                                                    
+                                                </select>
+                                             
+                                                                                             
+                                                  <select class="form-control" name="experiencemonths" id="expMonths">
+                                                    <option value="-1">Months</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>                                                    
+                                                  </select>
+                                                </div>
+                                          </div>
+                                 </div>
+
+                                     <div class="row my-3">                                        
+                                            <div class="form-group col">                                                  
+                                                    <select class="form-control" name="position"
+                                                    id="ddlPosition">
+                                                      <option value="-1">Position Applying for</option>
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>                                                      
+                                                    </select>
+                                                  </div>
+                                     </div>
+                                                                       
+                                     <div class="row my-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control" name="currentcompany"
+                                            placeholder="Current Company" id="CurrentCompany" autocomplete="off">
+                                          </div>
+                                            <div class="col-6">
+                                              <input type="text" class="form-control" name="currentctc"
+                                              placeholder="Current CTC" id="CurrCTC" autocomplete="off">
+                                            </div>
+                                            <div class="col-6">
+                                              <input type="text" class="form-control" name="expectedctc"
+                                              placeholder="Expected CTC" id="expCTC" autocomplete="off">
+                                            </div>
+                                          </div>
+                                          <div class="row my-3">
+                                             
+                                       </div>
+
+                                          <div class="row my-3">
+                                              <div class="col-6">
+                                                <input type="text" class="form-control" name="noticeperiod"
+                                                placeholder="Notice Period" id="NP" autocomplete="off" >
+                                              </div>
+                                              <div class="col-6">
+                                                <input type="text" class="form-control" name="currentlocation" placeholder="Current Location" id="CurrentLocation" autocomplete="off">
+                                              </div>
+                                            </div>
+
+                                          <div class="row my-3">
+                                          <div class="input-group mb-3 col">
+                                                <!-- <div class="input-group-prepend">
+                                                  <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume</span>
+                                                </div> -->
+                                                <div class="custom-file">
+                                                  <input type="file" class="custom-file-input" name="file"
+                                                  id="fileUpload" aria-describedby="inputGroupFileAddon01">
+                                                  <label class="custom-file-label" for="inputGroupFile01">Add your CV</label>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="row my-3">
+                                          <div class="input-group col">
+                                                <!-- <div class="input-group-prepend">
+                                                  <span class="input-group-text">Additional Information</span>
+                                                </div> -->
+                                            <textarea class="form-control" name="additionalinformation"
+                                            placeholder="Skills set" aria-label="With textarea" id="skills"></textarea>
+                                              </div>
+                                            </div>  
+                                                           
+                                <div class="form-group py-3">
+                                    <input type="submit" value="Submit" class="btn-block login-btn float-left">
+                                </div>          
+                       </div>
+                </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <br>
+            </div>
+          </form>  
+</body>
+</html>

@@ -1,0 +1,213 @@
+ <%@ page import="java.sql.*" %>
+  <%@ page import="javax.servlet.http.*" %>
+<%ResultSet resultset =null;%>
+<%ResultSet rs =null;%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  
+
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HRM Project</title>
+
+  <!-- Bootstrap -->
+  
+
+ <link rel="stylesheet" href="asse/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="asse/css/Features-Blue.css">
+    <link rel="stylesheet" href="asse/css/Footer-Basic.css">
+    <link rel="stylesheet" href="asse/css/styles.css">
+    <link href='Bikin/css/bootstrap.min.css' rel='stylesheet'>
+  
+    <style>
+
+
+        .req , select ,.btn-success{
+            margin-left:40%;
+        }
+        .table-form{
+        margin: 0 auto;
+        text-align: center;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 140px;
+    }
+    th {
+        background: #e9980f;
+        color: black;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .{
+        text-align: center;
+    }
+    .btn-warning{
+      background-color: #e9980f;
+    float: right;
+margin-right:28%;
+
+    }
+
+
+    a {
+    color: #fff;
+    }
+    a:hover{
+    color:#fff;
+    }
+    HR{
+  background-color: #fff;
+    }
+    
+   
+    
+body{
+        background: linear-gradient(135deg, #172a74, #21a9af);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+
+
+.navbar{
+        padding: 21px 0;
+        background-color: black;
+        min-height: 50px;
+
+        }
+        .navbar-fixed-top{
+            border:none;
+            border-bottom: 2px solid #e9980f;
+            position: fixed;
+            z-index: 1030;
+            right: 0px;
+            left: 0px;
+            top:0px;
+        }
+        a{
+            color: white;
+        }
+        .navbar-nav{
+          text-decoration-color: #fff;
+        }
+        li{
+          
+        }
+       
+      </style>
+</head>
+<body>
+ 
+    <nav class='navbar navbar-fixed-top' role='banner'>
+      <div class='container '>
+        <div class='navbar-header'>
+         
+          <a class='navbar-brand bg-dark' ><img src='ZYCLYX1.png' height='45px' width='200px'></a>
+        </div>
+        <div class='collapse navbar-collapse navbar-right'>
+          <ul class='nav navbar-nav'>
+            <li><a href='#feature'>Employee Details</a></li>
+            <li><a href='#feature'>Request Leave</a></li>
+            <li><a href='#feature'>Holidays</a></li>
+            <li><a href='#feature'>Pay Slip</a></li>
+            <li><a href='#feature'>Notice Board</a></li>
+            <li><a href='#feature'>IProcurement</a></li>
+            
+           
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+
+  <%
+String nm=request.getParameter("nme");
+System.out.println("in leavea"+nm);
+%>
+    
+
+  
+   <form action="Iupdate">
+    <input type="hidden" value=<%=nm %> name="nme">
+   <%
+  
+    try{
+      
+Class.forName("com.mysql.jdbc.Driver").newInstance();
+Connection con = 
+         DriverManager.getConnection
+            ("jdbc:mysql://localhost:3306/employee","root","root");
+
+
+
+PreparedStatement ps=con.prepareStatement("select * from reimbursement where name=? and status='false'" ); 
+ps.setString(1, nm);
+
+resultset =ps.executeQuery(); 
+%> 
+ 
+       <table>
+            <tr>
+          
+            <th>Item</th>
+            <th>Description</th>
+            <th>Amount</th>
+            </tr>
+        
+        <%  while(resultset.next()){ %>
+           
+            <tr>
+            <td><%= resultset.getString(1)%></td>
+            <td><%= resultset.getString(2)%></td>
+            <td><%= resultset.getString(3)%></td>
+           
+            </tr>
+            
+       <% } %>
+       </table>
+        <%
+//**Should I input the codes here?**
+        }
+        catch(Exception e)
+        {
+             out.println(e);
+        }
+%>
+
+    <div class="row">
+           
+                <div class="col-md-6 text-center d-md-flex justify-content-md-center align-items-md-center">
+                
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" name="check" value="Approved"><label class="form-check-label" for="formCheck-3">Approve</label></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" name="check" value="Denied"><label class="form-check-label" for="formCheck-4">Deny</label></div>
+                </div>
+            </div>
+<input class="btn btn-success text-center" type="submit" value="submit" > <br><br>
+</form>
+
+
+</body>
+</html>
