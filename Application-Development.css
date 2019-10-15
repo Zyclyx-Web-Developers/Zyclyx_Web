@@ -110,7 +110,7 @@ Header  - Logo, navbar
     width: 500px;
 }
 .sec{
-    margin-top: 10px;
+   margin-top: 10px;
    align-items: center;
    justify-content:space-around;
 }
