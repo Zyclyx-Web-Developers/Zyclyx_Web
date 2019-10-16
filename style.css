@@ -690,13 +690,13 @@ border-top: 4px solid #17a2b8;
   right: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0,0.7);
+  background: rgba(0, 0, 0,0.6);
 }
 .overlay h1, .overlay h2{
   position: relative;
   z-index: 99;
 }
-.overlay{
+/* .overlay{
   position: relative;
 }
 .overlay::before{
@@ -711,7 +711,7 @@ border-top: 4px solid #17a2b8;
 .overlay h1, .overlay h2{
   position: relative;
   z-index: 99;
-}
+} */
  /* Overlay end */
  
  /* 
