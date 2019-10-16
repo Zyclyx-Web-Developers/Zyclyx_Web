@@ -118,19 +118,33 @@
   animation-name: slideIn;
 }
 /* Footer */
+.footer{
+  color:rgba(249, 251, 253, 0.7) !important;
+}
 .mastfoot,
 .socialIcons .fa {
   color: rgba(255, 255, 255, 0.5);
+  color:rgba(249, 251, 253, 0.7);
 }
 
 .footer-logo {
   max-width: 200px;
 }
 .footer {
-  background-color: #1f2443;
+  background-color: #424B54;  
+}
+.footer h5{
   color: #fff;
 }
 .socialIcons {
   font-size: 20px;
 }
+.footer .list-unstyled a{
+  /* text-decoration: none; */
+  color:rgba(249, 251, 253, 0.7);
+}
+.footer>ul>p>address{
+  color:rgb(139, 137, 137) !important;
+}
+
 /* Footer End */
