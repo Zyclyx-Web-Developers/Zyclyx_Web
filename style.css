@@ -372,13 +372,13 @@ font-size: 1.4rem;
   right: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0,0.7);
+  background: rgba(0, 0, 0,0.6);
 }
 .overlay h1, .overlay h2{
   position: relative;
   z-index: 99;
 }
-.overlay{
+/* .overlay{
   position: relative;
 }
 .overlay::before{
@@ -393,7 +393,7 @@ font-size: 1.4rem;
 .overlay h1, .overlay h2{
   position: relative;
   z-index: 99;
-}
+} */
  /* Overlay end */
  
 /* Contact us */
