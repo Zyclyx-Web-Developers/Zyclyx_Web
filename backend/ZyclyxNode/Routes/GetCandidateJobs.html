@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="user">
+   
+        
+
+<select name="title" id="user1" >
+    
+</select>
+    
+
+</div>
+  <script>
+
+      function submit(){
+          fetch('http://192.168.1.56:3000/ActivePositions/ActivePositions')
+          .then(Response=>Response.json())
+          .then(json=>{
+              return json.map(user=>{
+                  let html=document.getElementById('user1');
+                  html.innerHTML +=`
+                    <option value=${user.jobtitle}>${user.jobtitle}</option>
+                   `
+                  
+              })
+
+          })
+      }
+      submit();
+    
+  </script>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+package dem;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/Iupdate")
+public class Iupdate extends HttpServlet {
+	 
+       
+   
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out=response.getWriter();
+		ResultSet rs;
+		// HttpSession session =request.getSession();
+       //  String Phn=session.getAttribute("PhoneNumber").toString();
+         String Apr=request.getParameter("check");
+         String name=request.getParameter("nme");
+      
+         System.out.println(Apr);
+         System.out.println(name);
+         try{  
+        	 Class.forName("com.mysql.jdbc.Driver");  
+        	 Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/employee","root","root"); 
+        	 
+        	 PreparedStatement ps=conn.prepareStatement("select * from employeetab where name=?");
+        	 ps.setString(1, name);
+        	  rs=ps.executeQuery();
+        	  String Email="";
+        	  while(rs.next())
+        	  {
+        		  Email=rs.getString("Email");
+        	  }
+        	 Connection con=DriverManager.getConnection("jdbc:mysql://localhost/employee","root","root"); 
+        	 
+        	 PreparedStatement pss=con.prepareStatement("update  reimbursement set Astatus=? where name=?");
+        	 pss.setString(1,Apr); 
+        	 pss.setString(2,name); 
+        	int j=pss.executeUpdate();
+        	if(j>0)
+        	{
+        		System.out.println("jytJM ");
+        		RemMail.send(Apr, Email);
+        	
+     
+        	}
+        	
+        	 
+        	
+	}
+         catch(Exception e)
+         {
+        	 System.out.println(e);
+         }
+	}
+
+}

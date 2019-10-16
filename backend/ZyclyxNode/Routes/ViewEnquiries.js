@@ -1,9 +1,11 @@
 var express = require('express');
-var users = express.Router();
+var users = express();
 var port = process.env.PORT || 3000;
 var database=require('../Routes/Database/DBConnections');
 var multer=require('multer');
 process.env.secretkey='zyclyx';
+users.set('ViewEngine','ejs')
+
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -38,8 +40,9 @@ var storage = multer.diskStorage({
                 }
                 else{
                     console.log(data)
-                    appData['data']=data
-                    res.status(201).json(appData)
+                    appData['data']=data[3].name;
+                    res.render('./ViewEnquiries.ejs',appData)
+                    //res.status(201).json(appData)
                 }
             })
         }

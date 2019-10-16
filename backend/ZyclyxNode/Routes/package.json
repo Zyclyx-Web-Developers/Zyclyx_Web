@@ -2,6 +2,7 @@
   "name": "zyclyxnode",
   "version": "1.0.0",
   "description": "ZyclyxRegisterCode",
+  "repository": "https://github.com/Sampathkumar0078/TestRepo",
   "main": "Register.js",
   "scripts": {
     "test": "node Register.js"
@@ -18,6 +19,7 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.4",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
     "http": "0.0.0",

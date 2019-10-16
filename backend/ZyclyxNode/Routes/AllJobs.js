@@ -28,7 +28,7 @@ var storage = multer.diskStorage({
               res.send('error while connecting database')
           }
           else{
-              connection.query('select newjob from jobs',function(err,data){
+              connection.query('select jobtitle from jobs',function(err,data){
                   if(err){
                       console.log(err)
                       res.send('Problem in database');

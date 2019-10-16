@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="user"></div>
+    <script>
+
+        function getnames(){
+            fetch('http://192.168.1.56:3000/CandidateProfile/CandidateProfile')
+            .then(Response=>Response.json())
+            .then(json=>{
+                return json.map(user=>{
+                    let html=document.getElementById('user');
+                    console.log(user);
+                    html.innerHTML += `<h1>${user.name}</h1>`
+                })
+            })
+        }
+        getnames();
+    </script>
+</body>
+</html>

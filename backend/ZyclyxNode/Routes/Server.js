@@ -53,6 +53,15 @@ app.get('/ResetPasswordSet',function(req,res){
 app.get('/AdminHome',function(req,res){
     res.sendFile(path.join(__dirname+'/AdminHome.html'))
 })
+app.get('/CandidateProfile',function(req,res){
+    res.sendFile(path.join(__dirname+'/CandidateProfile.html'))
+})
+app.get('/AllJobs',function(req,res){
+    res.sendFile(path.join(__dirname+'/AllJobs.html'))
+})
+app.get('/GetCandidatejobs',function(req,res){
+    res.sendFile(path.join(__dirname+'/GetCandidatejobs.html'))
+})
 
 var Users = require('./Users');
 {
@@ -103,6 +112,9 @@ var SearchJob=require('./SearchJob');{
 }
 var ViewEnquiries=require('./ViewEnquiries');{
     app.use('/ViewEnquiries',ViewEnquiries)
+}
+var GetCandidateJobs=require('./GetCandidateJobs');{
+app.use('/GetCandidateJobs',GetCandidateJobs)
 }
 
 app.listen(port,'192.168.1.56',function(){
