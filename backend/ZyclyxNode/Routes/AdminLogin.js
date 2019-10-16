@@ -77,7 +77,7 @@ var storage = multer.diskStorage({
               else{
 
 
-                res.redirect('/index')
+                res.redirect('/AdminHome')
                             
                               }
 

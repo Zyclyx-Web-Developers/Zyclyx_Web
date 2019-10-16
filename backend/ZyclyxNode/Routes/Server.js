@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
+app.get('/',function(req,res){
+    res.send('Hello world')
+})
+
 app.get('/JobApplication',function(req,res){
         res.sendFile(path.join(__dirname+'/JobApplication.html'))
 })
