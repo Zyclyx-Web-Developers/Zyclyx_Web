@@ -135,7 +135,7 @@
        Homepage - slider
       ----------
     -->
-  <section class="home-video">
+  <section class="home-video" id="h-video">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
@@ -193,7 +193,7 @@
          CORE VALUES
       ==================   
      -->
-  <section class="core-values-container py-3">
+  <section class="core-values-container py-4">
     <div class="container-fluid">
       <div class="row m-2">
         <div class="col-12 col-md-5">
@@ -208,6 +208,7 @@
                   fill: #c2ecf2;
                 }
               </style>
+              
               <path class="main-hero-0 fill-primary" opacity="0.8"
                 d="M285.2,170.1c-94.5,8.6-181.2,57.4-235.9,134.8C-34.7,423.6-54.5,621.5,349,879.8  c636.5,407.6,600,9.3,591.9-47.4c-0.8-5.5-1.4-11.1-2-16.6l-34.2-374.1C888.4,262,729.2,129.6,549.4,146L285.2,170.1z">
               </path>
@@ -222,7 +223,7 @@
                 </clipPath>
                 <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
                 </g>
-              </g>
+              </g>              
             </svg>
           </div>
           <div class="core-values-title">
@@ -234,7 +235,7 @@
         <div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
           <div class="row core-values-items">
             <!-- core value - 1 -->
-            <div class="col-4 my-3 val-1">
+            <div class="col-4 my-3 val-1 animated slidInUp delay-2s">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
@@ -358,27 +359,27 @@
     </div>
   </section>
 
-  <!-- WAVE EFFECT  -->
-  <div class="decorated-bottom">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
-      <path d="">
-        <animate attributeName="d" begin="0s" dur="5s" repeatCount="indefinite" values="
-              M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
-              M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
-              M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
-              M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
-      </path>
-    </svg>
-  </div>
-  <!-- END OF WAVE EFFECT -->
-
   <!-- Services -->
-  <div class="container-fluid mx-auto services pb-4">
-    <h2 class="pt-5">What We Do</h2>
-    <p class="pb-4">Whatever we do, We do with your end user in mind</p>
+  <div class="container-fluid mx-auto services py-5">
+  <!-- WAVE EFFECT  -->
+  <div class="decorated-bottom wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
+        <path d="" fill="rgba(255, 0, 0, 0.5)">
+          <animate attributeName="d" begin="0s" dur="5s" repeatCount="indefinite" values="
+                M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
+                M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
+                M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
+                M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
+        </path>
+      </svg>
+    </div>
+    <!-- END OF WAVE EFFECT -->
+    <p class="service-caption">What we do</p>
+    <h2 class="service-title">We Provide Wide Range Business Services</h2>
+    <p class="pb-4 service-info">Whatever we do, We do with your end user in mind</p>
     <div class="row text-left service-row">
       <!-- Service - 1 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-1">
         <!-- icon -->
         <p class="service-icon my-2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
             viewBox="0 0 172 172" style=" fill:#000000;">
@@ -400,7 +401,7 @@
       </div>
 
       <!-- Service - 2 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-2">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -421,7 +422,7 @@
       </div>
 
       <!-- service - 3 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-3">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -442,7 +443,7 @@
       </div>
 
       <!-- Service - 4 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-4">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -463,7 +464,7 @@
       </div>
 
       <!-- Service - 5 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-5">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -484,7 +485,7 @@
       </div>
 
       <!-- Service - 6 -->
-      <div class="col-md-3 main-service">
+      <div class="col-md-3 main-service serv-6">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -503,7 +504,6 @@
           making profitable
           decisions.</p>
       </div>
-
     </div>
   </div>
   <!-- 
@@ -518,7 +518,7 @@
   <div class="container-fluid py-5">
     <div class="row">
       <div class="col-7 mx-auto">
-        <p class="text-left ind-caption">Industries We Serve</p>
+        <p class="ind-caption">Industries We Serve</p>
         <h2 class="ind-title">Best Practices from Industry Experts</h2>
         <p class="ind-info">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
       </div>
@@ -667,83 +667,87 @@
 
 
   <!-- Success stories section -->
-  <section class="success-container container py-2 my-5">
+   <section class="success-container container py-2 my-5">
 
     <h2 class="py-2">Our Success</h2>
     <hr />
-    <div id="carousel-success" class="carousel slide container" data-ride="carousel">
-      <ol class="carousel-indicators Sucess-indicator">
-        <li data-target="#carousel-success" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-success" data-slide-to="1"></li>
-        <li data-target="#carousel-success" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-5">
-              <img class="d-block w-100" src="./images/3a836b7deabaeba437518ae316711908.jpg" alt="First slide">
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-center">
-              <h1 class="py-3">Lorem ipsum dolor sit amet</h1>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.</p>
-            </div>
+  <!-- 
+    ========= OUR SUCCESS STORIES =========
+   -->
+   <div id="mainCarousel" class="carousel slide carousel-fade success" data-ride="carousel">
+      <ol class="carousel-indicators">
+              <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#mainCarousel" data-slide-to="1"></li>
+              <li data-target="#mainCarousel" data-slide-to="2"></li>
+            </ol>
+      
+  <div class="carousel-inner">
+      
+<!-- SLIDE - 1 -->
+      <div class="carousel-item active">
+          <div class="mask flex-center">
+              <div class="container">
+                  <div class="row justify-content-center align-items-center text-center">
+                      <div class="col-md-6 col-12 image-box">
+                          <img class="d-block w-100" src="./images/3a836b7deabaeba437518ae316711908.jpg" alt="First slide">
+                      </div>
+                      <div class="col-md-6 col-12 text-box">
+                        <h3>Lorem ipsum dolor sit amet - 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos obcaecati, magni eos doloribus iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex dignissimos, amet nostrum aliquam?Et error saepe tenetur? A repudiandae aliquid suscipit adipisci autem voluptatum consectetur vero laborum. Hic optio nam id incidunt. Excepturi modi numquam, porro laboriosam dolorem qui voluptatem possimus rem ab.</p>
+                  </div>
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-5">
-              <img class="d-block w-100" src="./images/7aa5717f282eb5e8bf4a60c2ae3f5981.jpg" alt="Second slide">
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-center">
-              <h1 class="py-3">Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-5">
-              <img class="d-block w-100" src="./images/8e3387a02774b6c21e6cbde2d5cfe052.jpg" alt="Third slide">
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-center ">
-              <h1 class="py-3">Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-      <a class="carousel-control-prev controls" href="#carousel-success" role="button" data-slide="prev">
-        <span class="" aria-hidden="true"><i
-            class="fa fa-angle-left justify-content-center rounded-circle bg-primary"></i></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next controls" href="#carousel-success" role="button" data-slide="next">
-        <span class="" aria-hidden="true"><i
-            class="fa fa-angle-right justify-content-center rounded-circle bg-primary"></i></span>
-        <span class="sr-only">Next</span>
-      </a>
+<!-- END SLIDE - 1  -->
+
+<!-- SLIDE - 2 -->
+      <div class="carousel-item">
+          <div class="mask flex-center">
+              <div class="container">
+                  <div class="row align-items-center justify-content-center text-center">
+                      <div class="col-md-6 col-12 image-box">
+                          <img class="d-block w-100" src="./images/7aa5717f282eb5e8bf4a60c2ae3f5981.jpg" alt="Second slide">
+                      </div>
+
+                    <div class="col-md-6 col-12 text-box">
+                        <h3>Lorem ipsum dolor sit amet - 1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, sit ratione delectus praesentium fugit ipsam vitae consequatur ducimus commodi. Aut nemo ratione dolores laboriosam officiis id quod ab laborum dolorem.Accusantium beatae porro, explicabo hic, optio ipsa autem doloribus reiciendis sit eius ducimus quod quam dolor aliquid, officia repellendus ea. Doloremque velit ipsum aperiam quod pariatur nostrum voluptas labore fugiat!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!--END SLIDE - 2  -->
+
+<!-- SLIDE -3  -->
+      <div class="carousel-item">
+          <div class="mask flex-center">
+              <div class="container">
+                  <div class="row align-items-center justify-content-center text-center">
+                      <div class="col-md-6 col-12 image-box">
+                          <img class="d-block w-100" src="./images/8e3387a02774b6c21e6cbde2d5cfe052.jpg" alt="Third slide">
+                          </div>
+                    <div class="col-md-6 col-12 order-md-1 order-2 text-box">
+                      <h3>Lorem ipsum dolor sit amet - 1</h3>  
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio animi minus incidunt velit quidem esse omnis cum accusamus molestias dolor sequi fuga, eveniet unde necessitatibus sunt dolores ipsum mollitia?Earum, quos similique veritatis libero dolores consequuntur incidunt eveniet exercitationem vel consequatur. Impedit voluptatibus optio aperiam molestiae officiis perspiciatis soluta aliquid facere molestias. Neque iure fugiat suscipit, blanditiis sint facilis.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- END SLIDE - 3 -->
+  </div>
+  <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev"> <span
+          class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+  <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next"> <span
+          class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+</div>
     </div>
-  </section>
-  <!-- ---------------- -->
+</section>
+   <!-- 
+    ========= END - OUR SUCCESS STORIES =========
+   -->
 
   <!-- company stats -->
   <section class="stats-container">
@@ -889,13 +893,22 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        // document.getElementById("navbar").style.top = "0";
-        // remove box shadow
-        document.getElementById("navbarMaster").classList.remove('navbar-shadow');
-      } else {
-        // add box shadow
-        document.getElementById("navbarMaster").classList.add('navbar-shadow');
+      var homeHeight = document.getElementById("h-video").offsetHeight;
+      console.log(homeHeight);
+      totalHeight = homeHeight-130;
+      // if (prevScrollpos > currentScrollPos) {
+      //   // document.getElementById("navbar").style.top = "0";
+      //   // remove box shadow
+      //   document.getElementById("navbarMaster").classList.remove('navbar-shadow');
+      // } else {
+      //   // add box shadow
+      //   document.getElementById("navbarMaster").classList.add('navbar-shadow');
+      // }
+      if(currentScrollPos>totalHeight){
+        document.getElementById("navbarMaster").classList.add('navbar-dark');
+      }
+      else{
+        document.getElementById("navbarMaster").classList.remove('navbar-dark');
       }
       prevScrollpos = currentScrollPos;
     }

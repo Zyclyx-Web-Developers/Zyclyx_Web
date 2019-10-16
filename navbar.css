@@ -1,11 +1,17 @@
 /* 
 ======= NAVIGATION BAR =======
 */
-.navbar {
+/* .navbar {
   background: rgba(51, 94, 234) !important;
   padding: 5px;
+} */
+.navbar-dark{
+  background: rgba(51, 94, 234) !important;
+  transition: all 0.4s ease-in;
 }
-
+.navbar-light{
+  background-color: transparent !important;
+}
 .master-nav .logo img {
   max-width: 200px;
 }
