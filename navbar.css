@@ -149,5 +149,8 @@
 .footer>ul>p>address{
   color:rgb(139, 137, 137) !important;
 }
+.company-tagline{
+  font-size: 0.9rem;
+}
 
 /* Footer End */
