@@ -18,11 +18,10 @@
     <!-- Custom styles -->
     <link href="navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="./animations.css">
-    <link rel="stylesheet" href="./careers.css">
+    <link rel="stylesheet" href="./careers.css">  
 </head>
 
 <body>
-
        <!-- 
       ====== Navbar ======
     -->
@@ -60,7 +59,6 @@
                             </div>
                         </li>
                         <!-- END - services -->
-
                         <!-- solutions -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -149,22 +147,24 @@
                         <div class="col-lg-9">
                             <p class="text-right"><span class="openings-count">4 Openings</span></p>
                             <div class="accordion" id="accordionQuestions">
+
+
                                 <!-- JOB Post - 1 -->
-                                <div class="card mb-2 shadow-sm my-3">
+                                <div class="card collapsed mb-2 shadow-sm my-3" role="button" href="#collapseTwo"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo" id="main1">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="card-title">
-                                            <a class="collapsed" role="button" href="#collapseTwo"
-                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
-                                                SAP ABAP Development for HANA <i
-                                                    class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true"></i>
+                                            <a class="text-primary">
+                                                SAP ABAP Development for HANA
+                                                 <i class="fa fa-angle-down float-right rotate-icon"
+                                                    aria-hidden="true" id="btn1"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
-                                        data-parent="#accordionQuestions">
-                                        <div class="card-body">
+                                        data-parent="#accordionQuestions"><hr>
+                                        <div class="card-body">                                           
                                             <h5>Description</h5>
                                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -176,27 +176,25 @@
                                             <p><a href="./job-preview.html"
                                                     class="btn btn-primary btn-outline hvr-wobble-vertical">View
                                                     Position<i class="fa fa-arrow-right ml-3"></i></a></p>
-
                                         </div>
                                     </div>
                                 </div>
 
-
                                 <!-- JOB Post -2 -->
-                                <div class="card mb-2 shadow-sm my-3">
+                                <div class="card collapsed mb-2 shadow-sm my-3" role="button" href="#collapseOne"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne" id="main2">
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="card-title">
-                                            <a class="collapsed" role="button" href="#collapseOne"
-                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                                aria-controls="collapseOne">
-                                                Functional Testing Planning <i
-                                                    class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true"></i>
+                                            <a class="text-primary">
+                                                Functional Testing Planning 
+                                                <i class="fa fa-angle-down float-right rotate-icon"
+                                                    aria-hidden="true" id="btn2"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionQuestions">
+                                        data-parent="#accordionQuestions"><hr>
                                         <div class="card-body">
                                             <h5>Description</h5>
                                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -214,20 +212,20 @@
                                 </div>
 
                                 <!-- JOB Post - 3 -->
-                                <div class="card mb-2 shadow-sm my-3">
+                                <div class="card mb-2 collapsed shadow-sm my-3"role="button" href="#collapseThree"
+                                data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree" id="main3">
                                     <div class="card-header" id="headingThree">
                                         <h5 class="card-title">
-                                            <a class="collapsed" role="button" href="#collapseThree"
-                                                data-toggle="collapse" data-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                IBM DB2 Administration <i
-                                                    class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true"></i>
+                                            <a class="text-primary">
+                                                IBM DB2 Administration 
+                                                <i class="fa fa-angle-down float-right rotate-icon"
+                                                    aria-hidden="true" id="btn3"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordionQuestions">
+                                        data-parent="#accordionQuestions"><hr>
                                         <div class="card-body">
                                             <h5>Description</h5>
                                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -242,22 +240,22 @@
                                                     Position<i class="fa fa-arrow-right ml-3"></i></a></p>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                               
 
                                 <!-- JOB Post - 4 -->
-                                <div class="card mb-2 shadow-sm my-3">
+                                <div class="card mb-2 collapsed shadow-sm my-3" role="button" href="#collapseFour"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour" id="main4">
                                     <div class="card-header" id="headingFour">
                                         <h5 class="card-title">
-                                            <a class="collapsed" role="button" href="#collapseFour"
-                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                                aria-controls="collapseFour">
+                                            <a class="text-primary">
                                                 Senior UX Designer <i class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true"></i>
+                                                    aria-hidden="true" id="btn4"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                        data-parent="#accordionQuestions">
+                                        data-parent="#accordionQuestions"><hr>
                                         <div class="card-body">
                                             <h5>Description</h5>
                                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -356,6 +354,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+   <script>
+     $(function(){
+  $("#main1").click(function(){   
+    $("#btn1").toggleClass("spinEffect");
+  });
+
+  $("#main2").click(function(){   
+    $("#btn2").toggleClass("spinEffect");
+  });
+
+  $("#main3").click(function(){   
+    $("#btn3").toggleClass("spinEffect");
+  });
+
+  $("#main4").click(function(){   
+    $("#btn4").toggleClass("spinEffect");
+  });
+});
+   </script>
 </body>
 
 </html>
