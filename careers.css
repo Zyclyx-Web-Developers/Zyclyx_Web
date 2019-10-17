@@ -43,19 +43,29 @@
   background-color: #fff;
   border: 0;
   border-radius: 0.5rem !important;
-  padding: 1.5rem;
 }
 .accordion > .card .card-header {
   margin-bottom: -1px;
 }
-.accordion .card .card-header a .rotate-icon {
+/* .accordion .card .card-header a .rotate-icon {
   line-height: 1.25;
   transition: transform 0.2s ease-in-out;
-}
+} */
 .card-title a:focus,
 .card-title a:hover {
   color: #006aff;
+  cursor: pointer;
 }
-.accordion .card .card-header a:not(.collapsed) .rotate-icon {
+/* .accordion .card .card-header a:not(.collapsed) .rotate-icon {
   transform: rotate(180deg);
+} */
+.spinEffect{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
 }
+
+.accordion > .card:hover{
+  cursor: pointer;
+}
+
