@@ -10,51 +10,115 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../navbar.css">
         <link rel="stylesheet" href="./job application form.css"> 
-        <style>
-            .input-group-text {
-    color: #000;            
-}
-body{
-background:#8a3c78;
-}
-s
-.body-sec{
-  background-image: url("./bg1.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;    
-}
-.overlay{
-    position: relative;
-    }
-    .overlay::before{
-        position: absolute;
-        content:"";
-        top: 0;
-        bottom:0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    .login-btn{
-        min-height: 28px;
-        border-radius: 5px;
-        border:1px solid #a3c09d; 
-        background-color: green;
-        color: aliceblue;
-        text-align: center;
-        padding: 0.5rem 3rem;
-        transition: all 1s ease-in-out;
-    }
-    .login-btn:hover{
-        background-color:transparent;
-        color: black;
-        transform: translateY(-10%);
-    }
-
-</style>
 </head>
 <body> 
+  <!--
+    ====== Navbar ======
+  -->
+<header class="main-navbar" id="mainNavbar">
+  <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark" id="navbarMaster">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">
+        <img src="../images/logo-white.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu animate slideIn p-2 p-md-3" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./Application-Development.html">Application
+                Development</a>
+              <a class="dropdown-item" href="./Web-Development.html">Web Development</a>
+              <a class="dropdown-item" href="./Digital-Marketting.html">Digital Marketing</a>
+              <a class="dropdown-item" href="./Product-Engineering.html">Product Engineering /
+                Development</a>
+              <a class="dropdown-item" href="./Consulting.html">IT Consulting</a>
+            </div>
+          </li>
+          <!-- END - services -->
+
+          <!-- solutions -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <a class="dropdown-item" href="./AI.html">AI / ML</a>
+                  <a class="dropdown-item" href="./Bigdata.html">Big Data</a>
+                  <a class="dropdown-item" href="./Devops.html">DevOps</a>
+                  <a class="dropdown-item" href="./RPA.html">RPA</a>
+                  <a class="dropdown-item" href="./Blockchain.html">Block Chain</a>
+                </div>
+                <div class="col-md-6 col-12">
+                  <a class="dropdown-item" href="./Cloud.html">Cloud Computing</a>
+                  <a class="dropdown-item" href="./IoT.html">IOT</a>
+                  <a class="dropdown-item" href="./Info-Security.html">Information Security</a>
+                  <a class="dropdown-item" href="./Busines-Automation.html">Business
+                    Automation</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- END solutions -->
+
+          <!-- Industries -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Industries
+            </a>
+            <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <a class="dropdown-item" href="./Retail.html">Retail</a>
+                  <a class="dropdown-item" href="./Telecom.html">Telecom</a>
+                  <a class="dropdown-item" href="./Banking & Finance.html">Banking & Finance</a>
+                </div>
+                <div class="col-md-6 col-12">
+                  <a class="dropdown-item" href="./Lagistics.html">Logistics</a>
+                  <a class="dropdown-item" href="./Legal.html">Legal</a>
+                  <a class="dropdown-item" href="./Health-Care.html">Health Care</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- END - Industries -->
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./careers.html">Careers <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contactus.html">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- 
+    ====== END Navbar ======
+  -->
         <div class="container ">
                 <div class="row">
                     <div class="col-lg-3"></div>
@@ -163,5 +227,53 @@ s
                 </div>
                 <br>
            </div> 
+
+            <!-- Footer  -->
+ <footer class="container-fluid pt-md-5 pt-3 footer">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <img src="./images/logo.png" alt="zyclyx logo" class="footer-logo">
+        <p class="d-block my-3 company-tagline">
+          A company dedicated to making work more human by Automating Business Processes and liberating
+          people.</p>
+      </div>
+      <div class="col-12 col-md-2 text-left">
+        <h5>Company</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="" href="#">Aboutus</a></li>
+          <li><a class="" href="#">Careers</a></li>        
+        </ul>
+      </div>
+      <div class="col-12 col-md-2 text-left">
+        <h5>Address</h5>
+        <address class="">3<sup>rd</sup> Floor, Pearl Enclave, Road No. 5, Banjara Hills, Hyderabad,
+          Telangana, India</address>
+      </div>
+      <div class="col-12 col-md-2 text-left">       
+          <h5>Contact</h5>
+        
+          <ul class="list-unstyled text-small ">
+            <li>(+91) 40 2354 9363</li>
+            <li>info@zyclyx.com</li>            
+          </ul>       
+      </div>
+      
+      <div class="col-12 col-md-2 text-left">
+        <h5>Connect</h5>       
+        <ul class="list-unstyled text-small ">         
+          <li class="socialIcons mt-2">
+            <a class=" " href="#"><i class="fa fa-facebook-f mr-2"></i></a>
+            <a class="" href="#"><i class="fa fa-twitter mr-2"></i></a>
+            <a class="" href="#"><i class="fa fa-google-plus mr-2"></i></a>
+            <a class="" href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-1">
+    <div class="text-muted">
+      <p class="py-0 text-center mb-0">All rights reserved. © Zyclyx 2019</p>
+    </div>
+  </footer>
 </body>
  </html>
