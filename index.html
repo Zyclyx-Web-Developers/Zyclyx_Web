@@ -29,7 +29,7 @@
       ====== Navbar ======
     -->
   <header class="main-navbar" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg master-nav fixed-top navar-dark" id="navbarMaster">
+    <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light" id="navbarMaster">
       <div class="container">
         <a class="navbar-brand logo" href="#">
           <img src="./images/logo-white.png" alt="">
@@ -150,7 +150,7 @@
       </div>
     </div>
   </section> -->
-  <section class="v-header v-container">
+  <section class="v-header v-container" id="videoContainer">
     <div class="fullscreen-video-wrap">
       <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
       <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
@@ -375,7 +375,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <!-- Services -->
   <div class="container-fluid mx-auto services py-5">
     <!-- WAVE EFFECT  -->
-    <div class="decorated-bottom wave">
+    <!-- <div class="decorated-bottom wave">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
         <path d="" fill="rgba(255, 0, 0, 0.5)">
           <animate attributeName="d" begin="0s" dur="5s" repeatCount="indefinite" values="
@@ -385,7 +385,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                 M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
         </path>
       </svg>
-    </div>
+    </div> -->
     <!-- END OF WAVE EFFECT -->
     <p class="service-caption">What we do</p>
     <h2 class="service-title">We Provide Wide Range Business Services</h2>
@@ -936,19 +936,22 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     AOS.init();
   </script>
   <script>
-  document.getElementById("mainNavbar").classList.remove('main-navbar');
-    var prevScrollpos = window.pageYOffset;
+  // document.getElementById("mainNavbar").classList.remove('main-navbar');
+  // var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;       
-      var homeHeight = document.getElementById("h-video").offsetHeight;       
-      totalHeight = homeHeight;       
-      if (currentScrollPos > totalHeight) {
+      var homeHeight = document.getElementById("videoContainer").offsetHeight;       
+      console.log(homeHeight);
+  //totalHeight = homeHeight;       
+      if (currentScrollPos > homeHeight-70) {
+        document.getElementById("navbarMaster").classList.remove('navbar-light');
         document.getElementById("navbarMaster").classList.add('navbar-dark');
-        document.getElementById("mainNavbar").classList.add('main-navbar');
+        
+        // document.getElementById("mainNavbar").classList.add('main-navbar');
       }
       else {
-        document.getElementById("navbarMaster").classList.remove('navbar-dark');
-        document.getElementById("mainNavbar").classList.remove('main-navbar');
+         document.getElementById("navbarMaster").classList.remove('navbar-dark');
+         document.getElementById("mainNavbar").classList.remove('main-navbar');
       }
       prevScrollpos = currentScrollPos;
     }
