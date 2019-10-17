@@ -241,6 +241,13 @@ color:#2B354F;
   max-width: 55% !important;
 } */
 /* About us */
+.welcome-site h1{
+  font-size: 3rem;
+
+}
+.welcome-site p{
+  font-size: 1.3rem;
+}
 .welcome{
    /* background-image: url("./images/Confetti-Doodles.svg"); */
    /* border: 2px solid red; */
@@ -716,8 +723,21 @@ border-top: 4px solid #17a2b8;
  ======== OUR SUCCESS STORIES ========
  */
  .our-success{
-       background-image: url('./images/cogs_bg.svg');        
+        /* border: 2px solid red; */
+        background-color: rgba(0, 0, 0, 0.05);
  }
+ /* .carousel-inner{
+   border: 2px solid green;
+   background-color: #fff;
+ }
+ .image-box{
+   border:2px solid blue;
+ }
+ .text-box{
+   border: 2px solid yellow;
+   background-color: #fff;
+   height: 100%;
+ } */
 .success img{
  max-width: 400px;
  height: auto;
@@ -1023,7 +1043,7 @@ border-top: 4px solid #17a2b8;
 }
 
  /* 
- ======== CONTACT US BANNER ========
+ ======== END - CONTACT US BANNER ========
  */
 
  /* 
