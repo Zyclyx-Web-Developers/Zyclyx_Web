@@ -953,11 +953,15 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <script>
     AOS.init();
   </script>
-  <script>
-  // document.getElementById("mainNavbar").classList.remove('main-navbar');
-  // var prevScrollpos = window.pageYOffset;
+  <script>   
+  window.onload = function(){
+    if(window.pageYOffset !==0){
+    document.getElementById("navbarMaster").classList.remove('navbar-light');
+        document.getElementById("navbarMaster").classList.add('navbar-dark');
+  }
+  }
     window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;        
+      var currentScrollPos = window.pageYOffset;              
       var homeHeight = document.getElementById("videoContainer").offsetHeight;              
   //totalHeight = homeHeight;       
       if (currentScrollPos > homeHeight-70) {
