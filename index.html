@@ -150,11 +150,12 @@
       </div>
     </div>
   </section> -->
+ 
   <section class="v-header v-container" id="videoContainer">
     <div class="fullscreen-video-wrap">
       <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
       <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
-      <video src="./images/Welcome - 24829.mp4" autoplay="" loop="">
+      <video src="./images/Welcome - 24829.mp4" autoplay loop muted>
     </video>
     </div>
     <div class="header-overlay"></div>
@@ -939,9 +940,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   // document.getElementById("mainNavbar").classList.remove('main-navbar');
   // var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;       
-      var homeHeight = document.getElementById("videoContainer").offsetHeight;       
-      console.log(homeHeight);
+      var currentScrollPos = window.pageYOffset;        
+      var homeHeight = document.getElementById("videoContainer").offsetHeight;              
   //totalHeight = homeHeight;       
       if (currentScrollPos > homeHeight-70) {
         document.getElementById("navbarMaster").classList.remove('navbar-light');
@@ -950,8 +950,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         // document.getElementById("mainNavbar").classList.add('main-navbar');
       }
       else {
-         document.getElementById("navbarMaster").classList.remove('navbar-dark');
-         document.getElementById("mainNavbar").classList.remove('main-navbar');
+         document.getElementById("navbarMaster").classList.remove('navbar-dark'); 
+         document.getElementById("navbarMaster").classList.add('navbar-light');
       }
       prevScrollpos = currentScrollPos;
     }

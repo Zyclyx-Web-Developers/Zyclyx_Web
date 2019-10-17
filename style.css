@@ -167,79 +167,6 @@ body {
     display: none;
   }
 }
-/* video */
-/* .cover-heading{
-  color: #161C2D;
-}
-.cover-text{
-max-width: 36em;
-color:#2B354F; 
-}
-
-.cover .btn-lg {
-  padding: 0.75rem 1.25rem;
-  font-weight: 700;
-} */
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  left:50px;
-  top:20%;
-}
-
-/* Declare heights because of positioning of img element */
-.main-slide {
-  height: 34rem;
-  background-color: #ffffff;
-}
-.main-slide > img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 80%;
-  height: auto;
-}
-.carousel-indicators li {
-  background-color: #335eea !important;
-  /* padding: 0.1rem 1rem;
-  margin:0 0.6rem; */
-}
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 1;
-}
- 
-/* .carousel-control-prev{ 
-  left: -70px;
-}
-.carousel-control-next {
-  right: -70px;
-} */
-.carousel-item img{
-  /* max-width: 50%; */
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-   
-}
- 
-/* .slide-1 img{
-  max-width:58% !important;
-}
-.slide-1 img {
-  max-width: 80%;
-}
-.slide-3 img {
-  max-width: 55% !important;
-} */
 /* About us */
 .welcome-site h1{
   font-size: 3rem;
@@ -259,7 +186,7 @@ color:#2B354F;
    border-radius:8px;
    border: 1px solid rgba(0,0,0,0.04);    
 }
-.polka-dots{
+/* .polka-dots{
   position:absolute;
   height: 100px;
   top: 0;
@@ -269,7 +196,7 @@ color:#2B354F;
 background-color: #e53935;
 background-position: 0 0, 50px 50px;
 background-size: 100px 100px;
-}
+} */
 .welcome-msg{
   /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Roboto Mono', monospace;  */
@@ -446,17 +373,18 @@ background-color: rgba(0, 165, 79,0.2);
 /*
 ======= SERVICES ========
 */
-.wave{
+/* .wave{
   color:#c2ecf2;
   position: absolute;
   top:-54px;
   left: 0;
   right: 0;
-}
+} */
 .services{
   background-color:rgba(255, 0, 0, 0.2);
   position: relative;
-  background-color: #c2ecf2;
+  /* background-color: #c2ecf2; */
+  background-color: rgba(0, 0, 0, 0.059);
 }
 .main-service { 
   padding: 20px;
