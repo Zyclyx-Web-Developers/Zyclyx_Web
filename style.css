@@ -186,7 +186,7 @@ body {
    border-radius:8px;
    border: 1px solid rgba(0,0,0,0.04);    
 }
-.polka-dots{
+/* .polka-dots{
   position:absolute;
   height: 100px;
   top: 0;
@@ -196,7 +196,7 @@ body {
 background-color: #e53935;
 background-position: 0 0, 50px 50px;
 background-size: 100px 100px;
-}
+} */
 .welcome-msg{
   /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Roboto Mono', monospace;  */
@@ -373,17 +373,18 @@ background-color: rgba(0, 165, 79,0.2);
 /*
 ======= SERVICES ========
 */
-.wave{
+/* .wave{
   color:#c2ecf2;
   position: absolute;
   top:-54px;
   left: 0;
   right: 0;
-}
+} */
 .services{
   background-color:rgba(255, 0, 0, 0.2);
   position: relative;
-  background-color: #c2ecf2;
+  /* background-color: #c2ecf2; */
+  background-color: rgba(0, 0, 0, 0.059);
 }
 .main-service { 
   padding: 20px;
