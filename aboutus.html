@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,290 +15,245 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom styles -->
-    <link href="aboutus.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="navbar.css">
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link href="./aboutus.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./animations.css">
 </head>
+
 <body>
     <!-- 
       ====== Navbar ======
     -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light master-nav fixed-top" id="navbarMaster">
-            <div class="container">
-                <a class="navbar-brand logo" href="#">
-                        <img src="./images/logo-white.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <header class="main-navbar" id="mainNavbar">
+        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark" id="navbarMaster">
+          <div class="container">
+            <a class="navbar-brand logo" href="#">
+              <img src="./images/logo-white.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="main-navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- services -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Services
+                  </a>
+                  <div class="dropdown-menu animate slideIn p-2 p-md-3" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./Application-Development.html">Application
+                      Development</a>
+                    <a class="dropdown-item" href="./Web-Development.html">Web Development</a>
+                    <a class="dropdown-item" href="./Digital-Marketting.html">Digital Marketing</a>
+                    <a class="dropdown-item" href="./Product-Engineering.html">Product Engineering /
+                      Development</a>
+                    <a class="dropdown-item" href="./Consulting.html">IT Consulting</a>
+                  </div>
+                </li>
+                <!-- END - services -->
+    
+                <!-- solutions -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Solutions
+                  </a>
+                  <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <a class="dropdown-item" href="./AI.html">AI / ML</a>
+                        <a class="dropdown-item" href="./Bigdata.html">Big Data</a>
+                        <a class="dropdown-item" href="./Devops.html">DevOps</a>
+                        <a class="dropdown-item" href="./RPA.html">RPA</a>
+                        <a class="dropdown-item" href="./Blockchain.html">Block Chain</a>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <a class="dropdown-item" href="./Cloud.html">Cloud Computing</a>
+                        <a class="dropdown-item" href="./IoT.html">IOT</a>
+                        <a class="dropdown-item" href="./Info-Security.html">Information Security</a>
+                        <a class="dropdown-item" href="./Busines-Automation.html">Business
+                          Automation</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- END solutions -->
+    
+                <!-- Industries -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Industries
+                  </a>
+                  <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <a class="dropdown-item" href="./Retail.html">Retail</a>
+                        <a class="dropdown-item" href="./Telecom.html">Telecom</a>
+                        <a class="dropdown-item" href="./Banking & Finance.html">Banking & Finance</a>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <a class="dropdown-item" href="./Lagistics.html">Logistics</a>
+                        <a class="dropdown-item" href="./Legal.html">Legal</a>
+                        <a class="dropdown-item" href="./Health-Care.html">Health Care</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- END - Industries -->
+    
+                <li class="nav-item active">
+                  <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./careers.html">Careers <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./contactus.html">Contact<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- 
+          ====== END Navbar ======
+        -->
+    <!-- Header -->
+    <section class="container-fluid Header-img text-white overlay">
+        <div class="container">
+            <h2 class="">About Us</h2>
+            
+        </div>
+    </section>
+    <!-- Header End -->
 
-                <div class="collapse navbar-collapse" id="main-navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <!-- services -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services
-                            </a>
-                            <div class="dropdown-menu animate slideIn p-2 p-md-3" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./Application-Development.html">Application
-                                    Development</a>
-                                <a class="dropdown-item" href="./Web-Development.html">Web Development</a>
-                                <a class="dropdown-item" href="./Digital-Marketting.html">Digital Marketing</a>
-                                <a class="dropdown-item" href="./Product-Engineering.html">Product Engineering /
-                                    Development</a>
-                                <a class="dropdown-item" href="./Consulting.html">IT Consulting</a>
-                            </div>
-                        </li>
-                        <!-- END - services -->
+    <section class="container p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Welcom to <span class="text-danger">Zyclyx</span></h2>
+                <div style="margin-top: -15px;">
+                    <span class="underLine1"></span>
+                    <span class="underLine2"></span>
+                    <span class="underLine"></span>
+                </div>
+                <p class="mt-4 text-justify">ZYCLYX is a technology-driven and customer-focused consulting firm which
+                    was established
+                    in the year 2018. We are here to give you inclusive portfolio services with a strong determination
+                    to corporate citizenship and sustainability. Our targeted audiences are mainly in the Gulf Regions
+                    and the Middle East. We ensure to give you compact solutions by going above and beyond the boundary.
+                </p>
 
-                        <!-- solutions -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Solutions
-                            </a>
-                            <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3"
-                                aria-labelledby="navbarDropdown">
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <a class="dropdown-item" href="./AI.html">AI / ML</a>
-                                        <a class="dropdown-item" href="./Bigdata.html">Big Data</a>
-                                        <a class="dropdown-item" href="./Devops.html">DevOps</a>
-                                        <a class="dropdown-item" href="./RPA.html">RPA</a>
-                                        <a class="dropdown-item" href="./Blockchain.html">Block Chain</a>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <a class="dropdown-item" href="./Cloud.html">Cloud Computing</a>
-                                        <a class="dropdown-item" href="./IoT.html">IOT</a>
-                                        <a class="dropdown-item" href="./Info-Security.html">Information Security</a>
-                                        <a class="dropdown-item" href="./Busines-Automation.html">Business
-                                            Automation</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- END solutions -->
-
-                        <!-- Industries -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Industries
-                            </a>
-                            <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3"
-                                aria-labelledby="navbarDropdown">
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <a class="dropdown-item" href="./Retail.html">Retail</a>
-                                        <a class="dropdown-item" href="./Telecom.html">Telecom</a>
-                                        <a class="dropdown-item" href="./Banking & Finance.html">Banking & Finance</a>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <a class="dropdown-item" href="./Lagistics.html">Logistics</a>
-                                        <a class="dropdown-item" href="./Legal.html">Legal</a>
-                                        <a class="dropdown-item" href="./Health-Care.html">Health Care</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- END - Industries -->
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./aboutus.html">About us <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./careers.html">Careers <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./contactus.html">Contact<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
+                <div class="social-icons text-danger">
+                    <div class="fa-icons">
+                        <a href=""><i class="fa fa-facebook" title="facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- 
-      ====== END Navbar ======
-    -->
-<section class="container-fluid Header">
-    
-    <h2 class="py-4 text-center text-white">About Us</h2>      
-    </section>
-<!--Header End-->
-  <!-- Our Vision-->
-<section class="container">
-        <h2 class="featurette-heading text-center  pt-4">Welcome to Zyclyx </h2>
-        <p class="text-center pb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="row">            
-            <div class="col">
-                <img class="featurette-image img-fluid " src="images/Hello-Robo.png" height="50px" alt="Generic placeholder image">
-              </div> 
-                 <div class="col px-3">    
-               <!-- <h4 class="featurette-heading Vision-text"><span class="text-muted">Welcome to</span> Zyclyx 
-                 <br>ZYCLYX is a customer focused <br> & technology </h4>  -->                
-              <p class="text-muted">ZYCLYX is a customer focused and technology-driven consulting firm providing IT Consulting, staffing, product engineering and enterprise application development services that help our customers in crafting value for their software development results.</p>
+            <div class="col-md-6 d-flex justify-content-around align-items-center">
+                <img src="./docs/Employé.jpg" class="image" height="300">
             </div>
-        </div>          
     </section>
- <!-- Our Vision End -->
 
-    <!--What we do -->
-    <section class="container">
-            <h2 class="featurette-heading py-4 text-center text-center"> What We Do</h2>
-            <p class="text-center pb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <section class="container-fluid bg-dark text-light">
+        <div class="container p-5">
             <div class="row">
                 <div class="col">
-                    <img class="featurette-image img-fluid" src="./docs/aboutus.svg.svg" alt="Generic placeholder image">
-                  </div> 
-              <div class="col px-3">
-                    <h5 class="featurette-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                  <p class="text-muted">ZYCLYX is a customer focused and technology-driven consulting firm providing IT Consulting, staffing, product engineering and enterprise application development services that help our customers in crafting value for their software development results.</p>
-                  <p class=" pb-4 text-muted">We are passionate about technology and applying it to make our clients products better and deliver overall value. Our passion for what we do flows through each member of our organization and it plays an important role in the way we perform business.</p>
-                </div>
-            </div>              
-    </section>   
-<!--What we do End-->
+                    <h4>Our <span class="text-danger">Mission</span></h4>
+                    <div style="margin-top: -15px;">
+                        <span class="underLine1"></span>
+                        <span class="underLine2"></span>
+                        <span class="underLine bg-light"></span>
+                    </div>
+                    <p class="mt-4">Together, we established Zyclyx, a company dedicated to making work more human by
+                        Automating Business Processes and liberating people. Zyclyx deals under expansive inventory in
+                        Robotic Process Automation and Artificial Intelligence, used under the Banking, Financial and
+                        Insurance sectors.</p>
 
- <!-- Our Projects
- <section class="container-fluid Header1 py-4">     
-        <div class="overlay"></div>
-        <h2 class="pb-3 text-center text-white">Our Projects</h2>        
+                </div>
+                <div class="col">
+                    <h4>Our <span class="text-danger">Vision</span></h4>
+                    <div style="margin-top: -15px;">
+                        <span class="underLine1"></span>
+                        <span class="underLine2"></span>
+                        <span class="underLine bg-light"></span>
+                    </div>
+                    <p class="mt-4">It's all began with a group of people who dream of starting something completely new.
+                        We had a great vision, a passion for change and all the right skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container text-center p-5">
+        <h3>Thinker <span class="text-danger">Team</span> Members</h3>
+        <div style="margin-top: -15px;">
+            <span class="underLine1"></span>
+            <span class="underLine2"></span>
+            <span class="underLine"></span>
+        </div>
+        <div class="row d-flex  justify-content-around pt-5 team-card">
+            <div class="">
+                <img src="./docs/Employé.jpg" class="image" height="200">
+                <h5 class="mt-4">AJAY <span class="text-danger">KUMAR</span></h5>
+            </div>
+            <div class="">
+                <img src="./docs/Employé.jpg" class="image" height="200">
+                <h5 class="mt-4">AJAY <span class="text-danger">KUMAR</span></h5>
+            </div>
+            <div class="">
+                <img src="./docs/Employé.jpg" class="image" height="200">
+                <h5 class="mt-4">AJAY <span class="text-danger">KUMAR</span></h5>
+            </div>
+            <div class="">
+                <img src="./docs/Employé.jpg" class="image" height="200">
+                <h5 class="mt-4">AJAY <span class="text-danger">KUMAR</span></h5>
+            </div>
+            <!-- <img src="./docs/Employé.jpg" class="image1 d-block" height="200">
+            <h5>Ajay</h5>
+            <img src="./docs/Employé.jpg" class="image1" height="200"> 
+            <img src="./docs/Employé.jpg" class="image1" height="200"> 
+            <div class="team-cards">
+            <img src="./docs/Employé.jpg" class="image1" height="200">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="container bg-danger rounded  py-4  px-5 text-light join-section">
         <div class="row">
-            <div class="col-6">
-                <h1 class="text-center text-white display-2 font-weight-bolder jumbo-text">15+ Years</h1>
-                <p class="text-muted text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="col-md-10">
+                <h4 class="">Intersted in joining our team?</h4>
+                <p class="m-0">Hit us up and we'll get in touch with you.   </p>
             </div>
-            <div class="col-6 bg-num">
-                <div class="row">
-                    <div class="col-md-6 ">736573</div>
-                    <div class="col-md-6">635673</div>
-                </div>
-                    <div class="row">
-                    <div class="col-md-6 ">6545</div>
-                    <div class="col-md-6 ">465465</div>
-
-                </div>
+            <div class="col d-flex align-items-center justify-content-end">
+                <a href="./careers.html" class="btn btn-primary float-right">Join Now</a>
             </div>
-        </div>           
-</section>    -->
-<!--Our Projects End-->
- <!--Team-->
- <section class="container py-4">
-     <p class="text-center text-muted pt-5">They are all Professionals</p>
-        <h2 class="featurette-heading text-center pb-4">Creative Team and Founder</h2>
-        <div class="row justify-content-center ">
-            <div style="width:16rem;">
-                <div class="card text-center rounded shadow p-0 card-img" style="width: 15rem;">
-                        <img src="./docs/Employé.jpg" class="card-img-top rounded-circle sideImg">
-                        <div class="card-body">    
-                                <!-- <div class="card-img-overlay text-light text-center">
-
-                                    <ul>                                     
-                                        <li><a><i class="fa fa-facebook"></i></a></li>
-                                        <li><a><i class="fa fa-twitter"></i></a></li>
-                                        <li><a><i class="fa fa-instagram"></i></a></li>
-                                     </ul>
-                                    </div>   -->
-                         </div>                      
-                      </div>
-                      <h5 class="font-weight-bolder text-center mt-3">Professionals</h5>
-                      <h6 class="text-center text-primary">CEO</h6>
-                      <p class="text-muted text-center">Lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
-                    </div>     
-                    
-                    <div style="width:16rem;">
-                            <div class="card text-center rounded shadow p-0 card-img" style="width: 15rem;">
-                                    <img src="./docs/Employé.jpg" class="card-img-top rounded-circle sideImg">
-                                    <div class="card-body">                          
-                                     </div>                      
-                                  </div>
-                                  <h5 class="font-weight-bolder text-center mt-3">Professionals</h5>
-                                  <h6 class="text-center text-primary">CEO</h6>
-                                  <p class="text-muted text-center">Lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
-                                </div> 
-
-                                <div style="width:16rem;">
-                                        <div class="card text-center rounded shadow p-0 card-img" style="width: 15rem;">
-                                                <img src="./docs/Employé.jpg" class="card-img-top rounded-circle sideImg">
-                                                <div class="card-body">                          
-                                                 </div>                      
-                                              </div>
-                                              <h5 class="font-weight-bolder text-center mt-3">Professionals</h5>
-                                              <h6 class="text-center text-primary">CEO</h6>
-                                              <p class="text-muted text-center">Lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
-                                            </div> 
-
-                                            <div style="width:16rem;">
-                                                    <div class="card text-center rounded shadow p-0 card-img" style="width: 15rem;">
-                                                            <img src="./docs/Employé.jpg" class="card-img-top rounded-circle sideImg">
-                                                            <div class="card-body">                          
-                                                             </div>                      
-                                                          </div>
-                                                          <h5 class="font-weight-bolder text-center mt-3">Professionals</h5>
-                                                          <h6 class="text-center text-primary">CEO</h6>
-                                                          <p class="text-muted text-center">Lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
-                                                        </div> 
-               </div>              
-</section>   
-<!--team End-->
-
- <!--Clients-->
- <section class="container p-3">
-        <h2 class="text-center client-text pt-4">We strive to work with the best.<br>The best companies in the world.</h2>
-    <p class="text-muted text-center ">Zyclyx is a best place to work with some of the greatest <br>tech companies in the world.</p>
-       <div class="row m-4 client-img">
-           <div class="col"><img src="./images/teradata.jpeg" height="50px" width="150px"></div>
-           <div class="col"><img src="./images/aZURE.jpg"  height="50px" width="150px"></div>
-           <div class="col"><img src="./images/altoros.jpg" height="50px" width="150px"></div>
-           <div class="col"><img src="./images/cisco-IoT-system.jpg" height="50px" width="150px"></div>
-           <div class="col"><img src="./images/bcdc-online.jpg" height="50px" width="150px"></div>
-           <div class="col"><img src="./images/teamcity-logo.png" height="50px" width="150px"></div>
-       </div>
-       <div class="row m-4 client-img">                      
-            <div class="col"><img src="./images/altoros.jpg" height="50px" width="150px"></div>
-            <div class="col"><img src="./images/teamcity-logo.png" height="50px" width="150px"></div>
-            <div class="col"><img src="./images/cisco-IoT-system.jpg" height="50px" width="150px"></div>
-            <div class="col"><img src="./images/bcdc-online.jpg" height="50px" width="150px"></div>
-            <div class="col"><img src="./images/aZURE.jpg"  height="50px" width="150px"></div>
-            <div class="col"><img src="./images/teradata.jpeg" height="50px" width="150px"></div>            
-       </div>
-                  
-</section>   
-<!--Clients End-->
-
- <!--GetIn Touch-->
- <section class="StayIn">        
-        <div class="row shadow-lg bg-light rounded border-top ">  
-                <h2 class="text-center pt-4 w-100">StayIn Touch</h2><br>          
-          <div class="col-md-10 p-4">
-                
-              <p class="px-4 StayIn-text">Intersted in joining our team?</p>
-              <p class="px-4 text-muted">Hit us up and we'll get in touch with you.</p>
-          </div>
-              <div class="col-md-2 float-right">
-            <a class="btn btn-primary text-light mt-5">Apply Now </a>
-            </div>
-        </div>              
-</section>   
-<!--GetIn Touch End-->
-<!-- Footer  -->
-<footer class="container-fluid footer">
+        </div>
+    </section>
+    <footer class="container-fluid  footer">
         <div class="row">
           <div class="col-12 col-md">
-            <img src="./images/logo-white.png" alt="zyclyx logo" class="footer-logo py-3">
-            <small class="d-block mb-3 text-muted">  
+            <img src="./images/logo-white.png" alt="zyclyx logo" class="footer-logo">
+            <p class="d-block mt-3 text-muted">
+  
               A company dedicated to making work more human by Automating Business Processes and liberating
-              people.</small>
+              people.</p>
           </div>
           <div class="col-6 col-md text-left">
             <h5>Services</h5>
@@ -348,11 +304,13 @@
   
             </ul>
           </div>
+   
         </div>
         <div class="row text-muted text-center">
           <p>All rights reserved. © Zyclyx 2019</p>
-        </div>
+        </div> 
       </footer>
-
+    </div>
 </body>
+
 </html>
