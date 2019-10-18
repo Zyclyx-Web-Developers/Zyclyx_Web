@@ -942,8 +942,10 @@ border-top: 4px solid #17a2b8;
  */
 
 .contact-banner{     
-  background-image: url("./images/doodle_bg.svg");
-  position: relative;     
+  /* background-image: url("./images/doodle_bg.svg"); */
+  background-color: #ffffff;
+  position: relative;
+  /* border-bottom: 2px solid #007bff;      */
 }
 .contact-banner:before{
   position: absolute;
@@ -952,7 +954,7 @@ border-top: 4px solid #17a2b8;
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(23, 70, 224,0.3);
+  background-color: rgba(23, 70, 224,0.5);
   z-index:-1;
 }
 .contact-inner{
@@ -969,7 +971,8 @@ border-top: 4px solid #17a2b8;
 }
 .contact-banner p{
   font-size: 1.4rem;
-  color:#fafafa;
+  color: #2B354F;
+  /* color:#fafafa; */
 }
 
  /* 
