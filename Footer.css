@@ -1,0 +1,92 @@
+.Footer .Location{
+    font-family: ;
+}
+.f-links a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+.Social-icons .fa{
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    transition: all .3s ease-in ;
+    position: relative;
+    overflow: hidden;
+}
+.Social-icons .fa:hover{
+    font-size: 25px;
+}
+.Social-icons .fa-facebook{
+    border:   #3b5998;
+    color: #3b5998;
+}
+.Social-icons .fa-twitter{
+    border: #55acee;
+    color: #55acee;
+}
+.Social-icons .fa-google-plus{
+    border: #dc4e41;
+    color: #dc4e41;
+}
+.Social-icons .fa-linkedin{
+    border: #0077b5;
+    color: #0077b5;
+}
+
+.Social-icons .fa-facebook:hover{
+    color: white;
+    background: #3b5998;
+}
+.Social-icons .fa-twitter:hover{
+    color: white;
+    background: #55acee;
+}
+.Social-icons .fa-google-plus:hover{
+    color: white;
+    background: #dc4e41;
+}
+.Social-icons .fa-linkedin:hover{
+    color: white;
+    background: #0077b5;
+}
+/* .Social-icons .fa:before{
+    background: #2a74fc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+.Social-icons .fa:before:hover{
+    background:none;
+} */
+
+
+.underLine1{
+    width: 10px;
+    height: 4px;
+    display: inline-block;
+    background: #eda10c;
+    transform: skewX(-15deg);
+}
+.underLine2{
+    width: 20px;
+    height: 4px;
+    display: inline-block;
+    background: #eda10c;
+    transform: skewX(-15deg);
+}
+.underLine{
+    width: 100px;
+    height: 4px;
+    display: inline-block;
+    background: #000;
+    transform: skewX(-15deg);
+}
