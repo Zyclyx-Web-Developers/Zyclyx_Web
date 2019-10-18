@@ -650,7 +650,7 @@ border-top: 4px solid #17a2b8;
  /* 
  ======== OUR SUCCESS STORIES ========
  */
- .our-success{
+ .our-projects{
         /* border: 2px solid red; */
         background-color: rgba(0, 0, 0, 0.05);
  }
@@ -666,13 +666,16 @@ border-top: 4px solid #17a2b8;
    background-color: #fff;
    height: 100%;
  } */
-.success img{
- max-width: 400px;
+.img-box img{
+ max-width: 350px;
+ width:350px;
  height: auto;
+ border-radius: 12px;
 }
-.s-carousel{
+.carousel-inner{
   border-radius: 12px;
-  box-shadow: 0 0 5px 8px rgba(0, 0, 0,0.05);
+  box-shadow: 0 0 5px 8px #ffffff;
+  background-color:#ffffff;
 }
 .img-box{
   padding: 0;
@@ -735,7 +738,7 @@ border-top: 4px solid #17a2b8;
   height: 40px;
   width: 40px;
   padding: 12px;
-  bottom: 0;
+  bottom: -18px;
   right: 10px;
   top: auto;
   transform: translateY(-50%);
@@ -1157,9 +1160,9 @@ figure img{width:300px;}
 
 /* card details start  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
-section{
+/* section{
     padding: 100px 0;
-}
+} */
 .details-card {
 	background: #ecf0f1;
 }
