@@ -1,0 +1,112 @@
+.featurette-image{
+    width: 400px;
+    height: auto;
+  }
+  /* .container{
+    background-image: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
+    min-height: 80vh;
+  } */
+  /*vision*/
+  .Vision-text{
+    line-height:2.5rem;
+    font-weight: 400;
+  }
+.Header{
+  background-image: url(./docs/AI-3.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.overlay{
+  background-color: rgba(0, 0, 0, .5);
+
+}
+  /*vision end*/
+  /*our Projects*/
+.jumbo-text{
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Header1{
+  /* background-image: url(./docs/AI-3.jpg); */
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.bg-num{
+  background-color: rgba(255, 255, 255, 0.596);
+}
+.bg-num .col-md-6{
+  border:1px solid;
+  text-align: center;  
+}
+
+  /*our Projects End*/
+
+  /*Team*/
+  .card{
+    position:relative; 
+  }
+  
+  .card::before{ 
+     position:absolute;
+     content:"";
+     top:0;
+    bottom:0;
+    left:0;
+    width:0;
+  }
+  
+   .card:hover::before{
+    transition:all 0.5s ease-in-out; 
+    width:100%;  
+      background:linear-gradient(145deg, #5d8dee,#081f4d);
+      opacity: 0.7;
+  }
+  .card-img-overlay>i{
+    visibility:hidden;
+}
+
+.card-img-overlay:hover i{
+    visibility: visible;  
+}
+/* 
+.card-body>i::before{ 
+ 
+ position: absolute;
+    top: 5px;
+    left: 0px;
+     bottom:0;
+     right: 0;
+ width:0;
+
+}
+
+.card-body>i:hover::before{
+ transition:all 0.5s ease-in-out; 
+ width:100%;
+ left:0;  
+   background:linear-gradient(145deg, #5d8dee,#081f4d);
+   opacity: 0.7;
+} */
+
+  /*Team End*/
+
+  /*Client*/
+  .client-text{
+    line-height:3rem;
+    font-weight: 400;
+  }
+  .client-img .col{
+    height: 50px;
+    width: 50px;
+    background-color:rgb(255, 255, 255);
+  display:flex;
+  justify-content: center;
+  margin: 1px;
+  }
+  /*Client End*/

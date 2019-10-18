@@ -1,20 +1,24 @@
 /* 
 ======= NAVIGATION BAR =======
 */
+ 
+
+.navbar{
+  transition: all 0.4s ease-in;
+  background: rgb(27, 43, 48,0.9) !important;
+}
 .main-navbar{
   margin-bottom: 75px !important;
 }
-.navbar{
-  transition: all 0.4s ease-in;
+.navbar-light{ 
+  background: rgb(27, 43, 48,0.1) !important; 
+  /* margin-bottom: 70px !important;  */
 }
 .navbar-dark{
-  background: rgb(27, 43, 48,0.9) !important;
-  
-}
-.navbar-light{
-  background-color: transparent !important;
+  background: rgb(27, 43, 48,0.95) !important; 
   margin-bottom: 70px !important; 
 }
+
 .master-nav .logo img {
   max-width: 200px;
 }
