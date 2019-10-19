@@ -14,7 +14,12 @@ a:focus,
 a:hover {
   color: #161c2d;
 }
-
+.text-2{
+  font-size: 1.2rem !important;
+}
+.title-2{
+  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif;
+}
 /* Custom default button */
 .btn-secondary{
   color: #fff;
@@ -22,6 +27,7 @@ a:hover {
   background-color: #335EEA;
   border: .05rem solid #fff;
 }
+
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #fff;
@@ -62,15 +68,18 @@ body {
   height: 3.125rem;
   transform: translateZ(0);
 }
+
 .text-light {
   color: #c2ecf2 !important;
 }
+
 .decorated-bottom svg > * {
   fill: currentColor;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
+
 /* Change this breakpoint if you change the breakpoint of the navbar */
 @media (min-width: 992px) {
   .animate {
@@ -174,12 +183,10 @@ body {
   }
 }
 /* About us */
-.welcome-site h1{
-  font-size: 3rem;
+.welcome-site h2{
+  /* font-size: 3rem; */
+  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif
 
-}
-.welcome-site p{
-  font-size: 1.3rem;
 }
 .welcome{
    /* background-image: url("./images/Confetti-Doodles.svg"); */
@@ -192,25 +199,13 @@ body {
    border-radius:8px;
    border: 1px solid rgba(0,0,0,0.04);    
 }
-/* .polka-dots{
-  position:absolute;
-  height: 100px;
-  top: 0;
-  left: 0;
-  background-image: radial-gradient(#212121 20%, transparent 20%),
-  radial-gradient(#fafafa 20%, transparent 20%);
-background-color: #e53935;
-background-position: 0 0, 50px 50px;
-background-size: 100px 100px;
-} */
 .welcome-msg{
   /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Roboto Mono', monospace;  */
-  
   color:#384C74;
   /* padding-top: 40px; */
   line-height: 1.3;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom:0;
   padding: 0 5px;
 }
@@ -219,7 +214,7 @@ background-size: 100px 100px;
 {
     position: absolute;
     padding: 11px 10px;
-    font-size: 14px;   
+    font-size: 1rem;   
     letter-spacing: 1px;
     text-decoration: none;
     overflow: hidden;
@@ -341,13 +336,16 @@ background-size: 100px 100px;
   text-align: center;
   flex-direction: column;
 }
+.core-values-title h2{
+  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif
+}
 .core-values-title span{
   font-weight: 800;   
   color: #ff4500;
 }
 .core-values-title p{
   color:#2B354F;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 .core-val{
   background-color: rgba(0, 123, 255,0.5);
@@ -395,7 +393,7 @@ background-color: rgba(0, 165, 79,0.2);
 .main-service { 
   padding: 20px;
   margin: 10px 10px;   
-  background-color: #f9fbfd;
+  background-color: #fff;
   box-shadow: 0 0 35px rgba(140, 152, 164, 0.125) !important;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -424,7 +422,7 @@ border-top: 4px solid #28a745;
 position: relative;
 z-index: 1;
 }
-.main-service::after {
+/* .main-service::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -438,7 +436,7 @@ z-index: 1;
 }
 .main-service:hover::after {
   transform: scaleY(1);
-}
+} */
 /* :hover .service-info{
   color: #ffffff !important;
 } */
@@ -458,7 +456,7 @@ border-top:4px solid #6610f2;
 border-top: 4px solid #17a2b8;
 }
 
-.serv-1::after {
+/* .serv-1::after {
   background:rgba(40, 167, 69,0.4);
 }
 .serv-2::after {
@@ -475,7 +473,7 @@ border-top: 4px solid #17a2b8;
 }
 .serv-6::after {
   background:rgba(23, 162, 184,0.4);
-}
+} */
 .serv-1:hover::after {
   transform: scaleY(1);
 }
@@ -526,7 +524,8 @@ border-top: 4px solid #17a2b8;
  text-decoration-color: center;
 }
 .ind-title,.service-title{
-  color:#2B354F;
+  /* color:#2B354F; */
+  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif
 }
 .ind-info,.service-info{
   color: #384C74;
