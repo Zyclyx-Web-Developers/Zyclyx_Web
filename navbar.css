@@ -2,7 +2,7 @@
 ======= NAVIGATION BAR =======
 */
  
-
+/* 
 .navbar{
   transition: all 0.4s ease-in;
   background: rgb(27, 43, 48,0.9) !important;
@@ -11,8 +11,7 @@
   margin-bottom: 75px !important;
 }
 .navbar-light{ 
-  background: rgb(27, 43, 48,0.1) !important; 
-  /* margin-bottom: 70px !important;  */
+  background: rgb(27, 43, 48,0.1) !important;    
 }
 .navbar-dark{
   background: rgb(27, 43, 48,0.95) !important; 
@@ -30,8 +29,7 @@
   color: #ffffff !important;
 }
 .master-nav .nav-link:hover {
-  color: #ffffff !important;
-  /* font-weight: 600; */
+  color: #ffffff !important;   
 }
 .master-nav .nav-link:focus {
   color: #ffffff !important;
@@ -44,8 +42,7 @@
   display: block;
 }
 
-.master-nav .dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
+.master-nav .dropdown > .dropdown-toggle:active {   
   pointer-events: none;
 }
 
@@ -72,6 +69,81 @@
        box-shadow: 0 12px 6px -6px rgba(0, 0, 0,0.2),0 -2px 6px -6px #335eea;
        
   
+} */
+
+.navbar{
+  padding: 0;
+}
+.site-navbar .nav-link{
+  color: #ffffff !important;
+}
+.navbar-brand img{
+  max-width: 200px;
+  height: auto;
+  margin-left:10px;
+}
+.dropdown-menu{
+  margin-top: 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1) !important;  
+  border: 2px solid #000;
+}
+.dropdown-menu .dropdown-item{
+  transition: all 0.1s ease;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0,0.02);
+  color: #333;
+}
+.dropdown-menu .dropdown-item:hover{     
+  /* transform: scale(1.01); */
+  font-weight: 550;
+  color: #000;
+}
+/* show dropdown menu on hover */
+.site-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.site-navbar .dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+/* end - show drop downmenu on hover */
+
+/* drop down menu width */
+@media (min-width: 992px) {
+  .dropdown-menu{
+      /* transform: translate(50%,0); */
+      border: transparent;
+  }
+  .dropdown-two-col{
+      min-width: 24rem;
+      transform: translate(50%,0);        
+  }
+  .dropdown-three-col{
+      min-width: 50rem;
+      transform: translate(30%,0);
+  }
+  .dropdown:hover::after{
+      position: absolute;
+       left: 30%;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      content: '';
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 12px solid #fff;
+      transition: all 0.2s ease 0.2s;     
+  }
+}
+/* animation for navbar dropdown */
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
 }
 /* 
 ======= END - NAVIGATION BAR =======
