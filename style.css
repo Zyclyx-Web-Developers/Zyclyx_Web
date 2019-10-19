@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "neuropolitical";
+  src: url("fonts/neuropolitical_rg-webfont.ttf");
+  src: url("fonts/neuropolitical_rg-webfont.woff") format("woff"),
+  url("fonts/neuropolitical_rg-webfont.woff2") format("opentype"),
+  url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+  }
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 /*Global styles*/
