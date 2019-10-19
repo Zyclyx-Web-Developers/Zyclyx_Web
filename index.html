@@ -22,9 +22,9 @@
   <!-- Custom styles -->
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="./navbar.css">
-<link rel="stylesheet" href="Footer.css">
+  <link rel="stylesheet" href="Footer.css">
   <link rel="stylesheet" href="./animations.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="text-center">
@@ -33,100 +33,119 @@
       ====== Navbar ======
     -->
   <header class="main-navbar" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light" id="navbarMaster">
-      <div class="container">
-        <a class="navbar-brand logo" href="#">
-          <img src="./images/logo-white.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light site-navbar" id="navbarMaster">
+      <a class="navbar-brand" href="#"><img src="./images/logo-white.png" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-master">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <!--  home -->
+          <li class="nav-item active mx-2 py-3">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
 
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <!-- services -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-              <div class="dropdown-menu animate slideIn p-2 p-md-3" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./Application-Development.html">Application
-                  Development</a>
-                <a class="dropdown-item" href="./Web-Development.html">Web Development</a>
-                <a class="dropdown-item" href="./Digital-Marketting.html">Digital Marketing</a>
-                <a class="dropdown-item" href="./Product-Engineering.html">Product Engineering /
-                  Development</a>
-                <a class="dropdown-item" href="./Consulting.html">IT Consulting</a>
-              </div>
-            </li>
-            <!-- END - services -->
+          <!-- services -->
+          <li class="nav-item dropdown mx-2 py-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-three-col animate slideIn30"
+              aria-labelledby="navbarDropdownMenuLink">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <a class="dropdown-item py-2 my-1" href="#">Artificial Intelligence</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Robotic Process Automation</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Blockchain</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Internet Of Things</a>
+                  <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->
 
-            <!-- solutions -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Solutions
-              </a>
-              <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
-                <div class="row">
-                  <div class="col-md-6 col-12">
-                    <a class="dropdown-item" href="./AI.html">AI / ML</a>
-                    <a class="dropdown-item" href="./Bigdata.html">Big Data</a>
-                    <a class="dropdown-item" href="./Devops.html">DevOps</a>
-                    <a class="dropdown-item" href="./RPA.html">RPA</a>
-                    <a class="dropdown-item" href="./Blockchain.html">Block Chain</a>
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <a class="dropdown-item" href="./Cloud.html">Cloud Computing</a>
-                    <a class="dropdown-item" href="./IoT.html">IOT</a>
-                    <a class="dropdown-item" href="./Info-Security.html">Information Security</a>
-                    <a class="dropdown-item" href="./Busines-Automation.html">Business
-                      Automation</a>
-                  </div>
+                  <div class="dropdown-divider py-2"></div>
+
+                  <a class="dropdown-item py-2 my-1" href="#">IT Service Management</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Cloud Hosting Services</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Outsourcing Services</a>
+
+                  <div class="dropdown-divider py-2"></div>
+                  <a class="dropdown-item py-2 my-1" href="#">Application Development</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Product Engineering</a>
+
+                </div>
+                <div class="col-12 col-md-4">
+                  <a class="dropdown-item py-2 my-1" href="#">Cyber Security Services</a>
+                  <a class="dropdown-item py-2 my-1" href="#">IT Security Services</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Information Security Services</a>
+                  <a class="dropdown-item py-2 my-1" href="#">End User Computing</a>
+
+                  <div class="dropdown-divider py-2"></div>
+
+                  <a class="dropdown-item py-2 my-1" href="#">Data Center Transformation</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Data Center Services</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Network Operation Center</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Security Operation Center</a>
+                  <div class="dropdown-divider text-center"></div>
+                  <a class="dropdown-item py-2 my-1" href="#">Digital Marketing</a>
+                </div>
+                <div class="col-12 col-md-4">
+                  <a class="dropdown-item py-2 my-1" href="#">Data Warehousing</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Data Integration</a>
+                  <!-- data governace heading-->
+                  <a class="dropdown-item py-2 my-1" href="#">Data Governance</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Data Quality</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Metadata Management</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Master Data Management</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item py-2 my-1" href="#">Big Data</a>
+                  <!-- heading BI solution service -->
+                  <a class="dropdown-item py-2 my-1" href="#">Data Visualization</a>
+                  <a class="dropdown-item py-2 my-1" href="#">Predictive Analysis</a>
                 </div>
               </div>
-            </li>
-            <!-- END solutions -->
+            </div>
+          </li>
 
-            <!-- Industries -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Industries
-              </a>
-              <div class="dropdown-menu animate slideIn dropdown-two-col p-2 p-md-3" aria-labelledby="navbarDropdown">
+          <!-- industries -->
+          <li class="nav-item dropdown mx-2 py-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Industries
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-two-col animate slideIn50"
+              aria-labelledby="navbarDropdownMenuLink">
+              <div class="row">
                 <div class="row">
                   <div class="col-md-6 col-12">
-                    <a class="dropdown-item" href="./Retail.html">Retail</a>
-                    <a class="dropdown-item" href="./Telecom.html">Telecom</a>
-                    <a class="dropdown-item" href="./Banking & Finance.html">Banking & Finance</a>
+                    <a class="dropdown-item m-2 py-2" href="./Retail.html">Retail</a>
+                    <a class="dropdown-item m-2 py-2" href="./Telecom.html">Telecom</a>
+                    <a class="dropdown-item m-2 py-2" href="./Banking & Finance.html">Banking & Finance</a>
                   </div>
                   <div class="col-md-6 col-12">
-                    <a class="dropdown-item" href="./Lagistics.html">Logistics</a>
-                    <a class="dropdown-item" href="./Legal.html">Legal</a>
-                    <a class="dropdown-item" href="./Health-Care.html">Health Care</a>
+                    <a class="dropdown-item m-2 py-2" href="./Lagistics.html">Logistics</a>
+                    <a class="dropdown-item m-2 py-2" href="./Legal.html">Legal</a>
+                    <a class="dropdown-item m-2 py-2" href="./Health-Care.html">Health Care</a>
                   </div>
                 </div>
-              </div>
-            </li>
-            <!-- END - Industries -->
 
-            <li class="nav-item active">
-              <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./careers.html">Careers <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./contactus.html">Contact<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
+              </div>
+          </li>
+
+          <!-- about us -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+
+          <!-- careers -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+
+          <!-- contact us -->
+          <li class="nav-item mx-2 py-3">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -154,13 +173,13 @@
       </div>
     </div>
   </section> -->
- 
+
   <section class="v-header v-container" id="videoContainer">
     <div class="fullscreen-video-wrap">
       <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
       <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
       <video src="./images/Welcome - 24829.mp4" autoplay loop muted>
-    </video>
+      </video>
     </div>
     <div class="header-overlay"></div>
     <div class="header-content text-md-center">
@@ -173,34 +192,27 @@
   <!-- Homepage End -->
 
   <!-- About zyclyx -->
-  <section class="container-fluid py-5 welcome d-flex justify-content-center align-items-center welcome-site">
-    <div class=" container row">
-      <div class="col-12 col-md-7 mx-auto p-3 text-center">
-        <!-- <h2 class="p-2 text-dark">Why are you in great company with us?</h2>
-        <p class="welcome-msg">ZYCLYX is a customer focused and technology-driven consulting firm providing
-          IT
-          Consulting,
-          staffing, product engineering and enterprise application development services that help our customers in
-          crafting value for their software development results.</p>
-        <p class="text-center mt-2">
-          <a href="aboutus.html" class="btn btn-primary welcome-btn font-weight-bold">Know More
-            <span></span>
-	          <span></span>
-	          <span></span>
-          	<span></span>
-          	<span></span>
-          	<span></span>
-          </a>
-        </p> -->
-        <h1>Welcome to Zyclyx</h1>
-        <p>Automate any process to support growth, enable innovation and cut cost across your organisation</p>
-        <a href="./aboutus.html" class="btn btn-secondary">Know More</a>
+  <section class="container-fluid welcome welcome-site pt-5">
+    <div class=" container row mx-auto py-3">
+      <div class="col-12 col-md-7 mx-auto p-3 text-center d-flex flex-column justify-content-center align-items-center">
+        <h2>Welcome to ZYCLYX</h2>
+        <p class="text-2">Automate any process to support growth, enable innovation and cut cost across your organisation</p>
+        <p class="text-right align-self-end"><a href="./aboutus.html" class="btn btn-link">Know More</a></p>
       </div>
-      <div col-12 col-md-3>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="100" height="100"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ec892f"><path d="M138.46,0c-1.19594,-0.04031 -2.35156,0.5375 -3.01,1.6125l-5.4825,8.9225c-1.85437,-0.14781 -3.64156,-0.16125 -5.4825,0l-5.59,-8.815c-0.90031,-1.42437 -2.75469,-1.935 -4.3,-1.29l-9.675,4.085c-1.53187,0.645 -2.41875,2.35156 -2.0425,3.9775l2.365,10.2125c-1.42437,1.22281 -2.76812,2.53969 -3.9775,3.9775l-10.2125,-2.365c-1.66625,-0.37625 -3.23844,0.59125 -3.87,2.15l-3.9775,9.7825c-0.63156,1.54531 -0.12094,3.30563 1.29,4.1925l8.815,5.4825c-0.14781,1.86781 -0.06719,3.82969 0.1075,5.6975l-8.815,5.4825c-1.42437,0.90031 -1.94844,2.75469 -1.29,4.3l4.085,9.675c0.645,1.53188 2.24406,2.43219 3.87,2.0425l10.2125,-2.2575c1.20938,1.41094 2.53969,2.67406 3.9775,3.87l-2.2575,10.2125c-0.36281,1.63938 0.48375,3.34594 2.0425,3.9775l9.7825,3.9775c0.41656,0.17469 0.86,0.215 1.29,0.215c1.15563,0 2.2575,-0.59125 2.9025,-1.6125l5.6975,-8.9225c1.86781,0.13438 3.74906,0.06719 5.59,-0.1075l5.6975,8.9225c0.91375,1.3975 2.66063,1.935 4.1925,1.29l9.7825,-4.085c1.55875,-0.65844 2.32469,-2.33812 1.935,-3.9775l-2.4725,-10.2125c1.38406,-1.19594 2.6875,-2.56656 3.87,-3.9775l10.32,2.2575c1.66625,0.36281 3.34594,-0.49719 3.9775,-2.0425l3.9775,-9.7825c0.63156,-1.57219 0.04031,-3.42656 -1.3975,-4.3l-9.03,-5.4825c0.13438,-1.8275 0.16125,-3.655 0,-5.4825l8.815,-5.805c1.3975,-0.90031 2.0425,-2.66062 1.3975,-4.1925l-4.1925,-9.675c-0.645,-1.54531 -2.31125,-2.43219 -3.9775,-2.0425l-10.2125,2.4725c-1.20937,-1.41094 -2.44562,-2.67406 -3.87,-3.87l2.15,-10.32c0.34938,-1.63937 -0.49719,-3.34594 -2.0425,-3.9775l-9.7825,-3.9775c-0.38969,-0.16125 -0.77937,-0.20156 -1.1825,-0.215zM127.28,30.53c1.8275,-0.02687 3.68188,0.24188 5.4825,0.9675c7.2025,2.92938 10.66938,11.18 7.74,18.3825c-2.92937,7.2025 -11.18,10.66938 -18.3825,7.74c-7.2025,-2.92937 -10.66937,-11.18 -7.74,-18.3825c2.20375,-5.40187 7.4175,-8.62687 12.9,-8.7075zM49.9875,58.48c-1.67969,0 -3.17125,1.23625 -3.44,2.9025l-2.15,13.545c-2.55312,0.77938 -5.07937,1.77375 -7.4175,3.01l-11.18,-7.955c-1.37062,-0.98094 -3.21156,-0.86 -4.4075,0.3225l-9.46,9.46c-1.1825,1.1825 -1.27656,3.03688 -0.3225,4.4075l7.8475,11.2875c-1.26312,2.365 -2.32469,4.85094 -3.1175,7.4175l-13.4375,2.15c-1.66625,0.28219 -2.9025,1.76031 -2.9025,3.44v13.33c0,1.66625 1.15563,3.14438 2.795,3.44l13.545,2.365c0.79281,2.56656 1.85438,5.0525 3.1175,7.4175l-7.955,11.18c-0.98094,1.37063 -0.87344,3.21156 0.3225,4.4075l9.46,9.46c1.1825,1.1825 3.03688,1.27656 4.4075,0.3225l11.2875,-7.8475c2.35156,1.24969 4.75688,2.23063 7.31,3.01l2.2575,13.545c0.26875,1.65281 1.76031,2.9025 3.44,2.9025h13.33c1.66625,0 3.14438,-1.15562 3.44,-2.795l2.365,-13.76c2.55313,-0.79281 4.97188,-1.76031 7.31,-3.01l11.395,7.955c1.37063,0.95406 3.225,0.86 4.4075,-0.3225l9.46,-9.46c1.19594,-1.19594 1.30344,-3.14437 0.3225,-4.515l-8.0625,-11.18c1.23625,-2.33812 2.23063,-4.79719 3.01,-7.31l13.76,-2.365c1.65281,-0.29562 2.795,-1.77375 2.795,-3.44v-13.33c0,-1.67969 -1.23625,-3.06375 -2.9025,-3.3325l-13.6525,-2.2575c-0.77937,-2.51281 -1.77375,-4.97187 -3.01,-7.31l7.955,-11.395c0.95406,-1.37062 0.86,-3.225 -0.3225,-4.4075l-9.46,-9.46c-1.19594,-1.19594 -3.03687,-1.30344 -4.4075,-0.3225l-11.2875,8.0625c-2.35156,-1.24969 -4.77031,-2.23062 -7.31,-3.01l-2.365,-13.6525c-0.28219,-1.65281 -1.77375,-2.9025 -3.44,-2.9025zM56.76,97.5025c9.82281,0 17.7375,7.91469 17.7375,17.7375c0,9.82281 -7.92812,17.7375 -17.7375,17.7375c-9.80937,0 -17.7375,-7.91469 -17.7375,-17.7375c0,-9.82281 7.91469,-17.7375 17.7375,-17.7375z"></path></g></g></svg>
+      <div class="col-12 col-md-3">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#ec892f">
+              <path
+                d="M138.46,0c-1.19594,-0.04031 -2.35156,0.5375 -3.01,1.6125l-5.4825,8.9225c-1.85437,-0.14781 -3.64156,-0.16125 -5.4825,0l-5.59,-8.815c-0.90031,-1.42437 -2.75469,-1.935 -4.3,-1.29l-9.675,4.085c-1.53187,0.645 -2.41875,2.35156 -2.0425,3.9775l2.365,10.2125c-1.42437,1.22281 -2.76812,2.53969 -3.9775,3.9775l-10.2125,-2.365c-1.66625,-0.37625 -3.23844,0.59125 -3.87,2.15l-3.9775,9.7825c-0.63156,1.54531 -0.12094,3.30563 1.29,4.1925l8.815,5.4825c-0.14781,1.86781 -0.06719,3.82969 0.1075,5.6975l-8.815,5.4825c-1.42437,0.90031 -1.94844,2.75469 -1.29,4.3l4.085,9.675c0.645,1.53188 2.24406,2.43219 3.87,2.0425l10.2125,-2.2575c1.20938,1.41094 2.53969,2.67406 3.9775,3.87l-2.2575,10.2125c-0.36281,1.63938 0.48375,3.34594 2.0425,3.9775l9.7825,3.9775c0.41656,0.17469 0.86,0.215 1.29,0.215c1.15563,0 2.2575,-0.59125 2.9025,-1.6125l5.6975,-8.9225c1.86781,0.13438 3.74906,0.06719 5.59,-0.1075l5.6975,8.9225c0.91375,1.3975 2.66063,1.935 4.1925,1.29l9.7825,-4.085c1.55875,-0.65844 2.32469,-2.33812 1.935,-3.9775l-2.4725,-10.2125c1.38406,-1.19594 2.6875,-2.56656 3.87,-3.9775l10.32,2.2575c1.66625,0.36281 3.34594,-0.49719 3.9775,-2.0425l3.9775,-9.7825c0.63156,-1.57219 0.04031,-3.42656 -1.3975,-4.3l-9.03,-5.4825c0.13438,-1.8275 0.16125,-3.655 0,-5.4825l8.815,-5.805c1.3975,-0.90031 2.0425,-2.66062 1.3975,-4.1925l-4.1925,-9.675c-0.645,-1.54531 -2.31125,-2.43219 -3.9775,-2.0425l-10.2125,2.4725c-1.20937,-1.41094 -2.44562,-2.67406 -3.87,-3.87l2.15,-10.32c0.34938,-1.63937 -0.49719,-3.34594 -2.0425,-3.9775l-9.7825,-3.9775c-0.38969,-0.16125 -0.77937,-0.20156 -1.1825,-0.215zM127.28,30.53c1.8275,-0.02687 3.68188,0.24188 5.4825,0.9675c7.2025,2.92938 10.66938,11.18 7.74,18.3825c-2.92937,7.2025 -11.18,10.66938 -18.3825,7.74c-7.2025,-2.92937 -10.66937,-11.18 -7.74,-18.3825c2.20375,-5.40187 7.4175,-8.62687 12.9,-8.7075zM49.9875,58.48c-1.67969,0 -3.17125,1.23625 -3.44,2.9025l-2.15,13.545c-2.55312,0.77938 -5.07937,1.77375 -7.4175,3.01l-11.18,-7.955c-1.37062,-0.98094 -3.21156,-0.86 -4.4075,0.3225l-9.46,9.46c-1.1825,1.1825 -1.27656,3.03688 -0.3225,4.4075l7.8475,11.2875c-1.26312,2.365 -2.32469,4.85094 -3.1175,7.4175l-13.4375,2.15c-1.66625,0.28219 -2.9025,1.76031 -2.9025,3.44v13.33c0,1.66625 1.15563,3.14438 2.795,3.44l13.545,2.365c0.79281,2.56656 1.85438,5.0525 3.1175,7.4175l-7.955,11.18c-0.98094,1.37063 -0.87344,3.21156 0.3225,4.4075l9.46,9.46c1.1825,1.1825 3.03688,1.27656 4.4075,0.3225l11.2875,-7.8475c2.35156,1.24969 4.75688,2.23063 7.31,3.01l2.2575,13.545c0.26875,1.65281 1.76031,2.9025 3.44,2.9025h13.33c1.66625,0 3.14438,-1.15562 3.44,-2.795l2.365,-13.76c2.55313,-0.79281 4.97188,-1.76031 7.31,-3.01l11.395,7.955c1.37063,0.95406 3.225,0.86 4.4075,-0.3225l9.46,-9.46c1.19594,-1.19594 1.30344,-3.14437 0.3225,-4.515l-8.0625,-11.18c1.23625,-2.33812 2.23063,-4.79719 3.01,-7.31l13.76,-2.365c1.65281,-0.29562 2.795,-1.77375 2.795,-3.44v-13.33c0,-1.67969 -1.23625,-3.06375 -2.9025,-3.3325l-13.6525,-2.2575c-0.77937,-2.51281 -1.77375,-4.97187 -3.01,-7.31l7.955,-11.395c0.95406,-1.37062 0.86,-3.225 -0.3225,-4.4075l-9.46,-9.46c-1.19594,-1.19594 -3.03687,-1.30344 -4.4075,-0.3225l-11.2875,8.0625c-2.35156,-1.24969 -4.77031,-2.23062 -7.31,-3.01l-2.365,-13.6525c-0.28219,-1.65281 -1.77375,-2.9025 -3.44,-2.9025zM56.76,97.5025c9.82281,0 17.7375,7.91469 17.7375,17.7375c0,9.82281 -7.92812,17.7375 -17.7375,17.7375c-9.80937,0 -17.7375,-7.91469 -17.7375,-17.7375c0,-9.82281 7.91469,-17.7375 17.7375,-17.7375z">
+              </path>
+            </g>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
@@ -223,7 +235,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
               ]" data-parent="#SVGMainHero">
               <style type="text/css">
                 .main-hero-0 {
-                  fill:rgba(0, 0, 0, 0.059);
+                  fill: rgba(0, 0, 0, 0.059);
                 }
               </style>
 
@@ -253,7 +265,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         <div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
           <div class="row core-values-items">
             <!-- core value - 1 -->
-            <div class="col-4 my-3 val-1 animated slidInUp delay-2s">
+            <div class="col-6 col-md-4 my-3 val-1 animated slidInUp delay-2s">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
@@ -274,7 +286,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
 
             <!-- core value - 2 -->
-            <div class="col-4 my-3 val-2">
+            <div class="col-6 col-md-4 my-3 val-2">
               <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -293,7 +305,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
 
             <!-- core value - 3 -->
-            <div class="col-4 my-3 val-3">
+            <div class="col-6 col-md-4 my-3 val-3">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
@@ -314,7 +326,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
 
             <!-- core value - 4 -->
-            <div class="col-4 my-3 val-4">
+            <div class="col-6 col-md-4 my-3 val-4">
               <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -333,7 +345,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
 
             <!-- core value - 5 -->
-            <div class="col-4 my-3 val-5">
+            <div class="col-6 col-md-4 my-3 val-5">
               <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -352,7 +364,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
 
             <!-- core value - 6 -->
-            <div class="col-4 my-3 val-6">
+            <div class="col-6 col-md-4 my-3 val-6">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
                   style=" fill:#000000;">
@@ -392,13 +404,12 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </svg>
     </div> -->
     <!-- END OF WAVE EFFECT -->
-    <p class="service-caption">What we do</p>
+    <!-- <p class="service-caption">What we do</p> -->
     <h2 class="service-title">We Provide Wide Range Business Services</h2>
     <p class="pb-4 service-info">Whatever we do, We do with your end user in mind</p>
     <div class="row text-left service-row">
       <!-- Service - 1 -->
-      <div class="col-md-3 main-service serv-1 m-4" data-aos="fade-down"data-aos-delay="100"
-      data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-1 m-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
         <!-- icon -->
         <p class="service-icon my-2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
             viewBox="0 0 172 172" style=" fill:#000000;">
@@ -420,8 +431,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
 
       <!-- Service - 2 -->
-      <div class="col-md-3 main-service serv-2 m-4" data-aos="fade-down" data-aos-delay="500"
-      data-aos-duration="5000">
+      <div class="col-md-3 main-service serv-2 m-4" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="5000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -442,8 +452,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
 
       <!-- service - 3 -->
-      <div class="col-md-3 main-service serv-3 m-4" data-aos="fade-down" data-aos-delay="800"
-      data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-3 m-4" data-aos="zoom-in-right" data-aos-delay="800" data-aos-duration="8000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -464,8 +473,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
 
       <!-- Service - 4 -->
-      <div class="col-md-3 main-service serv-4 m-4" data-aos="fade-up" data-aos-delay="100"
-      data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-4 m-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -486,8 +494,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
 
       <!-- Service - 5 -->
-      <div class="col-md-3 main-service serv-5 m-4" data-aos="fade-up"data-aos-delay="500"
-      data-aos-duration="5000">
+      <div class="col-md-3 main-service serv-5 m-4" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="5000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -507,8 +514,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
 
       <!-- Service - 6 -->
-      <div class="col-md-3 main-service serv-6 m-4" data-aos="fade-up"data-aos-delay="800"
-      data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-6 m-4" data-aos="zoom-in-right" data-aos-delay="800" data-aos-duration="8000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -541,7 +547,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <div class="container-fluid py-5">
     <div class="row">
       <div class="col-7 mx-auto">
-        <p class="ind-caption">Industries We Serve</p>
+        <!-- <p class="ind-caption">Industries We Serve</p> -->
         <h2 class="ind-title">Best Practices from Industry Experts</h2>
         <p class="ind-info">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
       </div>
@@ -550,11 +556,10 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           <!-- <div class="col-12 col-md-9">
             <div class="row"> -->
           <!-- Industry - 1 -->
-         
+
           <a href="./Retail.html"
-            class="col m-2 py-2 industry ind-1 d-flex flex-column justify-content-center align-items-center" 
-            data-aos="zoom-in" data-aos-delay="100"
-            data-aos-duration="1000">
+            class="col m-2 py-2 industry ind-1 d-flex flex-column justify-content-center align-items-center"
+            data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -575,14 +580,11 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           <!-- Industry - 2 -->
           <a href="./Telecom.html"
             class="col m-2 py-4 industry ind-2 d-flex flex-column justify-content-center align-items-center"
-             data-aos="zoom-in" data-aos-delay="100"
-            data-aos-duration="1000">
-            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                >
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                  style="mix-blend-mode: normal"> 
+            data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -596,9 +598,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
           <!-- Industry - 3 -->
           <a href="./Banking & Finance.html"
-            class="col m-2 py-4 industry ind-3 d-flex flex-column justify-content-center align-items-center" 
-            data-aos="zoom-in"data-aos-delay="500"
-            data-aos-duration="5000">
+            class="col m-2 py-4 industry ind-3 d-flex flex-column justify-content-center align-items-center"
+            data-aos="zoom-in" data-aos-delay="500" data-aos-duration="5000">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -618,9 +619,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
           <!-- Industry - 4 -->
           <a href="./Lagistics.html"
-            class="col m-2 py-4 industry ind-4 d-flex flex-column justify-content-center align-items-center" 
-            data-aos="zoom-in" data-aos-delay="700"
-            data-aos-duration="7000">
+            class="col m-2 py-4 industry ind-4 d-flex flex-column justify-content-center align-items-center"
+            data-aos="zoom-in" data-aos-delay="700" data-aos-duration="7000">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -640,9 +640,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
           <!-- Industry - 5 -->
           <a href="./Legal.html"
-            class="col m-2 py-4 industry ind-5 d-flex flex-column justify-content-center align-items-center" 
-            data-aos="zoom-in" data-aos-delay="900"
-            data-aos-duration="9000">
+            class="col m-2 py-4 industry ind-5 d-flex flex-column justify-content-center align-items-center"
+            data-aos="zoom-in" data-aos-delay="900" data-aos-duration="9000">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -662,9 +661,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
           <!-- Industry - 6 -->
           <a href="./Health-Care.html"
-            class="col m-2 py-4 industry ind-6 d-flex flex-column justify-content-center align-items-center" 
-            data-aos="zoom-in" data-aos-delay="1100"
-            data-aos-duration="11000">
+            class="col m-2 py-4 industry ind-6 d-flex flex-column justify-content-center align-items-center"
+            data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="11000">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -698,95 +696,100 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     ====== OUR PROJECTS ======
   -->
   <section class="our-projects container-fluid py-5 my-3">
- 
     <div class="projects-inner">
       <!-- TITLE -->
-    <h2 class="pt-2">Our Projects</h2>
-    <p class="mb-5">Always looking for better ways to do things, innovate and help people achieve their goals.</p>
+      <h2 class="pt-2 title-2">Our Projects</h2>
+      <p class="mb-5 text-2">Always looking for better ways to do things, innovate and help people achieve their goals.</p>
       <!-- OUR PROJECTS SLIDER  -->
       <div class="row">
-          <div class="col-md-9 col-12 mx-auto">
-              <div id="mainCarousel" class="carousel slide carousel-fade s-carousel" data-ride="carousel">
-                  <!-- <ol class="carousel-indicators">
+        <div class="col-md-9 col-12 mx-auto">
+          <div id="mainCarousel" class="carousel slide carousel-fade s-carousel" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
                     <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#mainCarousel" data-slide-to="1"></li>
                     <li data-target="#mainCarousel" data-slide-to="2"></li>
                   </ol> -->
-          
-                  <div class="carousel-inner container py-4">
-          
-                    <!-- PROJECT - 1 -->
-                    <div class="carousel-item s-story py-4 active ">
-                      <div class="mask flex-center">
-                        <div class="container">
-                          <div class="row  justify-content-center align-items-center text-center">
-                            <div class="col-md-5 col-12 image-box p-0">
-                              <img class="d-block" src="./images/3a836b7deabaeba437518ae316711908.jpg" alt="First slide">
-                            </div>
-                            <div class="col-md-6 col-12 text-box">
-                              <h3 class="my-3">Project - 1 Lorem ipsum dolor </h3>
-                              <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos obcaecati, magni eos doloribus
-                                iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex dignissimos,
-                                amet nostrum aliquam.</p>
-                                <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                            </div>
-                          </div>
-                        </div>
+
+            <div class="carousel-inner container py-4">
+
+              <!-- PROJECT - 1 -->
+              <div class="carousel-item s-story py-4 active ">
+                <div class="mask flex-center">
+                  <div class="container">
+                    <div class="row  justify-content-center align-items-center text-center">
+                      <div class="col-md-5 col-12 image-box p-0">
+                        <img class="d-block" src="./images/3a836b7deabaeba437518ae316711908.jpg" alt="First slide">
+                      </div>
+                      <div class="col-md-6 col-12 text-box">
+                        <h3 class="my-3">Project - 1 Lorem ipsum dolor </h3>
+                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                          obcaecati, magni eos doloribus
+                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
+                          dignissimos,
+                          amet nostrum aliquam.</p>
+                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
                       </div>
                     </div>
-                    <!-- END PROJECT - 1  -->
-          
-                    <!-- PROJECT - 2 -->
-                    <div class="carousel-item py-4 s-story">
-                      <div class="mask flex-center">
-                        <div class="container">
-                          <div class="row align-items-center justify-content-center text-center p-0">
-                            <div class="col-md-6 col-12 image-box p-0">
-                              <img class="d-block" src="./images/7aa5717f282eb5e8bf4a60c2ae3f5981.jpg" alt="Second slide">
-                            </div>
-          
-                            <div class="col-md-6 col-12 text-box">
-                              <h3 class="my-3">Project - 2 Lorem ipsum dolor</h3>
-                              <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos obcaecati, magni eos doloribus
-                                  iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex dignissimos,
-                                  amet nostrum aliquam.</p>
-                                  <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--END PROJECT - 2  -->
-          
-                    <!-- PROJECT - 3  -->
-                    <div class="carousel-item py-4">
-                      <div class="mask flex-center">
-                        <div class="container">
-                          <div class="row align-items-center justify-content-center text-center">
-                            <div class="col-md-6 col-12 image-box p-0">
-                              <img class="d-block" src="./images/8e3387a02774b6c21e6cbde2d5cfe052.jpg" alt="Third slide">
-                            </div>
-                            <div class="col-md-6 col-12 order-md-1 order-2 text-box">
-                              <h3 class="my-3">Project - 3 Lorem ipsum dolor</h3>
-                              <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos obcaecati, magni eos doloribus
-                                  iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex dignissimos,
-                                  amet nostrum aliquam.</p>
-                                  <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--END PROJECT - 3 -->
                   </div>
-                  <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev"> <span
-                      class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-                  <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next"> <span
-                      class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-               </div>
+                </div>
+              </div>
+              <!-- END PROJECT - 1  -->
+
+              <!-- PROJECT - 2 -->
+              <div class="carousel-item py-4 s-story">
+                <div class="mask flex-center">
+                  <div class="container">
+                    <div class="row align-items-center justify-content-center text-center p-0">
+                      <div class="col-md-6 col-12 image-box p-0">
+                        <img class="d-block" src="./images/7aa5717f282eb5e8bf4a60c2ae3f5981.jpg" alt="Second slide">
+                      </div>
+
+                      <div class="col-md-6 col-12 text-box">
+                        <h3 class="my-3">Project - 2 Lorem ipsum dolor</h3>
+                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                          obcaecati, magni eos doloribus
+                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
+                          dignissimos,
+                          amet nostrum aliquam.</p>
+                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END PROJECT - 2  -->
+
+              <!-- PROJECT - 3  -->
+              <div class="carousel-item py-4">
+                <div class="mask flex-center">
+                  <div class="container">
+                    <div class="row align-items-center justify-content-center text-center">
+                      <div class="col-md-6 col-12 image-box p-0">
+                        <img class="d-block" src="./images/8e3387a02774b6c21e6cbde2d5cfe052.jpg" alt="Third slide">
+                      </div>
+                      <div class="col-md-6 col-12 order-md-1 order-2 text-box">
+                        <h3 class="my-3">Project - 3 Lorem ipsum dolor</h3>
+                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                          obcaecati, magni eos doloribus
+                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
+                          dignissimos,
+                          amet nostrum aliquam.</p>
+                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END PROJECT - 3 -->
+            </div>
+            <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev"> <span
+                class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+            <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next"> <span
+                class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
           </div>
+        </div>
       </div>
-      
+
     </div>
     </div>
 
@@ -799,7 +802,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     ========= END - OUR SUCCESS STORIES =========
    -->
 
-<!-- 
+  <!-- 
   ======== TESTIMONIALS =======
  -->
  <div class="testimonial-section">
@@ -843,6 +846,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           <div class="test-name">
             <span>Client3</span>
             @client3
+ 
           </div>
         </div>
 
@@ -850,71 +854,74 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet temporibus minus nam, sed quaerat odio iste ipsa autem suscipit, magnam mollitia iusto enim praesentium possimus modi tenetur neque, molestiae ratione.
         </p>
       </div>
+
     </div>
   </div>
+ 
 </div>
 
 <!-- 
+ 
   ======== END TESTIMONIALS =======
  -->
-<!-- 
+  <!-- 
   ======== BLOG POSTS =======
  -->
-<!-- details card section starts from here -->
-<section class="details-card py-5">
-  <h1 class="">Latest From Blog</h1>
+  <!-- details card section starts from here -->
+  <section class="details-card py-5">
+    <h2 class="title-2">Latest From Blog</h1>
     <div class="container p-4">
-        <div class="row">
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"
-            data-aos-duration="1000">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/nature" alt="">
-                        <!-- <span><h4>heading</h4></span> -->
-                    </div>
-                    <div class="card-desc">
-                        <h3 class="">Heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn btn-info px-4">Read</a>   
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://placeimg.com/380/230/nature" alt="">
+              <!-- <span><h4>heading</h4></span> -->
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"
-            data-aos-duration="1000">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/animals" alt="">
-                        <!-- <span><h4>heading2</h4></span> -->
-                    </div>
-                    <div class="card-desc">
-                        <h3>Heading2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn btn-info px-4">Read</a>   
-                    </div>
-                </div>
+            <div class="card-desc">
+              <h3 class="">Heading</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                perspiciatis
+                voluptas totam</p>
+              <a href="#" class="btn btn-info px-4">Read</a>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"
-            data-aos-duration="1000">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/tech" alt="">
-                        <!-- <span><h4>heading3</h4></span> -->
-                    </div>
-                    <div class="card-desc">
-                        <h3>Heading3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn btn-info px-4">Read</a>   
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://placeimg.com/380/230/animals" alt="">
+              <!-- <span><h4>heading2</h4></span> -->
+            </div>
+            <div class="card-desc">
+              <h3>Heading2</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                perspiciatis
+                voluptas totam</p>
+              <a href="#" class="btn btn-info px-4">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://placeimg.com/380/230/tech" alt="">
+              <!-- <span><h4>heading3</h4></span> -->
+            </div>
+            <div class="card-desc">
+              <h3>Heading3</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                perspiciatis
+                voluptas totam</p>
+              <a href="#" class="btn btn-info px-4">Read</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!-- details card section starts from here -->
- <!-- 
+  </section>
+  <!-- details card section starts from here -->
+  <!-- 
   ======== END - BLOG POSTS =======
  -->
 
@@ -1010,89 +1017,91 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   -->
   <section class="contact-banner">
     <div class="contact-inner">
-      <h3 class="h1">Let's Connect</h3>
-      <p>Share your ideas with us and we do our best to turn your ideas into reality</p>
-      <a href="./contactus.html" class="btn btn-warning btn-lg">CONTACT US</a>
+      <h2 class="title-2">Let's Connect</h3>
+      <p class="text-2">Share your ideas with us and we do our best to turn your ideas into reality</p>
+      <a href="./contactus.html" class="btn btn-secondary btn-lg">CONTACT US</a>
     </div>
   </section>
- <!-- Footer  -->
- <footer>
+  <!-- Footer  -->
+  <footer>
     <section class="container-fluid bg-dark p-4 Footer">
-        <div class="row">
-            <div class="col-md-3 text-left ">
-                <!-- <p class="text-primary pl-4 mb-0">Headquarters</p> -->
-                <img src="./docs/LOGO - White.png" width="150px" height="auto">
-                <div style="margin-left: 8px; margin-bottom: 10px;">
-                        <span class="underLine1"></span>
-                        <span class="underLine2"></span>
-                        <span class="underLine"></span>
-                    </div>
-                
-                <p class="text-light">Organically grow the holistic world view of disruptive innovation via empowerment.
-                </p>
-                <div class="text-light f-icons">
-                <p class="mb-1"><i class="fa fa-phone fa-fw pr-4"></i><span>(+91) 40 2354 9363</span></p>
-                <p class="mb-1"><i class="fa fa-envelope fa-fw pr-4"></i><span>Info@zyclyx.com</span></p>
-                <p class=""><i class="fa fa-globe fa-fw pr-4"></i><span>www.zyclyx.com</span></p>
-            </div>
-            </div>
-            <div class="col-md-3">
-                <h5 class="text-light m-0 Location">Our Location</h5>
-                <div class="mb-4">
-                        <span class="underLine1"></span>
-                        <span class="underLine2"></span>
-                        <span class="underLine"></span>
-                    </div>
-                <a href="https://www.google.co.in/maps/place/Zyclyx/@17.4248475,78.4365034,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb91f7dfab5991:0xa347a94cea37c0de!8m2!3d17.4248424!4d78.4386921?hl=en" ><img src="./images/map.png"></a>
-            </div>
-            <div class="col-md-3">
-                    
-                
-                <h5 class="text-light m-0 Location">We are located at</h5>
-                <div class="mb-4">
-                        <span class="underLine1"></span>
-                        <span class="underLine2"></span>
-                        <span class="underLine"></span>
-                    </div>
-                    <!-- <i class="fa fa-map-marker text-light d-flex justify-content-center fa-2x"></i> -->
-                <p class="text-light">
-                        3rd Floor, Pearl Enclave,
-                        Road No. 5, Banjara Hills,
-                        Hyderabad, Telangana, India
-                </p>
+      <div class="row">
+        <div class="col-md-3 text-left ">
+          <!-- <p class="text-primary pl-4 mb-0">Headquarters</p> -->
+          <img src="./docs/LOGO - White.png" width="150px" height="auto">
+          <div style="margin-left: 8px; margin-bottom: 10px;">
+            <span class="underLine1"></span>
+            <span class="underLine2"></span>
+            <span class="underLine"></span>
+          </div>
 
-            </div>
-            <div class="col-md-3 Social-icons">
-                    <h5 class="text-light m-0 Location">Get in touch</h5>
-                    <div class="mb-4">
-                            <span class="underLine1"></span>
-                            <span class="underLine2"></span>
-                            <span class="underLine"></span>
-                        </div>
-                <p class="text-light">Taking seamless key performance indicators offline to maximise the long tail.</p>
-                <i class="fa fa-facebook fa-fw"></i>
-                <i class="fa fa-twitter fa-fw"></i>
-                <i class="fa fa-google-plus fa-fw"></i>
-                <i class="fa fa-linkedin fa-fw"></i>
-            </div>
+          <p class="text-light">Organically grow the holistic world view of disruptive innovation via empowerment.
+          </p>
+          <div class="text-light f-icons">
+            <p class="mb-1"><i class="fa fa-phone fa-fw pr-4"></i><span>(+91) 40 2354 9363</span></p>
+            <p class="mb-1"><i class="fa fa-envelope fa-fw pr-4"></i><span>Info@zyclyx.com</span></p>
+            <p class=""><i class="fa fa-globe fa-fw pr-4"></i><span>www.zyclyx.com</span></p>
+          </div>
         </div>
+        <div class="col-md-3">
+          <h5 class="text-light m-0 Location">Our Location</h5>
+          <div class="mb-4">
+            <span class="underLine1"></span>
+            <span class="underLine2"></span>
+            <span class="underLine"></span>
+          </div>
+          <a
+            href="https://www.google.co.in/maps/place/Zyclyx/@17.4248475,78.4365034,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb91f7dfab5991:0xa347a94cea37c0de!8m2!3d17.4248424!4d78.4386921?hl=en"><img
+              src="./images/map.png"></a>
+        </div>
+        <div class="col-md-3">
+
+
+          <h5 class="text-light m-0 Location">We are located at</h5>
+          <div class="mb-4">
+            <span class="underLine1"></span>
+            <span class="underLine2"></span>
+            <span class="underLine"></span>
+          </div>
+          <!-- <i class="fa fa-map-marker text-light d-flex justify-content-center fa-2x"></i> -->
+          <p class="text-light">
+            3rd Floor, Pearl Enclave,
+            Road No. 5, Banjara Hills,
+            Hyderabad, Telangana, India
+          </p>
+
+        </div>
+        <div class="col-md-3 Social-icons">
+          <h5 class="text-light m-0 Location">Get in touch</h5>
+          <div class="mb-4">
+            <span class="underLine1"></span>
+            <span class="underLine2"></span>
+            <span class="underLine"></span>
+          </div>
+          <p class="text-light">Taking seamless key performance indicators offline to maximise the long tail.</p>
+          <i class="fa fa-facebook fa-fw"></i>
+          <i class="fa fa-twitter fa-fw"></i>
+          <i class="fa fa-google-plus fa-fw"></i>
+          <i class="fa fa-linkedin fa-fw"></i>
+        </div>
+      </div>
     </section>
 
     <section class="container-fluid p-2" style="background: #1f2225;">
-        <div class="container">
+      <div class="container">
         <div class="row">
-            <div class="col-md-6 text-light">All rights reserved  @2019 ZYCLYX.</div>
-            <div class="col-md-6 f-links d-flex justify-content-end text-light">
-                <a href="./index.html" class="text-light">Home</a>
-                <a href="./aboutus.html" class="text-light">About us</a>
-                <a href="#" class="text-light">Services</a>
-                <a href="#" class="text-light">Blog</a>
-            </div>
+          <div class="col-md-6 text-light">All rights reserved @2019 ZYCLYX.</div>
+          <div class="col-md-6 f-links d-flex justify-content-end text-light">
+            <a href="./index.html" class="text-light">Home</a>
+            <a href="./aboutus.html" class="text-light">About us</a>
+            <a href="#" class="text-light">Services</a>
+            <a href="#" class="text-light">Blog</a>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-</footer>
- <!-- <footer class="container-fluid pt-md-5 pt-3 footer">
+  </footer>
+  <!-- <footer class="container-fluid pt-md-5 pt-3 footer">
   <div class="row">
     <div class="col-12 col-md-3">
       <img src="./images/logo.png" alt="zyclyx logo" class="footer-logo">
@@ -1138,7 +1147,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     <p class="py-0 text-center mb-0">All rights reserved. © Zyclyx 2019</p>
   </div>
 </footer> -->
-<!-- </div> -->
+  <!-- </div> -->
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -1176,30 +1185,31 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   });
 
   </script>
-
-  <script>   
-  window.onload = function(){
-    if(window.pageYOffset !==0){
-    document.getElementById("navbarMaster").classList.remove('navbar-light');
-        document.getElementById("navbarMaster").classList.add('navbar-dark');
-  }
-  }
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;              
-      var homeHeight = document.getElementById("videoContainer").offsetHeight;              
-  //totalHeight = homeHeight;       
-      if (currentScrollPos > homeHeight-70) {
+ 
+  <script>
+    window.onload = function () {
+      if (window.pageYOffset !== 0) {
         document.getElementById("navbarMaster").classList.remove('navbar-light');
         document.getElementById("navbarMaster").classList.add('navbar-dark');
-        
+      }
+    }
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      var homeHeight = document.getElementById("videoContainer").offsetHeight;
+      //totalHeight = homeHeight;       
+      if (currentScrollPos > homeHeight - 70) {
+        document.getElementById("navbarMaster").classList.remove('navbar-light');
+        document.getElementById("navbarMaster").classList.add('navbar-dark');
+
         // document.getElementById("mainNavbar").classList.add('main-navbar');
       }
       else {
-         document.getElementById("navbarMaster").classList.remove('navbar-dark'); 
-         document.getElementById("navbarMaster").classList.add('navbar-light');
+        document.getElementById("navbarMaster").classList.remove('navbar-dark');
+        document.getElementById("navbarMaster").classList.add('navbar-light');
       }
       prevScrollpos = currentScrollPos;
     }
   </script>
 </body>
+
 </html>
