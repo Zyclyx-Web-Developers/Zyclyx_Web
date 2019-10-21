@@ -282,6 +282,7 @@ body {
 }
 .welcome-card{
   background-color: #f8f8ff;
+  background-color: rgb(242, 242, 242);;
 }
 .welcome-card h3{
   color: #007bff;
