@@ -5,16 +5,14 @@ p{
     background-color: #6f42c1;
     margin-bottom: 3rem;
     min-height:350px;             
-    color: #F9FBFD;
+    color: #F9FBFD;  
 }
-
 .contact-intro .description{
     font-size: 1.1rem;
 }
 .Header-img{    
-    background-image:url("./docs/contactus.jpg");
-
-    background-attachment:scroll;
+    background-image:url("./docs/contactus.jpg");    
+    background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
     height:300px;
@@ -23,9 +21,26 @@ p{
 .contact-info{
     font-size: 15px;
 }
+.contact-info .fa-map-marker{
+    background:linear-gradient(145deg, hsl(213, 60%, 64%), #3498db);
+    color: #fff
+}
+.contact-info .fa-envelope{
+    background:linear-gradient(145deg, #d396f7, #9b59b6);
+    color: #fff
+}
+.contact-info .fa-phone{
+    background:linear-gradient(145deg,rgb(171, 216, 134), #2ecc71);
+    color: #fff
+  
+}
+.contact-info .fa-facebook{
+    background:linear-gradient(145deg, #e0b861,#e67e22);
+    color: #fff
+}
 .contact-info .fa{
-    background: #000;
-    color: #fff;
+    /* background: rgb(235, 195, 19);
+    color: #fff; */
     font-size: 20px;
     border-radius: 50px;
     height: 50px;
@@ -79,7 +94,6 @@ p{
     text-align: center;
 } */
 
-
 .description .socialIcons .fa{
     color: #fff !important;
     font-size: 1.6rem;
@@ -89,4 +103,20 @@ p{
 }
 .footer{
     padding-top: 140px;
+}
+.overlay{
+    position: relative;         
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header-text{
+    z-index: 1;
+    position: relative;
 }
