@@ -489,6 +489,7 @@ background-color: antiquewhite;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px !important;
   transition: background-color 0.2s ease-in;
   border-radius: 8px;
+  background-color: #fafafa;
 }
 
 .ind-caption,.service-caption{
