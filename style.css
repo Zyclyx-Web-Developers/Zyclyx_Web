@@ -9,16 +9,68 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 /*Global styles*/
 /* Links */
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  -webkit-transform: translateY(6rem) scale(0.93);
+          transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.splitting .char {
+  color: transparent;
+}
+.splitting .char:after {
+  visibility: visible;
+  color: #204754;
+  opacity: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: calc(.2s + (.04s * var(--char-index) ) );
+}
+
+[data-scroll="in"] .char:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 a,
 a:focus,
 a:hover {
   color: #161c2d;
 }
+.text-1,.text-2{
+  color:#2B354F;
+}
+.text-1{
+  font-size: 1.1rem !important;
+}
 .text-2{
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
+}
+.title-2,.title-3{
+  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif;
 }
 .title-2{
-  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem !important;
+  color: #384C74;  
+}
+.title-3{
+  font-size: 1.4rem !important;
+  color:#384C74;
+}
+.title-highlight{
+  font-weight: 800;   
+  color: #161c2d;
+  /* color: #007bff; */
 }
 /* Custom default button */
 .btn-secondary{
@@ -125,26 +177,61 @@ body {
   animation-name: slideIn;
 }
 
+
+/* Clients Section
+--------------------------------*/
+
+#clients {
+  padding: 60px 0;
+}
+
+#clients img {
+  max-width: 80%;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+#clients .owl-nav,
+#clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#clients .owl-dot.active {
+  background-color: #1bb1dc;
+}
+
+
 /*
 ----------------- 
  Home Page
 -----------------
 */
-
-.v-header{
-  height:82vh;
+.home{
+  height: 90vh;
+  /* max-width: 100%; */
+}
+/* .v-header{
   display:flex;
   align-items:center;
   color:#fff;
-}
+  border: 2px solid red;
+} */
 
-.v-container{
-  max-width:960px;
-  /* padding-left:1rem;
-  padding-right:1rem; */
-  margin:auto;
-  text-align:center;
-}
 
 .fullscreen-video-wrap{
   position:absolute;
@@ -159,9 +246,7 @@ body {
 .fullscreen-video-wrap video{
   min-height:100%;
   min-width:100%;
-  /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
-  min-height: 100%; 
+  /* Make video to at least 100% wide and tall */; 
 
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
@@ -174,174 +259,43 @@ body {
   transform: translate(-50%,-50%);
 }
 
-@media (pointer: coarse) and (hover: none) {
-.home-video {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  .home-video video {
-    display: none;
-  }
+ /* 
+ ==== Welcome ====
+ */
+.welcome{    
+    /* background-color: #f8f8ff; */
+    /* background-color:#fafafa */
+    padding:5rem 0!important ;     
+ background-color: #ffffff;
+ /* box-shadow:inset -1px -15px  13px 15px rgba(0, 0, 0, 0.06);    */
 }
-/* About us */
-.welcome-site h2{
-  /* font-size: 3rem; */
-  font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif
-
+.welcome-card{
+  background-color: #f8f8ff;
 }
-.welcome{
-   /* background-image: url("./images/Confetti-Doodles.svg"); */
-   /* border: 2px solid red; */
-   /* margin: 25px auto; */
-   margin: 0;
-   /* box-shadow:0 0 5px 4px blue; */
-   box-shadow: 0 10px 10px rgba(0,0,0,0.07);
-   background-color: rgba(0,0,0,0.06);
-   border-radius:8px;
-   border: 1px solid rgba(0,0,0,0.04);    
-}
-.welcome-msg{
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Roboto Mono', monospace;  */
-  color:#384C74;
-  /* padding-top: 40px; */
-  line-height: 1.3;
-  font-size: 1.2rem;
-  margin-bottom:0;
-  padding: 0 5px;
-}
-/* .welcome-msg */
-.welcome-btn
-{
-    position: absolute;
-    padding: 11px 10px;
-    font-size: 1rem;   
-    letter-spacing: 1px;
-    text-decoration: none;
-    overflow: hidden;
-    color: #fff;
-    /* box-shadow: 0 0 40px rgba(0,0,0,0.5); */
-}
-.welcome-btn:hover{
-  background-color: #fff;
+.welcome-card h3{
   color: #007bff;
-  border: none;
+  position:relative;
 }
-
-.welcome-btn span
-{
-    position: absolute;
-    display: block;
-    background: #007bff;
+.welcome-card h3::before{
+position: absolute;
+content: '';
+bottom: 0;
+width: 4.5rem;
+height: 2.5px;
+background-color: #ff4500;
 }
-.welcome-btn span:nth-child(1)
-{
-    top: 0;
-    left: 0;
-    transform: translateY(0);
-    width: 2px;
-    height: 100%;
+.welcome-card p{
+  text-align: left;
 }
-.welcome-btn:hover span:nth-child(1)
-{
-    transition: 0.5s;
-    transform: translateY(-100%);
-}
-.welcome-btn span:nth-child(4)
-{
-    top: 0;
-    right: 0;
-    transform: translateY(0);
-    width: 2px;
-    height: 100%;
-}
-.welcome-btn:hover span:nth-child(4)
-{
-    transition: 0.5s;
-    transform: translateY(100%);
-}
-.welcome-btn span:nth-child(2)
-{
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    width: 100%;
-    height: 2px;
-}
-.welcome-btn:hover span:nth-child(2)
-{
-    transform: translateX(100%);
-    transition: 0.75s;
-    transition-delay: 0.25s;
-}
-.welcome-btn span:nth-child(5)
-{
-    bottom: 0;
-    left: 0;
-    transform: translateX(100%);
-    width: 100%;
-    height: 2px;
-}
-.welcome-btn:hover span:nth-child(5)
-{
-    transform: translateX(-100%);
-    transition: 0.75s;
-    transition-delay: 0.25s;
-}
-.welcome-btn span:nth-child(3)
-{
-    top: 0;
-    right: 0;
-    transform: translateY(-100%);
-    width: 2px;
-    height: 100%;
-}
-.welcome-btn:hover span:nth-child(3)
-{
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    transform: translateY(0);
-}
-.welcome-btn span:nth-child(6)
-{
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    width: 2px;
-    height: 100%;
-}
-.welcome-btn:hover span:nth-child(6)
-{
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    transform: translateY(0);
-}
+ 
 /* welcome-msg-end */
 /* Core Values */
 .core-values-container{
-  background-color: #ffffff;
+  background-color: #f5f8fd;
 }
-.svg-bg{
-  position: relative;
-}
-.core-values-title{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
+ 
 .core-values-title h2{
   font-family: "neuropolitical", 'Arial Narrow', Arial, sans-serif
-}
-.core-values-title span{
-  font-weight: 800;   
-  color: #ff4500;
 }
 .core-values-title p{
   color:#2B354F;
@@ -377,18 +331,8 @@ background-color: rgba(0, 165, 79,0.2);
 /*
 ======= SERVICES ========
 */
-/* .wave{
-  color:#c2ecf2;
-  position: absolute;
-  top:-54px;
-  left: 0;
-  right: 0;
-} */
 .services{
-  background-color:rgba(255, 0, 0, 0.2);
-  position: relative;
-  /* background-color: #c2ecf2; */
-  background-color: rgba(0, 0, 0, 0.059);
+  /* background-color: rgba(0, 0, 0, 0.059); */
 }
 .main-service { 
   padding: 20px;
@@ -403,12 +347,7 @@ background-color: rgba(0, 165, 79,0.2);
   transform: translateY(-3px);
   box-shadow: 0 0 35px rgba(140, 152, 164, 0.25),-10px 0 15px rgba(140, 152, 164, 0.25) !important;
 }
-/* .service:hover .service-icon{
-  text-align: center;
-}  */
-.service h3{
-font-size: 1.4rem;
-}
+ 
 .service-row{
   display: flex;
   justify-content: center; 
@@ -419,27 +358,8 @@ font-size: 1.4rem;
 }
 .serv-1{
 border-top: 4px solid #28a745;
-position: relative;
-z-index: 1;
 }
-/* .main-service::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: top center;  
-  z-index: -1;
-  transition: transform 0.3s;
-}
-.main-service:hover::after {
-  transform: scaleY(1);
-} */
-/* :hover .service-info{
-  color: #ffffff !important;
-} */
+ 
 .serv-2{
 border-top: 4px solid #e53935;
 }
@@ -456,49 +376,6 @@ border-top:4px solid #6610f2;
 border-top: 4px solid #17a2b8;
 }
 
-/* .serv-1::after {
-  background:rgba(40, 167, 69,0.4);
-}
-.serv-2::after {
-  background:rgba(229, 57, 53,0.4);
-}
-.serv-3::after {
-  background:rgba(23, 70, 224,0.4);
-}
-.serv-4::after {
-  background: rgba(253, 126, 20,0.4);
-}
-.serv-5::after {
-  background:rgba(102, 16, 242,0.4);
-}
-.serv-6::after {
-  background:rgba(23, 162, 184,0.4);
-} */
-.serv-1:hover::after {
-  transform: scaleY(1);
-}
-.serv-2:hover::after {
-  transform: scaleY(1);
-}
-.serv-3:hover::after {
-  transform: scaleY(1);
-}
-.serv-4:hover::after {
-  transform: scaleY(1);
-}
-.serv-5:hover::after {
-  transform: scaleY(1);
-}
-.serv-6:hover::after {
-  transform: scaleY(1);
-}
-/* .services h2{
-  color: #6610f2;
-} */
-/* .services p{
-  font-size: 1.2rem;
-  color: #2B354F;
-} */
 /* 
 ======= SERVICES END ========
 */
@@ -510,6 +387,10 @@ border-top: 4px solid #17a2b8;
 /* .wave svg{
   fill:rgba(255, 0, 0, 0.2);
 } */
+.industries{
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 5rem 0 !important;
+}
 .industry{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px !important;
   transition: background-color 0.2s ease-in;
@@ -658,6 +539,7 @@ border-top: 4px solid #17a2b8;
  .our-projects{
         /* border: 2px solid red; */
         background-color: rgba(0, 0, 0, 0.05);
+        background-color: #f5f8fd;
  }
  /* .carousel-inner{
    border: 2px solid green;
@@ -949,11 +831,11 @@ border-top: 4px solid #17a2b8;
 
 .contact-banner{     
   /* background-image: url("./images/doodle_bg.svg"); */
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   position: relative;
   /* border-bottom: 2px solid #007bff;      */
 }
-.contact-banner:before{
+/* .contact-banner:before{
   position: absolute;
   content: '';
   width: 100%;
@@ -962,7 +844,7 @@ border-top: 4px solid #17a2b8;
   right: 0;
   background-color: rgba(23, 70, 224,0.5);
   z-index:-1;
-}
+} */
 .contact-inner{
   padding: 3rem 0;
   display: flex;

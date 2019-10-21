@@ -7,7 +7,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <!-- TODO - add favicon -->
-  <title>Zyclyx - Experienced in Future World</title>
+  <title>Zyclyx - </title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -22,196 +22,185 @@
   <link rel="stylesheet" href="Footer.css">
   <link rel="stylesheet" href="./animations.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.0/dist/splitting.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body class="text-center">
-  <!-- <div class="d-flex w-100 h-100 mx-auto flex-column"> -->
-  <!-- 
+  <div class="home">
+    <!-- 
       ====== Navbar ======
     -->
-  <header class="main-navbar" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light site-navbar" id="navbarMaster">
-      <a class="navbar-brand" href="#"><img src="./images/logo-white.png" alt="" srcset=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-master">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <!--  home -->
-          <li class="nav-item active mx-2 py-3">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+    <header class="main-navbar" id="mainNavbar">
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light site-navbar" id="navbarMaster">
+        <a class="navbar-brand" href="#"><img src="./images/logo-white.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+          aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-master">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <!--  home -->
+            <li class="nav-item active mx-2 py-3">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
 
-          <!-- services -->
-          <li class="nav-item dropdown mx-2 py-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-three-col animate slideIn30"
-              aria-labelledby="navbarDropdownMenuLink">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <a class="dropdown-item py-2 my-1" href="#">Artificial Intelligence</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Robotic Process Automation</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Blockchain</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Internet Of Things</a>
-                  <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->
-
-                  <div class="dropdown-divider py-2"></div>
-
-                  <a class="dropdown-item py-2 my-1" href="#">IT Service Management</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Cloud Hosting Services</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Outsourcing Services</a>
-
-                  <div class="dropdown-divider py-2"></div>
-                  <a class="dropdown-item py-2 my-1" href="#">Application Development</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Product Engineering</a>
-
-                </div>
-                <div class="col-12 col-md-4">
-                  <a class="dropdown-item py-2 my-1" href="#">Cyber Security Services</a>
-                  <a class="dropdown-item py-2 my-1" href="#">IT Security Services</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Information Security Services</a>
-                  <a class="dropdown-item py-2 my-1" href="#">End User Computing</a>
-
-                  <div class="dropdown-divider py-2"></div>
-
-                  <a class="dropdown-item py-2 my-1" href="#">Data Center Transformation</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Data Center Services</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Network Operation Center</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Security Operation Center</a>
-                  <div class="dropdown-divider text-center"></div>
-                  <a class="dropdown-item py-2 my-1" href="#">Digital Marketing</a>
-                </div>
-                <div class="col-12 col-md-4">
-                  <a class="dropdown-item py-2 my-1" href="#">Data Warehousing</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Data Integration</a>
-                  <!-- data governace heading-->
-                  <a class="dropdown-item py-2 my-1" href="#">Data Governance</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Data Quality</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Metadata Management</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Master Data Management</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item py-2 my-1" href="#">Big Data</a>
-                  <!-- heading BI solution service -->
-                  <a class="dropdown-item py-2 my-1" href="#">Data Visualization</a>
-                  <a class="dropdown-item py-2 my-1" href="#">Predictive Analysis</a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <!-- industries -->
-          <li class="nav-item dropdown mx-2 py-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Industries
-            </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-two-col animate slideIn50"
-              aria-labelledby="navbarDropdownMenuLink">
-              <div class="row">
+            <!-- services -->
+            <li class="nav-item dropdown mx-2 py-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-three-col animate slideIn30"
+                aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="col-md-6 col-12">
-                    <a class="dropdown-item m-2 py-2" href="./Retail.html">Retail</a>
-                    <a class="dropdown-item m-2 py-2" href="./Telecom.html">Telecom</a>
-                    <a class="dropdown-item m-2 py-2" href="./Banking & Finance.html">Banking & Finance</a>
+                  <div class="col-12 col-md-4">
+                    <a class="dropdown-item py-2 my-1" href="#">Artificial Intelligence</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Robotic Process Automation</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Blockchain</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Internet Of Things</a>
+                    <!-- <a class="dropdown-item py-1 my-1" href="#">Business Automation</a> -->
+
+                    <div class="dropdown-divider py-2"></div>
+
+                    <a class="dropdown-item py-2 my-1" href="#">IT Service Management</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Cloud Hosting Services</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Outsourcing Services</a>
+
+                    <div class="dropdown-divider py-2"></div>
+                    <a class="dropdown-item py-2 my-1" href="#">Application Development</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Product Engineering</a>
+
                   </div>
-                  <div class="col-md-6 col-12">
-                    <a class="dropdown-item m-2 py-2" href="./Lagistics.html">Logistics</a>
-                    <a class="dropdown-item m-2 py-2" href="./Legal.html">Legal</a>
-                    <a class="dropdown-item m-2 py-2" href="./Health-Care.html">Health Care</a>
+                  <div class="col-12 col-md-4">
+                    <a class="dropdown-item py-2 my-1" href="#">Cyber Security Services</a>
+                    <a class="dropdown-item py-2 my-1" href="#">IT Security Services</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Information Security Services</a>
+                    <a class="dropdown-item py-2 my-1" href="#">End User Computing</a>
+
+                    <div class="dropdown-divider py-2"></div>
+
+                    <a class="dropdown-item py-2 my-1" href="#">Data Center Transformation</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Data Center Services</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Network Operation Center</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Security Operation Center</a>
+                    <div class="dropdown-divider text-center"></div>
+                    <a class="dropdown-item py-2 my-1" href="#">Digital Marketing</a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a class="dropdown-item py-2 my-1" href="#">Data Warehousing</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Data Integration</a>
+                    <!-- data governace heading-->
+                    <a class="dropdown-item py-2 my-1" href="#">Data Governance</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Data Quality</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Metadata Management</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Master Data Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item py-2 my-1" href="#">Big Data</a>
+                    <!-- heading BI solution service -->
+                    <a class="dropdown-item py-2 my-1" href="#">Data Visualization</a>
+                    <a class="dropdown-item py-2 my-1" href="#">Predictive Analysis</a>
                   </div>
                 </div>
-
               </div>
-          </li>
+            </li>
 
-          <!-- about us -->
-          <li class="nav-item mx-2 py-3">
-            <a class="nav-link" href="#">About us</a>
-          </li>
+            <!-- industries -->
+            <li class="nav-item dropdown mx-2 py-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Industries
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-two-col animate slideIn50"
+                aria-labelledby="navbarDropdownMenuLink">
+                <div class="row">
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <a class="dropdown-item m-2 py-2" href="./Retail.html">Retail</a>
+                      <a class="dropdown-item m-2 py-2" href="./Telecom.html">Telecom</a>
+                      <a class="dropdown-item m-2 py-2" href="./Banking & Finance.html">Banking & Finance</a>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <a class="dropdown-item m-2 py-2" href="./Lagistics.html">Logistics</a>
+                      <a class="dropdown-item m-2 py-2" href="./Legal.html">Legal</a>
+                      <a class="dropdown-item m-2 py-2" href="./Health-Care.html">Health Care</a>
+                    </div>
+                  </div>
 
-          <!-- careers -->
-          <li class="nav-item mx-2 py-3">
-            <a class="nav-link" href="#">Careers</a>
-          </li>
+                </div>
+            </li>
 
-          <!-- contact us -->
-          <li class="nav-item mx-2 py-3">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- 
+            <!-- about us -->
+            <li class="nav-item mx-2 py-3">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+
+            <!-- careers -->
+            <li class="nav-item mx-2 py-3">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+
+            <!-- contact us -->
+            <li class="nav-item mx-2 py-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- 
       ====== END Navbar ======
     -->
-
-  <!-- 
+    <!-- 
       ----------
        Homepage - slider
       ----------
     -->
-  <!-- <section class="home-video" id="h-video">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-    </video>
-    <div class="container row h-100">
-      <div class="col-5 d-flex h-100 text-center align-items-center">
-        <div class="w-100">
-          <h1 class="display-3">Next Level Innovation and Technology</span> </h1>
-          <p>You have the vision for a stunning digital experience. We’re
-            the software design and engineering team that can bring it to life</p>
-        </div>
+    <section class="v-header v-container" id="videoContainer">
+      <div class="fullscreen-video-wrap">
+        <video autoplay loop muted>
+          <source src="./images/Welcome - 24829.mp4">
+        </video>
       </div>
-    </div>
-  </section> -->
-
-  <section class="v-header v-container" id="videoContainer">
-    <div class="fullscreen-video-wrap">
-      <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
-      <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
-      <video src="./images/Welcome - 24829.mp4" autoplay loop muted>
-      </video>
-    </div>
-    <div class="header-overlay"></div>
-    <div class="header-content text-md-center">
-      <!-- <h1>Welcome To ZYCLYX</h1>       
-      <a class="btn">Know More</a> -->
-    </div>
-  </section>
-
-  <!-- </div> -->
+      <div class="header-overlay"></div>
+      <div class="header-content text-md-center">
+      </div>
+    </section>
+  </div>
   <!-- Homepage End -->
 
-  <!-- About zyclyx -->
-  <section class="container-fluid welcome welcome-site pt-5">
-    <div class=" container row mx-auto py-3">
-      <div class="col-12 col-md-7 mx-auto p-3 text-center d-flex flex-column justify-content-center align-items-center">
-        <h2>Welcome to ZYCLYX</h2>
-        <p class="text-2">Automate any process to support growth, enable innovation and cut cost across your organisation</p>
-        <p class="text-right align-self-end"><a href="./aboutus.html" class="btn btn-link">Know More</a></p>
+  <!-- Welcome - Home -->
+  <section class="container-fluid welcome" data-scroll>    
+      <h2 class="title-2">Welcome to <span class="title-highlight">ZYCLYX</span></h2>
+    <p class="text-2">Automate any process to support growth, enable innovation and cut cost across your organisation
+    </p>
+
+    <div class="row d-flex justify-content-center">
+    
+      <!-- Welcome - card -1 -->
+      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-duration="1.4s">
+        <h3 class="py-2 title-3">Who we are</h3>
+        <p class="ml-2 py-2 text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum inventore, placeat
+          quibusdam atque cupiditate
+          totam accusantium iste illo suscipit minima, sunt nam neque blanditiis odio quos.</p>
       </div>
-      <div class="col-12 col-md-3">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 172 172"
-          style=" fill:#000000;">
-          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <g fill="#ec892f">
-              <path
-                d="M138.46,0c-1.19594,-0.04031 -2.35156,0.5375 -3.01,1.6125l-5.4825,8.9225c-1.85437,-0.14781 -3.64156,-0.16125 -5.4825,0l-5.59,-8.815c-0.90031,-1.42437 -2.75469,-1.935 -4.3,-1.29l-9.675,4.085c-1.53187,0.645 -2.41875,2.35156 -2.0425,3.9775l2.365,10.2125c-1.42437,1.22281 -2.76812,2.53969 -3.9775,3.9775l-10.2125,-2.365c-1.66625,-0.37625 -3.23844,0.59125 -3.87,2.15l-3.9775,9.7825c-0.63156,1.54531 -0.12094,3.30563 1.29,4.1925l8.815,5.4825c-0.14781,1.86781 -0.06719,3.82969 0.1075,5.6975l-8.815,5.4825c-1.42437,0.90031 -1.94844,2.75469 -1.29,4.3l4.085,9.675c0.645,1.53188 2.24406,2.43219 3.87,2.0425l10.2125,-2.2575c1.20938,1.41094 2.53969,2.67406 3.9775,3.87l-2.2575,10.2125c-0.36281,1.63938 0.48375,3.34594 2.0425,3.9775l9.7825,3.9775c0.41656,0.17469 0.86,0.215 1.29,0.215c1.15563,0 2.2575,-0.59125 2.9025,-1.6125l5.6975,-8.9225c1.86781,0.13438 3.74906,0.06719 5.59,-0.1075l5.6975,8.9225c0.91375,1.3975 2.66063,1.935 4.1925,1.29l9.7825,-4.085c1.55875,-0.65844 2.32469,-2.33812 1.935,-3.9775l-2.4725,-10.2125c1.38406,-1.19594 2.6875,-2.56656 3.87,-3.9775l10.32,2.2575c1.66625,0.36281 3.34594,-0.49719 3.9775,-2.0425l3.9775,-9.7825c0.63156,-1.57219 0.04031,-3.42656 -1.3975,-4.3l-9.03,-5.4825c0.13438,-1.8275 0.16125,-3.655 0,-5.4825l8.815,-5.805c1.3975,-0.90031 2.0425,-2.66062 1.3975,-4.1925l-4.1925,-9.675c-0.645,-1.54531 -2.31125,-2.43219 -3.9775,-2.0425l-10.2125,2.4725c-1.20937,-1.41094 -2.44562,-2.67406 -3.87,-3.87l2.15,-10.32c0.34938,-1.63937 -0.49719,-3.34594 -2.0425,-3.9775l-9.7825,-3.9775c-0.38969,-0.16125 -0.77937,-0.20156 -1.1825,-0.215zM127.28,30.53c1.8275,-0.02687 3.68188,0.24188 5.4825,0.9675c7.2025,2.92938 10.66938,11.18 7.74,18.3825c-2.92937,7.2025 -11.18,10.66938 -18.3825,7.74c-7.2025,-2.92937 -10.66937,-11.18 -7.74,-18.3825c2.20375,-5.40187 7.4175,-8.62687 12.9,-8.7075zM49.9875,58.48c-1.67969,0 -3.17125,1.23625 -3.44,2.9025l-2.15,13.545c-2.55312,0.77938 -5.07937,1.77375 -7.4175,3.01l-11.18,-7.955c-1.37062,-0.98094 -3.21156,-0.86 -4.4075,0.3225l-9.46,9.46c-1.1825,1.1825 -1.27656,3.03688 -0.3225,4.4075l7.8475,11.2875c-1.26312,2.365 -2.32469,4.85094 -3.1175,7.4175l-13.4375,2.15c-1.66625,0.28219 -2.9025,1.76031 -2.9025,3.44v13.33c0,1.66625 1.15563,3.14438 2.795,3.44l13.545,2.365c0.79281,2.56656 1.85438,5.0525 3.1175,7.4175l-7.955,11.18c-0.98094,1.37063 -0.87344,3.21156 0.3225,4.4075l9.46,9.46c1.1825,1.1825 3.03688,1.27656 4.4075,0.3225l11.2875,-7.8475c2.35156,1.24969 4.75688,2.23063 7.31,3.01l2.2575,13.545c0.26875,1.65281 1.76031,2.9025 3.44,2.9025h13.33c1.66625,0 3.14438,-1.15562 3.44,-2.795l2.365,-13.76c2.55313,-0.79281 4.97188,-1.76031 7.31,-3.01l11.395,7.955c1.37063,0.95406 3.225,0.86 4.4075,-0.3225l9.46,-9.46c1.19594,-1.19594 1.30344,-3.14437 0.3225,-4.515l-8.0625,-11.18c1.23625,-2.33812 2.23063,-4.79719 3.01,-7.31l13.76,-2.365c1.65281,-0.29562 2.795,-1.77375 2.795,-3.44v-13.33c0,-1.67969 -1.23625,-3.06375 -2.9025,-3.3325l-13.6525,-2.2575c-0.77937,-2.51281 -1.77375,-4.97187 -3.01,-7.31l7.955,-11.395c0.95406,-1.37062 0.86,-3.225 -0.3225,-4.4075l-9.46,-9.46c-1.19594,-1.19594 -3.03687,-1.30344 -4.4075,-0.3225l-11.2875,8.0625c-2.35156,-1.24969 -4.77031,-2.23062 -7.31,-3.01l-2.365,-13.6525c-0.28219,-1.65281 -1.77375,-2.9025 -3.44,-2.9025zM56.76,97.5025c9.82281,0 17.7375,7.91469 17.7375,17.7375c0,9.82281 -7.92812,17.7375 -17.7375,17.7375c-9.80937,0 -17.7375,-7.91469 -17.7375,-17.7375c0,-9.82281 7.91469,-17.7375 17.7375,-17.7375z">
-              </path>
-            </g>
-          </g>
-        </svg>
+    
+      <!-- Welcome - card - 2 -->
+      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s" data-wow-duration="1.4s">
+        <h3 class="py-2 title-3">Why Us</h3>
+        <p class="ml-2 py-2 text-1">Because we have actually led and established some of the largest RPA implementations in the world. Few others can boast the depth of experience that we bring in establishing, leading and managing enterprise scale programs.</p>
+      </div>
+    
+      <!-- Welcome - card - 3 -->
+      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s" data-wow-duration="1.4s">
+        <h3 class="py-2 title-3">Our Vision</h3>
+        <p class="ml-2 py-2 text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum inventore, placeat
+          quibusdam atque cupiditate
+          totam accusantium iste illo suscipit minima, sunt nam neque blanditiis odio quos.</p>
       </div>
     </div>
+    <p class="my-4"><a href="./aboutus.html" class="btn btn-outline-primary">Know More</a></p>
   </section>
   <!-- About zyclyx End -->
 
@@ -220,42 +209,13 @@
          CORE VALUES
       ==================   
      -->
-  <section class="core-values-container py-4">
+  <section class="core-values-container py-4" data-scroll>
     <div class="container-fluid">
       <div class="row m-2">
-        <div class="col-12 col-md-5">
-          <div class="svg-bg">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 1374.7 1083.6" style="enable-background:new 0 0 1374.7 1083.6;" xml:space="preserve"
-              class="injected-svg js-svg-injector" data-img-paths="[
-                {&quot;targetId&quot;: &quot;#SVGMainHeroImg1&quot;, &quot;newPath&quot;: &quot;../../assets/img/750x750/img2.jpg&quot;}
-              ]" data-parent="#SVGMainHero">
-              <style type="text/css">
-                .main-hero-0 {
-                  fill: rgba(0, 0, 0, 0.059);
-                }
-              </style>
-
-              <path class="main-hero-0 fill-primary" opacity="0.8"
-                d="M285.2,170.1c-94.5,8.6-181.2,57.4-235.9,134.8C-34.7,423.6-54.5,621.5,349,879.8  c636.5,407.6,600,9.3,591.9-47.4c-0.8-5.5-1.4-11.1-2-16.6l-34.2-374.1C888.4,262,729.2,129.6,549.4,146L285.2,170.1z">
-              </path>
-              <g>
-                <defs>
-                  <path id="mainHeroBlock1"
-                    d="M1374.7,0H687.6l-278,279.7c-150,150.9-148.1,395.3,4.4,543.8l0,0C554.1,960,774.9,968.7,925.4,843.6    l449.3-373.4V0z">
-                  </path>
-                </defs>
-                <clipPath id="mainHeroBlock2">
-                  <use xlink:href="#mainHeroBlock1" style="overflow:visible;"></use>
-                </clipPath>
-                <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
-                </g>
-              </g>
-            </svg>
-          </div>
+        <div class="col-12 col-md-5">        
           <div class="core-values-title">
-            <h2 class="py-3">Our Core <span>Values</span></h2>
-            <p>At Zyclyx, we don't just accept difference - we celebrate it, we support it, and we thrive on it for
+            <h2 class="py-3 title-2">Our Core <span class="title-highlight">Values</span></h2>
+            <p class="text-1">At Zyclyx, we don't just accept difference - we celebrate it, we support it, and we thrive on it for
               the benefit of our employees, our products, and our community</p>
           </div>
         </div>
@@ -387,26 +347,13 @@
   </section>
 
   <!-- Services -->
-  <div class="container-fluid mx-auto services py-5">
-    <!-- WAVE EFFECT  -->
-    <!-- <div class="decorated-bottom wave">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
-        <path d="" fill="rgba(255, 0, 0, 0.5)">
-          <animate attributeName="d" begin="0s" dur="5s" repeatCount="indefinite" values="
-                M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
-                M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
-                M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
-                M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
-        </path>
-      </svg>
-    </div> -->
-    <!-- END OF WAVE EFFECT -->
-    <!-- <p class="service-caption">What we do</p> -->
-    <h2 class="service-title">We Provide Wide Range Business Services</h2>
-    <p class="pb-4 service-info">Whatever we do, We do with your end user in mind</p>
+  <div class="container-fluid mx-auto services py-5" data-scroll>
+     <h2 class="title-2">Our <sapn class="title-highlight">Services</sapn></h2>
+    <p class="text-2">We Provide Wide Range Business Services</p>     
     <div class="row text-left service-row">
       <!-- Service - 1 -->
-      <div class="col-md-3 main-service serv-1 m-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-1 m-4" data-aos="zoom-in-right" data-aos-delay="100"
+        data-aos-duration="1000">
         <!-- icon -->
         <p class="service-icon my-2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
             viewBox="0 0 172 172" style=" fill:#000000;">
@@ -421,14 +368,15 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Artificial Intelligence</h3>
+        <h3 class="py-2 title-3">Artificial Intelligence</h3>
         <p class="text-muted">Augmenting technology by exterminating humans for deep integration into learning and
           reasoning through the
           invention of Artificial Intelligence</p>
       </div>
 
       <!-- Service - 2 -->
-      <div class="col-md-3 main-service serv-2 m-4" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="5000">
+      <div class="col-md-3 main-service serv-2 m-4" data-aos="zoom-in-right" data-aos-delay="500"
+        data-aos-duration="5000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -442,14 +390,15 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Cloud Computing</h3>
+        <h3 class="py-2 title-3">Cloud Computing</h3>
         <p class="text-muted"> Cloud computing services at zyclyx meet the future needs of your business to dynamically
           scale your cloud
           solutions as per your needs.</p>
       </div>
 
       <!-- service - 3 -->
-      <div class="col-md-3 main-service serv-3 m-4" data-aos="zoom-in-right" data-aos-delay="800" data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-3 m-4" data-aos="zoom-in-right" data-aos-delay="800"
+        data-aos-duration="8000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -463,14 +412,15 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Information Security</h3>
+        <h3 class="py-2 title-3">Information Security</h3>
         <p class="text-muted">To Automate predictive analysis for emulating the learning approach used by humans. It
           identifies, prepares
           and analyses algorithms and tests the model’s performance against unlabeled data to be trained.</p>
       </div>
 
       <!-- Service - 4 -->
-      <div class="col-md-3 main-service serv-4 m-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-4 m-4" data-aos="zoom-in-right" data-aos-delay="100"
+        data-aos-duration="1000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -484,14 +434,15 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Block Chain</h3>
+        <h3 class="py-2 title-3">Block Chain</h3>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
           dolore magna aliqua, Ut enim ad.</p>
       </div>
 
       <!-- Service - 5 -->
-      <div class="col-md-3 main-service serv-5 m-4" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="5000">
+      <div class="col-md-3 main-service serv-5 m-4" data-aos="zoom-in-right" data-aos-delay="500"
+        data-aos-duration="5000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -505,13 +456,14 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Robotic Process Automation</h3>
+        <h3 class="py-2 title-3">Robotic Process Automation</h3>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua, Ut enim ad.</p>
       </div>
 
       <!-- Service - 6 -->
-      <div class="col-md-3 main-service serv-6 m-4" data-aos="zoom-in-right" data-aos-delay="800" data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-6 m-4" data-aos="zoom-in-right" data-aos-delay="800"
+        data-aos-duration="8000">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -525,7 +477,7 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2">Bigdata and Data Sciencne</h3>
+        <h3 class="py-2 title-3">Bigdata and Data Sciencne</h3>
         <p class="text-muted">Managing, analyzing and visualizing data into information and information into insight by
           making profitable
           decisions.</p>
@@ -541,12 +493,12 @@
   <!-- 
       ======= INDUSTRIES =======
      -->
-  <div class="container-fluid py-5">
+  <div class="container-fluid py-5 industries" data-scroll>
     <div class="row">
       <div class="col-7 mx-auto">
         <!-- <p class="ind-caption">Industries We Serve</p> -->
-        <h2 class="ind-title">Best Practices from Industry Experts</h2>
-        <p class="ind-info">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
+        <h2 class="title-2"><span class="title-highlight">Industries</span> We Serve</h2>
+        <p class="text-2">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
       </div>
       <div class="col-12">
         <div class="row">
@@ -692,11 +644,12 @@
   <!-- 
     ====== OUR PROJECTS ======
   -->
-  <section class="our-projects container-fluid py-5 my-3">
+  <section class="our-projects container-fluid py-5" data-scroll>
     <div class="projects-inner">
       <!-- TITLE -->
-      <h2 class="pt-2 title-2">Our Projects</h2>
-      <p class="mb-5 text-2">Always looking for better ways to do things, innovate and help people achieve their goals.</p>
+      <h2 class="pt-2 title-2">Our <span class="title-highlight">Projects</span></h2>
+      <p class="mb-5 text-2">Always looking for better ways to do things, innovate and help people achieve their goals.
+      </p>
       <!-- OUR PROJECTS SLIDER  -->
       <div class="row">
         <div class="col-md-9 col-12 mx-auto">
@@ -802,8 +755,8 @@
   <!-- 
   ======== TESTIMONIALS =======
  -->
-  <div class="container py-5">
-    <h2 class="title-2">What Our Clients Say</h2>
+  <div class="container py-5" data-scroll>
+    <h2 class="title-2">What Our <span class="title-highlight">Clients</span> Say</h2>
     <div class="container cta-100">
       <div class="container">
         <div class="row blog">
@@ -926,57 +879,57 @@
   ======== BLOG POSTS =======
  -->
   <!-- details card section starts from here -->
-  <section class="details-card py-5">
-    <h2 class="title-2">Latest From Blog</h1>
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/nature" alt="">
-              <!-- <span><h4>heading</h4></span> -->
-            </div>
-            <div class="card-desc">
-              <h3 class="">Heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/animals" alt="">
-              <!-- <span><h4>heading2</h4></span> -->
-            </div>
-            <div class="card-desc">
-              <h3>Heading2</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
+  <section class="details-card py-5" data-scroll>
+    <h2 class="title-2">Latest From <span class="title-highlight">Blog</span></h2>
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="https://placeimg.com/380/230/nature" alt="">
+                <!-- <span><h4>heading</h4></span> -->
+              </div>
+              <div class="card-desc">
+                <h3 class="">Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                  perspiciatis
+                  voluptas totam</p>
+                <a href="#" class="btn btn-info px-4">Read</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/tech" alt="">
-              <!-- <span><h4>heading3</h4></span> -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="https://placeimg.com/380/230/animals" alt="">
+                <!-- <span><h4>heading2</h4></span> -->
+              </div>
+              <div class="card-desc">
+                <h3>Heading2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                  perspiciatis
+                  voluptas totam</p>
+                <a href="#" class="btn btn-info px-4">Read</a>
+              </div>
             </div>
-            <div class="card-desc">
-              <h3>Heading3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="https://placeimg.com/380/230/tech" alt="">
+                <!-- <span><h4>heading3</h4></span> -->
+              </div>
+              <div class="card-desc">
+                <h3>Heading3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
+                  perspiciatis
+                  voluptas totam</p>
+                <a href="#" class="btn btn-info px-4">Read</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- details card section starts from here -->
   <!-- 
@@ -1006,7 +959,7 @@
               </g>
             </svg>
           </p>
-          <h3>50+</h3>
+          <h3><span data-toggle="counter-up">50</span>+</h3>
           <p>Completed Projects</p>
         </div>
         <div class="col-6 col-md-3">
@@ -1024,7 +977,7 @@
                 </g>
               </g>
             </svg></p>
-          <h3>100+</h3>
+          <h3><span data-toggle="counter-up">100</span>+</h3>
           <p>Clients</p>
         </div>
         <div class="col-6 col-md-3">
@@ -1042,7 +995,7 @@
                 </g>
               </g>
             </svg></p>
-          <h3>10+</h3>
+          <h3><span data-toggle="counter-up">10</span>+</h3>
           <p>Available Countries</p>
         </div>
         <div class="col-6 col-md-3">
@@ -1060,7 +1013,7 @@
                 </g>
               </g>
             </svg></p>
-          <h3>5000+</h3>
+          <h3><span data-toggle="counter-up">5000</span>+</h3>
           <p>Users World wide</p>
         </div>
       </div>
@@ -1069,15 +1022,37 @@
   <!--
     ======== END - COMPANY NUMBERS BANNER ======== 
   -->
+<!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
 
+        <header class="section-header">
+          <!-- <h3>Our Clients</h3> -->
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="images/clients/client-1.png" alt="">
+          <img src="images/clients/client-2.png" alt="">
+          <img src="images/clients/client-3.png" alt="">
+          <img src="images/clients/client-4.png" alt="">
+          <img src="images/clients/client-5.png" alt="">
+          <img src="images/clients/client-6.png" alt="">
+          <img src="images/clients/client-7.png" alt="">
+          <img src="images/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
   <!--
     ======== CONTACT US BANNER ======== 
   -->
-  <section class="contact-banner">
+  <section class="contact-banner" data-scroll>
     <div class="contact-inner">
-      <h2 class="title-2">Let's Connect</h3>
-      <p class="text-2">Share your ideas with us and we do our best to turn your ideas into reality</p>
-      <a href="./contactus.html" class="btn btn-secondary btn-lg">CONTACT US</a>
+      <h2 class="title-2">Let's <span class="title-highlight">Connect</span></h3>
+        <p class="text-2">Share your ideas with us and we do our best to turn your ideas into reality</p>
+        <a href="./contactus.html" class="btn btn-secondary btn-lg">CONTACT US</a>
     </div>
   </section>
   <!-- Footer  -->
@@ -1220,11 +1195,41 @@
     crossorigin="anonymous"></script>
   <script src="main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/waypoints.min.js"></script>
+  <script src="./js/counterup.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+
   <script>
     AOS.init();
+    Splitting(); 
+
+ScrollOut({  
+  threshold: .2,
+  once: true
+});
+
+$(".clients-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    }
+  });
+
+
+
   </script>
   <script>
+            // Initiate the wowjs animation library
+  new WOW().init();
     window.onload = function () {
+      $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
       if (window.pageYOffset !== 0) {
         document.getElementById("navbarMaster").classList.remove('navbar-light');
         document.getElementById("navbarMaster").classList.add('navbar-dark');
@@ -1248,5 +1253,4 @@
     }
   </script>
 </body>
-
 </html>
