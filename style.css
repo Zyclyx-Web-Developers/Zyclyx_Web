@@ -9,6 +9,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 /*Global styles*/
 /* Links */
+.testimonial-card{
+  border: 1px solid lightskyblue;
+  text-align: left;
+}
+.rating{
+  list-style-type: none;
+  display: inline-block;
+}
+.rating .fa{
+  color: #007bff;
+}
 [data-scroll] {
   opacity: 0;
   will-change: transform, scale, opacity;
