@@ -1134,9 +1134,10 @@ figure img{width:300px;}
 }
 
 .card-img img {
-	width: 100%;
+	width: 90%;
 	height: auto;
-	display: block;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-img span {
