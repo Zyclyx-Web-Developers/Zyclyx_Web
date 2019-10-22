@@ -77,7 +77,7 @@ p{
 }
 .title-highlight{
   font-weight: 800;   
-  color: #007bff;
+  color: #ff4500;
 }
 
 .title-1::before{
@@ -87,7 +87,7 @@ bottom: 0px;
 left: 50%;
 width: 70px;
 height: 2px;
-background: #42c0e5;
+background: #ff4500;
 margin-left: -35px;
 }
 /* Custom default button */
