@@ -448,47 +448,30 @@ border: 1px solid rgba(0, 157, 88,0.7);
 /* 
 ==== OUR PROJECTS ====
 */
+
 .our-projects{
   background-color: #ffffff;
   padding: 4rem 0 !important;         
  }  
-.img-box img{
- max-width: 350px;
- width:350px;
+
+ .image-box img{
+  border-radius: 12px;
+  max-width: 350px;
+  height: 300px;
+ border-bottom-right-radius: 45px;
+ border-top-left-radius: 45px;
  height: auto;
- border-radius: 12px;
+ 
 }
 .carousel-inner{
   border-radius: 12px;
   box-shadow: 0 0 5px 8px #ffffff;
   background-color:#ffffff;
+}  
+#mainCarousel .carousel-item .text-box {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;      
 }
-.img-box{
-  padding: 0;
-}
-/* #mainCarousel .carousel-item .mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-} */
- 
-#mainCarousel .carousel-item h4 {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  font-size: 70px;
-  font-weight: 700;
-  margin-right: -190px;
-  color: #000000c5;
-}
-
-#mainCarousel .carousel-item a {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
 #mainCarousel .carousel-item .mask img {
   -webkit-animation-name: slideInRight;
   animation-name:fade;
@@ -498,21 +481,14 @@ border: 1px solid rgba(0, 157, 88,0.7);
   transition: opacity 1s ease-in-out;
 }
 
-#mainCarousel h4,
-#mainCarousel a,
+#mainCarousel .text-box, 
 #mainCarousel .carousel-item .mask img {
   -webkit-animation-duration: 1s;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-#mainCarousel .container {
-  max-width: 1430px;
-}
-#mainCarousel .carousel-item {
-  height: 100%;
-  /* min-height: 550px; */
-}
+ 
 #mainCarousel {
   position: relative;
   z-index: 1;
@@ -595,40 +571,9 @@ border: 1px solid rgba(0, 157, 88,0.7);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+ 
 
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
+ 
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -720,6 +665,40 @@ border: 1px solid rgba(0, 157, 88,0.7);
       transform: translate3d(0, 0, 0); */
     }
   }
+
+  /*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
  /* 
  ======== OUR SUCCESS STORIES ========
  */
