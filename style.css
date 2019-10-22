@@ -273,12 +273,12 @@ background-color: #ffffff;
   border-radius:50px;
 }
 .serv-1{
-border-top: 4px solid #89ffa4;
+border-top: 4px solid rgba(0, 157, 88,0.7);
 /* background-color: #deffe5; */
 }
  
 .serv-2{
-border-top: 4px solid #ffc18d;
+border-top: 4px solid rgba(255, 69, 0,0.7);
 /* background-color: antiquewhite; */
 }
 .serv-3{
@@ -290,11 +290,11 @@ border-top: 4px solid #95aeff;
   /* background-color: #95aeff4d; */
 }
 .serv-5{
-border-top:4px solid #89ffa4;
+border-top: 4px solid rgba(0, 157, 88,0.7);
 /* background-color: #deffe5; */
 }
 .serv-6{
-border-top: 4px solid #ffc18d;
+  border-top: 4px solid rgba(255, 69, 0,0.7);
 /* background-color: antiquewhite; */
 }
 
