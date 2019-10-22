@@ -1,6 +1,4 @@
-.Footer .Location{
-    font-family: ;
-}
+ 
 .f-links a{
     font-size: 16px;
     text-decoration: none;
@@ -73,14 +71,14 @@
     width: 10px;
     height: 4px;
     display: inline-block;
-    background: #eda10c;
+    background: #ff4500;
     transform: skewX(-15deg);
 }
 .underLine2{
     width: 20px;
     height: 4px;
     display: inline-block;
-    background: #eda10c;
+    background: #ff4500;
     transform: skewX(-15deg);
 }
 .underLine{
