@@ -755,7 +755,9 @@ border-top: 4px solid rgba(0, 157, 88,0.7);
   padding: 4rem 0 !important;
   background-color: #ffffff;
 }
-
+.blog-post .card-content{
+  border-radius: 12px;
+}
 /* 
 ==== END - BLOG POSTS ====
 */
