@@ -1057,3 +1057,25 @@ a.btn-card {
     color: #fff;
 }
 /* End card section */
+.t-cont{
+  padding: 25px 0;
+  margin: 0 15px;
+}
+.t-card{
+  margin: 0 auto;  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+ background-color: #ffffff;
+ border-radius: 6px;
+ border-bottom-right-radius: 40px;
+ border-top-left-radius: 25px;
+}
+.client-pic{
+  z-index: 1;
+}
+.client-pic img{
+max-width: 100px;
+margin: 0 10px;
+border-bottom-right-radius: 25px;
+ border-top-left-radius: 25px;
+ border: 1px solid rgba(22, 28, 45,0.3);
+}
