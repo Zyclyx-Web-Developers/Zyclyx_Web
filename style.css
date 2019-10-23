@@ -456,18 +456,21 @@ border: 1px solid rgba(0, 157, 88,0.7);
 
  .image-box img{
   border-radius: 12px;
-  max-width: 350px;
-  height: 300px;
+  max-width: 500px !important;
+  height: auto;
+  max-height: 450px !important;
  border-bottom-right-radius: 45px;
  border-top-left-radius: 45px;
  height: auto;
  
 }
 .carousel-inner{
+  margin: 25px auto;
   border-radius: 12px;
-  box-shadow: 0 0 5px 8px #ffffff;
+  /* box-shadow: 0 0 2px 4px #cee8e6 ; */
   background-color:#ffffff;
 }  
+
 #mainCarousel .carousel-item .text-box {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;      
