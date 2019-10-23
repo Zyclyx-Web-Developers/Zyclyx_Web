@@ -17,7 +17,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <!-- Custom styles -->
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="./navbar.css">
@@ -32,7 +33,7 @@
 <body class="text-center">
   <div class="home">
     <!-- 
-      ====== Navbar ======
+      ==== NAVBAR ====
     -->
     <header class="main-navbar" id="mainNavbar">
       <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-light site-navbar" id="navbarMaster">
@@ -49,15 +50,16 @@
             </li>
 
             <!-- services -->
-            <li class="nav-item dropdown mx-2 py-3">
+            <li class="nav-item dropdown mx-2 py-3 service-dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
               </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-three-col animate slideIn30"
+              <div class="dropdown-menu dropdown-menu-right service-dropdown-menu animate slideIn30"
                 aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="col-12 col-md-4">
+                  <div class="col-12 col-md-3">
+                    <p class="dropdown-title">New Age Technologies</p>
                     <a class="dropdown-item py-2 my-1" href="./AI.html">Artificial Intelligence</a>
                     <a class="dropdown-item py-2 my-1" href="./RPA.html">Robotic Process Automation</a>
                     <a class="dropdown-item py-2 my-1" href="./Blockchain.html">Blockchain</a>
@@ -103,6 +105,18 @@
                     <!-- heading BI solution service -->
                     <a class="dropdown-item py-2 my-1" href="./Data Visualisation.html">Data Visualization</a>
                     <a class="dropdown-item py-2 my-1" href="./Predictive Analysis.html">Predictive Analysis</a>
+
+                  </div>
+                  <div class="col-md-3 col-12">
+                      <a class="dropdown-item py-2 my-1" href="#">Cyber Security Services</a>
+                      <a class="dropdown-item py-2 my-1" href="#">IT Security Services</a>
+                      <a class="dropdown-item py-2 my-1" href="./Info-Security.html">Information Security Services</a>
+                      <a class="dropdown-item py-2 my-1" href="#">End User Computing</a>
+                      <div class="dropdown-divider"></div>                   
+                    <a class="dropdown-item py-2 my-1" href="./Application-Development.html">Application Development</a>
+                      <a class="dropdown-item py-2 my-1" href="./Product-Engineering.html">Product Engineering</a>  
+                      <a class="dropdown-item py-2 my-1" href="./Digital-Marketting.html">Digital Marketing</a>
+                      <a class="dropdown-item py-2 my-1" href="./Bigdata.html">Big Data</a>
                   </div>
                 </div>
               </div>
@@ -151,12 +165,10 @@
       </nav>
     </header>
     <!-- 
-      ====== END Navbar ======
+      ==== END NAVBAR ====
     -->
-    <!-- 
-      ----------
-       Homepage - slider
-      ----------
+    <!--
+       ==== HOMEPAGE - SLIDER ====
     -->
     <section class="v-header v-container" id="videoContainer">
       <div class="fullscreen-video-wrap">
@@ -169,244 +181,187 @@
       </div>
     </section>
   </div>
-  <!-- Homepage End -->
+  <!-- 
+    ==== END - HOMEPAGE ====
+  -->
 
-  <!-- Welcome - Home -->
-  <section class="container-fluid welcome" data-scroll>
-    <h2 class="title-2 ">Welcome to <span class="title-highlight">ZYCLYX</span></h2>
-    <p class="text-2">Automate any process to support growth, enable innovation and cut cost across your organisation
+  <!-- 
+    ==== WELCOME INTRO ====
+  -->
+  <section class="container-fluid welcome">
+    <h2 class="title-1 my-3">Welcome to <span class="title-highlight">ZYCLYX</span></h2>
+    <p class="title-caption">Automate any process to support growth, enable innovation and cut cost across your
+      organisation
     </p>
 
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center mt-4 text-left">
 
       <!-- Welcome - card -1 -->
-      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp"
-        data-wow-duration="1.4s">
-        <h3 class="py-2 title-3">Who we are</h3>
-        <p class="ml-2 py-2 text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum inventore, placeat
-          quibusdam atque cupiditate
-          totam accusantium iste illo suscipit minima, sunt nam neque blanditiis odio quos.</p>
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-duration="1.4s">
+        <div class="d-flex justify-conent-center">
+          <p class=""><img src="./images/icons/we_are.svg" alt="who we are icon"></p>
+          <h3 class="py-1 title-2 ml-3">Who we are</h3>
+        </div>
+        <p class="ml-1 text-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptatum illum placeat
+          facilis esse, cum eum, quasi inventore deleniti sunt facere aliquam dolore non earum ab consequuntur sed
+          necessitatibus dicta!</p>
       </div>
 
       <!-- Welcome - card - 2 -->
-      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
         data-wow-duration="1.4s">
-        <h3 class="py-2 title-3">Why Choose Us</h3>
-        <p class="ml-2 py-2 text-1">Because we have actually led and established some of the largest RPA implementations
+        <div class="d-flex justify-conent-center">
+          <p><img src="./images/icons/choose_us.svg" alt="why Choose us icon"></p>
+          <h3 class="py-1 title-2 ml-3">Why Choose Us</h3>
+        </div>
+        <p class="ml-1 text-2">Because we have actually led and established some of the largest RPA implementations
           in the world. Few others can boast the depth of experience that we bring in establishing, leading and managing
           enterprise scale programs.</p>
       </div>
 
       <!-- Welcome - card - 3 -->
-      <div class="col-12 col-md-3 m-lg-4 m-2 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
         data-wow-duration="1.4s">
-        <h3 class="py-2 title-3">Our Vision</h3>
-        <p class="ml-2 py-2 text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum inventore, placeat
-          quibusdam atque cupiditate
-          totam accusantium iste illo suscipit minima, sunt nam neque blanditiis odio quos.</p>
+        <div class="d-flex justify-conent-center">
+          <p><img src="./images/icons/our_vision.svg" alt="our vision"></p>
+          <h3 class="py-1 title-2 ml-3">Our Vision</h3>
+        </div>
+        <p class="ml-1 text-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum autem modi dolorum!
+          Suscipit, necessitatibus? Voluptas repellendus veritatis, quia quisquam culpa incidunt deserunt doloremque
+          amet delectus.</p>
       </div>
+
     </div>
-    <p class="my-4"><a href="./aboutus.html" class="btn btn-outline-primary">Know More</a></p>
+    <!-- <p class="mt-4 pb-0"><a href="./aboutus.html" class="btn btn-outline-primary">Know More</a></p> -->
   </section>
-  <!-- About zyclyx End -->
+  <!-- 
+    ==== END - WLECOME INTRO ====
+   -->
 
   <!-- 
-      ==================
-         CORE VALUES
-      ==================   
-     -->
-  <section class="core-values-container py-4" data-scroll>
-    <div class="container-fluid">
+      ==== CORE VALUES ====   
+  -->
+  <section class="core-values" data-scroll>
+    <h2 class="title-1 my-3">Our Core <span class="title-highlight">Values</span></h2>
+    <p class="title-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div class="container-fluid py-2">
       <div class="row m-2">
-        <div class="col-12 col-md-5">
-          <div class="core-values-title">
-            <h2 class="py-3 title-2">Our Core <span class="title-highlight">Values</span></h2>
-            <p class="text-1">At Zyclyx, we don't just accept difference - we celebrate it, we support it, and we thrive
+        <!-- Core value caption -->
+        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center core-val-caption">
+          <div>
+            <p class="text-2 font-weight-bold">At Zyclyx, we don't just accept difference - we celebrate it, we support
+              it, and we thrive
               on it for
               the benefit of our employees, our products, and our community</p>
           </div>
         </div>
+        <!-- core values -->
         <div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
           <div class="row core-values-items">
             <!-- core value - 1 -->
             <div class="col-6 col-md-4 my-3 val-1 animated slidInUp delay-2s">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M80.46375,7.095c-40.42,2.82768 -73.58375,36.22148 -73.58375,75.465c0,1.22762 0.64955,2.32551 1.65281,2.9361l49.94719,31.22203v48.40187h55.04v-48.40187l49.96735,-31.22875c0.99314,-0.61275 1.63265,-1.70903 1.63265,-2.92937c0,-39.24352 -33.16375,-72.63732 -73.58375,-75.465c15.12912,14.32416 25.42375,44.3846 25.42375,75.465h-3.44h-3.44c0,-29.95208 -9.804,-58.59115 -24.08,-71.19188c-14.276,12.60072 -24.08,41.2398 -24.08,71.19188h-3.44h-3.44c0,-31.0804 10.29463,-61.14084 25.42375,-75.465zM34.4,72.24c9.44968,0 17.85698,4.70366 20.9289,11.70406c0.05943,0.13525 0.15359,0.24505 0.22844,0.36953l-0.02688,0.02015l17.50906,29.18625h-6.69188l-51.43875,-32.14922c3.80949,-5.55408 11.25352,-9.13078 19.49109,-9.13078zM86,72.24c10.24963,0 19.36589,4.11417 23.48875,10.3536l-18.55719,30.9264h-9.86313l-18.55047,-30.9264c4.12382,-6.23772 13.23406,-10.3536 23.48203,-10.3536zM137.6,72.24c8.23757,0 15.6816,3.5767 19.4911,9.13078l-51.43875,32.14922h-6.69188l17.50906,-29.18625l-0.02688,-0.02015c0.07508,-0.12448 0.16863,-0.23428 0.22844,-0.36953c3.07192,-7.0004 11.47922,-11.70406 20.9289,-11.70406zM79.12,127.28h13.76c1.90232,0 3.44,1.53768 3.44,3.44c0,1.90232 -1.53768,3.44 -3.44,3.44h-13.76c-1.90232,0 -3.44,-1.53768 -3.44,-3.44c0,-1.90232 1.53768,-3.44 3.44,-3.44z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </p>
-              <p><span class="h5">Deliver</span> <br /><span class="text-muted">Amazing Service</span></p>
+              <p><img src="./images/icons/c_val_deliver.svg" alt="" srcset=""></p>
+              <p><span class="title-2">Deliver</span> <br /><span class="text-2 text-muted">Amazing Service</span></p>
             </div>
 
             <!-- core value - 2 -->
             <div class="col-6 col-md-4 my-3 val-2">
-              <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M73.12015,13.76l9.61453,17.31422l10.81719,-17.31422zM105.96813,13.76l10.81719,17.31422l9.61453,-17.31422zM99.76,16.81031l-10.99187,17.58969h21.98375zM67.4025,17.63672l-13.975,16.76328h23.28719zM132.1175,17.63672l-9.31219,16.76328h23.28719zM53.54172,41.28l36.81203,39.61375l-10.44094,-39.61375zM87.02797,41.28c0,0 12.73811,48.16 12.76563,48.16c0.02064,0 -0.05424,3.44 -0.0336,3.44l12.73875,-51.6zM119.6139,41.28l-10.41406,39.64063l36.78515,-39.64063zM152.54922,89.44672c-2.49418,-0.08228 -5.03235,0.55373 -7.28985,1.97531l-32.16265,19.82703c2.43896,2.48712 3.86328,5.85945 3.86328,9.41297c0,7.4648 -6.07348,13.53828 -13.53828,13.53828c-1.05264,0 -2.09614,-0.12545 -3.10406,-0.36281c-2.64536,-0.62608 -36.4397,-10.74323 -40.28562,-11.89219c-1.81976,-0.54696 -2.84805,-2.4668 -2.30453,-4.28656c0.54696,-1.81976 2.46353,-2.84805 4.27985,-2.30453c15.01904,4.49952 38.04178,11.35781 39.89594,11.79813c0.49192,0.11696 1.00244,0.17469 1.51844,0.17469c3.67048,0 6.65828,-2.9878 6.65828,-6.65828c0,-2.37016 -1.23163,-4.50038 -3.29219,-5.6975c-1.00104,-0.58136 -34.95551,-15.42657 -41.78391,-18.42281c-10.6984,-4.69904 -23.03418,-4.81514 -33.8289,-0.3225l-22.17859,9.23828c-1.7544,0.7224 -2.11641,2.31733 -2.11641,4.49485v41.43453c0,1.89888 1.54112,3.44 3.44,3.44c1.0492,0 1.88818,-0.5654 2.02234,-0.66516l11.98625,-8.79484c6.10944,-4.48232 14.25385,-5.46761 21.41937,-2.51953l40.23188,14.2639c2.26008,0.80152 4.60159,1.19594 6.92703,1.19594c4.44104,0 8.81672,-1.43002 12.47,-4.19922l54.13297,-41.02469c5.74824,-3.96288 7.33349,-11.68992 3.60797,-17.5964c-2.3822,-3.7797 -6.41164,-5.90975 -10.5686,-6.04688z">
-                      </path>
-                    </g>
-                  </g>
-                </svg></p>
-              <p><span class="h5">Take Ownership</span><br /><span class="text-muted">in Everything</span></p>
+              <p><img src="./images/icons/c_val_ownership.svg" alt=""></p>
+              <p><span class="title-2">Take Ownership</span><br /><span class=" text-2 text-muted">in Everything</span>
+              </p>
             </div>
 
             <!-- core value - 3 -->
             <div class="col-6 col-md-4 my-3 val-3">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M86,6.63141l-19.04094,19.04766c-0.89866,0.86281 -1.26066,2.14404 -0.94639,3.34955c0.31427,1.20551 1.2557,2.14694 2.46121,2.46121c1.20551,0.31427 2.48674,-0.04773 3.34955,-0.94639l10.73656,-10.73656v31.79313c-0.01754,1.24059 0.63425,2.39452 1.7058,3.01993c1.07155,0.62541 2.39684,0.62541 3.46839,0c1.07155,-0.62541 1.72335,-1.77935 1.7058,-3.01993v-31.79313l10.73656,10.73656c0.86281,0.89866 2.14404,1.26066 3.34955,0.94639c1.20551,-0.31427 2.14694,-1.2557 2.46121,-2.46121c0.31427,-1.20551 -0.04773,-2.48674 -0.94639,-3.34955zM137.6,34.15141l-19.04094,19.04766c-0.89867,0.86281 -1.26068,2.14404 -0.94641,3.34956c0.31427,1.20552 1.2557,2.14696 2.46122,2.46122c1.20552,0.31427 2.48675,-0.04774 3.34956,-0.94641l10.73656,-10.73656v31.79313c-0.01754,1.24059 0.63425,2.39452 1.7058,3.01993c1.07155,0.62541 2.39684,0.62541 3.46839,0c1.07155,-0.62541 1.72335,-1.77935 1.7058,-3.01993v-31.79313l10.73656,10.73656c0.86281,0.89867 2.14404,1.26068 3.34956,0.94641c1.20552,-0.31427 2.14696,-1.2557 2.46122,-2.46122c0.31427,-1.20552 -0.04774,-2.48675 -0.94641,-3.34956zM34.4,58.2314l-19.04094,19.04766c-0.89866,0.86281 -1.26066,2.14404 -0.94639,3.34955c0.31427,1.20551 1.2557,2.14694 2.46121,2.46121c1.20551,0.31427 2.48674,-0.04773 3.34955,-0.94639l10.73656,-10.73656v31.79313c-0.01754,1.24059 0.63425,2.39452 1.7058,3.01993c1.07155,0.62541 2.39684,0.62541 3.46839,0c1.07155,-0.62541 1.72335,-1.77935 1.7058,-3.01993v-31.79313l10.73656,10.73656c0.86281,0.89867 2.14404,1.26068 3.34956,0.94641c1.20552,-0.31427 2.14696,-1.2557 2.46122,-2.46122c0.31427,-1.20552 -0.04774,-2.48675 -0.94641,-3.34956zM68.8,61.92c-1.90232,0 -3.44,1.54112 -3.44,3.44v92.88c0,1.90232 1.53768,3.44 3.44,3.44h34.4c1.90232,0 3.44,-1.53768 3.44,-3.44v-92.88c0,-1.89888 -1.53768,-3.44 -3.44,-3.44zM120.4,89.44c-1.90232,0 -3.44,1.53768 -3.44,3.44v65.36c0,1.90232 1.53768,3.44 3.44,3.44h34.4c1.90232,0 3.44,-1.53768 3.44,-3.44v-65.36c0,-1.90232 -1.53768,-3.44 -3.44,-3.44zM17.2,113.52c-1.90232,0 -3.44,1.53768 -3.44,3.44v41.28c0,1.90232 1.53768,3.44 3.44,3.44h34.4c1.90232,0 3.44,-1.53768 3.44,-3.44v-41.28c0,-1.90232 -1.53768,-3.44 -3.44,-3.44z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </p>
-              <p><span class="h5">Commit</span><br /><span class="text-muted">to Continuous Improvement</span></p>
+              <p><img src="./images/icons/c_val_commit.svg" alt="" srcset=""></p>
+              <p><span class="title-2">Commit</span><br /><span class=" text-2 text-muted">to Continuous
+                  Improvement</span></p>
             </div>
 
             <!-- core value - 4 -->
             <div class="col-6 col-md-4 my-3 val-4">
-              <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M82.56,6.88c-46.92375,0 -72.24,34.4 -72.24,66.7575c0,17.2 6.70531,30.30156 13.2225,43c5.57656,10.8575 10.8575,21.09688 10.8575,32.68v15.8025h82.56v-10.32h6.45c15.38594,0 27.95,-12.56406 27.95,-27.95v-14.5125l6.665,-2.795c2.94281,-1.23625 5.18688,-3.64156 6.235,-6.665c1.04813,-3.02344 0.80625,-6.3425 -0.7525,-9.1375l-14.0825,-25.37c-4.97187,-39.65406 -28.7025,-61.49 -66.865,-61.49zM82.56,48.16c17.10594,0 30.96,13.85406 30.96,30.96c0,11.91906 -6.78594,22.23906 -16.6625,27.4125c-1.69312,3.01 -3.09062,6.27531 -3.655,10.4275h-21.1775c-0.55094,-4.11187 -2.08281,-7.4175 -3.7625,-10.4275c-9.91687,-5.16 -16.6625,-15.46656 -16.6625,-27.4125c0,-17.10594 13.85406,-30.96 30.96,-30.96zM73.96,75.68c-2.84875,0 -5.16,2.31125 -5.16,5.16c0,2.84875 2.31125,5.16 5.16,5.16c1.78719,0 3.37281,-0.88687 4.3,-2.2575c0.52406,0.60469 0.86,1.37063 0.86,2.2575v24.08h6.88v-24.08c0,-0.88687 0.33594,-1.65281 0.86,-2.2575c0.92719,1.37063 2.51281,2.2575 4.3,2.2575c2.84875,0 5.16,-2.31125 5.16,-5.16c0,-2.84875 -2.31125,-5.16 -5.16,-5.16h-1.72c-2.63375,0 -5.0525,1.03469 -6.88,2.6875c-1.8275,-1.65281 -4.24625,-2.6875 -6.88,-2.6875zM72.24,123.84h20.64v3.44c0,2.795 -1.69312,5.16 -4.085,6.235c-1.075,2.39188 -3.44,4.085 -6.235,4.085c-2.795,0 -5.16,-1.69312 -6.235,-4.085c-2.39187,-1.075 -4.085,-3.44 -4.085,-6.235z">
-                      </path>
-                    </g>
-                  </g>
-                </svg></p>
-              <p><span class="h5">Embrace</span><br /><span class="text-muted">Creativity & Innovation</span></p>
+              <p><img src="./images/icons/c_val_embrace.svg" alt="" srcset=""></p>
+              <p><span class="title-2">Embrace</span><br /><span class="text-2 text-muted">Creativity &
+                  Innovation</span></p>
             </div>
 
             <!-- core value - 5 -->
             <div class="col-6 col-md-4 my-3 val-5">
-              <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M130.72,17.2c-25.5936,0 -30.96,14.10669 -30.96,25.97469c0,11.1112 5.09228,17.78453 8.84187,21.22453c6.2608,-17.888 23.46295,-38.70269 30.58375,-46.61469c-2.5456,-0.3784 -5.33523,-0.58453 -8.46563,-0.58453zM146.78453,19.74641l-0.06719,0.06719c-1.3072,1.1352 -6.2952,6.63866 -12.04,14.06906c3.8528,4.1624 13.69227,15.78987 18.30187,30.37547c3.7496,-3.4744 8.70078,-10.10984 8.70078,-21.08344c0,-8.8064 -2.95867,-18.81868 -14.89547,-23.42828zM42.93281,24.26141c-7.86433,-0.41344 -16.11038,1.69162 -21.8225,6.88c-8.2216,7.46824 -10.26426,19.27389 -10.63578,29.83125c-0.15136,4.38944 -0.24978,10.21573 0.08734,15.23813c0.39216,5.88584 4.06683,10.4197 8.85531,13.6189c4.78504,3.19576 10.54355,5.11921 16.19891,5.99985c6.55664,1.02168 15.25129,0.69058 20.99609,-3.1175c-12.82432,-0.93224 -31.6924,-6.42044 -32.26344,-22.15844c4.80568,11.92648 20.39484,13.62777 31.1414,10.23937c2.01584,-0.6364 4.88453,-1.37702 6.60453,-2.68078c1.92296,-1.45512 2.91379,-4.58686 4.58219,-6.53734c0.92192,-1.07672 1.9428,-2.07529 3.0436,-2.96969c1.80944,-1.47576 2.67138,-1.41841 2.49938,-3.82297c-0.258,-3.46752 -0.66656,-6.93095 -1.3236,-10.34687c-1.96424,-12.39432 -7.30693,-25.31174 -20.33765,-28.94438c-2.42778,-0.67682 -5.00434,-1.09172 -7.62578,-1.22953zM40.8164,33.15031c2.75101,-0.25427 5.59511,0.24558 8.13641,1.59234c8.11152,4.3 8.6201,15.28521 6.75906,23.16625c-1.36568,5.55216 -5.3542,13.2512 -10.97172,15.46656c-7.31,2.88272 -12.70704,-6.35916 -15.06344,-11.81156c-2.79672,-6.4672 -3.39807,-14.85381 -0.02688,-21.21781c2.2489,-4.24625 6.58155,-6.772 11.16656,-7.19578zM130.47813,39.49281c-6.536,9.116 -13.17735,19.88212 -15.96375,28.99812c1.548,2.4768 3.54401,4.74989 5.12641,6.19469v0.23515c0.0344,1.9264 0.03762,3.65204 -0.13438,5.78485c-0.3096,0.5848 -0.86242,1.0965 -1.61922,1.6125c0.5504,2.2016 0.79362,4.61067 0.75922,7.12187c-0.0344,3.0616 -0.3096,6.02027 -0.86,8.87547c0.7912,2.236 1.03442,4.64508 0.75922,7.12188c-0.0344,0.4128 -0.10508,0.82425 -0.20828,1.20265h50.22265c1.032,0 2.02718,-0.48455 2.68078,-1.31015c0.6536,-0.7912 0.89843,-1.85706 0.69203,-2.88906c-2.3736,-10.4576 -12.21146,-13.85756 -20.08906,-16.57515c-4.472,-1.548 -9.08133,-3.16507 -10.04453,-5.43547c-0.1376,-1.9608 -0.1419,-3.61818 -0.1075,-5.47578v-0.26875c1.5824,-1.4792 3.6851,-3.82297 5.2675,-6.40297c-3.5432,-13.1064 -12.35309,-24.14584 -16.48109,-28.78984zM89.24515,68.8c-13.62584,0.24768 -21.94306,7.71141 -22.24578,19.96813c-0.08256,3.55008 0.3848,6.5196 1.31016,10.2864c-0.8944,1.3588 -1.47458,3.22441 -1.19594,5.54297c0.55728,4.60616 2.38661,6.79207 4.04469,7.82063c1.3072,3.89752 4.72898,8.18774 7.20922,10.44094v0.20828c0.0172,1.94704 0.03419,3.6522 -0.13437,5.77812c-1.17648,2.14656 -5.61032,3.68392 -9.90344,5.17344c-7.8948,2.73136 -17.7189,6.13132 -20.08906,16.57516c-0.23048,1.01824 0.02171,2.0905 0.67187,2.90922c0.65016,0.81872 1.64174,1.29672 2.6875,1.29672l75.68,-0.00672c1.04576,0 2.03734,-0.47472 2.6875,-1.29c0.65016,-0.81528 0.89907,-1.89098 0.66515,-2.90922c-2.36672,-10.44384 -12.18754,-13.8438 -20.08234,-16.57516c-4.46168,-1.54456 -9.07494,-3.14131 -10.02438,-5.42203c-0.14448,-1.98144 -0.13142,-3.61162 -0.11422,-5.46234v-0.30235c2.41832,-2.2188 5.92857,-6.4443 7.24953,-10.41406c1.65464,-1.02856 3.48069,-3.21447 4.03797,-7.82063c0.2752,-2.28416 -0.27531,-4.1273 -1.14219,-5.47578c0.60544,-2.34608 1.15777,-5.60354 1.20937,-9.75562c0.10664,-8.92336 -4.04528,-15.05505 -11.18672,-16.70281c-2.26008,-2.50432 -6.19173,-3.86328 -11.33453,-3.86328zM11.54281,92.85985c-0.08299,-0.01247 -0.13287,0.14125 -0.91375,0.34937c-2.5284,0.67424 -5.4754,3.59593 -7.06813,5.54297c-2.494,3.04784 -6.30547,10.59853 0.14109,11.32781c5.11528,0.57792 10.62955,0 15.76891,0h25.83359h16.03094c-0.54008,-1.47232 -0.93756,-3.11105 -1.06828,-4.67625c-0.24424,-2.67632 0.72563,-5.01004 0.72563,-7.53844c-12.60416,7.63336 -28.88337,6.47569 -41.66297,-0.06719c-1.5996,-0.81872 -3.17378,-1.71597 -4.64266,-2.74797c-0.57792,-0.40592 -1.38186,-1.23195 -2.04922,-1.55875c-0.89956,-0.44032 -1.01217,-0.61909 -1.09516,-0.63156z">
-                      </path>
-                    </g>
-                  </g>
-                </svg></p>
-              <p><span class="h5">Build</span><br /> <span class="text-muted">a Positive Team Environment</span></p>
+              <p><img src="./images/icons/c_val_build.svg" alt="" srcset=""></p>
+              <p><span class="title-2">Build</span><br /> <span class="text-2 text-muted">a Positive Team
+                  Environment</span></p>
             </div>
 
             <!-- core value - 6 -->
             <div class="col-6 col-md-4 my-3 val-6">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#335eea">
-                      <path
-                        d="M20.64,3.44v13.76c0,5.68406 4.63594,10.32 10.32,10.32h6.88v23.1125c0,10.34688 5.14656,20.06219 13.76,25.8l14.405,9.5675l-14.405,9.5675c-8.61344,5.73781 -13.76,15.45313 -13.76,25.8v23.1125h-6.88c-5.68406,0 -10.32,4.63594 -10.32,10.32v13.76h130.72v-13.76c0,-5.68406 -4.63594,-10.32 -10.32,-10.32h-6.88v-23.1125c0,-10.34687 -5.14656,-20.06219 -13.76,-25.8l-14.405,-9.5675l14.405,-9.5675c8.61344,-5.73781 13.76,-15.45312 13.76,-25.8v-23.1125h6.88c5.68406,0 10.32,-4.63594 10.32,-10.32v-13.76zM44.72,27.52h82.56v23.1125c0,8.04906 -4.04469,15.53375 -10.75,19.995l-18.705,12.47l-4.3,2.9025l4.3,2.9025l18.705,12.47c6.70531,4.47469 10.75,11.94594 10.75,19.995v23.1125h-82.56v-23.1125c0,-8.04906 4.04469,-15.52031 10.75,-19.995l18.705,-12.47l4.3,-2.9025l-4.3,-2.9025l-18.705,-12.47c-6.70531,-4.46125 -10.75,-11.94594 -10.75,-19.995z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </p>
-              <p><span class="h5">Make</span><br /><span class="text-muted">It Count</span></p>
+              <p><img src="./images/icons/c_val_make.svg" alt="" srcset=""></p>
+              <p><span class="title-2">Make</span><br /><span class="text-2 text-muted">It Count</span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Services -->
-  <div class="container-fluid mx-auto services py-5" data-scroll>
-    <h2 class="title-2">Our <sapn class="title-highlight">Services</sapn>
+  <!-- 
+      ==== END - CORE VALUES ====   
+  -->
+  <!-- 
+    ==== OUR SERVICES ====
+   -->
+  <div class="container-fluid mx-auto services">
+    <h2 class="title-1">Our <sapn class="title-highlight">Services</sapn>
     </h2>
-    <p class="text-2">We Provide Wide Range Business Services</p>
+    <p class="title-caption">We Provide Wide Range Business Services</p>
     <div class="row text-left service-row">
       <!-- Service - 1 -->
-      <div class="col-md-3 main-service serv-1 m-4" data-aos="zoom-in-right" data-aos-delay="100"
-        data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-1 m-4 box">
         <!-- icon -->
-        <p class="service-icon my-2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+        <p class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
             viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
               <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#335eea">
+              <g fill="#009d58">
                 <path
                   d="M66.60297,6.88c-14.03176,0 -24.29064,8.54233 -27.9164,17.59641c-14.14184,3.09944 -24.92656,19.03615 -24.92656,37.44359c0,5.50056 1.0685,11.01144 3.35266,17.2h17.91891c1.42416,-3.99384 5.20956,-6.88 9.68844,-6.88c5.68976,0 10.32,4.63024 10.32,10.32c0,5.68976 -4.63024,10.32 -10.32,10.32c-4.47888,0 -8.26428,-2.88616 -9.68844,-6.88h-16.81031c-2.5284,3.45032 -4.46125,7.69528 -4.46125,13.76c0,9.55632 5.98001,17.88607 15.85625,22.44063c-2.74168,6.37776 -2.62408,12.66097 0.40312,17.98609c3.55696,6.25736 10.6963,10.36058 19.00734,11.06578c4.03512,10.8704 14.87585,13.8675 21.01625,13.8675c5.7104,0 12.51703,-2.78973 12.51703,-16.05781v-45.86219h-20.64v14.39156c3.99384,1.42416 6.88,5.20956 6.88,9.68844c0,5.68976 -4.63024,10.32 -10.32,10.32c-5.68976,0 -10.32,-4.63024 -10.32,-10.32c0,-4.47888 2.88616,-8.26428 6.88,-9.68844v-21.27156h27.52v-27.52h-20.64v-17.2h-7.51156c-1.42416,3.99384 -5.20956,6.88 -9.68844,6.88c-5.68976,0 -10.32,-4.63024 -10.32,-10.32c0,-5.68976 4.63024,-10.32 10.32,-10.32c4.47888,0 8.26428,2.88616 9.68844,6.88h14.39156v17.2h13.76v-37.195c0,-16.64272 -6.02919,-17.845 -15.95703,-17.845zM105.39703,6.88c-9.92784,0 -15.95703,1.20228 -15.95703,17.845v19.995h28.15156c1.64088,-4.59584 6.40189,-7.7242 11.75109,-6.67844c4.042,0.7912 7.32946,4.1244 8.07594,8.17672c1.20056,6.53944 -3.81244,12.26172 -10.1386,12.26172c-4.47888,0 -8.26428,-2.88616 -9.68844,-6.88h-28.15156v72.24h14.39156c1.64088,-4.59584 6.40189,-7.7242 11.75109,-6.67844c4.042,0.7912 7.32946,4.1244 8.07594,8.17672c1.20056,6.53944 -3.81244,12.26172 -10.1386,12.26172c-4.47888,0 -8.26428,-2.88616 -9.68844,-6.88h-14.39156v18.3489c0,13.26808 6.80663,16.0511 12.51703,16.0511c6.1404,0 16.98129,-2.9971 21.00953,-13.8675c8.31104,-0.7052 15.4571,-4.80842 19.01406,-11.06578c1.45168,-2.55248 2.22132,-5.32727 2.3314,-8.22375c0.1376,-3.58448 -1.39121,-6.91515 -2.94953,-10.14531c-0.20296,-0.43 -0.3225,-0.90509 -0.3225,-1.41765v-13.76h-30.96v-17.83156c-4.59584,-1.63744 -7.7242,-6.40189 -6.67844,-11.75109c0.7912,-4.042 4.1244,-7.32946 8.17672,-8.07594c6.53944,-1.20056 12.26172,3.81244 12.26172,10.1386c0,4.47888 -2.88616,8.26428 -6.88,9.68844v10.95156h30.96v19.135c6.5016,-4.76784 10.32,-11.54636 10.32,-19.135c0,-6.9316 -2.52184,-11.48949 -5.57656,-15.19781c3.84936,-8.52432 5.57656,-15.58331 5.57656,-22.64219c0,-18.40744 -10.78472,-34.34415 -24.92656,-37.44359c-3.6292,-9.05752 -13.88464,-17.59641 -27.9164,-17.59641zM44.72,44.72c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM127.28,44.72c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM113.52,75.68c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM44.72,79.12c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM58.48,123.84c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM113.52,123.84c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44z">
                 </path>
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2 title-3">Artificial Intelligence</h3>
-        <p class="text-muted">Augmenting technology by exterminating humans for deep integration into learning and
+        <h3 class="py-3 title-2">Artificial Intelligence</h3>
+        <p class="text-2 text-muted serv-text">Augmenting technology by exterminating humans for deep integration into learning
+          and
           reasoning through the
           invention of Artificial Intelligence</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./AI.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
 
       <!-- Service - 2 -->
-      <div class="col-md-3 main-service serv-2 m-4" data-aos="zoom-in-right" data-aos-delay="500"
-        data-aos-duration="5000">
+      <div class="col-md-3 main-service serv-2 m-4">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
               <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#335eea">
+              <g fill="#ff4500">
                 <path
                   d="M129.84656,17.2c-10.60552,0 -19.56403,5.7434 -23.90531,15.25156c-1.89888,-0.97008 -4.01405,-1.49156 -6.18125,-1.49156c-6.6736,0 -12.25941,4.77681 -13.50469,11.09265c-8.6,2.60064 -14.01531,10.25561 -14.01531,20.16969c0,11.21784 9.07112,20.33765 20.21672,20.33765h60.81141c10.33032,0 18.73187,-8.45058 18.73187,-18.83937c0,-8.80984 -6.12271,-16.67535 -13.78015,-18.56391c0.01032,-0.45064 0.02015,-0.83995 0.02015,-1.12203c0,-14.54432 -13.00288,-26.83469 -28.39344,-26.83469zM24.08,27.52c-7.71592,0 -13.76,6.04408 -13.76,13.76v75.68c0,2.53872 0.70541,4.86072 1.85437,6.88h-8.73437c-1.89888,0 -3.44,1.53768 -3.44,3.44c0,9.48408 7.71592,17.2 17.2,17.2h137.6c9.48408,0 17.2,-7.71592 17.2,-17.2c0,-1.90232 -1.54112,-3.44 -3.44,-3.44h-8.73437c1.14896,-2.01928 1.85437,-4.34128 1.85437,-6.88v-28.97797c-2.17752,0.76368 -4.48232,1.23287 -6.88,1.37734v27.60063c0,3.92504 -2.9584,6.88 -6.88,6.88h-123.84c-3.9216,0 -6.88,-2.95496 -6.88,-6.88v-75.68c0,-3.92504 2.9584,-6.88 6.88,-6.88h57.82828c1.60648,-2.76232 3.82791,-5.11872 6.48359,-6.88z">
                 </path>
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2 title-3">Cloud Computing</h3>
-        <p class="text-muted"> Cloud computing services at zyclyx meet the future needs of your business to dynamically
+        <h3 class="py-3 title-2">Cloud Computing</h3>
+        <p class="text-2 text-muted serv-text"> Cloud computing services at zyclyx meet the future needs of your business to
+          dynamically
           scale your cloud
           solutions as per your needs.</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./Cloud.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
 
       <!-- service - 3 -->
-      <div class="col-md-3 main-service serv-3 m-4" data-aos="zoom-in-right" data-aos-delay="800"
-        data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-3 m-4">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -420,15 +375,16 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2 title-3">Information Security</h3>
-        <p class="text-muted">To Automate predictive analysis for emulating the learning approach used by humans. It
+        <h3 class="py-3 title-2">Information Security</h3>
+        <p class="text-2 text-muted serv-text">To Automate predictive analysis for emulating the learning approach used by humans.
+          It
           identifies, prepares
-          and analyses algorithms and tests the model’s performance against unlabeled data to be trained.</p>
+          and analyses algorithms and tests.</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./Info-Security.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
 
       <!-- Service - 4 -->
-      <div class="col-md-3 main-service serv-4 m-4" data-aos="zoom-in-right" data-aos-delay="100"
-        data-aos-duration="1000">
+      <div class="col-md-3 main-service serv-4 m-4">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -442,617 +398,398 @@
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2 title-3">Block Chain</h3>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <h3 class="py-3 title-2">Block Chain</h3>
+        <p class="text-2 text-muted serv-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
           ut labore et
           dolore magna aliqua, Ut enim ad.</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./Blockchain.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
 
       <!-- Service - 5 -->
-      <div class="col-md-3 main-service serv-5 m-4" data-aos="zoom-in-right" data-aos-delay="500"
-        data-aos-duration="5000">
-        <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
-            height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+      <div class="col-md-3 main-service serv-5 m-4">
+        <p class="service-icon rounded-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
+            style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
               <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#335eea">
+              <g fill="#009d58">
                 <path
-                  d="M134.16,6.9875c-0.90031,0.1075 -1.70656,0.57781 -2.2575,1.29l-10.32,13.115c-1.935,-2.51281 -4.97187,-4.1925 -8.385,-4.1925h-9.675c-5.84531,0 -10.6425,4.79719 -10.6425,10.6425v26.875c0,5.84531 4.79719,10.6425 10.6425,10.6425h9.675c3.41313,0 6.45,-1.67969 8.385,-4.1925l10.32,13.115c1.00781,1.26313 2.76813,1.62594 4.1925,0.86l34.0775,-18.5975c1.42438,-0.76594 2.08281,-2.43219 1.58563,-3.96406c-0.51063,-1.54531 -2.02906,-2.48594 -3.62813,-2.27094c-0.41656,0.06719 -0.81969,0.215 -1.1825,0.43l-31.4975,17.3075l-11.61,-14.7275v-23.9725l11.61,-14.7275l31.4975,17.2c1.04813,0.71219 2.40531,0.76594 3.50719,0.14781c1.10188,-0.61813 1.76031,-1.80063 1.69313,-3.06375c-0.05375,-1.26313 -0.81969,-2.37844 -1.97531,-2.88906l-34.0775,-18.5975c-0.59125,-0.33594 -1.26312,-0.48375 -1.935,-0.43zM30.96,10.32c-17.06562,0 -30.96,13.89438 -30.96,30.96c0,17.06563 13.89438,30.96 30.96,30.96c17.06563,0 30.96,-13.89437 30.96,-30.96c0,-17.06562 -13.89437,-30.96 -30.96,-30.96zM64.285,24.08c2.72781,5.22719 4.515,10.91125 4.515,17.2c0,6.28875 -1.78719,15.41281 -4.515,20.64h21.6075c-0.25531,-1.19594 -0.215,-5.61687 -0.215,-6.88v-27.52c0,-1.26312 -0.04031,-2.24406 0.215,-3.44zM30.96,25.2625c8.80156,0 16.0175,7.21594 16.0175,16.0175c0,8.80156 -7.21594,16.0175 -16.0175,16.0175c-8.80156,0 -16.0175,-7.21594 -16.0175,-16.0175c0,-8.80156 7.21594,-16.0175 16.0175,-16.0175zM61.275,63.855c-6.90687,9.21813 -17.92562,15.265 -30.315,15.265c-4.21937,0 -8.25062,-0.76594 -12.04,-2.0425l30.2075,56.975h51.815zM23.65,141.04c-5.57656,0 -9.89,4.52844 -9.89,10.32v17.2c0,2.00219 1.43781,3.44 3.44,3.44h116.96c2.00219,0 3.44,-1.43781 3.44,-3.44v-17.2c0,-5.79156 -4.31344,-10.32 -9.89,-10.32z">
+                  d="M138.46,0c-1.19594,-0.04031 -2.35156,0.5375 -3.01,1.6125l-5.4825,8.9225c-1.85437,-0.14781 -3.64156,-0.16125 -5.4825,0l-5.59,-8.815c-0.90031,-1.42437 -2.75469,-1.935 -4.3,-1.29l-9.675,4.085c-1.53187,0.645 -2.41875,2.35156 -2.0425,3.9775l2.365,10.2125c-1.42437,1.22281 -2.76812,2.53969 -3.9775,3.9775l-10.2125,-2.365c-1.66625,-0.37625 -3.23844,0.59125 -3.87,2.15l-3.9775,9.7825c-0.63156,1.54531 -0.12094,3.30563 1.29,4.1925l8.815,5.4825c-0.14781,1.86781 -0.06719,3.82969 0.1075,5.6975l-8.815,5.4825c-1.42437,0.90031 -1.94844,2.75469 -1.29,4.3l4.085,9.675c0.645,1.53188 2.24406,2.43219 3.87,2.0425l10.2125,-2.2575c1.20938,1.41094 2.53969,2.67406 3.9775,3.87l-2.2575,10.2125c-0.36281,1.63938 0.48375,3.34594 2.0425,3.9775l9.7825,3.9775c0.41656,0.17469 0.86,0.215 1.29,0.215c1.15563,0 2.2575,-0.59125 2.9025,-1.6125l5.6975,-8.9225c1.86781,0.13438 3.74906,0.06719 5.59,-0.1075l5.6975,8.9225c0.91375,1.3975 2.66063,1.935 4.1925,1.29l9.7825,-4.085c1.55875,-0.65844 2.32469,-2.33812 1.935,-3.9775l-2.4725,-10.2125c1.38406,-1.19594 2.6875,-2.56656 3.87,-3.9775l10.32,2.2575c1.66625,0.36281 3.34594,-0.49719 3.9775,-2.0425l3.9775,-9.7825c0.63156,-1.57219 0.04031,-3.42656 -1.3975,-4.3l-9.03,-5.4825c0.13438,-1.8275 0.16125,-3.655 0,-5.4825l8.815,-5.805c1.3975,-0.90031 2.0425,-2.66062 1.3975,-4.1925l-4.1925,-9.675c-0.645,-1.54531 -2.31125,-2.43219 -3.9775,-2.0425l-10.2125,2.4725c-1.20937,-1.41094 -2.44562,-2.67406 -3.87,-3.87l2.15,-10.32c0.34938,-1.63937 -0.49719,-3.34594 -2.0425,-3.9775l-9.7825,-3.9775c-0.38969,-0.16125 -0.77937,-0.20156 -1.1825,-0.215zM127.28,30.53c1.8275,-0.02687 3.68188,0.24188 5.4825,0.9675c7.2025,2.92938 10.66938,11.18 7.74,18.3825c-2.92937,7.2025 -11.18,10.66938 -18.3825,7.74c-7.2025,-2.92937 -10.66937,-11.18 -7.74,-18.3825c2.20375,-5.40187 7.4175,-8.62687 12.9,-8.7075zM49.9875,58.48c-1.67969,0 -3.17125,1.23625 -3.44,2.9025l-2.15,13.545c-2.55312,0.77938 -5.07937,1.77375 -7.4175,3.01l-11.18,-7.955c-1.37062,-0.98094 -3.21156,-0.86 -4.4075,0.3225l-9.46,9.46c-1.1825,1.1825 -1.27656,3.03688 -0.3225,4.4075l7.8475,11.2875c-1.26312,2.365 -2.32469,4.85094 -3.1175,7.4175l-13.4375,2.15c-1.66625,0.28219 -2.9025,1.76031 -2.9025,3.44v13.33c0,1.66625 1.15563,3.14438 2.795,3.44l13.545,2.365c0.79281,2.56656 1.85438,5.0525 3.1175,7.4175l-7.955,11.18c-0.98094,1.37063 -0.87344,3.21156 0.3225,4.4075l9.46,9.46c1.1825,1.1825 3.03688,1.27656 4.4075,0.3225l11.2875,-7.8475c2.35156,1.24969 4.75688,2.23063 7.31,3.01l2.2575,13.545c0.26875,1.65281 1.76031,2.9025 3.44,2.9025h13.33c1.66625,0 3.14438,-1.15562 3.44,-2.795l2.365,-13.76c2.55313,-0.79281 4.97188,-1.76031 7.31,-3.01l11.395,7.955c1.37063,0.95406 3.225,0.86 4.4075,-0.3225l9.46,-9.46c1.19594,-1.19594 1.30344,-3.14437 0.3225,-4.515l-8.0625,-11.18c1.23625,-2.33812 2.23063,-4.79719 3.01,-7.31l13.76,-2.365c1.65281,-0.29562 2.795,-1.77375 2.795,-3.44v-13.33c0,-1.67969 -1.23625,-3.06375 -2.9025,-3.3325l-13.6525,-2.2575c-0.77937,-2.51281 -1.77375,-4.97187 -3.01,-7.31l7.955,-11.395c0.95406,-1.37062 0.86,-3.225 -0.3225,-4.4075l-9.46,-9.46c-1.19594,-1.19594 -3.03687,-1.30344 -4.4075,-0.3225l-11.2875,8.0625c-2.35156,-1.24969 -4.77031,-2.23062 -7.31,-3.01l-2.365,-13.6525c-0.28219,-1.65281 -1.77375,-2.9025 -3.44,-2.9025zM56.76,97.5025c9.82281,0 17.7375,7.91469 17.7375,17.7375c0,9.82281 -7.92812,17.7375 -17.7375,17.7375c-9.80937,0 -17.7375,-7.91469 -17.7375,-17.7375c0,-9.82281 7.91469,-17.7375 17.7375,-17.7375z">
                 </path>
               </g>
-            </g>
           </svg></p>
-        <h3 class="py-2 title-3">Robotic Process Automation</h3>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <h3 class="py-3 title-2">RPA</h3>
+        <p class="text-2 text-muted serv-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
           ut labore et dolore magna aliqua, Ut enim ad.</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./RPA.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
 
       <!-- Service - 6 -->
-      <div class="col-md-3 main-service serv-6 m-4" data-aos="zoom-in-right" data-aos-delay="800"
-        data-aos-duration="8000">
+      <div class="col-md-3 main-service serv-6 m-4">
         <p class="service-icon rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
             height="50" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
               <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#335eea">
+              <g fill="#ff4500">
                 <path
                   d="M99.73313,30.96c-17.42704,0 -32.20824,9.19684 -39.58016,24.295c-3.784,-2.37704 -8.33754,-3.655 -13.22922,-3.655c-12.51128,0 -22.06991,9.51407 -22.83703,22.40031c-15.34584,5.19096 -24.08672,17.36979 -24.08672,33.77515c0,18.34208 14.92245,33.26453 33.26453,33.26453h11.45547v-27.52h-3.44v-17.2h24.08v8.07594c3.42624,-4.87792 9.0816,-8.07594 15.48,-8.07594c6.3984,0 12.05376,3.19802 15.48,8.07594c3.42624,-4.87792 9.0816,-8.07594 15.48,-8.07594c10.43352,0 18.92,8.48648 18.92,18.92v6.88c0,4.03512 -1.27968,7.77214 -3.44,10.84406v8.07594h14.09594c16.88696,0 30.62406,-13.73383 30.62406,-30.61735c0,-16.26432 -12.43775,-30.68646 -27.57375,-32.7539c0.0344,-0.68112 0.05375,-1.34203 0.05375,-1.98875c0,-25.0776 -19.65552,-44.72 -44.74687,-44.72zM48.16,103.2v6.88h3.44v24.08h6.88v-30.96zM80.84,103.2c-6.60889,0 -12.04,5.43111 -12.04,12.04v6.88c0,6.60889 5.43111,12.04 12.04,12.04c6.60889,0 12.04,-5.43111 12.04,-12.04v-6.88c0,-6.60889 -5.43111,-12.04 -12.04,-12.04zM111.8,103.2c-6.60889,0 -12.04,5.43111 -12.04,12.04v6.88c0,6.60889 5.43111,12.04 12.04,12.04c6.60889,0 12.04,-5.43111 12.04,-12.04v-6.88c0,-6.60889 -5.43111,-12.04 -12.04,-12.04zM80.84,110.08c2.89239,0 5.16,2.26761 5.16,5.16v6.88c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-6.88c0,-2.89239 2.26761,-5.16 5.16,-5.16zM111.8,110.08c2.89239,0 5.16,2.26761 5.16,5.16v6.88c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-6.88c0,-2.89239 2.26761,-5.16 5.16,-5.16zM60.2,141.04c-6.60889,0 -12.04,5.43111 -12.04,12.04v6.88c0,6.60889 5.43111,12.04 12.04,12.04c6.60889,0 12.04,-5.43111 12.04,-12.04v-6.88c0,-6.60889 -5.43111,-12.04 -12.04,-12.04zM91.16,141.04c-6.60889,0 -12.04,5.43111 -12.04,12.04v6.88c0,6.60889 5.43111,12.04 12.04,12.04c6.60889,0 12.04,-5.43111 12.04,-12.04v-6.88c0,-6.60889 -5.43111,-12.04 -12.04,-12.04zM110.08,141.04v6.88h3.44v24.08h6.88v-30.96zM60.2,147.92c2.89239,0 5.16,2.26761 5.16,5.16v6.88c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-6.88c0,-2.89239 2.26761,-5.16 5.16,-5.16zM91.16,147.92c2.89239,0 5.16,2.26761 5.16,5.16v6.88c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-6.88c0,-2.89239 2.26761,-5.16 5.16,-5.16z">
                 </path>
               </g>
             </g>
           </svg></p>
-        <h3 class="py-2 title-3">Bigdata and Data Sciencne</h3>
-        <p class="text-muted">Managing, analyzing and visualizing data into information and information into insight by
+        <h3 class="py-3 title-2">Bigdata and Data Sciencne</h3>
+        <p class="text-2 text-muted serv-text">Managing, analyzing and visualizing data into information and information into
+          insight by
           making profitable
           decisions.</p>
+        <p class="text-right service-link mb-0"><a class="btn btn-link" href="./Bigdata.html">Know More <i class="fa fa-caret-right"></i></a></p>
       </div>
     </div>
   </div>
   <!-- 
-      ========= END SERVCIES ========
-     -->
-
-  <!-- Techstack section -->
-  <!-- Techstack section End -->
-  <!-- 
-      ======= INDUSTRIES =======
-     -->
-  <div class="container-fluid py-5 industries" data-scroll>
-    <div class="row">
-      <div class="col-7 mx-auto">
-        <!-- <p class="ind-caption">Industries We Serve</p> -->
-        <h2 class="title-2"><span class="title-highlight">Industries</span> We Serve</h2>
-        <p class="text-2">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <!-- <div class="col-12 col-md-9">
-            <div class="row"> -->
-          <!-- Industry - 1 -->
-
-          <a href="./Retail.html"
-            class="col m-2 py-2 industry ind-1 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M13.76,20.64v17.2l-0.43,2.9025c-0.12094,0.71219 -3.01,17.54938 -3.01,26.3375c0,5.56313 1.30344,9.9975 3.655,13.2225c-0.06719,-0.04031 -0.14781,-0.06719 -0.215,-0.1075v84.925h144.48v-84.925c-0.06719,0.04031 -0.13437,0.06719 -0.215,0.1075c2.35156,-3.225 3.655,-7.65937 3.655,-13.2225c0,-8.78812 -2.88906,-25.62531 -3.01,-26.3375l-0.5375,-2.9025h0.1075v-17.2zM19.565,44.72h14.835v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-5.71094,0 -8.6,-4.05812 -8.6,-12.04c0,-6.15437 1.57219,-17.15969 2.365,-22.36zM41.28,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM65.36,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM89.44,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM113.52,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM137.6,44.72h14.7275c0.81969,5.20031 2.4725,16.20563 2.4725,22.36c0,7.98188 -2.88906,12.04 -8.6,12.04c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM34.4,103.2h55.04v41.28h-55.04zM106.64,103.2h30.96v55.04h-30.96z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </p>
-            <p class="h5">Retail</p>
-          </a>
-
-          <!-- Industry - 2 -->
-          <a href="./Telecom.html"
-            class="col m-2 py-4 industry ind-2 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M33.97,0.215c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-9.05687,10.81719 -14.5125,24.79219 -14.5125,39.99c0,15.02313 5.30781,28.79656 14.19,39.56c1.22281,1.47813 3.41313,1.70656 4.89125,0.48375c1.47813,-1.22281 1.70656,-3.41312 0.48375,-4.89125c-7.90125,-9.58094 -12.685,-21.75531 -12.685,-35.1525c0,-13.545 4.8375,-25.96125 12.9,-35.5825c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM136.955,0.215c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c8.0625,9.62125 12.9,22.0375 12.9,35.5825c0,13.39719 -4.78375,25.57156 -12.685,35.1525c-1.22281,1.47813 -0.99437,3.66844 0.48375,4.89125c1.47813,1.22281 3.66844,0.99438 4.89125,-0.48375c8.88219,-10.76344 14.19,-24.53687 14.19,-39.56c0,-15.19781 -5.45562,-29.17281 -14.5125,-39.99c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM53.965,11.5025c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-6.50375,7.76688 -10.4275,17.79125 -10.4275,28.7025c0,10.91125 3.92375,20.93563 10.4275,28.7025c0.76594,1.03469 2.02906,1.54531 3.29219,1.35719c1.26313,-0.20156 2.31125,-1.075 2.72781,-2.28437c0.41656,-1.20938 0.12094,-2.55313 -0.7525,-3.48031c-5.50937,-6.57094 -8.815,-15.03656 -8.815,-24.295c0,-9.25844 3.30563,-17.71062 8.815,-24.295c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM116.96,11.5025c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c5.50938,6.58438 8.815,15.03656 8.815,24.295c0,9.25844 -3.30562,17.72406 -8.815,24.295c-0.87344,0.92719 -1.16906,2.27094 -0.7525,3.48031c0.41656,1.20937 1.46469,2.08281 2.72781,2.28437c1.26312,0.18813 2.52625,-0.3225 3.29219,-1.35719c6.50375,-7.76687 10.4275,-17.79125 10.4275,-28.7025c0,-10.91125 -3.92375,-20.93562 -10.4275,-28.7025c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM86,27.52c-7.60562,0 -13.76,6.15438 -13.76,13.76c0,4.55531 2.17688,8.57313 5.59,11.0725l-41.71,110.295c-1.33031,3.56094 0.47031,7.53844 4.03125,8.86875c3.56094,1.33031 7.53844,-0.47031 8.86875,-4.03125l4.4075,-11.5025l59.0175,-16.4475l10.535,27.95c1.33031,3.56094 5.30781,5.36156 8.86875,4.03125c3.56094,-1.33031 5.36156,-5.30781 4.03125,-8.86875l-41.71,-110.295c3.41313,-2.49937 5.59,-6.51719 5.59,-11.0725c0,-7.60562 -6.15437,-13.76 -13.76,-13.76zM86,69.875l8.815,23.22l-20.5325,7.74zM99.6525,105.8875l5.4825,14.62l-21.93,-8.2775zM66.7575,120.7225l26.23,9.89l-33.54,9.3525z">
-                    </path>
-                  </g>
-                </g>
-              </svg></p>
-            <p class="h5">Telecom</p>
-          </a>
-
-          <!-- Industry - 3 -->
-          <a href="./Banking & Finance.html"
-            class="col m-2 py-4 industry ind-3 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="500" data-aos-duration="5000">
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M85.82531,6.96734c-0.516,0 -1.02931,0.08331 -1.54531,0.25531l-75.68,35.43469c-1.032,0.688 -1.72,1.72134 -1.72,3.09734v5.84531c0,2.064 1.376,3.44 3.44,3.44h27.52c1.72,0 3.44,1.72 3.44,3.44c0,1.72 -1.72,3.44 -3.44,3.44h-3.44v72.24h103.2v-72.24h-3.44c-1.72,0 -3.44,-1.72 -3.44,-3.44c0,-1.72 1.72,-3.44 3.44,-3.44h27.52c2.064,0 3.44,-1.376 3.44,-3.44v-5.84531c0,-1.376 -0.68665,-2.40934 -2.06265,-3.09734l-75.68,-35.43469c-0.516,-0.172 -1.03603,-0.25531 -1.55203,-0.25531zM82.56,37.84h6.88v10.66265c13.072,1.72 17.2,13.76135 17.2,20.29735h-6.88c0,-1.376 -0.688,-13.76 -13.76,-13.76c-13.416,0 -13.76,9.976 -13.76,10.32c0,7.224 5.50669,9.288 14.79469,12.04c8.6,2.752 19.60531,5.848 19.60531,18.92c0,4.472 -1.37869,8.60269 -4.47469,11.35469c-3.784,3.784 -9.28531,5.15866 -12.72531,5.50266v10.66265h-6.88v-10.66265c-4.472,-0.688 -8.60269,-2.408 -11.35469,-5.16c-5.848,-6.192 -5.84531,-14.79335 -5.84531,-15.13735h6.88c0,0 -0.00135,6.192 3.78265,10.32c2.408,2.408 5.50535,3.44 9.97735,3.44c0,0 7.57069,0.00135 11.35469,-3.78265c1.72,-1.72 2.40531,-3.78535 2.40531,-6.53735c0,-7.224 -5.50669,-9.288 -14.79469,-12.04c-8.6,-2.752 -19.60531,-6.192 -19.60531,-18.92c0,-5.504 4.128,-15.48135 17.2,-16.85735zM20.64,61.92v72.24h6.88v-72.24zM144.48,61.92v72.24h6.88v-72.24zM17.2,141.04c-5.848,0 -10.32,4.472 -10.32,10.32v6.88h158.24v-6.88c0,-5.848 -4.472,-10.32 -10.32,-10.32z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </p>
-            <p class="h5">Banking</p>
-          </a>
-
-          <!-- Industry - 4 -->
-          <a href="./Lagistics.html"
-            class="col m-2 py-4 industry ind-4 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="700" data-aos-duration="7000">
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M9.675,27.52c-6.7725,0.5375 -9.675,6.1275 -9.675,9.9975v89.7625c0,5.68406 4.63594,10.32 10.32,10.32h14.0825c1.63938,9.75563 10.11844,17.2 20.3175,17.2c10.19906,0 18.67813,-7.44437 20.3175,-17.2h41.6025v-100.0825c0,-5.32125 -4.67625,-9.9975 -9.9975,-9.9975zM78.905,50.2025l5.0525,4.6225l-34.83,38.055l-23.005,-20.3175l4.515,-5.16l17.9525,15.8025zM113.52,51.6v86h3.7625c1.63938,9.74219 10.105,17.2 20.3175,17.2c10.2125,0 18.66469,-7.45781 20.3175,-17.2h3.7625c5.30781,0 10.32,-5.01219 10.32,-10.32v-33.0025c0,-6.74562 -4.86437,-13.96156 -5.4825,-14.835l-14.19,-19.0275c-2.64719,-3.30562 -8.07594,-8.815 -14.7275,-8.815zM130.72,58.48h6.88c2.71438,0 6.18125,2.39188 9.245,6.235l14.0825,18.8125c1.03469,1.49156 3.53406,5.6975 4.085,9.3525h-30.8525c-1.54531,0 -3.44,-1.89469 -3.44,-3.44zM44.72,120.4c7.64594,0 13.76,6.11406 13.76,13.76c0,7.64594 -6.11406,13.76 -13.76,13.76c-7.64594,0 -13.76,-6.11406 -13.76,-13.76c0,-7.64594 6.11406,-13.76 13.76,-13.76zM137.6,120.4c7.59219,0 13.76,6.16781 13.76,13.76c0,7.59219 -6.16781,13.76 -13.76,13.76c-7.59219,0 -13.76,-6.16781 -13.76,-13.76c0,-7.59219 6.16781,-13.76 13.76,-13.76z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </p>
-            <p class="h5">Logistics</p>
-          </a>
-
-          <!-- Industry - 5 -->
-          <a href="./Legal.html"
-            class="col m-2 py-4 industry ind-5 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="900" data-aos-duration="9000">
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M86,3.44c-0.7482,0 -1.49345,0.24403 -2.12985,0.72563l-79.12,61.92c-1.4792,1.1696 -1.75413,3.33062 -0.58453,4.84422c1.1696,1.4792 3.33062,1.75413 4.84422,0.58453l4.75016,-3.70875v90.43437c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.43437l4.75015,3.70875c0.6536,0.4816 1.37305,0.72563 2.12985,0.72563c1.032,0 2.02638,-0.45015 2.71437,-1.31015c1.1696,-1.5136 0.89467,-3.67462 -0.58453,-4.84422l-79.12,-61.92c-0.6364,-0.4816 -1.38165,-0.72563 -2.12985,-0.72563zM86,56.41735c1.9264,2.4768 4.26883,5.3965 5.02563,8.4925c4.9536,-3.7496 10.8016,-3.57276 16.34,-1.06156c2.0984,0.9632 4.02238,2.2669 6.12078,3.2989c2.6144,1.2384 4.99042,0.9976 7.63922,1.72c3.3024,0.9288 4.81009,7.50162 5.97969,10.21922c2.8208,6.3984 5.61204,12.82986 8.39844,19.26266c1.72,3.8872 4.02319,7.9128 5.22719,12.0064c1.1696,3.956 -1.23732,8.3557 -4.05812,11.0389c-4.2656,4.128 -10.42481,5.88563 -16.27281,5.88563c-8.3592,0 -19.40402,-4.33198 -20.53922,-13.86078c-0.4128,-3.612 2.064,-7.32908 3.44,-10.52828c4.0248,-9.2536 8.0488,-18.54187 12.07359,-27.79547c-5.5384,-1.2384 -12.72262,-8.53093 -18.57062,-5.74453c-1.1696,0.516 -3.47413,2.12931 -4.02453,3.29891c-0.5504,1.1008 0.2701,2.9283 -0.0739,4.4075c-0.6536,3.1304 -3.47171,5.50265 -6.70531,5.50265c-3.0616,0 -5.81253,-2.13522 -6.63813,-5.05922c-0.4128,-1.4792 0.58507,-3.26478 0.27547,-4.43438c-0.2752,-1.1008 -3.12933,-3.02478 -4.05813,-3.54078c-5.9512,-3.1648 -13.2776,4.29704 -18.95359,5.56984c3.7152,8.5312 7.39089,17.06052 11.10609,25.59172c1.376,3.1648 3.26961,6.43307 4.23281,9.73547c2.2016,7.6368 -6.49891,13.96586 -12.72531,15.78906c-8.2216,2.408 -18.85442,0.96266 -24.80562,-5.71094c-3.268,-3.6808 -4.12935,-7.90635 -2.23735,-12.27515c4.3688,-10.0792 8.73867,-20.12911 13.14188,-30.17391c1.2728,-2.9584 2.41122,-8.28932 5.88562,-9.21812c2.752,-0.7224 5.0576,-0.58668 7.7064,-1.92828c1.9264,-0.9632 3.74342,-2.16263 5.70422,-3.05703c5.5384,-2.5112 11.3864,-2.68804 16.34,1.06156c0.7568,-3.096 3.09923,-6.0157 5.02563,-8.4925zM51.6,87.7536c-3.7496,8.6 -7.4984,17.1664 -11.2136,25.7664h22.42719c-3.7496,-8.6 -7.464,-17.1664 -11.2136,-25.7664zM120.4,87.7536c-3.7496,8.6 -7.4984,17.1664 -11.2136,25.7664h22.42719c-3.7496,-8.6 -7.464,-17.1664 -11.2136,-25.7664z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </p>
-            <p class="h5">Legal</p>
-          </a>
-
-          <!-- Industry - 6 -->
-          <a href="./Health-Care.html"
-            class="col m-2 py-4 industry ind-6 d-flex flex-column justify-content-center align-items-center"
-            data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="11000">
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
-                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g>
-                    <path
-                      d="M167.3216,66.1512l-79.12,-61.92c-1.2728,-1.0664 -3.1304,-1.0664 -4.4032,0l-79.12,61.92c-1.4448,1.204 -1.6512,3.3712 -0.4472,4.8504c1.204,1.4448 3.3712,1.6512 4.8504,0.4472l4.6784,-3.8528v90.644c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.644l4.6784,3.8528c0.6536,0.516 1.4104,0.7912 2.2016,0.7912c0.9976,0 1.9608,-0.4128 2.6488,-1.2384c1.204,-1.4792 0.9976,-3.6464 -0.4472,-4.8504zM116.96,106.64h-24.08v24.08h-13.76v-24.08h-24.08v-13.76h24.08v-24.08h13.76v24.08h24.08z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </p>
-            <p class="h5">Health Care</p>
-          </a>
-        </div>
-      </div>
-      <!-- </div>
-      </div> -->
-
-    </div>
-  </div>
-
-  <!-- 
-       ======= END - INDUSTRIES =======
-      -->
-
-
-  <!-- 
-    ====== OUR PROJECTS ======
+      ==== END - OUR SERVCIES ====
   -->
-  <section class="our-projects container-fluid py-5" data-scroll>
-    <div class="projects-inner">
-      <!-- TITLE -->
-      <h2 class="pt-2 title-2">Our <span class="title-highlight">Projects</span></h2>
-      <p class="mb-5 text-2">Always looking for better ways to do things, innovate and help people achieve their goals.
+
+  <!-- 
+      ==== INDUSTRIES ====
+  -->
+  <div class="container-fluid industries" data-scroll>
+    <h2 class="title-1"><span class="title-highlight">Industries</span> We Serve</h2>
+    <p class="title-caption">Zyclyx deep Industry experise enables global brands to hit the ground running</p>
+    <div class="mx-auto row py-5">
+      <!-- Industry - 1 -->
+      <a href="./Retail.html" class="col py-2 ml-2 industry ind-1" data-aos="zoom-in" data-aos-delay="100"
+        data-aos-duration="1000">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M13.76,20.64v17.2l-0.43,2.9025c-0.12094,0.71219 -3.01,17.54938 -3.01,26.3375c0,5.56313 1.30344,9.9975 3.655,13.2225c-0.06719,-0.04031 -0.14781,-0.06719 -0.215,-0.1075v84.925h144.48v-84.925c-0.06719,0.04031 -0.13437,0.06719 -0.215,0.1075c2.35156,-3.225 3.655,-7.65937 3.655,-13.2225c0,-8.78812 -2.88906,-25.62531 -3.01,-26.3375l-0.5375,-2.9025h0.1075v-17.2zM19.565,44.72h14.835v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-5.71094,0 -8.6,-4.05812 -8.6,-12.04c0,-6.15437 1.57219,-17.15969 2.365,-22.36zM41.28,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM65.36,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM89.44,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM113.52,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM137.6,44.72h14.7275c0.81969,5.20031 2.4725,16.20563 2.4725,22.36c0,7.98188 -2.88906,12.04 -8.6,12.04c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM34.4,103.2h55.04v41.28h-55.04zM106.64,103.2h30.96v55.04h-30.96z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </p>
+        <p class="title-2">Retail</p>
+      </a>
+
+      <!-- Industry - 2 -->
+      <a href="./Telecom.html" class="col ml-2 py-4 industry ind-2" data-aos="zoom-in" data-aos-delay="100"
+        data-aos-duration="1000">
+        <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M33.97,0.215c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-9.05687,10.81719 -14.5125,24.79219 -14.5125,39.99c0,15.02313 5.30781,28.79656 14.19,39.56c1.22281,1.47813 3.41313,1.70656 4.89125,0.48375c1.47813,-1.22281 1.70656,-3.41312 0.48375,-4.89125c-7.90125,-9.58094 -12.685,-21.75531 -12.685,-35.1525c0,-13.545 4.8375,-25.96125 12.9,-35.5825c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM136.955,0.215c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c8.0625,9.62125 12.9,22.0375 12.9,35.5825c0,13.39719 -4.78375,25.57156 -12.685,35.1525c-1.22281,1.47813 -0.99437,3.66844 0.48375,4.89125c1.47813,1.22281 3.66844,0.99438 4.89125,-0.48375c8.88219,-10.76344 14.19,-24.53687 14.19,-39.56c0,-15.19781 -5.45562,-29.17281 -14.5125,-39.99c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM53.965,11.5025c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-6.50375,7.76688 -10.4275,17.79125 -10.4275,28.7025c0,10.91125 3.92375,20.93563 10.4275,28.7025c0.76594,1.03469 2.02906,1.54531 3.29219,1.35719c1.26313,-0.20156 2.31125,-1.075 2.72781,-2.28437c0.41656,-1.20938 0.12094,-2.55313 -0.7525,-3.48031c-5.50937,-6.57094 -8.815,-15.03656 -8.815,-24.295c0,-9.25844 3.30563,-17.71062 8.815,-24.295c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM116.96,11.5025c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c5.50938,6.58438 8.815,15.03656 8.815,24.295c0,9.25844 -3.30562,17.72406 -8.815,24.295c-0.87344,0.92719 -1.16906,2.27094 -0.7525,3.48031c0.41656,1.20937 1.46469,2.08281 2.72781,2.28437c1.26312,0.18813 2.52625,-0.3225 3.29219,-1.35719c6.50375,-7.76687 10.4275,-17.79125 10.4275,-28.7025c0,-10.91125 -3.92375,-20.93562 -10.4275,-28.7025c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM86,27.52c-7.60562,0 -13.76,6.15438 -13.76,13.76c0,4.55531 2.17688,8.57313 5.59,11.0725l-41.71,110.295c-1.33031,3.56094 0.47031,7.53844 4.03125,8.86875c3.56094,1.33031 7.53844,-0.47031 8.86875,-4.03125l4.4075,-11.5025l59.0175,-16.4475l10.535,27.95c1.33031,3.56094 5.30781,5.36156 8.86875,4.03125c3.56094,-1.33031 5.36156,-5.30781 4.03125,-8.86875l-41.71,-110.295c3.41313,-2.49937 5.59,-6.51719 5.59,-11.0725c0,-7.60562 -6.15437,-13.76 -13.76,-13.76zM86,69.875l8.815,23.22l-20.5325,7.74zM99.6525,105.8875l5.4825,14.62l-21.93,-8.2775zM66.7575,120.7225l26.23,9.89l-33.54,9.3525z">
+                </path>
+              </g>
+            </g>
+          </svg></p>
+        <p class="title-2">Telecom</p>
+      </a>
+
+      <!-- Industry - 3 -->
+      <a href="./Banking & Finance.html" class="col ml-2 py-4 industry ind-3" data-aos="zoom-in" data-aos-delay="500"
+        data-aos-duration="5000">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M85.82531,6.96734c-0.516,0 -1.02931,0.08331 -1.54531,0.25531l-75.68,35.43469c-1.032,0.688 -1.72,1.72134 -1.72,3.09734v5.84531c0,2.064 1.376,3.44 3.44,3.44h27.52c1.72,0 3.44,1.72 3.44,3.44c0,1.72 -1.72,3.44 -3.44,3.44h-3.44v72.24h103.2v-72.24h-3.44c-1.72,0 -3.44,-1.72 -3.44,-3.44c0,-1.72 1.72,-3.44 3.44,-3.44h27.52c2.064,0 3.44,-1.376 3.44,-3.44v-5.84531c0,-1.376 -0.68665,-2.40934 -2.06265,-3.09734l-75.68,-35.43469c-0.516,-0.172 -1.03603,-0.25531 -1.55203,-0.25531zM82.56,37.84h6.88v10.66265c13.072,1.72 17.2,13.76135 17.2,20.29735h-6.88c0,-1.376 -0.688,-13.76 -13.76,-13.76c-13.416,0 -13.76,9.976 -13.76,10.32c0,7.224 5.50669,9.288 14.79469,12.04c8.6,2.752 19.60531,5.848 19.60531,18.92c0,4.472 -1.37869,8.60269 -4.47469,11.35469c-3.784,3.784 -9.28531,5.15866 -12.72531,5.50266v10.66265h-6.88v-10.66265c-4.472,-0.688 -8.60269,-2.408 -11.35469,-5.16c-5.848,-6.192 -5.84531,-14.79335 -5.84531,-15.13735h6.88c0,0 -0.00135,6.192 3.78265,10.32c2.408,2.408 5.50535,3.44 9.97735,3.44c0,0 7.57069,0.00135 11.35469,-3.78265c1.72,-1.72 2.40531,-3.78535 2.40531,-6.53735c0,-7.224 -5.50669,-9.288 -14.79469,-12.04c-8.6,-2.752 -19.60531,-6.192 -19.60531,-18.92c0,-5.504 4.128,-15.48135 17.2,-16.85735zM20.64,61.92v72.24h6.88v-72.24zM144.48,61.92v72.24h6.88v-72.24zM17.2,141.04c-5.848,0 -10.32,4.472 -10.32,10.32v6.88h158.24v-6.88c0,-5.848 -4.472,-10.32 -10.32,-10.32z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </p>
+        <p class="title-2">Banking</p>
+      </a>
+
+      <!-- Industry - 4 -->
+      <a href="./Lagistics.html" class="col ml-2 py-4 industry ind-4" data-aos="zoom-in" data-aos-delay="700"
+        data-aos-duration="7000">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M9.675,27.52c-6.7725,0.5375 -9.675,6.1275 -9.675,9.9975v89.7625c0,5.68406 4.63594,10.32 10.32,10.32h14.0825c1.63938,9.75563 10.11844,17.2 20.3175,17.2c10.19906,0 18.67813,-7.44437 20.3175,-17.2h41.6025v-100.0825c0,-5.32125 -4.67625,-9.9975 -9.9975,-9.9975zM78.905,50.2025l5.0525,4.6225l-34.83,38.055l-23.005,-20.3175l4.515,-5.16l17.9525,15.8025zM113.52,51.6v86h3.7625c1.63938,9.74219 10.105,17.2 20.3175,17.2c10.2125,0 18.66469,-7.45781 20.3175,-17.2h3.7625c5.30781,0 10.32,-5.01219 10.32,-10.32v-33.0025c0,-6.74562 -4.86437,-13.96156 -5.4825,-14.835l-14.19,-19.0275c-2.64719,-3.30562 -8.07594,-8.815 -14.7275,-8.815zM130.72,58.48h6.88c2.71438,0 6.18125,2.39188 9.245,6.235l14.0825,18.8125c1.03469,1.49156 3.53406,5.6975 4.085,9.3525h-30.8525c-1.54531,0 -3.44,-1.89469 -3.44,-3.44zM44.72,120.4c7.64594,0 13.76,6.11406 13.76,13.76c0,7.64594 -6.11406,13.76 -13.76,13.76c-7.64594,0 -13.76,-6.11406 -13.76,-13.76c0,-7.64594 6.11406,-13.76 13.76,-13.76zM137.6,120.4c7.59219,0 13.76,6.16781 13.76,13.76c0,7.59219 -6.16781,13.76 -13.76,13.76c-7.59219,0 -13.76,-6.16781 -13.76,-13.76c0,-7.59219 6.16781,-13.76 13.76,-13.76z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </p>
+        <p class="title-2">Logistics</p>
+      </a>
+
+      <!-- Industry - 5 -->
+      <a href="./Legal.html" class="col ml-2 py-4 industry ind-5" data-aos="zoom-in" data-aos-delay="900"
+        data-aos-duration="9000">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M86,3.44c-0.7482,0 -1.49345,0.24403 -2.12985,0.72563l-79.12,61.92c-1.4792,1.1696 -1.75413,3.33062 -0.58453,4.84422c1.1696,1.4792 3.33062,1.75413 4.84422,0.58453l4.75016,-3.70875v90.43437c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.43437l4.75015,3.70875c0.6536,0.4816 1.37305,0.72563 2.12985,0.72563c1.032,0 2.02638,-0.45015 2.71437,-1.31015c1.1696,-1.5136 0.89467,-3.67462 -0.58453,-4.84422l-79.12,-61.92c-0.6364,-0.4816 -1.38165,-0.72563 -2.12985,-0.72563zM86,56.41735c1.9264,2.4768 4.26883,5.3965 5.02563,8.4925c4.9536,-3.7496 10.8016,-3.57276 16.34,-1.06156c2.0984,0.9632 4.02238,2.2669 6.12078,3.2989c2.6144,1.2384 4.99042,0.9976 7.63922,1.72c3.3024,0.9288 4.81009,7.50162 5.97969,10.21922c2.8208,6.3984 5.61204,12.82986 8.39844,19.26266c1.72,3.8872 4.02319,7.9128 5.22719,12.0064c1.1696,3.956 -1.23732,8.3557 -4.05812,11.0389c-4.2656,4.128 -10.42481,5.88563 -16.27281,5.88563c-8.3592,0 -19.40402,-4.33198 -20.53922,-13.86078c-0.4128,-3.612 2.064,-7.32908 3.44,-10.52828c4.0248,-9.2536 8.0488,-18.54187 12.07359,-27.79547c-5.5384,-1.2384 -12.72262,-8.53093 -18.57062,-5.74453c-1.1696,0.516 -3.47413,2.12931 -4.02453,3.29891c-0.5504,1.1008 0.2701,2.9283 -0.0739,4.4075c-0.6536,3.1304 -3.47171,5.50265 -6.70531,5.50265c-3.0616,0 -5.81253,-2.13522 -6.63813,-5.05922c-0.4128,-1.4792 0.58507,-3.26478 0.27547,-4.43438c-0.2752,-1.1008 -3.12933,-3.02478 -4.05813,-3.54078c-5.9512,-3.1648 -13.2776,4.29704 -18.95359,5.56984c3.7152,8.5312 7.39089,17.06052 11.10609,25.59172c1.376,3.1648 3.26961,6.43307 4.23281,9.73547c2.2016,7.6368 -6.49891,13.96586 -12.72531,15.78906c-8.2216,2.408 -18.85442,0.96266 -24.80562,-5.71094c-3.268,-3.6808 -4.12935,-7.90635 -2.23735,-12.27515c4.3688,-10.0792 8.73867,-20.12911 13.14188,-30.17391c1.2728,-2.9584 2.41122,-8.28932 5.88562,-9.21812c2.752,-0.7224 5.0576,-0.58668 7.7064,-1.92828c1.9264,-0.9632 3.74342,-2.16263 5.70422,-3.05703c5.5384,-2.5112 11.3864,-2.68804 16.34,1.06156c0.7568,-3.096 3.09923,-6.0157 5.02563,-8.4925zM51.6,87.7536c-3.7496,8.6 -7.4984,17.1664 -11.2136,25.7664h22.42719c-3.7496,-8.6 -7.464,-17.1664 -11.2136,-25.7664zM120.4,87.7536c-3.7496,8.6 -7.4984,17.1664 -11.2136,25.7664h22.42719c-3.7496,-8.6 -7.464,-17.1664 -11.2136,-25.7664z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </p>
+        <p class="title-2">Legal</p>
+      </a>
+
+      <!-- Industry - 6 -->
+      <a href="./Health-Care.html" class="col mx-2 py-4 industry ind-6" data-aos="zoom-in" data-aos-delay="1100"
+        data-aos-duration="11000">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g>
+                <path
+                  d="M167.3216,66.1512l-79.12,-61.92c-1.2728,-1.0664 -3.1304,-1.0664 -4.4032,0l-79.12,61.92c-1.4448,1.204 -1.6512,3.3712 -0.4472,4.8504c1.204,1.4448 3.3712,1.6512 4.8504,0.4472l4.6784,-3.8528v90.644c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.644l4.6784,3.8528c0.6536,0.516 1.4104,0.7912 2.2016,0.7912c0.9976,0 1.9608,-0.4128 2.6488,-1.2384c1.204,-1.4792 0.9976,-3.6464 -0.4472,-4.8504zM116.96,106.64h-24.08v24.08h-13.76v-24.08h-24.08v-13.76h24.08v-24.08h13.76v24.08h24.08z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </p>
+        <p class="title-2">Health Care</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 
+       ==== END - INDUSTRIES ====
+  -->
+
+
+  <!-- 
+    ==== OUR PROJECTS ====
+  -->
+  <section class="our-projects container-fluid">
+      <h2 class="title-1">Our <span class="title-highlight">Projects</span></h2>
+      <p class="title-caption">Always looking for better ways to do things, innovate and help people achieve their
+        goals.
       </p>
-      <!-- OUR PROJECTS SLIDER  -->
-      <div class="row">
-        <div class="col-md-9 col-12 mx-auto">
-          <div id="mainCarousel" class="carousel slide carousel-fade s-carousel" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-                    <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#mainCarousel" data-slide-to="1"></li>
-                    <li data-target="#mainCarousel" data-slide-to="2"></li>
-                  </ol> -->
-
-            <div class="carousel-inner container py-4">
-
-              <!-- PROJECT - 1 -->
-              <div class="carousel-item s-story py-4 active ">
-                <div class="mask flex-center">
+      <div class="owl-carousel owl-theme projects-carousel py-3">
+          <div class="item">
+              <img src="./images/project_1.jpg" alt="images not found">
+              <div class="cover">
                   <div class="container">
-                    <div class="row  justify-content-center align-items-center text-center">
-                      <div class="col-md-5 col-12 image-box p-0">
-                        <img class="d-block" src="./images/3a836b7deabaeba437518ae316711908.jpg" alt="First slide">
+                      <div class="header-content">
+                          <div class="line"></div>
+                          <h2>Project - 1 Reimagine Digital Experience with</h2>
+                          <h1>Start-ups and solutions</h1>
+                          <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                          <a href="#" class="mt-4 btn btn-outline-info project-btn">Know More</a>
                       </div>
-                      <div class="col-md-6 col-12 text-box">
-                        <h3 class="my-3">Project - 1 Lorem ipsum dolor </h3>
-                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                          obcaecati, magni eos doloribus
-                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
-                          dignissimos,
-                          amet nostrum aliquam.</p>
-                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                      </div>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <!-- END PROJECT - 1  -->
-
-              <!-- PROJECT - 2 -->
-              <div class="carousel-item py-4 s-story">
-                <div class="mask flex-center">
+               </div>
+          </div>                    
+          <div class="item">
+              <img src="./images/project_2.jpg" alt="images not found">
+              <div class="cover">
                   <div class="container">
-                    <div class="row align-items-center justify-content-center text-center p-0">
-                      <div class="col-md-6 col-12 image-box p-0">
-                        <img class="d-block" src="./images/7aa5717f282eb5e8bf4a60c2ae3f5981.jpg" alt="Second slide">
+                      <div class="header-content">
+                          <div class="line animated bounceInLeft"></div>
+                          <h2>Project - 2 Reimagine Digital Experience with</h2>
+                          <h1>Intelligent solutions</h1>
+                          <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                          <a href="#" class="mt-4 btn btn-outline-info project-btn">Know More</a>
                       </div>
-
-                      <div class="col-md-6 col-12 text-box">
-                        <h3 class="my-3">Project - 2 Lorem ipsum dolor</h3>
-                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                          obcaecati, magni eos doloribus
-                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
-                          dignissimos,
-                          amet nostrum aliquam.</p>
-                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                      </div>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <!--END PROJECT - 2  -->
-
-              <!-- PROJECT - 3  -->
-              <div class="carousel-item py-4">
-                <div class="mask flex-center">
+               </div>
+          </div>                
+          <div class="item">
+              <img src="./images/project_3.jpg">
+              <div class="cover">
                   <div class="container">
-                    <div class="row align-items-center justify-content-center text-center">
-                      <div class="col-md-6 col-12 image-box p-0">
-                        <img class="d-block" src="./images/8e3387a02774b6c21e6cbde2d5cfe052.jpg" alt="Third slide">
+                      <div class="header-content">
+                          <div class="line animated bounceInLeft"></div>
+                          <h2>Project - 3 Reimagine Digital Experience with</h2>
+                          <h1>Intelligent Solutions</h1>
+                          <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                          <a href="#" class="mt-4 btn btn-outline-info project-btn">Know More</a>
                       </div>
-                      <div class="col-md-6 col-12 order-md-1 order-2 text-box">
-                        <h3 class="my-3">Project - 3 Lorem ipsum dolor</h3>
-                        <p class="text-left ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                          obcaecati, magni eos doloribus
-                          iusto inventore labore? Beatae non cum reprehenderit optio eius natus quam sunt ex
-                          dignissimos,
-                          amet nostrum aliquam.</p>
-                        <p><a href="#" class="btn btn-secondary">Know More<i class="fa fa-arrow-right ml-3"></i></a></p>
-                      </div>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <!--END PROJECT - 3 -->
-            </div>
-            <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev"> <span
-                class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-            <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next"> <span
-                class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+               </div>
           </div>
-        </div>
       </div>
+    </section>
 
-    </div>
-    </div>
-
-    <!-- 
-    ========= OUR SUCCESS STORIES =========
-   -->
-
-  </section>
-  <!-- 
-    ========= END - OUR SUCCESS STORIES =========
-   -->
 
   <!-- 
-  ======== TESTIMONIALS =======
+    ==== END - OUR PROJECTS ====
+  -->
+
+  <!-- 
+  ==== TESTIMONIALS ====
  -->
-  <div class="container py-5" data-scroll>
-    <h2 class="title-2">What Our <span class="title-highlight">Clients</span> Say</h2>
-  
-  <section class="container my-4 wow fadeInUp">
-    <div>
-
-      <header class="section-header">
-        <!-- <h3>Our Clients</h3> -->
-      </header>
-
-      <div class="owl-carousel testimonials-carousel">
-        <div class="testimonial-card mx-3 py-3" style="width: 330px;">
-          <div class="row">
-            <div class="col-3">
-              <img src="./images/clients/client-1.png" alt="">
-            </div>
-            <div class="col-9">
-              <h3 class="title-3">Great Time Spent</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-            </div>
-            <hr />
-            <div class="col-12">
-              <div class="row mx-3">
-                <div class="col">
-                    <h6>Jenifer Hearly</h6>
-                    <p class="text-muted">Oklahoma City</p>
+  <div class="container-fluid testimonials" data-scroll>
+    <h2 class="title-1">What Our <span class="title-highlight">Clients</span> Say</h2>
+    <p class="title-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- <section class="container my-2 wow fadeInUp">        -->
+        <div class="container owl-carousel testimonials-carousel">
+        <!--            <ul class="rating d-flex align-items-center">
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star-half-o"></i></li>
+                        </ul> -->
+          <div class="t-cont">
+            <div class="t-card">
+              <p class="text-1 mt-5 mx-3 py-4"><i class="fa fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
+              <div class="d-flex align-items-center t-details ">
+                <p class="client-pic"><img src="./images/client_img.jpeg" alt=""></p>
+                <div class="mx-4">
+                  <p class="title-2 mb-1">Lorem ipsum</p>
+                  <p class="text-2">CEO at xyz</p>
                 </div>
-                <div class="col">
-                    <ul class="rating d-flex align-items-center">
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star-half-o"></i></li>
-                      </ul>
+              </div>
+            </div>
+          </div>
+          <div class="t-cont">
+            <div class="col t-card">
+              <p class="text-1 mt-5 mx-3 py-4"><i class="fa fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
+              <div class="d-flex align-items-center t-details ">
+                <p class="client-pic"><img src="./images/client_img.jpeg" alt=""></p>
+                <div class="mx-4">
+                  <p class="title-2 mb-1">Lorem ipsum</p>
+                  <p class="text-2">CEO at xyz</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="t-cont">
+            <div class="t-card">
+              <p class="text-1 mt-5 mx-3 py-4"><i class="fa fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
+              <div class="d-flex align-items-center t-details ">
+                <p class="client-pic"><img src="./images/client_img.jpeg" alt=""></p>
+                <div class="mx-4">
+                  <p class="title-2 mb-1">Lorem ipsum</p>
+                  <p class="text-2">CEO at xyz</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card mx-3 py-3" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="testimonial-card mx-3 p-2" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="testimonial-card mx-3 p-2" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="testimonial-card mx-3 p-2" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="testimonial-card mx-3 p-2" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="testimonial-card mx-3 p-2" style="width: 330px;">
-            <div class="row">
-              <div class="col-3">
-                <img src="./images/clients/client-1.png" alt="">
-              </div>
-              <div class="col-9">
-                <h3 class="title-3">Great Time Spent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque ex quibusdam </p>
-              </div>
-              <hr />
-              <div class="col-12">
-                <div class="row mx-3">
-                  <div class="col">
-                      <h6>Jenifer Hearly</h6>
-                      <p class="text-muted">Oklahoma City</p>
-                  </div>
-                  <div class="col">
-                      <ul class="rating d-flex align-items-center">
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>         
-      </div>
-    </div> 
-  </section> 
-  
-</div>
+    <!-- </section> -->
+  </div>
 
-<!-- 
-======== END TESTIMONIALS =======
+  <!-- 
+==== END - TESTIMONIALS ====
 -->
+
   <!-- 
-  ======== BLOG POSTS =======
+  ==== BLOG POSTS ====
  -->
-  <!-- details card section starts from here -->
-  <section class="details-card py-5" data-scroll>
-    <h2 class="title-2">Latest From <span class="title-highlight">Blog</span></h2>
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+  <section class="blog-posts" data-scroll>
+    <h2 class="title-1">Latest From Our<span class="title-highlight"> Blog</span></h2>
+    <p class="title-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    <div class="container py-4">
+      <div class="row text-left d-flex justify-content-between align-items-center">
+        <!-- Blog post - 1 -->
+        <div class="col-md-4 col-12 blog-post" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
           <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/nature" alt="">
-              <!-- <span><h4>heading</h4></span> -->
+            <div class="post-title">
+              <p class="h5 py-3 px-4 title-2 text-muted">Robotic Process Automation Tools: Simplifying Analytics and
+                Reporting</p>
             </div>
-            <div class="card-desc">
-              <h3 class="">Heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
+            <div class="card-img">
+              <img src="./images/blog_1.jpg" alt="">
+            </div>
+            <div class="card-desc py-2 mx-3">
+              <div class="d-flex justify-content-between text-2">
+                <p>By - Ervin Howell</p>
+                <p>Oct 21, 2019</p>
+              </div>
+              <p class="text-right mb-2"><a href="#" class="btn btn-link px-2">Continue Reading</a></p>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <!-- Blog Post - 2 -->
+        <div class="col-md-4 col-12 blog-post" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
           <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/animals" alt="">
-              <!-- <span><h4>heading2</h4></span> -->
+            <div class="post-title">
+              <p class="h5 py-3 px-4 title-2 text-muted">How to Introduce Robotic Process Automation into your Law Firm?
+              </p>
             </div>
-            <div class="card-desc">
-              <h3>Heading2</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
+            <div class="card-img">
+              <img src="./images/blog_2.jpg" alt="">
+            </div>
+            <div class="card-desc py-2 mx-3">
+              <div class="d-flex justify-content-between">
+                <p>By - Ervin Howell</p>
+                <p>Oct 21, 2019</p>
+              </div>
+              <p class="text-right mb-2"><a href="#" class="btn btn-link px-2">Continue Reading</a></p>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <!-- Blog Post - 3 -->
+        <div class="col-md-4 col-12 blog-post" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
           <div class="card-content">
-            <div class="card-img">
-              <img src="https://placeimg.com/380/230/tech" alt="">
-              <!-- <span><h4>heading3</h4></span> -->
+            <div class="post-title">
+              <p class="h5 py-3 px-4 title-2 text-muted">Key areas for Robotic Process Automation in the manfacturing
+                industry</p>
             </div>
-            <div class="card-desc">
-              <h3>Heading3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo,
-                perspiciatis
-                voluptas totam</p>
-              <a href="#" class="btn btn-info px-4">Read</a>
+            <div class="card-img">
+              <img src="./images/blog_3.jpg" alt="">
+            </div>
+            <div class="card-desc py-2 mx-3">
+              <div class="d-flex justify-content-between">
+                <p class="pb-2">By - Ervin Howell</p>
+                <p class="pb-2">Oct 21, 2019</p>
+              </div>
+              <p class="text-right mb-2"><a href="#" class="btn btn-link mb-2 px-2">Continue Reading</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <p class="text-center mb-2"><a href="#" class="btn btn-lg btn-link">See All Posts</a></p>
   </section>
-  <!-- details card section starts from here -->
   <!-- 
-  ======== END - BLOG POSTS =======
+  ==== END - BLOG POSTS ====
  -->
 
   <!--
-    ======== COMPANY NUMBERS BANNER ======== 
+    ==== COMPANY STATS ====
   -->
   <section class="stats-container">
-    <div class="container py-5">
-      <div class="row count">
+    <div class="container py-3">
+      <h2 class="title-1"><span class="title-highlight">Successfull</span> Stats About Us</h2>
+      <p class="title-caption">What we have achieved so far</p>
+      <div class="row count py-3">
         <div class="col-6 col-md-3">
           <p>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
@@ -1070,8 +807,8 @@
               </g>
             </svg>
           </p>
-          <h3><span data-toggle="counter-up">50</span>+</h3>
-          <p>Completed Projects</p>
+          <h3 class="title-2"><span data-toggle="counter-up">50</span>+</h3>
+          <p class="text-2">Completed Projects</p>
         </div>
         <div class="col-6 col-md-3">
           <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
@@ -1131,19 +868,18 @@
     </div>
   </section>
   <!--
-    ======== END - COMPANY NUMBERS BANNER ======== 
+    ==== END - COMPANY STATS ====
   -->
-  <!--==========================
-      Clients Section
-    ============================-->
-  <section id="clients" class="wow fadeInUp">
+
+  <!--
+    ==== OUR CLIENTS ==== 
+  -->
+  <section id="clients" class="our-clients wow fadeInUp">
     <div class="container">
+      <p class="title-1 py-3">Trusted By Industry <span class="title-highlight">Leaders</span></p>
+      <p class="title-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <header class="section-header">
-        <!-- <h3>Our Clients</h3> -->
-      </header>
-
-      <div class="owl-carousel clients-carousel">
+      <div class=" py-5 owl-carousel clients-carousel">
         <img src="images/clients/client-1.png" alt="">
         <img src="images/clients/client-2.png" alt="">
         <img src="images/clients/client-3.png" alt="">
@@ -1153,20 +889,25 @@
         <img src="images/clients/client-7.png" alt="">
         <img src="images/clients/client-8.png" alt="">
       </div>
-
-    </div>
-  </section><!-- #clients -->
-  <!--
-    ======== CONTACT US BANNER ======== 
-  -->
-  <section class="contact-banner" data-scroll>
-    <div class="contact-inner">
-      <h2 class="title-2">Let's <span class="title-highlight">Connect</span></h3>
-        <p class="text-2">Share your ideas with us and we do our best to turn your ideas into reality</p>
-        <a href="./contactus.html" class="btn btn-secondary btn-lg">CONTACT US</a>
     </div>
   </section>
-  <!-- Footer  -->
+  <!-- 
+  ==== END - OUR CLIENTS ====
+ -->
+
+  <!--
+    ==== CONTACT US ==== 
+  -->
+  <section class="container-fluid contact-banner" data-scroll>
+    <h2 class="title-1">Let's <span class="title-highlight">Connect</span></h3>
+      <p class="title-caption">Share your ideas with us and we do our best to turn your ideas into reality</p>
+      <p class="text-center py-3"><a href="./contactus.html" class="btn btn-primary btn-lg">CONTACT US</a></p>
+  </section>
+  <!-- 
+     ==== END - CONTACT US ====
+    -->
+
+  <!-- FOOTER  -->
   <footer>
     <section class="container-fluid bg-dark p-4 Footer">
       <div class="row">
@@ -1245,56 +986,11 @@
       </div>
     </section>
   </footer>
-  <!-- <footer class="container-fluid pt-md-5 pt-3 footer">
-  <div class="row">
-    <div class="col-12 col-md-3">
-      <img src="./images/logo.png" alt="zyclyx logo" class="footer-logo">
-      <p class="d-block my-3 company-tagline">
-        A company dedicated to making work more human by Automating Business Processes and liberating
-        people.</p>
-    </div>
-    <div class="col-12 col-md-2 text-left">
-      <h5>Company</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="" href="#">Aboutus</a></li>
-        <li><a class="" href="#">Careers</a></li>        
-      </ul>
-    </div>
-    <div class="col-12 col-md-2 text-left">
-      <h5>Address</h5>
-      <address class="">3<sup>rd</sup> Floor, Pearl Enclave, Road No. 5, Banjara Hills, Hyderabad,
-        Telangana, India</address>
-    </div>
-    <div class="col-12 col-md-2 text-left">       
-        <h5>Contact</h5>
-      
-        <ul class="list-unstyled text-small ">
-          <li>(+91) 40 2354 9363</li>
-          <li>info@zyclyx.com</li>            
-        </ul>       
-    </div>
-    
-    <div class="col-12 col-md-2 text-left">
-      <h5>Connect</h5>       
-      <ul class="list-unstyled text-small ">         
-        <li class="socialIcons mt-2">
-          <a class=" " href="#"><i class="fa fa-facebook-f mr-2"></i></a>
-          <a class="" href="#"><i class="fa fa-twitter mr-2"></i></a>
-          <a class="" href="#"><i class="fa fa-google-plus mr-2"></i></a>
-          <a class="" href="#"><i class="fa fa-youtube"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <hr class="my-1">
-  <div class="text-muted">
-    <p class="py-0 text-center mb-0">All rights reserved. © Zyclyx 2019</p>
-  </div>
-</footer> -->
-  <!-- </div> -->
+  <!-- END - FOOTER -->
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
+  <!-- 
+    ==== JAVASCRIPT LINKS ====
+   -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -1334,11 +1030,31 @@
       autoplay: true,
       dots: true,
       loop: true,
-      items: 3
+      items: 2
     });
+    $('.projects-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    mouseDrag:false,
+    autoplay:true,
+    animateOut: 'slideOutUp',
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
 
   </script>
- 
+
   <script>
     // Initiate the wowjs animation library
     new WOW().init();

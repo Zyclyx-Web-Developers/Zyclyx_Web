@@ -73,10 +73,10 @@
 .navbar{
   transition: all 0.4s ease-in;
   background: rgb(27, 43, 48,0.9) !important;
-  padding: 0;
+  padding: 0 !important;
 }
 .main-navbar{
-  margin-bottom: 75px !important;
+  margin-bottom: 70px !important;
 }
 .navbar-light{ 
   background: rgb(27, 43, 48,0.1) !important;    
@@ -118,6 +118,18 @@
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
+.service-dropdown{
+position: static;
+}
+.service-dropdown-menu{
+width: 100%;
+}
+.dropdown-title{
+  color:#1c1c1c;
+  font-weight: 700;
+  margin-left:1rem;
+  
+}
 /* end - show drop downmenu on hover */
 
 /* drop down menu width */
@@ -134,7 +146,7 @@
       min-width: 50rem;
       transform: translate(30%,0);
   }
-  .dropdown:hover::after{
+  /* .dropdown:hover::after{
       position: absolute;
        left: 30%;
       bottom: 0;
@@ -145,7 +157,7 @@
       border-right: 12px solid transparent;
       border-bottom: 12px solid #fff;
       transition: all 0.2s ease 0.2s;     
-  }
+  } */
 }
 /* animation for navbar dropdown */
 @media (min-width: 992px) {
