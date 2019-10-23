@@ -453,7 +453,16 @@ border: 1px solid rgba(0, 157, 88,0.7);
   background-color: #ffffff;
   padding: 4rem 0 !important;         
  }  
-
+ 
+ .project-btn{
+   border:2px solid #fff !important;
+   color: #ffffff;
+   font-weight: 800;
+ }
+ .project-btn:hover{
+   border-color: #335EEA !important;
+   background-color: #335EEA;
+ }
  .image-box img{
   border-radius: 12px;
   max-width: 500px !important;
