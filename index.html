@@ -127,19 +127,13 @@
                 Industries
               </a>
               <div class="dropdown-menu dropdown-industry animate slideIn50"
-                aria-labelledby="navbarDropdownMenuLink">
-                <div class="row">
-                  <div class="row">
-                    <div class="col-md-6 col-12 px-5">
+                aria-labelledby="navbarDropdownMenuLink px-5">                 
                       <a class="dropdown-item my-1 py-1" href="./Retail.html">Retail</a>
                       <a class="dropdown-item my-1 py-1" href="./Telecom.html">Telecom</a>
                       <a class="dropdown-item my-1 py-1" href="./Banking & Finance.html">Banking & Finance</a>                     
                       <a class="dropdown-item my-1 py-1" href="./Lagistics.html">Logistics</a>
                       <!-- <a class="dropdown-item my-1 py-1" href="./Legal.html">Legal</a> -->
                       <a class="dropdown-item my-1 py-1" href="./Health-Care.html">Health Care</a>
-                    </div>
-                  </div>
-
                 </div>
             </li>
 
@@ -193,7 +187,7 @@
     <div class="row d-flex justify-content-center mt-4 text-left">
 
       <!-- Welcome - card -1 -->
-      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-duration="1.4s">
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card" data-wow-duration="1.4s">
         <div class="d-flex justify-conent-center">
           <p class=""><img src="./images/icons/we_are.svg" alt="who we are icon"></p>
           <h3 class="py-1 title-2 ml-3">Who we are</h3>
@@ -204,7 +198,7 @@
       </div>
 
       <!-- Welcome - card - 2 -->
-      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card" data-wow-delay="0.15s"
         data-wow-duration="1.4s">
         <div class="d-flex justify-conent-center">
           <p><img src="./images/icons/choose_us.svg" alt="why Choose us icon"></p>
@@ -216,7 +210,7 @@
       </div>
 
       <!-- Welcome - card - 3 -->
-      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card wow bounceInUp" data-wow-delay="0.15s"
+      <div class="col-12 col-md-3 m-3 py-2 shadow-sm rounded welcome-card" data-wow-delay="0.15s"
         data-wow-duration="1.4s">
         <div class="d-flex justify-conent-center">
           <p><img src="./images/icons/our_vision.svg" alt="our vision"></p>
@@ -237,7 +231,7 @@
   <!-- 
       ==== CORE VALUES ====   
   -->
-  <section class="core-values" data-scroll>
+  <section class="core-values">
     <h2 class="title-1 my-3">Our Core <span class="title-highlight">Values</span></h2>
     <p class="title-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     <div class="container-fluid py-2">
@@ -1066,7 +1060,10 @@
     }
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
-      var homeHeight = document.getElementById("videoContainer").offsetHeight;
+      // var homeHeight = document.getElementById("videoContainer").offsetHeight;
+      var homeHeight = 580;
+      console.log(currentScrollPos);
+      console.log(homeHeight);
       //totalHeight = homeHeight;       
       if (currentScrollPos > homeHeight - 70) {
         document.getElementById("navbarMaster").classList.remove('navbar-light');

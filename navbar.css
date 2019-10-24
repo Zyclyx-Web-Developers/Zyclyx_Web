@@ -17,6 +17,7 @@
 }
 .site-navbar .nav-link{
   color: #ffffff !important;
+  font-weight: 800;
 }
 .navbar-brand img{
   max-width: 200px;
@@ -24,9 +25,7 @@
   margin-left:10px;
 }
 .dropdown-menu{
-  margin-top: 0;
-  /* box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1) !important;   */
-  /* border: 2px solid #000; */
+  margin-top: 0;   
   border-radius: 0 !important;
   background-color: #e6f4f1;
   background: rgb(27, 43, 48,0.98) !important;
@@ -34,13 +33,11 @@
 }
 .dropdown-menu .dropdown-item{
   transition: all 0.1s ease;
-  font-weight: 500;
-  /* background-color: rgba(0, 0, 0,0.02); */
+  font-weight: 500;   
   color: #ffffff;
 }
-.dropdown-menu .dropdown-item:hover{     
-  /* transform: scale(1.01); */
-  font-weight: 550;
+.dropdown-menu .dropdown-item:hover{        
+  /* font-weight: 600; */
   color: #000;
 }
 /* show dropdown menu on hover */
@@ -54,7 +51,6 @@
 }
 .service-dropdown{
 position: static;
-
 }
 .service-dropdown-menu{
 width: 100%;
@@ -62,9 +58,10 @@ width: 100%;
 .service-items{
 /* background-color: #e6f4f1; */
 }
-
- .dropdown-title{
-  color:#ffffff;
+.dropdown:hover .navbar{
+  background: rgb(27, 43, 48,0.95) !important;
+}
+ .dropdown-title{   
   color: #00dbf1;
   font-weight: 600;
   /* margin-left:1rem; */
@@ -198,5 +195,4 @@ font-size: 1rem !important;
 .company-tagline{
   font-size: 0.9rem;
 }
-
 /* Footer End */
