@@ -1,78 +1,8 @@
 /* 
 ======= NAVIGATION BAR =======
 */
- 
-/* 
 .navbar{
-  transition: all 0.4s ease-in;
-  background: rgb(27, 43, 48,0.9) !important;
-}
-.main-navbar{
-  margin-bottom: 75px !important;
-}
-.navbar-light{ 
-  background: rgb(27, 43, 48,0.1) !important;    
-}
-.navbar-dark{
-  background: rgb(27, 43, 48,0.95) !important; 
-  margin-bottom: 70px !important; 
-}
-
-.master-nav .logo img {
-  max-width: 200px;
-}
-
-.master-nav .nav-item {
-  padding: 10px;
-}
-.master-nav .nav-link {
-  color: #ffffff !important;
-}
-.master-nav .nav-link:hover {
-  color: #ffffff !important;   
-}
-.master-nav .nav-link:focus {
-  color: #ffffff !important;
-}
-.master-nav .nav-item .active {
-  color: #ffffff !important;
-}
-
-.master-nav .dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-.master-nav .dropdown > .dropdown-toggle:active {   
-  pointer-events: none;
-}
-
-.master-nav .dropdown-menu {
-  margin-top: 0;
-}
-
-.master-nav .dropdown-two-col {
-  width: 400px;
-}
-.master-nav .dropdown-menu {
-  border: transparent !important;
-  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1) !important;
-  left: -85px;
- 
-}
-.master-nav .dropdown-item {
-  padding: 12px 15px;
-}
-.navbar-shadow{
-  box-shadow: 0 -5px 15px 5px #335eea;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-       box-shadow: 0 12px 6px -6px rgba(0, 0, 0,0.2),0 -2px 6px -6px #335eea;
-       
-  
-} */
-.navbar{
-  transition: all 0.4s ease-in;
-  /* background: rgb(27, 43, 48,0.9) !important; */
+  transition: all 0.4s ease-in;   
   padding: 0 !important;
 }
 .main-navbar{
