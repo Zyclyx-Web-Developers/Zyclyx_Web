@@ -259,7 +259,7 @@ body {
  ==== Welcome ====
 */
 .welcome{   
-padding:4rem 0!important;     
+/* padding:4rem 0!important;      */
 background-color: #ffffff;
 }
 .welcome-card img{
