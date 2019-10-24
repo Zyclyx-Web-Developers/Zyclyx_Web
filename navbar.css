@@ -65,8 +65,12 @@
 }
 .service-dropdown-menu{
   width: 100%;
-}
 
+
+}
+.service-dropdown-menu>div{
+  margin-left: 40px;
+}
 .dropdown:hover .navbar{
   background: rgb(27, 43, 48,0.95) !important;
 }
@@ -78,7 +82,8 @@
 }
  .dropdown-menu a{
   font-size: 14px !important;
-  padding: 0 6px;
+  padding: 4px 6px;
+  font-family: 'Open Sans', sans-serif;
 }
 .dropdown-industry a{
 font-size: 1rem !important;
