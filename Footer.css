@@ -1,9 +1,12 @@
- 
+
 .f-links a{
     font-size: 16px;
     text-decoration: none;
     color: white;
     margin: 0 20px;
+}
+#footer{
+    font-size: 15px;
 }
 .Social-icons .fa{
     font-size: 20px;
@@ -88,3 +91,5 @@
     background: #000;
     transform: skewX(-15deg);
 }
+
+
