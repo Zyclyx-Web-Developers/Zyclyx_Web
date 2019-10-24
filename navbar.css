@@ -27,7 +27,8 @@
   margin-left:10px;
 }
 .dropdown-menu{
-  margin-top: 0;   
+  margin-top: 0;
+  padding-top: 10px;   
   border-radius: 0 !important;   
   background-color: rgb(27, 43, 48,0.98) !important;
   border-top: 1px solid #fafafa !important;
@@ -39,7 +40,7 @@
 }
 .dropdown-menu .dropdown-item:hover{        
   /* font-weight: 600; */   
-  transition: all 0.05s ease-in-out;  
+  transition: all 0.02s ease-in-out;  
   background-color: transparent !important;
   /* font-weight: 800; */
   /* font-size: 15px; */
@@ -77,6 +78,7 @@
 }
  .dropdown-menu a{
   font-size: 14px !important;
+  padding: 0 6px;
 }
 .dropdown-industry a{
 font-size: 1rem !important;
