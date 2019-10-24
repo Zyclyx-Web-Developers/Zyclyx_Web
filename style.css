@@ -66,6 +66,17 @@
 }
  */
 
+ /* body{
+   scroll-snap-type: y mandatory;
+   overflow-y: scroll;
+ }
+ .v-container,.welcome,.core-values,.services-sec,.ind-sec,.our-projects,.testi-sec,
+ .blog-posts,.stats-container,.our-clients{
+   scroll-snap-align: start;
+   height: 100vh;
+   text-align: center;
+ } */
+
 :root{
   --black:#444655;
   --blue:#007bff;
@@ -285,9 +296,9 @@ background-color: #ffffff;
 /*
 ==== SERVICES ====
 */
-.services{
+/* .services{
   padding: 4rem 0 !important;
-}
+} */
 .main-service { 
   padding: 20px;
   margin: 10px 10px;   
