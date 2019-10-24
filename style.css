@@ -197,7 +197,8 @@ body {
  ==== Welcome ====
 */
 .welcome{   
-padding:4rem 0!important;     
+padding-top:2.5rem; 
+padding-bottom:2.5rem;    
 background-color: #ffffff;
 }
 .welcome-card img{
@@ -255,8 +256,8 @@ background-color: #ffffff;
   box-shadow: 0 0 35px rgba(140, 152, 164, 0.25),-10px 0 15px rgba(140, 152, 164, 0.25) !important;
 } */
  
-.service-row{
-  margin-top: 55px;
+.service-row{   
+  margin: 50px 0 0 0 !important;
   display: flex;
   justify-content: center; 
 }
