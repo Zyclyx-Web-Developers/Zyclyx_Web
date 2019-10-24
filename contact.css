@@ -11,7 +11,7 @@ p{
     font-size: 1.1rem;
 }
 .Header-img{    
-    background-image:url("./docs/contactus.jpg");    
+    background-image:url("images/contactus.jpg");    
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
@@ -51,8 +51,8 @@ p{
 }
 .contact-info .fa:hover{
    position: relative;
-   transform: translateY(-2px);
-   transition: all 0.2s ease-in-out;
+   transform: translateY(-6px);
+   transition: all 0.1s ease-in-out;
 }
     
 .info{
