@@ -213,7 +213,8 @@ background-color: #ffffff;
 ==== CORE VALUES ====
 */
 .core-values{
-  padding:4rem 0!important;
+  padding-top:2.5rem; 
+  padding-bottom:2.5rem;
   background-color: #f5f8fd;
 }
 .core-val-caption {
@@ -236,7 +237,8 @@ background-color: #ffffff;
 ==== SERVICES ====
 */
 .services{
-  padding: 4rem 0 !important;
+  padding-top:2.5rem; 
+padding-bottom:2.5rem;
 }
 .main-service { 
   padding: 20px;
@@ -488,7 +490,7 @@ border: 1px solid rgba(0, 157, 88,0.7);
 
 .our-projects{
   background-color: #ffffff;
-  padding: 4rem 0 !important;         
+   padding-top: 2.5rem;
  }  
  
  .project-btn{
@@ -876,7 +878,8 @@ border: 1px solid rgba(0, 157, 88,0.7);
 ==== TESTIMONIALS ====
 */
 .testimonials{
-  padding: 4rem 0 !important; 
+padding-top: 3rem;
+padding-bottom: 3rem;
   background-color:#e6f4f1;
 }
 
@@ -905,7 +908,8 @@ border: 1px solid rgba(0, 157, 88,0.7);
 ==== BLOG POSTS ====
 */
 .blog-posts{
-  padding: 4rem 0 !important;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
   background-color: #ffffff;
 }
 .blog-post .card-content{
