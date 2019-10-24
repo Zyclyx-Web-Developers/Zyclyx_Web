@@ -15,6 +15,67 @@
     font-family: 'Open Sans', sans-serif;
  */
 /* colors */
+/* .fixed {
+  position: absolute;
+  top: 172px;
+  left: 208px;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+.box-shadow-ripples {
+  height: 100px;
+  width: 100px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.box-shadow-ripples:before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  border-radius: 50%;
+  box-shadow: 0 0 white, 0 0 0 16px white,
+    0 0 0 32px white, 0 0 0 48px white;
+  z-index: -1;
+  animation: ripples 1s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: scale(0.5);
+}
+
+.box-shadow-ripples:before {
+  animation-play-state: running;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@keyframes ripples {
+  to {
+    box-shadow: 0 0 0 16px rgba(0, 0, 0, 0.2), 0 0 0 32px rgba(0, 0, 0, 0.2),
+      0 0 0 48px rgba(0, 0, 0, 0.2), 0 0 0 64px rgba(0, 0, 0, 0);
+  }
+}
+ */
+
+ /* body{
+   scroll-snap-type: y mandatory;
+   overflow-y: scroll;
+ }
+ .v-container,.welcome,.core-values,.services-sec,.ind-sec,.our-projects,.testi-sec,
+ .blog-posts,.stats-container,.our-clients{
+   scroll-snap-align: start;
+   height: 100vh;
+   text-align: center;
+ } */
 
 :root{
   --black:#444655;
@@ -32,6 +93,7 @@
   --blue-shade:#0044bc;
 
 }
+
 /*Global styles*/
 /* Links */
 a,
@@ -201,6 +263,7 @@ padding-top:2.5rem;
 padding-bottom:2.5rem;    
 background-color: #ffffff;
 }
+
 .welcome-card img{
    max-width: 36px;
  }
@@ -236,10 +299,12 @@ background-color: #ffffff;
 /*
 ==== SERVICES ====
 */
+ 
 .services{
   padding-top:2.5rem; 
 padding-bottom:2.5rem;
 }
+ 
 .main-service { 
   padding: 20px;
   margin: 10px 10px;   
