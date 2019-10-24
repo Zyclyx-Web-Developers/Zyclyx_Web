@@ -87,6 +87,10 @@
 }
 .dropdown-industry a{
 font-size: 1rem !important;
+margin-left: 1rem !important;
+}
+.dropdown-industry{
+   min-width: 220px;
 }
 /* end - show drop downmenu on hover */
 
