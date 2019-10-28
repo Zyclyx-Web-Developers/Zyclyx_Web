@@ -18,46 +18,41 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
   <!-- Custom styles -->
   <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="job-preview.css" />
+  <link rel="stylesheet" href="./css/job-preview.css" />
   <link rel="stylesheet" href="./animations.css" />
   <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 
 <body class="text-center">
-
   <div class="d-flex w-100 h-100 mx-auto flex-column ">
     <!-- 
       ====== Navbar ======
     -->
     <header>
-        <div id="navbar"></div>
+      <div id="navbar"></div>
     </header>
     <!-- 
       ====== END Navbar ======
     -->
-    <section class="d-flex justify-content-center align-items-center header-img preview-intro overlay">
+    <section class="d-flex justify-content-center align-items-center header-img overlay">
       <div class="container">
         <div class="row">
           <div class="col">
             <h1 class="header-title">Want to work with us?</h1>
-            <!-- <p>Software Engineering Manager</p> -->
             <a href="./job application form.html" class="btn btn-primary btn-shadow-2">Apply now</a>
           </div>
-          <!--end of col-->
         </div>
-        <!--end of row-->
       </div>
-      <!--end of container-->
     </section>
     <!--end of section-->
-    <section class="job-preview pb-4">
-        <h5 class="py-2 title-1 p-4">Software Engineering Manager</h5>
+    <section class="job-preview py-4">
+      <h5 class="py-2 title-1 p-4">Software Engineering Manager</h5>
       <div class="container text-left">
         <div class="row justify-content-between py-4">
           <div class="col-12 col-md-8 col-lg-7">
-            <article>
-                <h5 class="py-2 title-2">Description</h5>
-              <p class="text-muted text-2">
+            <article class="text-2">
+              <h5 class="py-2 title-2">Description</h5>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
@@ -99,70 +94,17 @@
                 <li>
                   Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </li>
-              </ul>
-              <p>
-                Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                consequatur aut perferendis doloribus asperiores repellat.
-              </p>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit
-              </p>
+              </ul>               
             </article>
             <h3 class="mx-4 py-3 title-2" id="job-application">Sound like the job for you? Join us! </h3>
             <div class="row my-3">
-                <div class="col">
-                  <a href="./job application form.html" class="btn btn-primary btn-shadow-2">Apply now</a>
-                </div>
-                <div class="col">
-                  <a href="/careers.html" class="btn btn-link animate-link">Back to careers</a>
-                </div>
-              </div>          
-
-            <!-- <form class="d-flex justify-content-between align-items-center mb-4">
-              <div class="w-90">
-                <div class="row my-3">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Full name">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Phone">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Qualification">
-                  </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col form-group">
-                    <label for="exampleFormControlFile1">Resume</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                  </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col form-group">
-                    <label for="exampleFormControlTextarea1">Describe your skilss</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col">
-                    <a href="#" class="btn btn-primary">Apply now</a>
-                  </div>
-                  <div class="col">
-                    <a href="/careers.html" class="btn btn-link">Back to careers</a>
-                  </div>
-                </div>
-
+              <div class="col">
+                <a href="./job application form.html" class="btn btn-primary btn-shadow-2">Apply now</a>
               </div>
-            </form> -->
-         
+              <div class="col">
+                <a href="/careers.html" class="btn btn-link animate-link">Back to careers</a>
+              </div>
+            </div> 
           </div>
           <!--end of col-->
           <div class="col-12 col-md-4">
@@ -172,11 +114,11 @@
                   <span class="text-1">Job Details</span>
                 </div>
               </div>
-              <div class="card-body">
+              <div class="card-body text-2">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                    <div class="d-flex justify-content-between text-2">
-                      <div><i class="icon-tools mr-1"></i> Department</div>
+                    <div class="d-flex justify-content-between">
+                      <div class="text-"><i class="icon-tools mr-1"></i> Department</div>
                       <span>Engineering</span>
                     </div>
                   </li>
@@ -208,18 +150,18 @@
               </div>
             </div>
             <!--end of card-->
-            <div class="card my-5">
+
+            <!-- Address Card -->
+            <div class="card my-5 text-2">
               <div class="card-header d-flex justify-content-between">
                 <div>
-                  <span class="h6">Address</span>
+                  <span class="text-1">Address</span>
                 </div>
               </div>
               <div class="card-body address">
-                <p><i class="fa fa-map-marker mr-2"></i>3rd Floor, Pearl Enclave, Road No. 5,</p>
-                <p>Banjara Hills, Hyderabad,</p>
-                <p>Telangana, India</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@zyclyx.com</p>
-                <p><i class="fa fa-phone mr-2"></i>(+91) 40 2354 9363</p>
+                <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>3rd Floor, Pearl Enclave,<br /> Road No. 5,Banjara Hills, Hyderabad, Telangana, India</span></p>
+                <p><i class="fa fa-envelope m-3"></i>info@zyclyx.com</p>
+                <p><i class="fa fa-phone m-3"></i>(+91) 40 2354 9363</p>
               </div>
             </div>
           </div>
@@ -243,16 +185,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
-</script>
-<script> 
-$(function(){
-  $("#navbar").load("navbar.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script>
+    </script>
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
+
 </html>
