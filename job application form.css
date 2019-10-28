@@ -1,28 +1,17 @@
 .input-group-text {
     color: #000;            
 }
-.body-sec{
-  background-image: url("./bg1.jpg");
+.header-img{
+  background-image: url("./images/job-application-img.jpg");
   background-repeat: no-repeat;
-  background-size:cover;    
+  background-size:cover;  
+  background-position:center;  
 }
-.overlay{
-    position: relative;
-    }
-    .overlay::before{
-        position: absolute;
-        content:"";
-        top: 0;
-        bottom:0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    .login-btn{
+ .login-btn{
         min-height: 28px;
         border-radius: 5px;
-        border:1px solid #a3c09d; 
-        background-color: green;
+        border:1px solid #007bff; 
+        background-color: #007bff;
         color: aliceblue;
         text-align: center;
         padding: 0.5rem 3rem;
@@ -30,6 +19,6 @@
     }
     .login-btn:hover{
         background-color:transparent;
-        color: black;
+        color:#007bff;
         transform: translateY(-10%);
     }
