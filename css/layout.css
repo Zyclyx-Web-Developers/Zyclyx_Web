@@ -193,7 +193,8 @@ p {
   font-weight: 800;   
   font-family: 'Roboto', sans-serif;
   color: #ffffff !important;
-  position: relative;         
+  position: relative;
+  text-align: center;         
 }
 /* .header-title::before {
   position: absolute;
