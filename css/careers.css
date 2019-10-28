@@ -2,6 +2,9 @@
   background-image: url("../images/careerpage-img.jpg");
   background-position: center;
 }
+.collapsed{
+  border-left:4px solid #f07c52 !important;
+}
 .openings-count{
     font-size: 0.8rem;     
     padding: 8px 14px;
