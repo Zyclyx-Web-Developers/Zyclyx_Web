@@ -7,7 +7,13 @@
     min-height:350px;             
     color: #F9FBFD;  
 }
- 
+.info-card{
+    background-color: #f3f7fa;
+    border-radius: 0.5rem;
+    /* border-radius: 4px solid #fff !important; */
+    padding-top: 1rem !important;
+}
+
 .contact-info .fa-map-marker{
     background:linear-gradient(145deg, hsl(213, 60%, 64%), #3498db);
     color: #fff
@@ -25,23 +31,16 @@
     background:linear-gradient(145deg, #e0b861,#e67e22);
     color: #fff
 }
-.contact-info .fa{
-    /* background: rgb(235, 195, 19);
-    color: #fff; */
+.contact-info .fa, .contact-info .far{     
     font-size: 20px;
     border-radius: 50px;
     height: 50px;
     width: 50px;
     line-height: 2.5;
-    box-shadow: 0px 10px 13px -7px black;
+    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0,0.6);
     margin-bottom: 20px;
 }
-.contact-info .fa:hover{
-   position: relative;
-   transform: translateY(-6px);
-   transition: all 0.1s ease-in-out;
-}
-    
+   
 .info{
     color: #fff;
     background: linear-gradient(145deg, #499aff, #0956b4);
