@@ -16,16 +16,17 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./layout.css">
-    <link rel="stylesheet" href="./animations.css">
-    <link rel="stylesheet" href="./careers.css">  
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/careers.css">
 </head>
+
 <body>
-       <!-- 
+    <!-- 
       ====== Navbar ======
     -->
     <header>
-       <div id="navbar"></div>
+        <div id="navbar"></div>
     </header>
     <!-- 
       ====== END Navbar ======
@@ -33,120 +34,122 @@
     <div class="container-fluid">
         <section class="text-center">
             <!-- Careers Header -->
-            <header class="row justify-content-cener align-items-center text-center header-intro overlay-header">
+            <header class="row justify-content-cener align-items-center text-center header-img overlay">
                 <div class="col-12 col-md-9 col-lg-8 mx-auto">
                     <!-- <span class="text-muted">Work with us</span> -->
-                    <h1 class="py-4">Careers at Zyclyx</h1>
-                    <p>We’re a growing team of passionate designers and developers looking to disrupt the industry with
-                        our bold endeavours</p>
+                    <h1 class="header-title">Careers at Zyclyx</h1>
+                    <!-- <p>We’re a growing team of passionate designers and developers looking to disrupt the industry with
+                        our bold endeavours</p> -->
                 </div>
             </header>
-            <div>
-                <h3 class="my-4 text-center">Apply now to take your career to the next level!</h2>
+            <div class="py-4">
+                <h3 class="my-4 title-1">Working <span class="title-highlight">Together</span></h2>
+                    <p class="title-caption">We're looking for creative people to join our team.</p>
                     <div class="row justify-content-lg-center pb-5 text-left">
-                        <div class="col-lg-9">
-                            <p class="text-right"><span class="openings-count">4 Openings</span></p>
-                            <div class="accordion" id="accordionQuestions">
+                        <div class="col-lg-9 py-3">
+                            <h4 class="text-1">Open Job Positions</h4>
+                            <!-- <p class="text-right text-2"><span class="openings-count">4 Openings</span></p> -->
+                            <div class="accordion pt-3" id="accordionQuestions">
 
                                 <!-- JOB Post - 1 -->
-                                <div class="card collapsed mb-2 shadow-sm my-3" role="button" href="#collapseTwo"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo" id="main1">
+                                <div class="card collapsed mb-2 box-shadow-sm my-3 py-2" role="button" href="#collapseTwo"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" id="main1">
                                     <div class="card-header" id="headingOne">
-                                        <h5 class="card-title">
-                                            <a class="text-primary">
+                                        <h5 class="card-title title-2">
+                                            <a>
                                                 SAP ABAP Development for HANA
-                                                 <i class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true" id="btn1"></i>
+                                                <i class="fa fa-angle-down float-right rotate-icon" aria-hidden="true"
+                                                    id="btn1"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
-                                        data-parent="#accordionQuestions"><hr>
-                                        <div class="card-body">                                           
-                                            <h5>Description</h5>
-                                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        data-parent="#accordionQuestions">
+                                        <hr>
+                                        <div class="card-body">
+                                            <h5 class="text-1">Description</h5>
+                                            <p class="text-muted text-2">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                 Ut enim ad minim veniam</p>
-                                            <h5>Experience</h5>
-                                            <p class="text-muted">2 - 4 years</p>
-                                            <h5>Location</h5>
-                                            <p class="text-muted">Hyderbad, India</p>
+                                            <h5 class="text-1">Experience</h5>
+                                            <p class="text-muted text-2">2 - 4 years</p>
+                                            <h5 class="text-1">Location</h5>
+                                            <p class="text-muted text-2">Hyderbad, India</p>
                                             <p><a href="./job-preview.html"
-                                                    class="btn btn-primary btn-outline hvr-wobble-vertical">View
-                                                    Position<i class="fa fa-arrow-right ml-3"></i></a></p>
+                                                    class="btn btn-outline-primary">More Details</a></p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- JOB Post -2 -->
-                                <div class="card collapsed mb-2 shadow-sm my-3" role="button" href="#collapseOne"
-                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                aria-controls="collapseOne" id="main2">
+                                <div class="card collapsed mb-2 box-shadow-sm my-3 py-2" role="button" href="#collapseOne"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne" id="main2">
                                     <div class="card-header" id="headingTwo">
-                                        <h5 class="card-title">
+                                        <h5 class="card-title title-2">
                                             <a class="text-primary">
-                                                Functional Testing Planning 
-                                                <i class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true" id="btn2"></i>
+                                                Functional Testing Planning
+                                                <i class="fa fa-angle-down float-right rotate-icon" aria-hidden="true"
+                                                    id="btn2"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionQuestions"><hr>
+                                        data-parent="#accordionQuestions">
+                                        <hr>
                                         <div class="card-body">
-                                            <h5>Description</h5>
-                                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <h5 class="text-1">Description</h5>
+                                            <p class="text-muted text-2">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                 Ut enim ad minim veniam</p>
-                                            <h5>Experience</h5>
-                                            <p class="text-muted">2 - 4 years</p>
-                                            <h5>Location</h5>
-                                            <p class="text-muted">Hyderbad, India</p>
+                                            <h5 class="text-1">Experience</h5>
+                                            <p class="text-muted text-2">2 - 4 years</p>
+                                            <h5 class="text-1">Location</h5>
+                                            <p class="text-muted text-2">Hyderbad, India</p>
                                             <p><a href="./job-preview.html"
-                                                    class="btn btn-primary btn-outline hvr-wobble-vertical">View
-                                                    Position<i class="fa fa-arrow-right ml-3"></i></a></p>
+                                                    class="btn btn-outline-primary">More Details</a></p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- JOB Post - 3 -->
-                                <div class="card mb-2 collapsed shadow-sm my-3"role="button" href="#collapseThree"
-                                data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree" id="main3">
+                                <div class="card mb-2 collapsed box-shadow-sm my-3 py-2" role="button" href="#collapseThree"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree" id="main3">
                                     <div class="card-header" id="headingThree">
-                                        <h5 class="card-title">
+                                        <h5 class="card-title title-2">
                                             <a class="text-primary">
-                                                IBM DB2 Administration 
-                                                <i class="fa fa-angle-down float-right rotate-icon"
-                                                    aria-hidden="true" id="btn3"></i>
+                                                IBM DB2 Administration
+                                                <i class="fa fa-angle-down float-right rotate-icon" aria-hidden="true"
+                                                    id="btn3"></i>
                                             </a>
                                         </h5>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordionQuestions"><hr>
+                                        data-parent="#accordionQuestions">
+                                        <hr>
                                         <div class="card-body">
-                                            <h5>Description</h5>
-                                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <h5 class="text-1">Description</h5>
+                                            <p class="text-muted text-2">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                 Ut enim ad minim veniam</p>
-                                            <h5>Experience</h5>
-                                            <p class="text-muted">2 - 4 years</p>
-                                            <h5>Location</h5>
-                                            <p class="text-muted">Hyderbad, India</p>
+                                            <h5 class="text-1">Experience</h5>
+                                            <p class="text-muted text-2">2 - 4 years</p>
+                                            <h5 class="text-1">Location</h5>
+                                            <p class="text-muted text-2">Hyderbad, India</p>
                                             <p><a href="./job-preview.html"
-                                                    class="btn btn-primary btn-outline hvr-wobble-vertical">View
-                                                    Position<i class="fa fa-arrow-right ml-3"></i></a></p>
+                                                    class="btn btn-outline-primary">More Details</a></p>
                                         </div>
                                     </div>
-                                </div>                               
+                                </div>
 
                                 <!-- JOB Post - 4 -->
-                                <div class="card mb-2 collapsed shadow-sm my-3" role="button" href="#collapseFour"
-                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                aria-controls="collapseFour" id="main4">
+                                <div class="card mb-2 collapsed box-shadow-sm my-3 py-2" role="button" href="#collapseFour"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour" id="main4">
                                     <div class="card-header" id="headingFour">
-                                        <h5 class="card-title">
+                                        <h5 class="card-title title-2">
                                             <a class="text-primary">
                                                 Senior UX Designer <i class="fa fa-angle-down float-right rotate-icon"
                                                     aria-hidden="true" id="btn4"></i>
@@ -154,19 +157,19 @@
                                         </h5>
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                        data-parent="#accordionQuestions"><hr>
+                                        data-parent="#accordionQuestions">
+                                        <hr>
                                         <div class="card-body">
-                                            <h5>Description</h5>
-                                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <h5 class="text-1">Description</h5>
+                                            <p class="text-muted text-2">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                 Ut enim ad minim veniam</p>
                                             <h5>Experience</h5>
-                                            <p class="text-muted">2 - 4 years</p>
+                                            <p class="text-muted text-2">2 - 4 years</p>
                                             <h5>Location</h5>
-                                            <p class="text-muted">Hyderbad, India</p>
+                                            <p class="text-muted text-2">Hyderbad, India</p>
                                             <p><a href="./job-preview.html"
-                                                    class="btn btn-primary btn-outline hvr-wobble-vertical">View
-                                                    Position<i class="fa fa-arrow-right ml-3"></i></a></p>
+                                                    class="btn btn-outline-primary">More Details<i class="fa fa-arrow-right ml-3"></i></a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -177,8 +180,8 @@
         </section>
 
     </div>
-     <!-- Footer  -->
-     <div id="footer"></div>
+    <!-- Footer  -->
+    <div id="footer"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -190,37 +193,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+        });
     </script>
-    <script> 
-    $(function(){
-      $("#navbar").load("navbar.html"); 
-      $("#footer").load("footer.html"); 
-    });
-    </script> 
 
-   <script>
-     $(function(){
-  $("#main1").click(function(){   
-    $("#btn1").toggleClass("spinEffect");
-  });
+    <script>
+        $(function () {
+            $("#main1").click(function () {
+                $("#btn1").toggleClass("spinEffect");
+            });
 
-  $("#main2").click(function(){   
-    $("#btn2").toggleClass("spinEffect");
-  });
+            $("#main2").click(function () {
+                $("#btn2").toggleClass("spinEffect");
+            });
 
-  $("#main3").click(function(){   
-    $("#btn3").toggleClass("spinEffect");
-  });
+            $("#main3").click(function () {
+                $("#btn3").toggleClass("spinEffect");
+            });
 
-  $("#main4").click(function(){   
-    $("#btn4").toggleClass("spinEffect");
-  });
-});
-   </script>
+            $("#main4").click(function () {
+                $("#btn4").toggleClass("spinEffect");
+            });
+        });
+    </script>
 </body>
 
 </html>
