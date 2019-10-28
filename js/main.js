@@ -8,7 +8,6 @@ const sectionOneOptions = {
 
 const sectionOneObserver = new IntersectionObserver(function( entries ) {
   entries.forEach(entry => {
-      console.log(entry);
     if (!entry.isIntersecting) {
         navbar.classList.remove("navbar-light")
       navbar.classList.add("navbar-dark");
