@@ -86,10 +86,7 @@
   background-size: contain;
   background-position: center;
 }
-.core-val-caption .fa{
-  font-size: 1.2rem;
-  color: #ff4500;
-}
+
 .core-values-items img {
   width: 40px;
   height: auto;
@@ -475,11 +472,11 @@ border-bottom-right-radius: 25px;
  border: 1px solid rgba(22, 28, 45,0.3);
 }
 
-.rating{
+.rating li{
   list-style-type: none;
   display: inline-block;
 }
-.rating .fa{
+.rating .fas{
   color: #007bff;
 }
 /* 
