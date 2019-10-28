@@ -17,7 +17,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
   <!-- Custom styles -->
-  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="job-preview.css" />
   <link rel="stylesheet" href="./animations.css" />
   <!-- <link rel="stylesheet" href="./style.css"> -->
@@ -25,7 +25,7 @@
 
 <body class="text-center">
 
-  <div class="d-flex w-100 h-100 mx-auto flex-column">
+  <div class="d-flex w-100 h-100 mx-auto flex-column ">
     <!-- 
       ====== Navbar ======
     -->
@@ -35,13 +35,13 @@
     <!-- 
       ====== END Navbar ======
     -->
-    <section class="d-flex justify-content-center align-items-center preview-intro preview-overlay">
+    <section class="d-flex justify-content-center align-items-center header-img preview-intro overlay">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1>Software Engineering Manager</h1>
-            <p>Remote, Full time position</p>
-            <a href="./job application form.html" class="btn btn-success">Apply now</a>
+            <h1 class="header-title">Want to work with us?</h1>
+            <!-- <p>Software Engineering Manager</p> -->
+            <a href="./job application form.html" class="btn btn-primary btn-shadow-2">Apply now</a>
           </div>
           <!--end of col-->
         </div>
@@ -50,13 +50,14 @@
       <!--end of container-->
     </section>
     <!--end of section-->
-    <section class="job-preview">
+    <section class="job-preview pb-4">
+        <h5 class="py-2 title-1 p-4">Software Engineering Manager</h5>
       <div class="container text-left">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between py-4">
           <div class="col-12 col-md-8 col-lg-7">
             <article>
-              <h5 class="py-2">Role Description</h5>
-              <p class="text-muted">
+                <h5 class="py-2 title-2">Description</h5>
+              <p class="text-muted text-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
@@ -67,8 +68,8 @@
                 explicabo. Nemo enim ipsam voluptatem quia voluptas
                 sit aspernatur aut odit aut fugit
               </p>
-              <h5 class="py-2">Responsibilities</h5>
-              <ul>
+              <h5 class="py-2 title-2">Responsibilities</h5>
+              <ul class="text-2">
                 <li>
                   Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
                 </li>
@@ -86,8 +87,8 @@
                   Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </li>
               </ul>
-              <h5 class="py-2">Minimum Qualifications</h5>
-              <ul>
+              <h5 class="py-2 title-2">Minimum Qualifications</h5>
+              <ul class="text-2">
                 <li>
                   Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
                   sunt explicabo
@@ -110,13 +111,13 @@
                 sit aspernatur aut odit aut fugit
               </p>
             </article>
-            <h3 class="mx-4 py-3" id="job-application">Sound like the job for you? Join us! </h3>
+            <h3 class="mx-4 py-3 title-2" id="job-application">Sound like the job for you? Join us! </h3>
             <div class="row my-3">
                 <div class="col">
-                  <a href="./job application form.html" class="btn btn-primary">Apply now</a>
+                  <a href="./job application form.html" class="btn btn-primary btn-shadow-2">Apply now</a>
                 </div>
                 <div class="col">
-                  <a href="/careers.html" class="btn btn-link">Back to careers</a>
+                  <a href="/careers.html" class="btn btn-link animate-link">Back to careers</a>
                 </div>
               </div>          
 
@@ -168,19 +169,19 @@
             <div class="card">
               <div class="card-header d-flex justify-content-between">
                 <div>
-                  <span class="h6">Job Details</span>
+                  <span class="text-1">Job Details</span>
                 </div>
               </div>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between text-2">
                       <div><i class="icon-tools mr-1"></i> Department</div>
                       <span>Engineering</span>
                     </div>
                   </li>
                   <li class="list-group-item">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between text-2">
                       <div><i class="icon-home mr-1"></i> Location</div>
                       <span>Hyderabad, India</span>
                     </div>
