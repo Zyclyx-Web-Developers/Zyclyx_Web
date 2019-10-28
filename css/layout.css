@@ -53,8 +53,9 @@
 .btn-shadow-1 {
   box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(254, 105, 106, 0.9);
 }
-.btn-shadow-2{
+.btn-shadow-2:hover{
 box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(78,84,200,0.9);
+transform: translate(0,-2px);
 }
 
 /* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
@@ -79,14 +80,23 @@ a:hover {
   color: #161c2d;
   font-family: "Montserrat", sans-serif;
 }
+.animate-link {
+  position: relative;
+  color: #007bff;
+  text-decoration: none;
+}
 
+.animate-link:hover {
+  color:#007bff;
+  text-decoration: none;
+}
 .animate-link:before {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 1px;
   bottom: 0;
-  left: 10px;   
+  left: 0;
   background-color: #007bff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -159,7 +169,10 @@ p {
   background: #ff4500;
   margin-left: -35px;
 }
-
+.quote-left{
+  font-size: 1.2rem;
+  color: #ff4500;
+}
 /* 
 ==== OVERLAY ====
 */
