@@ -3,7 +3,7 @@
   background-position: center;
 }
 .collapsed{
-  border-left:4px solid #f07c52 !important;
+  border-left:4px solid rgba(255, 69, 0,0.8) !important;
 }
 .openings-count{
     font-size: 0.8rem;     
