@@ -1,159 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/layout.css">
-        <link rel="stylesheet" href="./job application form.css"> 
-     
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/job-application-form.css">
 </head>
-<body> 
+
+<body>
   <!--
     ====== Navbar ======
   -->
-<header class="main-navbar" id="mainNavbar">
+  <header class="main-navbar" id="mainNavbar">
     <div id="navbar"></div>
-</header>
-<!-- 
+  </header>
+  <!-- 
     ====== END Navbar ======
   -->
 
-<!-- Header -->
-<section class="container-fluid header-img overlay">
-  <h1 class="text-white text-right mt-5 header-title ">Job Application</h1>
-</section>
-<!-- Header -->
-        <div class="container">
-            
-                <h4 class="title-1 pt-5">Apply for this<span class="title-highlight"> Job</span></h4>
-                <p class="title-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>                                              
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center"> 
-                                    
-                            <div class="containar rounded"style="padding: 0px"> 
-                                                                           
-                                <form>
-                                    <div class="row my-3">
-                                      <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="First name">
-                                      </div>
-                                      <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="Last name">
-                                      </div>
-                                    </div>
-                                  
-                                    <div class="row my-3">
-                                        <div class="col">
-                                          <input type="email" class="form-control" placeholder="Email">
-                                        </div>                                   
-                                        <div class="col">
-                                          <input type="text" class="form-control" placeholder="Phonenumber">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row my-3">                                        
-                                            <div class="form-group col">                                                  
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                      <option>Gender</option>
-                                                      <option>Male</option>
-                                                      <option>Female</option>                                                      
-                                                    </select>
-                                                  </div>
-                                                </div>
-                                    <div class="row my-3">                                        
-                                            <div class="form-group col">                                                  
-                                                    <select class="form-control" id="exampleFormControlSelect2">
-                                                      <option>Country</option>
-                                                      <option>India</option>
-                                                      <option>Others</option>                                                      
-                                                    </select>
-                                                  </div>
-                                     </div>
-                                     <div class="row my-3">
-                                            <div class="col">
-                                                    <input type="text" class="form-control" placeholder="Qualification">
-                                                  </div>
-                                     </div>
-                                     <div class="row my-3">
-                                            <div class="col">
-                                                    <input type="text" class="form-control" placeholder="Area of Expertise">
-                                                  </div>
-                                     </div>
+  <!-- Header -->
+  <section class="container-fluid header-img overlay">
+    <h1 class="text-white text-right mt-5 header-title ">Job Application</h1>
+  </section>
+  <!-- Header -->
+  <div class="container">
 
-                                     <div class="row my-3">                                        
-                                            <div class="form-group col">                                                  
-                                                    <select class="form-control" id="exampleFormControlSelect3">
-                                                      <option>Position Applying for</option>
-                                                      <option>1</option>
-                                                      <option>2</option>                                                      
-                                                    </select>
-                                                  </div>
-                                     </div> 
-                                     <div class="row my-3">
-                                            <div class="col">
-                                                    <input type="text" class="form-control" placeholder="Current Company">
-                                                  </div>
-                                     </div>                                      
-                                     <div class="row my-3">
-                                            <div class="col-6">
-                                              <input type="text" class="form-control" placeholder="Current CTC">
-                                            </div>
-                                            <div class="col-6">
-                                              <input type="text" class="form-control" placeholder="Notice Period">
-                                            </div>
-                                          </div>
-                                          <div class="row my-3">
-                                          <div class="input-group mb-3 col">
-                                                <!-- <div class="input-group-prepend">
+    <h4 class="title-1 pt-5">Apply for this<span class="title-highlight"> Job</span></h4>
+    <p class="title-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center">
+
+        <div class="containar rounded" style="padding: 0px">
+
+          <form>
+            <div class="row my-3 text-2">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+
+            <div class="row my-3">
+              <div class="col">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Phonenumber">
+              </div>
+            </div>
+
+            <div class="row my-3">
+              <div class="form-group col">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="form-group col">
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Country</option>
+                  <option>India</option>
+                  <option>Others</option>
+                </select>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Qualification">
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Area of Expertise">
+              </div>
+            </div>
+
+            <div class="row my-3">
+              <div class="form-group col">
+                <select class="form-control" id="exampleFormControlSelect3">
+                  <option>Position Applying for</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Current Company">
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Current CTC">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Notice Period">
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="input-group mb-3 col">
+                <!-- <div class="input-group-prepend">
                                                   <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume</span>
                                                 </div> -->
-                                                <div class="custom-file">
-                                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                  <label class="custom-file-label" for="inputGroupFile01">Add your CV</label>
-                                                </div>
-                                              </div>
-                                          </div>
-                                          <div class="row my-3">
-                                          <div class="input-group col">
-                                                <!-- <div class="input-group-prepend">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Add your CV</label>
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="input-group col">
+                <!-- <div class="input-group-prepend">
                                                   <span class="input-group-text">Additional Information</span>
                                                 </div> -->
-                                                <textarea class="form-control" placeholder="Additional Information" aria-label="With textarea"></textarea>
-                                              </div>
-                                            </div>  
-                                  </form>                                
-                                <div class="form-group py-3">
-                                    <button type="submit" class="btn login-btn">Submit<i class="fas fa-paper-plane ml-2"></i></button>
-                                </div>          
-                       </div>
-                </div>
-                    <div class="col-lg-3"></div>
-                </div>
-                <br>
-           </div> 
+                <textarea class="form-control" placeholder="Additional Information"
+                  aria-label="With textarea"></textarea>
+              </div>
+            </div>
+          </form>
+          <div class="form-group py-3">
+            <button type="submit" class="btn btn-primary btn-shadow-2">Submit Application<i class="fas fa-paper-plane ml-2"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <br>
+  </div>
 
-            <!-- Footer  -->
-            <div id="footer"></div>
+  <!-- Footer  -->
+  <div id="footer"></div>
 
-            <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-        </script>
-        <script> 
-        $(function(){
-          $("#navbar").load("navbar.html"); 
-          $("#footer").load("footer.html"); 
-        });
-        </script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
- </html>
+
+</html>

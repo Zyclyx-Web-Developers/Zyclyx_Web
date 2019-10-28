@@ -1,11 +1,6 @@
-.input-group-text {
-    color: #000;            
-}
+
 .header-img{
-  background-image: url("./images/job-application-img.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;  
-  background-position:center;  
+  background-image: url("../images/job-application-img.jpg");   
 }
  .login-btn{
         min-height: 28px;
