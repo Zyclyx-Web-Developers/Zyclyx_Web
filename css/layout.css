@@ -154,6 +154,10 @@ p {
   font-weight: 700;
   margin-top: 5px;
 }
+.title-3{
+  font-size: 18px !important;
+  color: #2a354f;
+}
 .title-highlight {
   font-weight: 800;
   color: #ff4500;

@@ -1,0 +1,211 @@
+.fa-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.fa:hover {
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  color: rgb(0, 132, 255);
+}
+/*  */
+.header-img {
+  background-image: url("../images/AI-3.jpg");
+}
+.about-sec-wrap {
+  padding: 3rem 0;
+  min-height: 60vh;
+}
+.about-intro {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+.about-vision {
+  background-color: #f3f7fa;
+}
+
+.we-do-card {
+  width: 200px;  
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+.we-do-card .icon {
+  height: 100px;   
+  /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%); */
+  background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  margin: 0 auto;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.we-do-card .content {
+  text-align: center;
+  height: 80px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  border-top: transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.we-do-card .title-2 {
+  font-size: 17px !important;
+  margin: 0 !important;
+}
+
+.about-great-at {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.great-at-card{
+  /* box-shadow: 0 0.5rem 1.825rem -0.275rem #ffffff,0 0 4px 1px #ffffff; */
+  border-radius: 8px;
+  background-color: #ffffff;
+  /* border: 2px solid #ffffff; */
+}
+
+/* 
+==== Core Team ====
+ */
+ .team-card{
+    flex: 0 0 23% !important;
+    margin: 5px 13px;
+    background-color: rgba(243, 247, 250,0.6);
+    background-color: #e6f4f1;
+ }
+ .team-card .social-network{
+   padding: 0 !important;
+ }
+ .team-card .social-network .fab{
+   border-radius: 10px !important;
+   border: 2px solid rgba(68, 70, 85,0.3) !important;
+ }
+ .team-card .social-network .fab:hover{
+   background-color: #444655;
+  color: #ffffff;
+ }
+ .team-card img{
+width: 80px;
+height: 80px;
+ }
+.contact-banner {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+#footer {
+  margin-top: 0 !important;
+}
+/*  */
+.image {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: skewX(-5deg);
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.image:hover {
+  box-shadow: 0px 0px 11px, -5px 5px rgb(0, 0, 0, 0.8),
+    5px -5px rgba(255, 0, 0, 0.8);
+}
+
+/* Cards */
+.team-cards {
+  position: relative;
+  clip-path: auto;
+}
+.image1 {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: skewX(-5deg);
+  border-radius: 5px;
+  background: rgb(177, 175, 175);
+  transition: all 0.4s ease-in-out;
+}
+.image1:hover {
+  box-shadow: 0px 0px 20px, -5px 5px rgb(0, 0, 0, 0.8),
+    5px -5px rgba(255, 0, 0, 0.8);
+  border: 0 0 5px 8px #ccc;
+}
+/* .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #24242498;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  } */
+.team-cards:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Cards end */
+
+/* .fa-icons .fa{
+    border: 1px solid;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.fa-icons .text{
+    background: #ff0000;
+} */
+.underLine1 {
+  width: 10px;
+  height: 4px;
+  display: inline-block;
+  background: rgb(252, 1, 1);
+  transform: skewX(-15deg);
+}
+.underLine2 {
+  width: 20px;
+  height: 4px;
+  display: inline-block;
+  background: #ff0000;
+  transform: skewX(-15deg);
+}
+.underLine {
+  width: 100px;
+  height: 4px;
+  display: inline-block;
+  background: #000;
+  transform: skewX(-15deg);
+}
+.bg-box {
+  height: 100px;
+  width: 100px;
+  background-image: url("./docs/Computer-Vision.png");
+  position: relative;
+}
+.join-section {
+  transform: translateY(50%);
+}
+.footer {
+  padding-top: 90px;
+}
