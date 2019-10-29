@@ -86,10 +86,6 @@ a:hover {
   text-decoration: none;
 }
 
-.animate-link:hover {
-  color:#007bff;
-  text-decoration: none;
-}
 .animate-link:before {
   content: "";
   position: absolute;
@@ -109,7 +105,12 @@ a:hover {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
+.animate-link:hover {
+  color:#0044bc !important;
+  font-weight: 600;
+  font-size: 40rem;
+  /* text-decoration: none; */
+}
 h1,
 h2,
 h3,
