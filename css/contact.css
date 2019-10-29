@@ -8,10 +8,12 @@
     color: #F9FBFD;  
 }
 .info-card{
-    background-color: #f3f7fa;
+    /* background-color: #f3f7fa; */
     border-radius: 0.5rem;
     /* border-radius: 4px solid #fff !important; */
     padding-top: 1rem !important;
+    flex: 0 0 23% !important;
+    border: 1px solid rgba(0, 123, 255,0.2);
 }
 
 .contact-info .fa-map-marker{
