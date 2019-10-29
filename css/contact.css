@@ -7,13 +7,17 @@
     min-height:350px;             
     color: #F9FBFD;  
 }
-.info-card{
-    /* background-color: #f3f7fa; */
+.info-card{     
     border-radius: 0.5rem;
-    /* border-radius: 4px solid #fff !important; */
+    border-radius: 8px;
     padding-top: 1rem !important;
     flex: 0 0 23% !important;
     border: 1px solid rgba(0, 123, 255,0.2);
+}
+.joinus-banner{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f3f7fa;
 }
 
 .contact-info .fa-map-marker{
