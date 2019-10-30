@@ -5,47 +5,4 @@
     background-position: bottom !important;     
 }
 /* Header End */
-.title-2{
-    font-size: 18px !important;
-}
-.title-1{
-    font-size: 28px !important;
-}
-.service-tag{
-    font-weight: 600;
-    font-size: 18px;     
-    margin-right: 20px;
-    display: flex;     
-    align-items: center;
-}
-
-.service-highlight{  
- height: 4px;
- width: 20px;
- background-color: #ff4500; 
- margin-right: 10px; 
-}
-.capabilities{
-background-color:#f3f7fa;
-padding-top: 2rem;
-}
-.cap-card{
-    background-color: rgba(255, 255, 255,0.6);
-}
-.service .card{
-    padding: 0 !important;
-}
-.service .card-1 .card-icon{
-    height: 150px;
-    background-color:#0044bc;
-}
-
-.service .card-2 .card-icon{
-    height: 150px;
-    background-color:#009d58;
-}
-
-.service .card-3 .card-icon{
-    height: 150px;
-    background-color:#ea4300    ;
-}
+ 

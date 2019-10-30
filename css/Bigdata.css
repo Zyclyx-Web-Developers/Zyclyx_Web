@@ -1,42 +1,5 @@
 
 /* Header */
-.Header-img{    
-    background-image:url("../docs/across.png");
-    background-attachment:scroll;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:300px;
-    padding: 90px;
+.header-img{    
+    background-image:url("../docs/across.png");   
 }
-/* Header End */
-/* Content-section */
-
-.service-offering{    
-    background-image:url("../docs/AI-3.jpg");
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:600px;
-    padding: 90px;
-}
-/*Content-Section End*/
-/* .service-offering */
-.service p{
-    width: 50px;
-    height: 50px;
-    align-items: center;
-}
-/* .service-offering End */
-
-/*sections*/
-
-.sec img{
-    height: 300px;
-    width: 500px;
-}
-.sec{
-    margin-top: 10px;
-   align-items: center;
-   justify-content:space-around;
-}
-/*sections End*/

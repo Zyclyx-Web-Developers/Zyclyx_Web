@@ -344,87 +344,61 @@ p {
 */
 
 /* 
+==== Inner Page Layout styles ====
+*/
+ 
+.service-tag{
+  font-weight: 600;
+  font-size: 18px;     
+  margin-right: 20px;
+  display: flex;     
+  align-items: center;
+}
+
+.service-highlight{  
+height: 4px;
+width: 20px;
+background-color: #ff4500; 
+margin-right: 10px; 
+}
+.capabilities{
+background-color:#f3f7fa;
+padding-top: 2rem;
+}
+.service-card .title-2,.capability-card .title-2{
+  font-size: 18px !important;
+}
+.service-card .title-1,.capability-card .title-1{
+  font-size: 28px !important;
+}
+.capability-card{
+  background-color: rgba(255, 255, 255,0.6);
+}
+.service-card{
+  padding: 0 !important;
+}
+.service .card-1 .card-icon{
+  height: 150px;
+  background-color:#0044bc;
+}
+
+.service .card-2 .card-icon{
+  height: 150px;
+  background-color:#009d58;
+}
+
+.service .card-3 .card-icon{
+  height: 150px;
+  background-color:#ea4300    ;
+}
+
+/* 
+==== END - Inner Page Layout styles ====
+*/
+
+/* 
 ==== FOOTER ====
 */
-/* 
-.f-links a{
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  margin: 0 20px;
-}
-#footer{
-  font-size: 15px;
-}
-.Social-icons .fa{
-  font-size: 20px;
-  color: white;
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  transition: all .3s ease-in ;
-  position: relative;
-  overflow: hidden;
-}
-.Social-icons .fa:hover{
-  font-size: 25px;
-}
-.Social-icons .fa-facebook{
-  border:   #3b5998;
-  color: #3b5998;
-}
-.Social-icons .fa-twitter{
-  border: #55acee;
-  color: #55acee;
-}
-.Social-icons .fa-google-plus{
-  border: #dc4e41;
-  color: #dc4e41;
-}
-.Social-icons .fa-linkedin{
-  border: #0077b5;
-  color: #0077b5;
-}
-
-.Social-icons .fa-facebook:hover{
-  color: white;
-  background: #3b5998;
-}
-.Social-icons .fa-twitter:hover{
-  color: white;
-  background: #55acee;
-}
-.Social-icons .fa-google-plus:hover{
-  color: white;
-  background: #dc4e41;
-}
-.Social-icons .fa-linkedin:hover{
-  color: white;
-  background: #0077b5;
-}
-.underLine1{
-  width: 10px;
-  height: 4px;
-  display: inline-block;
-  background: #ff4500;
-  transform: skewX(-15deg);
-}
-.underLine2{
-  width: 20px;
-  height: 4px;
-  display: inline-block;
-  background: #ff4500;
-  transform: skewX(-15deg);
-}
-.underLine{
-  width: 100px;
-  height: 4px;
-  display: inline-block;
-  background: #000;
-  transform: skewX(-15deg);
-} */
-
 
 .logo-footer img{
   height: auto;
