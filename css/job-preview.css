@@ -1,4 +1,25 @@
 .header-img{
     background-image: url(/docs/jobapplication.html.jpg);     
 } 
+ article li span .fa{
+	color: #377dff;
+    background: rgba(55, 125, 255, 0.1);
+    border-color: transparent;
+    border-radius: 50%;
+    margin:0px 5px;    
+} 
+.resp li{
+    list-style-type: none;
+    display: flex;
+}
 
+/* }
+li:before{
+    font-family: "Font Awsome";
+    content: '\f00c';
+    color: #377dff;
+    background: rgba(55, 125, 255, 0.1);
+    border-color: transparent;
+    border-radius: 50%;
+    
+} */
