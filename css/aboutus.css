@@ -63,7 +63,7 @@ bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 123, 255, 0.3);
+  border: 1px solid #7918F2;
   border-top: transparent;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
