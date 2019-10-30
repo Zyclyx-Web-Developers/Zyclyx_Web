@@ -190,6 +190,9 @@ p {
   background-position: center;
   height:300px;
   padding: 90px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
  
 }
 .header-title{
@@ -220,7 +223,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 123, 255,0.5);
+  background-color: rgba(0, 123, 255,0.6);
 }
 .overlay h1, .overlay h2{
   position:relative;
