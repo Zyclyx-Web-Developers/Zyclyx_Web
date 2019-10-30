@@ -154,6 +154,10 @@ p {
   font-weight: 700;
   margin-top: 5px;
 }
+.title-3{
+  font-size: 18px !important;
+  color: #2a354f;
+}
 .title-highlight {
   font-weight: 800;
   color: #ff4500;
@@ -426,10 +430,12 @@ p {
 .footer-row-1 a,.footer-row-2 a,.footer-row-2 p{
   color:#e9efff !important;
 }
-.footer-row-2 a{
+.footer-row-1 a{
+  font-weight: 600;
+}
+.footer-row-2 a,.footer-row-2 p{
   font-size: 13px !important;
-  margin: 5px 10px;
-  text-align: right;
+  margin: 5px 10px;   
 }
 .footer-row-1 a:hover,.footer-row-2 a:hover{
   color:#ffffff !important;
@@ -458,6 +464,7 @@ line-height: 2
 
 .footer-hr{
 border-top: 1px solid rgba(255, 255, 255,0.2);
+margin: 8px auto !important;
 }
 
 /* 
