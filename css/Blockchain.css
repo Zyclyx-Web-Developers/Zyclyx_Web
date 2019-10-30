@@ -1,42 +1,44 @@
 
 /* Header */
-.Header-img{    
-    background-image:url("../docs/across.png");
-    background-attachment:scroll;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:300px;
-    padding: 90px;
+.header-img{    
+    background-image:url("../images/bitcoin.jpg");
+    background-position: bottom !important;     
 }
 /* Header End */
-/* Content-section */
-
-.service-offering{    
-    background-image:url("../docs/AI-3.jpg");
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:600px;
-    padding: 90px;
+.title-2{
+    font-size: 18px !important;
 }
-/*Content-Section End*/
-/* .service-offering */
-.service p{
-    width: 50px;
-    height: 50px;
+.title-1{
+    font-size: 28px !important;
+}
+.service-tag{
+    font-weight: 600;
+    font-size: 18px;     
+    margin-right: 20px;
+    display: flex;     
     align-items: center;
 }
-/* .service-offering End */
 
-/*sections*/
+.service-highlight{  
+ height: 4px;
+ width: 20px;
+ background-color: #ff4500; 
+ margin-right: 10px; 
+}
+.service .card{
+    padding: 0 !important;
+}
+.service .card-1 .card-icon{
+    height: 150px;
+    background-color:#0044bc;
+}
 
-.sec img{
-    height: 300px;
-    width: 500px;
+.service .card-2 .card-icon{
+    height: 150px;
+    background-color:#009d58;
 }
-.sec{
-    margin-top: 10px;
-   align-items: center;
-   justify-content:space-around;
+
+.service .card-3 .card-icon{
+    height: 150px;
+    background-color:#ea4300    ;
 }
-/*sections End*/
