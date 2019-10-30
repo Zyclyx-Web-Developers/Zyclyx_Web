@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="container-fluid pb-3">
+    <section class="container-fluid pb-5">
         <div class="row contact-info d-flex justify-content-between">
             <div class="col-6 col-md-3 info-card pt-3 m-2 ml-md-4">
                 <div>
@@ -80,58 +80,62 @@
             </div>
         </div>
     </section>
-    <section class="container p-5">
-            <h2 class="title-1 py-4">Drop us a line</h2>
+    <section class="container-fluid p-5 form-container">
+        <h2 class="title-1 py-2">Drop us a line</h2>
         <div class="row d-flex justify-content-center">
-        <div class="col-md-9 col-12 shadow my-3 getintouch-form rounded">
+            <div class="col-md-9 col-12 shadow my-3 getintouch-form rounded">
 
-        <div class="px-4 px-xl-5 text-left py-3">
-            <!-- <h2 class="h4 my-3 py-3 text-center title-2">Drop us a line</h2> -->
-            <form class="needs-validation mb-3" novalidate="">
-                <div class="row py-5">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="usernam" class="text-2">Your name:&nbsp;<span class="text-danger">*</span></label>
-                            <input class="form-control" type="text" id="username" placeholder="" required="">
-                            <div class="invalid-feedback">Please fill in you name!</div>
+                <div class="px-4 px-xl-5 text-left py-3">
+                    <!-- <h2 class="h4 my-3 py-3 text-center title-2">Drop us a line</h2> -->
+                    <form class="needs-validation mb-3" novalidate="">
+                        <div class="row py-5">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="usernam" class="text-2">Your name:&nbsp;<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" id="username" placeholder="" required="">
+                                    <div class="invalid-feedback">Please fill in you name!</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="email" class="text-2">Email address:&nbsp;<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="email" id="email" placeholder="" required="">
+                                    <div class="invalid-feedback">Please provide valid email address!</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="phone-no" class="text-2">Your phone:&nbsp;<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" id="phone-no" placeholder="" required="">
+                                    <div class="invalid-feedback">Please provide valid phone number!</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="subject" class="text-2">Subject:</label>
+                                    <input class="form-control" type="text" id="subject" placeholder="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="email" class="text-2">Email address:&nbsp;<span class="text-danger">*</span></label>
-                            <input class="form-control" type="email" id="email" placeholder="" required="">
-                            <div class="invalid-feedback">Please provide valid email address!</div>
+                            <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Please describe in detail your request" required=""></textarea>
+                            <div class="invalid-feedback">Please write a message!</div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="phone-no" class="text-2">Your phone:&nbsp;<span class="text-danger">*</span></label>
-                            <input class="form-control" type="text" id="phone-no" placeholder="" required="">
-                            <div class="invalid-feedback">Please provide valid phone number!</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="subject" class="text-2">Subject:</label>
-                            <input class="form-control" type="text" id="subject" placeholder="">
-                        </div>
-                    </div>
+                        <button class="btn btn-primary btn-shadow-2" type="submit">Send message <i
+                                class="ml-2 far fa-paper-plane"></i></button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
-                    <textarea class="form-control" id="message" rows="4"
-                        placeholder="Please describe in detail your request" required=""></textarea>
-                    <div class="invalid-feedback">Please write a message!</div>
-                </div>
-                <button class="btn btn-primary btn-shadow-2" type="submit">Send message <i class="ml-2 far fa-paper-plane"></i></button>
-            </form>
+            </div>
         </div>
-    </div>
-    </div>
-</div>
-</section>
-    <section class="container py-5">
-            <h2 class="title-1 py-4">We are located at</h2>
+        </div>
+    </section>
+    <section class="container pb-5">
+        <h2 class="title-1 py-4">We are located at</h2>
         <div class="row mt-4">
             <div class="col">
                 <!-- <h2 class="py-4 title-2">We are located at</h2> -->
@@ -139,8 +143,8 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.6818756342873!2d78.43814645803543!3d17.424860145874796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9763a05f6cb3%3A0xa07cad29e31d4876!2sZYCLYX%20CONSULTING%20SERVICES%20PVT.LTD!5e0!3m2!1sen!2sin!4v1571047896100!5m2!1sen!2sin"
                     width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-        </section>
-   
+    </section>
+
 
     <section class="joinus-banner">
         <div>
