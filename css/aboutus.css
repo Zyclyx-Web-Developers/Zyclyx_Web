@@ -1,5 +1,6 @@
 .header-img {
-  background-image: url("../images/AI-3.jpg");
+  /* background-image: url("../images/AI-3.jpg"); */
+  background-image: url("../images/about.jpg");
 }
 .about-sec-wrap {
   padding: 3rem 0;
