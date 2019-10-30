@@ -22,12 +22,39 @@
 .we-do-card .icon {
   height: 100px;   
   /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%); */
-  background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+  /* background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); */
   background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
   margin: 0 auto;
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  position: relative;
+}
+.we-do-card .icon:before{
+position: absolute;
+content: "";
+color:#fff;
+font-size: 1.5rem;
+left:10px;
+bottom: 5px;
+}
+.icon-1:before{
+  content: "01"!important;
+}
+.icon-2:before{
+  content: "02"!important;
+}
+.icon-3:before{
+  content: "03"!important;
+}
+.icon-4:before{
+  content: "04"!important;
+}
+.icon-5:before{
+  content: "05"!important;
+}
+.icon-6:before{
+  content: "06"!important;
 }
 .we-do-card .content {
   text-align: center;
