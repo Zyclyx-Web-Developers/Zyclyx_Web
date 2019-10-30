@@ -407,8 +407,9 @@ border: 1px solid rgba(0, 157, 88,0.7);
   font-weight: 800;
 }
 .project-btn:hover{
-  border-color: #335EEA !important;
-  background-color: #335EEA;
+  border-color: #fff !important;
+  background-color: #ffffff;
+  color: #335EEA;
 }
 /* 
 ==== END - OUR PROJECTS ====

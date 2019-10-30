@@ -7,18 +7,12 @@
     border-color: transparent;
     border-radius: 50%;
     margin:0px 5px; 
-    font-size: 13px;   
+    font-size: 14px;   
 } 
 .resp li{
     display: flex;
 }
-/* }
-li:before{
-    font-family: "Font Awsome";
-    content: '\f00c';
-    color: #377dff;
-    background: rgba(55, 125, 255, 0.1);
-    border-color: transparent;
-    border-radius: 50%;
-    
-} */
+
+.resp li span{
+    margin-right: 8px;
+}
