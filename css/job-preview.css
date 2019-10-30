@@ -1,5 +1,5 @@
 .header-img{
-    background-image: url(/docs/jobapplication.html.jpg);     
+    background-image: url("../images/job-application-img.jpg");     
 } 
  article li span .fa{
 	color: #377dff;

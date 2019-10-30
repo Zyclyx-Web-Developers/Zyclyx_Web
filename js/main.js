@@ -20,3 +20,9 @@ const sectionOneObserver = new IntersectionObserver(function( entries ) {
 sectionOneOptions);
 sectionOneObserver.observe(videoContainer);
 // END - Navbar background change on scroll
+
+
+// Footer
+document.getElementById("current-year").innerHTML=new Date().getFullYear();
+ 
+// Footer End

@@ -138,36 +138,7 @@
   min-height: 120px;
   margin-bottom:0 ;
 }
-.service-link{
-  visibility: hidden;
-}
-.service-link a{
-  font-weight: 700;  
-  text-decoration: none !important;
-  position: relative;
-}
-.service:hover .service-link{
-  visibility: visible;
-}
-.service-link a:before {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 1px;
-  bottom: 0;
-  left: 10px;   
-  background-color: #007bff;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.service:hover .service-link a:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
+ 
 
 .service-1{
 border: 1px solid rgba(0, 157, 88,0.6); 
