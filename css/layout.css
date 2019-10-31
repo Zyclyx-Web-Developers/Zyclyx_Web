@@ -366,7 +366,7 @@ padding-top: 2rem;
   position: relative;
   z-index: 99;
 }
-.capability-card:before{
+/* .capability-card:before{
 position: absolute;
 content: "";
 height: 100px;
@@ -375,7 +375,7 @@ background-color: #800080;
 right: -10px;
 top: -10px;
 z-index: -2;
-}
+} */
 .service-card{
   padding: 0 !important;
 }
