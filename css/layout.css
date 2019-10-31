@@ -199,20 +199,10 @@ p {
   font-size: 3rem;
   font-weight: 800;   
   font-family: 'Roboto', sans-serif;
-  color: #ffffff !important;
-  position: relative;
+  color: #ffffff !important; 
   text-align: center;         
 }
-/* .header-title::before {
-  position: absolute;
-  content: "";
-  bottom: -10px;
-  left: 50%;
-  width: 100px;
-  height: 3px;
-  background: #ff4500;
-  margin-left: -35px;   
-} */
+ 
 .overlay{
   position: relative;
 }
@@ -373,6 +363,18 @@ padding-top: 2rem;
 }
 .capability-card{
   background-color: rgba(255, 255, 255,0.6);
+  position: relative;
+  z-index: 99;
+}
+.capability-card:before{
+position: absolute;
+content: "";
+height: 100px;
+width: 100px;
+background-color: #800080;
+right: -10px;
+top: -10px;
+z-index: -2;
 }
 .service-card{
   padding: 0 !important;
