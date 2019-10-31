@@ -1,4 +1,5 @@
 /* Header */
 .header-img{    
-    background-image:url("../docs/Application Development2.jpg");   
+    background-image:url("../images/application_development_header.jpg"); 
+    background-position: bottom;  
 }
