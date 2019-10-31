@@ -116,3 +116,44 @@ height: 80px;
 #footer {
   margin-top: 0 !important;
 }
+
+/*  new footer */
+.new-footer{
+  text-align: center;  
+}
+.f-logo{
+  align-self:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.f-logo img{
+  max-width: 150px;
+}
+.new-footer .f-title{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;   
+}
+.new-footer .social-network .fab{
+  line-height: 2.4;
+}
+.new-footer a,.new-footer p{
+  color: rgba(255, 255, 255,0.65);  
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.explore {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+.contact{
+  margin-left: 30px;
+}
+
+.footer-row-2 a{
+ font-size: 11px !important;
+}
