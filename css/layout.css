@@ -405,6 +405,7 @@ z-index: -2;
 */
 .footer{
   line-height: 1.6;
+  text-align: left;
 }
 .f-logo{
    margin-top: 12px;
@@ -431,51 +432,56 @@ z-index: -2;
   margin-bottom: 1px;
 }
 
-.explore {
+.footer .explore {
   display: flex;
   flex-direction: column; 
 }
  
-.contact .far, .contact .fas{
+.footer .contact .far, .footer .contact .fas{
   font-size: 14px;
 }
-.privacy a{
+.footer .privacy a{
  font-size: 11px !important;
  margin: 0 6px;
 }
 
-.explore a:hover,.privacy a:hover{
+.footer .explore a:hover,.footer .privacy a:hover{
   color:#ffffff !important;
   font-size: 0.8rem;
 }
 
-.privacy a:hover{
+.footer .privacy a:hover{
   font-size: 11px;
-  margin-bottom: 2px;
+  margin-bottom: 2px;  
 }
 
-.social-network li{
+.footer .social-network li{
 list-style-type: none;
 }
 
-.social-network .fab{
+.footer .social-network .fab{
 font-weight:400;
 height:35px;
 width:35px; 
 text-align:center;
 border: 2px solid #e2e9ef;
-border-radius: 50%;
-line-height: 2
+border-radius: 50%; 
+display:flex;
+justify-content: center;
+align-items: center;
 }
 
-.social-network .fab:hover{
+.footer .social-network .fab:hover{
   color: #2a354f;
   background-color: #f3f7fa;
   border: 2px solid #ffffff;
   transform: scale(1.1);
   }
+  .footer .social-network a:hover{
+    text-decoration: none;
+  }
   
-.footer-hr{
+.footer .footer-hr{
 border-top: 1px solid rgba(255, 255, 255,0.2);
 margin: 8px auto !important;
 }
