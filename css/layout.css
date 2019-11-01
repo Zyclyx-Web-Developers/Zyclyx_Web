@@ -403,46 +403,78 @@ z-index: -2;
 /* 
 ==== FOOTER ====
 */
+.footer{
+  line-height: 1.6;
+}
+.f-logo{
+   margin-top: 12px;
+} 
+.f-logo img{
+  max-width: 150px;
+}
 
-.logo-footer img{
-  height: auto;
-  max-width: 180px;
-  }
-.footer-row-1 a,.footer-row-2 a,.footer-row-2 p{
-  color:#e9efff !important;
-}
-.footer-row-1 a{
+.footer .f-title{
+  color: #ffffff;
   font-weight: 600;
-}
-.footer-row-2 a,.footer-row-2 p{
-  font-size: 13px !important;
-  margin: 5px 10px;   
-}
-.footer-row-1 a:hover,.footer-row-2 a:hover{
-  color:#ffffff !important;
   font-size: 1rem;
+  margin-bottom: 5px;   
+}
+
+.footer .social-network .fab{
+  line-height: 2.4;
+}
+
+.footer a,.footer p{
+  color: rgba(255, 255, 255,0.65);  
+  font-size: 13px;
+  font-weight: 600;   
+  margin-bottom: 1px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column; 
+}
+ 
+.contact .far, .contact .fas{
+  font-size: 14px;
+}
+.privacy a{
+ font-size: 11px !important;
+ margin: 0 6px;
+}
+
+.explore a:hover,.privacy a:hover{
+  color:#ffffff !important;
+  font-size: 0.8rem;
+}
+
+.privacy a:hover{
+  font-size: 11px;
+  margin-bottom: 2px;
 }
 
 .social-network li{
 list-style-type: none;
 }
+
 .social-network .fab{
 font-weight:400;
 height:35px;
-position:relative;
+width:35px; 
 text-align:center;
-width:35px;
 border: 2px solid #e2e9ef;
 border-radius: 50%;
 line-height: 2
 }
+
 .social-network .fab:hover{
   color: #2a354f;
   background-color: #f3f7fa;
   border: 2px solid #ffffff;
+  transform: scale(1.1);
   }
   
-
 .footer-hr{
 border-top: 1px solid rgba(255, 255, 255,0.2);
 margin: 8px auto !important;
