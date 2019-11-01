@@ -106,6 +106,32 @@ bottom: 5px;
 width: 80px;
 height: 80px;
  }
+
+ .social-network li{
+  list-style-type: none;
+  }
+  
+  .social-network .fab{
+  font-weight:400;
+  height:35px;
+  width:35px; 
+  text-align:center;
+  border: 2px solid #e2e9ef;
+  border-radius: 50%; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+   .social-network .fab:hover{
+    color: #2a354f;
+    background-color: #f3f7fa;
+    border: 2px solid #ffffff;
+    transform: scale(1.1);
+    }
+   .social-network a:hover{
+      text-decoration: none;
+    }
 .contact-banner {
   background-color: rgba(0, 0, 0, 0.06);
   padding-top: 1.5rem;
