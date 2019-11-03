@@ -1,3 +1,4 @@
+// SCROLL PROGRESS BAR
 var h = document.documentElement,
   b = document.body,
   st = 'scrollTop',
@@ -9,8 +10,9 @@ document.addEventListener('scroll', function() {
   scroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
   progress.style.setProperty('--scroll', scroll + '%');
 });
+// END - SCROLL PROGRESS BAR
 
-// navbar background change on scroll
+// NAVBAR BACKGROUND CHANGE ON SCROLL
 const navbar = document.querySelector(".navbar");
 const videoContainer = document.querySelector(".video-container");
 
@@ -31,10 +33,23 @@ const sectionOneObserver = new IntersectionObserver(function( entries ) {
 },
 sectionOneOptions);
 sectionOneObserver.observe(videoContainer);
-// END - Navbar background change on scroll
+// END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 
+// DISABLE COPY PASTE AND RIGHT CLICK
+$(document).ready(function () {
+  //Disable cut copy paste
+  $('body').bind('cut copy paste', function (e) {
+      e.preventDefault();
+  });
+ 
+  //Disable mouse right click
+  $("body").on("contextmenu",function(e){
+      return false;
+  });
+});
+// END - DISABLE COPY PASTE AND RIGHT CLICK
 
-// Footer
+// FOOTER - COPY RIGHT YEAR
 document.getElementById("current-year").innerHTML=new Date().getFullYear();
  
-// Footer End
+// END - FOOTER - COPY RIGHT YEAR
