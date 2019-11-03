@@ -2,6 +2,7 @@
 ==== GLOBAL STYLES FOR ALL PAGES ====
 */
 /* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
 /* 
     font-family: 'Lato', sans-serif;
@@ -19,6 +20,7 @@
 :root {
   --black: #444655;
   --blue: #007bff;
+  --blue-2:#335eea;
   --aqua-marine: #e9efff;
   --glitter: #e6f4f1;
   --azureish-white: #cee8e6;
@@ -34,8 +36,25 @@
   --bg-soft: #f3f7fa;
   --text-color: #2a354f;
   --text-color-2: #66799e;
+  --footer-bg:#152a49;
+  --text:#6c757d;
+  --hover:#006bb3;
+  --background-color: #e9ecef;
 }
+/* col card card-body */
+/*
+effect for blog posts 
+a.card.hover-effect:hover > .card-img {
 
+    opacity: .5;
+
+}
+a.card.hover-effect > .card-img {
+
+    transition: opacity 0.2s ease;
+
+}
+*/
 /* 
   ==== BOX SHADOWS ====
   */
@@ -73,6 +92,7 @@ body {
   background-color: #ffffff;
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Montserrat", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 a,
@@ -80,6 +100,7 @@ a:focus,
 a:hover {
   color: #161c2d;
   font-family: "Montserrat", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 .animate-link {
   position: relative;
@@ -119,6 +140,7 @@ h5,
 h6,
 .title-caption {
   font-family: "Montserrat", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* p {
@@ -128,43 +150,53 @@ h6,
 
 .text-1,
 .text-2,
-.text-3 {
-  color: #444655;
+.text-3,
+.title-caption {   
+  color: #6c757d;
 }
 .text-1 {
-  font-size: 18px !important;
+  font-size: 1.15rem !important;
 }
 .text-2 {
-  font-size: 16px !important;
+  font-size: 1.05rem !important;
+}
+.text-3{
+  font-size: 1rem !important;
 }
 .title-caption {
-  font-size: 15px;
+  font-size: 1rem;
   font-style: italic;
   text-align: center;
 }
+.text-light{
+  color: #6c757d !important;
+}
+
+.title-1,.title-2,.title-3{
+  color:#152a49
+}
 .title-1 {
-  font-size: 30px !important;
-  color: #161c2d;
+  font-size: 1.8rem !important;   
   font-weight: 800;
   position: relative;
   padding-bottom: 20px;
   text-align: center;
 }
 .title-2 {
-  font-size: 20px !important;
-  color: #2c2c2c;
+  font-size: 1.2rem !important;
   font-weight: 700;
   margin-top: 5px;
 }
 .title-3{
-  font-size: 18px !important;
-  color: #2a354f;
+  font-size: 1rem !important;
+  font-weight: 600;   
 }
+
 .title-highlight {
   font-weight: 800;
   color: #ff4500;
 }
-
+/* underline decoration for .title-1 */
 .title-1::before {
   position: absolute;
   content: "";
@@ -178,7 +210,7 @@ h6,
  
 .quote-left{
   font-size: 1.2rem;
-  color: #007bff;
+  color: rgb(0, 123, 255,0.6);
 }
  
 /* 
@@ -239,13 +271,15 @@ h6,
     background: rgb(27, 43, 48,0.1) !important;    
   }
   .navbar-dark{
-    background: rgb(27, 43, 48,0.98) !important; 
+    /* background: rgb(27, 43, 48,0.98) !important;  */
+    background-color:#f3f7fa;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);    
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03),
     0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);       
   }
   .site-navbar .nav-link{
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
+    color: #152a49 !important;
     font-weight: 800;
   }
   .navbar-brand img{
@@ -330,6 +364,10 @@ h6,
       animation-fill-mode: both;
       -webkit-animation-fill-mode: both;
     }
+  }
+
+  .navbar-toggler{
+    color: #f3f7fa !important;
   }
 /* 
 ==== END - NAVBAR ====

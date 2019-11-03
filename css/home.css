@@ -54,9 +54,7 @@
   /* 
   ==== WELCOME SECTION
   */
-.welcome-wrap {
-  /* margin-top: 70px; */
-  min-height: 80vh;
+.welcome-wrap {   
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: #ffffff;
@@ -65,12 +63,42 @@
   align-items: center;
   flex-direction: column;
 }
+.welcome{
+  margin-top: 12px;
+}
 .welcome-card{
   border-radius: 10px;
 }
 .welcome-card img {
   max-width: 36px;
 }
+.welcome-card:hover .welcome-icon {   
+  animation: slide-left-right 0.4s linear;   
+}
+@keyframes slide-left-right{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(4px);
+  }
+  50%{
+    transform: translateX(15px);    
+  }
+  75%{
+    transform: translateX(7px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.welcome-card .welcome-icon{
+  margin-bottom: 0;
+}
+.welcome-card .welcome-title .title-2{
+  margin-top: 12px;
+}
+ 
 /* 
   ==== END - WELCOME SECTION
   */
@@ -78,8 +106,7 @@
 /* 
   ==== CORE VALUES ====
   */
-.core-values-wrap {
-  min-height: 90vh;
+.core-values-wrap {   
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   display: flex;
@@ -87,6 +114,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #f3f7fa;
+  background-color: #f4f7f9;
 }
 .core-val-caption {
   background-image: url("../images/bg_shape.svg");
@@ -187,66 +215,135 @@ border: 1px solid rgba(0, 157, 88,0.7);
   padding-bottom: 3rem;
 }
 .industry{
-  padding:2rem;
-  margin: 0.5rem;
+  padding:0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;     
-  border-radius: 8px;
-  background-color: #fafafa;
-  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
-  0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important; 
-  position: relative;    
-  /* transition:all 0.1s ease-in; */
+  align-items: center;   
+}
+.industry .card {
+  width: 100%;
+  margin: 0.3rem 0.6rem;
+  border-radius:0.5rem;
+ border:none;
+ position: relative;
+ transition: all 0.3s ease-in-out;
+}
+.industry .card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+.industry .card:hover{
+  transform: scale(1.03, 1.03);
+ }
+ 
+/* Fade in the pseudo-element with the bigger shadow */
+.industry .card:hover::after {
+  opacity: 1;
+}
+.industry .card .card-body{
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  transition: all 0.3s ease-in-out;
+}
+.industry .card .card-body h4{
+  margin:0 auto 1.3rem  auto;
+}
+.industry .card:hover h4{
+  color: #ffffff !important;
+  transform: scale(1);
+  transition: all 0.01s linear;
+}
+.industry .card-body a{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 8px;
+  /* justify-content:space-between; */
+  align-items: center; 
+  visibility: hidden;   
 }
  
-.industry:hover{
-  /* transition: all 0.1s ease-in; */
-  text-decoration: none;
-  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);        
+.industry .card:hover a{
+  transform: scale(1);
+  transition:all 0.01s linear;
+  border-top: 1px solid rgba(245, 248, 253,0.5); 
+  visibility: visible;
+  color: #f3f7fa;   
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
-.industry:hover h4{
-  color: #ffffff !important; 
+.industry .card-body a:hover{
+  text-decoration: none; 
+}
+.industry .card-body .fas{
+   margin-top: 8px;
+   margin-left:5px;
+  font-weight: 600;
+  animation:swing 0.8s linear infinite;
+}
+@keyframes swing{
+  0%{
+    transform: translateX(0rem);
+  }
+  50%{
+    transform: translateX(0.2rem);
+  }
+  100%{
+    transform: translateX(0rem);
+  }
 }
  
-.industry:hover svg{
+.industry .card:hover svg{
   fill:#ffffff;   
 }
 
-.industry-1 svg{
+.industry-1 .card-body svg{
   fill:#28a745;
 }
-.industry-1:hover{
+.industry-1 .card:hover{
   background-color: #28a745;
   color:#fff !important;
 }
-.industry-2 svg{
+.industry-2 .card-body svg{
   fill:#6610f2;
 }
-.industry-2:hover{
+.industry-2 .card:hover{
   background-color: #6610f2;
   color:#fff;
 }
  
-.industry-3 svg{
+.industry-3 .card-body svg{
   fill:#fd7e14;
 }
-.industry-3:hover{
+.industry-3 .card:hover{
   background-color: #fd7e14;
   color:#fff;
 }
-.industry-4 svg{
-  fill:#335eea;
+.industry-4 .card-body svg{
+  fill:#007bff;
 }
-.industry-4:hover{
-  background-color: #335eea;
+.industry-4 .card:hover{
+  background-color: #007bff;;
   color:#fff;
 }
-.industry-5 svg{
+.industry-5 .card-body svg{
   fill:#e83e8c;
 }
-.industry-5:hover{
+.industry-5 .card:hover{
   background-color: #e83e8c;
   color:#fff;
 }
