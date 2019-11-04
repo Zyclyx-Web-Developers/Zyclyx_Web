@@ -137,8 +137,8 @@
 */
 .services-wrap{
   min-height: 100vh;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +210,7 @@ border: 1px solid rgba(0, 157, 88,0.7);
 ======= INDUSTRIES =======
 */
 .industry-wrap{
-  background-color: rgba(0, 0, 0, 0.06);   
+  background-color: rgba(0, 0, 0, 0.05);   
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -218,12 +218,14 @@ border: 1px solid rgba(0, 157, 88,0.7);
   padding:0;
   display: flex;
   justify-content: center;
-  align-items: center;   
+  align-items: center; 
+  /* background-color: rgba(0, 0, 0, 0.05);  */
 }
 .industry .card {
   width: 100%;
   margin: 0.3rem 0.6rem;
   border-radius:0.5rem;
+  background-color: #ffffff;
  border:none;
  position: relative;
  transition: all 0.3s ease-in-out;
@@ -235,12 +237,13 @@ border: 1px solid rgba(0, 157, 88,0.7);
   width: 100%;
   height: 100%;
   opacity: 0;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: opacity 0.3s ease-in-out;
 }
 .industry .card:hover{
   transform: scale(1.03, 1.03);
+  border-radius:0;
  }
  
 /* Fade in the pseudo-element with the bigger shadow */
@@ -267,28 +270,31 @@ border: 1px solid rgba(0, 157, 88,0.7);
 }
 .industry .card-body a{
   position: absolute;
-  left: 0;
+  right: 10px;
   bottom: 0;
-  right: 0;
+   
   display: flex;
   padding: 8px;
   /* justify-content:space-between; */
   align-items: center; 
   visibility: hidden;   
 }
- 
+ .industry .card .animate-link::before{
+  background-color: #ffffff !important;
+ }
 .industry .card:hover a{
   transform: scale(1);
   transition:all 0.01s linear;
-  border-top: 1px solid rgba(245, 248, 253,0.5); 
+  /* border-top: 1px solid rgba(245, 248, 253,0.5);  */
   visibility: visible;
-  color: #f3f7fa;   
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
+  color: #ecf0f1 !important;   
+  }
 .industry .card-body a:hover{
-  text-decoration: none; 
+  text-decoration: none;   
+  color: #ffffff;
+  font-weight: 600;
 }
+
 .industry .card-body .fas{
    margin-top: 8px;
    margin-left:5px;
@@ -347,6 +353,11 @@ border: 1px solid rgba(0, 157, 88,0.7);
   background-color: #e83e8c;
   color:#fff;
 }
+.industry-1 .card-body a:hover{
+  background-color: rgba(40, 167, 69,0.1) !important;
+}
+ 
+ 
 /* 
 ==== END - INDUSTRIES ====
 */
@@ -355,7 +366,7 @@ border: 1px solid rgba(0, 157, 88,0.7);
 ==== OUR PROJECTS ====
 */
 .our-projects{
-  padding-top:2.5rem;
+  padding-top:3.2rem;
   padding-bottom: 2rem;
 }
 

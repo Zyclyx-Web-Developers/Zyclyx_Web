@@ -1,11 +1,15 @@
+  jQuery(document).ready(function($) {
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
+
 window.onload = function(){
   // Initiate animate on scroll library
-  AOS.init();
-
-  // initiate stats
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
+  AOS.init({
+    once:true,
+    mirror:false
   });
 
   // our clients/partners
