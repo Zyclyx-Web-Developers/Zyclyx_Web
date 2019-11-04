@@ -246,21 +246,26 @@ h6,
     padding: .75rem 1rem;
     /* margin-bottom: 1rem; */
     list-style: none;     
-    background: rgba(0,0,0,.075);
-    width: 430px;
-    border-radius: 50px;
+    /* background: rgba(0,0,0,.075); */
+    /* width: 430px; */
+    /* border-radius: 50px; */
+    background-color: transparent;
+    background-blend-mode: multiply;
     justify-content: center;
 }
 .breadcrumb-item a, .breadcrumb-item{
-  color:#ccc;
+  color:#f3f7fa;
+  font-weight: 600;
+ 
 }
 .breadcrumb-item.active{
   /* color: #39b349; */
-  color:#ed9e17;
-  font-weight: bold;
+  color:#ffffff;
+  font-weight: 800;
+  text-decoration: none;
 }
 .breadcrumb-item+.breadcrumb-item::before{
-  color: #79f58a;
+  color: #ffffff;
   font-weight: normal;
 }
 
