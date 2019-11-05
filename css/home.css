@@ -169,7 +169,7 @@ color: #ff4500;
 ==== SERVICES ====
 */
 .services-wrap{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 3.2rem;
   padding-bottom: 3rem;
   display: flex;
@@ -177,7 +177,17 @@ color: #ff4500;
   align-items: center;
   flex-direction: column;
 }
- 
+ .service-v-2 .card{
+  border: none;
+  background-color: rgba(33, 200, 122,0.04);
+  border: 1px solid rgba(33, 200, 122,0.2);
+ }
+ .service-v-2 .card a{
+   color: #21c87a !important;
+ }
+ .service-v-2 .card .animate-link::before{
+   background-color: #21c87a;
+ }
 .service-row{   
   margin: 35px 0 0 0 !important;
   display: flex;
@@ -611,6 +621,22 @@ border-bottom-right-radius: 25px;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+
+.blog-post .title-2{
+font-weight: 400 !important;
+}
+.blog-post .card{
+  transition: all 0.2s linear;
+}
+.blog-post:hover .card img{
+  transition: all 0.2s linear;
+  opacity: 0.6;
+  /* transform: scale(1.02);    */
+}
+.blog-post:hover .card{
+  transition: all 0.2s linear;
+  transform: translateY(-5px);
+}
 .post-title .title-2{
   font-size: 18px !important;
 }
@@ -877,7 +903,8 @@ a.btn-card {
 ==== END - CLIENT LOGOS ====
 */
 .contact-banner{       
-  background-color: rgba(0, 0, 0, 0.06);   
+  background-color: rgba(0, 0, 0, 0.06);  
+  
 }
 
 .contact-inner{
@@ -888,4 +915,26 @@ a.btn-card {
   align-items: center; 
   box-shadow: 0 0 8px 1px rgba(0,0,0,0.12);
   border-radius: 0.6rem;
+}
+
+.contact-banner-2{
+  padding: 3rem 0; 
+  background-color: #21c87a;
+  color: #ffffff !important;
+}
+.contact-banner-2 .title-1{
+  color: #ffffff !important;
+}
+.contact-banner-2 a{
+  padding: 0.8rem 2rem;
+  margin-top: 10px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.contact-banner-2 a:hover{
+background-color: #ffffff;
+color: #21c87a;
+border-color: #ffffff;
 }

@@ -187,8 +187,11 @@ h6,
   color: #6c757d !important;
 }
 
-.title-1,.title-2,.title-3{
+.title-1{
   color:#152a49
+}
+.title-2,.title-3{
+  color:#444655;
 }
 .title-1 {
   font-size: 1.8rem !important;   
