@@ -10,12 +10,12 @@
     font-size: 14px;
     /* padding: 0.5rem !important;    */
 } 
-.resp li{
+.job-desc-list li{
     display: flex;
     margin: 8px auto;
 }
 
-.resp li span{
+.job-desc-list li span{
     margin-right: 8px;
 }
 
@@ -50,4 +50,14 @@ padding: 1.4rem !important;
 .getintouch-form{
     background: #fff;
     box-shadow: 0px 0px 8px -5px;
+}
+
+@media (max-width: 575.98px) { 
+    .address-card{
+        display: none;
+    }
+    .job-desc-list{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
