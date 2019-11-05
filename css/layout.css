@@ -4,6 +4,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Source+Sans+Pro&display=swap');
 /* 
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -12,12 +13,35 @@
     font-family: 'Muli', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
  */
 
 /*
 ==== COLORS ====
  */
 :root {
+  --color-1:#ff4500;
+  --color-2:#007bff;
+  --color-3:#796eff;
+  --color-4:#21c87a;
+  --color-5:#4e66f8;
+
+  --font-1:'Roboto', sans-serif;
+  --font-2:'Nunito', sans-serif;
+  --font-3:'Lato', sans-serif;
+  --font-4:'Montserrat', sans-serif;
+  --font-5: 'Poppins', sans-serif;
+  --font-6: 'Rubik', sans-serif;
+  --font-7:'Muli', sans-serif;
+  --font-8:'Oswald', sans-serif;
+  --font-9:'Questrial', sans-serif;
+  --font-10: 'Source Sans Pro', sans-serif;
+
+  --font:'Roboto', sans-serif;
+  --color:#ff4500;
+
   --black: #444655;
   --blue: #007bff;
   --blue-2:#335eea;
@@ -89,19 +113,10 @@ transform: translate(0,-2px);
 html,
 body {
   height: 100%;
-  background-color: #ffffff;
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: "Montserrat", sans-serif;
-  font-family: 'Nunito', sans-serif;
+  background-color: #ffffff;  
+  font-family: var(--font); 
 }
-
-a,
-a:focus,
-a:hover {
-  color: #161c2d;
-  font-family: "Montserrat", sans-serif;
-  font-family: 'Nunito', sans-serif;
-}
+ 
 .animate-link {
   position: relative;
   color: #007bff;
@@ -132,7 +147,7 @@ a:hover {
   transform: scaleX(1);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -141,7 +156,7 @@ h6,
 .title-caption {
   font-family: "Montserrat", sans-serif;
   font-family: 'Nunito', sans-serif;
-}
+} */
 
 /* p {
   font-family: "Open Sans", sans-serif;
@@ -194,7 +209,7 @@ h6,
 
 .title-highlight {
   font-weight: 800;
-  color: #ff4500;
+  color:var(--color);
 }
 /* underline decoration for .title-1 */
 .title-1::before {
@@ -204,13 +219,13 @@ h6,
   left: 50%;
   width: 70px;
   height: 2px;
-  background: #ff4500;
+  background: var(--color);
   margin-left: -35px;
 }
  
 .quote-left{
   font-size: 1.2rem;
-  color: rgb(0, 123, 255,0.6);
+  color: rgb(0, 123, 255,0.7);
 }
  
 /* 
@@ -232,8 +247,7 @@ h6,
 }
 .header-title{
   font-size: 3rem;
-  font-weight: 800;   
-  font-family: 'Roboto', sans-serif;
+  font-weight: 800;    
   color: #ffffff !important; 
   text-align: center;         
 }
@@ -299,7 +313,8 @@ h6,
 .navbar{  
     padding: 0 !important;
     font-family: 'Open Sans', sans-serif;              
-    transition: background 250ms ease-in;     
+    transition: background 250ms ease-in;
+    border-bottom: 1px solid rgba(243, 247, 250,0.5);     
   }
  
   .navbar-light{ 
@@ -371,8 +386,7 @@ h6,
   }
    .dropdown-menu a{
     font-size: 14px !important;
-    padding: 4px 6px;
-    font-family: 'Open Sans', sans-serif;
+    padding: 4px 6px;     
   }
   .dropdown-industry a{
   font-size: 1rem !important;

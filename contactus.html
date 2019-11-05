@@ -14,7 +14,7 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/contact.css">     
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body class="text-center">
@@ -28,20 +28,20 @@
       ====== END Navbar ======
     -->
 
-    <section class="container-fluid header-img overlay"> 
+    <section class="container-fluid header-img overlay">
         <h1 class="text-white header-title">How can we help you?</h1>
         <nav class="text-center">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Contact us</li>
-                </ol>
-              </nav> 
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+            </ol>
+        </nav>
     </section>
 
     <section class="container pt-5">
         <div class="mx-2">
             <h2 class="title-1 mt-3">Got a question or proposal?</h2>
-            <p class="title-caption"> Let us know and we will get back to you in no time.</p>             
+            <p class="title-caption"> Let us know and we will get back to you in no time.</p>
         </div>
     </section>
 
@@ -50,11 +50,12 @@
             <div class="col-10 col-md-6 col-lg-3 address-card mx-auto">
                 <div class="address-card-body">
                     <div class="address-card-content">
-                            <i class="fa fa-map-marker fa-fw"></i>
-                            <h5 class="title-2">Address</h5>
-                            <p class="text-2">3rd Floor, Pearl Enclave, Road No-5, Banjara Hills, Hyderabad, Telangana, India
-                            </p>
-                    </div>                    
+                        <i class="fa fa-map-marker fa-fw"></i>
+                        <h5 class="title-2">Address</h5>
+                        <p class="text-2">3rd Floor, Pearl Enclave, Road No-5, Banjara Hills, Hyderabad, Telangana,
+                            India
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -95,7 +96,7 @@
                                     <label for="usernam" class="text-2">Your name:&nbsp;<span
                                             class="text-danger">*</span></label>
                                     <input class="form-control" type="text" id="username" placeholder="" required="">
-                                    <div class="invalid-feedback">Please fill in you name!</div>
+                                    <div class="invalid-feedback">Please fill in your name!</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -180,6 +181,26 @@
             $("#footer").load("footer.html");
         });
     </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
 </body>
 
 </html>
