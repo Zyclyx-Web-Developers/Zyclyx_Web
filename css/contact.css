@@ -1,6 +1,17 @@
 .header-img{
     background-image:url("../images/background/contactus_header.png");
 }
+.address-card-body{
+    width: 100%;
+    margin: 0.6rem;
+    border: 1px solid rgba(255, 69, 0,0.3);
+    border-radius: 0.6rem;
+    padding:0.8rem 0.6rem;
+}
+.address-card-body p{
+    margin-bottom: 0;
+    min-height: 75px;
+}
 .contact-intro{
     background-color: #6f42c1;
     margin-bottom: 3rem;
