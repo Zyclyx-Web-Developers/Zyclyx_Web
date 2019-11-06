@@ -15,9 +15,14 @@
   <!-- Custom styles -->
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/job-preview.css" />
-
+  <style>
+  .error{
+      color:red;
+      font-size: 10px;
+    }  
+  
+  </style>
 </head>
-
 <body class="text-center">
   <div>
     <!-- 
@@ -164,14 +169,14 @@
       <div class="container row mx-auto pt-5" id="applicationForm">        
         <div class="col-12 col-md-10 mx-auto">
             <h3 class="title-2 text-center">Apply for this Job</h3>
-          <form class="needs-validation mb-3" novalidate="">
+          <form id="jobpreview-form" class="needs-validation mb-3" novalidate="">
                 <div class="row pt-5">
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="firstname" class="text-2">FirstName:&nbsp;<span
                                     class="text-danger">*</span></label>
                             <input class="form-control" type="text" id="firstname" placeholder="" required="">
-                            <div class="invalid-feedback">Please fill in your firstname!</div>
+                           <span class="error" id="error1"></span>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -179,7 +184,7 @@
                             <label for="lastname" class="text-2">LastName:&nbsp;<span
                                     class="text-danger">*</span></label>
                             <input class="form-control" type="input" id="lastname" placeholder="" required="">
-                            <div class="invalid-feedback">Please fill in your lastname!</div>
+                            <span class="error" id="error2"></span>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -187,13 +192,14 @@
                             <label for="email" class="text-2">Email&nbsp;<span
                                     class="text-danger">*</span></label>
                             <input class="form-control" type="text" id="email" placeholder="" required="" autocomplete="off">
-                            <div class="invalid-feedback">Please provide valid Email!</div>
+                            <span class="error" id="error3"></span>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="phone" class="text-2">Phone Number</label>
                             <input class="form-control" type="text" id="phone" placeholder="">
+                            <span class="error" id="error4"></span>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -202,7 +208,7 @@
                           <div class="custom-file">                          
                               <input type="file" class="custom-file-input" id="validatedCustomFile" required>                             
                               <label class="custom-file-label" for="validatedCustomFile">Choose File...</label>
-                              <div class="invalid-feedback">Please upload your Resume</div>
+                              <span class="error" id="error5"></span>
                             </div>
                       </div>                                              
                     </div>
@@ -211,13 +217,16 @@
                         <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
                         <textarea class="form-control" id="message" rows="4"
                             placeholder="Where do you see yourself in years?" required=""></textarea>
-                        <div class="invalid-feedback">Please write a message!</div>
+                            <span class="error" id="error6"></span>
+ 
                     </div>
                   </div>
                 </div>
 
-                <button class="btn btn-primary btn-shadow-2 pt-2 mt-2" type="submit">Submit Application <i
-                        class="ml-2 far fa-paper-plane"></i></button>
+                <button id="contactBtn" class="btn btn-primary btn-shadow-2 pt-2 mt-2" type="submit">Submit Application
+                   <i class="ml-2 far fa-paper-plane"></i></button>
+                   <span id="alert" class="alert ml-2" role="alert"> 
+                      <span><div id="spinner" class="text-success" role="status">
             </form>
         </div>
       </div>
@@ -241,6 +250,7 @@
     crossorigin="anonymous">
     </script>
   <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+  <script src="./js/jobpreview.js"></script>
   <script>
     $(function () {
       $("#navbar").load("navbar.html");

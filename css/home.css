@@ -1,6 +1,9 @@
 /* 
  ==== HOME PAGE STYLES ====
  */
+ body{
+  scroll-behavior: smooth;
+ }
  .progress {
   background: linear-gradient(to right, #21c87a var(--scroll), transparent 0);
   background-repeat: no-repeat;
@@ -9,6 +12,38 @@
   top: 0;
   height: 3px;
   z-index: 1100;
+}
+.scroll-btn .btn{
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #21c87a;
+  color: #21c87a;
+}
+.scroll-btn .btn:hover{
+  
+  background:#21c87a; 
+  border-color:#21c87a;
+  color: #fff;
+}
+.scroll-btn .btn .fas{
+  animation: scroll-top 1s ease-in infinite;
+  transition: all .2s ease-in;
+}
+@keyframes scroll-top{
+  40%{
+    transform: translateY(-6px);
+  }
+  80%{
+    transform: translateY(0px);
+  }
+}
+
+.scroll-btn .btn:hover .fas{
+  transition: all .2s ease-in;
+  animation: none;
 }
 .customize{
   position: absolute;
