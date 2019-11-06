@@ -2,12 +2,10 @@
   background-image: url("../images/careerpage-img.jpg");
   background-position: center;
 }
-.work-with-card{
+ 
+.work-with-card .card-body{
+  margin: 0.5rem;
   background-color: #f3f7fa;
-  text-align: left;
-  flex: 0 0 24% !important;
-  margin: 10px 2rem;
-  padding:1rem 1.5rem;
 }
 .work-with-card .icon{
   text-align: center;
@@ -40,68 +38,12 @@
   font-size: 16px !important;
   color: #007bff;
 }
-.collapsed{
-  border-left:4px solid rgba(255, 69, 0,0.8) !important;
-}
-.openings-count{
-    font-size: 1rem;     
-    padding: 8px 14px;
-    border-radius:1rem;
-     color:#555 !important;            
-      background-color: rgba(0, 106, 255,0.1);
-     font-weight: 700;
-}
-.card-title{
-  color: #006aff;
-} 
-.card-title .fa-angle-down{
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-.accordion > .card:first-of-type {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.accordion > .card {
-  overflow: hidden;
-}
-.card {
-  transition: all 0.2s ease-in-out;
-}
-.card a{
-    text-decoration: none;     
-}
-.card .fa-long-arrow-alt-right{
-  color: rgba(0, 106, 255,0.9) !important;
-}
-.accordion .card .card-header {
-  background-color: #fff;
-  border: 0;
-  border-radius: 0.5rem !important;
-}
-.accordion > .card .card-header {
-  margin-bottom: -1px;
-}
-/* .accordion .card .card-header a .rotate-icon {
-  line-height: 1.25;
-  transition: transform 0.2s ease-in-out;
-} */
-.card-title a:focus,
-.card-title a:hover {
-  color: #006aff;
-  cursor: pointer;
-}
-/* .accordion .card .card-header a:not(.collapsed) .rotate-icon {
-  transform: rotate(180deg);
-} */
-.spinEffect{
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-}
-
-.accordion > .card:hover{
-  cursor: pointer;
-}
-
+@media (max-width: 575.98px) { 
+   .job-item{
+     flex-direction: column !important;
+     padding: 1rem !important;
+   }
+   .job-item p{
+     margin-left: 14px;
+   }
+ }

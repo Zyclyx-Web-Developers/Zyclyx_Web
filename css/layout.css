@@ -187,8 +187,11 @@ h6,
   color: #6c757d !important;
 }
 
-.title-1,.title-2,.title-3{
+.title-1{
   color:#152a49
+}
+.title-2,.title-3{
+  color:#444655;
 }
 .title-1 {
   font-size: 1.8rem !important;   
@@ -572,7 +575,39 @@ align-items: center;
 border-top: 1px solid rgba(255, 255, 255,0.2);
 margin: 8px auto !important;
 }
-
+.follow ul{
+  margin: 0;
+  padding: 0;
+}
 /* 
 ==== END - FOOTER ====
 */
+@media (max-width: 575.98px) { 
+  .f-logo{
+      order: 1;
+      margin-top: 6px;       
+  }
+  .contact{
+      order: 2;       
+      margin-top: 8px;       
+  }
+  .explore{
+      order: 3;       
+      margin-top: 8px;       
+  }
+  .office{
+      order: 4;
+      margin-top: 8px;       
+  }
+  .follow{
+      order:5;
+      margin-top: 8px;  
+      text-align: left !important;      
+  }
+  .follow p{
+    text-align: left !important;
+  }
+  .follow .social-network{
+    justify-content: flex-start !important;
+  }
+}

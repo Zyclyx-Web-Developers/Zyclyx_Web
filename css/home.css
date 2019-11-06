@@ -47,9 +47,9 @@
 }
 .customize{
   position: absolute;
-  height: 200px;
+  height: 150px;
   width: 500px;
-  bottom: 0px;
+  bottom: -80px;
   right: 20px;
   background-color: #f3f7fa;
   z-index: 1200;
@@ -151,10 +151,10 @@ color: #ff4500;
     transform: translateX(4px);
   }
   50%{
-    transform: translateX(15px);    
+    transform: translateX(12px);    
   }
   75%{
-    transform: translateX(7px);
+    transform: translateX(8px);
   }
   100%{
     transform: translateX(0);
@@ -203,8 +203,7 @@ color: #ff4500;
 /* 
 ==== SERVICES ====
 */
-.services-wrap{
-  min-height: 100vh;
+.services-wrap{   
   padding-top: 3.2rem;
   padding-bottom: 3rem;
   display: flex;
@@ -212,62 +211,58 @@ color: #ff4500;
   align-items: center;
   flex-direction: column;
 }
- 
-.service-row{   
-  margin: 35px 0 0 0 !important;
-  display: flex;
-  justify-content: center; 
+.services .card{
+  border: none;   
+}
+.services .card:hover .service{
+transition: all 0.2s ease-in;
+transform: translateY(-6px);
+/* transform: rotate(-3deg); */
 }
 .service {
-  padding: 12px 1rem;
-  margin:1.5rem 0.5rem;                
-  background-color: #fff;      
-  position: relative;   
-  border-radius: 8px;
+  padding:0.8rem;
+  margin:1.4rem 0.1rem;                
+  background-color: #fff;         
+  border-radius: 8px;   
+  transition: all 0.1s ease-in;
 }
 .service .title-2{
   font-size: 19px !important;
 }
-.service-icon {      
-  margin-bottom: 0;
-  padding:10px;
-  background-color:#ffffff;
-  position: absolute;
-  left: 37%;
-  top: -40px;
-  text-align: center;
-  border-radius:50px;
+ 
+.service-icon{
+   width: 70px;
+    height: 60px;
+    margin-top: -40px !important;     
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #ffffff;
 }
 .service-text{
   min-height: 120px;
   margin-bottom:0 ;
 }
  
-
 .service-1{
-border: 1px solid rgba(0, 157, 88,0.6); 
- 
+border: 1px solid rgba(0, 157, 88,0.2);  
 }
  
 .service-2{
-border: 1px solid rgba(255, 69, 0,0.7);
-/* background-color: antiquewhite; */
+border: 1px solid rgba(255, 69, 0,0.2); 
 }
 .service-3{
-border: 1px solid #95aeff;
-/* background-color: #95aeff4d; */
+border: 1px solid rgba(0, 123, 255,0.2); 
 }
 .service-4{
-  border:1px solid #95aeff;
-  /* background-color: #95aeff4d; */
+  border: 1px solid rgba(0, 123, 255,0.2);   
 }
 .service-5{
-border: 1px solid rgba(0, 157, 88,0.7);
-/* background-color: #deffe5; */
+border: 1px solid rgba(0, 157, 88,0.2); 
 }
 .service-6{
-  border: 1px solid rgba(255, 69, 0,0.7);
-/* background-color: antiquewhite; */
+  border: 1px solid rgba(255, 69, 0,0.2); 
 }
 /* 
 ==== END - SERVICES ====
@@ -646,6 +641,26 @@ border-bottom-right-radius: 25px;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+
+.blog-post .title-2{
+font-weight: 400 !important;
+}
+.blog-post .card{
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+.blog-post .card img{
+  opacity: 0.8;
+  transition: all 0.2s linear;
+}
+.blog-post:hover .card img{
+  transition: all 0.2s linear;
+  opacity: 1;   
+}
+.blog-post:hover .card{
+  transition: all 0.2s linear;
+  transform: translateY(-5px);
+}
 .post-title .title-2{
   font-size: 18px !important;
 }
@@ -912,7 +927,8 @@ a.btn-card {
 ==== END - CLIENT LOGOS ====
 */
 .contact-banner{       
-  background-color: rgba(0, 0, 0, 0.06);   
+  background-color: rgba(0, 0, 0, 0.06);  
+  
 }
 
 .contact-inner{
@@ -923,4 +939,26 @@ a.btn-card {
   align-items: center; 
   box-shadow: 0 0 8px 1px rgba(0,0,0,0.12);
   border-radius: 0.6rem;
+}
+
+.contact-banner-2{
+  padding: 3rem 0; 
+  background-color: #21c87a;
+  color: #ffffff !important;
+}
+.contact-banner-2 .title-1{
+  color: #ffffff !important;
+}
+.contact-banner-2 a{
+  padding: 0.8rem 2rem;
+  margin-top: 10px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.contact-banner-2 a:hover{
+background-color: #ffffff;
+color: #21c87a;
+border-color: #ffffff;
 }

@@ -33,24 +33,24 @@
     </header>
     <!-- 
       ====== END Navbar ======
-    -->
-    <section class="header-img overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="header-title">Want to work with us?</h1>
-            <!-- <a href="#applicationForm" class="btn btn-primary btn-shadow-2">Apply now</a> -->
-          </div>
-        </div>
-      </div>
+    --> 
+    <section class="container-fluid header-img overlay">
+        <h1 class="header-title">Want to work with us?</h1>
+        <nav class="text-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Job Preview</li>
+            </ol>
+        </nav>
     </section>
     <!--end of section-->
     <section class="job-preview py-4">
       <h5 class="py-2 title-1 p-4">Software Engineering Manager</h5>
       <div class="container text-left">
+
         <div class="row justify-content-between py-4">
           <!-- JOB DESCRIPTION -->
-          <div class="col-12 col-md-8 col-lg-7">
+          <div class="col-12 col-lg-8 order-2 order-sm-1">
             <article class="text-2">
               <h5 class="py-2 title-2">Description</h5>
               <p>
@@ -60,7 +60,7 @@
                 sit aspernatur aut odit aut fugit
               </p>
               <h5 class="py-2 title-2">Responsibilities</h5>
-              <ul class="text-2 resp">
+              <ul class="text-2 job-desc-list">
                 <li>
                   <span><i class="fa fa-check rounded-circle p-1"></i></span>
                   <p>
@@ -87,7 +87,7 @@
                 </li>
               </ul>
               <h5 class="py-2 title-2">Minimum Qualifications</h5>
-              <ul class="text-2 resp">
+              <ul class="text-2 job-desc-list">
                 <li>
                   <span><i class="fa fa-check rounded-circle p-1"></i></span>
                   <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -106,74 +106,68 @@
               </ul>
             </article>             
           </div>
-          <!-- END - JOB DESCRIPTION -->
-
-          <!-- JOB - Detailes card -->
-          <div class="col-12 col-md-4">
-            <div class="m-4 p-2">
-               
-                <a href="#applicationForm" class="btn btn-primary btn-block">Apply Now</a>
-               
-            </div>
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
-                <div>
-                  <span class="text-1">Job Details</span>
-                </div>
+          <div class="col-12 col-lg-4 order-1 order-sm-2">
+              <div class="m-4 p-2">               
+                  <a href="#applicationForm" class="btn btn-primary btn-block">Apply Now</a>               
               </div>
-              <div class="card-body text-3">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <div class="d-flex justify-content-between text-2">
-                      <span>Location</span>
-                      <span>Hyderabad, India</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="d-flex justify-content-between">
-                      <span>Job Type</span>
-                      <span>Full time</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="d-flex justify-content-between">
-                      <span>Date Posted</span>
-                      <span>10 Sep 2019</span>
-                    </div>
-                  </li> 
-                  <li class="list-group-item">
-                      <div class="d-flex justify-content-between">
-                        <div>Salary</div>
-                        <span>Not Specified</span>
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  <div>
+                    <span class="text-1">Job Details</span>
+                  </div>
+                </div>
+                <div class="card-body text-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between text-2">
+                        <span>Location</span>
+                        <span>Hyderabad, India</span>
                       </div>
                     </li>
-                </ul>
-              </div>
-            </div>
-            <!-- END - JOB Details card-->
-
-            <!-- Address Card -->
-            <div class="card my-5 text-2">
-              <div class="card-header d-flex justify-content-between">
-                <div>
-                  <span class="text-1">Need Help?</span>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between">
+                        <span>Job Type</span>
+                        <span>Full time</span>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between">
+                        <span>Date Posted</span>
+                        <span>10 Sep 2019</span>
+                      </div>
+                    </li> 
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                          <div>Salary</div>
+                          <span>Not Specified</span>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
               </div>
-              <div class="card-body address">
-                <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>3rd Floor, Pearl Enclave,<br /> Road No.
-                    5,Banjara Hills, Hyderabad, Telangana, India</span></p>
-                <p><i class="fa fa-envelope m-3"></i>info@zyclyx.com</p>
-                <p><i class="fa fa-phone m-3"></i>(+91) 40 2354 9363</p>
+              <!-- END - JOB Details card-->
+  
+              <!-- Address Card -->
+              <div class="card my-5 text-2 address-card">
+                <div class="card-header d-flex justify-content-between">
+                  <div>
+                    <span class="text-1">Need Help?</span>
+                  </div>
+                </div>
+                <div class="card-body address">
+                  <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>3rd Floor, Pearl Enclave,<br /> Road No.
+                      5,Banjara Hills, Hyderabad, Telangana, India</span></p>
+                  <p><i class="fa fa-envelope m-3"></i>info@zyclyx.com</p>
+                  <p><i class="fa fa-phone m-3"></i>(+91) 40 2354 9363</p>
+                </div>
               </div>
-            </div>
           </div>
-          <!-- END - Address Card -->
         </div>
         <!--end of row-->
       </div>
        <!-- JOB APPLICATION FORM -->        
       <div class="container row mx-auto pt-5" id="applicationForm">        
-        <div class="col col-10 mx-auto">
+        <div class="col-12 col-md-10 mx-auto">
             <h3 class="title-2 text-center">Apply for this Job</h3>
           <form id="jobpreview-form" class="needs-validation mb-3" novalidate="">
                 <div class="row pt-5">
@@ -222,8 +216,9 @@
                     <div class="form-group">
                         <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
                         <textarea class="form-control" id="message" rows="4"
-                            placeholder="Please Let us know something about yourself" required=""></textarea>
+                            placeholder="Where do you see yourself in years?" required=""></textarea>
                             <span class="error" id="error6"></span>
+ 
                     </div>
                   </div>
                 </div>
@@ -262,6 +257,26 @@
       $("#footer").load("footer.html");
     });
   </script>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
 </body>
 
 </html>
