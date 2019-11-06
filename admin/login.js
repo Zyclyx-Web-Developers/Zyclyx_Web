@@ -6,8 +6,6 @@ loginform.addEventListener("submit",function(event){
     event.preventDefault();
     let Email=document.getElementById("mail").value;
     let pswd=document.getElementById("pswd").value;
-    console.log(Email);
-    console.log(pswd);
     let credential={
         identifier:Email,
         password:pswd
@@ -30,7 +28,8 @@ return responce.json();
   
 })
 .catch(function(error){
-   console.log("Error :",error);
+   //console.table("Error :",error);
+  document.getElementById("error").textContent ="Opps! something Went Wrong, Try again";
 })
 }
 else{

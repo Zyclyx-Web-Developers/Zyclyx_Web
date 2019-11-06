@@ -35,10 +35,18 @@ background:#dad6d6;
     color: aliceblue;
     text-align: center;
     padding: 0.5rem 3rem;
+    outline: none;
 }
 .login-btn:hover{
     background-color:transparent;
     color: black;
+}
+.login-btn:focus{
+    outline: none;
+    box-shadow: 0 0 15px 2px #ccc;
+}
+.login-btn:disabled{
+    background-color: #ccc;
 }
 #error{
     color: crimson;
@@ -48,8 +56,7 @@ background:#dad6d6;
 </style>
 </head>
 <body> 
-        <div class="container ">         
-
+        <div class="container "> 
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center">                    

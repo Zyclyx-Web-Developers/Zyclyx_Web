@@ -15,7 +15,7 @@ let formdata = {
   Subject: subject,
   Message: message
 }
-console.log(JSON.stringify(formdata));
+//console.log(JSON.stringify(formdata));
 if(name !== '' && email !== ''&& phone !== ''){
 fetch("http://localhost:1337/getintouchforms", {
     method: 'post',
