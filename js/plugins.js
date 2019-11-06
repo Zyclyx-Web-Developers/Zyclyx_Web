@@ -18,7 +18,7 @@ window.onload = function(){
     dots: true,
     loop: true,
     responsive: {
-      0: { items: 2 }, 768: { items: 3 }, 900: { items: 4 }
+      0: { items: 1 }, 768: { items: 3 }, 900: { items: 4 }
     }
   });
 
