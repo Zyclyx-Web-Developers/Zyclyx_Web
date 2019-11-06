@@ -179,7 +179,7 @@ color: #ff4500;
 }
  .service-v-2 .card{
   border: none;
-  background-color: rgba(33, 200, 122,0.04);
+  /* background-color: rgba(33, 200, 122,0.04); */
   border: 1px solid rgba(33, 200, 122,0.2);
  }
  .service-v-2 .card a{
@@ -627,11 +627,15 @@ font-weight: 400 !important;
 }
 .blog-post .card{
   transition: all 0.2s linear;
+  overflow: hidden;
+}
+.blog-post .card img{
+  opacity: 0.8;
+  transition: all 0.2s linear;
 }
 .blog-post:hover .card img{
   transition: all 0.2s linear;
-  opacity: 0.6;
-  /* transform: scale(1.02);    */
+  opacity: 1;   
 }
 .blog-post:hover .card{
   transition: all 0.2s linear;
