@@ -1,7 +1,7 @@
   jQuery(document).ready(function($) {
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 1000
+        time: 800
     });
 });
 
@@ -49,6 +49,7 @@ window.onload = function(){
     mouseDrag: false,
     autoplay: true,
     animateOut: 'slideOutUp',
+    stagePadding: 0,
     responsive: {
       0: {
         items: 1

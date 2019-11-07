@@ -281,9 +281,14 @@ border: 1px solid rgba(0, 157, 88,0.2);
   padding:0 !important;
   margin: 0 !important;  
   background-color: transparent !important;
-  border: none;      
+  border: none;
+  position: relative;      
 }
- 
+ .industry .fa-long-arrow-alt-right{
+   position: absolute;
+   right: 15%;
+   bottom: 5%;
+ }
 .industry:hover{
   text-decoration: none;
 }
@@ -574,6 +579,7 @@ border-bottom-right-radius: 25px;
 .rating .fas{
   color: #007bff;
 }
+
 /* 
 ==== END - TESTIMONIAL ====
 */
@@ -582,7 +588,7 @@ border-bottom-right-radius: 25px;
 ==== BLOG POSTS ====
 */
 .blog-posts-wrap{
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   padding-bottom: 2.5rem;
 }
 
@@ -593,13 +599,12 @@ font-weight: 400 !important;
   transition: all 0.2s linear;
   overflow: hidden;
 }
-.blog-post .card img{
-  opacity: 0.8;
+.blog-post .card img{  
   transition: all 0.2s linear;
 }
 .blog-post:hover .card img{
   transition: all 0.2s linear;
-  opacity: 1;   
+  opacity: 0.7;
 }
 .blog-post:hover .card{
   transition: all 0.2s linear;
@@ -608,15 +613,6 @@ font-weight: 400 !important;
 .post-title .title-2{
   font-size: 18px !important;
 }
- 
-/* blog posts  */
-
-/* card details start  */
-.details-card {
-  background: #ecf0f1;
-  border-radius: 8px;
-}
- 
 /* 
 ==== END - BLOG POSTS ====
 */
@@ -626,7 +622,7 @@ font-weight: 400 !important;
 */
 .stats-container{
   background-color: #f5f8fd;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 /* END - STATS  */
@@ -639,7 +635,7 @@ font-weight: 400 !important;
 ==== CLIENT LOGOS ====
 */
 .our-clients{
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
   padding-bottom: 1.5rem;
 }
 .client{
@@ -664,38 +660,39 @@ font-weight: 400 !important;
 ==== END - CLIENT LOGOS ====
 */
 .contact-banner{       
-  background-color: rgba(0, 0, 0, 0.06);  
-  
+  background-color: rgba(0, 0, 0, 0.06);   
 }
 
-.contact-inner{
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  box-shadow: 0 0 8px 1px rgba(0,0,0,0.12);
-  border-radius: 0.6rem;
+.contact-banner .title-2{
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
 }
-
-.contact-banner-2{
-  padding: 3rem 0; 
-  background-color: #21c87a;
-  color: #ffffff !important;
-}
-.contact-banner-2 .title-1{
-  color: #ffffff !important;
-}
-.contact-banner-2 a{
-  padding: 0.8rem 2rem;
+.contact-banner a{
+  padding: 0.6rem 2rem;
   margin-top: 10px;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #007bff;
+  color: #007bff;
   font-weight: 700;
   font-size: 1.2rem;
 }
-.contact-banner-2 a:hover{
-background-color: #ffffff;
-color: #21c87a;
-border-color: #ffffff;
+.contact-banner a:hover{
+background-color:#007bff;
+color: #ffffff;
+border-color: #007bff;
+}
+
+@media (max-width: 575.98px) { 
+  .contact-inner{
+    flex-direction: column;
+  }
+  .core-values .text-3{
+    font-size: 14px !important;
+  }
+  .client-details{
+    flex-direction: column;
+  }
+  .client-details p, .client-details ul{
+    margin: 0;
+    padding:0;
+  }
 }

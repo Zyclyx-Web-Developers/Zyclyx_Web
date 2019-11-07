@@ -583,6 +583,12 @@ margin: 8px auto !important;
 ==== END - FOOTER ====
 */
 @media (max-width: 575.98px) { 
+  .title-1{
+    font-size: 1.5rem !important;
+  }
+  .title-2{
+    font-size: 1rem !important;
+  }
   .f-logo{
       order: 1;
       margin-top: 6px;       
