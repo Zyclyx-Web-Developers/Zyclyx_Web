@@ -27,11 +27,10 @@ border: none;
 padding: 3rem 0;
 }
 
-.we-do-card {
-  /* width: 240px;   */
+.we-do-card {   
   border-radius: 8px;
-  padding: 0 !important;
-  margin:1.5rem 1rem !important;
+  /* padding: 0 !important; */
+   
 }
 .we-do-card .icon {
   height: 100px;      
@@ -50,22 +49,22 @@ font-size: 1.5rem;
 left:10px;
 bottom: 5px;
 }
-.icon-1:before{
+.we-do-card .icon-1:before{
   content: "01"!important;
 }
-.icon-2:before{
+.we-do-card .icon-2:before{
   content: "02"!important;
 }
-.icon-3:before{
+.we-do-card .icon-3:before{
   content: "03"!important;
 }
-.icon-4:before{
+.we-do-card .icon-4:before{
   content: "04"!important;
 }
-.icon-5:before{
+.we-do-card .icon-5:before{
   content: "05"!important;
 }
-.icon-6:before{
+.we-do-card .icon-6:before{
   content: "06"!important;
 }
 .we-do-card .content {
@@ -104,7 +103,7 @@ border: 1px solid rgba(0, 123, 255,0.3);
  */
  .team-card{
     margin:0px !important;
-    padding: 0px !important;
+    /* padding: 0px !important; */
     border: none !important;
  }
  .team-card .card-body{
@@ -179,14 +178,14 @@ border-color: #007bff;
  
   @media (max-width: 575.98px) { 
   .mission,.vision{
-   text-align: center;
+   /* text-align: center; */
    justify-content: center;
    margin: 0px;
   }
+  .mission-icon,.vision-icon{
+    background-color: transparent;
+  }
   .mission-text,.vision-text{
    display:block;
-  }
-  .we-do-card{
-    margin: 0 !important;
-  }
+  }   
  }
