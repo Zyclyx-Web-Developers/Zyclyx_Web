@@ -29,6 +29,12 @@ fetch("http://localhost:1337/jobpreviewforms", {
   console.log('Request succeeded with JSON response', data);
   processingData(); 
 })
+.then(function(){
+    let timeout=setTimeout(function(){
+        spinnergrow.classList.remove("spinner-grow");
+        // alert("Submited successfully!!");
+        },2000) 
+})
 }
 else{
   document.getElementById("error1").textContent ="Please provide required details";
@@ -45,9 +51,4 @@ let spinnergrow=document.getElementById("spinner");
 function processingData(){  
 spinnergrow.classList.add("spinner-grow"); 
 document.getElementById('contactBtn').setAttribute('disabled',true);
-
-let timeout=setTimeout(function(){
-spinnergrow.classList.remove("spinner-grow");
-alert("Submited successfully!!");
-},2000) 
 }

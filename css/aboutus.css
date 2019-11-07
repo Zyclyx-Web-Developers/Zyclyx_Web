@@ -121,6 +121,7 @@ height: 80px;
   display:flex;
   justify-content: center;
   align-items: center;
+  color: #2a354f;
   }
   
    .social-network .fab:hover{
