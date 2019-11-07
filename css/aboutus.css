@@ -2,8 +2,9 @@
   /* background-image: url("../images/AI-3.jpg"); */
   background-image: url("../images/background/about_header.jpg");
 }
-.about-sec-wrap {
-  padding: 3rem 0;   
+.great-at-wrap{
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
 }
 .about-intro {
   padding-top: 3.5rem;
@@ -14,11 +15,17 @@
   background-color: #f3f7fa;
   line-height: 1.7;
 }
- 
+.how-we-do .card{
+border: none;
+}
+.how-we-do {
+padding: 3rem 0;
+}
+
 .we-do-card {
-  width: 240px;  
-  margin: 1rem auto;
+  /* width: 240px;   */
   border-radius: 8px;
+  padding: 0 !important;
 }
 .we-do-card .icon {
   height: 100px;   
@@ -73,23 +80,30 @@ bottom: 5px;
   margin: 0 !important;
 }
 
-.about-great-at {
-  background-color: rgba(0, 0, 0, 0.06);
+/* we are great at section */
+
+.great-at-cards .card{
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-.great-at-card{   
-  border-radius: 8px;
-  background-color: #ffffff;
-  flex: 0 0 20% !important;
+.great-at-cards .card-body{
+  margin: 0.8rem;
+  border-radius: 0.6rem;
+border: 1px solid rgba(0, 123, 255,0.3);
 }
 
 /* 
 ==== Core Team ====
  */
  .team-card{
-    flex: 0 0 23% !important;
-    margin: 5px 13px;
-    background-color: rgba(243, 247, 250,0.6);
-    background-color: #e6f4f1;
+    margin:0px !important;
+    padding: 0px !important;
+    border: none !important;
+ }
+ .team-card .card-body{
+  background-color: #e6f4f1;
+  margin: 0.8rem;
  }
  .team-card .social-network{
    padding: 0 !important;
@@ -110,7 +124,7 @@ height: 80px;
  .social-network li{
   list-style-type: none;
   }
-  
+
   .social-network .fab{
   font-weight:400;
   height:35px;
@@ -123,7 +137,10 @@ height: 80px;
   align-items: center;
   color: #2a354f;
   }
-  
+  .mission-icon,.vision-icon{
+    border: 1px solid #ffab8c;
+    background: #fff;
+  }
    .social-network .fab:hover{
     color: #2a354f;
     background-color: #f3f7fa;
@@ -141,3 +158,18 @@ height: 80px;
 #footer {
   margin-top: 0 !important;
 }
+
+ 
+  @media (max-width: 575.98px) { 
+  .mission,.vision{
+   text-align: center;
+   justify-content: center;
+   margin: 0px;
+  }
+  .mission-text,.vision-text{
+   display:block;
+  }
+  .we-do-card{
+    margin: 0 !important;
+  }
+ }
