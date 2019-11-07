@@ -390,7 +390,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
 }
 
 .our-projects .item {
-  height: 85vh;
+  height: 90vh;
   position: relative;
 }
 .our-projects .item img {
@@ -428,18 +428,18 @@ border: 1px solid rgba(0, 157, 88,0.2);
 }
 .our-projects .item .cover .header-content h2 {
   font-weight: 300;
-  font-size: 35px;
+  font-size: 20px;
   color: #fff;
 }
 .our-projects .item .cover .header-content h1 {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 600;
   margin: 5px 0 20px;
   word-spacing: 3px;
   color: #fff;
 }
 .our-projects .item .cover .header-content h4 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 36px;
   color: #fff;
@@ -701,5 +701,17 @@ border-color: #007bff;
   .client-details p, .client-details ul{
     margin: 0;
     padding:0;
+  }
+  .our-projects .item .cover .header-content h2 {
+font-size: 16px;
+  }
+  .our-projects .item .cover .header-content h1 {
+font-size: 25px;
+  }
+  .our-projects .item .cover .header-content h4 {
+font-size: 20px;
+  }
+  .our-projects .item .cover .header-content {
+    padding: 20px;
   }
 }
