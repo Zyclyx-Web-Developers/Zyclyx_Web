@@ -179,7 +179,7 @@
             <option value="'Poppins', sans-serif">Poppins</option>
             <option value="'Rubik', sans-serif">Rubik</option>
             <option value="'Muli', sans-serif">Muli</option>
-            <option value="'Oswald', sans-serif">Oswald</option>
+            <!-- <option value="'Oswald', sans-serif">Oswald</option> -->
             <option value="'Questrial', sans-serif">Questrial</option>
             <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
           </select>
@@ -190,11 +190,17 @@
         <form action="">
           Select color
           <select name="" id="color">
-            <option value="#ff4500">Color</option>
-            <option value="#007bff">Color</option>
-            <option value="#796eff">Color</option>
-            <option value="#21c87a">Color</option>
-            <option value="#4e66f8">Color</option>
+            <option value="#ff4500" style="color: #ff4500">Color 1 </option>
+            <option value="#007bff" style="color:#007bff">Color 2</option>
+            <option value="#796eff" style="color: #796eff">Color 3</option>
+            <option value="#21c87a" style="color:#21c87a">Color 4</option>
+            <option value="#405DE6" style="color: #405DE6">Color 5</option>
+            <option value="#E1306C" style="color:#E1306C">Color 6</option>
+            <option value="#F4B400" style="color:#F4B400">Color 7</option>
+            <option value="#0F9D58" style="color:#0F9D58">Color 8</option>
+            <option value="#4285F4" style="color:#4285F4">Color 9</option>
+            <option value="#C13584" style="color: #C13584">Color 10</option>
+            <option value="#F77737" style="color: #F77737">Color 11</option>
           </select>
         </form>
       </div>
@@ -221,9 +227,13 @@
       <!-- Welcome - card -1 -->
       <div class="col-12 col-md-4 pt-4 pb-2 welcome-card card" data-aos="fade-up" data-aos-delay="200"
         data-aos-duration="1000">
-        <div class="welcome-card-body card-body box-shadow-sm border my-2 mx-md-3">
+        <div class="welcome-card-body card-body box-shadow-sm my-2 mx-md-3">            
           <div class="welcome-title d-flex align-items-center">
-            <p class="welcome-icon"><img src="./images/icons/we_are.svg" alt="who we are icon"></p>
+            <!-- <p class="welcome-icon"><img src="./images/icons/we_are.svg" alt="who we are icon"></p> -->
+            <p class="welcome-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="40" height="40"
+              viewBox="0 0 172 172"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M48.16,6.88c-9.45855,0 -17.2,7.74145 -17.2,17.2c0,9.45855 7.74145,17.2 17.2,17.2c9.45855,0 17.2,-7.74145 17.2,-17.2c0,-9.45855 -7.74145,-17.2 -17.2,-17.2zM48.16,13.76c5.74032,0 10.32,4.57968 10.32,10.32c0,5.74032 -4.57968,10.32 -10.32,10.32c-5.74032,0 -10.32,-4.57968 -10.32,-10.32c0,-5.74032 4.57968,-10.32 10.32,-10.32zM32.68,44.72c-10.40798,0 -18.92,8.51202 -18.92,18.92v43c0,5.6587 4.6613,10.32 10.32,10.32c1.21034,0 2.35677,-0.25435 3.44,-0.645v36.765c0,6.60889 5.43111,12.04 12.04,12.04c3.38272,0 6.44506,-1.43337 8.64031,-3.70875c2.17877,2.26102 5.19305,3.70875 8.55969,3.70875c6.60889,0 12.04,-5.43111 12.04,-12.04v-87.72h37.84c5.6587,0 10.32,-4.6613 10.32,-10.32c0,-5.6587 -4.6613,-10.32 -10.32,-10.32zM32.68,51.6h73.96c1.9437,0 3.44,1.4963 3.44,3.44c0,1.9437 -1.4963,3.44 -3.44,3.44h-41.28c-1.89978,0.00019 -3.43981,1.54022 -3.44,3.44v91.16c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-36.12c0.01273,-0.92983 -0.35149,-1.82522 -1.00967,-2.48214c-0.65819,-0.65692 -1.55427,-1.01942 -2.48408,-1.00489c-1.89722,0.02966 -3.41223,1.58976 -3.38625,3.48703v36.12c0,2.89239 -2.26761,5.16 -5.16,5.16c-2.89239,0 -5.16,-2.26761 -5.16,-5.16v-80.84c0.01273,-0.92983 -0.35149,-1.82522 -1.00967,-2.48214c-0.65819,-0.65692 -1.55427,-1.01942 -2.48408,-1.00489c-1.89722,0.02966 -3.41223,1.58976 -3.38625,3.48703v34.4c0,1.9437 -1.4963,3.44 -3.44,3.44c-1.9437,0 -3.44,-1.4963 -3.44,-3.44v-43c0,-6.68882 5.35118,-12.04 12.04,-12.04zM127.28,58.48c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h27.52c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058zM82.56,82.56c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h72.24c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058zM82.56,106.64c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h72.24c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058zM82.56,130.72c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h72.24c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058zM82.56,154.8c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h72.24c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058z"></path></g></g></svg></p>
+             
             <h3 class="py-1 title-2 ml-3">Who we are</h3>
           </div>
           <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
@@ -237,9 +247,14 @@
       <!-- Welcome - card - 2 -->
       <div class="col-12 col-md-4 pt-4 pb-2 welcome-card card" data-aos="fade-up" data-aos-delay="300"
         data-aos-duration="1000">
-        <div class="welcome-card-body card-body box-shadow-sm my-2 mx-md-3 border">
+        <div class="welcome-card-body card-body box-shadow-sm my-2 mx-md-3">
           <div class="welcome-title d-flex align-items-center">
-            <p class="welcome-icon"><img src="./images/icons/choose_us.svg" alt="why Choose us icon"></p>
+            <!-- <p class="welcome-icon"><img src="./images/icons/choose_us.svg" alt="why Choose us icon"></p> -->
+            <p class="welcome-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M86,6.88c-43.62952,0 -79.12,35.49048 -79.12,79.12c0,43.62952 35.49048,79.12 79.12,79.12c43.62952,0 79.12,-35.49048 79.12,-79.12c0,-15.6864 -4.60863,-30.30871 -12.51031,-42.61703l-4.70984,5.56313c6.5188,10.84976 10.34015,23.5003 10.34015,37.0539c0,39.83176 -32.40824,72.24 -72.24,72.24c-39.83176,0 -72.24,-32.40824 -72.24,-72.24c0,-39.83176 32.40824,-72.24 72.24,-72.24c18.72392,0 35.75504,7.22319 48.60344,18.95359l4.50156,-5.31453c-14.0524,-12.7452 -32.6886,-20.51906 -53.105,-20.51906zM148.73297,26.67344l-66.4686,78.43469l-27.97687,-26.09563l-4.68969,5.03235l33.25109,31.01375l71.13813,-83.93735z"></path></g></g></svg>
+            </p>
             <h3 class="py-1 title-2 ml-3">Why Choose Zyclyx</h3>
           </div>
           <p class="mx-2 mt-2 text-2 welcome-text">Because we have actually led and established some of the largest RPA
@@ -254,9 +269,14 @@
       <!-- Welcome - card - 3 -->
       <div class="col-12 col-md-4 pt-4 pb-2 welcome-card card" data-aos="fade-up"
         data-aos-delay="400" data-aos-duration="1000">
-        <div class="welcome-card-body card-body box-shadow-sm border my-2 mx-md-3">
+        <div class="welcome-card-body card-body box-shadow-sm my-2 mx-md-3">
           <div class="welcome-title d-flex align-items-center">
-            <p class="welcome-icon"><img src="./images/icons/our_vision.svg" alt="our vision"></p>
+            <!-- <p class="welcome-icon"><img src="./images/icons/our_vision.svg" alt="our vision"></p> -->
+            <p class="welcome-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M86,6.88c-43.62608,0 -79.12,35.49392 -79.12,79.12c0,43.62608 35.49392,79.12 79.12,79.12c43.62608,0 79.12,-35.49392 79.12,-79.12c0,-15.81368 -4.67963,-30.54898 -12.70515,-42.9261l-3.07047,3.07047l-1.96187,1.96188c6.83872,11.03208 10.8575,23.98583 10.8575,37.89375c0,39.8352 -32.4048,72.24 -72.24,72.24c-39.8352,0 -72.24,-32.4048 -72.24,-72.24c0,-39.8352 32.4048,-72.24 72.24,-72.24c16.90183,0 32.406,5.908 44.72,15.67484v6.98078l-8.37828,8.37828c-9.70193,-8.57967 -22.40322,-13.8339 -36.34172,-13.8339c-30.34768,0 -55.04,24.69232 -55.04,55.04c0,30.34768 24.69232,55.04 55.04,55.04c30.34768,0 55.04,-24.69232 55.04,-55.04c0,-11.45176 -3.52422,-22.09625 -9.5339,-30.91297l-4.98531,4.98531c4.80912,7.49576 7.63922,16.37821 7.63922,25.92765c0,26.5568 -21.6032,48.16 -48.16,48.16c-26.5568,0 -48.16,-21.6032 -48.16,-48.16c0,-26.5568 21.6032,-48.16 48.16,-48.16c12.04446,0 23.03115,4.47797 31.47735,11.81828l-12.20125,12.20125c-5.29299,-4.24538 -11.97799,-6.81953 -19.2761,-6.81953c-17.06928,0 -30.96,13.89072 -30.96,30.96c0,17.06928 13.89072,30.96 30.96,30.96c17.06928,0 30.96,-13.89072 30.96,-30.96c0,-4.77128 -1.11703,-9.27129 -3.05031,-13.30985l-5.24734,5.24063c0.90128,2.52496 1.41765,5.2381 1.41765,8.06922c0,13.2784 -10.8016,24.08 -24.08,24.08c-13.2784,0 -24.08,-10.8016 -24.08,-24.08c0,-13.2784 10.8016,-24.08 24.08,-24.08c5.40067,0 10.37206,1.80956 14.39156,4.82406l-12.61781,12.61781c-0.57819,-0.15753 -1.17449,-0.23884 -1.77375,-0.24187c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c-0.00025,-0.60121 -0.07931,-1.1998 -0.23515,-1.78047l42.93953,-42.93953h8.89563l17.2,-17.2h-13.76v-13.76l-13.32328,13.32328c-13.42317,-10.48754 -30.28098,-16.76328 -48.59672,-16.76328z"></path></g></g></svg>
+            </p>
             <h3 class="py-1 title-2 ml-3">Our Vision</h3>
           </div>
           <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum autem
