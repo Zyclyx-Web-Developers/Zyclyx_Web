@@ -387,7 +387,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
 }
 
 .our-projects .item {
-  height: 90vh;
+  height: 85vh;
   position: relative;
 }
 .our-projects .item img {
@@ -541,7 +541,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
 .project-btn:hover{
   border-color: #fff !important;
   background-color: #ffffff;
-  color: #335EEA;
+  color: #222222;
 }
 /* 
 ==== END - OUR PROJECTS ====
