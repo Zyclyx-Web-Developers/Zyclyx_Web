@@ -1,8 +1,7 @@
 .header-img{
-    background-image:url("../images/background/contactus_header.png");
+    background-image:url("../images/background/contact-us.png");         
 }
-.address-card-body{
-    width: 100%;
+.address-card-body{     
     margin: 0.6rem;
     border: 1px solid rgba(255, 69, 0,0.3);
     border-radius: 0.6rem;

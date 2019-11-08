@@ -2,6 +2,7 @@
 ==== GLOBAL STYLES FOR ALL PAGES ====
 */
 /* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Source+Sans+Pro&display=swap');
@@ -116,7 +117,9 @@ body {
   background-color: #ffffff;  
   font-family: var(--font); 
 }
- 
+ .welcome-icon svg{
+   fill:var(--color);
+ }
 .animate-link {
   position: relative;
   color: #007bff;
@@ -584,6 +587,12 @@ margin: 8px auto !important;
 */
 @media (max-width: 575.98px) { 
 
+  .title-1{
+    font-size: 1.5rem !important;
+  }
+  .title-2{
+    font-size: 1rem !important;
+  }
   .f-logo{
       order: 1;
       margin-top: 6px;       

@@ -1,19 +1,24 @@
 .header-img {
   /* background-image: url("../images/AI-3.jpg"); */
-  background-image: url("../images/background/about_header.jpg");
+  background-image: url("../images/background/about-us.jpg");
+}
+.about-intro-wrap{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .great-at-wrap{
   padding-top: 3.5rem;
   padding-bottom: 3rem;
 }
-.about-intro {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-  position: relative;
-}
 .about-vision {
-  background-color: #f3f7fa;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;   
+  background-color: rgba(228, 235, 240,0.6);
   line-height: 1.7;
+}
+.mission-icon,.vision-icon{
+  /* border: 1px solid #ffab8c; */
+  background: #fff;   
 }
 .how-we-do .card{
 border: none;
@@ -22,15 +27,13 @@ border: none;
 padding: 3rem 0;
 }
 
-.we-do-card {
-  /* width: 240px;   */
+.we-do-card {   
   border-radius: 8px;
-  padding: 0 !important;
+  /* padding: 0 !important; */
+   
 }
 .we-do-card .icon {
-  height: 100px;   
-  /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%); */
-  /* background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); */
+  height: 100px;      
   background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
   margin: 0 auto;
   text-align: center;
@@ -46,27 +49,29 @@ font-size: 1.5rem;
 left:10px;
 bottom: 5px;
 }
-.icon-1:before{
+.we-do-card .icon-1:before{
   content: "01"!important;
 }
-.icon-2:before{
+.we-do-card .icon-2:before{
   content: "02"!important;
 }
-.icon-3:before{
+.we-do-card .icon-3:before{
   content: "03"!important;
 }
-.icon-4:before{
+.we-do-card .icon-4:before{
   content: "04"!important;
 }
-.icon-5:before{
+.we-do-card .icon-5:before{
   content: "05"!important;
 }
-.icon-6:before{
+.we-do-card .icon-6:before{
   content: "06"!important;
 }
 .we-do-card .content {
   text-align: center;
-  height: 80px;   
+  /* height: 80px;    */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +108,8 @@ border: 1px solid rgba(0, 123, 255,0.3);
  }
  .team-card .card-body{
   background-color: #e6f4f1;
-  margin: 0.8rem;
+  margin: 0.6rem;
+  border-radius: 0.6rem;
  }
  .team-card .social-network{
    padding: 0 !important;
@@ -121,11 +127,11 @@ width: 80px;
 height: 80px;
  }
 
- .social-network li{
+ .team-card .social-network li{
   list-style-type: none;
   }
 
-  .social-network .fab{
+  .team-card .social-network .fab{
   font-weight:400;
   height:35px;
   width:35px; 
@@ -137,23 +143,33 @@ height: 80px;
   align-items: center;
   color: #2a354f;
   }
-  .mission-icon,.vision-icon{
-    border: 1px solid #ffab8c;
-    background: #fff;
-  }
-   .social-network .fab:hover{
+  
+   .team-card .social-network .fab:hover{
     color: #2a354f;
     background-color: #f3f7fa;
     border: 2px solid #ffffff;
     transform: scale(1.1);
     }
-   .social-network a:hover{
+   .team-card .social-network a:hover{
       text-decoration: none;
     }
 .contact-banner {
-  background-color: rgba(0, 0, 0, 0.06);
+  /* background-color: rgba(0, 0, 0, 0.06); */
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.contact-banner a{
+  padding: 0.6rem 2rem;
+  margin-top: 10px;
+  border-color: #007bff;
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.contact-banner a:hover{
+background-color:#007bff;
+color: #ffffff;
+border-color: #007bff;
 }
 #footer {
   margin-top: 0 !important;
@@ -162,14 +178,18 @@ height: 80px;
  
   @media (max-width: 575.98px) { 
   .mission,.vision{
-   text-align: center;
+   /* text-align: center; */
    justify-content: center;
    margin: 0px;
+  }
+  .mission-icon,.vision-icon{
+    background-color: transparent;
   }
   .mission-text,.vision-text{
    display:block;
   }
-  .we-do-card{
-    margin: 0 !important;
-  }
+  .team-card{
+    padding-left: 15px;
+    padding-right: 15px;
+  }   
  }
