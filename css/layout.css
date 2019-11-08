@@ -583,6 +583,7 @@ margin: 8px auto !important;
 ==== END - FOOTER ====
 */
 @media (max-width: 575.98px) { 
+
   .f-logo{
       order: 1;
       margin-top: 6px;       
@@ -610,4 +611,10 @@ margin: 8px auto !important;
   .follow .social-network{
     justify-content: flex-start !important;
   }
+}
+
+@media (max-width: 768px) {
+  .header-img{
+    margin-top: 56px !important;      
+    }
 }
