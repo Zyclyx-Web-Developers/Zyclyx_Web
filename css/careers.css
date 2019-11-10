@@ -4,8 +4,10 @@
 }
  
 .work-with-card .card-body{
-  margin: 0.5rem;
-  background-color: #f3f7fa;
+  margin: 0.4rem;
+  /* background-color: #f3f7fa; */
+  border: 1px solid rgba(0, 123, 255,0.2);
+  border-radius: 0.8rem;
 }
 .work-with-card .icon{
   text-align: center;
@@ -14,7 +16,7 @@
   background-color: #f3f7fa;
 }
 .job-item{
-  background-color: #f3f7fa;
+  background-color: #fafafa;
   border: 1px solid rgba(0, 106, 255,0.2);
   border-radius: 0.5rem;
   margin: 0.3rem 0.1rem;
