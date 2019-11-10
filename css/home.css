@@ -4,16 +4,19 @@
  body{
   scroll-behavior: smooth;
  }
+
+ /* scroll progress indicator */
  .progress {
   background: linear-gradient(to right, #21c87a var(--scroll), transparent 0);
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 70.5px;
   height: 3px;
   z-index: 1100;
 }
- 
+
+ /* scroll to top buttoon */
 .scroll-btn .btn{
   position: fixed;
   bottom: 40px;
@@ -23,12 +26,13 @@
   border: 1px solid #21c87a;
   color: #21c87a;
 }
-.scroll-btn .btn:hover{
-  
+
+.scroll-btn .btn:hover{  
   background:#21c87a; 
   border-color:#21c87a;
   color: #fff;
 }
+
 .scroll-btn .btn .fas{
   animation: scroll-top 1s ease-in infinite;
   transition: all .2s ease-in;
@@ -46,11 +50,13 @@
   transition: all .2s ease-in;
   animation: none;
 }
+/* end - scroll to top button */
+
 .customize{
   position: absolute;
   height: 150px;
   width: 500px;
-  bottom: -30px;
+  bottom: -150px;
   right: 20px;
   background-color: #f3f7fa;
   z-index: 1200;
@@ -81,51 +87,23 @@ color: #ff4500;
 
 /* 
   ==== HOME VIDEO ====
-  */
-
-.video-container {
-  position: relative;
-  /* top: -70px; */
-  top: 0;
-  bottom: 0;
+*/
+  
+.video-container video {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-.video-container video {
   min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media (min-aspect-ratio: 16/9) {
-  #videoBG {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  #videoBG {
-    width: auto;
-    height: 100%;
-  }
+  min-height: 100%;   
 }
 
 /* 
   ==== END - HOME VIDEO ====
-  /* 
+/* 
 
-  /* 
+/* 
   ==== WELCOME SECTION
-  */
+*/
 .welcome-wrap {   
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -181,14 +159,7 @@ color: #ff4500;
 /* 
   ==== CORE VALUES ====
   */
-.core-values-wrap {   
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f3f7fa;
+.core-values {            
   background-color: #f4f7f9;  
 }
 .core-val-caption {
@@ -210,9 +181,7 @@ color: #ff4500;
 /* 
 ==== SERVICES ====
 */
-.services-wrap{   
-  padding-top: 3.2rem;
-  padding-bottom: 3rem;
+.services-wrap{      
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,10 +248,9 @@ border: 1px solid rgba(0, 157, 88,0.2);
 ======= INDUSTRIES =======
 */
 .industry-wrap{
-  background-color: rgba(0, 0, 0, 0.05);   
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: rgba(33, 200, 122,0.1);;
+  background-color: #e2f4f1;
+  background-color: #ECF9FE;
+  background-color: #f3f7fa;
 }
 .industry{
   padding:0 !important;
@@ -384,11 +352,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
 /* 
 ==== OUR PROJECTS ====
 */
-.our-projects{
-  padding-top:3.2rem;
-  padding-bottom: 2rem;
-}
-
+ 
 .our-projects .item {
   height: 90vh;
   position: relative;
@@ -553,10 +517,9 @@ border: 1px solid rgba(0, 157, 88,0.2);
 /* 
 ==== TESTIMONIAL ====
 */
-.testimonial-wrap{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #f3f7fa;
+.testimonial-wrap{     
+  /* background-color: #E8EEF2; */
+  background-color: #f4f7f9;  
 }
 .testimonial-inner{
   padding: 25px 0;
@@ -628,23 +591,18 @@ font-weight: 400 !important;
 ==== STATS =====
 */
 .stats-container{
-  background-color: #f5f8fd;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  /* background-color: #f5f8fd;
+  background-color: #DFF9FE;
+  background-color: #ECF9FE; */
+  background-color: #f3f7fa;  
 }
 /* END - STATS  */
-.contact-banner{       
-  background-color: #f8f8f8;
-  padding: 4rem 0 !important;   
-}
+ 
  
 /* 
 ==== CLIENT LOGOS ====
 */
-.our-clients{
-  padding-top: 3.5rem;
-  padding-bottom: 1.5rem;
-}
+ 
 .client{
   padding:0.8rem 3rem;
   border-radius: 0.3rem;
@@ -667,7 +625,7 @@ font-weight: 400 !important;
 ==== END - CLIENT LOGOS ====
 */
 .contact-banner{       
-  background-color: rgba(0, 0, 0, 0.06);   
+  background-color: #f4f7f9;  
 }
 
 .contact-banner .title-2{
@@ -689,6 +647,9 @@ border-color: #007bff;
 }
 
 @media (max-width: 575.98px) { 
+  .customize{
+    display: none;
+  }
   .contact-inner{
     flex-direction: column;
   }
