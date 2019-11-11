@@ -2,12 +2,13 @@
 ==== GLOBAL STYLES FOR ALL PAGES ====
 */
 /* GOOGLE FONTS */
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Source+Sans+Pro&display=swap');
-/* 
-    font-family: 'Lato', sans-serif;
+
+/*  font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Questrial', sans-serif;
@@ -104,6 +105,7 @@ body {
   background-color: #ffffff;  
   font-family: var(--font); 
 }
+
 .wrapper{
   padding-top: 4rem !important;
   padding-bottom: 4rem !important;
@@ -113,6 +115,7 @@ body {
  .welcome-icon svg{
    fill:var(--color);
  }
+
 .animate-link {
   position: relative;
   color: #007bff;
@@ -242,8 +245,8 @@ h6,
   flex-direction: column;
   justify-content:center;
   align-items: center;
- 
 }
+
 .header-title{
   font-size: 3rem;
   font-weight: 800;    
@@ -297,15 +300,13 @@ h6,
   }
 
   .navbar-light{ 
-    /* background: rgb(27, 43, 48,0.1) !important;   */
-    background-color: rgba(0, 123, 255,0.1) !important;  
+    background: rgb(27, 43, 48,0.1) !important;  
+ 
   }
-  .navbar-dark{     
-    /* background-color: rgba(0, 123, 255,0.98) !important; */
-    /* background-color: #0044bc !important; */
+  .navbar-dark{          
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03),
     0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05); 
-    background-color: #134074 !important;      
+    background-color: #2a354f !important;      
   }
  
    
@@ -425,7 +426,9 @@ h6,
     }
   }
    
-
+  @media (min-width: 992px) {
+    
+  }
 
 /* 
 ==== END - NAVBAR ====
@@ -617,7 +620,7 @@ margin: 8px auto !important;
     font-size: 1rem !important;
   }
   .f-logo{
-      order: 1;
+     order: 1;
       margin-top: 6px;       
   }
   .contact{
@@ -642,11 +645,66 @@ margin: 8px auto !important;
   }
   .follow .social-network{
     justify-content: flex-start !important;
-  }
- 
+  } 
 }
+
 @media (max-width: 768px) {
   .header-img{
     margin-top: 56px !important;      
     }
+}
+
+@media (max-width: 992px) {
+.navbar-light{
+  background-color: #2a354f !important;
+}
+.dropdown-menu{
+  background-color: rgba(42, 53, 79,0.5) !important;
+  border: none !important;
+}
+.nav-item{
+  border-bottom: 1px solid rgba(243, 247, 250,0.05);
+  padding: 0.3rem !important;
+  margin: 0 !important;
+}
+.nav-link{
+  margin-left: 2rem;
+}
+.dropdown-item{
+  color: #e9ecef !important;
+}
+.dropdown-menu{
+  margin-left: 3rem;
+  padding: 0;
+}
+.service-dropdown-menu{
+ margin-left: 0;
+  height: 360px;
+  overflow-y: scroll;
+}
+.dropdown-menu a{
+  font-size: 1rem !important;
+  width: 90%;
+}
+.dropdown-menu a:focus{
+  background-color: transparent;
+  border: 1px solid rgba(206, 232, 230,0.1);
+}
+
+.dropdown-title{   
+  color:#56a8df;
+  font-weight: 600;
+}
+
+@keyframes fadeUP{
+  0%{
+    transform: translateX(20px);        
+  }       
+  100%{
+    transform: translateX(0px);       
+  }
+}
+.progress{
+  top:54px !important; 
+}
 }

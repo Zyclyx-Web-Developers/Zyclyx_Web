@@ -7,7 +7,7 @@
 
  /* scroll progress indicator */
  .progress {
-  background: linear-gradient(to right, #21c87a var(--scroll), transparent 0);
+  background: linear-gradient(to right, #F77737 var(--scroll), transparent 0);
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
@@ -251,6 +251,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
   background-color: #e2f4f1;
   background-color: #ECF9FE;
   background-color: #f3f7fa;
+  background-color: #f6f9fc;
 }
 .industry{
   padding:0 !important;
@@ -595,6 +596,7 @@ font-weight: 400 !important;
   background-color: #DFF9FE;
   background-color: #ECF9FE; */
   background-color: #f3f7fa;  
+  background-color: #f6f9fc;
 }
 /* END - STATS  */
  
@@ -647,6 +649,9 @@ border-color: #007bff;
 }
 
 @media (max-width: 575.98px) { 
+  .video-container{
+    margin-top: 55px;
+  }
   .customize{
     display: none;
   }
