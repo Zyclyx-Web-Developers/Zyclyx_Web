@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
-  top: 70.5px;
+  top: 0;
   height: 3px;
   z-index: 1100;
 }
@@ -25,6 +25,13 @@
   width: 40px;
   border: 1px solid #21c87a;
   color: #21c87a;
+  background: transparent;
+  outline: none;
+}
+.scroll-btn:active,.scroll-btn:focus{
+  outline: none;
+  border: none;
+
 }
 
 .scroll-btn .btn:hover{  
@@ -89,13 +96,38 @@ color: #ff4500;
   ==== HOME VIDEO ====
 */
   
-.video-container video {
+/* .video-container video {
   width: 100%;
   height: 100%;
   min-width: 100%;
   min-height: 100%;   
+} */
+.home-cover{
+  background-image: url("../images/background/bg_cover.jpg");
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
-
+.home-title{
+  font-size: 3.5rem;
+  color: #ffffff ;
+  font-weight: 700;
+  
+}
+.home-caption{
+  margin-top: 2rem !important;
+  font-size: 1.3rem;
+  color: #f3f7fa;
+}
+.home-btn a{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition:all 0.2s ease;
+}
+.home-btn a:hover{
+  background-color: #ffffff;
+  color: #111;
+  transition:all 0.2s ease;
+}
 /* 
   ==== END - HOME VIDEO ====
 /* 
