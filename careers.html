@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/careers.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -40,10 +41,14 @@
               </nav>
             <!-- why work with zyclyx -->
             <section class="pb-5">
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="title-1">Why <span class="title-highlight">work with</span> Zyclyx?</h3>
                 <p class="title-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
                 <div class="container-fluid mx-auto row pt-4 d-flex justify-content-center">
-                    <div class="col-12 col-lg-4 work-with-card">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                    data-aos-delay="200" data-aos-duration="1000" class="col-12 col-lg-4 work-with-card">
                         <div class="card-body">
                                 <p class="icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
                                     viewBox="0 0 172 172" style=" fill:#000000;">
@@ -65,7 +70,8 @@
                         </div>
                         
                     </div>
-                    <div class="col-12 col-lg-4 work-with-card">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                    data-aos-delay="400" data-aos-duration="1000" class="col-12 col-lg-4 work-with-card">
                         <div class="card-body">
                                 <p class="icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
                                     viewBox="0 0 172 172" style=" fill:#000000;">
@@ -87,7 +93,8 @@
                         </div>
                         
                     </div>
-                    <div class="col-12 col-lg-4 work-with-card">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                    data-aos-delay="600" data-aos-duration="1000" class="col-12 col-lg-4 work-with-card">
                         <div class="card-body">
                                 <p class="icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
                                     viewBox="0 0 172 172" style=" fill:#000000;">
@@ -112,11 +119,10 @@
             </section>
 
             <div class="container-fulid py-4 mt-3 openings-wrap wrapper">
-                <div class="py-3">
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                data-aos-delay="100" data-aos-duration="1000" class="py-3">
                     <h3 class="title-1">All Open Job <span class="title-highlight">Positions</span></h2>
-                        <p class="title-caption">We're looking for creative people to join our team.</p>
-                        <div class="d-flex justify-content-between pt-4">                       
-                        </div>
+                        <p class="title-caption">We're looking for creative people to join our team.</p>                        
                 </div>
 
                 <div class="container row mx-auto">
@@ -215,6 +221,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+            <script src="./js/vendor/aos.js"></script>
 
         <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
         <script>
@@ -222,6 +229,13 @@
                 $("#navbar").load("navbar.html");
                 $("#footer").load("footer.html");
             });
+ window.onload = function(){
+  // Initiate animate on scroll library
+  AOS.init({
+    once:true,
+    mirror:false
+  });
+}
         </script>
 
         <!-- <script>
