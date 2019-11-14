@@ -99,3 +99,19 @@ border: none !important;
   /* 
   ==== END - TESTIMONIAL ====
   */
+
+  @media (max-width: 575.98px) { 
+    .why-choose-title{
+      font-size: 1.7rem !important;
+    }
+    .why-choose-cards .card{
+      margin: 0.5rem !important;
+    }
+    .client-details{
+      flex-direction: column;
+    }
+    .client-details p, .client-details ul{
+      margin: 0;
+      padding:0;
+    }
+  }
