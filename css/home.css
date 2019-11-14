@@ -104,14 +104,17 @@ color: #ff4500;
 } */
 .home-cover{
   background-image: url("../images/background/bg_cover.jpg");
+  background-size: cover;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
+}
+.home-content{
+  margin-top: 2.5rem !important;
 }
 .home-title{
   font-size: 3.5rem;
   color: #ffffff ;
   font-weight: 700;
-  
 }
 .home-caption{
   margin-top: 2rem !important;
@@ -681,9 +684,21 @@ border-color: #007bff;
 }
 
 @media (max-width: 575.98px) { 
-  .video-container{
-    margin-top: 55px;
+  .home-cover{
+    height: 80vh;
   }
+.home-content{
+  padding-left: 0 !important;
+  margin-top: 1rem !important;
+}
+.home-content .home-title{
+  font-size: 2rem !important;
+  margin-left: 0 !important;
+}
+.home-content .home-caption{
+  font-size: 1.2rem !important;
+  margin-left: 0 !important;
+}
   .customize{
     display: none;
   }
