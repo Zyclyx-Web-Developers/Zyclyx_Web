@@ -1,100 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link src="stylesheet" href="login.css">
-<style>
-.input-group-text {
-    color: #000;            
-}
-body{
-background:#dad6d6;
-}
-.form-control
- {
-    min-height: 28px;
-    border-radius: 5px; 
-    border:1px solid #a3c09d;          
- }
-.section{
-    background-color: #ccc;
- }
-.login-btn{
-    min-height: 28px;
-    border-radius: 18px;
-    border:1px solid #a3c09d; 
-    background-color: green;
-    color: aliceblue;
-    text-align: center;
-    padding: 0.5rem 3rem;
-    outline: none;
-}
-.login-btn:hover{
-    background-color:transparent;
-    color: black;
-}
-.login-btn:focus{
-    outline: none;
-    box-shadow: 0 0 15px 2px #ccc;
-}
-.login-btn:disabled{
-    background-color: #ccc;
-}
-#error{
-    color: crimson;
-    font-size: 13px;
-}
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
 
-</style>
+    <style>
+        .input-group-text {
+            color: #fff;
+            background-color: #ff4500;
+        }
+
+        body {
+            background: #fafafa;
+        }
+        .navbar{
+            background-color: #fafafa !important;
+        }
+        .form-control {
+            min-height: 28px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 123, 255,0.4);
+        }
+
+    
+ 
+        .login-btn:disabled {
+            background-color: #ccc;
+        }
+
+        #error {
+            color: crimson;
+            font-size: 13px;
+        }
+    </style>
 </head>
-<body> 
-        <div class="container "> 
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6 mt-5 p-5 border shadow-lg p-3 mb-5 bg-white rounded text-center">                    
-                        <div class="containar rounded"style="padding: 0px 59px;">
-                            <h3 class="float-left pb-4"> ADMIN LOGIN </h3>
-                            <form id="LoginForm">
-                            <label class="sr-only" for="inlineFormInputGroupUsername2">Email Id</label>
-                            <div class="input-group mb-2 mr-sm-2 mt-5">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-user-tie rounded-left"></i></div>
-                                </div>
-                                <input type="text" class="form-control" id="mail" placeholder="Email">
-                            </div>
-                            <label class="sr-only">Password</label>
-                            <div class="input-group mb-2 mr-sm-2 mt-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-key rounded-left"></i></div>
-                                </div>
-                                <input type="password" class="form-control" id="pswd" placeholder="Password">
-                            </div>
-                          <span id="error"></span>
-                            <div class="clearfix p-3">
-                                <a href="#" class="float-left tetx-dark">Forgot Password?</a>
-                                <a href="#" class="float-right tetx-dark">New Registration</a>
-                            </div>
-                            <div class="form-group py-3">
-                                <button type="submit" id="submitBtn" class="btn-lg login-btn float-left">Login</button>
-                                <!-- <span id="alert" class="alert" role="alert"> </span>                               -->
-                                 <span id="spinner" class="text-primary " role="status">                                      
-                                 </div>                                  
-                            </div>
-                        </form>
-                     </div>                   
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand ml-5 mt-4" href="#">
+            <img src="../images/logo.png" width="160" height="auto" alt="">
+        </a>
+    </nav>
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-center align-items-center">            
+            <div class="col-lg-5 col-md-8 col-12 mt-5 p-5  shadow-lg p-3 mb-5 bg-white rounded text-center">
+                <div class="containar rounded p-3">
+                    <h3 class="pb-4 title-2 text-center"> ADMIN LOGIN </h3>
+
+                    <form id="LoginForm">
+                        <label class="sr-only" for="email">Email Id</label>
+                        <div class="input-group px-5 mt-4">                           
+                            <input type="text" class="form-control py-4" name="email" id="email" placeholder="Email">
+                        </div>
+                        
+                        <label class="sr-only" for="password">Password</label>
+                        <div class="input-group px-5 mt-4">                          
+                            <input type="password" class="form-control py-4" name="password" id="password" placeholder="Password">
+                        </div>
+                        <span id="error"></span>
+                        <div class="clearfix p-2">
+                            <p class="text-right mb-0"><a href="#" class="btn btn-link animate-link">Forgot Password?</a></p>
+                            <!-- <a href="#" class="float-right tetx-dark">New Registration</a> -->
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="submitBtn" class="btn btn-primary py-2 px-5 btn-shadow-2">Login</button>
+                            <!-- <span id="alert" class="alert" role="alert"> </span>                               -->
+                            <span id="spinner" class="text-primary " role="status">
+                        </div>
                 </div>
-                <div class="col-lg-3"></div>
+                </form>
             </div>
-            <br>
-        </div>    
-        <script src="login.js"></script>
+        </div>
+    </div>
+    <br>
+    </div>
+    <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,8 @@
 let loginform=document.getElementById("LoginForm");
 var spinner=document.getElementById("spinner");
 //window.localStorage.removeItem('token');
+
+
 loginform.addEventListener("submit",function(event){
     event.preventDefault();
     let Email=document.getElementById("mail").value;
