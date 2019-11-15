@@ -103,3 +103,7 @@
     width: 100%;
     height: 500px;
 }
+
+#btnSpinner{
+    display: none;
+}
