@@ -97,7 +97,7 @@
       function signOut(event){
         event.preventDefault();
         sessionStorage.removeItem("token");
-        window.location="Login.html";
+        window.location="login.html";
       }
       document.getElementById("userName").textContent = sessionStorage.getItem("user");
       document.getElementById("signOut-1").addEventListener("click",signOut);
