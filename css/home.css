@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
-  top: 70.5px;
+  top: 0;
   height: 3px;
   z-index: 1100;
 }
