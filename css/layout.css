@@ -287,8 +287,9 @@ h6,
 
 .navbar{  
     padding: 0 !important;
-    font-family: 'Open Sans', sans-serif;              
-    transition: background 250ms ease-in;     
+    font-family: 'Open Sans', sans-serif;               
+    transition: background 250ms ease-in;
+    border-bottom: 1px solid rgba(212, 245, 245,0.5);      
   }
   .navbar .nav-link{
     font-weight: 800;
@@ -326,11 +327,12 @@ h6,
     height: auto;     
   }
   .dropdown-menu{
-    margin-top: 0;
-    padding-top: 12px;   
-    border-radius: 0 !important;        
-    background-color:#f6f9fc;;
-    border-bottom: 1.5px solid #152a49 !important;               
+    margin-top: 0; 
+    padding-top: 10px;   
+    border-radius: 0 !important;   
+    /* background-color: rgb(27, 43, 48,0.98) !important; */
+    background-color: #f3f7fa;
+    border-bottom: 3px solid #F77737 !important;
   }
   .dropdown-menu .dropdown-item{     
     font-weight: 500;   

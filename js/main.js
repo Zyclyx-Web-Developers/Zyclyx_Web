@@ -14,7 +14,7 @@ document.addEventListener('scroll', function() {
 
 // NAVBAR BACKGROUND CHANGE ON SCROLL
 const navbar = document.querySelector(".navbar");
-const videoContainer = document.querySelector(".video-container");
+const videoContainer = document.querySelector("#idhomeContainer");
 
 const sectionOneOptions = {
   rootMargin: "-80px 0px 0px 0px"
@@ -32,17 +32,8 @@ const sectionOneObserver = new IntersectionObserver(function( entries ) {
   });
 },
 sectionOneOptions);
-sectionOneObserver.observe(videoContainer);
+sectionOneObserver.observe(homeContainer);
 // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
-
-// CHANGE VIDEO SRC - BASED ON SCREEN WIDTH
-let videoPath = document.getElementById('video-src');
-if(screen.width < 600){
-videoPath.src = './images/welcome-sm.mp4';
-}
-if(screen.width > 600 && screen.width<900){
-  videoPath.src="./images/welcome-md.mp4";
-}
 
 // DISABLE COPY PASTE AND RIGHT CLICK
 $(document).ready(function () {

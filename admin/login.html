@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zyclyx Admin Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/layout.css">
+
+    <style>
+        .input-group-text {
+            color: #fff;
+            background-color: #ff4500;
+        }
+
+        body {
+            background: #fafafa;
+        }
+        .navbar{
+            background-color: #fafafa !important;
+        }
+        .form-control {
+            min-height: 28px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 123, 255,0.4);
+        }
+
+    
+ 
+        .login-btn:disabled {
+            background-color: #ccc;
+        }
+
+        .error-msg {
+            color: #dc143c;
+            font-size: 12px;
+        }
+        #btnSpinner{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar with logo -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand ml-5 mt-4" href="#">
+            <img src="../images/logo.png" width="160"  alt="zyclyx Logo">
+        </a>
+    </nav>
+    <!-- Login Form -->
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-center align-items-center">            
+            <div class="col-lg-5 col-md-8 col-12 mt-5 p-5  shadow-lg p-3 mb-5 bg-white rounded text-center">
+                <div class="containar rounded">
+                    <h3 class="pb-4 title-2 text-center"> ADMIN LOGIN </h3>
+
+                    <form id="loginForm" novalidate>
+                        <span id="errorAlert" role="alert" class="error-msg"> </span>                              
+                        <label class="sr-only" for="username">Username</label>
+                        <div class="input-group px-5 mt-4">                                                       
+                            <input type="text" class="form-control py-4" name="identifier" id="username" placeholder="Email" required>
+                            <div class="invalid-feedback">Please Enter Valid Email.</div>
+                        </div>
+                        
+                        <label class="sr-only" for="password">Password</label>
+                        <div class="input-group px-5 mt-4">                          
+                            <input type="password" class="form-control py-4" name="password" id="password" placeholder="Password" minlength="8" required>
+                            <div class="invalid-feedback">Please Enter Password.</div>
+                        </div>
+
+                        <span id="error"></span>
+                        <div class="p-2">
+                            <p class="text-right mb-0"><a href="#" class="btn btn-link animate-link">Forgot Password?</a></p>
+                            <!-- <a href="#" class="float-right tetx-dark">New Registration</a> -->
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="loginButton" class="btn btn-primary py-2 px-5 btn-shadow-2">                            
+                                <span id="btnText">Login</span>
+                                <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>
+                            </button>                                                    
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

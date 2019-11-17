@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
+                                    viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                        text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g fill="#007bff">
+                                            <path
+                                                d="M44.075,24.08c-1.89469,0.17469 -3.29219,1.86781 -3.1175,3.7625c0.17469,1.89469 1.86781,3.29219 3.7625,3.1175h22.575l-59.4475,59.4475c-1.37062,1.37063 -1.37062,3.57438 0,4.945c1.37063,1.37063 3.57438,1.37063 4.945,0l59.4475,-59.4475v22.575c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-34.4h-34.4c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM116.96,37.84v134.16h48.16v-134.16zM123.84,44.72h34.4v120.4h-34.4zM61.92,82.56v89.44h48.16v-89.44zM68.8,89.44h34.4v75.68h-34.4zM6.88,120.4v51.6h48.16v-51.6zM13.76,127.28h34.4v37.84h-34.4z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
