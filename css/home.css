@@ -351,6 +351,26 @@ border: 1px solid rgba(0, 157, 88,0.2);
 .service-6{
   border: 1px solid rgba(255, 69, 0,0.2); 
 }
+
+.service-1:hover{
+  border: 1px solid rgba(0, 157, 88);  
+  }
+   
+  .service-2:hover{
+  border: 1px solid rgba(255, 69, 0); 
+  }
+  .service-3:hover{
+  border: 1px solid rgba(0, 123, 255); 
+  }
+  .service-4:hover{
+    border: 1px solid rgba(0, 123, 255);   
+  }
+  .service-5:hover{
+  border: 1px solid rgba(0, 157, 88); 
+  }
+  .service-6:hover{
+    border: 1px solid rgba(255, 69, 0); 
+  }
 /* 
 ==== END - SERVICES ====
 */
