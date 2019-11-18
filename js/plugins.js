@@ -28,7 +28,7 @@ window.onload = function(){
     dots: true,
     loop: true,
     center:true,
-    nav:true,
+    animateIn:true,     
     responsive: {
       0: {
         items: 1
