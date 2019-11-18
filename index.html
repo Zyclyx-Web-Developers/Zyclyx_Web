@@ -166,18 +166,72 @@
   <!-- scroll progress indicator -->
 
   <!-- 
-    ==== VIDEO  ====
--->
-  <!-- <section class="video-container" id="videoContainer">
-    <video poster="" autoplay loop muted playsinline id="videoBG">
-      <source src="./images/welcome-lg.mp4" id="video-src" />
-    </video>
-  </section> -->
-  <!-- 
   ==== Home page Image ====
  -->
+  <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="container">
+
+      <ol class="carousel-indicators row mx-5">
+        <span class="indicator"></span>
+        <li class="col-3 indicator-1 active" data-target="#homeCarousel" data-slide-to="0">Caption one</li>
+        <li class="col-3 indicator-2" data-target="#homeCarousel" data-slide-to="1">Caption Two</li>
+        <li class="col-3 indicator-3" data-target="#homeCarousel" data-slide-to="2">Caption Three</li>
+        <li class="col-3 indicator-4" data-target="#homeCarousel" data-slide-to="3">Caption Four</li>
+      </ol>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active item inactiveUntilOnLoad">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Transforming Enterprises with Computer Vision AI</h5>
+          <p class="mt-4">Innovative machine learning products and services on a trusted platform.</p>
+          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
+            consectetur quas doloribus, amet consequatur commodi culpa.</p>
+          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <div class="img-overlay"></div>
+        <img src="./images/cyber_header.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
+            consectetur quas doloribus, amet consequatur commodi culpa.</p>
+          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
+            consectetur quas doloribus, amet consequatur commodi culpa.</p>
+          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+  </div>
   <section class="home-cover container-fluid d-flex justify-content-center align-items-center" id="homeContainer">
-    <div class="home-content container">
+    <!-- <div class="home-content container">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-9 col-md-9 col-12 px-sm-0">
           <h2 class="home-title ml-5">Transforming Enterprises with Computer Vision AI</h2>
@@ -185,7 +239,8 @@
           <p class="text-center mt-5 home-btn"><a class="btn btn-lg" href="#">Learn More</a></p>
         </div>
       </div>
-    </div>
+    </div> -->
+
   </section>
 
   <!-- 
@@ -451,7 +506,7 @@
           data-aos-duration="1000">
           <div class="card-body service service-5 mx-md-3">
             <div class="service-icon rounded-circle">
-               <img src="./images/icons/service_rpa_icon.svg" alt="RPA service">
+              <img src="./images/icons/service_rpa_icon.svg" alt="RPA service">
             </div>
             <h3 class="py-3 title-2">RPA</h3>
             <p class="text-2 text-muted service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -506,8 +561,8 @@
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -527,8 +582,8 @@
           <div class="card-body industry-2">
             <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -548,8 +603,8 @@
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -571,8 +626,8 @@
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -593,8 +648,8 @@
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -985,7 +1040,7 @@
   <script src="./js/vendor/jquery-3.4.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="./js/vendor/bootstrap.bundle.min.js"></script>
- 
+
   <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/vendor/aos.js"></script>
   <script src="./js/vendor/waypoints.min.js"></script>
@@ -1013,6 +1068,7 @@
 
     // scroll top button
     window.onscroll = function () { scrollFunction() };
+
     function scrollFunction() {
       let scrollBtn = document.querySelector(".scroll-btn");
       if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
@@ -1021,9 +1077,39 @@
         scrollBtn.style.display = "none";
       }
     }
+    // animate scroll to top
     document.getElementById('scrollTop').addEventListener("click", function () {
       $('html, body').animate({ scrollTop: 0 }, 'slow');
     })
+    // END - scroll to top
+
+
+    // home page slider
+    $('.inactiveUntilOnLoad').removeClass('inactiveUntilOnLoad');
+    $('.carousel').carousel({
+      interval: 5000,
+      pause: false
+    })
+
+    // active slide indicator
+    let indicator = document.querySelector(".indicator");
+    let index = 0;
+    $('#homeCarousel').on('slide.bs.carousel', function (e) {
+      index = e.to;
+      if (index === 0) {
+        indicator.style.left = "0px";         
+      }
+      if (index === 1) {
+        indicator.style.left = "25%";         
+      }
+      if (index === 2) {
+        indicator.style.left = "50%";         
+      }
+      if (index === 3) {
+        indicator.style.left = "75%";         
+      }
+    })
+
   </script>
 </body>
 
