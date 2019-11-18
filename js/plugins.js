@@ -27,6 +27,8 @@ window.onload = function(){
     autoplay: true,
     dots: true,
     loop: true,
+    center:true,
+    nav:true,
     responsive: {
       0: {
         items: 1
@@ -35,7 +37,7 @@ window.onload = function(){
         items: 1
       },
       1000: {
-        items: 2
+        items: 3
       }
     }
   });
