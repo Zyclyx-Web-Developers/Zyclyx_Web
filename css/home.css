@@ -89,25 +89,12 @@ color: #ff4500;
   color:#4e66f8;
 }
 
-
-
-
-/* 
-  ==== HOME VIDEO ====
-*/
-  
-/* .video-container video {
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;   
-} */
-
 /*
 HOME - CAROUSEL 
 */    .carousel-item{
   max-height: 100vh !important;
-  background-color: rgba(0, 123, 255,0.3);        
+  background-color: rgba(0, 123, 255,0.3);    
+  /* font-family: 'Montserrat', sans-serif;     */
 }
 
 #homeCarousel .carousel-indicators{
@@ -119,7 +106,7 @@ HOME - CAROUSEL
   height: auto !important;
   text-indent:0px !important;
   background-color: transparent;
-  color: #aaddff;
+  color: #fafafa;
   text-align: center;
   font-size: 1.2rem;
   margin: 0 !important;         
@@ -128,30 +115,15 @@ HOME - CAROUSEL
   display: flex;
   align-items: center;
   justify-content: center;      
-}
-/* #homeCarousel .carousel-indicators .active {
-   color: #fff;  
-} */
-
-/* #homeCarousel .carousel-indicators .active:before {
-  position:absolute;
-  content: '';
-  top: -6.5px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color:#Ff4500;
-  transition: background 1s ease;
-  animation:forwardin 3s ease 0.1s;
-} */
+} 
 .indicator{
   position: absolute;
   content: '';
   width: 25%;
-  top: -2px;
+  top: -3px;
   left: 0;
-  height: 3px;
-  background-color: #ff4500 !important;
+  height: 4px;
+  background-color: #21c87a !important;
   transition:all 1.5s ease;
 }
 @keyframes forwardin {
@@ -209,11 +181,9 @@ font-size: 3rem;
  /* 
  END - HOME CAROUSEL
  */
-.home-cover{
-  /* background-image: url("../images/background/bg_cover.jpg");
-  background-size: cover;
-  height: 100vh; */
-  font-family: 'Montserrat', sans-serif;
+
+ .home-cover{
+   font-family: 'Montserrat', sans-serif;
 }
 .home-content{
   margin-top: 2.5rem !important;
