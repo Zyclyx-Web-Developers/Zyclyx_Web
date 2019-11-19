@@ -168,56 +168,49 @@
   <!-- 
   ==== Home page Image ====
  -->
+ <section class="home-cover" id="homeContainer">
   <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="container">
-
-      <ol class="carousel-indicators row mx-5">
-        <span class="indicator"></span>
-        <li class="col-3 indicator-1 active" data-target="#homeCarousel" data-slide-to="0">Caption one</li>
-        <li class="col-3 indicator-2" data-target="#homeCarousel" data-slide-to="1">Caption Two</li>
-        <li class="col-3 indicator-3" data-target="#homeCarousel" data-slide-to="2">Caption Three</li>
-        <li class="col-3 indicator-4" data-target="#homeCarousel" data-slide-to="3">Caption Four</li>
+    <div class="container indicator-wrapper">   
+      <span class="indicator"></span>
+      <ol class="carousel-indicators row mx-5">        
+        <li class="col-3 indicator-1 active" data-target="#homeCarousel" data-slide-to="0">Enterprise Solutions</li>
+        <li class="col-3 indicator-2" data-target="#homeCarousel" data-slide-to="1">Proven Experience</li>
+        <li class="col-3 indicator-3" data-target="#homeCarousel" data-slide-to="2">Deep Domain Expertise</li>
+        <li class="col-3 indicator-4" data-target="#homeCarousel" data-slide-to="3">Cutting Edge Technologies</li>
       </ol>
-    </div>
+    </div>   
 
     <div class="carousel-inner">
-      <div class="carousel-item active item inactiveUntilOnLoad">
+      <div class="carousel-item active">
         <!-- <div class="img-overlay"></div> -->
         <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Transforming Enterprises with Computer Vision AI</h5>
-          <p class="mt-4">Innovative machine learning products and services on a trusted platform.</p>
-          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+        <div class="carousel-caption d-none d-md-block text px-1">
+          <h5>Full-service custom application development to meet the specific functional needs of enterprise customers</h5>          
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <!-- <div class="img-overlay"></div> -->
         <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
-            consectetur quas doloribus, amet consequatur commodi culpa.</p>
-          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+          <h5>We apply our technical expertise and consultative approach to best meet your technology and automation goals</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <div class="img-overlay"></div>
         <img src="./images/cyber_header.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
-            consectetur quas doloribus, amet consequatur commodi culpa.</p>
-          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+          <h5>Deploy cutting edge technology, optimize customer experience, automate process and ensure business continuity</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <!-- <div class="img-overlay"></div> -->
         <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p class="mt-4">Perspiciatis praesentium ad facere excepturi dolore, autem obcaecati sed alias qui, itaque
-            consectetur quas doloribus, amet consequatur commodi culpa.</p>
-          <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p>
+          <h5>Industry knowledge, functional experience, and technology skills to help clients grow and creates long-lasting value.</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
     </div>
@@ -230,8 +223,9 @@
     <span class="sr-only">Next</span>
   </a> -->
   </div>
-  <section class="home-cover container-fluid d-flex justify-content-center align-items-center" id="homeContainer">
-    <!-- <div class="home-content container">
+</section>
+  <!-- <section class="home-cover container-fluid d-flex justify-content-center align-items-center" id="homeContainer">
+    <div class="home-content container">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-9 col-md-9 col-12 px-sm-0">
           <h2 class="home-title ml-5">Transforming Enterprises with Computer Vision AI</h2>
@@ -239,9 +233,9 @@
           <p class="text-center mt-5 home-btn"><a class="btn btn-lg" href="#">Learn More</a></p>
         </div>
       </div>
-    </div> -->
+    </div>
 
-  </section>
+  </section> -->
 
   <!-- 
   ==== END - Home page Image ====
@@ -250,7 +244,7 @@
     font and color selector
    -->
 
-  <div class="customize">
+  <!-- <div class="customize">
     <div class="row">
       <div class="col p-3 m-3">
         <h3 class="title-2 text-left">Font styles</h3>
@@ -290,7 +284,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- 
     ==== END - VIDEO ====
   -->
@@ -330,13 +324,9 @@
                     </g>
                   </svg></p>
 
-                <h3 class="py-1 title-2 ml-3">Who we are</h3>
+                <h3 class="py-2 title-2 ml-3">Who we are</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-                voluptatum
-                illum placeat
-                facilis esse, cum eum, quasi inventore deleniti sunt facere aliquam dolore non earum ab consequuntur sed
-                necessitatibus dicta!</p>
+              <p class="mx-2 mt-2 text-2 welcome-text">Zyclyx, a company dedicated to making work more human by Automating Business Processes and liberating people. Zyclyx deals under expansive inventory in Robotic Process Automation and Artificial Intelligence.</p>
             </div>
           </div>
 
@@ -360,9 +350,9 @@
                     </g>
                   </svg>
                 </p>
-                <h3 class="py-1 title-2 ml-3">Why Choose Zyclyx</h3>
+                <h3 class="py-2 title-2 ml-3">Why Choose Zyclyx</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Because we have actually led and established some of the largest
+              <p class="mx-2 mt-2 text-2 welcome-text">We have led and established some of the largest
                 RPA
                 implementations
                 in the world. Few others can boast the depth of experience that we bring in establishing, leading and
@@ -392,13 +382,9 @@
                     </g>
                   </svg>
                 </p>
-                <h3 class="py-1 title-2 ml-3">Our Vision</h3>
+                <h3 class="py-2 title-2 ml-3">Our Vision</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-                autem
-                modi
-                dolorum! Suscipit, necessitatibus? Voluptas repellendus veritatis, quia quisquam culpa incidunt deserunt
-                doloremque amet delectus.</p>
+              <p class="mx-2 mt-2 text-2 welcome-text">Established in 2018, for it’s comprehensive portfolio of services, strong commitment to sustainability and good corporate citizenship, Our business was founded on three main key principles – service, quality, and pricing</p>
             </div>
           </div>
         </div>
@@ -436,8 +422,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-ai.svg" alt="Artificial Intelligence service">
             </div>
-            <h3 class="py-3 title-2">Artificial Intelligence</h3>
-            <p class="text-2 text-muted service-text">Augmenting technology by exterminating humans for deep integration
+            <h3 class="py-2 title-2">Artificial Intelligence</h3>
+            <p class="text-2 service-text">Augmenting technology by exterminating humans for deep integration
               into
               learning
               and
@@ -453,8 +439,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-cloud.svg" alt="cloud computing service">
             </div>
-            <h3 class="py-3 title-2">Cloud Computing</h3>
-            <p class="text-2 text-muted service-text"> Cloud computing services at zyclyx meet the future needs of your
+            <h3 class="py-2 title-2">Cloud Computing</h3>
+            <p class="text-2 service-text"> Cloud computing services at zyclyx meet the future needs of your
               business to
               dynamically
               scale your cloud
@@ -470,8 +456,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-info-sec.svg" alt="Information security service">
             </div>
-            <h3 class="py-3 title-2">Information Security</h3>
-            <p class="text-2 text-muted service-text">To Automate predictive analysis for emulating the learning
+            <h3 class="py-2 title-2">Information Security</h3>
+            <p class="text-2 service-text">To Automate predictive analysis for emulating the learning
               approach
               used
               by humans.
@@ -490,13 +476,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-blockchain.svg" alt="Blockchain service">
             </div>
-            <h3 class="py-3 title-2">Block Chain</h3>
-            <p class="text-2 text-muted service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-              tempor
-              incididunt
-              ut labore et
-              dolore magna aliqua, Ut enim ad.</p>
+            <h3 class="py-2 title-2">Block Chain</h3>
+            <p class="text-2 service-text">It is changing the way people make approaches to sharing data, From creating more efficient and smarter businesses to give businesses trustful and variable networks.</p>
             <p class="text-right mb-0"><a class="btn btn-link animate-link" href="./Blockchain.html">Know More</a></p>
           </div>
 
@@ -508,12 +489,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service_rpa_icon.svg" alt="RPA service">
             </div>
-            <h3 class="py-3 title-2">RPA</h3>
-            <p class="text-2 text-muted service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-              tempor
-              incididunt
-              ut labore et dolore magna aliqua, Ut enim ad.</p>
+            <h3 class="py-2 title-2">RPA</h3>
+            <p class="text-2 service-text">Innovating, Inventing and Automating high quality business processes to reduce operations cost and maximize performance.</p>
             <p class="text-right mb-0"><a class="btn btn-link animate-link" href="./RPA.html">Know More</a></p>
           </div>
 
@@ -525,8 +502,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-bigdata.svg" alt="bigdata service">
             </div>
-            <h3 class="py-3 title-2">Bigdata and Data Sciencne</h3>
-            <p class="text-2 text-muted service-text">Managing, analyzing and visualizing data into information and
+            <h3 class="py-2 title-2">Bigdata and Data Sciencne</h3>
+            <p class="text-2 service-text">Managing, analyzing and visualizing data into information and
               information
               into
               insight by
@@ -1446,18 +1423,19 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script> -->
   <script>
     // select fonts
-    let font = document.getElementById('font');
-    font.addEventListener('change', function () {
-      document.documentElement.style.setProperty('--font', font.value);
-      console.log(font.value)
-    })
+    // let font = document.getElementById('font');
+    // font.addEventListener('change', function () {
+    //   document.documentElement.style.setProperty('--font', font.value);
+    //   console.log(font.value)
+    // })
 
-    let color = document.getElementById('color');
-    color.addEventListener('change', function () {
-      document.documentElement.style.setProperty('--color', color.value);
-    })
+    // let color = document.getElementById('color');
+    // color.addEventListener('change', function () {
+    //   document.documentElement.style.setProperty('--color', color.value);
+    // })
 
     // scroll top button
+     
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
@@ -1483,21 +1461,25 @@
     })
 
     // active slide indicator
-    let indicator = document.querySelector(".indicator");
+    let indicator = document.querySelector(".carousel-indicators::before");
     let index = 0;
     $('#homeCarousel').on('slide.bs.carousel', function (e) {
       index = e.to;
       if (index === 0) {
-        indicator.style.left = "0px";         
+       // indicator.style.left = "0px";
+        document.documentElement.style.setProperty('--indicator-position', '0%');         
       }
       if (index === 1) {
-        indicator.style.left = "25%";         
+        //indicator.style.left = "25%";         
+        document.documentElement.style.setProperty('--indicator-position', '25%');
       }
       if (index === 2) {
-        indicator.style.left = "50%";         
+        //indicator.style.left = "50%";         
+        document.documentElement.style.setProperty('--indicator-position', '50%');
       }
       if (index === 3) {
-        indicator.style.left = "75%";         
+        //indicator.style.left = "75%";         
+        document.documentElement.style.setProperty('--indicator-position', '75%');
       }
     })
 

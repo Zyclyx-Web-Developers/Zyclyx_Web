@@ -1,6 +1,9 @@
 /* 
  ==== HOME PAGE STYLES ====
  */
+ :root{
+   --indicator-position:0%;
+ }
  body{
   scroll-behavior: smooth;
  }
@@ -17,6 +20,9 @@
 }
 
  /* scroll to top buttoon */
+ .scroll-btn{
+   display: none;
+ }
 .scroll-btn .btn{
   position: fixed;
   bottom: 40px;
@@ -26,7 +32,7 @@
   border: 1px solid #21c87a;
   color: #21c87a;
   background: transparent;
-  outline: none;
+  outline: none;  
 }
 .scroll-btn:active,.scroll-btn:focus{
   outline: none;
@@ -91,14 +97,26 @@ color: #ff4500;
 
 /*
 HOME - CAROUSEL 
-*/  #homeCarousel  .carousel-item{
+*/  
+#homeCarousel  .carousel-item{
   max-height: 100vh !important;
-  background-color: rgba(0, 123, 255,0.3);    
+  background-color: rgba(0, 123, 255,0.6); 
+  text-align: left;   
   /* font-family: 'Montserrat', sans-serif;     */
 }
 
 #homeCarousel .carousel-indicators{
-  border-top: 1px solid rgba(170, 221, 255,0.5);
+  border-top: 1px solid rgba(170, 221, 255,0.5);   
+}
+#homeCarousel .carousel-indicators::before{
+position: absolute;
+content: '';
+height: 4px;
+width:25%;
+background-color: #21c87a;
+left: var(--indicator-position);
+top: -2px;
+transition:all 0.3s ease;
 }
 
 #homeCarousel .carousel-indicators li { 
@@ -106,27 +124,34 @@ HOME - CAROUSEL
   height: auto !important;
   text-indent:0px !important;
   background-color: transparent;
-  color: #fafafa;
+  color:rgba(236, 249, 254,0.6);
   text-align: center;
   font-size: 1.2rem;
   margin: 0 !important;         
   padding-top: 10px;         
-  /* border-top: 4px solid transparent; */
+  border-top: 4px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;      
 } 
-.indicator{
+ 
+#homeCarousel .carousel-indicators .active {
+  color: #fff;   
+} 
+#homeCarousel .carousel-indicators li:hover {
+  color: #fff;
+}
+#homeCarousel .carousel-indicators .active:before {
   position: absolute;
   content: '';
   width: 25%;
-  top: -3px;
+  top: -6px;
   left: 0;
   height: 4px;
-  background-color: #21c87a !important;
-  transition:all 1.5s ease;
+  background-color: #ff4500 !important;
+  animation:forwardin 5s linear;   
 }
-@keyframes forwardin {
+  @keyframes forwardin {
 0%{
 width: 0%;
 }
@@ -136,7 +161,7 @@ width: 100%;
 }
 
 .item img{
-transition: all 4s ease;
+transition: all 6s linear;
 mix-blend-mode: soft-light;
 }
 /* ken burn effect */
@@ -148,24 +173,13 @@ transform: scale(1);
 transform: scale(1.15);
 }
 
-/* .item:before{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color:rgba(0, 123, 255,0.6);
-  transition: all 0.1s ease;
-}  */
 .carousel-caption{
 top: 35% ;
-animation:caption-move-right 4s ease;
+animation:caption-move-right 1.5s ease;
 }
 @keyframes caption-move-right{
   0%{
-    transform: translateX(-30px);
+    transform: translateY(50px);
     opacity: 0;
   }
   30%{
@@ -185,13 +199,14 @@ font-size: 3rem;
  .home-cover{
    font-family: 'Montserrat', sans-serif;
 }
-.home-content{
+/* .home-content{
   margin-top: 2.5rem !important;
-}
+} */
 .home-title{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #ffffff ;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: left;
 }
 .home-caption{
   margin-top: 2rem !important;
@@ -304,7 +319,8 @@ font-size: 3rem;
 }
 .services .card:hover .service{
 transition: all 0.2s ease-in;
-transform: translateY(-6px); 
+transform: translateY(-8px); 
+box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.06), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 .service {
   padding:0.8rem;

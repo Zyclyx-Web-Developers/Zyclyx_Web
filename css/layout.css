@@ -1,8 +1,16 @@
 /* 
 ==== GLOBAL STYLES FOR ALL PAGES ====
-*/
-/* GOOGLE FONTS */
 
+*/
+@font-face {
+  font-family: 'custom-font';
+  src: url('../fonts/gtwalsheimproregular-webfont.woff2') format('woff2'),
+       url('../fonts/gtwalsheimproregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+  /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
@@ -41,7 +49,7 @@ font-family: 'Source Sans Pro', sans-serif;
   --font-9:'Questrial', sans-serif;
   --font-10: 'Source Sans Pro', sans-serif;
 
-  --font:'Roboto', sans-serif;
+  --font:'custom-font', sans-serif;
   --color:#ff4500;
 
   --black: #444655;
@@ -166,16 +174,16 @@ h6,
 .text-2,
 .text-3,
 .title-caption {   
-  color: #6c757d;
+  color: #39393A;
 }
 .text-1 {
-  font-size: 1.15rem !important;
+  font-size: 1.2rem !important;
 }
 .text-2 {
-  font-size: 1.05rem !important;
+  font-size: 1rem !important;
 }
 .text-3{
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 .title-caption {
   font-size: 1rem;
@@ -287,12 +295,12 @@ h6,
 
 .navbar{  
     padding: 0 !important;
-    font-family: 'Open Sans', sans-serif;               
+    /* font-family: 'Open Sans', sans-serif;                */
     transition: background 250ms ease-in;
     border-bottom: 1px solid rgba(212, 245, 245,0.5);      
   }
   .navbar .nav-link{
-    font-weight: 800;
+    font-weight: 600;
     color: #ffffff !important;     
   }
  
