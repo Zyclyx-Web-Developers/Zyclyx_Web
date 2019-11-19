@@ -174,7 +174,7 @@ h6,
 .text-2,
 .text-3,
 .title-caption {   
-  color: #39393A;
+  color: rgba(57, 57, 58,0.8);
 }
 .text-1 {
   font-size: 1.2rem !important;
