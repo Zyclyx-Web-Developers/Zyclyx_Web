@@ -170,45 +170,52 @@
  -->
  <section class="home-cover" id="homeContainer">
   <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="container indicator-wrapper">   
+    <div class="container indicator-wrapper d-none d-sm-none d-md-flex">   
       <span class="indicator"></span>
-      <ol class="carousel-indicators row mx-5">        
+      <ol class="carousel-indicators row mx-5 custom-indicator">        
         <li class="col-3 indicator-1 active" data-target="#homeCarousel" data-slide-to="0">Enterprise Solutions</li>
         <li class="col-3 indicator-2" data-target="#homeCarousel" data-slide-to="1">Proven Experience</li>
         <li class="col-3 indicator-3" data-target="#homeCarousel" data-slide-to="2">Deep Domain Expertise</li>
         <li class="col-3 indicator-4" data-target="#homeCarousel" data-slide-to="3">Cutting Edge Technologies</li>
       </ol>
-    </div>   
+    </div>
+    
+    <ol class="carousel-indicators d-flex d-md-none">
+      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homeCarousel" data-slide-to="1"></li>
+      <li data-target="#homeCarousel" data-slide-to="2"></li>
+      <li data-target="#homeCarousel" data-slide-to="3"></li>
+    </ol>
 
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item item inactiveUntilOnLoad active">
         <!-- <div class="img-overlay"></div> -->
-        <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block text px-1">
+        <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="enterprise solution">
+        <div class="carousel-caption">
           <h5>Full-service custom application development to meet the specific functional needs of enterprise customers</h5>          
           <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <!-- <div class="img-overlay"></div> -->
-        <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="technical expertise">
+        <div class="carousel-caption ">
           <h5>We apply our technical expertise and consultative approach to best meet your technology and automation goals</h5>           
           <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <div class="img-overlay"></div>
-        <img src="./images/cyber_header.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./images/cyber_header.jpg" class="d-block w-100" alt="cutting edge technology">
+        <div class="carousel-caption">
           <h5>Deploy cutting edge technology, optimize customer experience, automate process and ensure business continuity</h5>           
           <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
       <div class="carousel-item item">
         <!-- <div class="img-overlay"></div> -->
-        <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="Industry knowledge">
+        <div class="carousel-caption">
           <h5>Industry knowledge, functional experience, and technology skills to help clients grow and creates long-lasting value.</h5>           
           <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
@@ -224,19 +231,7 @@
   </a> -->
   </div>
 </section>
-  <!-- <section class="home-cover container-fluid d-flex justify-content-center align-items-center" id="homeContainer">
-    <div class="home-content container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-9 col-md-9 col-12 px-sm-0">
-          <h2 class="home-title ml-5">Transforming Enterprises with Computer Vision AI</h2>
-          <p class="home-caption ml-5">Innovative machine learning products and services on a trusted platform.</p>
-          <p class="text-center mt-5 home-btn"><a class="btn btn-lg" href="#">Learn More</a></p>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
-
+ 
   <!-- 
   ==== END - Home page Image ====
  -->
@@ -396,13 +391,6 @@
     ==== END - WELCOME ====
   -->
 
-  <!-- 
-    ==== CORE VALUES ====
-  -->
-
-  <!-- 
-    ==== END - CORE VALUES ====
-  -->
 
   <!-- 
     ==== OUR SERVICES ====
@@ -644,18 +632,17 @@
     </div>
   </section> -->
 
-  <section class="container-fluid industry-carousel">
-      <div class="container-fluid industries py-4">
+  <section class="container-fluid industry-carousel">       
           <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
             <h2 class="title-1"><span class="title-highlight">Industries</span> We Serve</h2>
             <p class="title-caption">Zyclyx deep Industry expertise enables global brands to hit the ground running</p>
           </div>
-      <div id="carouselIndustries" class="carousel slide" data-ride="carousel">
-        <div class="row px-5">
+      <div id="carouselIndustries" class="carousel slide pt-3  container-fluid" data-ride="carousel">
+        <div class="row px-md-5 px-sm-0">
             <div class="col-12 px-0">
-                <ol class="carousel-indicators d-flex flex-row">
-                  <!-- Industry - Indicator - 1 -->
-                    <li data-target="#carouselIndustries" data-slide-to="0" class="active">
+                <ol class="carousel-indicators row d-flex flex-row">
+                    <!-- Industry - Indicator - 1 -->
+                    <li data-target="#carouselIndustries" data-slide-to="0" class="col-2 active">
                         <div  class="card indicator-1">
                         <div class="card-body d-flex align-items-center justify-content-center p-3">
                           <p>
@@ -672,12 +659,12 @@
                               </g>
                             </svg>
                           </p>
-                          <h4 class="title-2 ml-3">Retail</h4>                        
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Retail</h4>                        
                         </div>
                       </div>
                     </li>
                     <!-- Industry - Indicator - 2 -->
-                    <li data-target="#carouselIndustries" data-slide-to="1">
+                    <li data-target="#carouselIndustries" data-slide-to="1" class="col-2">
                         <div class="card indicator-2">
                             <div class="card-body d-flex align-items-center justify-content-center p-3">
                               <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
@@ -692,12 +679,12 @@
                                     </g>
                                   </g>
                                 </svg></p>
-                              <h4 class="title-2 ml-3">Telecom</h4>                         
+                              <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Telecom</h4>                         
                             </div>
                           </div>
                     </li>
                     <!-- Industry - Indicator - 3 -->
-                    <li data-target="#carouselIndustries" data-slide-to="2">
+                    <li data-target="#carouselIndustries" data-slide-to="2" class="col-2">
                         <div class="card indicator-3">
                         <div class="card-body d-flex align-items-center justify-content-center p-3">
                           <p>
@@ -714,12 +701,12 @@
                               </g>
                             </svg>
                           </p>
-                          <h4 class="title-2 ml-3">Banking</h4>                         
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Banking</h4>                         
                         </div>            
                       </div>
                     </li>
                     <!-- Industry - Indicator - 4 -->
-                    <li data-target="#carouselIndustries" data-slide-to="3">
+                    <li data-target="#carouselIndustries" data-slide-to="3" class="col-2">
                         <div class="card indicator-4">
                         <div class="card-body d-flex align-items-center justify-content-center p-3">
                           <p>
@@ -736,12 +723,12 @@
                               </g>
                             </svg>
                           </p>
-                          <h4 class="title-2 ml-3">Logistics</h4>                         
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Logistics</h4>                         
                         </div>
                         </div>
                     </li>
                     <!-- Industry - Indicator - 5 -->
-                    <li data-target="#carouselIndustries" data-slide-to="4">
+                    <li data-target="#carouselIndustries" data-slide-to="4" class="col-2">
                         <div class="card indicator-5">
                         <div class="card-body d-flex align-items-center justify-content-center p-3">
                           <p>
@@ -758,54 +745,47 @@
                               </g>
                             </svg>
                           </p>
-                          <h4 class="title-2 ml-1">Health Care</h4>                         
+                          <h4 class="title-3 d-none d-lg-block ml-3 mt-3">HealthCare</h4>                         
                         </div>
                         </div>
                     </li>
                   </ol>
             </div>
-          <div class="col-12">
+          <div class="col-12 px-0">
               <div class="carousel-inner">
                 <!-- Industry - 1 -->
                   <div class="carousel-item active">
-                     <div class="industry-content">
-                        <!-- <h3 class="title-2">Retail Industry</h3> -->
-                        <h3 class="title-2">OUR TEAM OF EXPERTS DELIVERS TOP-NOTCH RETAIL SOFTWARE SOLUTIONS & SERVICES</h3>
-                        <div class="row h-100">                          
-                          <div class="col-4 card">
-                            <div class="card-body">
-                              <h3 class="title-2">Lorem Ipsum dolor</h3>
-                              <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
+                     <div class="industry-content container py-0 content-1">
+                        <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                        <h4 class="text-center pt-5 title-2">Our Team of Experts Delivers Top-Notch Retail Software Solutions & Services</h4>                         
+                            <p class="text-2 py-3">Zyclyx helps retailers transform their technology to gain a 360-degree view of consumers and serve them across the entire purchase process using retail supply management and retail consulting. With greater visibility into the customer experience, you improve operational efficiencies, increase order fulfillment and encourage collaboration between stores and supply chain partners.</p>                                                                         
+                        <div class="row">                          
+                          <div class="col-md-6 col-sm-12 card">
+                            <div class="card-body p-2">
+                              <h3 class="title-3">Omni Channel</h3>
+                              <p class="text-2">Omnichannel shopping goes beyond brick-and-mortar locations to mobile-browsing, online marketplaces, social media, and wherever your users browse online through retargeting ads.</p>
                             </div>
                           </div>
-                          <div class="col-4 card">
-                              <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
+                          <div class="col-md-6 col-sm-12 card">
+                              <div class="card-body p-2">
+                                  <h3 class="title-3">Retail Data Analytics</h3>
+                                  <p class="text-2">Retail analytics is the process of providing analytical data on inventory levels, supply chain movement, consumer demand, etc. for making marketing, and procurement decisions.</p>
                               </div>
                           </div>
-                          <div class="col-4 card">
-                              <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
+                        </div>
+                        <h4 class="title-2 text-center">Get the edge in Retail with Zyclyx</h4>
+                        <div class="row">
+                         
+                          <div class="col-md-6 col-sm-12 card">
+                              <div class="card-body p-2">
+                                  <h3 class="title-2">Multichannel Stores</h3>
+                                  <p class="text-2">Our company, retail establishments that sell products to consumers through a variety of channels, including catalogs, mail order, telemarketing, the Internet, and vending machines. They are also known as mail-order businesses and other non-store retailing establishments. The customer can shop and order through internet or mail or other mediums and the merchandise are dropped at the customer’s doorstep.</p>
                               </div>
                           </div>
-                          <div class="col-4 card">
-                              <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                              </div>
-                          </div>
-                          <div class="col-4 card">
-                              <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                              </div>
-                          </div>
-                          <div class="col-4 card">
-                              <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
+                          <div class="col-md-6 col-sm-12 card">
+                              <div class="card-body p-2">
+                                  <h3 class="title-2">Department Stores</h3>
+                                  <p class="text-2">Department stores are large retail establishments that are made up of a number of sections, or departments. A specific group of products are available in each department, each of which specializes in selling a particular grouping of products. For example, under this compartmentalized arrangement, consumers go to one area of the store to purchase tableware and another area to acquire bedding.</p>
                               </div>
                           </div>
                         </div>
@@ -813,187 +793,164 @@
                   </div>
                   <!-- Industry - 2 -->
                   <div class="carousel-item">
-                      <div class="industry-content">
-                          <!-- <h3 class="title-2">Telecom Industry</h3> -->
-                          <div class="row h-100">
-                              <div class="col-4 card">
-                                <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
+                    <div class="industry-content container py-0 content-2">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                          
+                        <h4 class="text-center pt-5 title-2">
+                          Enhance the technical growth of Telecommunication and draw in more revenue for your company</h4>                                                  
+                           <p class="text-2 py-3">Zyclyx can play a pivotal role in driving transformation across the telecom industry, bringing greater efficiency to telecommunications functions – from supply chain and operations to enterprise management and customer care.</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-6 col-sm-12 card">
+                           <div class="card-body p-2">
+                             <h3 class="title-3">High Customer Service Expectations</h3>
+                             <p class="text-2">Zyclyx who struggle to meet the demand for high network availability and superior service across all channels face high rates of customer churn and risk losing credibility.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-3">Digital Service Providers</h3>
+                                 <p class="text-2">Operators must evolve into digital service providers, reimagining their business models, upgrading network infrastructure and creating next-gen offerings for their customers – fast and at scale.</p>
+                             </div>
+                         </div>
+                       </div>
+                       <h4 class="title-2 text-center">Get the edge in Telecom with Zyclyx</h4>
+                       <div class="row">
+                        
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Removing the Burden of Process</h3>
+                                 <p class="text-2">Zyclyx RPA to boost customer responsiveness. By streamlining execution of once complex, labor-intensive and time-consuming processes such as billing, data entry, ticket management, and order fulfillment, RPA frees telecoms to be more dynamic.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Significant Reduction in TCO</h3>
+                                 <p class="text-2">Zyclyx customers enjoy RPA at a lower Total Cost of Ownership (TCO). That’s because Zyclyx’s patented visual recognition technology allows business users to intuitively build automation scenarios on any application. This speeds up process development time and lowers the cost per hour.</p>
+                             </div>
+                         </div>
+                       </div>
+                    </div>
+                 </div>
                   <!-- Industry - 3 -->
                   <div class="carousel-item">
-                      <div class="industry-content">
-                          <!-- <h3 class="title-2">Banking Industry</h3> -->
-                          <h5>
-                              OUR BANKING AND FINANCE SOLUTIONS INCLUDE ARTIFICIAL INTELLIGENCE, INTERNET OF THINGS, BLOCKCHAIN, AR OR VR, AND BIG DATA ANALYTICS APPLICATIONS</h5>
-                              <p>Regardless of its size and type, business deals with bank as well as financial services. With our handy services related to baking & financial software, we provide you with complete solutions for business that aspire to increase the level of operational efficiency. We have an excelled team of professionals who walks an extra mile in creating mobile and web applications with the best use of advanced technologies in business intelligence, blockchain, AI, payment gateways, and more. With the aforementioned services, we tend to offer better security of your business documents related to banking and finance.</p>
-                          <div class="row h-100">
-                              <div class="col-4 card">
-                                <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
+                    <div class="industry-content container py-0 content-3">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                       <h4 class="text-center pt-3 title-2">Our solutions for banking and financial Industry</h4>                         
+                           <p class="text-2 py-2 mb-0"> Regardless of its size and type, business deals with bank as well as financial services. With our handy services related to baking & financial software, we provide you with complete solutions for business that aspire to increase the level of operational efficiency.</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-4 col-sm-12 card">
+                           <div class="card-body p-1">
+                             <h3 class="title-3">Artificial intelligence</h3>
+                             <p class="text-2 mb-0">With AR, we take a product-centric approach to connect to individual clients and improve and build high-end AI results.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-4 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h3 class="title-3">Internet of Things</h3>
+                                 <p class="text-2 mb-0">With our IoT services related to baking, our qualified team of experts delivers first-rated IoT services to increase your business value.</p>
+                             </div>
+                         </div>
+                                                
+                         <div class="col-md-4 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h3 class="title-3">Blockchain</h3>
+                                 <p class="text-2 mb-0">With blockchain banking services, we tend to deliver high-end services to help you work in a more efficient and smarter way.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-4 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h3 class="title-3">AR or VR</h3>
+                                 <p class="text-2 mb-0">We have an experienced team of experts who walks the extra mile in offering top-notch AR and VR results related to banking and finance.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-4 col-sm-12 card">
+                          <div class="card-body p-1">
+                              <h3 class="title-3">Big Data Analytics applications</h3>
+                              <p class="text-2 mb-0">Our Big Data Analytics application services related to banking and finance is all about achieving newer business opportunities.</p>
+                          </div>
+                      </div>
+                       </div>
+                    </div>
+                 </div>
                   <!-- Industry - 4 -->
                   <div class="carousel-item">
-                      <div class="industry-content">
-                          <!-- <h3 class="title-2">Logistics Industry</h3> -->
-                          <div class="row h-100">
-                              <div class="col-4 card">
-                                <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
+                    <div class="industry-content container py-0 content-4">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                       <h4 class="text-center pt-5 title-2">Our Team of Experts Delivers Top-Notch Retail Software Solutions & Services</h4>                         
+                           <p class="text-2 py-3 mb-0">Zyclyx helps retailers transform their technology to gain a 360-degree view of consumers and serve them across the entire purchase process using retail supply management and retail consulting. With greater visibility into the customer experience, you improve operational efficiencies, increase order fulfillment and encourage collaboration between stores and supply chain partners.</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-6 col-sm-12 card">
+                           <div class="card-body p-2">
+                             <h3 class="title-3">Omni Channel</h3>
+                             <p class="text-2">Omnichannel shopping goes beyond brick-and-mortar locations to mobile-browsing, online marketplaces, social media, and wherever your users browse online through retargeting ads.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-3">Retail Data Analytics</h3>
+                                 <p class="text-2">Retail analytics is the process of providing analytical data on inventory levels, supply chain movement, consumer demand, etc. for making marketing, and procurement decisions.</p>
+                             </div>
+                         </div>
+                       </div>
+                       <h4 class="title-2 text-center">Get the edge in Retail with Zyclyx</h4>
+                       <div class="row">
+                        
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Multichannel Stores</h3>
+                                 <p class="text-2">Our company, retail establishments that sell products to consumers through a variety of channels, including catalogs, mail order, telemarketing, the Internet, and vending machines. They are also known as mail-order businesses and other non-store retailing establishments. The customer can shop and order through internet or mail or other mediums and the merchandise are dropped at the customer’s doorstep.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Department Stores</h3>
+                                 <p class="text-2">Department stores are large retail establishments that are made up of a number of sections, or departments. A specific group of products are available in each department, each of which specializes in selling a particular grouping of products. For example, under this compartmentalized arrangement, consumers go to one area of the store to purchase tableware and another area to acquire bedding.</p>
+                             </div>
+                         </div>
+                       </div>
+                    </div>
+                 </div>
                   <!-- Industry - 5 -->
                   <div class="carousel-item">
-                      <div class="industry-content">
-                          <!-- <h3 class="title-2">Health Care Industry</h3> -->
-                          <div class="row h-100">
-                              <div class="col-4 card">
-                                <div class="card-body">
-                                  <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                  <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                              <div class="col-4 card">
-                                  <div class="card-body">
-                                      <h3 class="title-2">Lorem Ipsum dolor</h3>
-                                      <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo iure officia blanditiis aliquam aspernatur dolores odit.</p>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
+                    <div class="industry-content container py-0 content-5">
+                       <!-- <h3 class="title-2">Health Care Industry</h3> -->                                                 
+                       <h4 class="text-center pt-5 title-2">Combining Health Sector and technology for providign better service to the patients</h4>                                                  
+                           <p class="text-2 py-3">Zyclyx helps many of these challenges impact healthcare service providers on a variety of fronts it is particularly true in the area of healthcare companies’ revenue management</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-6 col-sm-12 card">
+                           <div class="card-body p-2">
+                             <h3 class="title-3">Billing and Compliance</h3>
+                             <p class="text-2">The medical Billing process is essential to healthcare providers as it allows them to receive reimbursement from an insurance company for the services which they have provided to a patient and thus keep their doors open for business always.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-3">Clinical Integration</h3>
+                                 <p class="text-2">Hospitals and medical facilities have an important job of saving lives and providing quality care for their patients. In a high-stress environment like healthcare, it’s best to try to operate as streamlined and efficient as possible.</p>
+                             </div>
+                         </div>
+                       </div>
+                       <h4 class="title-2 text-center">Get the edge in HealthCare with Zyclyx</h4>
+                       <div class="row">
+                        
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Clinical Administration</h3>
+                                 <p class="text-2">A good amount of time is spent daily in dealing with the claims of patients, be it inputting and processing, adjusting or dealing with appeals. If all these time consuming tasks were shifted to machines, you would surely notice that your team is accomplishing a lot more. One of the biggest areas where robotic process automation is taking over is the healthcare industry</p>
+                             </div>
+                         </div>
+                         <div class="col-md-6 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h3 class="title-2">Care Management</h3>
+                                 <p class="text-2">There are important workflows involved in managing care, coordinating that care, promoting wellness, case and utilization management and remote monitoring. RPA will help in centralizing and streamlining these workflows effortlessly. Technology that is deployed to automate processes will give you chunks of data to deal with. The data when processed and analyzed can be used to improve performance.</p>
+                             </div>
+                         </div>
+                       </div>
+                    </div>
+                 </div>
                 </div>           
           </div>          
         </div>
-        </div>
+      </div>
   </section>
 
   <!-- 
@@ -1307,14 +1264,11 @@
     </div>
     <div class="container mt-sm-3 mt-md-5" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">
       <div class="owl-carousel clients-carousel">
-        <div class="client"><img src="images/client-1.png" alt="client-1"></div>
-        <div class="client"><img src="images/client-2.png" alt="client-2"></div>
+        <div class="client"><img src="images/clients/infospoke.jpg" alt="client-1"></div>
+        <div class="client"><img src="images/clients/Intellect.png" alt="client-2"></div>
         <div class="client"><img src="images/client-3.png" alt="client-3"></div>
         <div class="client"><img src="images/client-4.png" alt="client-4"></div>
-        <div class="client"><img src="images/client-5.png" alt="client-5"></div>
-        <div class="client"><img src="images/client-6.png" alt="client-6"></div>
-        <div class="client"><img src="images/client-7.png" alt="client-7"></div>
-        <div class="client"><img src="images/client-8.png" alt="client-8"></div>
+        <div class="client"><img src="images/client-5.png" alt="client-5"></div> 
       </div>
     </div>
   </section>
@@ -1456,10 +1410,13 @@
     })
     // END - scroll to top
 
+    // remove 
+    $(document).ready(function(){
+      $('.inactiveUntilOnLoad').removeClass('inactiveUntilOnLoad');
+    })
 
-    // home page slider
-    $('.inactiveUntilOnLoad').removeClass('inactiveUntilOnLoad');
-    $('.carousel').carousel({
+    // home page slider    
+    $('#homeCarousel').carousel({
       interval: 5000,
       pause: false
     })
@@ -1469,20 +1426,16 @@
     let index = 0;
     $('#homeCarousel').on('slide.bs.carousel', function (e) {
       index = e.to;
-      if (index === 0) {
-       // indicator.style.left = "0px";
+      if (index === 0) {        
         document.documentElement.style.setProperty('--indicator-position', '0%');         
       }
-      if (index === 1) {
-        //indicator.style.left = "25%";         
+      if (index === 1) {         
         document.documentElement.style.setProperty('--indicator-position', '25%');
       }
-      if (index === 2) {
-        //indicator.style.left = "50%";         
+      if (index === 2) {         
         document.documentElement.style.setProperty('--indicator-position', '50%');
       }
-      if (index === 3) {
-        //indicator.style.left = "75%";         
+      if (index === 3) {         
         document.documentElement.style.setProperty('--indicator-position', '75%');
       }
     })
