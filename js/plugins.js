@@ -18,17 +18,17 @@ window.onload = function(){
     dots: true,
     loop: true,
     responsive: {
-      0: { items: 1 }, 768: { items: 3 }, 900: { items: 4 }
+      0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 }
     }
   });
 
   // client testimonials
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+    autoplay: true,     
     loop: true,
     center:true,
-    animateIn:true,     
+    autoplayTimeout:7000,
+    autoplaySpeed:2000,   
     responsive: {
       0: {
         items: 1
