@@ -930,7 +930,21 @@ font-weight: 400 !important;
 }
 /* END - STATS  */
  
- 
+.company-numbers,.company-numbers .card{
+  background-color: #0044bc;
+  border: none;
+  text-align: center;  
+}
+.company-numbers .card .stats-title{
+  font-size: 2.2rem;
+  color: #fafafa;
+  font-weight: 800;
+}
+.company-numbers .card .stats-caption {
+  color: #cee8e6;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 /* 
 ==== CLIENT LOGOS ====
 */
