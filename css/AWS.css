@@ -1,0 +1,15 @@
+
+/* Header */
+.header-img{    
+    background-image:url("../images/artificial-intelligence-header.jpg");  
+}
+.service .card-1 .card-icon{
+    background: #EAB543;
+}
+
+.service .card-2 .card-icon{
+background: #2ecc71;
+}
+.service .card-3 .card-icon{
+    background: #2980b9;
+}

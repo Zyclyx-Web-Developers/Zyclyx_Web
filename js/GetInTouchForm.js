@@ -4,7 +4,19 @@
   form.addEventListener("submit", function (event) {
       event.preventDefault();
       form.classList.add('was-validated');
+    //   disable send message button
+    document.getElementById("contactBtn").setAttribute("disabled",true);
+    document.getElementById("btnText").style.display = "none";
+    document.getElementById("btnSpinner").style.display = "block";   
 
+    // if any errors enable send message button to re-send form data
+    if(!form.checkValidity()){         
+        document.getElementById("contactBtn").removeAttribute("disabled");
+        document.getElementById("btnText").style.display = "block";
+        document.getElementById("btnSpinner").style.display = "none";   
+    }
+
+    // if no errors send form data to the API
       if (form.checkValidity()) {             
           let formData = new FormData(form); 
           data ={ 
@@ -28,8 +40,11 @@
                   return response.json();
               })                 
               .then(function (jsondata) {
-                console.log(jsondata);
-          
+                // form.reset();          
+                 console.log(jsondata);
+                $('#contactModal').modal('show');
+                document.getAnimations.contactName.textContent = jsondata.name;
+
               })
               .catch(function (error) {
                   document.getElementById("errorAlert").textContent = "Something went wrong! Please try again"
@@ -38,8 +53,6 @@
   }, false)
 })();
 
- 
- 
  
 //  var form= document.getElementById("GetInTouchForm");
 //   form.addEventListener("submit", function(event){ 
@@ -88,7 +101,5 @@
 //  document.getElementById("alert").textContent ="Submited successfully!!";
 //     var element = document.getElementById("alert");
 //     element.classList.add("alert-success");
-// },3000) 
-
- 
+// },3000)
 // }

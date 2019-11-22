@@ -1,8 +1,16 @@
 /* 
 ==== GLOBAL STYLES FOR ALL PAGES ====
-*/
-/* GOOGLE FONTS */
 
+*/
+@font-face {
+  font-family: 'custom-font';
+  src: url('../fonts/gtwalsheimproregular-webfont.woff2') format('woff2'),
+       url('../fonts/gtwalsheimproregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+  /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
@@ -41,7 +49,7 @@ font-family: 'Source Sans Pro', sans-serif;
   --font-9:'Questrial', sans-serif;
   --font-10: 'Source Sans Pro', sans-serif;
 
-  --font:'Roboto', sans-serif;
+  --font:'custom-font', sans-serif;
   --color:#ff4500;
 
   --black: #444655;
@@ -166,16 +174,16 @@ h6,
 .text-2,
 .text-3,
 .title-caption {   
-  color: #6c757d;
+  color:rgba(21, 42, 73,0.8);
 }
 .text-1 {
-  font-size: 1.15rem !important;
+  font-size: 1.2rem !important;
 }
 .text-2 {
-  font-size: 1.05rem !important;
+  font-size: 1rem !important;
 }
 .text-3{
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 .title-caption {
   font-size: 1rem;
@@ -190,7 +198,7 @@ h6,
   color:#152a49
 }
 .title-2,.title-3{
-  color:#444655;
+  color:rgba(21, 42, 73,0.9);
 }
 .title-1 {
   font-size: 1.6rem !important;   
@@ -200,12 +208,12 @@ h6,
   text-align: center;
 }
 .title-2 {
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   font-weight: 700;
   margin-top: 5px;
 }
 .title-3{
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   font-weight: 600;   
 }
 
@@ -226,7 +234,7 @@ h6,
 }
  
 .quote-left{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgb(0, 123, 255,0.7);
 }
  
@@ -287,12 +295,12 @@ h6,
 
 .navbar{  
     padding: 0 !important;
-    font-family: 'Open Sans', sans-serif;               
+    /* font-family: 'Open Sans', sans-serif;                */
     transition: background 250ms ease-in;
     border-bottom: 1px solid rgba(212, 245, 245,0.5);      
   }
   .navbar .nav-link{
-    font-weight: 800;
+    font-weight: 600;
     color: #ffffff !important;     
   }
  
@@ -301,7 +309,7 @@ h6,
   }
 
   .navbar-light{ 
-    background: rgb(27, 43, 48,0.3) !important;  
+    background: rgb(27, 43, 48,0.1) !important;  
   }
   .navbar-dark{          
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.1),
@@ -500,15 +508,15 @@ background-color:#f3f7fa;
   background-color:#ea4300    ;
 }
 .service .card .card-content{
-  border: 1px solid rgba(0, 68, 188,0.3);
+  border: 1px solid rgba(108, 117, 125, 0.3);
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
 .service .card-2 .card-content{
-  border: 1px solid rgba(0, 157, 88,0.3);
+  border: 1px solid rgba(89, 144, 114, 0.3);
 }
 .service .card-3 .card-content{
-  border: 1px solid rgba(234, 67, 0,0.3);
+  border: 1px solid rgba(108, 123, 255, 0.3);
 }
 .contact-banner{
   background-color: #f3f7fa;

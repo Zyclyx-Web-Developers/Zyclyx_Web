@@ -68,7 +68,9 @@
                   <a class="dropdown-item my-1" href="./IT-Service-Management.html">IT Service Management</a>
                   <a class="dropdown-item my-1" href="./Cloud-hosting-service.html">Cloud Hosting Services</a>
                   <a class="dropdown-item my-1" href="./OutSourcing-Services.html">Outsourcing Services</a>
+                  <a class="dropdown-item my-1" href="./AWS.html">Amazon Web Services</a>
                 </div>
+                
 
                 <!-- services col - 2 -->
                 <div class="col-12 col-lg-3 service-items">
@@ -166,28 +168,72 @@
   <!-- scroll progress indicator -->
 
   <!-- 
-    ==== VIDEO  ====
--->
-  <!-- <section class="video-container" id="videoContainer">
-    <video poster="" autoplay loop muted playsinline id="videoBG">
-      <source src="./images/welcome-lg.mp4" id="video-src" />
-    </video>
-  </section> -->
-  <!-- 
   ==== Home page Image ====
  -->
-  <section class="home-cover container-fluid d-flex justify-content-center align-items-center" id="homeContainer">
-    <div class="home-content container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-9 col-md-9 col-12 px-sm-0">
-          <h2 class="home-title ml-5">Transforming Enterprises with Computer Vision AI</h2>
-          <p class="home-caption ml-5">Innovative machine learning products and services on a trusted platform.</p>
-          <p class="text-center mt-5 home-btn"><a class="btn btn-lg" href="#">Learn More</a></p>
+ <section class="home-cover" id="homeContainer">
+  <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="container indicator-wrapper d-none d-sm-none d-md-flex">   
+      <span class="indicator"></span>
+      <ol class="carousel-indicators row mx-5 custom-indicator">        
+        <li class="col-3 indicator-1 active" data-target="#homeCarousel" data-slide-to="0">Enterprise Solutions</li>
+        <li class="col-3 indicator-2" data-target="#homeCarousel" data-slide-to="1">Proven Experience</li>
+        <li class="col-3 indicator-3" data-target="#homeCarousel" data-slide-to="2">Deep Domain Expertise</li>
+        <li class="col-3 indicator-4" data-target="#homeCarousel" data-slide-to="3">Cutting Edge Technologies</li>
+      </ol>
+    </div>
+    
+    <ol class="carousel-indicators d-flex d-md-none">
+      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homeCarousel" data-slide-to="1"></li>
+      <li data-target="#homeCarousel" data-slide-to="2"></li>
+      <li data-target="#homeCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item item inactiveUntilOnLoad active">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="enterprise solution">
+        <div class="carousel-caption">
+          <h5>Full-service custom application development to meet the specific functional needs of enterprise customers</h5>          
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="technical expertise">
+        <div class="carousel-caption ">
+          <h5>We apply our technical expertise and consultative approach to best meet your technology and automation goals</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <div class="img-overlay"></div>
+        <img src="./images/cyber_header.jpg" class="d-block w-100" alt="cutting edge technology">
+        <div class="carousel-caption">
+          <h5>Deploy cutting edge technology, optimize customer experience, automate process and ensure business continuity</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <!-- <div class="img-overlay"></div> -->
+        <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="Industry knowledge">
+        <div class="carousel-caption">
+          <h5>Industry knowledge, functional experience, and technology skills to help clients grow and creates long-lasting value.</h5>           
+          <!-- <p class="text-center home-btn mt-4"><a href="#" class="btn">Know More</a></p> -->
         </div>
       </div>
     </div>
-  </section>
-
+    <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+  </div>
+</section>
+ 
   <!-- 
   ==== END - Home page Image ====
  -->
@@ -195,7 +241,7 @@
     font and color selector
    -->
 
-  <div class="customize">
+  <!-- <div class="customize">
     <div class="row">
       <div class="col p-3 m-3">
         <h3 class="title-2 text-left">Font styles</h3>
@@ -235,7 +281,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- 
     ==== END - VIDEO ====
   -->
@@ -275,13 +321,9 @@
                     </g>
                   </svg></p>
 
-                <h3 class="py-1 title-2 ml-3">Who we are</h3>
+                <h3 class="py-2 title-2 ml-3">Who we are</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-                voluptatum
-                illum placeat
-                facilis esse, cum eum, quasi inventore deleniti sunt facere aliquam dolore non earum ab consequuntur sed
-                necessitatibus dicta!</p>
+              <p class="mx-2 mt-2 text-2 welcome-text">Zyclyx, a company dedicated to making work more human by Automating Business Processes and liberating people. Zyclyx deals under expansive inventory in Robotic Process Automation and Artificial Intelligence.</p>
             </div>
           </div>
 
@@ -305,9 +347,9 @@
                     </g>
                   </svg>
                 </p>
-                <h3 class="py-1 title-2 ml-3">Why Choose Zyclyx</h3>
+                <h3 class="py-2 title-2 ml-3">Why Choose Zyclyx</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Because we have actually led and established some of the largest
+              <p class="mx-2 mt-2 text-2 welcome-text">We have led and established some of the largest
                 RPA
                 implementations
                 in the world. Few others can boast the depth of experience that we bring in establishing, leading and
@@ -337,13 +379,9 @@
                     </g>
                   </svg>
                 </p>
-                <h3 class="py-1 title-2 ml-3">Our Vision</h3>
+                <h3 class="py-2 title-2 ml-3">Our Vision</h3>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-                autem
-                modi
-                dolorum! Suscipit, necessitatibus? Voluptas repellendus veritatis, quia quisquam culpa incidunt deserunt
-                doloremque amet delectus.</p>
+              <p class="mx-2 mt-2 text-2 welcome-text">Established in 2018, for it’s comprehensive portfolio of services, strong commitment to sustainability and good corporate citizenship, Our business was founded on three main key principles – service, quality, and pricing</p>
             </div>
           </div>
         </div>
@@ -355,13 +393,6 @@
     ==== END - WELCOME ====
   -->
 
-  <!-- 
-    ==== CORE VALUES ====
-  -->
-
-  <!-- 
-    ==== END - CORE VALUES ====
-  -->
 
   <!-- 
     ==== OUR SERVICES ====
@@ -381,8 +412,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-ai.svg" alt="Artificial Intelligence service">
             </div>
-            <h3 class="py-3 title-2">Artificial Intelligence</h3>
-            <p class="text-2 text-muted service-text">Augmenting technology by exterminating humans for deep integration
+            <h3 class="py-2 title-2">Artificial Intelligence</h3>
+            <p class="text-2 service-text">Augmenting technology by exterminating humans for deep integration
               into
               learning
               and
@@ -398,8 +429,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-cloud.svg" alt="cloud computing service">
             </div>
-            <h3 class="py-3 title-2">Cloud Computing</h3>
-            <p class="text-2 text-muted service-text"> Cloud computing services at zyclyx meet the future needs of your
+            <h3 class="py-2 title-2">Cloud Computing</h3>
+            <p class="text-2 service-text"> Cloud computing services at zyclyx meet the future needs of your
               business to
               dynamically
               scale your cloud
@@ -415,8 +446,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-info-sec.svg" alt="Information security service">
             </div>
-            <h3 class="py-3 title-2">Information Security</h3>
-            <p class="text-2 text-muted service-text">To Automate predictive analysis for emulating the learning
+            <h3 class="py-2 title-2">Information Security</h3>
+            <p class="text-2 service-text">To Automate predictive analysis for emulating the learning
               approach
               used
               by humans.
@@ -435,13 +466,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-blockchain.svg" alt="Blockchain service">
             </div>
-            <h3 class="py-3 title-2">Block Chain</h3>
-            <p class="text-2 text-muted service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-              tempor
-              incididunt
-              ut labore et
-              dolore magna aliqua, Ut enim ad.</p>
+            <h3 class="py-2 title-2">Block Chain</h3>
+            <p class="text-2 service-text">It is changing the way people make approaches to sharing data, From creating more efficient and smarter businesses to give businesses trustful and variable networks.</p>
             <p class="text-right mb-0"><a class="btn btn-link animate-link" href="./Blockchain.html">Know More</a></p>
           </div>
 
@@ -451,14 +477,10 @@
           data-aos-duration="1000">
           <div class="card-body service service-5 mx-md-3">
             <div class="service-icon rounded-circle">
-               <img src="./images/icons/service_rpa_icon.svg" alt="RPA service">
+              <img src="./images/icons/service_rpa_icon.svg" alt="RPA service">
             </div>
-            <h3 class="py-3 title-2">RPA</h3>
-            <p class="text-2 text-muted service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-              tempor
-              incididunt
-              ut labore et dolore magna aliqua, Ut enim ad.</p>
+            <h3 class="py-2 title-2">RPA</h3>
+            <p class="text-2 service-text">Innovating, Inventing and Automating high quality business processes to reduce operations cost and maximize performance.</p>
             <p class="text-right mb-0"><a class="btn btn-link animate-link" href="./RPA.html">Know More</a></p>
           </div>
 
@@ -470,8 +492,8 @@
             <div class="service-icon rounded-circle">
               <img src="./images/icons/service-bigdata.svg" alt="bigdata service">
             </div>
-            <h3 class="py-3 title-2">Bigdata and Data Sciencne</h3>
-            <p class="text-2 text-muted service-text">Managing, analyzing and visualizing data into information and
+            <h3 class="py-2 title-2">Bigdata and Data Sciencne</h3>
+            <p class="text-2 service-text">Managing, analyzing and visualizing data into information and
               information
               into
               insight by
@@ -492,22 +514,22 @@
   <!-- 
     ==== INDUSTRIES ====
   -->
-  <section class="container-fluid wrapper industry-wrap">
+  <!-- <section class="container-fluid wrapper industry-wrap">
     <div class="container-fluid industries">
       <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
         <h2 class="title-1"><span class="title-highlight">Industries</span> We Serve</h2>
         <p class="title-caption">Zyclyx deep Industry expertise enables global brands to hit the ground running</p>
       </div>
       <div class="row mt-sm-3 mt-md-5 d-flex justify-content-lg-center justify-content-md-start">
-        <!-- Industry - 1 -->
+         
         <a href="./Retail.html" class="card col-lg-2 col-md-3 col-sm-6 industry" data-aos="zoom-in" data-aos-delay="150"
           data-aos-duration="1000">
           <div class="card-body industry-1">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -521,14 +543,14 @@
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </a>
-        <!-- Industry - 2 -->
+         
         <a href="./Telecom.html" class="card col-lg-2 col-md-3 col-sm-6 industry" data-aos="zoom-in"
           data-aos-delay="200" data-aos-duration="1000">
           <div class="card-body industry-2">
             <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -541,15 +563,15 @@
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </a>
-        <!-- Industry - 3 -->
+         
         <a href="./Banking&Finance.html" class="card col-lg-2 col-md-3 col-sm-6 industry" data-aos="zoom-in"
           data-aos-delay="250" data-aos-duration="1000">
           <div class="card-body industry-3">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -564,15 +586,15 @@
           </div>
 
         </a>
-        <!-- Industry - 4 -->
+         
         <a href="./Logistics.html" class="card col-lg-2 col-md-3 col-sm-6 industry" data-aos="zoom-in"
           data-aos-delay="300" data-aos-duration="1000">
           <div class="card-body industry-4">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -586,15 +608,15 @@
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </a>
-        <!-- Industry - 5 -->
+         
         <a href="./Health-Care.html" class="card col-lg-2 col-md-3 col-sm-6 industry" data-aos="zoom-in"
           data-aos-delay="300" data-aos-duration="1000">
           <div class="card-body industry-5">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
                 <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="normal"
-                  font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                  font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g>
                     <path
@@ -610,6 +632,308 @@
         </a>
       </div>
     </div>
+  </section> -->
+
+  <section class="container-fluid industry-carousel">       
+          <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+            <h2 class="title-1"><span class="title-highlight">Industries</span> We Serve</h2>
+            <p class="title-caption">Zyclyx deep Industry expertise enables global brands to hit the ground running</p>
+          </div>
+      <div id="carouselIndustries" class="carousel slide pt-3  container-fluid" data-ride="carousel">
+        <div class="row px-md-5 px-sm-0">
+            <div class="col-12 px-0 ">
+                <ol class="carousel-indicators row d-flex flex-row">
+                    <!-- Industry - Indicator - 1 -->
+                    <li data-target="#carouselIndustries" data-slide-to="0" class="col-2 active">
+                        <div  class="card indicator-1">
+                        <div class="card-body d-flex align-items-center justify-content-center p-3">
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                              <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g>
+                                  <path
+                                    d="M13.76,20.64v17.2l-0.43,2.9025c-0.12094,0.71219 -3.01,17.54938 -3.01,26.3375c0,5.56313 1.30344,9.9975 3.655,13.2225c-0.06719,-0.04031 -0.14781,-0.06719 -0.215,-0.1075v84.925h144.48v-84.925c-0.06719,0.04031 -0.13437,0.06719 -0.215,0.1075c2.35156,-3.225 3.655,-7.65937 3.655,-13.2225c0,-8.78812 -2.88906,-25.62531 -3.01,-26.3375l-0.5375,-2.9025h0.1075v-17.2zM19.565,44.72h14.835v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-5.71094,0 -8.6,-4.05812 -8.6,-12.04c0,-6.15437 1.57219,-17.15969 2.365,-22.36zM41.28,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM65.36,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM89.44,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM113.52,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM137.6,44.72h14.7275c0.81969,5.20031 2.4725,16.20563 2.4725,22.36c0,7.98188 -2.88906,12.04 -8.6,12.04c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM34.4,103.2h55.04v41.28h-55.04zM106.64,103.2h30.96v55.04h-30.96z">
+                                  </path>
+                                </g>
+                              </g>
+                            </svg>
+                          </p>
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Retail</h4>                        
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Industry - Indicator - 2 -->
+                    <li data-target="#carouselIndustries" data-slide-to="1" class="col-2">
+                        <div class="card indicator-2">
+                            <div class="card-body d-flex align-items-center justify-content-center p-3">
+                              <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                    font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g>
+                                      <path
+                                        d="M33.97,0.215c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-9.05687,10.81719 -14.5125,24.79219 -14.5125,39.99c0,15.02313 5.30781,28.79656 14.19,39.56c1.22281,1.47813 3.41313,1.70656 4.89125,0.48375c1.47813,-1.22281 1.70656,-3.41312 0.48375,-4.89125c-7.90125,-9.58094 -12.685,-21.75531 -12.685,-35.1525c0,-13.545 4.8375,-25.96125 12.9,-35.5825c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM136.955,0.215c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c8.0625,9.62125 12.9,22.0375 12.9,35.5825c0,13.39719 -4.78375,25.57156 -12.685,35.1525c-1.22281,1.47813 -0.99437,3.66844 0.48375,4.89125c1.47813,1.22281 3.66844,0.99438 4.89125,-0.48375c8.88219,-10.76344 14.19,-24.53687 14.19,-39.56c0,-15.19781 -5.45562,-29.17281 -14.5125,-39.99c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM53.965,11.5025c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-6.50375,7.76688 -10.4275,17.79125 -10.4275,28.7025c0,10.91125 3.92375,20.93563 10.4275,28.7025c0.76594,1.03469 2.02906,1.54531 3.29219,1.35719c1.26313,-0.20156 2.31125,-1.075 2.72781,-2.28437c0.41656,-1.20938 0.12094,-2.55313 -0.7525,-3.48031c-5.50937,-6.57094 -8.815,-15.03656 -8.815,-24.295c0,-9.25844 3.30563,-17.71062 8.815,-24.295c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM116.96,11.5025c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c5.50938,6.58438 8.815,15.03656 8.815,24.295c0,9.25844 -3.30562,17.72406 -8.815,24.295c-0.87344,0.92719 -1.16906,2.27094 -0.7525,3.48031c0.41656,1.20937 1.46469,2.08281 2.72781,2.28437c1.26312,0.18813 2.52625,-0.3225 3.29219,-1.35719c6.50375,-7.76687 10.4275,-17.79125 10.4275,-28.7025c0,-10.91125 -3.92375,-20.93562 -10.4275,-28.7025c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM86,27.52c-7.60562,0 -13.76,6.15438 -13.76,13.76c0,4.55531 2.17688,8.57313 5.59,11.0725l-41.71,110.295c-1.33031,3.56094 0.47031,7.53844 4.03125,8.86875c3.56094,1.33031 7.53844,-0.47031 8.86875,-4.03125l4.4075,-11.5025l59.0175,-16.4475l10.535,27.95c1.33031,3.56094 5.30781,5.36156 8.86875,4.03125c3.56094,-1.33031 5.36156,-5.30781 4.03125,-8.86875l-41.71,-110.295c3.41313,-2.49937 5.59,-6.51719 5.59,-11.0725c0,-7.60562 -6.15437,-13.76 -13.76,-13.76zM86,69.875l8.815,23.22l-20.5325,7.74zM99.6525,105.8875l5.4825,14.62l-21.93,-8.2775zM66.7575,120.7225l26.23,9.89l-33.54,9.3525z">
+                                      </path>
+                                    </g>
+                                  </g>
+                                </svg></p>
+                              <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Telecom</h4>                         
+                            </div>
+                          </div>
+                    </li>
+                    <!-- Industry - Indicator - 3 -->
+                    <li data-target="#carouselIndustries" data-slide-to="2" class="col-2">
+                        <div class="card indicator-3">
+                        <div class="card-body d-flex align-items-center justify-content-center p-3">
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                              <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g>
+                                  <path
+                                    d="M85.82531,6.96734c-0.516,0 -1.02931,0.08331 -1.54531,0.25531l-75.68,35.43469c-1.032,0.688 -1.72,1.72134 -1.72,3.09734v5.84531c0,2.064 1.376,3.44 3.44,3.44h27.52c1.72,0 3.44,1.72 3.44,3.44c0,1.72 -1.72,3.44 -3.44,3.44h-3.44v72.24h103.2v-72.24h-3.44c-1.72,0 -3.44,-1.72 -3.44,-3.44c0,-1.72 1.72,-3.44 3.44,-3.44h27.52c2.064,0 3.44,-1.376 3.44,-3.44v-5.84531c0,-1.376 -0.68665,-2.40934 -2.06265,-3.09734l-75.68,-35.43469c-0.516,-0.172 -1.03603,-0.25531 -1.55203,-0.25531zM82.56,37.84h6.88v10.66265c13.072,1.72 17.2,13.76135 17.2,20.29735h-6.88c0,-1.376 -0.688,-13.76 -13.76,-13.76c-13.416,0 -13.76,9.976 -13.76,10.32c0,7.224 5.50669,9.288 14.79469,12.04c8.6,2.752 19.60531,5.848 19.60531,18.92c0,4.472 -1.37869,8.60269 -4.47469,11.35469c-3.784,3.784 -9.28531,5.15866 -12.72531,5.50266v10.66265h-6.88v-10.66265c-4.472,-0.688 -8.60269,-2.408 -11.35469,-5.16c-5.848,-6.192 -5.84531,-14.79335 -5.84531,-15.13735h6.88c0,0 -0.00135,6.192 3.78265,10.32c2.408,2.408 5.50535,3.44 9.97735,3.44c0,0 7.57069,0.00135 11.35469,-3.78265c1.72,-1.72 2.40531,-3.78535 2.40531,-6.53735c0,-7.224 -5.50669,-9.288 -14.79469,-12.04c-8.6,-2.752 -19.60531,-6.192 -19.60531,-18.92c0,-5.504 4.128,-15.48135 17.2,-16.85735zM20.64,61.92v72.24h6.88v-72.24zM144.48,61.92v72.24h6.88v-72.24zM17.2,141.04c-5.848,0 -10.32,4.472 -10.32,10.32v6.88h158.24v-6.88c0,-5.848 -4.472,-10.32 -10.32,-10.32z">
+                                  </path>
+                                </g>
+                              </g>
+                            </svg>
+                          </p>
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Banking</h4>                         
+                        </div>            
+                      </div>
+                    </li>
+                    <!-- Industry - Indicator - 4 -->
+                    <li data-target="#carouselIndustries" data-slide-to="3" class="col-2">
+                        <div class="card indicator-4">
+                        <div class="card-body d-flex align-items-center justify-content-center p-3">
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                              <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g>
+                                  <path
+                                    d="M9.675,27.52c-6.7725,0.5375 -9.675,6.1275 -9.675,9.9975v89.7625c0,5.68406 4.63594,10.32 10.32,10.32h14.0825c1.63938,9.75563 10.11844,17.2 20.3175,17.2c10.19906,0 18.67813,-7.44437 20.3175,-17.2h41.6025v-100.0825c0,-5.32125 -4.67625,-9.9975 -9.9975,-9.9975zM78.905,50.2025l5.0525,4.6225l-34.83,38.055l-23.005,-20.3175l4.515,-5.16l17.9525,15.8025zM113.52,51.6v86h3.7625c1.63938,9.74219 10.105,17.2 20.3175,17.2c10.2125,0 18.66469,-7.45781 20.3175,-17.2h3.7625c5.30781,0 10.32,-5.01219 10.32,-10.32v-33.0025c0,-6.74562 -4.86437,-13.96156 -5.4825,-14.835l-14.19,-19.0275c-2.64719,-3.30562 -8.07594,-8.815 -14.7275,-8.815zM130.72,58.48h6.88c2.71438,0 6.18125,2.39188 9.245,6.235l14.0825,18.8125c1.03469,1.49156 3.53406,5.6975 4.085,9.3525h-30.8525c-1.54531,0 -3.44,-1.89469 -3.44,-3.44zM44.72,120.4c7.64594,0 13.76,6.11406 13.76,13.76c0,7.64594 -6.11406,13.76 -13.76,13.76c-7.64594,0 -13.76,-6.11406 -13.76,-13.76c0,-7.64594 6.11406,-13.76 13.76,-13.76zM137.6,120.4c7.59219,0 13.76,6.16781 13.76,13.76c0,7.59219 -6.16781,13.76 -13.76,13.76c-7.59219,0 -13.76,-6.16781 -13.76,-13.76c0,-7.59219 6.16781,-13.76 13.76,-13.76z">
+                                  </path>
+                                </g>
+                              </g>
+                            </svg>
+                          </p>
+                          <h4 class="title-3 ml-3 d-none d-lg-block mt-3">Logistics</h4>                         
+                        </div>
+                        </div>
+                    </li>
+                    <!-- Industry - Indicator - 5 -->
+                    <li data-target="#carouselIndustries" data-slide-to="4" class="col-2">
+                        <div class="card indicator-5">
+                        <div class="card-body d-flex align-items-center justify-content-center p-3">
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172">
+                              <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                font-weight="normal" font-size="none" text-anchor="start" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g>
+                                  <path
+                                    d="M167.3216,66.1512l-79.12,-61.92c-1.2728,-1.0664 -3.1304,-1.0664 -4.4032,0l-79.12,61.92c-1.4448,1.204 -1.6512,3.3712 -0.4472,4.8504c1.204,1.4448 3.3712,1.6512 4.8504,0.4472l4.6784,-3.8528v90.644c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.644l4.6784,3.8528c0.6536,0.516 1.4104,0.7912 2.2016,0.7912c0.9976,0 1.9608,-0.4128 2.6488,-1.2384c1.204,-1.4792 0.9976,-3.6464 -0.4472,-4.8504zM116.96,106.64h-24.08v24.08h-13.76v-24.08h-24.08v-13.76h24.08v-24.08h13.76v24.08h24.08z">
+                                  </path>
+                                </g>
+                              </g>
+                            </svg>
+                          </p>
+                          <h4 class="title-3 d-none d-lg-block ml-3 mt-3">HealthCare</h4>                         
+                        </div>
+                        </div>
+                    </li>
+                  </ol>
+            </div>
+          <div class="col-12 px-0">
+              <div class="carousel-inner">
+                <!-- Industry - 1 -->
+                  <div class="carousel-item active">
+                     <div class="industry-content container py-0 pl-4 content-1">
+                        <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                        <h3 class="pt-4 title-3">Our Team of Experts Delivers Top-Notch Retail Software Solutions & Services</h3>                         
+                            <p class="text-2">Zyclyx helps retailers transform their technology to gain a 360-degree view of consumers and serve them across the entire purchase process using retail supply management and retail consulting.</p>
+                            <!-- <h5 class="title-3">Get the edge in Retail with Zyclyx</h5> -->
+                        <div class="row">                          
+                          <div class="col-md-3 col-sm-6 card">
+                            <div class="card-body bg-white p-2">
+                              <h4 class="title-3">Omni Channel</h4>
+                              <p class="text-2">Blockchain Technology can be a game changer for a Multichannel retailer, blockchain a tool in supply chain bring greater efficiency to enable secure, accurate sharing and verification across entire supply chains.</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6 card">
+                              <div class="card-body bg-white p-2">
+                                  <h4 class="title-3">Retail Data Analytics</h4>
+                                  <p class="text-2">Machine learning helps retailers to cope up with demand prediction to prevent additional expenses, Retail analytics is the process of providing analytical data on inventory levels, supply chain movement, consumer demand, etc. for making marketing decisions.</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6 card">
+                            <div class="card-body bg-white p-2">
+                                <h4 class="title-3">Multichannel Stores</h4>
+                                <p class="text-2">Artificial Intelligence can serve as a boon for retail companies that gather and possess customer data. AI can derive meaningful conclusions from massive amount of data and help companies to create personalized shopping experiences.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 card">
+                            <div class="card-body bg-white p-2">
+                                <h4 class="title-3">Digital Assistance</h4>
+                                <p class="text-2">Robots are improving in-store customer service. The bot helps the customers find an item they are searching for and provide other product information,Customers can ask for the products they need to locate through speech or via touch panels.</p>
+                            </div>
+                        </div>                        
+                        </div>                       
+                     </div>
+                  </div>
+                  <!-- Industry - 2 -->
+                  <div class="carousel-item">
+                    <div class="industry-content container py-0 pl-4 content-2">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                          
+                        <h3 class="pt-4 title-3">
+                          Enhance the technical growth of Telecommunication and draw in more revenue for your company</h3>                                                  
+                           <p class="text-2">Zyclyx can play a pivotal role in driving transformation across the telecom industry, bringing greater efficiency to telecommunications functions – from supply chain and operations to enterprise management and customer care.</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-3 col-sm-6 card">
+                           <div class="card-body p-2">
+                             <h4 class="title-3">High Customer Service Expectations</h4>
+                             <p class="text-2">Zyclyx who struggle to meet the demand for high network availability and superior service across all channels face high rates of customer churn and risk losing credibility.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h4 class="title-3">Digital Service Providers</h4>
+                                 <p class="text-2">Operators must evolve into digital service providers, reimagining their business models, upgrading network infrastructure and creating next-gen offerings for their customers – fast and at scale.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                          <div class="card-body p-2">
+                              <h4 class="title-3">Removing the Burden of Process</h4>
+                              <p class="text-2">RPA can boost customer responsiveness by streamlining execution of once complex, labor-intensive and time-consuming processes such as billing, data entry, ticket management, and order fulfillment.</p>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-12 card">
+                          <div class="card-body p-2">
+                              <h4 class="title-3">Significant Reduction in TCO</h4>
+                              <p class="text-2">Zyclyx customers enjoy RPA at a lower Total Cost of Ownership (TCO). That’s because Zyclyx’s patented visual recognition technology allows business users to intuitively build automation scenarios on any application.</p>
+                          </div>
+                      </div>
+                       </div>  
+                    </div>
+                 </div>
+                  <!-- Industry - 3 -->
+                  <div class="carousel-item">
+                    <div class="industry-content container py-0 pl-4 content-3">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                       <h3 class="pt-4 title-3">RPA represents the next wave of automation that addresses a slew of challenges in the Banking industry.</h3>                         
+                           <p class="text-2"> Regardless of its size and type, business deals with bank as well as financial services. With our handy services related to baking & financial software, we provide you with complete solutions for business that aspire to increase the level of operational efficiency.</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-3 col-sm-12 card">
+                           <div class="card-body p-1">
+                             <h4 class="title-3">Assesment</h4>
+                             <p class="text-2 mb-0">Conduct a detailed analysis to shortlist the processes suitable for RPA. List the operational issues that can be resolved through RPA. Assess their feasibility and impact.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h4 class="title-3">Strong Business Case</h4>
+                                 <p class="text-2 mb-0">Document the cost and eficiency gains that RPA will deliver.Consider running a proof of concept to demonstrate the benefits along with metrics on costs, time and effort, efficiency,and resource utilization.</p>
+                             </div>
+                         </div>
+                                                
+                         <div class="col-md-3 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h4 class="title-3">ATM Testing</h4>
+                                 <p class="text-2 mb-0">A global bank deployed an ATM testing robot to automate the test cases that were earlier conducted manually, it has components like vision system,High dexterity robotic arm,End effector,Processing unit.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                             <div class="card-body p-1">
+                                 <h4 class="title-3">Account Opening Process</h4>
+                                 <p class="text-2 mb-0">A global bank has used robots in the account opening process to extract information from input forms and feed it into different applications. This has helped the bank eliminate error-prone manual data entry processes.</p>
+                             </div>
+                         </div>                          
+                       </div>
+                    </div>
+                 </div>
+                  <!-- Industry - 4 -->
+                  <div class="carousel-item">
+                    <div class="industry-content container py-0 content-4">
+                       <!-- <h3 class="title-2">Retail Industry</h3> -->                         
+                       <h3 class="pt-4 title-3">Our Solutions in Logistics provides innovative and integrated transportation services to meet all your needs.</h3>                         
+                           <p class="text-2">Zyclyx Logistics Solutions helps comprehensive warehousing, distribution networks with tailor-made solutions. We provide a complete network solution in warehousing and distribution to reduce logistics cost and increase effectiveness.</p>                                                                         
+                           <div class="row">                          
+                            <div class="col-md-3 col-sm-6 card">
+                              <div class="card-body bg-white p-2">
+                                <h4 class="title-3"> Automated Warehousing</h4>
+                                <p class="text-2">Zyclyx AI solutions transform warehousing operations such as collecting and analyzing information or inventory processing, Using computer vision technology in Automated warehouses allows recognizing and organizing the items</p>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 card">
+                                <div class="card-body bg-white p-2">
+                                    <h4 class="title-3">Back Office Operations</h4>
+                                    <p class="text-2"> Back office operations are vital for the logistics sector, Our solutions in AI and RPA allow employees to speed up the working processes, The companies with supply chains can save time and money since back office automation.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 card">
+                              <div class="card-body bg-white p-2">
+                                  <h4 class="title-3">Predict the Demand</h4>
+                                  <p class="text-2"> AI-based tools tend to predict better than human specialists.
+                                    Artificial intelligence technology can assist in predicting demand After that, this information can make warehouse management easier.</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6 card">
+                              <div class="card-body bg-white p-2">
+                                  <h4 class="title-3">Improve Customer Experience</h4>
+                                  <p class="text-2">Our Artificial Intelligence technology solutions helps to improve customer experience, clients can get a more personalized experience and, as a result, trust the company more.</p>
+                              </div>
+                          </div>                        
+                          </div>
+                    </div>
+                 </div>
+                  <!-- Industry - 5 -->
+                  <div class="carousel-item">
+                    <div class="industry-content container py-0 content-5">
+                       <!-- <h3 class="title-2">Health Care Industry</h3> -->                                                 
+                       <h3 class="pt-4 title-3">Combining Health Sector and technology for providign better service to the patients</h3>                                                  
+                           <p class="text-2">Zyclyx helps many of these challenges impact healthcare service providers on a variety of fronts it is particularly true in the area of healthcare companies’ revenue management</p>                                                                         
+                       <div class="row">                          
+                         <div class="col-md-3 col-sm-12 card">
+                           <div class="card-body p-2">
+                             <h4 class="title-3">Billing and Compliance</h4>
+                             <p class="text-2">The medical Billing process is essential to healthcare providers as it allows them to receive reimbursement from an insurance company for the services which they have provided to a patient and thus keep their doors open for business always.</p>
+                           </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                             <div class="card-body p-2">
+                                 <h4 class="title-3">Clinical Integration</h4>
+                                 <p class="text-2">Hospitals and medical facilities have an important job of saving lives and providing quality care for their patients. In a high-stress environment like healthcare, it’s best to try to operate as streamlined and efficient as possible.</p>
+                             </div>
+                         </div>
+                         <div class="col-md-3 col-sm-12 card">
+                          <div class="card-body p-2">
+                              <h4 class="title-3">Clinical Administration</h4>
+                              <p class="text-2">One of the biggest areas where robotic process automation is taking over is the healthcare industry,The technology automates menial, time-consuming and repetitive processes, which can ultimately improve billing efficiency and a lower amount of write-offs.</p>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-12 card">
+                          <div class="card-body p-2">
+                              <h4 class="title-3">Care Management</h4>
+                              <p class="text-2">RPA will help in centralizing and streamlining care management workflows effortlessly. Technology that is deployed to automate processes will give you chunks of data to deal with. The data when processed and analyzed can be used to improve performance.</p>
+                          </div>
+                      </div>
+                       </div>
+ 
+                    </div>
+                 </div>
+                </div>           
+          </div>          
+        </div>
+      </div>
   </section>
 
   <!-- 
@@ -695,83 +1019,75 @@
     </div>
     <div class="container owl-carousel testimonials-carousel p-0 mt-sm-3 mt-md-5" data-aos="zoom-in"
       data-aos-delay="150" data-aos-duration="1000">
+      <!-- card - 1 -->
       <div class="testimonial-inner mx-3">
-        <div class="testimonial-card py-md-3">
-          <p class="text-1 mx-3 py-3"><i class="fa fa-quote-left quote-left mr-2 "></i>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
-          <div class="row d-flex justify-content-start align-items-center mb-2">
-            <p class="col-6 col-md-3 client-photo mb-0"><img src="./images/client_img.jpeg" alt=""></p>
-            <div class="col-6 col-md-8 d-flex  client-details">
-              <div>
-                <p class="title-2 mb-1">Lorem ipsum</p>
-                <p class="text-3 mb-1">ceo lorem </p>
-              </div>
-              <div class="d-flex align-items-center">
-                <ul class="rating">
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </div>
+          <div class="testimonial-card">
+            <p class="mx-3 pt-3 px-2"><i class="fa fa-quote-left quote-left mr-2 "></i>ZYCLYX provided services to us for the Robotic Process Automation related work, all team members are really proactive in making sure the project stays on track. I really appreciate all your hard work and support along the way.</p>                 
+                  <p class="text-right mb-1 mr-3">- Abernathy Group</p>                     
+               
+              <div class="row d-flex justify-content-start align-items-center mb-1 mx-3">
+                <div class="col-4">
+                    <p class="mb-0"><img class="rounded-circle  border bg-white" src="./images/clients/user-1.jpg" alt="profile photo"></p>
+                </div>
+                <div class="col-8 align-self-end">
+                    <ul class="rating">
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                </div>                                                
             </div>
+  
           </div>
-
-        </div>
       </div>
       <!-- card - 2 -->
       <div class="testimonial-inner mx-3">
-        <div class="testimonial-card py-md-3">
-          <p class="text-1 mx-3 py-3"><i class="fa fa-quote-left quote-left mr-2 "></i>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
-          <div class="row d-flex justify-content-start align-items-center mb-2">
-            <p class="col-6 col-md-3 client-photo mb-0"><img src="./images/client_img.jpeg" alt=""></p>
-            <div class="col-6 col-md-8 d-flex  client-details">
-              <div>
-                <p class="title-2 mb-1">Lorem ipsum</p>
-                <p class="text-3 mb-1">ceo lorem </p>
-              </div>
-              <div class="d-flex align-items-center">
-                <ul class="rating">
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </div>
+          <div class="testimonial-card">
+            <p class="mx-3 pt-3 px-2"><i class="fa fa-quote-left quote-left mr-2 "></i>ZYCLYX is a great partner to work with, they have provided technology advances with ML capabilities, that we didn't come up with on our own.The team displayed a high degree of professionalism and knowledge to help us achieve our objectives.</p>                 
+                  <p class="text-right mb-1 mr-3">- Johns Group</p>                     
+               
+              <div class="row d-flex justify-content-start align-items-center mb-1 mx-3">
+                <div class="col-4">
+                    <p class="mb-0"><img class="rounded-circle  border bg-white" src="./images/clients/user-2.jpg" alt="profile photo"></p>
+                </div>
+                <div class="col-8 align-self-end">
+                    <ul class="rating">
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                      </ul>
+                </div>                                                
             </div>
+  
           </div>
-
-        </div>
       </div>
       <!-- card - 3 -->
       <div class="testimonial-inner mx-3">
-        <div class="testimonial-card py-md-3">
-          <p class="text-1 mx-3 py-3"><i class="fa fa-quote-left quote-left mr-2 "></i>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Culpa molestiae perferendis voluptates ut a </p>
-          <div class="row d-flex justify-content-start align-items-center mb-2">
-            <p class="col-6 col-md-3 client-photo mb-0"><img src="./images/client_img.jpeg" alt=""></p>
-            <div class="col-6 col-md-8 d-flex  client-details">
-              <div>
-                <p class="title-2 mb-1">Lorem ipsum</p>
-                <p class="text-3 mb-1">ceo lorem </p>
-              </div>
-              <div class="d-flex align-items-center">
-                <ul class="rating">
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li> <i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </div>
+          <div class="testimonial-card">
+            <p class="mx-3 pt-3 px-2"><i class="fa fa-quote-left quote-left mr-2 "></i>I am happy to share all the facts about the services I got from ZYCLYX, they handled our work very effectively as our work required working in multiple shifts as well. I have been very pleased with the team and their support of our needs. </p>                 
+                  <p class="text-right mb-1 mr-3">- Hoeger LLC</p>                     
+               
+              <div class="row d-flex justify-content-start align-items-center mb-1 mx-3">
+                <div class="col-4">
+                    <p class="mb-0"><img class="rounded-circle  border bg-white" src="./images/clients/user-3.jpg" alt="profile photo"></p>
+                </div>
+                <div class="col-8 align-self-end">
+                    <ul class="rating">
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li> <i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                </div>                                                
             </div>
+  
           </div>
-
-        </div>
-      </div>
+      </div>               
     </div>
   </section>
 
@@ -935,14 +1251,11 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     </div>
     <div class="container mt-sm-3 mt-md-5" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">
       <div class="owl-carousel clients-carousel">
-        <div class="client"><img src="images/client-1.png" alt="client-1"></div>
-        <div class="client"><img src="images/client-2.png" alt="client-2"></div>
+        <div class="client"><img src="images/clients/infospoke.jpg" alt="client-1"></div>
+        <div class="client"><img src="images/clients/Intellect.png" alt="client-2"></div>
         <div class="client"><img src="images/client-3.png" alt="client-3"></div>
         <div class="client"><img src="images/client-4.png" alt="client-4"></div>
-        <div class="client"><img src="images/client-5.png" alt="client-5"></div>
-        <div class="client"><img src="images/client-6.png" alt="client-6"></div>
-        <div class="client"><img src="images/client-7.png" alt="client-7"></div>
-        <div class="client"><img src="images/client-8.png" alt="client-8"></div>
+        <div class="client"><img src="images/client-5.png" alt="client-5"></div> 
       </div>
     </div>
   </section>
@@ -1006,9 +1319,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         <ul class="social-network d-flex justify-content-md-start
           justify-content-center mt-3 ">
           <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
-          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
-          <li><a href="#" class="icoGoogle" title="Youtube"><i class="fab fa-youtube mr-3"></i></a></li>
-          <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>           
+          <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
         </ul>
       </div>
     </div>
@@ -1040,7 +1352,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <script src="./js/vendor/jquery-3.4.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="./js/vendor/bootstrap.bundle.min.js"></script>
- 
+
   <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/vendor/aos.js"></script>
   <script src="./js/vendor/waypoints.min.js"></script>
@@ -1055,19 +1367,21 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <script src="https://www.google-analytics.com/analytics.js" async></script> -->
   <script>
     // select fonts
-    let font = document.getElementById('font');
-    font.addEventListener('change', function () {
-      document.documentElement.style.setProperty('--font', font.value);
-      console.log(font.value)
-    })
+    // let font = document.getElementById('font');
+    // font.addEventListener('change', function () {
+    //   document.documentElement.style.setProperty('--font', font.value);
+    //   console.log(font.value)
+    // })
 
-    let color = document.getElementById('color');
-    color.addEventListener('change', function () {
-      document.documentElement.style.setProperty('--color', color.value);
-    })
+    // let color = document.getElementById('color');
+    // color.addEventListener('change', function () {
+    //   document.documentElement.style.setProperty('--color', color.value);
+    // })
 
     // scroll top button
+     
     window.onscroll = function () { scrollFunction() };
+
     function scrollFunction() {
       let scrollBtn = document.querySelector(".scroll-btn");
       if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
@@ -1076,9 +1390,47 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         scrollBtn.style.display = "none";
       }
     }
+    // animate scroll to top
     document.getElementById('scrollTop').addEventListener("click", function () {
       $('html, body').animate({ scrollTop: 0 }, 'slow');
     })
+    // END - scroll to top
+
+    // remove 
+    $(document).ready(function(){
+      $('.inactiveUntilOnLoad').removeClass('inactiveUntilOnLoad');
+    })
+
+    // home page slider    
+    $('#homeCarousel').carousel({
+      interval: 5000,
+      pause: false
+    })
+
+    // Industries slider
+    $('#carouselIndustries').carousel({
+      interval: 8000,       
+    })
+    
+    // active slide indicator
+    let indicator = document.querySelector(".carousel-indicators::before");
+    let index = 0;
+    $('#homeCarousel').on('slide.bs.carousel', function (e) {
+      index = e.to;
+      if (index === 0) {        
+        document.documentElement.style.setProperty('--indicator-position', '0%');         
+      }
+      if (index === 1) {         
+        document.documentElement.style.setProperty('--indicator-position', '25%');
+      }
+      if (index === 2) {         
+        document.documentElement.style.setProperty('--indicator-position', '50%');
+      }
+      if (index === 3) {         
+        document.documentElement.style.setProperty('--indicator-position', '75%');
+      }
+    })
+
   </script>
 </body>
 

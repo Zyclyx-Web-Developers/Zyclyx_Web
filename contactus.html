@@ -162,7 +162,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary" id="contactBtn">
-                            <span class="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
+                            <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
                             <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
                                 aria-hidden="true"></span>
                         </button>
@@ -171,6 +171,22 @@
                     <!-- 
                         ==== END - CONTACT FORM ====
                      -->
+
+                     <!-- Contact form Modal -->
+                     <div class="modal" tabindex="-1" role="dialog" id="contactModal">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">                             
+                            <div class="modal-body">
+                              <p>Hello, <span id="contactName"></span></p>
+                              <p>Thank you for Contacting Us!</p>                               
+                            </div>
+                            <div class="modal-footer">                                     
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>                            
+                          </div>
+                        </div>
+                      </div>
+                     <!-- END - contact form modal -->
                 </div>
             </div>
         </div>
