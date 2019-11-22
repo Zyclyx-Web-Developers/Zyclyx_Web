@@ -506,14 +506,17 @@ border: 1px solid rgba(0, 157, 88,0.2);
   border-radius: 0 !important;
   border: none;
 }
-.industry-content{  
+.industry-carousel .title-3{
+  font-size: 1.1rem !important;
+}
+.industry-carousel .industry-content{  
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #f3f7fa;
-  /* border: 1px solid #21c87a; */
-  background-color:#f3f7fa;
+  padding-bottom: 2rem;  
 }
  
+.industry-carousel .carousel-item{
+  background-color: #f3f7fa;
+}
 .industry-carousel .carousel-indicators{ 
   display: flex;
   flex-direction: column;
@@ -549,6 +552,11 @@ border: 1px solid rgba(0, 157, 88,0.2);
   bottom: -12px;
   z-index: 99;
 }
+.industry-carousel .card-content{
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 123, 255,0.2);
+   
+}
 .industry-content h3{
   /* text-align: center; */
   background-color: transparent !important;
@@ -562,7 +570,8 @@ border: 1px solid rgba(0, 157, 88,0.2);
 .industry-content .card{
   border: none;
   border-radius: 0 !important;
-  padding: 0.4rem;
+  padding: 0 !important;
+  /*   */
 }
  
 .industry-content .card{
@@ -572,6 +581,8 @@ border: 1px solid rgba(0, 157, 88,0.2);
 .industry-content .card-body{
   border-radius: 0px;
   width: 100% !important;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 .industry-carousel .carousel-indicators .active svg{
   fill:#ffffff !important;
@@ -604,7 +615,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
 .industry-carousel .active .card.indicator-2:after{
   border-top-color: #6610f2;   
 }
-.industry-carousel .indicator-2 h4{
+.industry-carousel .indicator-2 h4,.industry-carousel .carousel-item .far{
   color: #6610f2;
 }
 .content-2 h4{
@@ -899,6 +910,7 @@ font-weight: 400 !important;
 .blog-post .card{
   transition: all 0.2s linear;
   overflow: hidden;
+  border: 1px solid rgba(0, 123, 255,0.4);
 }
 .blog-post .card img{  
   transition: all 0.2s linear;
@@ -936,13 +948,14 @@ font-weight: 400 !important;
   text-align: center;  
 }
 .company-numbers .card .stats-title{
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #fafafa;
   font-weight: 800;
 }
 .company-numbers .card .stats-caption {
   color: #cee8e6;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  align-items: center;
   font-weight: 800;
 }
 /* 
@@ -950,23 +963,30 @@ font-weight: 400 !important;
 */
  
 .client{
-  padding:0.8rem 3rem;
+  padding:1rem 3rem;
   border-radius: 0.3rem;
   margin: 1rem !important;
   max-width: 300px;
-  min-height: 75px;
+  height: 100px;
   display:flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   /* background-color:#f3f7fa; */
-  box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 123, 255,0.3);
+  /* margin: 0 auto;  */
+  transition: border 1s linear;
 }
 .our-clients img{     
-  width: 100%;
-  height: 50px;  
+  width: 100%;   
 }
- 
+.our-clients .owl-item.center .client{
+  border: 1px solid rgba(0, 123, 255,1);
+  transition: border 1s linear;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
+    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
+}
 /* 
 ==== END - CLIENT LOGOS ====
 */
