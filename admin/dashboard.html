@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <!-- Main navbar -->
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0 ml-3" href="#"><img  src="../images/logo-white.png" alt="Zyclyx"></a>       
       <ul class="navbar-nav px-3 d-flex flex-row align-items-center">
@@ -36,53 +37,106 @@
 
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column mt-3">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                    <i class="fas fa-home"></i>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="far fa-envelope"></i>
-                  Messages
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-wpforms"></i>
-                  Job Aplications
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-file-import"></i>
-                  Job Posts
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-pen-square"></i>
-                  Post a New Job
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="signOut-2">
-                    <i class="fas fa-sign-out-alt"></i>
-                  Sign out
-                </a>
-              </li>
-            </ul>
+        <!-- Side navbar -->
+        <div class="col-2">
+        <nav class="nav nav-tabs flex-column side-nav">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
+            <a class="nav-link messages-link" id="messages-tab"  data-toggle="tab" href="#messages" role="tab" aria-controls="home" aria-selected="false"> <i class="far fa-envelope fa-fw mx-2"></i>Messages</a>
+            <a class="nav-link applications-link" id="applications-tab"  data-toggle="tab" href="#applications" role="tab" aria-controls="home" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+            <a class="nav-link openings-link" id="openings-tab" data-toggle="tab" href="#openings" role="tab" aria-controls="home" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+            <a class="nav-link postjob-link" id="newjob-tab" data-toggle="tab" href="#newjob" role="tab" aria-controls="home" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+            <a class="nav-link signout-link" id="signOut-2"><i class="fas fa-fw fa-sign-out-alt mx-2"></i>Sign out</a>             
+          </nav>
+        </div>
+        <!-- Content Area -->
+        <div class="col-10">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <h3>Dashboard</h3>
+                </div>
+                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                  <h3>Messages</h3>
+                </div>
+                <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+                  <h3>Job Applications</h3>
+                </div>
+                <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
+                    <h3>All Open Positions</h3>
+                  </div>
+                <div class="tab-pane fade show active" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
+                    <div class="container py-4">
+                      
+                      <!-- job posting form -->
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-8">
+                            <h3 class="text-left">Post a New Job Opening</h3>
+                            <form>
+                                <div class="form-row">
+                                  <div class="col-10 my-3">
+                                    <input type="text" class="form-control py-4" placeholder="Job Title">
+                                  </div>                        
+                                  <div class="col-10 my-3 form-group">                                   
+                                          <textarea class="form-control" id="description" rows="3" placeholder="Job Description"></textarea>
+                                  </div>
+                                  <div class="col-5 my-3">
+                                      <label for="location">Location</label>
+                                      <input type="text" class="form-control py-4" id="location" placeholder="Location">
+                                  </div>
+                                  <div class="col-5 my-3">
+                                      <label for="closing-date">Closing Date</label>
+                                      <input type="date" class="form-control py-4" id="closing-date" placeholder="Closing Date">
+                                  </div>
+                                  <div class="col-5 my-3">
+                                      <label for="jobType">Job Type</label>
+                                      <select class="form-control py-4" id="jobType">
+                                          <option selected disabled>Choose Job Type</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                      <a href="#">Add new Job Type</a>
+                                  </div>
+                                  <div class="col-5 my-3">
+                                      <label for="jobType">Job Category</label>
+                                      <select class="form-control py-4" id="jobType">
+                                        <option selected disabled>Choose Category</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                      <a href="#">Add new Job Category</a>
+                                  </div>
+                                  <div class="col-5">
+                                      <label for="jobType">Minimum Qualifications</label>
+                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Qualification 1"></textarea>
+                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Qualification 2"></textarea>
+                                      <textarea class="form-control mt-2" id="description" rows="2" placeholder="Qualification 3"></textarea>
+                                      <a href="#">Add one more</a>
+                                  </div>
+                                  <div class="col-5">
+                                      <label for="jobType">Minimum Requirements</label>
+                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Requirement 1"></textarea>
+                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Requirement 2"></textarea>
+                                      <textarea class="form-control mt-2" id="description" rows="2" placeholder="Requirement 3"></textarea>
+                                      <a href="#">Add one more</a>
+                                  </div>
+                                  <div class="col-5 mx-auto">
+                                      <button class="btn btn-primary my-4 px-3">Post New Job</button>            
+                                  </div>
+                                  
+                                </div>
+                              </form>
+                        </div>
+                      </div>
 
- 
-          </div>
-        </nav>
+                    </div>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"> 
-        </main>
+                  </div>
+                  
+              </div>
+        </div>
       </div>
     </div>
 
