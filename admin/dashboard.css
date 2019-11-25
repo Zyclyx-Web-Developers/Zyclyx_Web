@@ -1,11 +1,39 @@
- .side-nav{    
-   border-right: 1px solid #007bff;
+ /* Side Nav */
+ .main-sideNav{
+   background: #007bff;
+   height: 569px;
+   padding-top: 15px;
+ }
+ .nav-tabs .nav-link.active {
+  color: #007bff;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px -2px rgba(0, 0, 0, 0.623)
+}
+ .nav-tabs .nav-link {
+   border: none !important;
+  border-radius: .25rem;
+  padding: 1rem;
  }
  
- .side-nav .far, .side-nav .fas,.side-nav .fab{
-   font-size: 1.2rem;
-   line-height: 2;
- }
+ .nav-tabs {
+  border-bottom: none !important;
+}
+
+ a{
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover{
+  color: #fff;
+}
+ a:not([href]):not([tabindex]) {
+  color: #fff;
+} 
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #fff;
+}
 
  /* .side-nav .far, .side-nav .fas, .side-nav .fab{
    height: 40px;
@@ -18,6 +46,65 @@
 
  select option{
   text-transform: capitalize;
-  padding: 1rem;
-  color: #007bff;
+  padding: 1rem; 
  }
+ /* Side Nav End */
+
+
+ /* Dashboard */
+
+ .card{
+   padding: 0px;
+   border: none !important;
+ }
+.card-body{
+  border-radius: .25rem;
+  color: #fff;
+}
+.card .card1{
+  background: linear-gradient(180deg,#35df7c 0%,#25b460 100%);
+}
+.card .card2{
+  background: linear-gradient(180deg,#39f 0%,#2982cc 100%);
+}
+.card .card3{
+  background: linear-gradient(180deg,#f9b115 0%,#f6960b 100%);
+}
+.card-body h5{
+  font-size: 20px;
+}
+.card-body p{
+  font-size: 50px;
+  margin: 0px;
+}
+.RecentText{
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  z-index: 999;
+}
+.RecentText::before{
+  content: "";
+  display: block;
+  width: 42%;
+  height: 1px;
+  background: rgb(206, 206, 206);
+  top: 60px;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+}
+.RecentText::after{
+  content: "";
+  display: block;
+  width: 42%;
+  height: 1px;
+  background: rgb(206, 206, 206);
+  top: 60px;
+  z-index: -1;
+  right: 0;
+  position: absolute;
+}
+
+ /* Dashboard End */

@@ -1,8 +1,9 @@
 let token = sessionStorage.getItem('token');
-
+ 
 /*
 LOGOUT - USER
 */
+ 
 function signOut(event) {
   event.preventDefault();
   sessionStorage.removeItem("token");
@@ -12,8 +13,8 @@ document.getElementById("userName").textContent = sessionStorage.getItem("user")
 document.getElementById("signOut-1").addEventListener("click", signOut);
 document.getElementById("signOut-2").addEventListener("click", signOut);
 
-/*
-  DASHBOARD - HOME
+/* 
+   DASHBOARD - HOME
 */
 
 // get total count and update dashboard cards
@@ -51,11 +52,16 @@ let applicationsCountPath = "http://localhost:1337/jobapplications/count";
 getCount(applicationsCountPath, applicationsCountElement);
 
 /*
-CONTACT - MESSAGES
+ 
+  END - DASHBOARD HOME
 */
 
+/* 
+ CONTACT MESSAGES
+*/
+ 
 let messagesTab = document.getElementById('messages-tab');
-let messages = document.getElementById("messages");
+let messages = document.getElementById("allMessages");
 
 let path = "http://localhost:1337/enquirymessages";
 let html = '';
@@ -70,8 +76,8 @@ messagesTab.addEventListener('click', function () {
       return response.json();
     })
     .then(function (data) {
-      html += data.map(function (message) {
-        return (`<div class="message border p-3">
+      html += data.map(function (message) { 
+    return (`<div class="col-lg-5 message border p-3 m-2"> 
     <h5>${message.subject}</h5>
     <p>${message.name}</p>
     <p>${message.email}</p>
@@ -86,6 +92,7 @@ messagesTab.addEventListener('click', function () {
     .catch(function (error) {
       console.log(error);
     })
+ 
 })
 
 /*
@@ -114,8 +121,7 @@ openPositionsTab.addEventListener("click",function(){
       <p>${opening.jobcategory}</p>
       <p>${opening.jobtype}</p>
       <p>${opening.location}</p>
-      <p>${opening.dateposted}</p>
-       <ul>${}</ul>
+      <p>${opening.dateposted}</p>       
       </div>`
     })
   })
@@ -125,6 +131,7 @@ openPositionsTab.addEventListener("click",function(){
 })
 
 
+ 
 
 /*
     ADMIN - POST A NEW JOB
@@ -186,7 +193,8 @@ saveJobTypeButton.addEventListener('click', function (e) {
       },
       body: JSON.stringify(data)
     })
-      .then(function (response) {        
+ 
+      .then(function (response) {         
         getJobDetails(jobTypePath, jobTypeElement);
       })
       .then(function () {
@@ -231,7 +239,7 @@ saveJobCategoryButton.addEventListener('click', function (e) {
       .catch(function (error) {
         console.log(error);
       })
-  }
+  } 
 })
 
 // submit post job form data to API
@@ -284,4 +292,5 @@ postJobForm.addEventListener("submit",function(e){
       .catch(function (error) {
         console.log(error);
       })
+ 
 })
