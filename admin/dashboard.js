@@ -37,18 +37,18 @@ function getCount(path, elementID) {
 
 // get total messages Count
 let messagesCountElement = document.getElementById("message-count");
-let messageCountPath = 'http://localhost:1337/enquirymessages/count';
+let messageCountPath = 'https://agile-plateau-09650.herokuapp.com/enquirymessages/count';
 getCount(messageCountPath, messagesCountElement);
 
 // get total job openings count
 
 let openingsCountElement = document.getElementById("openings-count");
-let openingsCountPath = 'http://localhost:1337/jobopenings/count';
+let openingsCountPath = 'https://agile-plateau-09650.herokuapp.com/jobopenings/count';
 getCount(openingsCountPath, openingsCountElement);
 
 // get total job applications count
 let applicationsCountElement = document.getElementById("applications-count");
-let applicationsCountPath = "http://localhost:1337/jobapplications/count";
+let applicationsCountPath = "https://agile-plateau-09650.herokuapp.com/jobapplications/count";
 getCount(applicationsCountPath, applicationsCountElement);
 
 /*
@@ -63,7 +63,7 @@ getCount(applicationsCountPath, applicationsCountElement);
 let messagesTab = document.getElementById('messages-tab');
 let messages = document.getElementById("allMessages");
 
-let path = "http://localhost:1337/enquirymessages";
+let path = "https://agile-plateau-09650.herokuapp.com/enquirymessages";
 let html = '';
 
 messagesTab.addEventListener('click', function () {
@@ -102,7 +102,7 @@ let openPositionsTab = document.getElementById('openings-tab');
 let allOpenPositions = document.getElementById("allOpenPositions");
 
 openPositionsTab.addEventListener("click",function(){
-  let path = "http://localhost:1337/jobopenings";
+  let path = "https://agile-plateau-09650.herokuapp.com/jobopenings";
   let html = '';
   fetch(path, {
     headers: {
