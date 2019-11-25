@@ -17,8 +17,10 @@ window.onload = function(){
     autoplay: true,
     dots: true,
     loop: true,
+    center:true,
+    autoplaySpeed:2000,
     responsive: {
-      0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 }
+      0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
     }
   });
 
