@@ -88,6 +88,41 @@ messagesTab.addEventListener('click', function () {
     })
 })
 
+/*
+ ADMIN - GET ALL OPEN POSITIONS
+*/
+let openPositionsTab = document.getElementById('openings-tab');
+let allOpenPositions = document.getElementById("allOpenPositions");
+
+openPositionsTab.addEventListener("click",function(){
+  let path = "http://localhost:1337/jobopenings";
+  let html = '';
+  fetch(path, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+  .then(function(response){
+    return response.json();    
+  })
+  .then(function(data){
+    console.log(data);
+    html += data.map(function(opening){
+      return `<div class="opening border p-3">
+      <h5>${opening.title}</h5>
+      <p>${opening.description}</p>
+      <p>${opening.jobcategory}</p>
+      <p>${opening.jobtype}</p>
+      <p>${opening.location}</p>
+      <p>${opening.dateposted}</p>
+       <ul>${}</ul>
+      </div>`
+    })
+  })
+  .then(function(){
+    allOpenPositions.innerHTML = html;
+  })
+})
 
 
 
@@ -212,33 +247,24 @@ postJobForm.addEventListener("submit",function(e){
   let closeDate = postJobFormData.get('closedate');
   let jobType = postJobFormData.get("jobtype");
   let jobCategory = postJobFormData.get('jobcategory');
+
   let qualification1 = postJobFormData.get('qualification1');
   let qualification2 = postJobFormData.get('qualification2');
   let qualification3 = postJobFormData.get('qualification3');
+
   let requirement1 = postJobFormData.get('requirement1');
   let requirement2 = postJobFormData.get('requirement2');
   let requirement3 = postJobFormData.get('requirement3');
 
-  let requirements = {
-   reqone:requirement1,
-   reqtwo:requirement2,
-   reqthree:requirement3
- }
-
-  let qualifications = {
-    qualification1:qualification1,
-    qualification2:qualification2,
-    qualification3:qualification3
-  }
-
   let data = {
-    tilte:title,
+    title:title,
     description:description,
     location:location,
-    dateposted:closeDate,
     jobtype:jobType,
-    requirements:requirements,
-    qualifications:qualifications
+    jobcategory:jobCategory,
+    dateposted:closeDate,
+    qualifications:{one:qualification1,two:qualification2,three:qualification3},
+    requirements:{one:requirement1,two:requirement2,three:requirement3}     
   }
   console.log('Posting a New Job', JSON.stringify(data));
   fetch("http://localhost:1337/jobopenings", {
