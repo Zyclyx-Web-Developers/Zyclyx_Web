@@ -40,7 +40,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- Side navbar -->
-      <div class="col-2 h-100">
+      <div class="col-2 main-sideNav">
         <nav class="nav nav-tabs flex-column side-nav">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
             aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
@@ -58,54 +58,58 @@
       <!-- Content Area -->
       <div class="col-10">
         <div class="tab-content" id="myTabContent">
+          <!-- Dashboard home -->
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h3 class="text-center py-4"></h3>
             <div class="dashboard">
+              <div class="matBg">
               <div class="row d-flex justify-content-center align-items-center text-center">
                 <div class="col-3 card mx-2">
-                  <div class="card-body">
+                  <div class="card-body card1">
                     <h5>Messages</h5>
                     <p id="message-count"></p>
                   </div>
                 </div>
                 <div class="col-3 card mx-2">
-                  <div class="card-body">
+                  <div class="card-body card2">
                     <h5>Job Openings</h5>
                     <p id="openings-count"></p>
                   </div>
                 </div>
                 <div class="col-3 card mx-2">
-                  <div class="card-body">
+                  <div class="card-body card3">
                     <h5>Job Applications</h5>
                     <p id="applications-count"></p>
                   </div>
                 </div>
               </div>
+            </div>
               <!-- recent activity -->
-              <div class="container">
-                <h5 class="py-5">Recent Activity</h5>
+              <div class="container recentBlock">
+                <h5 class="py-5 RecentText">Recent Activity</h5>
               </div>
             </div>
           </div>
+
           <!-- Contact messages -->
           <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
             <h3 class="text-center py-5">Messages</h3>
-            <div id="messages">
-              <!-- <div class="message border p-3">
-                        <h5>Subject</h5>
-                        <p>Name</p>
-                        <p>Email</p>
-                        <p>phone</p>
-                        <p>message</p>                
-                    </div> -->
+            <div class="container">
+            <div class="row d-flex justify-content-center align-items-center" id="allMessages">
+              <!-- messages come here from API through JS -->
             </div>
           </div>
+          </div>
+          <!-- Job application details -->
           <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
             <h3>Job Applications</h3>
           </div>
+          
+          <!-- Job Openings -->
           <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
             <h3>All Open Positions</h3>
           </div>
+
           <!-- Post a new job -->
           <div class="tab-pane fade" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
             <div class="container py-4">
