@@ -15,3 +15,8 @@
   text-align: center;
   line-height: 2;
  } */
+
+ select option{
+  text-transform: capitalize;
+  padding: 1rem;
+ }
