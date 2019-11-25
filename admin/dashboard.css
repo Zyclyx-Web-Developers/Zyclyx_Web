@@ -19,4 +19,5 @@
  select option{
   text-transform: capitalize;
   padding: 1rem;
+  color: #007bff;
  }
