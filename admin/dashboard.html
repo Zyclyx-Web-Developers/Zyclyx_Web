@@ -1,161 +1,260 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Zyclyx Admin Dashboard</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/layout.css">
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-    <script>
-    if(!sessionStorage.getItem("token")){
-      window.location="login.html";
+  <title>Zyclyx Admin Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/layout.css">
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+  <script>
+    if (!sessionStorage.getItem("token")) {
+      window.location = "login.html";
     }
-    </script>
-  </head>
+  </script>
+</head>
 
-  <body>
-    <!-- Main navbar -->
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0 ml-3" href="#"><img  src="../images/logo-white.png" alt="Zyclyx"></a>       
-      <ul class="navbar-nav px-3 d-flex flex-row align-items-center">
-        <li class="user-profile">
-          <i class="fas fa-user mr-2"></i>
-          <span id="userName" class="mr-4 title-3"></span></li>
-        <li class="nav-item text-nowrap mx-4">
-          <a class="nav-link" href="#" id="signOut-1">sign out</a>
-        </li>
-      </ul>
-    </nav>
+<body>
+  <!-- Main navbar -->
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 ml-3" href="#"><img src="../images/logo-white.png" alt="Zyclyx"></a>
+    <ul class="navbar-nav px-3 d-flex flex-row align-items-center">
+      <li class="user-profile">
+        <i class="fas fa-user mr-2"></i>
+        <span id="userName" class="mr-4 title-3"></span></li>
+      <li class="nav-item text-nowrap mx-4">
+        <a class="nav-link" href="#" id="signOut-1">sign out</a>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Side navbar -->
-        <div class="col-2">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Side navbar -->
+      <div class="col-2 h-100">
         <nav class="nav nav-tabs flex-column side-nav">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
-            <a class="nav-link messages-link" id="messages-tab"  data-toggle="tab" href="#messages" role="tab" aria-controls="home" aria-selected="false"> <i class="far fa-envelope fa-fw mx-2"></i>Messages</a>
-            <a class="nav-link applications-link" id="applications-tab"  data-toggle="tab" href="#applications" role="tab" aria-controls="home" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
-            <a class="nav-link openings-link" id="openings-tab" data-toggle="tab" href="#openings" role="tab" aria-controls="home" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
-            <a class="nav-link postjob-link" id="newjob-tab" data-toggle="tab" href="#newjob" role="tab" aria-controls="home" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
-            <a class="nav-link signout-link" id="signOut-2"><i class="fas fa-fw fa-sign-out-alt mx-2"></i>Sign out</a>             
-          </nav>
-        </div>
-        <!-- Content Area -->
-        <div class="col-10">
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <h3>Dashboard</h3>
-                </div>
-                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                  <h3>Messages</h3>
-                </div>
-                <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
-                  <h3>Job Applications</h3>
-                </div>
-                <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
-                    <h3>All Open Positions</h3>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
+          <a class="nav-link messages-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+            aria-controls="home" aria-selected="false"> <i class="far fa-envelope fa-fw mx-2"></i>Messages</a>
+          <a class="nav-link applications-link" id="applications-tab" data-toggle="tab" href="#applications" role="tab"
+            aria-controls="home" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+          <a class="nav-link openings-link" id="openings-tab" data-toggle="tab" href="#openings" role="tab"
+            aria-controls="home" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+          <a class="nav-link postjob-link" id="newjob-tab" data-toggle="tab" href="#newjob" role="tab"
+            aria-controls="home" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+          <a class="nav-link signout-link" id="signOut-2"><i class="fas fa-fw fa-sign-out-alt mx-2"></i>Sign out</a>
+        </nav>
+      </div>
+      <!-- Content Area -->
+      <div class="col-10">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h3 class="text-center py-4"></h3>
+            <div class="dashboard">
+              <div class="row d-flex justify-content-center align-items-center text-center">
+                <div class="col-3 card mx-2">
+                  <div class="card-body">
+                    <h5>Messages</h5>
+                    <p id="message-count"></p>
                   </div>
-                <div class="tab-pane fade show active" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
-                    <div class="container py-4">
-                      
-                      <!-- job posting form -->
-                      <div class="row d-flex justify-content-center">
-                        <div class="col-8">
-                            <h3 class="text-left">Post a New Job Opening</h3>
-                            <form>
-                                <div class="form-row">
-                                  <div class="col-10 my-3">
-                                    <input type="text" class="form-control py-4" placeholder="Job Title">
-                                  </div>                        
-                                  <div class="col-10 my-3 form-group">                                   
-                                          <textarea class="form-control" id="description" rows="3" placeholder="Job Description"></textarea>
-                                  </div>
-                                  <div class="col-5 my-3">
-                                      <label for="location">Location</label>
-                                      <input type="text" class="form-control py-4" id="location" placeholder="Location">
-                                  </div>
-                                  <div class="col-5 my-3">
-                                      <label for="closing-date">Closing Date</label>
-                                      <input type="date" class="form-control py-4" id="closing-date" placeholder="Closing Date">
-                                  </div>
-                                  <div class="col-5 my-3">
-                                      <label for="jobType">Job Type</label>
-                                      <select class="form-control py-4" id="jobType">
-                                          <option selected disabled>Choose Job Type</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                      <a href="#">Add new Job Type</a>
-                                  </div>
-                                  <div class="col-5 my-3">
-                                      <label for="jobType">Job Category</label>
-                                      <select class="form-control py-4" id="jobType">
-                                        <option selected disabled>Choose Category</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                      <a href="#">Add new Job Category</a>
-                                  </div>
-                                  <div class="col-5">
-                                      <label for="jobType">Minimum Qualifications</label>
-                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Qualification 1"></textarea>
-                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Qualification 2"></textarea>
-                                      <textarea class="form-control mt-2" id="description" rows="2" placeholder="Qualification 3"></textarea>
-                                      <a href="#">Add one more</a>
-                                  </div>
-                                  <div class="col-5">
-                                      <label for="jobType">Minimum Requirements</label>
-                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Requirement 1"></textarea>
-                                      <textarea class="form-control my-2" id="description" rows="2" placeholder="Requirement 2"></textarea>
-                                      <textarea class="form-control mt-2" id="description" rows="2" placeholder="Requirement 3"></textarea>
-                                      <a href="#">Add one more</a>
-                                  </div>
-                                  <div class="col-5 mx-auto">
-                                      <button class="btn btn-primary my-4 px-3">Post New Job</button>            
-                                  </div>
-                                  
-                                </div>
-                              </form>
-                        </div>
+                </div>
+                <div class="col-3 card mx-2">
+                  <div class="card-body">
+                    <h5>Job Openings</h5>
+                    <p id="openings-count"></p>
+                  </div>
+                </div>
+                <div class="col-3 card mx-2">
+                  <div class="card-body">
+                    <h5>Job Applications</h5>
+                    <p id="applications-count"></p>
+                  </div>
+                </div>
+              </div>
+              <!-- recent activity -->
+              <div class="container">
+                <h5 class="py-5">Recent Activity</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Contact messages -->
+          <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <h3 class="text-center py-5">Messages</h3>
+            <div id="messages">
+              <!-- <div class="message border p-3">
+                        <h5>Subject</h5>
+                        <p>Name</p>
+                        <p>Email</p>
+                        <p>phone</p>
+                        <p>message</p>                
+                    </div> -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+            <h3>Job Applications</h3>
+          </div>
+          <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
+            <h3>All Open Positions</h3>
+          </div>
+          <!-- Post a new job -->
+          <div class="tab-pane fade" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
+            <div class="container py-4">
+
+              <!-- job posting form -->
+              <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                  <h3 class="text-left">Post a New Job Opening</h3>
+                  <form id="postJob">
+                    <div class="form-row">
+                      <div class="col-10 my-3">
+                        <input type="text" class="form-control py-4" placeholder="Job Title" required>
+                      </div>
+                      <div class="col-10 my-3 form-group">
+                        <textarea class="form-control" id="description" rows="3"
+                          placeholder="Job Description"></textarea>
+                      </div>
+                      <div class="col-5 my-3">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control py-4" id="location" placeholder="Location">
+                      </div>
+                      <div class="col-5 my-3">
+                        <label for="closing-date">Closing Date</label>
+                        <input type="date" class="form-control py-4" id="closing-date" placeholder="Closing Date">
+                      </div>
+                      <div class="col-5 my-3">
+                        <label for="jobType">Job Type</label>
+                        <select class="form-control py-4" id="jobType">
+                          <option value="" disabled selected>Choose Job Type</option>
+                        </select>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#jobTypeModal">
+                            Add a New Job Type
+                          </button>
+                      </div>
+                      <div class="col-5 my-3">
+                        <label for="jobType">Job Category</label>
+                        <select class="form-control py-4" id="jobCategory">
+                          <option value="" disabled selected>Choose Job Category</option>
+                        </select>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#jobCategoryModal">                             
+                          Add a new Job Category</button>
+                      </div>
+                      <div class="col-5">
+                        <label for="jobType">Minimum Qualifications</label>
+                        <textarea class="form-control my-2" id="description" rows="2"
+                          placeholder="Qualification 1"></textarea>
+                        <textarea class="form-control my-2" id="description" rows="2"
+                          placeholder="Qualification 2"></textarea>
+                        <textarea class="form-control mt-2" id="description" rows="2"
+                          placeholder="Qualification 3"></textarea>
+                        <a href="#">Add one more</a>
+                      </div>
+                      <div class="col-5">
+                        <label for="jobType">Minimum Requirements</label>
+                        <textarea class="form-control my-2" id="description" rows="2"
+                          placeholder="Requirement 1"></textarea>
+                        <textarea class="form-control my-2" id="description" rows="2"
+                          placeholder="Requirement 2"></textarea>
+                        <textarea class="form-control mt-2" id="description" rows="2"
+                          placeholder="Requirement 3"></textarea>
+                        <a href="#">Add one more</a>
+                      </div>
+                      <div class="col-5 mx-auto">
+                        <button class="btn btn-primary my-4 px-3">Post New Job</button>
                       </div>
 
                     </div>
-
-                  </div>
-                  
+                  </form>
+                </div>
               </div>
+              <!-- Add job category popup modal -->
+              <!-- Modal -->
+              <div class="modal fade" id="jobCategoryModal" tabindex="-1" role="dialog" aria-labelledby="jobCategoryModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="jobCategoryModalLabel">Add a New Job Category</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addJobCategory">
+                            <div class="form-group">
+                              <label for="jobtype">Job Type</label>
+                              <input type="text" name="jobcategory" class="form-control" id="jobtype" aria-describedby="emailHelp" placeholder="New Job Type" required>
+                              <small id="emailHelp" class="form-text text-muted">e.g. Full Time, Contract</small>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="saveJobCategory">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add job type popup modal -->
+              <!-- Modal -->
+              <div class="modal fade" id="jobTypeModal" tabindex="-1" role="dialog" aria-labelledby="jobTypeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="jobTypeModalLabel">Add a New Job Type</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addJobType">
+                            <div class="form-group">
+                              <label for="jobtype">Job Type</label>
+                              <input type="text" name="jobtype" class="form-control" id="jobtype" aria-describedby="emailHelp" placeholder="New Job Type" required>
+                              <small id="emailHelp" class="form-text text-muted">e.g. Full Time, Contract</small>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" id="saveJobType" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-    <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
-    <script>
-      function signOut(event){
-        event.preventDefault();
-        sessionStorage.removeItem("token");
-        window.location="login.html";
-      }
-      document.getElementById("userName").textContent = sessionStorage.getItem("user");
-      document.getElementById("signOut-1").addEventListener("click",signOut);
-      document.getElementById("signOut-2").addEventListener("click",signOut)
-    </script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+  <script src="./dashboard.js"></script>
+</body>
+
 </html>
