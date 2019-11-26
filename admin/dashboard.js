@@ -60,7 +60,7 @@ let recentJobApplicationsElement = document.getElementById("recentJobApllication
 
 // get last 3 messages
 let messagesHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Date</th><th>Subject</th></tr></thead><tbody>';
-fetch('http://localhost:1337/enquirymessages?_limit=3', {
+fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
   },
@@ -92,7 +92,7 @@ fetch('http://localhost:1337/enquirymessages?_limit=3', {
 
 // get last 3 jobposts
 let jobPostsHtml = '<table class="w-100 table table-striped"><thead><tr><th>Position</th><th>Job Type</th><th>Location</th><th>Start Date</th><th>Close Date</th></tr></thead><tbody>';
-fetch('http://localhost:1337/jobopenings?_limit=3', {
+fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
   },
@@ -125,7 +125,7 @@ fetch('http://localhost:1337/jobopenings?_limit=3', {
 
 // get last 3 job applications
 let jobApplicationHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Applied Position</th><th>Date</th></tr></thead><tbody>';
-fetch('http://localhost:1337/jobapplications?_limit=3', {
+fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
   },
@@ -261,7 +261,7 @@ let jobApplicationsTab = document.getElementById('applications-tab');
 let allJobApplications = document.getElementById("allJobApplications");
 
 function getAllJobApplications(){
-  let path = "http://localhost:1337/jobapplications";
+  let path = "https://agile-plateau-09650.herokuapp.com/jobapplications";
   let html = '';
   fetch(path, {
     headers: {
