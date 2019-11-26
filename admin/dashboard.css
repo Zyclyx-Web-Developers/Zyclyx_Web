@@ -3,6 +3,8 @@
    background: #007bff;
    height: 569px;
    padding-top: 15px;
+   position: fixed;
+   z-index: 99;
  }
  
  .nav-tabs .nav-link.active {
@@ -26,8 +28,9 @@
   text-decoration: none;
   background-color: transparent;
 }
-.main-sideNav a:hover{
+.main-sideNav a:hover{  
   color: #fff;
+  background: rgba(255, 255, 255, 0.192);
 }
 .main-sideNav a:not([href]):not([tabindex]) {
   color: #fff;
@@ -51,32 +54,53 @@
  }
  /* Side Nav End */
 
+ /* mainSideText */
+
+    .mainSideText{
+      margin-left: 210px;
+      background: #eee;
+      padding: 0px 10px;
+    }
+
+ /* mainSideText End */
 
  /* Dashboard */
 
  .card{
    padding: 0px;
    border: none !important;
-   box-shadow: 0 1px 1px 0 rgba(60,75,100,.14), 0 2px 1px -1px rgba(60,75,100,.12), 0 1px 3px 0 rgba(60,75,100,.2);
  }
 .card-body{
   border-radius: .25rem;
-  color: #fff;
+  color: #3a3a3a;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem ;
 }
-.card .card1{
-  background: linear-gradient(180deg,#35df7c 0%,#25b460 100%);
+#home .card1{
+  background: #cdfbcd;
+  color: #11a500;
+  /* background: linear-gradient(180deg,#35df7c 0%,#25b460 100%); */
 }
-.card .card2{
-  background: linear-gradient(180deg,#39f 0%,#2982cc 100%);
+#home .card2{
+  background: #c9dff5dd;
+  color: #046dd6;
+  /* background: linear-gradient(180deg,#39f 0%,#2982cc 100%); */
 }
-.card .card3{
-  background: linear-gradient(180deg,#f9b115 0%,#f6960b 100%);
+#home .card3{
+  background: #ffd497;
+  color: #ea2121dd;
+  /* background: linear-gradient(180deg,#f9b115 0%,#f6960b 100%); */
+}
+.tab-content .card-body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .card-body h5{
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
 }
 .card-body p{
-  font-size: 50px;
+  /* font-size: 50px; */
   margin: 0px;
 }
 .RecentText{
@@ -110,3 +134,24 @@
 }
 
  /* Dashboard End */
+
+
+ /* message */
+
+.message{
+  background: #fff;
+  border-radius: .25rem;
+  box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 0.308);
+  }
+#messages .head{
+  color: #fff;
+  height: 400px;
+  width: 1124px;
+  background: linear-gradient(0deg,#eee 0%,#3999ff 100%);
+}
+#messages #allMessages{
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+ /* message */
