@@ -71,10 +71,10 @@ jobtitle.innerHTML = titlehtml;
 //job details
 location.textContent=data.location;
 let date1 = new Date(data.createdAt);
-let startDateString = `${date1.getDay()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
+let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
 
 let date2 = new Date(data.dateposted);
-let closeDateString = `${date2.getDay()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
+let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
 
 startDate.textContent = startDateString;
 closeDate.textContent = closeDateString;
