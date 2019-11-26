@@ -129,12 +129,9 @@
     once:true,
     mirror:false
   });
-}
-
- 
-//  Read job posts from DB 
- 
-    let allPositionsElement = document.getElementById('jobPositions');
+   
+//  Read job posts from DB  
+let allPositionsElement = document.getElementById('jobPositions');
     let path = "http://localhost:1337/jobopenings";
     let html = '';
     fetch(path)
@@ -142,9 +139,9 @@
     return response.json();    
      })
      .then(function(data){     
-    localStorage.setItem("openingdetails",data);
+    localStorage.setItem("jobOpenings",data);
     html += data.map(function(job){
-    return (`<a href="./job-preview.html?id=${job.id}position=${job.title}" class="col-12 d-flex justify-content-between py-4 job-item">
+    return (`<a href="./job-preview.html?id=${job.id}" class="col-12 d-flex justify-content-between py-4 job-item">
                                 <h3 class="title-2 ml-3">${job.title}</h3>                                 
                                 <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>${job.location}</span></p>
     </a>`)    
@@ -153,9 +150,7 @@
    .then(function(){
        allPositionsElement.innerHTML = html;
    })
- 
- 
- 
+} 
 </script>        
 </body>
 </html>
