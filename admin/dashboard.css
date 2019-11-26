@@ -57,9 +57,8 @@
  /* mainSideText */
 
     .mainSideText{
-      margin-left: 210px;
+      margin-left: 225px;
       background: #eee;
-      padding: 0px 10px;
     }
 
  /* mainSideText End */
@@ -73,7 +72,7 @@
 .card-body{
   border-radius: .25rem;
   color: #3a3a3a;
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem ;
+  padding: 1.25rem 1.25rem 1.25rem  1.25rem ;
 }
 #home .card1{
   background: #cdfbcd;
@@ -143,15 +142,5 @@
   border-radius: .25rem;
   box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 0.308);
   }
-#messages .head{
-  color: #fff;
-  height: 400px;
-  width: 1124px;
-  background: linear-gradient(0deg,#eee 0%,#3999ff 100%);
-}
-#messages #allMessages{
-  position: absolute;
-  z-index: 1;
-  top: 40%;
-}
+
  /* message */
