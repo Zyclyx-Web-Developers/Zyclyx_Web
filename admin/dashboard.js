@@ -1,15 +1,16 @@
 let token = sessionStorage.getItem('token');
- 
+
 /*
 LOGOUT - USER
 */
- 
+
 function signOut(event) {
   event.preventDefault();
   sessionStorage.removeItem("token");
   window.location = "login.html";
 }
-document.getElementById("userName").textContent = sessionStorage.getItem("user");
+
+// document.getElementById("userName").textContent = sessionStorage.getItem("user");
 document.getElementById("signOut-1").addEventListener("click", signOut);
 document.getElementById("signOut-2").addEventListener("click", signOut);
 
@@ -51,6 +52,109 @@ let applicationsCountElement = document.getElementById("applications-count");
 let applicationsCountPath = "https://agile-plateau-09650.herokuapp.com/jobapplications/count";
 getCount(applicationsCountPath, applicationsCountElement);
 
+// get recent Activity
+
+let recentMessagesElement = document.getElementById("recentMessages");
+let recentJobPostsElement = document.getElementById("recentJobPosts");
+let recentJobApplicationsElement = document.getElementById("recentJobApllications");
+
+// get last 3 messages
+let messagesHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Date</th><th>Subject</th></tr></thead><tbody>';
+fetch('http://localhost:1337/enquirymessages?_limit=3', {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    messagesHtml += data.map(function (message) {
+      let date = new Date(message.updatedAt);
+      return (`
+              <tr>
+                <td>${message.name}</td>
+                <td>${message.phone}</td>
+                <td>${message.email}</td>
+                <td>${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}</td>
+                <td>${message.subject}</td>
+              </tr>  
+          `);
+    }).join('')
+  })
+  .then(function () {
+    messagesHtml += `</tbody></table>`
+    recentMessagesElement.innerHTML = messagesHtml;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+
+// get last 3 jobposts
+let jobPostsHtml = '<table class="w-100 table table-striped"><thead><tr><th>Position</th><th>Job Type</th><th>Location</th><th>Start Date</th><th>Close Date</th></tr></thead><tbody>';
+fetch('http://localhost:1337/jobopenings?_limit=3', {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    jobPostsHtml += data.map(function (jobPost) {
+      let startDate = new Date(jobPost.createdAt);
+      let closeDate = new Date(jobPost.dateposted);
+      return (` 
+              <tr>
+                <td>${jobPost.title}</td>
+                <td>${jobPost.jobtype}</td>
+                <td>${jobPost.location}</td>
+                <td>${startDate.getDate()}-${startDate.getMonth() + 1}-${startDate.getFullYear()}</td>
+                <td>${closeDate.getDate()}-${closeDate.getMonth() + 1}-${closeDate.getFullYear()}</td>
+              </tr>  
+      `);
+    }).join('')
+  })
+  .then(function () {
+    jobPostsHtml += `</tbody></table>`;
+    recentJobPostsElement.innerHTML = jobPostsHtml;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+
+// get last 3 job applications
+let jobApplicationHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Applied Position</th><th>Date</th></tr></thead><tbody>';
+fetch('http://localhost:1337/jobapplications?_limit=3', {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    jobApplicationHtml += data.map(function (jobApplication) {
+      let appliedDate = new Date(jobApplication.createdAt);
+      return (` 
+              <tr>
+                <td>${jobApplication.firstname} ${jobApplication.lastname}</td>
+                <td>${jobApplication.email}</td>
+                <td>${jobApplication.phone}</td>
+                <td>${jobApplication.position}</td>
+                <td>${appliedDate.getDate()}-${appliedDate.getMonth() + 1}-${appliedDate.getFullYear()}</td>
+              </tr>  
+      `);
+    }).join('')
+  })
+  .then(function () {
+    jobApplicationHtml += `</tbody></table>`;
+    recentJobApplicationsElement.innerHTML = jobApplicationHtml;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+
 /*
  
   END - DASHBOARD HOME
@@ -59,25 +163,24 @@ getCount(applicationsCountPath, applicationsCountElement);
 /* 
  CONTACT MESSAGES
 */
- 
+
 let messagesTab = document.getElementById('messages-tab');
 let messages = document.getElementById("allMessages");
-
-let path = "https://agile-plateau-09650.herokuapp.com/enquirymessages";
 let html = '';
 
-messagesTab.addEventListener('click', function () {
-  fetch(path, {
+function getAllMessages() {
+
+  fetch("https://agile-plateau-09650.herokuapp.com/enquirymessages", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   })
-    .then(function (response) {       
+    .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      html += data.map(function (message) { 
-    return (`<div class="col-lg-5 message border p-3 m-2"> 
+      html += data.map(function (message) {
+        return (`<div class="col-lg-5 message border p-3 m-2"> 
     <h5>${message.subject}</h5>
     <p>${message.name}</p>
     <p>${message.email}</p>
@@ -92,7 +195,17 @@ messagesTab.addEventListener('click', function () {
     .catch(function (error) {
       console.log(error);
     })
+}
+
+// load all messages on clicking messges link in side navbar
+messagesTab.addEventListener('click', function () {
+  getAllMessages();
+})
  
+$('#viewAllMessages').on('click', function (e) {
+  e.preventDefault();
+  $('#messages-tab').tab('show');
+  getAllMessages();
 })
 
 /*
@@ -101,21 +214,20 @@ messagesTab.addEventListener('click', function () {
 let openPositionsTab = document.getElementById('openings-tab');
 let allOpenPositions = document.getElementById("allOpenPositions");
 
-openPositionsTab.addEventListener("click",function(){
-  let path = "https://agile-plateau-09650.herokuapp.com/jobopenings";
+function getAllOpenPositions(){
   let html = '';
-  fetch(path, {
+  fetch("https://agile-plateau-09650.herokuapp.com/jobopenings", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   })
-  .then(function(response){
-    return response.json();    
-  })
-  .then(function(data){
-    console.log(data);
-    html += data.map(function(opening){
-      return `<div class="opening border p-3">
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      html += data.map(function (opening) {
+        return `<div class="opening border p-3">
       <h5>${opening.title}</h5>
       <p>${opening.description}</p>
       <p>${opening.jobcategory}</p>
@@ -123,11 +235,22 @@ openPositionsTab.addEventListener("click",function(){
       <p>${opening.location}</p>
       <p>${opening.dateposted}</p>       
       </div>`
-    }).join('');
-  })
-  .then(function(){
-    allOpenPositions.innerHTML = html;
-  })
+      }).join('');
+    })
+    .then(function () {
+      allOpenPositions.innerHTML = html;
+    })
+}
+
+
+openPositionsTab.addEventListener("click", function () {  
+  getAllOpenPositions();
+})
+
+$('#viewAllOpenings').on('click', function (e) {
+  e.preventDefault();
+  $('#openings-tab').tab('show');
+  getAllOpenPositions();
 })
 
 
@@ -137,7 +260,7 @@ openPositionsTab.addEventListener("click",function(){
 let jobApplicationsTab = document.getElementById('applications-tab');
 let allJobApplications = document.getElementById("allJobApplications");
 
-jobApplicationsTab.addEventListener("click",function(){
+function getAllJobApplications(){
   let path = "http://localhost:1337/jobapplications";
   let html = '';
   fetch(path, {
@@ -145,13 +268,13 @@ jobApplicationsTab.addEventListener("click",function(){
       Authorization: `Bearer ${token}`,
     },
   })
-  .then(function(response){
-    return response.json();    
-  })
-  .then(function(data){
-    console.log(data);
-    html += data.map(function(application){
-      return `<div class="opening border p-3">
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      html += data.map(function (application) {
+        return `<div class="opening border p-3">
       <h5>${application.firstname} ${application.lastname}</h5>
       <p>${application.email}</p>
       <p>${application.phone}</p>
@@ -159,14 +282,21 @@ jobApplicationsTab.addEventListener("click",function(){
       <p>Applied Post - ${application.position}</p>
       <p>${application.updatedAt}</p>       
       </div>`
-    }).join('');
-  })
-  .then(function(){
-    allJobApplications.innerHTML = html;
-  })
+      }).join('');
+    })
+    .then(function () {
+      allJobApplications.innerHTML = html;
+    })
+}
+jobApplicationsTab.addEventListener("click", function () {
+  getAllJobApplications();
 })
- 
 
+$('#viewAllApplications').on('click', function (e) {
+  e.preventDefault();
+  $('#applications-tab').tab('show');
+  getAllJobApplications();
+})
 /*
     ADMIN - POST A NEW JOB
 */
@@ -227,8 +357,8 @@ saveJobTypeButton.addEventListener('click', function (e) {
       },
       body: JSON.stringify(data)
     })
- 
-      .then(function (response) {         
+
+      .then(function (response) {
         getJobDetails(jobTypePath, jobTypeElement);
       })
       .then(function () {
@@ -241,7 +371,7 @@ saveJobTypeButton.addEventListener('click', function (e) {
 })
 
 // Add new job Category
- 
+
 let saveJobCategoryButton = document.getElementById("saveJobCategory");
 
 saveJobCategoryButton.addEventListener('click', function (e) {
@@ -273,14 +403,14 @@ saveJobCategoryButton.addEventListener('click', function (e) {
       .catch(function (error) {
         console.log(error);
       })
-  } 
+  }
 })
 
 // submit post job form data to API
 
 let postJobForm = document.getElementById("postJob");
 
-postJobForm.addEventListener("submit",function(e){
+postJobForm.addEventListener("submit", function (e) {
   e.preventDefault();
   let postJobFormData = new FormData(postJobForm);
   let title = postJobFormData.get("title");
@@ -299,32 +429,32 @@ postJobForm.addEventListener("submit",function(e){
   let requirement3 = postJobFormData.get('requirement3');
 
   let data = {
-    title:title,
-    description:description,
-    location:location,
-    jobtype:jobType,
-    jobcategory:jobCategory,
-    dateposted:closeDate,
-    qualifications:{one:qualification1,two:qualification2,three:qualification3},
-    requirements:{one:requirement1,two:requirement2,three:requirement3}     
+    title: title,
+    description: description,
+    location: location,
+    jobtype: jobType,
+    jobcategory: jobCategory,
+    dateposted: closeDate,
+    qualifications: { one: qualification1, two: qualification2, three: qualification3 },
+    requirements: { one: requirement1, two: requirement2, three: requirement3 }
   }
   console.log('Posting a New Job', JSON.stringify(data));
   fetch("https://agile-plateau-09650.herokuapp.com/jobopenings", {
-      method: 'post',
-      headers: {
-        "Content-type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify(data)
+    method: 'post',
+    headers: {
+      "Content-type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(data)
+  })
+    .then(function (response) {
+      return response.json();
     })
-      .then(function (response) {
-         return response.json();     
-      })
-      .then(function (data) {
-        console.log(data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
- 
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
 })

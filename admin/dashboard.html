@@ -28,9 +28,9 @@
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0 ml-3" href="#"><img src="../images/logo-white.png" alt="Zyclyx"></a>
     <ul class="navbar-nav px-3 d-flex flex-row align-items-center">
-      <li class="user-profile">
+      <!-- <li class="user-profile">
         <i class="fas fa-user mr-2"></i>
-        <span id="userName" class="mr-4 title-3"></span></li>
+        <span id="userName" class="mr-4 title-3"></span></li> -->
       <li class="nav-item text-nowrap mx-4">
         <a class="nav-link" href="#" id="signOut-1">sign out</a>
       </li>
@@ -86,7 +86,39 @@
             </div>
               <!-- recent activity -->
               <div class="container recentBlock">
-                <h5 class="py-5 RecentText">Recent Activity</h5>
+                <h5 class="pt-5 RecentText">Recent Activity</h5>
+                <div class="py-4 my-2">
+                  <div class="d-flex justify-content-between">
+                      <h4 class="text-success">Messages</h4> 
+
+                      <a class="nav-link text-success" id="viewAllMessages" href="#"> <i class="far fa-envelope fa-fw mx-2"></i>View All Messages</a>
+                  </div>
+                  
+                  <div id="recentMessages">
+
+                  </div>
+                </div>
+
+                <div class="py-4 my-2">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-primary">Job Posts</h4> 
+                        <a href="#" class="btn btn-link text-primary">View All</a>
+                        <a class="text-primary" id="viewAllOpenings" href="#"><i class="fas fa-file-import fa-fw mx-2"></i>View All Job Openings</a>
+                    </div>
+                  <div id="recentJobPosts">
+
+                  </div>
+                </div>
+
+                <div class="py-4 my-2">                   
+                  <div class="d-flex justify-content-between">
+                      <h4 class="text-danger">Job Applications</h4> 
+                      <a class="btn btn-link text-danger" href="#" id="viewAllApplications"><i class="fab fa-wpforms fa-fw mx-2"></i>View All Job Applications</a>
+                  </div>
+                  <div id="recentJobApllications">
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -100,12 +132,13 @@
             </div>
           </div>
           </div>
+
           <!-- Job application details -->
           <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
             <h3>Job Applications</h3>
             <div class="container">
               <div id="allJobApplications">
-                
+
               </div>
             </div>
           </div>
