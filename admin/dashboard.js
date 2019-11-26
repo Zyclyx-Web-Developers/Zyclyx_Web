@@ -123,7 +123,7 @@ openPositionsTab.addEventListener("click",function(){
       <p>${opening.location}</p>
       <p>${opening.dateposted}</p>       
       </div>`
-    })
+    }).join('');
   })
   .then(function(){
     allOpenPositions.innerHTML = html;
@@ -131,6 +131,40 @@ openPositionsTab.addEventListener("click",function(){
 })
 
 
+/*
+ ADMIN - GET ALL Job Applications
+*/
+let jobApplicationsTab = document.getElementById('applications-tab');
+let allJobApplications = document.getElementById("allJobApplications");
+
+jobApplicationsTab.addEventListener("click",function(){
+  let path = "http://localhost:1337/jobapplications";
+  let html = '';
+  fetch(path, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+  .then(function(response){
+    return response.json();    
+  })
+  .then(function(data){
+    console.log(data);
+    html += data.map(function(application){
+      return `<div class="opening border p-3">
+      <h5>${application.firstname} ${application.lastname}</h5>
+      <p>${application.email}</p>
+      <p>${application.phone}</p>
+      <p>${application.message}</p>
+      <p>Applied Post - ${application.position}</p>
+      <p>${application.updatedAt}</p>       
+      </div>`
+    }).join('');
+  })
+  .then(function(){
+    allJobApplications.innerHTML = html;
+  })
+})
  
 
 /*
