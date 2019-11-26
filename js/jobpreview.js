@@ -1,9 +1,51 @@
-//Submit Job application form Data
+
 (function(){
+/*
+
+UPDATE JOB DESCRIPTION PAGE CONTENT
+
+*/
+let urlParams = new URLSearchParams(window.location.search);
+let id = urlParams.get('id');
+let title = '';
+
+let responsibilitiesElement = document.getElementById('responsibilities');
+
+
+
+fetch(`http://localhost:1337/jobopenings/${id}`)
+.then(function(response){
+  return response.json();
+})
+.then(function(data){
+  console.log(data);
+   title = data.title
+  // responsibilities
+ let resHtml = ''
+ if(data.requirements){
+  for(let res in data.requirements){     
+    resHtml +=`<li>
+    <span><i class="fa fa-check rounded-circle p-1"></i></span>
+    <p>${data.requirements[res]}</p>
+  </li>`
+  }
+ }
+  
+   
+  responsibilitiesElement.innerHTML = resHtml;
+})
+
+
+
+
+/* 
+
+SUBMIT JOB APPLICATION FORM DATA
+
+*/
   let jobApplicationForm= document.getElementById("jobApplication");
-  var urlParams = new URLSearchParams(window.location.search);
-  let jobTitle = urlParams.get('position');
-  let data = ''
+  // var urlParams = new URLSearchParams(window.location.search);
+  // let jobTitle = urlParams.get('position');
 
   jobApplicationForm.addEventListener("submit",function(event){
     event.preventDefault();
