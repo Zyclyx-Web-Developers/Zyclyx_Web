@@ -24,39 +24,29 @@ fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`)
   return response.json();
 })
 .then(function(data){
-  console.log(data);
-  console.log(data.qualifications);
+   
    //title = data.title
 
 //minimum qualifications
 let qualifyhtml='';
-if(data.qualifications){
-  for(let qalify in data.qualifications){
+if(data.requirements){
+  for(let qalify in data.requirements){
     qualifyhtml +=`<li>
     <span><i class="fa fa-check rounded-circle p-1"></i></span>
-    <p>${data.qualifications[qalify]}</p>
+    <p>${data.requirements[qalify]}</p>
     </li>`
   }
 }
 minqualifications.innerHTML = qualifyhtml;
 
 //job description
-let descriptionhtml='';
-if(data.description){
-for(let desc in data.description){
-  descriptionhtml=`<p>${data.description}</p>`
-}
-}
-description.innerHTML=descriptionhtml
+ 
+ 
+ 
+description.textContent=data.description
 
-  //job Title
-let titlehtml='';
-if(data.title){
-  for(let restitle in data.title){
-    titlehtml =` <h5 class="py-2 title-1 p-4">${data.title}</h5>`
-  }
-}
-jobtitle.innerHTML = titlehtml;
+ 
+jobtitle.textContent= data.title;
   // responsibilities
  let resHtml = ''
  if(data.requirements){
@@ -72,10 +62,10 @@ jobtitle.innerHTML = titlehtml;
 //job details
 location.textContent=data.location;
 let date1 = new Date(data.createdAt);
-let startDateString = `${date1.getDay()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
+let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
 
-let date2 = new Date(data.dateposted);
-let closeDateString = `${date2.getDay()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
+let date2 = new Date(data.lastdate);
+let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
 
 startDate.textContent = startDateString;
 closeDate.textContent = closeDateString;
