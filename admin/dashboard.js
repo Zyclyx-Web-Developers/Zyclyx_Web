@@ -76,13 +76,18 @@ messagesTab.addEventListener('click', function () {
       return response.json();
     })
     .then(function (data) {
-      html += data.map(function (message) { 
-    return (`<div class="col-lg-5 message border p-3 m-2"> 
-    <h5>${message.subject}</h5>
-    <p>${message.name}</p>
-    <p>${message.email}</p>
-    <p>${message.phone}</p>
-    <p>${message.message}</p>                
+     
+      html += data.map(function(message) { 
+    let date = new Date(message.updatedAt);         
+    return (`<div class="col-lg-5 message border p-3 m-2">
+    <div class="row">
+    <div class="col-12"> <h5>${message.subject}</h5></div>
+    <div class="col-8"> <p class="name"><i class="fas fa-user mr-2"></i>${message.name}</p></div>
+    <div class="col-4"><p class="date"><i class="far fa-calendar-alt mr-2"></i></i>${date.getUTCDate()}-${date.getMonth()+1}-${date.getFullYear()}</p></div>
+    <div class="col-12"><p class="mesage">${message.message}</p> </div>
+    <div class="col-8"><p class="email"><i class="fas fa-envelope mr-2"></i>${message.email}</p></div>
+    <div class="col-4"> <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${message.phone}</p></div>
+    </div>                    
 </div>`);
       }).join('')
     })
