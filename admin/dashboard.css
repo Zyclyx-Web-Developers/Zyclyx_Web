@@ -4,6 +4,7 @@
    height: 569px;
    padding-top: 15px;
  }
+ 
  .nav-tabs .nav-link.active {
   color: #007bff;
   font-weight: bold;
@@ -20,18 +21,18 @@
   border-bottom: none !important;
 }
 
- a{
+ .main-sideNav a{
   color: #fff;
   text-decoration: none;
   background-color: transparent;
 }
-a:hover{
+.main-sideNav a:hover{
   color: #fff;
 }
- a:not([href]):not([tabindex]) {
+.main-sideNav a:not([href]):not([tabindex]) {
   color: #fff;
 } 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+.main-sideNav a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
