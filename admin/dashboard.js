@@ -121,12 +121,21 @@ openPositionsTab.addEventListener("click",function(){
     console.log(data);
     html += data.map(function(opening){
       return `<div class="opening border p-3">
+      <div class="row">
       <h5>${opening.title}</h5>
       <p>${opening.description}</p>
       <p>${opening.jobcategory}</p>
       <p>${opening.jobtype}</p>
       <p>${opening.location}</p>
-      <p>${opening.dateposted}</p>       
+      <p>${opening.dateposted}</p>
+      <div class="col-8"></div>
+      <div class="col-4"><p>${opening.dateposted}</p></div>
+      <div class="col-8"></div>
+      <div class="col-12"></div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      </div>     
       </div>`
     }).join('');
   })
