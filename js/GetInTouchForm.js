@@ -40,14 +40,18 @@
                   return response.json();
               })                 
               .then(function (jsondata) {
-                // form.reset();          
-                 console.log(jsondata);
+                 form.reset();
+                 form.classList.remove('was-validated');          
+                 console.log("message sent successfully",jsondata);
                 $('#contactModal').modal('show');
-                document.getAnimations.contactName.textContent = jsondata.name;
+                //document.getAnimations.contactName.textContent = jsondata.name;
 
               })
               .catch(function (error) {
-                  document.getElementById("errorAlert").textContent = "Something went wrong! Please try again"
+                  document.getElementById("errorAlert").textContent = "Something went wrong! Please try again";
+                  document.getElementById("contactBtn").removeAttribute("disabled");
+                  document.getElementById("btnText").style.display = "block";
+                  document.getElementById("btnSpinner").style.display = "none"; 
               })
        }
   }, false)

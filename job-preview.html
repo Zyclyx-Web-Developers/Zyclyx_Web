@@ -165,71 +165,95 @@
         </div>
         <!--end of row-->
       </div>
-       <!-- JOB APPLICATION FORM -->        
+      <!-- JOB APPLICATION FORM -->        
       <div class="container row mx-auto pt-5" id="applicationForm">        
         <div class="col-12 col-md-10 mx-auto">
             <h3 class="title-2 text-center">Apply for this Job</h3>
-          <form id="jobpreview-form" class="needs-validation mb-3" novalidate="">
+          <span id="errorAlert"></span>
+          <form id="jobApplication" class="needs-validation mb-3" novalidate="">
                 <div class="row pt-5">
+
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="firstname" class="text-2">FirstName:&nbsp;<span
                                     class="text-danger">*</span></label>
-                            <input class="form-control" type="text" id="firstname" placeholder="" required="">
+                            <input class="form-control" name="firstname" type="text" id="firstname" placeholder="" required="">
                            <span class="error" id="error1"></span>
                         </div>
                     </div>
+
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="lastname" class="text-2">LastName:&nbsp;<span
                                     class="text-danger">*</span></label>
-                            <input class="form-control" type="text" id="lastname" placeholder="" required="">
+                            <input class="form-control" name="lastname" type="text" id="lastname" placeholder="" required="">
                             <span class="error" id="error2"></span>
                         </div>
                     </div>
+
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="email" class="text-2">Email&nbsp;<span
                                     class="text-danger">*</span></label>
-                            <input class="form-control" type="text" id="email" placeholder="" required="" autocomplete="off">
+                            <input class="form-control" name="email" type="text" id="email" placeholder="" required="" autocomplete="off">
                             <span class="error" id="error3"></span>
                         </div>
                     </div>
+
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="phone" class="text-2">Phone Number</label>
-                            <input class="form-control" type="text" id="phone" placeholder="">
+                            <input class="form-control" name="phone" type="text" id="phone" placeholder="">
                             <span class="error" id="error4"></span>
                         </div>
                     </div>
+
                     <div class="col-sm-6">
                       <div class="form-group">
                           <p class="text-left mb-2 text-2">Resume <span class="text-danger">*</span></p>
                           <div class="custom-file">                          
-                              <input type="file" class="custom-file-input" id="validatedCustomFile" required>                             
+                              <input type="file" name="resume" class="custom-file-input" id="validatedCustomFile" required>                             
                               <label class="custom-file-label" for="validatedCustomFile">Choose File...</label>
                               <span class="error" id="error5"></span>
                             </div>
                       </div>                                              
                     </div>
+
                     <div class="col-sm-12">
                     <div class="form-group">
                         <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" rows="4"
+                        <textarea class="form-control" name="message" id="message" rows="4"
                             placeholder="Where do you see yourself in years?" required=""></textarea>
                             <span class="error" id="error6"></span>
- 
                     </div>
                   </div>
+
                 </div>
 
-                <button id="contactBtn" class="btn btn-primary btn-shadow-2 pt-2 mt-2" type="submit">Submit Application
-                   <i class="ml-2 far fa-paper-plane"></i></button>
-                   <span id="alert" class="alert ml-2" role="alert"></span> 
-                      <span id="spinner" class="text-success" role="status"></span>
+                <button id="submitApplicationButton" class="btn btn-primary btn-shadow-2 pt-2 mt-2" type="submit">
+                   <span id="btnText">Submit Application <i class="ml-2 far fa-paper-plane"></i></span> 
+                   <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
+                   aria-hidden="true"></span>
+                </button>
             </form>
         </div>
       </div>
+
+      <!-- Contact form Modal -->
+      <div class="modal" tabindex="-1" role="dialog" id="JobApplicationModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">                             
+            <div class="modal-body">
+              <p>All The Best, <span id="contactName"></span></p>
+              <p>We Recieved your application!</p>                               
+            </div>
+            <div class="modal-footer">                                     
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>                            
+          </div>
+        </div>
+      </div>
+     <!-- END - contact form modal -->
        <!-- END - JOB APPLICATION FORM -->
     </section>
      
@@ -257,26 +281,7 @@
       $("#footer").load("footer.html");
     });
   </script>
-  <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-      </script>
+ 
 </body>
 
 </html>
