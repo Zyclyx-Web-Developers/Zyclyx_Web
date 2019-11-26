@@ -139,10 +139,10 @@ openPositionsTab.addEventListener("click",function(){
 
 // get job types and  categories for form drop down
 let jobTypeElement = document.getElementById("jobType");
-let jobTypePath = "http://localhost:1337/jobtypes";
+let jobTypePath = "https://agile-plateau-09650.herokuapp.com/jobtypes";
 
 let jobCategoryElement = document.getElementById("jobCategory");
-let jobCategoryPath = "http://localhost:1337/jobcategories";
+let jobCategoryPath = "https://agile-plateau-09650.herokuapp.com/jobcategories";
 
 // get Job details from API - (job types, job categories)
 function getJobDetails(path, selectElement) {
@@ -185,7 +185,7 @@ saveJobTypeButton.addEventListener('click', function (e) {
 
   // validate form and submit data to API
   if (addJobTypeForm.checkValidity()) {
-    fetch("http://localhost:1337/jobtypes", {
+    fetch("https://agile-plateau-09650.herokuapp.com/jobtypes", {
       method: 'post',
       headers: {
         "Content-type": "application/json",
@@ -221,7 +221,7 @@ saveJobCategoryButton.addEventListener('click', function (e) {
 
   // validate form and submit data to API
   if (addJobCategoryForm.checkValidity()) {
-    fetch("http://localhost:1337/jobcategories", {
+    fetch("https://agile-plateau-09650.herokuapp.com/jobcategories", {
       method: 'post',
       headers: {
         "Content-type": "application/json",
@@ -275,7 +275,7 @@ postJobForm.addEventListener("submit",function(e){
     requirements:{one:requirement1,two:requirement2,three:requirement3}     
   }
   console.log('Posting a New Job', JSON.stringify(data));
-  fetch("http://localhost:1337/jobopenings", {
+  fetch("https://agile-plateau-09650.herokuapp.com/jobopenings", {
       method: 'post',
       headers: {
         "Content-type": "application/json",
