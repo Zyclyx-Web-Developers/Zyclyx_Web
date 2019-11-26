@@ -51,7 +51,9 @@ padding: 1.4rem !important;
     background: #fff;
     box-shadow: 0px 0px 8px -5px;
 }
-
+#btnSpinner{
+    display: none;
+}
 @media (max-width: 575.98px) { 
     .address-card{
         display: none;

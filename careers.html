@@ -93,27 +93,7 @@
                     <div class="row mx-auto">
                     <!-- category - 1 -->
                     <div class="col-lg-8 col-md-10 col-sm-12 mx-auto d-flex flex-column justify-content-center ">                        
-                        <div class=" container row my-4 mx-auto" id="jobPositions">
-
-                            <!-- <a href="./job-preview.html" class="col-12 d-flex justify-content-between py-4 job-item">
-                                <h3 class="title-2 ml-3">RPA Developer</h3>                                 
-                                <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>Hyderabad, India.</span></p>
-                            </a> -->
-
-                            <!-- <a href="./job-preview.html" class="col-12 d-flex justify-content-between py-4 job-item">
-                                <h3 class="title-2 ml-3">Java Devloper</h3>
-                                <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>Hyderabad, India</span></p>
-                            </a>
-
-                            <a href="./job-preview.html" class="col-12 d-flex justify-content-between py-4 job-item">
-                                <h3 class="title-2 ml-3">Front-End Developer</h3>
-                                <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>Hyderabad, India</span></p>
-                            </a>
-
-                            <a href="./job-preview.html?id=12345" class="col-12 d-flex justify-content-between py-4 job-item">
-                                <h3 class="title-2 ml-3">Python Developer</h3>
-                                <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>Hyderabad, India</span></p>
-                            </a> -->
+                        <div class=" container row my-4 mx-auto" id="jobPositions"> 
 
                         </div>
                     </div>
@@ -164,7 +144,7 @@
      .then(function(data){     
     localStorage.setItem("openingdetails",data);
     html += data.map(function(job){
-    return (`<a href="./job-preview.html?id=${job.id}&position=${job.title}" class="col-12 d-flex justify-content-between py-4 job-item">
+    return (`<a href="./job-preview.html?id=${job.id}position=${job.title}" class="col-12 d-flex justify-content-between py-4 job-item">
                                 <h3 class="title-2 ml-3">${job.title}</h3>                                 
                                 <p><i class="fa fa-map-marker fa-fw mr-2"></i><span>${job.location}</span></p>
     </a>`)    
