@@ -5,21 +5,57 @@
 UPDATE JOB DESCRIPTION PAGE CONTENT
 
 */
+let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('id');
 let title = '';
 
 let responsibilitiesElement = document.getElementById('responsibilities');
-
-
-
+let jobtitle=document.getElementById('jobtitle');
+let description=document.getElementById('description');
+let minqualifications=document.getElementById('qualifications');
+let location=document.getElementById('location');
+let startDate = document.getElementById('startDate');
+let closeDate = document.getElementById('closeDate');
+let jobtype=document.getElementById('jobtype');
 fetch(`http://localhost:1337/jobopenings/${id}`)
 .then(function(response){
   return response.json();
 })
 .then(function(data){
   console.log(data);
-   title = data.title
+  console.log(data.qualifications);
+   //title = data.title
+
+//minimum qualifications
+let qualifyhtml='';
+if(data.qualifications){
+  for(let qalify in data.qualifications){
+    qualifyhtml +=`<li>
+    <span><i class="fa fa-check rounded-circle p-1"></i></span>
+    <p>${data.qualifications[qalify]}</p>
+    </li>`
+  }
+}
+minqualifications.innerHTML = qualifyhtml;
+
+//job description
+let descriptionhtml='';
+if(data.description){
+for(let desc in data.description){
+  descriptionhtml=`<p>${data.description}</p>`
+}
+}
+description.innerHTML=descriptionhtml
+
+  //job Title
+let titlehtml='';
+if(data.title){
+  for(let restitle in data.title){
+    titlehtml =` <h5 class="py-2 title-1 p-4">${data.title}</h5>`
+  }
+}
+jobtitle.innerHTML = titlehtml;
   // responsibilities
  let resHtml = ''
  if(data.requirements){
@@ -29,12 +65,21 @@ fetch(`http://localhost:1337/jobopenings/${id}`)
     <p>${data.requirements[res]}</p>
   </li>`
   }
- }
-  
-   
+ }    
   responsibilitiesElement.innerHTML = resHtml;
-})
 
+//job details
+location.textContent=data.location;
+let date1 = new Date(data.createdAt);
+let startDateString = `${date1.getDay()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
+
+let date2 = new Date(data.dateposted);
+let closeDateString = `${date2.getDay()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
+
+startDate.textContent = startDateString;
+closeDate.textContent = closeDateString;
+jobtype.textContent=data.jobtype;
+})
 
 
 
