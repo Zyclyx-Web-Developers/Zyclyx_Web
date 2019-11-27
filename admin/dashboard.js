@@ -1,5 +1,6 @@
 let token = sessionStorage.getItem('token');
 
+
 /*
 LOGOUT - USER
 */
@@ -59,6 +60,7 @@ let recentJobPostsElement = document.getElementById("recentJobPosts");
 let recentJobApplicationsElement = document.getElementById("recentJobApllications");
 
 // get last 3 messages
+
 let messagesHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Date</th><th>Subject</th></tr></thead><tbody>';
 fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
   headers: {
@@ -91,6 +93,7 @@ fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
   })
 
 // get last 3 jobposts
+ 
 let jobPostsHtml = '<table class="w-100 table table-striped"><thead><tr><th>Position</th><th>Job Type</th><th>Location</th><th>Start Date</th><th>Close Date</th></tr></thead><tbody>';
 fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
   headers: {
@@ -178,6 +181,7 @@ function getAllMessages() {
     .then(function (response) {
       return response.json();
     })
+ 
     .then(function (data) {     
       html += data.map(function(message) { 
     let date = new Date(message.updatedAt);         
@@ -189,6 +193,7 @@ function getAllMessages() {
     <div class="col-12"><p class="mesage">${message.message}</p> </div>
     <div class="col-8"><p class="email"><i class="fas fa-envelope mr-2"></i>${message.email}</p></div>
     <div class="col-4"> <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${message.phone}</p></div>
+ 
     </div>                     
 </div>`);
       }).join('')
@@ -226,6 +231,7 @@ function getAllOpenPositions(){
     },
   })
  
+ 
   .then(function(response){
     return response.json();    
   })
@@ -233,7 +239,7 @@ function getAllOpenPositions(){
     console.log(data);
     html += data.map(function(opening){
       return `<div class="opening border p-3">
-      <div class="row"> 
+      <div class="row">  
       <h5>${opening.title}</h5>
       <p>${opening.description}</p>
       <p>${opening.jobcategory}</p>
