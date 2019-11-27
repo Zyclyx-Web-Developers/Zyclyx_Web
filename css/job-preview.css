@@ -54,6 +54,10 @@ padding: 1.4rem !important;
 #btnSpinner{
     display: none;
 }
+.capitalize {
+     text-transform: capitalize;
+     }
+     
 @media (max-width: 575.98px) { 
     .address-card{
         display: none;

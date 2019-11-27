@@ -1,3 +1,7 @@
+ 
+ .capitalize{
+  text-transform: capitalize;
+  }
  /* Side Nav */
  .main-sideNav{
    background: #007bff;
@@ -275,7 +279,6 @@ table tr:hover{
 }
  /* message */
 
-
  /* Form */
  /* #formPost .formBg{
    background: #ccc;
@@ -301,3 +304,12 @@ table tr:hover{
 } 
 
  /* Form */
+ 
+ /*job opening*/
+/* .green-heading{
+  color: #259d38;
+    font-weight: 600;
+} */
+
+ /* end job openings */
+ 
