@@ -282,10 +282,10 @@ table tr:hover{
  }
 #formPost .title:focus{
   box-shadow: none;
-  border-bottom: 1px solid #80bdff;
+  border-bottom: 1px solid #007bff;
  }
 #formPost .title{
-  font-size: 20px;
+  font-size: 24 px;
   color: #121213;
   border: none;
   border-radius: 0px;
