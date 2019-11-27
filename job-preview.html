@@ -45,42 +45,28 @@
     </section>
     <!--end of section-->
     <section class="job-preview py-4">
-      <h5 class="py-2 title-1 p-4">Software Engineering Manager</h5>
+      <h4 class="title-2" id="jobtitle"></h4>
+      <!-- <h5 class="py-2 title-1 p-4" id="jobtitle">Software Engineering Manager</h5> -->
       <div class="container text-left">
 
         <div class="row justify-content-between py-4">
           <!-- JOB DESCRIPTION -->
           <div class="col-12 col-lg-8 order-2 order-sm-1">
             <article class="text-2">
-              <h5 class="py-2 title-2">Description</h5>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit
+              <h5 class="py-2 title-3" >Description</h5>
+               <p id="description">
+                
               </p>
-              <h5 class="py-2 title-2">Responsibilities</h5>
+              <!-- Requirements -->
+              <h5 class="py-2 title-3">Requirements</h5>
+              <ul class="text-2 job-desc-list" id="qualifications">
+              </ul>
+               <!-- Responsibilities  -->
+              <h5 class="py-2 title-3">Responsibilities</h5>
               <ul class="text-2 job-desc-list" id="responsibilities">
                 
               </ul>
-              <h5 class="py-2 title-2">Minimum Qualifications</h5>
-              <ul class="text-2 job-desc-list">
-                <li>
-                  <span><i class="fa fa-check rounded-circle p-1"></i></span>
-                  <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta
-                    sunt explicabo</p>
-                </li>
-                <li>
-                  <span><i class="fa fa-check rounded-circle p-1"></i></span>
-                  <p>Error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-                </li>
-                <li>
-                  <span><i class="fa fa-check rounded-circle p-1"></i></span>
-                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                  </p>
-                </li>
-              </ul>
+              
             </article>             
           </div>
           <div class="col-12 col-lg-4 order-1 order-sm-2">
@@ -96,27 +82,27 @@
                 <div class="card-body text-3">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                      <div class="d-flex justify-content-between text-2">
+                      <div class="d-flex justify-content-between text-2" >
                         <span>Location</span>
-                        <span>Hyderabad, India</span>
+                        <span id="location" class="font-weight-bolder text-capitalize"></span>
                       </div>
                     </li>
                     <li class="list-group-item">
                       <div class="d-flex justify-content-between">
                         <span>Job Type</span>
-                        <span>Full time</span>
+                        <span id='jobtype' class="font-weight-bolder text-capitalize"></span>
                       </div>
                     </li>
                     <li class="list-group-item">
                       <div class="d-flex justify-content-between">
                         <span>Date Posted</span>
-                        <span>10 Sep 2019</span>
+                        <span id="startDate" class="font-weight-bolder text-capitalize"></span>
                       </div>
                     </li> 
                     <li class="list-group-item">
                         <div class="d-flex justify-content-between">
                           <div>Closing Date</div>
-                          <span>10 Sep 2019</span>
+                          <span id="closeDate" class="font-weight-bolder text-capitalize"></span>
                         </div>
                       </li>
                   </ul>
