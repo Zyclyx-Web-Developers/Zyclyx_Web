@@ -64,6 +64,9 @@ location.textContent=data.location;
 let date1 = new Date(data.createdAt);
 let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
 
+
+// let date2 = new Date(data.dateposted);
+
 let date2 = new Date(data.lastdate);
 let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
 

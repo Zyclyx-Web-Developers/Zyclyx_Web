@@ -1,7 +1,11 @@
+ 
+ .capitalize{
+  text-transform: capitalize;
+  }
  /* Side Nav */
  .main-sideNav{
    background: #007bff;
-   height: 569px;
+   height: 100%;
    padding-top: 15px;
    position: fixed;
    z-index: 99;
@@ -76,16 +80,19 @@
 }
 #home .card1{
   background: #cdfbcd;
+  border: 1px solid #FF9800;
   color: #11a500;
   /* background: linear-gradient(180deg,#35df7c 0%,#25b460 100%); */
 }
 #home .card2{
   background: #c9dff5dd;
+  border: 1px solid #046dd6;
   color: #046dd6;
   /* background: linear-gradient(180deg,#39f 0%,#2982cc 100%); */
 }
 #home .card3{
-  background: #ffd497;
+  background: #fbe1bb;
+  border: 1px solid #FF9800;
   color: #ea2121dd;
   /* background: linear-gradient(180deg,#f9b115 0%,#f6960b 100%); */
 }
@@ -132,6 +139,82 @@
   position: absolute;
 }
 
+/* messageTable */
+#viewAllMessages{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#message {
+  border-radius: 4px;
+  overflow: hidden;
+}
+table  th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+table tr:nth-child(even){
+  background: #ddeeffdd;
+}
+table tr:hover{
+  background: #ddeeffdd;
+  font-weight: bolder;
+}
+/* messageTable end */
+
+
+/* Job Post Table */
+/* #viewAllOpenings{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#recentJobPosts{
+  border-radius: 4px;
+  overflow: hidden;
+}
+#recentJobPosts th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+#recentJobPosts tr:nth-child(2){
+  background: #ddeeffdd;
+}
+#recentJobPosts tr:hover{
+  background: #ddeeffdd;
+  font-weight: bolder;
+} */
+/* Job Post Table */
+
+/* Job Apllications */
+/* #viewAllApplications{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#recentJobApllications{
+  border-radius: 4px;
+  overflow: hidden;
+}
+#recentJobApllications th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+#recentJobApllications tr:nth-child(2){
+  background: #ddeeffdd;
+}
+#recentJobApllications tr:hover{
+  background: #ddeeffdd;
+  font-weight: bolder;
+} */
+/* Job Apllications */
+
+
+
+
  /* Dashboard End */
 
 
@@ -157,9 +240,9 @@
 .message .name{
   font-weight: 600;
 }
-.message .name i{
-  color: #37d425;
-  background: rgba(205, 251, 205, 0.5);
+.message .name {
+  color: #046dd6;
+  background: rgba(205, 225, 251, 0.5);
   padding: 10px;
   border-radius: 50px;
 }
@@ -173,21 +256,60 @@
   border-radius: 50px;
 }
 .message .mesage{
-  padding: 20px 10px;
+  padding: 40px 10px;
 }
-.message .email, .message .phone{
+.message .email i, .message .phone i{
   color: rgb(128, 128, 128);
 }
-.message .email i{
-  color: rgba(58, 100, 252, 0.867);
+.message .email{
+  color: rgb(128, 128, 128);
+  /* color: rgba(58, 100, 252, 0.867); */
   background: rgba(221, 225, 255, 0.5);
   padding: 10px;
   border-radius: 50px;
 }
-.message .phone i{
-  color: #805bbe;
-  background: rgba(237, 221, 255, 0.5);
+.message .phone{
+  text-align: center;
+  color: rgb(128, 128, 128);
+  /* color: #805bbe; */
+  background: rgba(221, 225, 255, 0.5);
+  /* background: rgba(237, 221, 255, 0.5); */
   padding: 10px;
   border-radius: 50px;
 }
  /* message */
+
+ /* Form */
+ /* #formPost .formBg{
+   background: #ccc;
+   box-shadow: 0px 1px 5px -1px #000;
+ } */
+ #formPost .form-control:focus{
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+ }
+ #formPost label{
+   font-weight: bolder;
+   /* color: #007bff; */
+ }
+#formPost .title:focus{
+  box-shadow: none;
+  border-bottom: 1px solid #007bff;
+ }
+#formPost .title{
+  font-size: 24px;
+  color: #121213;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+} 
+
+ /* Form */
+ 
+ /*job opening*/
+/* .green-heading{
+  color: #259d38;
+    font-weight: 600;
+} */
+
+ /* end job openings */
+ 
