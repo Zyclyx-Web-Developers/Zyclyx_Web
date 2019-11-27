@@ -94,8 +94,12 @@ font-family: 'Source Sans Pro', sans-serif;
   box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
 }
 .btn-shadow-2:hover{
-box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
-transform: translate(0,-2px);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
+  transform: translate(0,-2px);
+  -webkit-transform: translate(0,-2px);
+  -moz-transform: translate(0,-2px);
+  -ms-transform: translate(0,-2px);
+  -o-transform: translate(0,-2px);
 }
 
 /* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
@@ -126,12 +130,12 @@ body {
 
 .animate-link {
   position: relative;
-  color: #007bff;
+  color: #3ba3ff;
   text-decoration: none;
 }
 
 .animate-link:hover {
-  color:#007bff;
+  color:#1490ff;
   text-decoration: none;
 }
 .animate-link:before {
@@ -141,17 +145,26 @@ body {
   height: 1px;
   bottom: 5px;
   left: 0;
-  background-color: #007bff;
+  background-color: #1490ff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
 }
 .animate-link:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 
 /* h1,
@@ -205,7 +218,7 @@ h6,
   font-weight: 800;
   position: relative;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: center; 
 }
 .title-2 {
   font-size: 1.4rem !important;
@@ -312,9 +325,7 @@ h6,
     background: rgb(27, 43, 48,0.1) !important;  
   }
   .navbar-dark{          
-    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.1),
-    0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05); 
-    background-color: rgba(42, 53, 79,0.98) !important; 
+    background-color: #2799ff !important; 
     box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1) !important;     
   }
     
@@ -340,7 +351,8 @@ h6,
     border-radius: 0 !important;   
     /* background-color: rgb(27, 43, 48,0.98) !important; */
     background-color: #f3f7fa;
-    border-bottom: 3px solid #F77737 !important;
+    border-bottom: 1px solid #b1daff !important;
+    
   }
   .dropdown-menu .dropdown-item{     
     font-weight: 500;   
@@ -389,7 +401,8 @@ h6,
   }
    .dropdown-menu a{
     font-size: 14px !important;
-    padding: 4px 6px;     
+    padding: 2px 6px;
+    margin: 0px !important;     
   }
   .dropdown-industry a{
   font-size: 1rem !important;
@@ -530,53 +543,56 @@ background-color:#f3f7fa;
 */
 .footer{
   line-height: 1.8;
-  text-align: left;
+  text-align: left;   
+  background: #083261;   
+   
+  
 }
-.f-logo{
+/* .f-logo{
    margin-top: 12px;
 } 
 .f-logo img{
   max-width: 150px;
-}
+} */
 
 .footer .f-title{
-  color: #ffffff;
+  color: #f8eee7;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
 }
 
 .footer .social-network .fab{
-  line-height: 2.4;
+  line-height: 2.4; 
 }
 
-.footer a,.footer p{
-  color: rgba(255, 255, 255,0.65);  
-  font-size: 13px;
+.footer a,.footer p{  
+ font-size: 0.9rem;
   font-weight: 600;   
   margin-bottom: 1px;
+  color: #c5c1c0;
 }
 
 .footer .explore {
   display: flex;
   flex-direction: column; 
+  /* align-items: center; */
 }
  
-.footer .contact .far, .footer .contact .fas{
-  font-size: 14px;
-}
+ 
 .footer .privacy a{
- font-size: 11px !important;
+ font-size: 12px !important;
  margin: 0 6px;
 }
-
+.footer a:hover{
+  color:#ffffff !important; 
+}
 .footer .explore a:hover,.footer .privacy a:hover{
-  color:#ffffff !important;
-  font-size: 0.8rem;
+  color:#ffffff !important; 
 }
 
 .footer .privacy a:hover{
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 2px;  
 }
 
@@ -589,7 +605,7 @@ font-weight:400;
 height:35px;
 width:35px; 
 text-align:center;
-border: 2px solid #e2e9ef;
+border: 2px solid #c5c1c0;
 border-radius: 50%; 
 display:flex;
 justify-content: center;
