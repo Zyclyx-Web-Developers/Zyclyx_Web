@@ -238,7 +238,7 @@ function getAllOpenPositions(){
   .then(function(data){
     console.log(data);
     html += data.map(function(opening){
-      return `<tr>
+      return `<tr class="capitalize">
       <td>${opening.title}</td>
       <td>${opening.jobcategory}</td>
       <td>${opening.jobtype}</td>
@@ -286,7 +286,7 @@ function getAllJobApplications(){
     .then(function (data) {
       console.log(data);
       html += data.map(function (application) {
-        return `<div class="opening border p-3">
+        return `<div class="opening border p-3 capitalize">
       <h5>${application.firstname} ${application.lastname}</h5>
       <p>${application.email}</p>
       <p>${application.phone}</p>

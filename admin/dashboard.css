@@ -1,3 +1,7 @@
+ 
+ .capitalize{
+  text-transform: capitalize;
+  }
  /* Side Nav */
  .main-sideNav{
    background: #007bff;
