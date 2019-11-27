@@ -60,7 +60,7 @@
       <div class="col-10 mainSideText">
         <div class="tab-content" id="myTabContent">
           <!-- Dashboard home -->
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h3 class="text-center py-4"></h3>
             <div class="dashboard">
               <div class="matBg">
@@ -156,81 +156,101 @@
           </div>
 
           <!-- Post a new job -->
-          <div class="tab-pane fade" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
+          <div class="tab-pane fade  show active" id="newjob" role="tabpanel" aria-labelledby="applications-tab">
             <div class="container py-4">
 
               <!-- job posting form -->
-              <div class="row d-flex justify-content-center">
-                <div class="col-8">
-                  <h3 class="text-left">Post a New Job Opening</h3>
-
+              <div class="row d-flex justify-content-center" id="formPost">
+                <div class="col-7 formBg">
+                  <h3 class="text-center py-4 font-weight-bolder">Post a New Job Opening</h3>
                   <form id="postJob">
                     <div class="form-row">
 
-                      <div class="col-10 my-3">
-                        <input type="text" name="title" class="form-control py-4" placeholder="Job Title">
+                      <div class="col-12 my-3" >
+                        <label for="title">Title</label>
+                        <input type="text" name="title" class="form-control py-4 title" placeholder="Job Title">
                       </div>
 
-                      <div class="col-10 my-3 form-group">
+                      <div class="col-12 my-3 form-group">
                         <textarea name="description" class="form-control" id="description" rows="3"
                           placeholder="Job Description"></textarea>
                       </div>
 
-                      <div class="col-5 my-3">
+                      <!-- <div class="col-5 my-3 text-left">
                         <label for="location">Location</label>
                         <input type="text" name="location" class="form-control py-4" id="location"
                           placeholder="Location">
-                      </div>
+                      </div> -->
 
-                      <div class="col-5 my-3">
+                      <div class="col-6 my-3 text-left">
+                          <label class="" for="location">Location</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-map-marker-alt text-primary"></i></div>
+                            </div>
+                            <input type="text" name="location" class="form-control py-4" id="location"
+                          placeholder="Location">
+                          </div>
+                        </div>
+
+                      <!-- <div class="col-5 my-3 text-left">
                         <label for="closing-date">Closing Date</label>
                         <input type="date" name="closedate" class="form-control py-4" id="closing-date"
                           placeholder="Closing Date">
-                      </div>
+                      </div> -->
+                      <div class="col-6 my-3 text-left">
+                          <label class="" for="closedate">Closing Date</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="far fa-calendar-alt text-primary"></i></div>
+                            </div>
+                            <input type="date" name="closedate" class="form-control py-4" id="closing-date">
+                          </div>
+                        </div>
 
-                      <div class="col-5 my-3">
+                      <div class="col-6 my-3 text-left">
                         <label for="jobType">Job Type</label>
                         <select class="form-control py-4" name="jobtype" id="jobType">
                           <option value="" disabled selected>Choose Job Type</option>
                         </select>
-                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#jobTypeModal">
+                        <button type="button" class="btn btn-success my-3" data-toggle="modal" data-target="#jobTypeModal">
                           Add a New Job Type
                         </button>
                       </div>
 
-                      <div class="col-5 my-3">
-                        <label for="jobType">Job Category</label>
-                        <select class="form-control py-4" name="jobcategory" id="jobCategory">
+                      <div class="col-6 my-3 text-left">
+                        <label for="jobCategory">Job Category</label>
+                        <select class="form-control py-4" name="jobCategory" id="jobCategory">
                           <option value="" disabled selected>Choose Job Category</option>
                         </select>
-                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#jobCategoryModal">
+                        <button type="button" class="btn btn-success my-3" data-toggle="modal" data-target="#jobCategoryModal">
                           Add a new Job Category</button>
                       </div>
 
-                      <div class="col-5">
-                        <label for="jobType">Minimum Qualifications</label>
+                      <div class="col-6 text-left">
+                        <label for="">Minimum Qualifications</label>
                         <textarea class="form-control my-2" name="qualification1" id="description1" rows="2"
                           placeholder="Qualification 1"></textarea>
                         <textarea class="form-control my-2" name="qualification2" id="description2" rows="2"
                           placeholder="Qualification 2"></textarea>
                         <textarea class="form-control mt-2" name="qualification3" id="description3" rows="2"
                           placeholder="Qualification 3"></textarea>
-                        <a href="#">Add one more</a>
+                        <a href="#" class="btn btn-success my-3">Add one more</a>
                       </div>
 
-                      <div class="col-5">
-                        <label for="jobType">Minimum Requirements</label>
+                      <div class="col-6 text-left">
+                        <label for="">Minimum Requirements</label>
                         <textarea class="form-control my-2" name="requirement1" id="requirement1" rows="2"
                           placeholder="Requirement 1"></textarea>
                         <textarea class="form-control my-2" name="requirement2" id="requirement2" rows="2"
                           placeholder="Requirement 2"></textarea>
                         <textarea class="form-control mt-2" name="requirement3" id="requirement3" rows="2"
                           placeholder="Requirement 3"></textarea>
-                        <a href="#">Add one more</a>
+                        <a href="#" class="btn btn-success my-3">Add one more</a>
                       </div>
 
-                      <div class="col-5 mx-auto">
-                        <button class="btn btn-primary my-4 px-3">Post New Job</button>
+                      <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary my-4 px-3">Post New Job<i class="fas fa-paper-plane ml-2"></i></button>
                       </div>
 
                     </div>

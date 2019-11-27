@@ -1,5 +1,6 @@
 let token = sessionStorage.getItem('token');
 
+
 /*
 LOGOUT - USER
 */
