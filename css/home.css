@@ -833,7 +833,7 @@ font-weight: 400 !important;
 .stats-counter h3{
   color: #6600ff;
  }
-.stats-counter p{
+.stats-counter .title-3{
  color: #7e27ff;
 }
 /* 
