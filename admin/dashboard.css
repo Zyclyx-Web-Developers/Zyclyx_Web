@@ -132,6 +132,82 @@
   position: absolute;
 }
 
+/* messageTable */
+#viewAllMessages{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#messageTable {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#messageTable  th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+#messageTable  tr:nth-child(2){
+  background: #ddeeffdd;
+}
+#messageTable tr:hover{
+  background: #ddeeffdd;
+  font-weight: bolder;
+}
+/* messageTable end */
+
+
+/* Job Post Table */
+#viewAllOpenings{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#recentJobPosts{
+  border-radius: 4px;
+  overflow: hidden;
+}
+#recentJobPosts th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+#recentJobPosts tr:nth-child(2){
+  background: #ddeeffdd;
+}
+#recentJobPosts tr:hover{
+  background: #ddeeffdd;
+  font-weight: bolder;
+}
+/* Job Post Table */
+
+/* Job Apllications */
+#viewAllApplications{
+  padding: 10px 15px 10px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #ddeeffdd;
+}
+#recentJobApllications{
+  border-radius: 4px;
+  overflow: hidden;
+}
+#recentJobApllications th{
+  background: #4ca5fddd;
+  color: #121213;
+}
+#recentJobApllications tr:nth-child(2){
+  background: #ddeeffdd;
+}
+#recentJobApllications tr:hover{
+  background: #ffdddddd;
+  font-weight: bolder;
+}
+/* Job Apllications */
+
+
+
+
  /* Dashboard End */
 
 
