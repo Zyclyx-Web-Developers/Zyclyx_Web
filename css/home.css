@@ -119,7 +119,7 @@ transition:all 0.3s ease;
   top: -6px;
   left: 0;
   height: 4px;
-  background-color: #3D5DED !important;
+  background-color: #0066FA !important;
   animation:forwardin 5s linear;   
 }
   @keyframes forwardin {
