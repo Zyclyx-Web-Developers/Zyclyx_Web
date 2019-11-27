@@ -279,6 +279,7 @@ table tr:hover{
  }
  #formPost label{
    font-weight: bolder;
+   /* color: #007bff; */
  }
 #formPost .title:focus{
   box-shadow: none;
