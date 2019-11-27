@@ -1,23 +1,24 @@
 .header-img{
-    background-image:url("../images/background/contact-us.png");         
+    background-image:url("../images/background/contact-new.png");
+    background-size: contain;        
+}
+.overlay:before{
+    background-color: rgba(0, 123, 255,0.9);
 }
 .address-card-body{     
     margin: 0.6rem;
-    border: 1px solid rgba(255, 69, 0,0.3);
+    border: 1px solid #c4e3ff;
     border-radius: 0.6rem;
     padding:0.8rem 0.6rem;
+    padding-top: 1rem;
 }
 .address-card-body p{
     margin-bottom: 0;
     min-height: 75px;
 }
-.contact-intro{
-    background-color: #6f42c1;
-    margin-bottom: 3rem;
-    min-height:350px;             
-    color: #F9FBFD;  
-}
- 
+/* .address-card-body h5{
+    color: #0087FF;
+} */
 .form-container{
     background-color: #f3f7fa;
 }
@@ -25,51 +26,10 @@
 .joinus-banner{ 
     background-color: #f3f7fa;
 }
+ 
 
-.contact-info .fa-map-marker{
-    background:linear-gradient(145deg, hsl(213, 60%, 64%),#007bff);
-}
-.contact-info .fa-envelope{
-    background:linear-gradient(145deg, #d396f7, #9b59b6);
-}
-.contact-info .fa-phone{
-    background:linear-gradient(145deg,rgb(171, 216, 134), #2ecc71);
-}
-.contact-info .fa-clock{
-    background:linear-gradient(145deg, #f37b7b,#ff4500);    
-}
-.contact-info .fa, .contact-info .far{     
-    font-size:1.5rem;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0,0.5);
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    color: #fff
-}
-   
-.info{
-    color: #fff;
-    background: linear-gradient(145deg, #499aff, #0956b4);
-    position: relative;
-    transform: translateY(-50%);    
-    z-index: 99;
-    padding: 10px;
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px #0956b496;
-}
-.info-btn{
-    min-height: 50px;
-    color: #fff;
-    background: linear-gradient(145deg, #499aff, #0956b4);
-    position: relative;
-    top: 10px;
-    padding: 10px;
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px #0956b496;
-}
+/* Contact us form */
+
 .form-group input{
     border: none;
     outline: none;
@@ -87,9 +47,7 @@
     background: #fff;
     box-shadow: 0px 0px 8px -5px;
 }
-/* .contact-info .col{
-    text-align: center;
-} */
+ 
 
 .description .socialIcons .fa{
     color: #fff !important;
