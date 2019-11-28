@@ -280,7 +280,8 @@ let allJobApplications = document.getElementById("allJobApplications");
 
 function getAllJobApplications(){
   let path = "https://agile-plateau-09650.herokuapp.com/jobapplications";
-  let html = '';
+
+  let html = '<div class="row"><div class="col-2"></div><div class="col-8">';
   fetch(path, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -292,17 +293,32 @@ function getAllJobApplications(){
     .then(function (data) {
       console.log(data);
       html += data.map(function (application) {
-        return `<div class="opening border p-3 capitalize">
+        let update_date= new Date(application.updatedAt);
+
+        /*return `<div class="opening border p-3 capitalize">
       <h5>${application.firstname} ${application.lastname}</h5>
       <p>${application.email}</p>
       <p>${application.phone}</p>
       <p>${application.message}</p>
       <p>Applied Post - ${application.position}</p>
       <p>${application.updatedAt}</p>       
+      </div>`*/
+      return `<div class="border application p-4 m-4 shadow">
+      <h5 class="title-2 text-center font-weight-bolder text-success">${application.position}</h5>         
+      <div class="d-flex justify-content-between m-3">
+      <div class="text-info font-weight-bolder name"><i class="fas fa-user mr-2"></i>${application.firstname} ${application.lastname}</div>      
+      <div class="text-danger date"><i class="far fa-calendar-alt mr-2"></i>${update_date.getDate()}-${update_date.getMonth() + 1}-${update_date.getFullYear()}</div>
+      </div>     
+      <p>${application.message}</p>     
+      <div class="d-flex justify-content-around text-primary">
+        <p class="email"><i class="fas fa-envelope mr-2"></i>${application.email}</p>
+        <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${application.phone}</p>
+      </div>
       </div>`
       }).join('');
     })
     .then(function () {
+        html +=`</div><div class="col-2"></div></div>`;
       allJobApplications.innerHTML = html;
     })
 }
