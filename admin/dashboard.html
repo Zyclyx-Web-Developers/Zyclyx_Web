@@ -32,7 +32,7 @@
         <i class="fas fa-user mr-2"></i>
         <span id="userName" class="mr-4 title-3"></span></li> -->
       <li class="nav-item text-nowrap mx-4">
-        <a class="nav-link" href="#" id="signOut-1">sign out</a>
+        <a class="font-weight-normal" href="#" id="signOut-1"><i class="fas fa-power-off mr-2"></i>sign out</a>
       </li>
     </ul>
   </nav>
@@ -71,7 +71,7 @@
                       <h2 id="message-count"></h2>
                     </div>
                   </div>
-                  <div class="col-3 card mx-2">
+                  <div class="col-3 card mx-2"> 
                     <div class="card-body card2">
                       <h5>Job Openings</h5>
                       <h2 id="openings-count">
@@ -125,8 +125,8 @@
           </div>
           <!-- Contact messages -->
           <div class="tab-pane fade show active" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-            <div class="container-fluid">
-              <h3 class="text-center py-5 head"><i class="fas fa-envelope mr-4"></i>Messages</h3>
+            <div class="container-fluid" style="background: #e6e3e3; width: 1259px;">
+              <h3 class="text-center py-5 head text-success"><i class="fas fa-envelope mr-4 text-success"></i>Messages</h3>
               <div class="row d-flex justify-content-center align-items-center" id="allMessages">
                 <!-- messages come here from API through JS -->
               </div>
@@ -322,6 +322,52 @@
         </div>
       </div>
     </div>
+  </div>
+
+<!-- Job Opening Details Model -->
+  <div>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="OpenModal" tabindex="-1" role="dialog" aria-labelledby="jobModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="jobDetailsBody">
+
+        <div class="job-header"> 
+          <h3 id="title"></h3>
+        
+        </div>
+
+        <div id="jobMetaData"></div>
+        <p id="jobDescription"></p>
+
+        <h5>Requirements</h5>
+        <ul id="requirements">
+
+        </ul>
+
+        <h5>Responsibilities</h5>
+        <ul id="responsibilities">
+
+          </ul>
+       <div> 
+
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <!-- Bootstrap core JavaScript

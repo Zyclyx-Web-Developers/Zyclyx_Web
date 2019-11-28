@@ -10,7 +10,13 @@
    position: fixed;
    z-index: 99;
  }
- 
+ #signOut-1{
+   color: rgb(158, 157, 157);
+   text-decoration: none;
+ }
+ #signOut-1:hover{
+ color:#FF9800;
+}
  .nav-tabs .nav-link.active {
   color: #007bff;
   font-weight: bold;
@@ -80,7 +86,7 @@
 }
 #home .card1{
   background: #cdfbcd;
-  border: 1px solid #FF9800;
+  border: 1px solid #11a500;
   color: #11a500;
   /* background: linear-gradient(180deg,#35df7c 0%,#25b460 100%); */
 }
