@@ -154,7 +154,8 @@
 }
 #message {
   border-radius: 4px;
-  overflow: hidden;
+   overflow: hidden;
+   border: 1px solid #ccc;
 }
 table  th{
   background: #4ca5fddd;
@@ -284,6 +285,7 @@ table tr:hover{
   border-radius: 50px;
 }
 .message .mesage{
+  font-weight: bolder;
   padding: 40px 10px;
 }
 .message .email i, .message .phone i{
@@ -334,10 +336,47 @@ table tr:hover{
  /* Form */
  
  /*job opening*/
-/* .green-heading{
-  color: #259d38;
-    font-weight: 600;
-} */
+ #allOpenPositions{
+   border-radius: 4px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+ }
+ .modal{
+  font-size: 15px;
+  color: rgba(21, 42, 73,0.9);
+ }
+ .modal-content {
+   border: none;
+ }
+ .modal-dialog{
+   max-width: 900px;
+ }
+ .modal-body{
+  padding: 10px 20px 20px;
+ }
+ #OpenModal .close{
+   color: rgb(255, 255, 255);
+   font-weight: normal;
+   box-shadow: none;
+   text-shadow: none;
+   opacity: 1;
+   font-size: 20px;
+ }
+ .metaData p{
+   width: 150px;
+   text-align: center;
+   background: rgb(230, 229, 229);
+   border-radius: 50px;
+   padding: 10px;
+   margin-right: 20px;
+ }
+ .metaData i{
+   margin-right: 12px;
+ }
+ .modal-body #requirements{
+  list-style: none;
+} 
+
 
  /* end job openings */
  
