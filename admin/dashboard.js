@@ -226,11 +226,23 @@ $('#viewAllMessages').on('click', function (e) {
 /*
  ADMIN - GET ALL OPEN POSITIONS
 */
+
 let openPositionsTab = document.getElementById('openings-tab');
 let allOpenPositions = document.getElementById("allOpenPositions");
-
+let positionsLoaded = false;
 function getAllOpenPositions(){
-  let html = '<table class="w-100  table table-striped table-hover"><thead><tr><th>Title</th><th>Jobcategory</th><th>Job Type</th><th>Location</th><th>Action</th></tr></thead><tbody>';
+  let html = `<table class="w-100  table table-striped table-hover">
+  <thead>
+  <tr>
+  <th>Title</th>
+  <th>Jobcategory</th>
+  <th>Job Type</th>
+  <th>Location</th>
+  <th>View</th>
+  <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>`;
   fetch("https://agile-plateau-09650.herokuapp.com/jobopenings", {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -241,14 +253,15 @@ function getAllOpenPositions(){
   .then(function(response){
     return response.json();    
   })
-  .then(function(data){
-    console.log(data);
+  .then(function(data){   
+    console.log(data); 
     html += data.map(function(opening){ 
       return `<tr class="capitalize">
       <td>${opening.title}</td>
       <td>${opening.jobcategory}</td>
       <td>${opening.jobtype}</td>
-      <td>${opening.location}</td>    
+      <td>${opening.location}</td>
+      <td><a href="#" data-toggle="modal" data-target="#OpenModal" class="jobDetailsLink" data-id=${opening.id}>Open</a></td>    
       <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
       <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
     </tr> ` 
@@ -257,6 +270,7 @@ function getAllOpenPositions(){
     .then(function () {
       html += `</tbody></table>`;
       allOpenPositions.innerHTML = html;
+      positionsLoaded=true;
     })
 }
 
@@ -476,3 +490,90 @@ postJobForm.addEventListener("submit", function (e) {
     })
 
 })
+
+
+// Job opening details
+
+// $('#OpenModal').on('show.bs.modal', function (e) {
+//   // do something...
+//   console.log(e);
+// })
+
+// $(function() {
+//   $('#jobDetailsLink').click(function(e){
+//     console.log(e);
+//   })
+//   $('#OpenModal').click(function(e) {
+//     $('#myModal').modal('show');
+     
+//   });
+// });
+
+$(document).on("click", ".jobDetailsLink", function () {
+  let jobOpeningId = $(this).data('id');
+ 
+  //  get full details of single job opening
+   fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${jobOpeningId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+  .then(function(response){
+    return response.json();    
+  })
+  .then(function(data){
+    let title = document.getElementById('title');
+    let jobMetaData = document.getElementById('jobMetaData');
+    let jobDescription = document.getElementById('jobDescription');
+
+    let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    console.log(data);
+    let date1 = new Date(data.createdAt);
+let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
+// let date2 = new Date(data.dateposted);
+
+let date2 = new Date(data.lastdate);
+let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
+
+title.textContent = data.title;
+jobMetaData.innerHTML = `<div>
+      <p>${data.location}</p>
+      <p>${data.jobtype}</p>
+      <p>${startDateString}</p>
+      <p>${closeDateString}</p>       
+    </div>`
+
+    jobDescription.textContent = data.description
+
+// job responsibilities
+let responsibilitiesElement = document.getElementById('responsibilities');
+let responsibilitiesHtml = '';
+    
+if(data.responsibilities){
+      for(let item in data.responsibilities){
+        responsibilitiesHtml +=`<li>
+        <span><i class="fa fa-check rounded-circle p-1"></i></span>
+        <p>${data.responsibilities[item]}</p>
+        </li>`
+      }
+    }
+    responsibilitiesElement.innerHTML = responsibilitiesHtml;
+
+//  job requirements
+
+    
+// job responsibilities
+let requirementsElement = document.getElementById('requirements');
+let requirementsHtml = '';
+    
+if(data.requirements){
+      for(let item in data.requirements){
+        requirementsHtml +=`<li>
+        <span><i class="fa fa-check rounded-circle p-1"></i></span>
+        <p>${data.requirements[item]}</p>
+        </li>`
+      }
+    }
+    requirementsElement.innerHTML = requirementsHtml;
+  })
+});
