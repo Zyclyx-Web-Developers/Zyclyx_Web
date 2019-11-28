@@ -168,6 +168,28 @@ table tr:hover{
   font-weight: bolder;
 }
 /* messageTable end */
+/*allJobApplication*/
+.application .name{
+  background: rgba(205, 225, 251, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application .date i{
+  background: rgba(255, 189, 189, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application .email{
+  background: rgb(200, 247, 253);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application  .phone{
+  background: rgb(200, 247, 253);
+  padding: 10px;
+  border-radius: 50px;
+}
+/* allJobApplicationEnd*/
 
 
 /* Job Post Table */
