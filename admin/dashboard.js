@@ -231,7 +231,7 @@ let openPositionsTab = document.getElementById('openings-tab');
 let allOpenPositions = document.getElementById("allOpenPositions");
 let positionsLoaded = false;
 function getAllOpenPositions(){
-  let html = `<table class="w-100  table table-striped table-hover">
+  let html = `<table class="w-100  table table-striped table-hover table-borderless bordered">
   <thead>
   <tr>
   <th>Title</th>
@@ -536,11 +536,11 @@ let date2 = new Date(data.lastdate);
 let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
 
 title.textContent = data.title;
-jobMetaData.innerHTML = `<div>
-      <p>${data.location}</p>
-      <p>${data.jobtype}</p>
-      <p>${startDateString}</p>
-      <p>${closeDateString}</p>       
+jobMetaData.innerHTML = `<div class="d-flex justify-content-start metaData">
+      <p><i class="fas fa-map-marker-alt"></i>${data.location}</p>
+      <p><i class="fas fa-user-tie"></i>${data.jobtype}</p>
+      <p><i class="far fa-calendar-alt"></i>${startDateString}</p>
+      <p><i class="far fa-calendar-minus"></i>${closeDateString}</p>       
     </div>`
 
     jobDescription.textContent = data.description
@@ -551,8 +551,8 @@ let responsibilitiesHtml = '';
     
 if(data.responsibilities){
       for(let item in data.responsibilities){
-        responsibilitiesHtml +=`<li>
-        <span><i class="fa fa-check rounded-circle p-1"></i></span>
+        responsibilitiesHtml +=`<li class="d-flex">
+        <span><i class="fa fa-check rounded-circle p-1 text-primary mr-2"></i></span>
         <p>${data.responsibilities[item]}</p>
         </li>`
       }
@@ -568,8 +568,8 @@ let requirementsHtml = '';
     
 if(data.requirements){
       for(let item in data.requirements){
-        requirementsHtml +=`<li>
-        <span><i class="fa fa-check rounded-circle p-1"></i></span>
+        requirementsHtml +=`<li class="d-flex">
+        <span><i class="fa fa-check rounded-circle p-1 text-primary mr-2"></i></span>
         <p>${data.requirements[item]}</p>
         </li>`
       }
