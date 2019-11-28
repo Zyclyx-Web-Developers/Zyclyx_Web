@@ -61,7 +61,19 @@ let recentJobPostsElement = document.getElementById("recentJobPosts");
 let recentJobApplicationsElement = document.getElementById("recentJobApllications");
 
 // Get Recent 3 Messages 
-let messagesHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Date</th><th>Subject</th><th>Actions</th></tr></thead><tbody>'; 
+let messagesHtml = `<table class="w-100 table table-striped">
+                     <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Delete</th>
+                       </tr>
+                      </thead>
+                    <tbody>`; 
+
 fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -79,9 +91,8 @@ fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
                 <td>${message.phone}</td>
                 <td>${message.email}</td>
                 <td>${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}</td>
-                <td>${message.subject}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td>${message.subject}</td>                 
+                <td class="text-center"><a href="#" id=${message.id} class="text-danger"><i class="far fa-trash-alt action-icons mr-1"></i></a></td>
               </tr>  
           `);
     }).join('')
@@ -96,7 +107,20 @@ fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
 
 // Get Recent 3 Job Openings
  
-let jobPostsHtml = '<table class="w-100 table table-striped"><thead><tr><th>Position</th><th>Job Type</th><th>Location</th><th>Start Date</th><th>Close Date</th><th>Actions</th></tr></thead><tbody>'; 
+let jobPostsHtml = `
+<table class="w-100 table table-striped">
+<thead>
+<tr>
+<th>Position</th>
+<th>Job Type</th>
+<th>Location</th>
+<th>Start Date</th>
+<th>Close Date</th>
+<th>Edit</th>
+<th>Delete</th>
+</tr>
+</thead>
+<tbody>`; 
 fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -116,8 +140,8 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
                 <td>${jobPost.location}</td>
                 <td>${startDate.getDate()}-${startDate.getMonth() + 1}-${startDate.getFullYear()}</td>
                 <td>${closeDate.getDate()}-${closeDate.getMonth() + 1}-${closeDate.getFullYear()}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td class="text-center"><a href="#"><i class="fas fa-edit mr-3 text-info action-icons"></i></a></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons"></i></a></td>
               </tr>  
       `);
     }).join('')
@@ -132,7 +156,19 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
 
 // Get Recent 3 Job Applications
 
-let jobApplicationHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Applied Position</th><th>Date</th><th>Action</th></tr></thead><tbody>';
+let jobApplicationHtml = `<table class="w-100 table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>Applied Position</th>
+                              <th>Date</th>
+                              <th>Delete</th>
+                             </tr>
+                            </thead>
+                          <tbody>`;
+
 fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -151,8 +187,7 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
                 <td>${jobApplication.phone}</td>
                 <td>${jobApplication.position}</td>
                 <td>${appliedDate.getDate()}-${appliedDate.getMonth() + 1}-${appliedDate.getFullYear()}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons"></i></a></td>
               </tr>  
       `);
     }).join('')
@@ -231,12 +266,14 @@ function getAllOpenPositions(){
   let html = `<table class="w-100  table table-striped table-hover">
   <thead>
   <tr>
-  <th>Title</th>
-  <th>Jobcategory</th>
+  <th>Title</th>  
   <th>Job Type</th>
   <th>Location</th>
+  <th>Posted on</th>
+  <th>Status</th>
   <th>View</th>
-  <th>Action</th>
+  <th>Edit</th>
+  <th>Delete</th>
   </tr>
   </thead>
   <tbody>`;
@@ -249,16 +286,19 @@ function getAllOpenPositions(){
     return response.json();    
   })
   .then(function(data){   
-    console.log(data); 
-    html += data.map(function(opening){ 
+
+    html += data.map(function(opening){
+      let startDate = new Date(opening.createdAt);
+      let closeDate = new Date(opening.dateposted);  
       return `<tr class="capitalize">
-      <td>${opening.title}</td>
-      <td>${opening.jobcategory}</td>
+      <td>${opening.title}</td>      
       <td>${opening.jobtype}</td>
       <td>${opening.location}</td>
-      <td><a href="#" data-toggle="modal" data-target="#OpenModal" class="jobDetailsLink" data-id=${opening.id}>Open</a></td>    
-      <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-      <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+      <td>${startDate.getDate()}-${startDate.getMonth() + 1}-${startDate.getFullYear()}</td>
+      <td>Active</td>
+      <td><a href="#" data-toggle="modal" data-target="#OpenModal" class="jobDetailsLink" data-id=${opening.id}>Details</a></td>    
+      <td class="text-center"><a href="#"><i class="fas fa-edit mr-3 text-info action-icons" data-id=${opening.id}></i></a></td>
+      <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons" data-id=${opening.id}></i></a></td>
     </tr> ` 
       }).join('');
     })
