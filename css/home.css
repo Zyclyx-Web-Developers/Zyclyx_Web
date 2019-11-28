@@ -1,3 +1,44 @@
+.nav-color-switch{
+position: fixed;
+top: 100px;
+right: 40px;
+height: 100px;
+min-width: 250px;
+background-color: #ffffff;
+border-radius: 8px;
+z-index: 9999;
+border: 1px solid #0087FF;
+font-size: 0.9rem;
+}
+.nav-color-switch span{
+padding:6px 15px;
+width: 30px;
+margin: 8px;
+background-color: #FF8140;
+border: 1px solid #1490ff;
+border-radius: 8px;
+cursor: pointer;
+}
+.nav-color-switch #color-1{
+  background-color: #3d5ded;
+} 
+.nav-color-switch #color-2{
+  background-color:#f4f4f4;
+} 
+.nav-color-switch #color-3{
+  background-color:#ebf6ff;
+} 
+.nav-color-switch #color-4{
+  
+  background-color:#2F4858;
+} 
+.nav-color-switch #color-5{
+  background-color:#083261;
+} 
+.nav-color-switch #color-6{
+  background-color:#DBF2FF;
+} 
+
 /* 
  ==== HOME PAGE STYLES ====
  */
@@ -119,7 +160,7 @@ transition:all 0.3s ease;
   top: -6px;
   left: 0;
   height: 4px;
-  background-color: #ff4500 !important;
+  background-color: #FF8140 !important;
   animation:forwardin 5s linear;
   -webkit-animation:forwardin 5s linear;
 }
@@ -253,21 +294,21 @@ font-size: 3rem;
 ==== SERVICES ====
 */
 .services-wrapper{
-background-color: #ebf6ff;
+background-color: #f8f9ff;
 padding-top: 2rem;
 padding-bottom: 1rem;
 }
 .services .card{
   border: none;
-  background-color: #ebf6ff;   
+  background-color: #f8f9ff;   
 }
 .services .service {
   padding:0.8rem;
   margin:1.4rem 0.1rem;
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 8px;
   transition: all 0.3s ease-in;
-  /* border: 1px solid #d8edff; */
+  border: 1px solid #d8edff;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -275,14 +316,13 @@ padding-bottom: 1rem;
 }
 .services .card:hover .service{
   transition: all 0.3s linear;
-  transform: translateY(-8px);
-  /* border: 1px solid #4caeff; */
+  transform: translateY(-8px);   
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  box-shadow: 0 0.125rem 0.3rem -0.0625rem #d8edff,
-  0 0.275rem 0.75rem -0.0625rem #d8edff !important;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem #e6f4f1,
+  0 0.275rem 0.75rem -0.0625rem #e6f4f1 !important;
 }
 
 .service .title-2{
@@ -303,46 +343,7 @@ padding-bottom: 1rem;
   min-height: 120px;
   margin-bottom:0 ;
 }
-/*  
-.service-1{
-border: 1px solid rgba(0, 157, 88,0.2);  
-}
  
-.service-2{
-border: 1px solid rgba(255, 69, 0,0.2); 
-}
-.service-3{
-border: 1px solid rgba(0, 123, 255,0.2); 
-}
-.service-4{
-  border: 1px solid rgba(0, 123, 255,0.2);   
-}
-.service-5{
-border: 1px solid rgba(0, 157, 88,0.2); 
-}
-.service-6{
-  border: 1px solid rgba(255, 69, 0,0.2); 
-}
-
-.service-1:hover{
-  border: 1px solid rgba(0, 157, 88);  
-  }
-   
-  .service-2:hover{
-  border: 1px solid rgba(255, 69, 0); 
-  }
-  .service-3:hover{
-  border: 1px solid rgba(0, 123, 255); 
-  }
-  .service-4:hover{
-    border: 1px solid rgba(0, 123, 255);   
-  }
-  .service-5:hover{
-  border: 1px solid rgba(0, 157, 88); 
-  }
-  .service-6:hover{
-    border: 1px solid rgba(255, 69, 0); 
-  } */
 /* 
 ==== END - SERVICES ====
 */
@@ -365,29 +366,11 @@ border: 1px solid rgba(0, 157, 88,0.2);
   padding-bottom: 2rem;  
 }
  
-.industry-carousel .carousel-item{
-  background-color: #f3f7fa;
+.industry-carousel .carousel-item{  
   padding-top: 2rem;
   padding-bottom: 3rem;  
   margin-top: 5px;     
-}
-/* border for items
- */
-/* .industry-carousel .carousel-item.item-1{
-  border-top: 2px solid #28a745;
-}
-.industry-carousel .carousel-item.item-2{
-  border-top: 2px solid #6610f2;
-}
-.industry-carousel .carousel-item.item-3{
-  border-top: 2px solid #fd7e14;
-}
-.industry-carousel .carousel-item.item-4{
-  border-top: 2px solid #007bff;
-}
-.industry-carousel .carousel-item.item-5{
-  border-top: 2px solid #e83e8c;
-} */
+} 
 .industry-carousel .carousel-indicators{ 
   display: flex;
   flex-direction: column;
@@ -435,10 +418,7 @@ border: 1px solid rgba(0, 157, 88,0.2);
   border-radius: 0 !important;
   padding: 0 !important;  
 }
- 
-.industry-content .card{   
-  background-color:#f3f7fa;
-}
+  
 .industry-content .card-body{
   border-radius: 0px;
   width: 100% !important;
@@ -462,81 +442,6 @@ border: 1px solid rgba(0, 157, 88,0.2);
   background-color: #0066FA;   
 }
  
-/* .industry-carousel .indicator-1 svg{
-  fill:#28a745;
-}
-.industry-carousel .active .indicator-1{
-  background-color: #28a745;   
-}
-.industry-carousel .active .card.indicator-1:after{
-  border-top-color: #28a745;   
-}
-.industry-carousel .indicator-1 h4{
-  color: #28a745;
-}
-.content-1 h4{
-  color: #28a745;
-}
-.industry-carousel .indicator-2 svg{
-  fill:#6610f2;
-}
-.industry-carousel .active .indicator-2{
-  background-color: #6610f2;   
-}
-.industry-carousel .active .card.indicator-2:after{
-  border-top-color: #6610f2;   
-}
-.industry-carousel .indicator-2 h4,.industry-carousel .carousel-item .far{
-  color: #6610f2;
-}
-.content-2 h4{
-  color: #6610f2;
-}
-.industry-carousel .indicator-3 svg{
-  fill:#fd7e14;
-}
-.industry-carousel .active .indicator-3{
-  background-color: #fd7e14;   
-}
-.industry-carousel .active .card.indicator-3:after{
-  border-top-color: #fd7e14;   
-}
-.industry-carousel .indicator-3 h4{
-  color: #fd7e14;
-}
-.content-3 h4{
-  color: #fd7e14;
-}
-.industry-carousel .indicator-4 svg{
-  fill:#007bff;
-}
-.industry-carousel .active .indicator-4{
-  background-color: #007bff;   
-}
-.industry-carousel .active .card.indicator-4:after{
-  border-top-color: #007bff;   
-}
-.industry-carousel .indicator-4 h4{
-  color: #007bff;
-}
-.content-4 h4{
-  color: #007bff;
-}
-.industry-carousel .indicator-5 svg{
-  fill:#e83e8c;
-}
-.industry-carousel .active .indicator-5{
-  background-color: #e83e8c;   
-}
-.industry-carousel .active .card.indicator-5:after{
-  border-top-color: #e83e8c;   
-}
-.industry-carousel .indicator-5 h4{
-  color: #e83e8c;
-}
-.content-5 h4{
-  color: #e83e8c;
-} */
 .industry-carousel li{
   background-color: #ffffff;
 }
@@ -548,15 +453,18 @@ border: 1px solid rgba(0, 157, 88,0.2);
 */
  .our-projects{
    padding-top: 3rem;
+   background-color: #f8f9ff;
  }
 .our-projects .item {
   height: 90vh;
   position: relative;
+  background-color:rgba(61, 93, 237,0.8);   
 }
 .our-projects .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  mix-blend-mode: soft-light;
 }
 .our-projects .item .cover {
   padding: 75px 0;

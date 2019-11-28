@@ -32,7 +32,7 @@ font-family: 'Source Sans Pro', sans-serif;
 ==== COLORS ====
  */
 :root {
-  --color-1:#ff4500;
+  --color-1:#FF8140;
   --color-2:#007bff;
   --color-3:#796eff;
   --color-4:#21c87a;
@@ -74,6 +74,9 @@ font-family: 'Source Sans Pro', sans-serif;
   --text:#6c757d;
   --hover:#006bb3;
   --background-color: #e9ecef;
+
+  --navbar-bg:#0087FF;
+  --navbar-text:#f4f4f4;
 }
  
 /* 
@@ -310,23 +313,26 @@ h6,
     padding: 0 !important;
     /* font-family: 'Open Sans', sans-serif;                */
     transition: background 250ms ease-in;
-    border-bottom: 1px solid rgba(212, 245, 245,0.5);      
+    border-bottom: 1px solid rgba(212, 245, 245,0.5);     
   }
+
   .navbar .nav-link{
     font-weight: 600;
-    color: #ffffff !important;     
+    color:var(--navbar-text) !important;     
   }
- 
+  .navbar-light .nav-link{
+    color: #ffffff;
+  }
   .navbar button[aria-expanded="true"] .fas:before{
     content: "\f00d"
   }
 
   .navbar-light{ 
-    background: rgb(27, 43, 48,0.1) !important;  
+    background: rgba(39, 153, 255,0.1) !important;  
   }
   .navbar-dark{          
-    background-color: #2799ff !important; 
-    box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1) !important;     
+    background-color:var(--navbar-bg) !important; 
+    box-shadow: 0 8px 6px -6px rgba(39, 153, 255,0.6);
   }
     
   .navbar .navbar-toggler{
