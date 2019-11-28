@@ -562,7 +562,8 @@ background-color:#f3f7fa;
 } */
 
 .footer .f-title{  
-  color: #ff4500;
+  /* color: #ff4500; */
+  color: #f4f4f4;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
