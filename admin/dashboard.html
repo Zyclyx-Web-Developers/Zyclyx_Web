@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-
   <title>Zyclyx Admin Dashboard</title>
 
   <!-- Bootstrap core CSS -->
@@ -44,14 +42,19 @@
         <nav class="nav nav-tabs flex-column side-nav">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
             aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
+
           <a class="nav-link messages-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
-            aria-controls="home" aria-selected="false"> <i class="fas fa-envelope fa-fw mx-2"></i>Messages</a>
+            aria-controls="messages" aria-selected="false"> <i class="fas fa-envelope fa-fw mx-2"></i>Messages</a>
+
           <a class="nav-link applications-link" id="applications-tab" data-toggle="tab" href="#applications" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+            aria-controls="applications" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+
           <a class="nav-link openings-link" id="openings-tab" data-toggle="tab" href="#openings" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+            aria-controls="openings" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+
           <a class="nav-link postjob-link" id="newjob-tab" data-toggle="tab" href="#newjob" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+            aria-controls="newjob" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+
           <a href="#" class="nav-link signout-link" id="signOut-2"><i class="fas fa-fw fa-sign-out-alt mx-2"></i>Sign
             out</a>
         </nav>
@@ -59,7 +62,8 @@
       <!-- Content Area -->
       <div class="col-10 mainSideText">
         <div class="tab-content" id="myTabContent">
-          <!-- Dashboard home -->
+          
+          <!--  DASHBOARD HOME CONTENT -->
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h3 class="text-center py-4"></h3>
             <div class="dashboard">
@@ -123,7 +127,8 @@
               </div>
             </div>
           </div>
-          <!-- Contact messages -->
+          
+          <!-- CONTACT MESSAGES CONTENT -->
           <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
             <div class="container" style="background: #e6e3e3;">
               <h3 class="text-center py-5 head text-success"><i class="fas fa-envelope mr-4 text-success"></i>Messages</h3>
@@ -134,8 +139,8 @@
  
           </div> 
  
-          <!-- Job application details -->
-          <div class=" fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+          <!-- JOB APPLICATIONS CONTENT -->
+          <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
             <h3 class="text-center py-5"><i class="fab fa-wpforms mr-4"></i>Job Applications</h3>
             <div class="container">
               <div id="allJobApplications">
@@ -144,8 +149,8 @@
             </div>
           </div>
 
-          <!-- Job Openings -->
-          <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
+          <!-- JOB OPENINGS CONTENT -->
+          <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="openings-tab">
             <h3 class="my-5 text-center green-heading">All Open Positions</h3>
             <div class="container">
               <div id="allOpenPositions">
@@ -155,17 +160,19 @@
             </div>
           </div>
 
-          <!-- Post a new job -->
-          <div class="tab-pane fade " id="newjob" role="tabpanel" aria-labelledby="applications-tab">
+          <!-- POST A NEW JOB OPENING -->
+          <div class="tab-pane fade " id="newjob" role="tabpanel" aria-labelledby="newjob-tab">
             <div class="container py-4">
 
               <!-- job posting form -->
               <div class="row d-flex justify-content-center" id="formPost">
                 <div class="col-7 formBg">
                   <h3 class="text-center py-4 font-weight-bolder text-primary">Post a New Job Opening</h3>
+                  
+                  <!-- new job opening form -->
                   <form id="postJob">
+                    
                     <div class="form-row">
-
                       <div class="col-12 my-3" >
                         <label for="title">Title :</label>
                         <input type="text" name="title" class="form-control py-4 title" placeholder="Job Title">
