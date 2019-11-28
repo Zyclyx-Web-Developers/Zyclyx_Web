@@ -402,11 +402,11 @@ h6,
    .dropdown-title{   
     color:rgba(0, 123, 255,0.8);
     font-weight: 600; 
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 0;     
   }
    .dropdown-menu a{
-    font-size: 14px !important;
+    font-size: 15px !important;
     padding: 2px 6px;
     margin: 0px !important;     
   }
@@ -561,8 +561,9 @@ background-color:#f3f7fa;
   max-width: 150px;
 } */
 
-.footer .f-title{
-  color: #ffdf00;
+.footer .f-title{  
+  /* color: #ff4500; */
+  color: #f4f4f4;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
