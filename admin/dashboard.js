@@ -1,9 +1,7 @@
 let token = sessionStorage.getItem('token');
 
 
-/*
-LOGOUT - USER
-*/
+/* === LOGOUT - USER === */
 
 function signOut(event) {
   event.preventDefault();
@@ -15,11 +13,13 @@ function signOut(event) {
 document.getElementById("signOut-1").addEventListener("click", signOut);
 document.getElementById("signOut-2").addEventListener("click", signOut);
 
-/* 
-   DASHBOARD - HOME
-*/
+/* === END - LOGOUT - USER === */
 
-// get total count and update dashboard cards
+
+/* === DASHBOARD - HOME === */
+
+// TOTAL COUNT - MESSAGES, JOB APPLICATIONS, JOB OPENING
+
 function getCount(path, elementID) {
   fetch(path, {
     headers: {
@@ -37,31 +37,43 @@ function getCount(path, elementID) {
     })
 }
 
-// get total messages Count
+// 1. Get Messages Count
 let messagesCountElement = document.getElementById("message-count");
 let messageCountPath = 'https://agile-plateau-09650.herokuapp.com/enquirymessages/count';
 getCount(messageCountPath, messagesCountElement);
 
-// get total job openings count
 
+// 2. get  Job Openings Count
 let openingsCountElement = document.getElementById("openings-count");
 let openingsCountPath = 'https://agile-plateau-09650.herokuapp.com/jobopenings/count';
 getCount(openingsCountPath, openingsCountElement);
 
-// get total job applications count
+
+// 3. Get Job Applications Count
 let applicationsCountElement = document.getElementById("applications-count");
 let applicationsCountPath = "https://agile-plateau-09650.herokuapp.com/jobapplications/count";
 getCount(applicationsCountPath, applicationsCountElement);
 
-// get recent Activity
+/* === Recent Activity - Last 3 Messages, Job Applications, Job Post === */
 
 let recentMessagesElement = document.getElementById("recentMessages");
 let recentJobPostsElement = document.getElementById("recentJobPosts");
 let recentJobApplicationsElement = document.getElementById("recentJobApllications");
 
-// get last 3 messages
- 
-let messagesHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Date</th><th>Subject</th><th>Actions</th></tr></thead><tbody>'; 
+// Get Recent 3 Messages 
+let messagesHtml = `<table class="w-100 table table-striped">
+                     <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Delete</th>
+                       </tr>
+                      </thead>
+                    <tbody>`; 
+
 fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -79,9 +91,8 @@ fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
                 <td>${message.phone}</td>
                 <td>${message.email}</td>
                 <td>${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}</td>
-                <td>${message.subject}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td>${message.subject}</td>                 
+                <td class="text-center"><a href="#" id=${message.id} class="text-danger"><i class="far fa-trash-alt action-icons mr-1"></i></a></td>
               </tr>  
           `);
     }).join('')
@@ -94,9 +105,22 @@ fetch('https://agile-plateau-09650.herokuapp.com/enquirymessages?_limit=3', {
     console.log(error);
   })
 
-// get last 3 jobposts
+// Get Recent 3 Job Openings
  
-let jobPostsHtml = '<table class="w-100 table table-striped"><thead><tr><th>Position</th><th>Job Type</th><th>Location</th><th>Start Date</th><th>Close Date</th><th>Actions</th></tr></thead><tbody>'; 
+let jobPostsHtml = `
+<table class="w-100 table table-striped">
+<thead>
+<tr>
+<th>Position</th>
+<th>Job Type</th>
+<th>Location</th>
+<th>Start Date</th>
+<th>Close Date</th>
+<th>Edit</th>
+<th>Delete</th>
+</tr>
+</thead>
+<tbody>`; 
 fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -116,8 +140,8 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
                 <td>${jobPost.location}</td>
                 <td>${startDate.getDate()}-${startDate.getMonth() + 1}-${startDate.getFullYear()}</td>
                 <td>${closeDate.getDate()}-${closeDate.getMonth() + 1}-${closeDate.getFullYear()}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td class="text-center"><a href="#"><i class="fas fa-edit mr-3 text-info action-icons"></i></a></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons"></i></a></td>
               </tr>  
       `);
     }).join('')
@@ -130,8 +154,21 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobopenings?_limit=3', {
     console.log(error);
   })
 
-// get last 3 job applications
-let jobApplicationHtml = '<table class="w-100 table table-striped"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Applied Position</th><th>Date</th><th>Action</th></tr></thead><tbody>';
+// Get Recent 3 Job Applications
+
+let jobApplicationHtml = `<table class="w-100 table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>Applied Position</th>
+                              <th>Date</th>
+                              <th>Delete</th>
+                             </tr>
+                            </thead>
+                          <tbody>`;
+
 fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
   headers: {
     Authorization: `Bearer ${token}`,
@@ -150,8 +187,7 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
                 <td>${jobApplication.phone}</td>
                 <td>${jobApplication.position}</td>
                 <td>${appliedDate.getDate()}-${appliedDate.getMonth() + 1}-${appliedDate.getFullYear()}</td>
-                <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-                <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons"></i></a></td>
               </tr>  
       `);
     }).join('')
@@ -164,21 +200,16 @@ fetch('https://agile-plateau-09650.herokuapp.com/jobapplications?_limit=3', {
     console.log(error);
   })
 
-/*
- 
-  END - DASHBOARD HOME
-*/
+/* === END - DASHBOARD HOME === */
 
-/* 
- CONTACT MESSAGES
-*/
 
+/* === CONTACT MESSAGES TAB ===*/
 let messagesTab = document.getElementById('messages-tab');
 let messages = document.getElementById("allMessages");
 let html = '';
 
+// Get All Messages from API 
 function getAllMessages() {
-
   fetch("https://agile-plateau-09650.herokuapp.com/enquirymessages", {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -198,8 +229,7 @@ function getAllMessages() {
     <div class="col-4"><p class="date"><i class="far fa-calendar-alt mr-2"></i></i>${date.getUTCDate()}-${date.getMonth()+1}-${date.getFullYear()}</p></div>
     <div class="col-12"><p class="mesage">${message.message}</p> </div>
     <div class="col-8"><p class="email"><i class="fas fa-envelope mr-2"></i>${message.email}</p></div>
-    <div class="col-4"> <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${message.phone}</p></div>
- 
+    <div class="col-4"> <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${message.phone}</p></div> 
     </div>                     
 </div>`);
       }).join('')
@@ -212,34 +242,38 @@ function getAllMessages() {
     })
 }
 
-// load all messages on clicking messges link in side navbar
+// Load Messages From API on Clicking Messages TAB
 messagesTab.addEventListener('click', function () {
   getAllMessages();
 })
  
+// Switch to Messages TAB on Clicking view all openings link on Dashboard recent activity
 $('#viewAllMessages').on('click', function (e) {
   e.preventDefault();
   $('#messages-tab').tab('show');
   getAllMessages();
 })
 
-/*
- ADMIN - GET ALL OPEN POSITIONS
-*/
+/* === END - CONTACT MESSAGES TAB ===*/
 
+
+/* === OPEN JOB POSITIONS TAB === */
 let openPositionsTab = document.getElementById('openings-tab');
-let allOpenPositions = document.getElementById("allOpenPositions");
-let positionsLoaded = false;
+let allOpenPositions = document.getElementById("allOpenPositions"); 
+
+// GET All Open Positions from API
 function getAllOpenPositions(){
   let html = `<table class="w-100  table table-striped table-hover table-borderless bordered">
   <thead>
   <tr>
-  <th>Title</th>
-  <th>Jobcategory</th>
+  <th>Title</th>  
   <th>Job Type</th>
   <th>Location</th>
+  <th>Posted on</th>
+  <th>Status</th>
   <th>View</th>
-  <th>Action</th>
+  <th>Edit</th>
+  <th>Delete</th>
   </tr>
   </thead>
   <tbody>`;
@@ -248,22 +282,23 @@ function getAllOpenPositions(){
       Authorization: `Bearer ${token}`,
     },
   })
- 
- 
   .then(function(response){
     return response.json();    
   })
   .then(function(data){   
-    console.log(data); 
-    html += data.map(function(opening){ 
+
+    html += data.map(function(opening){
+      let startDate = new Date(opening.createdAt);
+      let closeDate = new Date(opening.dateposted);  
       return `<tr class="capitalize">
-      <td>${opening.title}</td>
-      <td>${opening.jobcategory}</td>
+      <td>${opening.title}</td>      
       <td>${opening.jobtype}</td>
       <td>${opening.location}</td>
-      <td><a href="#" data-toggle="modal" data-target="#OpenModal" class="jobDetailsLink" data-id=${opening.id}>Open</a></td>    
-      <td><span><i class="fas fa-edit mr-3 text-info action-icons"></i></span>
-      <span><i class="far fa-trash-alt text-danger action-icons"></i></span></td>
+      <td>${startDate.getDate()}-${startDate.getMonth() + 1}-${startDate.getFullYear()}</td>
+      <td>Active</td>
+      <td><a href="#" data-toggle="modal" data-target="#OpenModal" class="jobDetailsLink" data-id=${opening.id}>Details</a></td>    
+      <td class="text-center"><a href="#"><i class="fas fa-edit mr-3 text-info action-icons" data-id=${opening.id}></i></a></td>
+      <td class="text-center"><a href="#"><i class="far fa-trash-alt text-danger action-icons" data-id=${opening.id}></i></a></td>
     </tr> ` 
       }).join('');
     })
@@ -274,27 +309,31 @@ function getAllOpenPositions(){
     })
 }
 
-
+// Call getOpenPositions() function on Clicking Job Openings TAB
 openPositionsTab.addEventListener("click", function () {  
   getAllOpenPositions();
 })
 
+// Switch to Job Openings TAB on Clicking view all openings link on Dashboard recent activity
 $('#viewAllOpenings').on('click', function (e) {
   e.preventDefault();
   $('#openings-tab').tab('show');
   getAllOpenPositions();
 })
+/* === END - OPEN JOB POSITIONS TAB === */
 
 
-/*
- ADMIN - GET ALL Job Applications
-*/
+
+/* === JOB APPLICATIONS - TAB === */
+
 let jobApplicationsTab = document.getElementById('applications-tab');
 let allJobApplications = document.getElementById("allJobApplications");
 
+// GET All Job Applications from API
 function getAllJobApplications(){
   let path = "https://agile-plateau-09650.herokuapp.com/jobapplications";
-  let html = '';
+
+  let html = '<div class="row"><div class="col-2"></div><div class="col-8">';
   fetch(path, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -306,34 +345,53 @@ function getAllJobApplications(){
     .then(function (data) {
       console.log(data);
       html += data.map(function (application) {
-        return `<div class="opening border p-3 capitalize">
+        let update_date= new Date(application.updatedAt);
+
+        /*return `<div class="opening border p-3 capitalize">
       <h5>${application.firstname} ${application.lastname}</h5>
       <p>${application.email}</p>
       <p>${application.phone}</p>
       <p>${application.message}</p>
       <p>Applied Post - ${application.position}</p>
       <p>${application.updatedAt}</p>       
+      </div>`*/
+      return `<div class="border application p-4 m-4 shadow">
+      <h5 class="title-2 text-center font-weight-bolder text-success">${application.position}</h5>         
+      <div class="d-flex justify-content-between m-3">
+      <div class="text-info font-weight-bolder name"><i class="fas fa-user mr-2"></i>${application.firstname} ${application.lastname}</div>      
+      <div class="text-danger date"><i class="far fa-calendar-alt mr-2"></i>${update_date.getDate()}-${update_date.getMonth() + 1}-${update_date.getFullYear()}</div>
+      </div>     
+      <p>${application.message}</p>     
+      <div class="d-flex justify-content-around text-primary">
+        <p class="email"><i class="fas fa-envelope mr-2"></i>${application.email}</p>
+        <p class="phone"><i class="fas fa-phone-alt mr-2"></i>${application.phone}</p>
+      </div>
       </div>`
       }).join('');
     })
     .then(function () {
+        html +=`</div><div class="col-2"></div></div>`;
       allJobApplications.innerHTML = html;
     })
 }
+
+// Call getAllJobApplications() funtion on clicking OPEN POSITIONS TAB
 jobApplicationsTab.addEventListener("click", function () {
   getAllJobApplications();
 })
 
+// Switch to Job Openings TAB on Clicking view all openings link on Dashboard recent activity
 $('#viewAllApplications').on('click', function (e) {
   e.preventDefault();
   $('#applications-tab').tab('show');
   getAllJobApplications();
 })
-/*
-    ADMIN - POST A NEW JOB
-*/
+/* === END - JOB APPLICATIONS - TAB === */
 
-// get job types and  categories for form drop down
+
+/* === POST A NEW JOB OPENING === */
+
+// get job types and  categories for drop down from API
 let jobTypeElement = document.getElementById("jobType");
 let jobTypePath = "https://agile-plateau-09650.herokuapp.com/jobtypes";
 
@@ -491,23 +549,10 @@ postJobForm.addEventListener("submit", function (e) {
 
 })
 
+/* === END - POST A NEW JOB OPENING === */
 
-// Job opening details
 
-// $('#OpenModal').on('show.bs.modal', function (e) {
-//   // do something...
-//   console.log(e);
-// })
-
-// $(function() {
-//   $('#jobDetailsLink').click(function(e){
-//     console.log(e);
-//   })
-//   $('#OpenModal').click(function(e) {
-//     $('#myModal').modal('show');
-     
-//   });
-// });
+/* === OPEN JOB POSITION DETAILS VIEW MODAL === */
 
 $(document).on("click", ".jobDetailsLink", function () {
   let jobOpeningId = $(this).data('id');
@@ -577,3 +622,5 @@ if(data.requirements){
     requirementsElement.innerHTML = requirementsHtml;
   })
 });
+
+/* === END - OPEN JOB POSITION DETAILS VIEW MODAL === */

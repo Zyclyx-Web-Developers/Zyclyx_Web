@@ -11,7 +11,7 @@
    z-index: 99;
  }
  #signOut-1{
-   color: rgb(158, 157, 157);
+   color: #f5f5f5;    
    text-decoration: none;
  }
  #signOut-1:hover{
@@ -86,19 +86,19 @@
 }
 #home .card1{
   background: #cdfbcd;
-  border: 1px solid #11a500;
+  border: 1px solid rgba(17, 165, 0,0.2);
   color: #11a500;
   /* background: linear-gradient(180deg,#35df7c 0%,#25b460 100%); */
 }
 #home .card2{
   background: #c9dff5dd;
-  border: 1px solid #046dd6;
+  border: 1px solid rgba(4, 109, 214,0.2);
   color: #046dd6;
   /* background: linear-gradient(180deg,#39f 0%,#2982cc 100%); */
 }
 #home .card3{
   background: #fbe1bb;
-  border: 1px solid #FF9800;
+  border: 1px solid rgba(255, 152, 0,0.2);
   color: #ea2121dd;
   /* background: linear-gradient(180deg,#f9b115 0%,#f6960b 100%); */
 }
@@ -169,6 +169,28 @@ table tr:hover{
   font-weight: bolder;
 }
 /* messageTable end */
+/*allJobApplication*/
+.application .name{
+  background: rgba(205, 225, 251, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application .date i{
+  background: rgba(255, 189, 189, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application .email{
+  background: rgb(200, 247, 253);
+  padding: 10px;
+  border-radius: 50px;
+}
+.application  .phone{
+  background: rgb(200, 247, 253);
+  padding: 10px;
+  border-radius: 50px;
+}
+/* allJobApplicationEnd*/
 
 
 /* Job Post Table */
@@ -270,7 +292,7 @@ table tr:hover{
   color: rgb(128, 128, 128);
 }
 .message .email{
-  color: rgb(128, 128, 128);
+  color: #000000;
   /* color: rgba(58, 100, 252, 0.867); */
   background: rgba(221, 225, 255, 0.5);
   padding: 10px;
@@ -278,7 +300,7 @@ table tr:hover{
 }
 .message .phone{
   text-align: center;
-  color: rgb(128, 128, 128);
+  color: #000000;
   /* color: #805bbe; */
   background: rgba(221, 225, 255, 0.5);
   /* background: rgba(237, 221, 255, 0.5); */
