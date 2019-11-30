@@ -10,7 +10,8 @@
   <link rel="apple-touch-icon" href="./images/favicon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
@@ -1201,6 +1202,7 @@
            <p class="copy-right text-center py-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All Rights Reserved.</p>
    
   </footer>
+  <div id="chatBot"></div>
   <script>
     document.getElementById("current-year").innerHTML = new Date().getFullYear();
   </script>
@@ -1213,7 +1215,8 @@
   <script src="./js/vendor/jquery-3.4.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="./js/vendor/bootstrap.bundle.min.js"></script>
-
+  <script src="./js/chatBot.js"></script>
+  <script>$("#chatBot").load("chat_bot.html")</script>
   <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/vendor/aos.js"></script>
   <script src="./js/vendor/waypoints.min.js"></script>

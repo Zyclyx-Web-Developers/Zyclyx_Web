@@ -740,3 +740,148 @@ margin: 8px auto !important;
   top:54px !important; 
 }
 }
+
+/* === CHAT BOT CSS === */
+.chat-bot .card-header {
+  /* background: #fff; */
+  color: #535a5f;
+  font-weight: bolder;
+  /* background-image:linear-gradient(270deg, #3e7dc1, #044c9a); */
+}
+.chat-bot{
+  display: none;
+}
+.chat-bot .card {
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  border-radius: 6px;
+  border: none;
+  overflow: hidden;
+  position: fixed;
+  /* box-shadow: 0px 0px 2px black; */
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  margin: 10px;
+  /* margin-right: 50px;
+  margin-bottom: 80px; */
+
+}
+
+.chat-bot .card-footer {
+  /* border-color: #ccc */
+  /* border-bottom-radius: 1px; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat-bot button.close {
+  padding: 11.4px;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px !important;
+}
+
+.chat-bot .close{
+  text-shadow: none;
+}
+.chat-bot .close:not(:disabled):not(.disabled):hover{
+  opacity: 1;
+}
+.chat-bot .close:hover{
+  color: rgb(255, 255, 255);
+  background: red;
+  opacity: 1;
+}
+
+.chat-bot .input-group-text {
+  background-color: #161616;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.chat-bot .form-control {
+  border: none;
+  /* padding: 20px 10px; */
+  height: 45px;
+}
+.chat-bot .form-control:focus{
+  box-shadow: none;
+}
+
+.chat-bot .card-body {
+  color: #000;
+  background: #eaeef3;
+  padding: 5px;
+  font-size: 14px;
+  overflow: auto;
+}
+
+ .bot {
+  border: 1px solid #2196F3;
+  background: #2196F3;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 2px 5px -1px black;
+  position: fixed;
+  z-index: 99;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+.chat-bot .reply-messages{
+  display: flex;
+  flex-direction: column;
+}
+.chat-bot .reply-messages p{
+  margin: 0;
+}
+
+.chat-bot #botReplay{
+  background: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 1px 1px 0px #ccc;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 80%;
+  align-self: flex-start;
+}
+.chat-bot #userReplay{
+  background: #fff;
+  color: #535a5f;
+  box-shadow: 0px 1px 1px 0px #ccc;
+  font-weight: 500;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 80%;
+  align-self:flex-end;
+}
+.chat-bot .trashBtn{
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.chat-bot .trashBtn:focus{
+  outline: none;
+  border: none;
+}
+.chat-bot .sendBtn:focus{
+  box-shadow: none;
+}
