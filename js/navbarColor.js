@@ -63,3 +63,19 @@ function changeNavbarColor(bgColor,textColor){
   document.getElementById("color-18").addEventListener('click',function(){  
   changeNavbarColor('#015249','#f4f4f4');
   });
+  document.getElementById("color-19").addEventListener('click',function(){  
+    changeNavbarColor('#e9efff','#0e0b16');
+    }); 
+  document.getElementById("color-20").addEventListener('click',function(){  
+      changeNavbarColor('#E6F4F1','#0e0b16');
+  });
+  document.getElementById("color-21").addEventListener('click',function(){  
+    changeNavbarColor('#D5E9E8','#0e0b16');
+});  
+document.getElementById("color-22").addEventListener('click',function(){  
+  changeNavbarColor('#D05E00','#f4f4f4');
+});  
+document.getElementById("color-23").addEventListener('click',function(){  
+  changeNavbarColor('#444655','#f4f4f4');
+}); 
+    

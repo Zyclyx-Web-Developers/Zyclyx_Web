@@ -75,7 +75,7 @@ font-family: 'Source Sans Pro', sans-serif;
   --hover:#006bb3;
   --background-color: #e9ecef;
 
-  --navbar-bg:#ebf6ff;
+  --navbar-bg:#E9EFFF;
   --navbar-text:#f4f4f4;
 }
  
@@ -398,9 +398,9 @@ h6,
     margin-top: 0; 
     padding-top: 10px;   
     border-radius: 0 !important;   
-    /* background-color: rgb(27, 43, 48,0.98) !important; */
-    background-color: #ebf6ff;
-    border-top: 1px solid #007bff !important;
+    box-shadow: 0 8px 6px -6px #cccccc;
+    background-color: #E9EFFF;
+    border-bottom: 1px solid #007bff !important;
     
   }
   .dropdown-menu .dropdown-item{     
@@ -436,9 +436,7 @@ h6,
   .service-dropdown-menu>div{
     margin-left: 40px;
   }
-  .dropdown:hover .navbar{
-    background: rgb(27, 43, 48,0.95) !important;
-  }
+ 
   /* service dropdown menu category title */
    .dropdown-title{   
     color:rgba(0, 123, 255,0.8);

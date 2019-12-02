@@ -10,7 +10,7 @@
 
  /* scroll progress indicator */
  .progress {
-  background: linear-gradient(to right, #3ba3ff var(--scroll), transparent 0);
+  background: linear-gradient(to right, #007bff var(--scroll), transparent 0);
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
