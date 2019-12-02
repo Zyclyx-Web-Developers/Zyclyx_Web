@@ -1202,6 +1202,7 @@
            <p class="copy-right text-center py-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All Rights Reserved.</p>
    
   </footer>
+  <div id="chatBot"></div>
   <script>
     document.getElementById("current-year").innerHTML = new Date().getFullYear();
   </script>
@@ -1214,7 +1215,8 @@
   <script src="./js/vendor/jquery-3.4.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="./js/vendor/bootstrap.bundle.min.js"></script>
-
+  <script src="./js/chatBot.js"></script>
+  <script>$("#chatBot").load("chat_bot.html")</script>
   <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/vendor/aos.js"></script>
   <script src="./js/vendor/waypoints.min.js"></script>
