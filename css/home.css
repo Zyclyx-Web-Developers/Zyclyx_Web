@@ -100,7 +100,7 @@ cursor: pointer;
 }
 
  /* scroll to top buttoon */
- #scrollTop{
+ /* #scrollTop{
    display: none;
  }
  #scrollTop.btn{
@@ -142,7 +142,7 @@ cursor: pointer;
 #scrollTop:hover .fas{
   transition: all .2s ease-in;
   animation: none;
-}
+} */
  
 /*
 HOME - CAROUSEL 
@@ -244,31 +244,14 @@ animation:caption-move-right 1.5s ease;
 #homeCarousel .carousel-caption h5{
 font-size: 3rem;      
 }
+
+#homeCarousel .carousel-indicators li,.industry-carousel .carousel-indicators li{
+  opacity: 1 !important;
+}
  /* 
  END - HOME CAROUSEL
  */
- 
-.home-title{
-  font-size: 3rem;
-  color: #ffffff ;
-  font-weight: 600;
-  text-align: left;
-}
-.home-caption{
-  margin-top: 2rem !important;
-  font-size: 1.3rem;
-  color: #f3f7fa;
-}
-.home-btn a{
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  transition:all 0.2s ease;
-}
-.home-btn a:hover{
-  background-color: #ffffff;
-  color: #111;
-  transition:all 0.2s ease;
-}
+  
 /* 
   ==== END - HOME VIDEO ====
 /* 
@@ -496,8 +479,8 @@ padding-bottom: 1rem;
  }
 .our-projects .item {
   height: 90vh;
-  position: relative;    
-  background-color:rgba(71, 23, 246,0.3);
+  position: relative;       
+  background-color: #00acee;
 }
 .our-projects .item img {
   width: 100%;
