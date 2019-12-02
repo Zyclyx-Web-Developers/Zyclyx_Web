@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Zyclyx</title>
+  <title>Zyclyx - Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
@@ -30,7 +30,7 @@
   <!-- 
     ==== NAVBAR ====
   -->
-  <div class="progress"></div>
+  <div class="se-pre-con"></div>
   <header class="main-navbar" id="mainNavbar">
     <nav class="navbar navbar-expand-lg master-nav fixed-top site-navbar" id="navbarMaster">
       <a class="navbar-brand ml-md-4" href="./index.html"><img src="./images/logo-white.png" alt="Zyclyx Logo"></a>
@@ -1230,6 +1230,15 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script> -->
   <script>
+    $("#chatBot").load("chat_bot.html");
+
+    // Page Loading Indicator
+    // Page Loading Indicator
+$(window).on('load', function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+  })
+
     // scroll top button
 
     window.onscroll = function () { scrollFunction() };

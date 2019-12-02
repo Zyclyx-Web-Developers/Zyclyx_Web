@@ -7,3 +7,10 @@ function show(x) {
         document.getElementById("box1").style.display = "inline"
     }
 }
+
+
+// Page Loading Indicator
+$(window).on('load', function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+  })
