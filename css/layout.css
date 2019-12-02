@@ -75,7 +75,7 @@ font-family: 'Source Sans Pro', sans-serif;
   --hover:#006bb3;
   --background-color: #e9ecef;
 
-  --navbar-bg:#0087FF;
+  --navbar-bg:#ebf6ff;
   --navbar-text:#f4f4f4;
 }
  
@@ -327,28 +327,57 @@ h6,
     padding: 0 !important;
     /* font-family: 'Open Sans', sans-serif;                */
     transition: background 250ms ease-in;
-    border-bottom: 1px solid rgba(212, 245, 245,0.5);     
+    border-bottom: 1px solid rgba(212, 245, 245,0.2);     
   }
 
   .navbar .nav-link{
     font-weight: 600;
     color:var(--navbar-text) !important;     
   }
-  .navbar-light .nav-link{
+  /* .navbar-light .nav-link{
     color: #ffffff;
   }
+  .nabbar-dark .nav-link{
+    color: #0e0b16;
+  } */
   .navbar button[aria-expanded="true"] .fas:before{
     content: "\f00d"
   }
 
-  .navbar-light{ 
-    background: rgba(39, 153, 255,0.1) !important;  
-  }
-  .navbar-dark{          
-    background-color:var(--navbar-bg) !important; 
-    box-shadow: 0 8px 6px -6px rgba(39, 153, 255,0.6);
-  }
-    
+  .navbar-light{
+    background: rgba(39, 153, 255,0.1) !important;
+    transition:all 0.5s ease-in ;
+    -webkit-transition:all 0.5s ease-in ;
+    -moz-transition:all 0.5s ease-in ;
+    -ms-transition:all 0.5s ease-in ;
+    -o-transition:all 0.5s ease-in ;
+}
+  .navbar-dark{
+    background-color:var(--navbar-bg) !important;
+    box-shadow: 0 8px 6px -6px #cccccc;
+    animation: slide-in-top 1s;
+    -webkit-animation: slide-in-top 1s;
+}
+.navbar-inner .nav-link{
+  color: #083261 !important;
+}
+@keyframes slide-in-top{
+  0%{
+    /* opacity: 0; */
+    transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    -moz-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+}
+100%{
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+}
+}    
   .navbar .navbar-toggler{
     transition: all 0.3s linear;
     outline:none;
@@ -370,8 +399,8 @@ h6,
     padding-top: 10px;   
     border-radius: 0 !important;   
     /* background-color: rgb(27, 43, 48,0.98) !important; */
-    background-color: #f3f7fa;
-    border-bottom: 1px solid #b1daff !important;
+    background-color: #ebf6ff;
+    border-top: 1px solid #007bff !important;
     
   }
   .dropdown-menu .dropdown-item{     
@@ -381,15 +410,13 @@ h6,
   }
   .dropdown-menu .dropdown-item:hover{             
     transition:all 0.1s linear;
-    background-color: transparent !important;
-    transform: translateX(3px);
+    background-color: transparent !important;     
+    text-decoration: underline;
   }
  
-  .dropdown-menu a:hover{
-    /* color: #ffffff; */
+  .dropdown-menu a:hover{     
     color:#152a49 ;
-    font-weight: 600;
-    /* text-decoration: underline !important;      */
+    font-weight: 600;     
   }
    
   /* show dropdown menu on hover */
@@ -563,7 +590,7 @@ background-color:#f3f7fa;
 */
 .footer{   
   text-align: left;   
-  background: #083261;   
+  background:var(--navbar-bg);   
    
   
 }
@@ -576,7 +603,7 @@ background-color:#f3f7fa;
 
 .footer .f-title{  
   /* color: #ff4500; */
-  color: #f4f4f4;
+  color: var(--navbar-text);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
@@ -590,7 +617,8 @@ background-color:#f3f7fa;
  font-size: 0.9rem;
   font-weight: 600;   
   margin-bottom: 1px;
-  color: #c7d8c6;
+  color: var(--navbar-text);
+  opacity: 0.8;
 }
 
 .footer .explore {
@@ -605,10 +633,11 @@ background-color:#f3f7fa;
  margin: 0 6px;
 }
 .footer a:hover{
-  color:#ffffff !important; 
+  color:var(--navbar-text) !important;
+  opacity: 1; 
 }
 .footer .explore a:hover,.footer .privacy a:hover{
-  color:#ffffff !important; 
+  color:var(--navbar-text) !important; 
 }
 
 .footer .privacy a:hover{
@@ -633,9 +662,9 @@ align-items: center;
 }
 
 .footer .social-network .fab:hover{
-  color: #2a354f;
+  color: var(--navbar-text);
   background-color: #f3f7fa;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--navbar-text);
   transform: scale(1.1);
   }
   .footer .social-network a:hover{
