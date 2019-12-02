@@ -561,8 +561,7 @@ background-color:#f3f7fa;
 /* 
 ==== FOOTER ====
 */
-.footer{
-  line-height: 1.8;
+.footer{   
   text-align: left;   
   background: #083261;   
    
@@ -584,7 +583,7 @@ background-color:#f3f7fa;
 }
 
 .footer .social-network .fab{
-  line-height: 2.4; 
+  line-height: 2; 
 }
 
 .footer a,.footer p{  
@@ -645,7 +644,7 @@ align-items: center;
   
 .footer .footer-hr{
 border-top: 1px solid rgba(255, 255, 255,0.2);
-margin: 8px auto !important;
+margin: 2px auto !important;
 }
 .follow ul{
   margin: 0;
