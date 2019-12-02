@@ -2,7 +2,13 @@
   background-image: url("../images/careerpage-img.jpg");
   background-position: center;
 }
- 
+ /* loading indicator for open jobs */
+.loading{
+  z-index: 9999;
+  width: 100%;
+	height: 100px;
+  background: url('../images/loading.gif') center no-repeat #fff;
+}
 .work-with-card .card-body{
   margin: 0.4rem;
   /* background-color: #f3f7fa; */
