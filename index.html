@@ -169,7 +169,7 @@
   <!-- === END - NAVBAR ==== -->
 
    <!-- navbar color picker -->
-    <div class="nav-color-switch">
+    <!-- <div class="nav-color-switch">
         <span id="color-19"></span> 
       <span id="color-20"></span>
       <span id="color-22"></span>
@@ -194,14 +194,14 @@
       <span id="color-16"></span>
       <span id="color-17"></span>
       <span id="color-18"></span>      
-    </div>
+    </div> -->
    <!-- navbar color picker -->
 
   <!-- 
   ==== Home page Image ====
  -->
   <section class="home-cover" id="homeContainer">
-    <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="homeCarousel" class="carousel carousel-fade" data-ride="carousel">
       <div class="container indicator-wrapper d-none d-sm-none d-md-flex">
         <span class="indicator"></span>
         <ol class="carousel-indicators mx-5 custom-indicator">
@@ -220,15 +220,15 @@
       </ol>
 
       <div class="carousel-inner">
-        <div class="carousel-item item inactiveUntilOnLoad active">
-          <img src="./images/background/bg_cover.jpg" class="d-block w-100" alt="enterprise solution">
+        <div class="carousel-item item active">
+          <img src="./images/home/slide-3.png" class="d-block w-100" alt="enterprise solution">
           <div class="carousel-caption">
             <h5>Full-service custom application development to meet the specific functional needs of enterprise
               customers</h5>
           </div>
         </div>
         <div class="carousel-item item">
-          <img src="./images/cloud-computing-header.jpg" class="d-block w-100" alt="technical expertise">
+          <img src="./images/home/slide-2.jpg" class="d-block w-100" alt="technical expertise">
           <div class="carousel-caption ">
             <h5>We apply our technical expertise and consultative approach to best meet your technology and automation
               goals</h5>
@@ -236,14 +236,14 @@
         </div>
         <div class="carousel-item item">
           <div class="img-overlay"></div>
-          <img src="./images/cyber_header.jpg" class="d-block w-100" alt="cutting edge technology">
+          <img src="./images/home/slide-4.jpg" class="d-block w-100" alt="cutting edge technology">
           <div class="carousel-caption">
             <h5>Deploy cutting edge technology, optimize customer experience, automate process and ensure business
               continuity</h5>
           </div>
         </div>
         <div class="carousel-item item">
-          <img src="./images/earth-3866609_1280.jpg" class="d-block w-100" alt="Industry knowledge">
+          <img src="./images/home/slide-1.jpg" class="d-block w-100" alt="Industry knowledge">
           <div class="carousel-caption">
             <h5>Industry knowledge, functional experience, and technology skills to help clients grow and creates
               long-lasting value.</h5>
@@ -276,7 +276,8 @@
             data-aos-duration="1000">
             <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3">
               <div class="welcome-title d-flex align-items-center">
-                <p class="welcome-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                <p class="welcome-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
                     viewBox="0 0 172 172">
                     <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
                       stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
@@ -288,7 +289,8 @@
                         </path>
                       </g>
                     </g>
-                  </svg></p>
+                  </svg>
+                </p>
                 <h3 class="py-2 title-3 ml-3 mt-2">Who we are</h3>
               </div>
               <p class="mx-2 mt-2 text-2 welcome-text">Zyclyx, a company dedicated to making work more human by
@@ -1160,7 +1162,7 @@
   <!-- 
     ==== FOOTER ====
    -->
-  <footer class="container-fluid footer">
+  <footer class="container-fluid footer pt-2">
     <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
         <div class="col-lg-2 col-md-4 col-4 mt-1 explore">
         <p class="f-title">Explore</p>
@@ -1198,12 +1200,13 @@
 
 
     </div>
-    <hr class="footer-hr" />
-
-           <p class="copy-right text-center py-1 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All Rights Reserved.</p>
+     
+    <div class="footer-copy row">
+        <p class="copy-right text-center col py-1 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All Rights Reserved.</p>
+    </div>
+    
    
-  </footer>
-  <p class="py-4 border"></p>
+  </footer>   
   <div id="chatBot"></div>
   <script>
     document.getElementById("current-year").innerHTML = new Date().getFullYear();
@@ -1225,7 +1228,7 @@
   <script src="./js/vendor/counterup.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/navbarColor.js"></script> 
+  <!-- <script src="./js/navbarColor.js"></script>  -->
 
   <script>
   // SCROLL PROGRESS BAR
