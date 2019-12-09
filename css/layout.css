@@ -330,13 +330,13 @@ h6,
  
   .navbar .nav-link{
     font-weight: 600;
-    color:var(--navbar-text) !important;     
+    color: #0e0b16 !important;     
   }
-  /* .navbar-light .nav-link{
-    color: #ffffff;
+  .navbar-light .nav-link{
+    color: #ffffff !important;
   }
-  .nabbar-dark .nav-link{
-    color: #0e0b16;
+  /* .nabbar-dark .nav-link{
+    color: #0e0b16 !important;
   } */
   .navbar button[aria-expanded="true"] .fas:before{
     content: "\f00d"
@@ -417,7 +417,7 @@ h6,
  
   .dropdown-menu a:hover{     
     color:#222da5 ;
-    font-weight: 600;     
+    font-weight: 500;     
   }
    
   /* show dropdown menu on hover */
