@@ -200,9 +200,6 @@ right: 10%;
  END - HOME CAROUSEL
  */
   
-/* 
-  ==== END - HOME VIDEO ====
-/* 
 
 /* 
   ==== WELCOME SECTION
@@ -214,8 +211,7 @@ right: 10%;
   align-items: center;
   flex-direction: column;
 }
-.welcome-icon svg{
-  /* fill: var(--color); */
+.welcome-icon svg{   
   fill: #2138c9;
 }
 .welcome-card{
@@ -236,8 +232,7 @@ right: 10%;
 .welcome-card img {
   max-width: 36px;
 }
-.welcome-card:hover .welcome-card-body{
-   /* box-shadow: 0 0 5px 2px #2138c9; */
+.welcome-card:hover .welcome-card-body{    
    transition: all 0.2s ease-in;
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
@@ -281,12 +276,12 @@ padding-bottom: 1rem;
   margin:1.4rem 0.1rem;
   background-color: #fff !important;
   border-radius: 8px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   border: 1px solid #d8edff;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 .services .card:hover .service{
   transition: all 0.3s linear;
@@ -295,24 +290,55 @@ padding-bottom: 1rem;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  box-shadow: 0 0.125rem 0.3rem -0.0625rem #e6f4f1,
-  0 0.275rem 0.75rem -0.0625rem #e6f4f1 !important;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem hsl(235, 66%, 89%),
+  0 0.275rem 0.75rem -0.0625rem hsl(235, 66%, 89%) !important;   
 }
 
 .service .title-2{
   font-size: 19px !important;
 }
 .service .title-3{
-  /* color:#3D5DED; */
+  color:#222da5;
   margin-top: 5px;
 }
-.service-icon{     
+.services .service .service-icon{     
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-color:transparent;
+    background-color:transparent;     
+    height: 70px;
+    width: 70px;
+    padding: 12px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    box-shadow: inset 0 0 0 1px rgba(34, 45, 165,0.2);
 }
+.services .service:hover .service-icon{   
+    box-shadow: inset 0 0 0 70px #222da5;
+    transition: all .5s ease-in-out;
+}
+.services .service .service-icon svg{
+  fill: #222da5;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+.services .service:hover .service-icon svg{
+      fill: #ffffff;
+      height: 70px;
+      width: 70px;
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+  }
 .service-text{
   min-height: 120px;
   margin-bottom:0 ;
@@ -755,21 +781,14 @@ font-weight: 400 !important;
 
 .contact-banner .title-2{
   font-weight: 700 !important;
-  font-size: 1.4rem !important;
+  font-size: 2rem !important;
 }
 .contact-banner a{
-  padding: 0.6rem 2rem;
-  margin-top: 10px;
-  border-color: #007bff;
-  color: #007bff;
-  font-weight: 700;
+  padding: 0.6rem 2rem;     
+  color: #ffffff;   
   font-size: 1.2rem;
 }
-.contact-banner a:hover{
-background-color:#007bff;
-color: #ffffff;
-border-color: #007bff;
-}
+ 
 
 @media (max-width: 575.98px) { 
   #homeCarousel .carousel-caption h5{
