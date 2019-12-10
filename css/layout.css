@@ -48,7 +48,7 @@
 .btn-shadow-1 {
   box-shadow: 0 0.5rem 1.125rem -0.5rem #2138c9;
 }
-.btn-shadow-2:hover{
+.btn-shadow-primary:hover{
   box-shadow: 0 0.5rem 1.125rem -0.5rem #2138c9;
   transform: translate(0,-2px);
   -webkit-transform: translate(0,-2px);
@@ -56,7 +56,7 @@
   -ms-transform: translate(0,-2px);
   -o-transform: translate(0,-2px);
 }
-.btn-shadow-red:hover{
+.btn-shadow-secondary:hover{
   box-shadow: 0 0.5rem 1.125rem -0.5rem #f51714;
   transform: translate(0,-2px);
   -webkit-transform: translate(0,-2px);
@@ -66,11 +66,13 @@
 }
 .btn-primary{
   background-color: #2138c9;
+  border-color: #2138c9;
 }
 .btn-primary:hover{
   background-color: #222da5;
+  border-color: #222da5;
 }
-
+ 
 .btn-custom{   
     --hue: 232;
     position: relative;
@@ -286,8 +288,7 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
   background-position: center;
-  height:320px;
-  padding: 90px;
+  height:320px;   
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -691,6 +692,12 @@ margin: 2px auto !important;
 ==== END - FOOTER ====
 */
 @media (max-width: 575.98px) { 
+  .header-img{
+    height: 200px;
+  }
+  .header-title{
+    font-size: 2rem;
+  }
   .wrapper{
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
