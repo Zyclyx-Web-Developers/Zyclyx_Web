@@ -896,7 +896,8 @@ margin: 2px auto !important;
   cursor: pointer;
 }
 .bot:hover{
-  background-color:transparent;  
+  background-color:#ffffff;
+  border-color: rgba(33, 56, 201,0.5);
   color:#2138c9; 
 }
 .chat-bot .reply-messages{
