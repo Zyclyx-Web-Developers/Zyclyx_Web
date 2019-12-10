@@ -5,6 +5,7 @@
 .overlay:before{
     background-color: rgba(0, 123, 255,0.9);
 }
+
 .address-card-body{     
     margin: 0.6rem;
     border: 1px solid #c4e3ff;
@@ -15,6 +16,9 @@
 .address-card-body p{
     margin-bottom: 0;
     min-height: 75px;
+}
+.contact-info .title-3{
+    color: #2138c9;
 }
 /* .address-card-body h5{
     color: #0087FF;
