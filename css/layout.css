@@ -8,25 +8,7 @@
        url('../fonts/gtwalsheimproregular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
-  /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Source+Sans+Pro&display=swap');
-
-/*  font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Questrial', sans-serif;
-    font-family: 'Muli', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
- */
 
 /*
 ==== COLORS ====
@@ -44,37 +26,9 @@ font-family: 'Source Sans Pro', sans-serif;
   --color-2-4:#2a2048;
   --color-2-5:#9f73c6;
   --color-2-6:#f51714;
- 
 
   --font:'custom-font', sans-serif;
- 
   --color:#f51714;
-
-  --black: #444655;
-  --blue: #007bff;
-  --blue-2:#335eea;
-  --aqua-marine: #e9efff;
-  --glitter: #e6f4f1;
-  --azureish-white: #cee8e6;
-  --aqua-marine: #6efacc;
-  --ghost-white: #f8f9ff;
-  --medium-gray: #a8aabc;
-  --sky-blue: #00dbf1;
-  --orange-red: #ea4300;
-  --green: #009d58;
-  --fresh-air: #aaddff;
-  --blue-shade: #0044bc;
-  --bg-color: #e2e9ef;
-  --bg-soft: #f3f7fa;
-  --text-color: #2a354f;
-  --text-color-2: #66799e;
-  --footer-bg:#152a49;
-  --text:#6c757d;
-  --hover:#006bb3;
-  --background-color: #e9ecef;
-
-  --navbar-bg:#E9EFFF;
-  --navbar-text:#f4f4f4;
 }
  
 /* 
@@ -92,10 +46,10 @@ font-family: 'Source Sans Pro', sans-serif;
     0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
 }
 .btn-shadow-1 {
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #2138c9;
 }
 .btn-shadow-2:hover{
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #2138c9;
   transform: translate(0,-2px);
   -webkit-transform: translate(0,-2px);
   -moz-transform: translate(0,-2px);
@@ -116,6 +70,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .btn-primary:hover{
   background-color: #222da5;
 }
+
 .btn-custom{   
     --hue: 232;
     position: relative;
@@ -185,6 +140,8 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+/* Page loading circle  */
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -252,22 +209,6 @@ body {
   -o-transform: scaleX(1);
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.title-caption {
-  font-family: "Montserrat", sans-serif;
-  font-family: 'Nunito', sans-serif;
-} */
-
-/* p {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-} */
-
 .text-1,
 .text-2,
 .text-3,
@@ -333,7 +274,7 @@ h6,
  
 .quote-left{
   font-size: 1rem;
-  color: rgb(0, 123, 255,0.7);
+  color:#2e5bd7;
 }
  
 /* 
@@ -367,6 +308,10 @@ h6,
   margin-left: 2rem;
   margin-top: 0.6rem;
 }
+.breadcrumb-item a,.breadcrumb-item, .breadcrumb-item .fa{
+  color: #2138c9;
+}
+
 .overlay{
   position: relative;
 }
@@ -377,7 +322,7 @@ h6,
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 123, 255,0.6);
+  background-color:rgba(33, 56, 201,0.5);
 }
 .overlay h1, .overlay h2{
   position:relative;
@@ -392,15 +337,13 @@ h6,
 */
 
 .navbar{  
-    padding: 0 !important;
-    /* font-family: 'Open Sans', sans-serif;                */
-    transition: background 250ms ease-in;
+    padding: 0 !important;          
     border-bottom: 1px solid rgba(212, 245, 245,0.2);     
   }
  
   .navbar .nav-link{
     font-weight: 600;
-    color: #0e0b16 !important;     
+    color: #2a2048 !important;     
   }
   .navbar-light .nav-link{
     color: #ffffff !important;
@@ -421,7 +364,7 @@ h6,
     -o-transition:all 0.5s ease-in ;
 }
   .navbar-dark{
-    background-color:var(--navbar-bg) !important;
+    background-color:#E9EFFF !important;
     box-shadow: 0 8px 6px -6px #cccccc;
     animation: slide-in-top 1s;
     -webkit-animation: slide-in-top 1s;
@@ -580,13 +523,13 @@ h6,
   margin-right: 20px;
   display: flex;     
   align-items: center;
-  color: #ff4500;
+  color: #f51714;
 }
 
 .service-highlight{  
 height: 4px;
 width: 30px;
-background-color: #ff4500; 
+background-color: #f51714; 
 margin-right: 10px; 
 }
 .capabilities{
