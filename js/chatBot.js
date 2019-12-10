@@ -31,7 +31,6 @@ if(!sessionID){
 }
 
 let messagesElement = document.getElementById("botMessages");
-
 // Get Reply Message from chat bot on input submit
 document
 .getElementById("bot-form")
@@ -52,6 +51,8 @@ document
   })
     .then(function(response) {
       // disable input and add loading...
+      document.getElementById('userText').setAttribute("disabled", true);
+
       document.getElementById("userText").value = "";
       return response.json();
     })      
@@ -81,8 +82,14 @@ document
           }    
         }            
     })
+   
     .then(function(){
       // enable input and remove loading ...
+    document.getElementById("userText").removeAttribute("disabled");
+    })
+    .then(function(){
+      let chatBot=document.getElementById("scroll");   
+      chatBot.scrollTop = chatBot.scrollHeight;      
     })
   }
 });
