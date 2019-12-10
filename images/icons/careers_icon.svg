@@ -1,14 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                                    viewBox="0 0 172 172" style=" fill:#000000;">
-                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
-                                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                                        text-anchor="none" style="mix-blend-mode: normal">
-                                        <path d="M0,172v-172h172v172z" fill="none"></path>
-                                        <g fill="#007bff">
-                                            <path
-                                                d="M44.075,24.08c-1.89469,0.17469 -3.29219,1.86781 -3.1175,3.7625c0.17469,1.89469 1.86781,3.29219 3.7625,3.1175h22.575l-59.4475,59.4475c-1.37062,1.37063 -1.37062,3.57438 0,4.945c1.37063,1.37063 3.57438,1.37063 4.945,0l59.4475,-59.4475v22.575c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-34.4h-34.4c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM116.96,37.84v134.16h48.16v-134.16zM123.84,44.72h34.4v120.4h-34.4zM61.92,82.56v89.44h48.16v-89.44zM68.8,89.44h34.4v75.68h-34.4zM6.88,120.4v51.6h48.16v-51.6zM13.76,127.28h34.4v37.84h-34.4z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 172 172">
+  <g fill="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal">
+    <path d="M0 172V0h172v172z"/>
+    <path d="M44.075 24.08a3.462 3.462 0 00-3.118 3.763 3.462 3.462 0 003.763 3.117h22.575L7.848 90.407a3.487 3.487 0 000 4.946 3.487 3.487 0 004.945 0L72.24 35.904V58.48a3.46 3.46 0 001.707 3.023 3.473 3.473 0 003.466 0 3.46 3.46 0 001.707-3.023v-34.4H44.075zm72.885 13.76V172h48.16V37.84zm6.88 6.88h34.4v120.4h-34.4zM61.92 82.56V172h48.16V82.56zm6.88 6.88h34.4v75.68H68.8zM6.88 120.4V172h48.16v-51.6zm6.88 6.88h34.4v37.84h-34.4z" fill="#2138c9"/>
+  </g>
+</svg>
