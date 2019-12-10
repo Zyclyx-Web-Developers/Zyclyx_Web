@@ -13,28 +13,30 @@
         </div>
 
         <div class="card-body">
-            <div class="reply-messages">
+            <div class="reply-messages" id="botMessages">
 
                 <p id="botReplay">Hey I'm Zybot ! </p>
                 <!-- <p id="useTime"></p> -->
 
-                <p id="userReplay">Hi </p>
+                <!-- <p id="userReplay">Hi </p> -->
                 <!-- <p id="useTime"></p>-->
 
             </div>
         </div>
         <div class="card-footer p-0 bottom-fixed">
+            <form id="bot-form">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type a Message..."
+                <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2">
-                        <button class="btn sendBtn">
+                        <button type="submit"class="btn sendBtn">
                             <i class="fas fa-paper-plane text-white "></i>
                         </button>
                     </span>
                 </div>
             </div>
+           </form>
         </div>
     </div>
 </div>
