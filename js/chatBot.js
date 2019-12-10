@@ -39,6 +39,9 @@ document
   e.preventDefault();
   e.stopPropagation();
   let userText = document.getElementById("userText").value;
+
+  // if user input not empty send API Request to chat bot
+  if(userText !== ''){
   messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;   
   fetch("https://stark-crag-70246.herokuapp.com/zyclyx", {
     method: "post",
@@ -48,11 +51,11 @@ document
     body: JSON.stringify({ text: userText,session_id:sessionID })
   })
     .then(function(response) {
+      // disable input and add loading...
       document.getElementById("userText").value = "";
       return response.json();
     })      
-    .then(function(output){
-                    
+    .then(function(output){                    
         if(output[0]){
          if (output[0].text) {
             messagesElement.innerHTML += `<p id="botReplay">${output[0].text}</p>`;
@@ -78,6 +81,10 @@ document
           }    
         }            
     })
+    .then(function(){
+      // enable input and remove loading ...
+    })
+  }
 });
  
 // Page Loading Indicator
