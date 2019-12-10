@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <!-- TODO - add favicon -->
-  <title>Zyclyx - Experienced in Future World</title>
+  <!-- TODO - add favicon --><link rel="apple-touch-icon" href="./favicon.png">   
+  <link rel="icon" href="./favicon.png">
+  <title>IoT - Zyclyx</title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -16,9 +17,27 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/IoT.css">
   <link rel="stylesheet" href="css/aos.css">
+  <style>
+  
+/* Header */
+.header-img{    
+    background-image:url("../images/iot-header.png");   
+}
+.service .card-1 .card-icon{
+    background: #EAB543;
+}
+
+.service .card-2 .card-icon{
+background: #2ecc71;
+}
+.service .card-3 .card-icon{
+    background: #2980b9;
+}
+  </style>
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
   <div>
     <!-- 
       ==== Navbar ====
@@ -202,6 +221,7 @@
       -->
     <!-- Footer  -->
     <div id="footer"></div>
+    <div id="chatBot"></div>
   </div>
   <!-- Footer End -->
   <!-- Bootstrap core JavaScript
@@ -219,10 +239,12 @@
     crossorigin="anonymous">
     </script>
      <script src="./js/vendor/aos.js"></script>
+     <script src="./js/chatBot.js"></script>
   <script>
     $(function () {
       $("#navbar").load("navbar.html");
       $("#footer").load("footer.html");
+      $("#chatBot").load("chat_bot.html");
     });
   
 window.onload = function(){

@@ -7,7 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!-- TODO - add favicon -->
-    <title>Zyclyx - Experienced in Future World</title>
+    <link rel="apple-touch-icon" href="./favicon.png">   
+    <link rel="icon" href="./favicon.png">
+    <title>About Us - Zyclyx</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -21,6 +23,7 @@
 </head>
 
 <body>
+<div class="se-pre-con"></div>
     <!-- 
       ====== Navbar ======
     -->
@@ -48,7 +51,7 @@
             <!-- title -->
             <div class="col-md-10 col-12 pb-5" data-aos="zoom-in" data-aos-anchor-placement="top-bottom"
                 data-aos-easing="ease-out-sine" data-aos-delay="100" data-aos-duration="1000">
-                <h3 class="title-1">Experienced in<span class="title-highlight"> Future World</span></h3>
+                <h3 class="title-1">For your specific industry, we've <span class="title-highlight">Highly-Tailored IT solutions</span></h3>
                 <p class="title-caption">Custom IT Solutions for your Business.</p>
                 <h5 class="title-2 py-4 text-center">ZYCLYX is a technology-driven and customer-focused consulting firm
                     which was
@@ -333,8 +336,7 @@
         </div>
     </section>
     <div class="mt-5" id="footer"></div>
-
-
+    <div id="chatBot"></div>
     <!-- END - FOOTER -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -342,11 +344,15 @@
     <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/vendor/waypoints.min.js"></script>
+    <script src="./js/chatBot.js"></script>
     <script src="./js/vendor/counterup.min.js"></script>
+    <script src="./js/pageLoading.js"></script>
     <script>
+ 
         $(function () {
             $("#navbar").load("navbar.html");
             $("#footer").load("footer.html");
+            $("#chatBot").load("chat_bot.html");
         });
         window.onload = function () {
             // Initiate animate on scroll library

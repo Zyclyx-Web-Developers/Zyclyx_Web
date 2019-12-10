@@ -19,6 +19,7 @@ let location=document.getElementById('location');
 let startDate = document.getElementById('startDate');
 let closeDate = document.getElementById('closeDate');
 let jobtype=document.getElementById('jobtype');
+
 fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`) 
 .then(function(response){
   return response.json();

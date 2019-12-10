@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-
   <title>Zyclyx Admin Dashboard</title>
 
   <!-- Bootstrap core CSS -->
@@ -32,7 +30,7 @@
         <i class="fas fa-user mr-2"></i>
         <span id="userName" class="mr-4 title-3"></span></li> -->
       <li class="nav-item text-nowrap mx-4">
-        <a class="nav-link" href="#" id="signOut-1">sign out</a>
+        <a class="font-weight-normal" href="#" id="signOut-1"><i class="fas fa-power-off mr-2"></i>sign out</a>
       </li>
     </ul>
   </nav>
@@ -44,14 +42,19 @@
         <nav class="nav nav-tabs flex-column side-nav">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
             aria-selected="true"><i class="fas fa-home fa-fw mx-2"></i>Dashboard</a>
+
           <a class="nav-link messages-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
-            aria-controls="home" aria-selected="false"> <i class="fas fa-envelope fa-fw mx-2"></i>Messages</a>
+            aria-controls="messages" aria-selected="false"> <i class="fas fa-envelope fa-fw mx-2"></i>Messages</a>
+
           <a class="nav-link applications-link" id="applications-tab" data-toggle="tab" href="#applications" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+            aria-controls="applications" aria-selected="false"><i class="fab fa-wpforms fa-fw mx-2"></i>Job Applications</a>
+
           <a class="nav-link openings-link" id="openings-tab" data-toggle="tab" href="#openings" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+            aria-controls="openings" aria-selected="false"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</a>
+
           <a class="nav-link postjob-link" id="newjob-tab" data-toggle="tab" href="#newjob" role="tab"
-            aria-controls="home" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+            aria-controls="newjob" aria-selected="false"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</a>
+
           <a href="#" class="nav-link signout-link" id="signOut-2"><i class="fas fa-fw fa-sign-out-alt mx-2"></i>Sign
             out</a>
         </nav>
@@ -59,8 +62,9 @@
       <!-- Content Area -->
       <div class="col-10 mainSideText">
         <div class="tab-content" id="myTabContent">
-          <!-- Dashboard home -->
-          <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+          
+          <!--  DASHBOARD HOME CONTENT -->
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h3 class="text-center py-4"></h3>
             <div class="dashboard">
               <div class="matBg">
@@ -71,7 +75,7 @@
                       <h2 id="message-count"></h2>
                     </div>
                   </div>
-                  <div class="col-3 card mx-2">
+                  <div class="col-3 card mx-2"> 
                     <div class="card-body card2">
                       <h5>Job Openings</h5>
                       <h2 id="openings-count">
@@ -92,15 +96,15 @@
                 <h5 class="pt-5 RecentText">Recent Activity</h5>
                 <div class="py-4 my-2">
                   <div class="d-flex justify-content-between py-4">
-                    <h4 class=" ml-2">Messages</h4>
-                    <a class=" " id="viewAllMessages" href="#"> <i
+                    <h4 class="ml-2">Messages</h4>
+                    <a class="text-primary" id="viewAllMessages" href="#"> <i
                         class="far fa-envelope fa-fw mx-2"></i>View All Messages</a>
                   </div>
                   <div id="recentMessages"></div>
                 </div>
                 <div class="py-4 my-2">
                   <div class="d-flex justify-content-between py-4">
-                    <h4 class=" ml-2">Job Posts</h4>
+                    <h4 class="ml-2">Job Posts</h4>
                     <!-- <a href="#" class="btn btn-link text-primary">View All</a> -->
                     <a class="text-primary" id="viewAllOpenings" href="#"><i
                         class="fas fa-file-import fa-fw mx-2"></i>View All Job Openings</a>
@@ -114,7 +118,7 @@
                   <div class="d-flex justify-content-between py-4">
                     <h4 class="">Job Applications</h4>
                     <a class="btn btn-link" href="#" id="viewAllApplications"><i
-                        class="fab fa-wpforms fa-fw mx-2"></i>View All Job Applications</a>
+                        class="fab fa-wpforms fa-fw mx-2 font-weight-bolder text-primary"></i>View All Job Applications</a>
                   </div>
                   <div id="recentJobApllications">
 
@@ -123,30 +127,50 @@
               </div>
             </div>
           </div>
+          
+          <!-- CONTACT MESSAGES CONTENT -->
+          <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="container" style="background: #e6e3e3;">
+              <h3 class="text-center py-5 head text-success"><i class="fas fa-envelope mr-4 text-success"></i>Messages</h3>
+ 
           <!-- Contact messages -->
-          <div class="tab-pane fade show active" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+          <!-- <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
             <div class="container-fluid">
-              <h3 class="text-center py-5 head"><i class="fas fa-envelope mr-4"></i>Messages</h3>
+              <h3 class="text-center pt-5 head text-success font-weight-bolder"><i class="fas fa-envelope mr-2 text-success"></i>Messages</h3>
+              <p class="text-center text-muted pb-4">You can access all the <strong>Messages </strong>from here..</p>
+ -->
               <div class="row d-flex justify-content-center align-items-center" id="allMessages">
-                <!-- messages come here from API through JS -->
+               
               </div>
             </div>
  
           </div> 
  
-          <!-- Job application details -->
+          <!-- JOB APPLICATIONS CONTENT -->
           <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
-            <h3 class="text-center py-5"><i class="fab fa-wpforms mr-4"></i>Job Applications</h3>
+            <h3 class="text-center pt-5 font-weight-bolder text-success"><i class="fab fa-wpforms mr-2"></i>Job Applications</h3>
+            <p class="text-center text-muted pb-4">You can able to access all the <strong>Job Applications </strong>from here..
+            
+            </p>
             <div class="container">
               <div id="allJobApplications">
 
               </div>
             </div>
+
+
           </div>
 
-          <!-- Job Openings -->
-          <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="applications-tab">
+ 
+          <!-- JOB OPENINGS CONTENT -->
+          <div class="tab-pane fade" id="openings" role="tabpanel" aria-labelledby="openings-tab">
             <h3 class="my-5 text-center green-heading">All Open Positions</h3>
+ 
+          <!-- Job Openings -->
+          <!-- <div class="tab-pane fade show active" id="openings" role="tabpanel" aria-labelledby="applications-tab">
+            <h3 class="mt-5 text-center green-heading text-success font-weight-bolder"><i class="fas fa-file-import fa-fw mx-2"></i>Job Openings</h3>
+            <p class="text-center text-muted pb-4">You can access all the <strong>Opening Positions </strong>from here..</p>
+  -->
             <div class="container">
               <div id="allOpenPositions">
 
@@ -155,17 +179,24 @@
             </div>
           </div>
 
-          <!-- Post a new job -->
-          <div class="tab-pane fade " id="newjob" role="tabpanel" aria-labelledby="applications-tab">
+          <!-- POST A NEW JOB OPENING -->
+          <div class="tab-pane fade " id="newjob" role="tabpanel" aria-labelledby="newjob-tab">
             <div class="container py-4">
 
               <!-- job posting form -->
               <div class="row d-flex justify-content-center" id="formPost">
                 <div class="col-7 formBg">
+ 
                   <h3 class="text-center py-4 font-weight-bolder text-primary">Post a New Job Opening</h3>
+                  
+                  <!-- new job opening form -->
+ 
+                  <!-- <h3 class="text-center pt-4 font-weight-bolder text-success"><i class="fas fa-pen-square fa-fw mx-2"></i>Post a New Job</h3>
+                  <p class="text-center text-muted pb-4">You can post all the <strong>New Job Openings </strong>from here..</p>
+  -->
                   <form id="postJob">
+                    
                     <div class="form-row">
-
                       <div class="col-12 my-3" >
                         <label for="title">Title :</label>
                         <input type="text" name="title" class="form-control py-4 title" placeholder="Job Title">
@@ -322,6 +353,40 @@
         </div>
       </div>
     </div>
+  </div>
+
+<!-- Job Opening Details Model -->
+  <div>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="OpenModal" tabindex="-1" role="dialog" aria-labelledby="jobModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header align-items-center bg-primary text-white">
+        <h5 class="modal-title" id="jobModalLongTitle"><h3 id="title"></h3>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="jobDetailsBody">
+
+        <div class="job-header"> 
+          <h3 id="title"></h3>
+        </div>
+          <div id="jobMetaData"></div>
+          <h5>Description</h5>
+          <p id="jobDescription"></p>
+          <h5>Requirements</h5>
+          <ul id="requirements"></ul>
+          <h5>Responsibilities</h5>
+          <ul id="responsibilities"></ul>
+ 
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <!-- Bootstrap core JavaScript
