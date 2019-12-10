@@ -73,7 +73,7 @@
   border-color: #222da5;
 }
 .btn-outline-primary{
-  border-color:#222da5;
+  border-color:#222da5 !important;
   color: #222da5;
 }
 .btn-outline-primary:hover{
@@ -923,11 +923,15 @@ margin: 2px auto !important;
   right: 0;
   margin: 20px;
   cursor: pointer;
+  
 }
 .bot:hover{
   /* background-color:#ffffff;
   border-color: rgba(33, 56, 201,0.5); */
   color:#ffffff; 
+  box-shadow: 0 0 0 0.4em transparent;
+  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
 }
 .chat-bot .reply-messages{
   display: flex;
