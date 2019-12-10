@@ -18,8 +18,6 @@ function getNewSession(){
   })
 }
 
- 
-
 if(!sessionID){
   getNewSession();
 }
@@ -34,7 +32,11 @@ document
 
   // if user input not empty send API Request to chat bot
   if(userText !== '' && sessionID){
-  messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;   
+  messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;
+  
+  // disable user input
+  document.getElementById('userText').setAttribute("disabled", true);
+
   fetch("https://stark-crag-70246.herokuapp.com/zyclyx", {
     method: "post",
     headers: {
@@ -42,10 +44,7 @@ document
     },
     body: JSON.stringify({ text: userText,session_id:sessionID })
   })
-    .then(function(response) {
-      // disable input and add loading...
-      document.getElementById('userText').setAttribute("disabled", true);
-
+    .then(function(response) {      
       document.getElementById("userText").value = "";
       return response.json();
     })      
@@ -78,7 +77,9 @@ document
    
     .then(function(){
       // enable input and remove loading ...
-    document.getElementById("userText").removeAttribute("disabled");
+    let userInput = document.getElementById("userText")
+    userInput.removeAttribute("disabled");
+    userInput.focus();
     })
     .then(function(){
       let chatBot=document.getElementById("scroll");   
