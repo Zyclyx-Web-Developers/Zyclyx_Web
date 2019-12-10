@@ -25,10 +25,6 @@ if(!sessionID){
 }
 
 let messagesElement = document.getElementById("botMessages");
-let ChatBotInput = document.getElementById("bot-form");
-
-// Get Reply Message from chat bot on input submit
- 
 document
 .getElementById("bot-form")
 .addEventListener("submit", function(e) {
@@ -48,6 +44,8 @@ document
   })
     .then(function(response) {
       // disable input and add loading...
+      document.getElementById('userText').setAttribute("disabled", true);
+
       document.getElementById("userText").value = "";
       return response.json();
     })      
@@ -77,8 +75,14 @@ document
           }    
         }            
     })
+   
     .then(function(){
       // enable input and remove loading ...
+    document.getElementById("userText").removeAttribute("disabled");
+    })
+    .then(function(){
+      let chatBot=document.getElementById("scroll");   
+      chatBot.scrollTop = chatBot.scrollHeight;      
     })
     .catch(function(error){
       console.log(error);

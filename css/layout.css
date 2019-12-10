@@ -824,7 +824,7 @@ margin: 2px auto !important;
 .chat-bot .card-footer {
   /* border-color: #ccc */
   /* border-bottom-radius: 1px; */
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
