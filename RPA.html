@@ -16,7 +16,7 @@
   <!-- Custom styles -->   
   <link rel="stylesheet" herf="./css/main.css">
   <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/RPA.css">
+  <!-- <link rel="stylesheet" href="./css/RPA.css"> -->
   <link rel="stylesheet" href="css/aos.css">
   <style>
   /* Header */
@@ -222,7 +222,46 @@ background: #2ecc71;
       -->
     <!-- Footer  -->
     <div id="footer"></div>
-    <div id="chatBot"></div>
+     <!-- Chat Bot -->
+     
+<div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
+  <i class="fab fa-rocketchat"></i>
+</div>
+
+<div id="box1" class="chat-bot">
+  <div class="card shadow" style="max-width: 18rem;" id="bot">
+
+      <div id="close" class="card-header d-flex justify-content-between">Zybot
+          <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+                  <i class="fas fa-times"></i>
+          </button>
+      </div>
+
+      <div class="card-body">
+          <div class="reply-messages" id="botMessages">
+
+              <p id="botReplay">Hey I'm Zybot ! </p> 
+
+          </div>
+      </div>
+      <div class="card-footer p-0 bottom-fixed">
+          <form id="bot-form">
+          <div class="input-group">
+              <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+                  aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">
+                      <button type="submit"class="btn sendBtn">
+                          <i class="fas fa-paper-plane text-white "></i>
+                      </button>
+                  </span>
+              </div>
+          </div>
+         </form>
+      </div>
+  </div>
+</div>
+
   </div>
   <!-- Footer End -->
   <!-- Bootstrap core JavaScript
@@ -244,8 +283,7 @@ background: #2ecc71;
   <script>
     $(function () {
       $("#navbar").load("navbar.html");
-      $("#footer").load("footer.html");
-      $("#chatBot").load("chat_bot.html");
+      $("#footer").load("footer.html");       
     });
   
 window.onload = function(){

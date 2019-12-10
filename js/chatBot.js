@@ -18,21 +18,17 @@ function getNewSession(){
   })
 }
 
-function resetSession(){
-  getNewSession();
-}
+ 
 
 if(!sessionID){
   getNewSession();
-  // reset session after 4.9 seconds
-  setTimeout(function(){
-     resetSession();
-  },4900);
 }
 
 let messagesElement = document.getElementById("botMessages");
+let ChatBotInput = document.getElementById("bot-form");
 
 // Get Reply Message from chat bot on input submit
+ 
 document
 .getElementById("bot-form")
 .addEventListener("submit", function(e) {
@@ -41,7 +37,7 @@ document
   let userText = document.getElementById("userText").value;
 
   // if user input not empty send API Request to chat bot
-  if(userText !== ''){
+  if(userText !== '' && sessionID){
   messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;   
   fetch("https://stark-crag-70246.herokuapp.com/zyclyx", {
     method: "post",
@@ -84,9 +80,11 @@ document
     .then(function(){
       // enable input and remove loading ...
     })
+    .catch(function(error){
+      console.log(error);
+    })
   }
 });
- 
 // Page Loading Indicator
 $(window).on("load", function() {
   // Animate loader off screen

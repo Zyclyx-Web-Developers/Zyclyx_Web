@@ -255,7 +255,7 @@
             <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="150"
             data-aos-duration="1000">
                 <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
+                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/clients/user-1.jpg" alt=""></p>
                     <p class="text-2 text-muted mb-1">Project Manager</p>
                     <h3 class="title-2">Lorem ipsum dolor</h3>
                     <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
@@ -273,7 +273,7 @@
             <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="300"
             data-aos-duration="1000">
                 <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
+                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/clients/user-1.jpg" alt=""></p>
                     <p class="text-2 text-muted mb-1">Project Manager</p>
                     <h3 class="title-2">Lorem ipsum dolor</h3>
                     <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
@@ -291,7 +291,7 @@
             <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="450"
             data-aos-duration="1000">
                 <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
+                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/clients/user-1.jpg" alt=""></p>
                     <p class="text-2 text-muted mb-1">Project Manager</p>
                     <h3 class="title-2">Lorem ipsum dolor</h3>
                     <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
@@ -309,7 +309,7 @@
             <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="600"
             data-aos-duration="1000">
                 <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
+                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/clients/user-1.jpg" alt=""></p>
                     <p class="text-2 text-muted mb-1">Project Manager</p>
                     <h3 class="title-2">Lorem ipsum dolor</h3>
                     <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
@@ -336,7 +336,46 @@
         </div>
     </section>
     <div class="mt-5" id="footer"></div>
-    <div id="chatBot"></div>
+     <!-- Chat Bot -->
+     
+<div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
+    <i class="fab fa-rocketchat"></i>
+</div>
+
+<div id="box1" class="chat-bot">
+    <div class="card shadow" style="max-width: 18rem;" id="bot">
+
+        <div id="close" class="card-header d-flex justify-content-between">Zybot
+            <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+                    <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="card-body">
+            <div class="reply-messages" id="botMessages">
+
+                <p id="botReplay">Hey I'm Zybot ! </p> 
+
+            </div>
+        </div>
+        <div class="card-footer p-0 bottom-fixed">
+            <form id="bot-form">
+            <div class="input-group">
+                <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <button type="submit"class="btn sendBtn">
+                            <i class="fas fa-paper-plane text-white "></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+           </form>
+        </div>
+    </div>
+</div>
+
     <!-- END - FOOTER -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -345,14 +384,12 @@
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/vendor/waypoints.min.js"></script>
     <script src="./js/chatBot.js"></script>
-    <script src="./js/vendor/counterup.min.js"></script>
-    <script src="./js/pageLoading.js"></script>
+    <script src="./js/vendor/counterup.min.js"></script>     
     <script>
  
         $(function () {
             $("#navbar").load("navbar.html");
-            $("#footer").load("footer.html");
-            $("#chatBot").load("chat_bot.html");
+            $("#footer").load("footer.html");             
         });
         window.onload = function () {
             // Initiate animate on scroll library
