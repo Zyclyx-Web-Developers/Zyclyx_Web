@@ -1,5 +1,4 @@
-.header-img {
-  /* background-image: url("../images/AI-3.jpg"); */
+.header-img {   
   background-image: url("../images/background/about-us.jpg");
 }
 
@@ -8,10 +7,32 @@
   line-height: 1.7;
 }
 .mission-icon,
-.vision-icon {
-  /* border: 1px solid #ffab8c; */
+.vission-icon {
+  box-shadow:inset 0 0 0 1px hsl(1, 92%, 72%);
   background: #fff;
 }
+.mission-icon svg,.vission-icon svg{
+  fill: #f51714;
+  transition: all .5s ease-in-out;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+}
+ .mission:hover .mission-icon,.vission:hover .vission-icon{   
+  box-shadow: inset 0 0 0 70px #f51714;
+  transition: all .5s ease-in-out;
+}
+ 
+.mission:hover .mission-icon svg, .vission:hover .vission-icon svg{
+    fill: #ffffff; 
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
 .how-we-do .card {
   border: none;
 }
@@ -139,16 +160,11 @@
 .contact-banner a {
   padding: 0.6rem 2rem;
   margin-top: 10px;
-  border-color: #007bff;
-  color: #007bff;
+ 
   font-weight: 700;
   font-size: 1.2rem;
 }
-.contact-banner a:hover {
-  background-color: #007bff;
-  color: #ffffff;
-  border-color: #007bff;
-}
+ 
 #footer {
   margin-top: 0 !important;
 }
