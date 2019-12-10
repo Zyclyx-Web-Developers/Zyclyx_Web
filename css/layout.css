@@ -72,7 +72,25 @@
   background-color: #222da5;
   border-color: #222da5;
 }
- 
+.btn-outline-primary{
+  border-color:#222da5;
+  color: #222da5;
+}
+.btn-outline-primary:hover{
+  background-color: #222da5;
+  color: #ffffff;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #2138c9;
+  transform: translate(0,-2px);
+  -webkit-transform: translate(0,-2px);
+  -moz-transform: translate(0,-2px);
+  -ms-transform: translate(0,-2px);
+  -o-transform: translate(0,-2px);
+  transition: transform 1s ease-in;
+  -webkit-transition: transform 1s ease-in;
+  -moz-transition: transform 1s ease-in;
+  -ms-transition: transform 1s ease-in;
+  -o-transition: transform 1s ease-in;
+}
 .btn-custom{   
     --hue: 232;
     position: relative;
