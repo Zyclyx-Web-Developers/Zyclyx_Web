@@ -43,12 +43,12 @@ border: none !important;
   .core-values {            
     background-color: #f4f7f9;  
   }
-  .core-val-caption {
+  /* .core-val-caption {
     background-image: url("../images/bg_shape.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-  }
+  } */
   
   .core-values-items img {
     width: 40px;
