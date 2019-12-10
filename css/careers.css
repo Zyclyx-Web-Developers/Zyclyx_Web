@@ -8,6 +8,7 @@
   width: 100%;
 	height: 100px;
   background: url('../images/loading.gif') center no-repeat #fff;
+  background-color: transparent;
 }
 .work-with-card .card-body{
   margin: 0.4rem;
@@ -38,12 +39,13 @@
   transition: background 0.15s ease-in;
   text-decoration: none;
   /* background-color: rgba(243, 247, 250,0.3); */
-  border: 1px solid rgb(0, 123, 255); 
+  border: 1px solid #222da5; 
   box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1) !important;   
 }
 .job-item .title-2{
   font-size: 16px !important;
-  color: #007bff;
+  color: #222da5;
+  text-transform: capitalize;
 }
 @media (max-width: 575.98px) { 
    .job-item{
