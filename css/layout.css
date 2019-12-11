@@ -666,6 +666,15 @@ background-color:#f3f7fa;
 color: #f4f4f4;
 position: relative; 
 }
+.f-link a:hover .fas,.f-link a:hover .far{
+  color: #f51714;
+  font-size: 1.25rem;
+  transition:all 0.2s ease-in;
+  -webkit-transition:all 0.2s ease-in;
+  -moz-transition:all 0.2s ease-in;
+  -ms-transition:all 0.2s ease-in;
+  -o-transition:all 0.2s ease-in;
+}
 .f-link a::after {
   content: '';
   display: block;
@@ -697,7 +706,7 @@ line-height: 2;
 }
 
 .footer .social-network .fab:hover{
-  color:#232934;
+  color:#f51714;
   background-color: #f3f7fa;
   border: 2px solid #f4f4f4;
   transform: scale(1.1);
