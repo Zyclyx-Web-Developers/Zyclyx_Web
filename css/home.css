@@ -406,6 +406,66 @@ padding-bottom: 1rem;
  
 /* END - New Industries */
 
+/*  */
+.industries{
+  background-color: rgb(243, 245, 249);
+}
+.industries .card{
+  border: none;
+  background-color: transparent;
+}
+.industries .card .card-body{
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+.industries .title-3{
+  color: #2e5bd7;
+}
+.industries .industry-title{
+  color: #222da5;
+  font-weight: 600;
+  font-size: 1.5rem !important; 
+}
+.industries .industry-link{
+   font-size: 1.2rem;
+   margin-top: 0.8rem;
+   text-decoration: none;
+   color: #f51714;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.industries .industry-link:hover{
+  color: hsl(1, 92%, 42%);
+  text-decoration: underline;
+  padding-bottom:5px ;   
+}
+
+ 
+/* .industries .container .col-4:nth-child(1) .card-body,  */
+.industries .container .card:hover .card-body{
+  background-color: #ffffff;
+  border: 1px solid hsl(235, 66%, 89%);
+}
+.industries .container .col-4:nth-child(6) .card-body{
+  background-color: transparent;
+  border-color: transparent;
+}
+.industries .card {
+  border: none;
+  background-color: transparent;   
+}
+ 
+.industries .card .industry-icon svg{
+  height: 60px;
+  width: 60px;
+}
+/*  */
+
 /* 
 ==== OUR PROJECTS ====
 */
@@ -415,15 +475,18 @@ padding-bottom: 1rem;
  }
 .our-projects .item {
   height: 90vh;
-  position: relative;       
-  /* background-color: #00acee; */
+  position: relative;         
 }
-.our-projects .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* mix-blend-mode: soft-light; */
+.our-projects .item-1 {
+  background-color: #2e5bd7;  
 }
+.our-projects .item-2 {
+  background-color: #00acee;   
+}
+.our-projects .item-3 {
+  background-color: #796eff;
+}
+ 
 .our-projects .item .cover {
   padding: 75px 0;
   position: absolute;
@@ -562,16 +625,7 @@ padding-bottom: 1rem;
   right: 0px;
   opacity: 1;
 }
-.project-btn{
-  border:2px solid #fff !important;
-  color: #ffffff;
-  font-weight: 800;
-}
-.project-btn:hover{
-  border-color: #fff !important;
-  background-color: #ffffff;
-  color: #222222;
-}
+
 /* 
 ==== END - OUR PROJECTS ====
 */
@@ -601,12 +655,24 @@ padding-bottom: 1rem;
   align-items: center;
   font-weight: 800;
 }
-/* .stats-counter h3{
-  color: #6600ff;
- }
-.stats-counter .title-3{
- color: #7e27ff;
-} */
+ 
+.stats-counter .stats-icon{
+  /* border: 2px solid red; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+  box-shadow: 0 0.5em 0.5em -0.4em #796eff;
+  border: 1px solid  hsl(245, 100%, 93%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 /* 
 ==== CLIENT LOGOS ====
 */
@@ -636,21 +702,47 @@ padding-bottom: 1rem;
   box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
     0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
 }
+
+/*our clients new */
+.clients-outer img{
+max-width: 160px;
+height: 45px;
+}
+.clients-outer .card{
+  padding:3rem 2rem;
+  margin-top: 30px;
+  border-color: hsl(232, 72%, 90%);
+}
+.clients-outer .card .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* 
 ==== END - CLIENT LOGOS ====
 */
-.contact-banner{       
+.contact-banner{
   background-color: #ebf6ff;
+  box-shadow:-5px 5px 30px #b4b8cd;
+  border-radius:0.5rem ;
+  -webkit-border-radius:0.5rem ;
+  -moz-border-radius:0.5rem ;
+  -ms-border-radius:0.5rem ;
+  -o-border-radius:0.5rem ;
+  box-shadow:0 25px 20px -20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 
 .contact-banner .title-2{
-  font-weight: 700 !important;
-  font-size: 2rem !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.4;
+}
+.contact-banner .text-1{
+  color: #f51714;
 }
 .contact-banner a{
   padding: 0.6rem 2rem;     
-  color: #ffffff;   
-  font-size: 1.2rem;
+  color: #ffffff;      
 }
  
 
