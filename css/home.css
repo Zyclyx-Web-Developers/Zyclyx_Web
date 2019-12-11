@@ -406,6 +406,66 @@ padding-bottom: 1rem;
  
 /* END - New Industries */
 
+/*  */
+.industries{
+  background-color: rgb(243, 245, 249);
+}
+.industries .card{
+  border: none;
+  background-color: transparent;
+}
+.industries .card .card-body{
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+.industries .title-3{
+  color: #2e5bd7;
+}
+.industries .industry-title{
+  color: #222da5;
+  font-weight: 600;
+  font-size: 1.5rem !important; 
+}
+.industries .industry-link{
+   font-size: 1.2rem;
+   margin-top: 0.8rem;
+   text-decoration: none;
+   color: #f51714;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.industries .industry-link:hover{
+  color: hsl(1, 92%, 42%);
+  text-decoration: underline;
+  padding-bottom:5px ;   
+}
+
+ 
+/* .industries .container .col-4:nth-child(1) .card-body,  */
+.industries .container .card:hover .card-body{
+  background-color: #ffffff;
+  border: 1px solid hsl(235, 66%, 89%);
+}
+.industries .container .col-4:nth-child(6) .card-body{
+  background-color: transparent;
+  border-color: transparent;
+}
+.industries .card {
+  border: none;
+  background-color: transparent;   
+}
+ 
+.industries .card .industry-icon svg{
+  height: 60px;
+  width: 60px;
+}
+/*  */
+
 /* 
 ==== OUR PROJECTS ====
 */
@@ -418,10 +478,10 @@ padding-bottom: 1rem;
   position: relative;         
 }
 .our-projects .item-1 {
-  background-color: #00acee;   
+  background-color: #2e5bd7;  
 }
 .our-projects .item-2 {
-  background-color: #2e5bd7;
+  background-color: #00acee;   
 }
 .our-projects .item-3 {
   background-color: #796eff;
@@ -565,6 +625,7 @@ padding-bottom: 1rem;
   right: 0px;
   opacity: 1;
 }
+
 /* 
 ==== END - OUR PROJECTS ====
 */
