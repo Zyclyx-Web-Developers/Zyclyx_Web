@@ -639,18 +639,28 @@ padding-bottom: 1rem;
 /* 
 ==== END - CLIENT LOGOS ====
 */
-.contact-banner{       
+.contact-banner{
   background-color: #ebf6ff;
+  box-shadow:-5px 5px 30px #b4b8cd;
+  border-radius:0.5rem ;
+  -webkit-border-radius:0.5rem ;
+  -moz-border-radius:0.5rem ;
+  -ms-border-radius:0.5rem ;
+  -o-border-radius:0.5rem ;
+  box-shadow:0 25px 20px -20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 
 .contact-banner .title-2{
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   font-size: 1.5rem !important;
+  line-height: 1.4;
+}
+.contact-banner .text-1{
+  color: #f51714;
 }
 .contact-banner a{
   padding: 0.6rem 2rem;     
-  color: #ffffff;   
-  font-size: 1.2rem;
+  color: #ffffff;      
 }
  
 
