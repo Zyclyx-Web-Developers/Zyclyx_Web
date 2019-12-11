@@ -120,14 +120,14 @@
   background-color: hsl(var(--hue), 72%, 36%);
 }
 .btn-pulse:hover {
-  box-shadow: 0 0 0 0.4em transparent;
+  box-shadow: 0 0 0 0.5em transparent;
   animation: btn-pulse 1s infinite;
   -webkit-animation: btn-pulse 1s infinite;
 }
 
 @keyframes btn-pulse {
   from {
-    box-shadow: 0 0 0 0 hsl(232, 100%, 41%);
+    box-shadow: 0 0 0 0 hsl(232, 100%, 41%);    
   }
 }
 .btn-breach {
@@ -653,11 +653,11 @@ background-color:#f3f7fa;
   text-decoration: none;
 }
 .f-link a:hover{
-color: #f4f4f4;
+color: #9f73c6;
 position: relative; 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
-  color: #f51714;
+  color: #9f73c6;
   font-size: 1.25rem;
   transition:all 0.2s ease-in;
   -webkit-transition:all 0.2s ease-in;
@@ -671,11 +671,11 @@ position: relative;
   width: 0;
   height: 2px;
   margin-top: 5px;
-  background: #f51714;
+  background: #9f73c6;
   transition: width .3s;
 }
 .f-link a:hover::after {
-  width: 90px;  
+  width: 120px;  
 }
 /* Footer Follow Us */
 .footer .social-network li{
@@ -705,7 +705,7 @@ position: relative;
 }
 
 .footer .social-network .fab:hover{
-  color:#f51714;
+  color:#2138c9;
   background-color: #f3f7fa;
   border: 2px solid #f4f4f4;
   transform: scale(1.1);
@@ -726,7 +726,7 @@ position: relative;
 .footer-copy .copy-right{
   font-weight: 500;
   font-size: 0.9rem;
-  color: hsl(206, 41%, 77%);
+  color: #9f73c6;
 }
 /* 
 ==== END - FOOTER ====
