@@ -121,11 +121,11 @@
 }
 .btn-pulse:hover {
   box-shadow: 0 0 0 0.4em transparent;
-  animation: pulse 1s infinite;
-  -webkit-animation: pulse 1s infinite;
+  animation: btn-pulse 1s infinite;
+  -webkit-animation: btn-pulse 1s infinite;
 }
 
-@keyframes pulse {
+@keyframes btn-pulse {
   from {
     box-shadow: 0 0 0 0 hsl(232, 100%, 41%);
   }
@@ -636,24 +636,14 @@ background-color:#f3f7fa;
 .footer{   
   text-align: left;   
   background:#232934;   
-   
-  
 }
-/* .f-logo{
-   margin-top: 12px;
-} 
-.f-logo img{
-  max-width: 150px;
-} */
-
+ 
 .footer .f-title{     
   color: #72757c;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
 }
-
- 
 
 .footer a,.footer p{  
  font-size: 1.05rem;   
@@ -693,16 +683,25 @@ position: relative;
   }
 
 .footer .social-network .fab{
-font-weight:400;
-height:35px;
-width:35px; 
-text-align:center;
-border: 2px solid #72757c;
-border-radius: 50%; 
-display:flex;
-justify-content: center;
-align-items: center;
-line-height: 2;
+   font-weight:400;
+   height:35px;
+   width:35px;
+   text-align:center;
+   border: 2px solid #72757c;
+   border-radius: 50%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 2;
+   transition: all 0.2s ease-in;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -ms-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
 }
 
 .footer .social-network .fab:hover{
@@ -710,7 +709,12 @@ line-height: 2;
   background-color: #f3f7fa;
   border: 2px solid #f4f4f4;
   transform: scale(1.1);
-  }
+  transition: 0.2s all ease-in;
+  -webkit-transition: 0.2s all ease-in;
+  -moz-transition: 0.2s all ease-in;
+  -ms-transition: 0.2s all ease-in;
+  -o-transition: 0.2s all ease-in;
+}
 
   .footer .social-network a:hover{
     text-decoration: none;
