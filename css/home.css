@@ -655,12 +655,24 @@ padding-bottom: 1rem;
   align-items: center;
   font-weight: 800;
 }
-/* .stats-counter h3{
-  color: #6600ff;
- }
-.stats-counter .title-3{
- color: #7e27ff;
-} */
+ 
+.stats-counter .stats-icon{
+  /* border: 2px solid red; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+  box-shadow: 0 0.5em 0.5em -0.4em #796eff;
+  border: 1px solid  hsl(245, 100%, 93%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 /* 
 ==== CLIENT LOGOS ====
 */
