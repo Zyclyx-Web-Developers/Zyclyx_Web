@@ -653,8 +653,7 @@ background-color:#f3f7fa;
   text-decoration: none;
 }
 .f-link a:hover{
-color: #9f73c6;
-position: relative; 
+color: #9f73c6; 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
   color: #9f73c6;
