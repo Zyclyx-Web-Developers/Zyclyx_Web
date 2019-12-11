@@ -3,6 +3,9 @@
   background-position: center;
 }
  /* loading indicator for open jobs */
+ .heading-blue{
+   color:#222da5;
+ }
 .loading{
   z-index: 9999;
   width: 100%;
