@@ -1,6 +1,32 @@
 .header-img {   
   background-image: url("../images/background/about-us.jpg");
 }
+.line{
+  position: relative;
+  margin:0 auto;
+  width:650px;
+  height: 8px;
+  background: cornflowerblue;
+}
+.line:before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 31px;
+  top: -23px;
+  left:0px;
+  background: cornflowerblue;
+}
+.line:after{
+  position: absolute;
+  width: 10px;
+  height: 31px;
+  content: "";
+  top:8px;
+  right:0px;
+  background: cornflowerblue;
+}
+
 
 .about-vision {
   background-color: #f3f7fa;
@@ -188,4 +214,33 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.counterBox{
+ text-align: center;
+padding: 10px 20px;
+/* margin:0px 10px ; */
+  /* border: 1px solid rgba(34, 45, 165,0.2); */
+  /* box-shadow:inset 0 0 0 1px rgba(34, 45, 165,0.2) */
+}
+
+#wrapper > div {
+  display: inline-block;
+  
+}
+.stats-counter .stats-icon{
+  /* border: 2px solid red; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
+  box-shadow: 0 0.5em 0.5em -0.4em #796eff;
+  border: 1px solid  hsl(245, 100%, 93%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
