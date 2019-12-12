@@ -134,7 +134,7 @@
   border-width: 2px;
   border-radius: 0;
   overflow: visible;
-  border-color:transparent;
+  /* border-color:transparent; */
 }
 .btn-breach::before,
 .btn-breach::after {
@@ -653,10 +653,10 @@ background-color:#f3f7fa;
   text-decoration: none;
 }
 .f-link a:hover{
-color: #9f73c6; 
+color: #ffffff; 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
-  color: #9f73c6;
+  color: #2e5bd7;
   font-size: 1.25rem;
   transition:all 0.2s ease-in;
   -webkit-transition:all 0.2s ease-in;
@@ -670,7 +670,7 @@ color: #9f73c6;
   width: 0;
   height: 2px;
   margin-top: 5px;
-  background: #9f73c6;
+  background: #2e5bd7;
   transition: width .3s;
 }
 .f-link a:hover::after {
@@ -725,7 +725,7 @@ color: #9f73c6;
 .footer-copy .copy-right{
   font-weight: 500;
   font-size: 0.9rem;
-  color: #9f73c6;
+  color: hsl(222, 4%, 77%);
 }
 /* 
 ==== END - FOOTER ====
