@@ -190,6 +190,16 @@
 	background: url('../images/loading.gif') center no-repeat #fff;
 }
 
+/* Polka Dots */
+.polka-dots{
+ height: 10px;
+ width: 100px;
+ display: inline-block;
+background-image: radial-gradient(#212121 20%, transparent 20%),
+      radial-gradient(#fafafa 20%, transparent 20%);   
+  background-position: 0 0, 10px 10px;
+  background-size: 10px 10px;
+}
 
 html,
 body {
