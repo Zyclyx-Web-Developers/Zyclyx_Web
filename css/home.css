@@ -663,8 +663,7 @@ padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
   box-shadow: 0 0.5em 0.5em -0.4em #796eff;
   border: 1px solid  hsl(245, 100%, 93%);
   border-radius: 50%;
@@ -673,6 +672,13 @@ padding-bottom: 1rem;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.stats-counter .title-2{
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  font-size: 2rem !important;
+  color: #222da5;
+}
+ 
 /* 
 ==== CLIENT LOGOS ====
 */
