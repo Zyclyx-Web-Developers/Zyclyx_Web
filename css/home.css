@@ -226,6 +226,13 @@ right: 10%;
  .automation .caption{
    color: #f51714;
  }
+ .automation .img-box{
+  display: flex;
+  align-items: center;
+ }
+ .automation img{
+   max-width: 100%;
+ }
 
 /* 
 ==== SERVICES ====
