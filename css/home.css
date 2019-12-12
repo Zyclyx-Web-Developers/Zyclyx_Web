@@ -223,7 +223,9 @@ right: 10%;
 /* 
   ==== END - WELCOME SECTION
   */
- 
+ .automation .caption{
+   color: #f51714;
+ }
 
 /* 
 ==== SERVICES ====
@@ -405,7 +407,7 @@ position: relative;
   color: #2e5bd7;
 }
 .industries .industry-title{
-  color: #2e5bd7;
+  /* color: #2e5bd7; */
   font-weight: 400;
   text-align: left !important;
   line-height: 1.5;
