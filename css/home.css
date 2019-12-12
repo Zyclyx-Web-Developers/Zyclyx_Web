@@ -357,6 +357,10 @@ position: relative;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     box-shadow: inset 0 0 0 1px rgba(34, 45, 165,0.2);
+    background-color: hsl(235, 66%, 95%);
+}
+.services .service:hover{
+  background-color: hsl(235, 66%, 95%) !important;
 }
 .services .service:hover .service-icon{   
     box-shadow: inset 0 0 0 70px #222da5;
