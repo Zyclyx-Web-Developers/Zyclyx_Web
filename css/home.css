@@ -181,22 +181,10 @@ transition:all 0.3s ease;
   top: -6px;
   left: 0;
   height: 4px;
-  background-color: #f51714 !important;
+  background-color: hsl(204, 100%, 25%) !important;
   animation:forwardin 5s linear;
   -webkit-animation:forwardin 5s linear;
-}
-#homeCarousel .custom-indicator .indicator-1.active:before {
-  background-color: hsl(235, 66%, 19%) !important;
-}
-#homeCarousel .custom-indicator .indicator-2.active:before {
-  background-color: hsl(355, 66%, 19%) !important;
-}
-#homeCarousel .custom-indicator .indicator-3.active:before {
-  background-color: hsl(180, 100%, 15%) !important;
-}
-#homeCarousel .custom-indicator .indicator-4.active:before {
-  background-color: hsl(85, 66%, 19%) !important;
-}
+} 
   @keyframes forwardin {
 0%{
 width: 0%;
@@ -346,7 +334,7 @@ right: 10%;
   align-items: center;
  }
  .automation img{
-   max-width: 100%;
+   max-width: 60%;
  }
 
 /* 
