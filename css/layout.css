@@ -134,7 +134,7 @@
   border-width: 2px;
   border-radius: 0;
   overflow: visible;
-  border-color:transparent;
+  /* border-color:transparent; */
 }
 .btn-breach::before,
 .btn-breach::after {
@@ -190,6 +190,16 @@
 	background: url('../images/loading.gif') center no-repeat #fff;
 }
 
+/* Polka Dots */
+.polka-dots{
+ height: 10px;
+ width: 100px;
+ display: inline-block;
+background-image: radial-gradient(#212121 20%, transparent 20%),
+      radial-gradient(#fafafa 20%, transparent 20%);   
+  background-position: 0 0, 10px 10px;
+  background-size: 10px 10px;
+}
 
 html,
 body {
@@ -653,10 +663,10 @@ background-color:#f3f7fa;
   text-decoration: none;
 }
 .f-link a:hover{
-color: #9f73c6; 
+color: #ffffff; 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
-  color: #9f73c6;
+  color: #f51714;
   font-size: 1.25rem;
   transition:all 0.2s ease-in;
   -webkit-transition:all 0.2s ease-in;
@@ -670,7 +680,7 @@ color: #9f73c6;
   width: 0;
   height: 2px;
   margin-top: 5px;
-  background: #9f73c6;
+  background: #f51714;
   transition: width .3s;
 }
 .f-link a:hover::after {
@@ -704,7 +714,7 @@ color: #9f73c6;
 }
 
 .footer .social-network .fab:hover{
-  color:#2138c9;
+  color:#f51714;
   background-color: #f3f7fa;
   border: 2px solid #f4f4f4;
   transform: scale(1.1);
@@ -725,7 +735,7 @@ color: #9f73c6;
 .footer-copy .copy-right{
   font-weight: 500;
   font-size: 0.9rem;
-  color: #9f73c6;
+  color: hsl(222, 4%, 77%);
 }
 /* 
 ==== END - FOOTER ====
@@ -925,8 +935,7 @@ color: #9f73c6;
   color: #fff;
   font-size: 25px;
   border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0,0.3);
+  padding: 10px;   
   position: fixed;
   z-index: 99;
   height: 50px;
@@ -938,6 +947,9 @@ color: #9f73c6;
   right: 0;
   margin: 20px;
   cursor: pointer;
+  box-shadow: 0 0 0 0.35em transparent;
+  animation: btn-pulse 1s infinite;
+  -webkit-animation: btn-pulse 1s infinite;
   
 }
 .bot:hover{
