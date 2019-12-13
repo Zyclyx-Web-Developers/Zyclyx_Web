@@ -403,8 +403,7 @@ body {
   }
 
   .navbar-light{
-    /* background: rgba(39, 153, 255,0.1) !important; */
-    /* background-color:rgba(234, 240, 255,0.9) !important;; */
+    /* background-color:rgba(234, 240, 255,0.3) !important; */
     transition:all 0.5s ease-in ;
     -webkit-transition:all 0.5s ease-in ;
     -moz-transition:all 0.5s ease-in ;
@@ -455,7 +454,8 @@ body {
       
   .navbar-brand img{
     max-width: 200px;
-    height: auto;     
+    height: auto;    
+    /* background-color:rgba(234, 240, 255,0.3) !important;  */
   }
   .dropdown-menu{
     margin-top: 0; 
@@ -514,7 +514,7 @@ body {
   margin-left: 1rem !important;
   }
   .dropdown-industry{
-     min-width: 220px;
+     min-width: 240px;
   }
   /* end - show drop downmenu on hover */
   
