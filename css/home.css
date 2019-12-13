@@ -846,14 +846,24 @@ height: 45px;
  
 
 @media (max-width: 575.98px) { 
-  #homeCarousel .carousel-caption h5{
+
+  .slide-title{
+    font-size: 1.8rem !important;
+  }
+  .slide-image{
+    max-width: 100% !important;
+  }
+  /* #homeCarousel .carousel-caption h5{
     font-size: 1.2rem;      
-    }
-    #homeCarousel .carousel-item, #homeCarousel img{
+    } */
+    /* #homeCarousel .carousel-item, #homeCarousel img{
       height: 60vh;
     }
   .home-cover{
     height: 60vh;
+  } */
+  .slide-image:before{
+    display: none;
   }
 .home-content{
   padding-left: 0 !important;
