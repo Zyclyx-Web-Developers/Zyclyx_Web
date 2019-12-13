@@ -28,7 +28,64 @@
       ====== Navbar ======
     -->
     <header class="main-navbar" id="mainNavbar">
-        <div id="navbar"></div>
+            <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+                    <a class="navbar-brand ml-md-4" href="./index.html">
+                      <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+                      aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                      <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-master">
+                      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                        <!--  home -->
+                        <li class="nav-item active mx-2 py-3">
+                          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+              
+               
+                        <!-- services -->           
+                         <li class="nav-item dropdown mx-2 py-3">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                          </a>
+                          <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                            <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                            <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                            <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                            <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>               
+                            <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                            <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                            <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                            <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                          </div>
+                        </li>
+              
+                        <!-- About us -->
+                        <li class="nav-item dropdown mx-2 py-3">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                          </a>
+                          <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                            <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                            <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                          </div>
+                        </li>
+              
+                        <!-- careers -->
+                        <li class="nav-item mx-2 py-3">
+                          <a class="nav-link" href="./careers.html">Careers</a>
+                        </li>
+                        <!-- contact us -->
+                        <li class="nav-item mx-2 py-3">
+                          <a class="nav-link" href="./contactus.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
     </header>
     <!-- 
           ====== END Navbar ======
@@ -245,7 +302,44 @@
         <div class="col-12 col-md-4 d-flex justify-content-center align-items-center p-0 m-0">
         </div>
     </section>
-    <div class="mt-5" id="footer"></div>
+    <footer class="container-fluid footer pt-3 pb-2">
+            <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+                <div class="col-lg-3 col-md-4 col-4 mt-1 f-phone">
+                <p class="f-title">Phone</p>
+                <p class="f-link mt-3"><a href="tel:+914023549363"><i class="fas fa-phone mr-2"></i>(+91) 40 2354 9363</a></p>         
+                </div>
+              <div class="col-lg-3 col-md-4 col-8 mt-1 f-inquiries">
+                <p class="f-title">Inquiries</p>
+                <p class="f-link mt-3"><a href="mailto:info@zyclyx.com"><i class="fas fa-envelope mr-2"></i>info@zyclyx.com</a></p>
+                       
+              </div>
+        
+              <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+                <p class="f-title">Location</p>
+                <p class="f-link mt-3"><a
+                  href="https://www.google.com/maps/place/ZYCLYX+CONSULTING+SERVICES+PVT.LTD/@17.424933,78.438608,18z/data=!4m5!3m4!1s0x0:0xa07cad29e31d4876!8m2!3d17.4249331!4d78.4386078?hl=en"><i class="fas fa-map-marker-alt mr-2"></i> Our Location</a></p>         
+              </div>
+        
+              <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+                <div>
+                    <p class="f-title text-center text-md-left">Follow us</p>
+                    <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                      <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+                      <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
+                      <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>           
+                      <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
+                          title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+                    </ul>
+                </div>        
+              </div>
+        
+        
+            </div>
+             
+            <div class="footer-copy row">
+                <p class="copy-right text-center col pt-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All rights reserved</p>
+            </div>       
+          </footer>  
      <!-- Chat Bot -->
      
 <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
@@ -300,10 +394,7 @@
     <script src="./js/vendor/counterup.min.js"></script>     
     <script>
  
-        $(function () {
-            $("#navbar").load("navbar.html");
-            $("#footer").load("footer.html");             
-        });
+  
         window.onload = function () {
             // Initiate animate on scroll library
             AOS.init({
