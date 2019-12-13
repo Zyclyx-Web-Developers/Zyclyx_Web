@@ -285,7 +285,8 @@ body {
   color:#152a49
 }
 .title-2,.title-3{
-  color:rgba(21, 42, 73,0.9);
+  /* color:rgba(21, 42, 73,0.9); */
+  color: #2a2048 !important;
 }
 .title-1 {
   font-size: 1.6rem !important;   
