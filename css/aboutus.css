@@ -26,7 +26,9 @@
   right:0px;
   background: cornflowerblue;
 }
-
+.team{
+  background: rgb(223, 236, 241);
+}
 
 .about-vision {
   background-color: #f3f7fa;
@@ -142,8 +144,10 @@
  */
 .team-card {
   margin: 0px !important;
-  padding: 0px !important;
+  padding: 10px !important;
   border: none !important;
+  background: rgb(223, 236, 241);
+
 }
 .team-card .card-body {
   background-color: #f3f7fa;
@@ -244,3 +248,4 @@ padding: 10px 20px;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
