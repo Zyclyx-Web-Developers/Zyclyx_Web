@@ -385,7 +385,7 @@ body {
 
 .navbar{  
     padding: 0 !important;          
-    border-bottom: 1px solid rgba(212, 245, 245,0.2);     
+    /* border-bottom: 1px solid rgba(212, 245, 245,0.2);      */
   }
  
   .navbar .nav-link{
@@ -403,7 +403,8 @@ body {
   }
 
   .navbar-light{
-    background: rgba(39, 153, 255,0.1) !important;
+    /* background: rgba(39, 153, 255,0.1) !important; */
+    /* background-color:rgba(234, 240, 255,0.9) !important;; */
     transition:all 0.5s ease-in ;
     -webkit-transition:all 0.5s ease-in ;
     -moz-transition:all 0.5s ease-in ;
@@ -947,7 +948,7 @@ color: #ffffff;
   right: 0;
   margin: 20px;
   cursor: pointer;
-  box-shadow: 0 0 0 0.35em transparent;
+  box-shadow: 0 0 0 0.4em transparent;
   animation: btn-pulse 1s infinite;
   -webkit-animation: btn-pulse 1s infinite;
   

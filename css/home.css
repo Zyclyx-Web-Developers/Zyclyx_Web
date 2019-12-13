@@ -10,7 +10,7 @@
 
  /* scroll progress indicator */
  .progress {
-  background: linear-gradient(to right, #007bff var(--scroll), transparent 0);
+  background: linear-gradient(to right, #222da5 var(--scroll), transparent 0);
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
@@ -23,6 +23,108 @@
 /*
 HOME - CAROUSEL 
 */  
+
+/* ------ */
+.home-slide-1{
+  background-color: #212ca5;
+}
+.home-slide-2{
+  background-color: #a5222d;
+}
+.home-slide-3{
+  background-color: #008080;
+}
+.home-slide-4{
+  background-color: #6fa522;
+}
+.item .row{
+  height: 68vh;
+  /* width: 100%; */
+  /* border: 2px solid white; */
+  margin-top: 73px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.slide-content{
+  display: flex;
+  align-items: center;
+}
+.slide-caption{
+  color: #f4f4f4;
+  margin-left:1rem;
+  font-size: 2.2rem !important;  
+}
+.slide-content .btn-outline-primary{
+  border-color: #ffffff !important;
+  color: #ffffff;
+  transition:background 0.2s ease-in ;
+  -webkit-transition:background 0.2s ease-in ;
+  -moz-transition:background 0.2s ease-in ;
+  -ms-transition:background 0.2s ease-in ;
+  -o-transition:background 0.2s ease-in ;
+}
+.slide-content .btn-outline-primary:hover{
+  border-color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #222da5;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #ffffff;
+  transform: translate(0,-2px);
+  -webkit-transform: translate(0,-2px);
+  -moz-transform: translate(0,-2px);
+  -ms-transform: translate(0,-2px);
+  -o-transform: translate(0,-2px);
+  transition: transform 1s ease-in;
+ 
+}
+.slide-title{
+  font-size: 3.2rem;
+}
+.slide-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* border: 2px solid red; */
+/* background-color: #ffffff; */
+}
+
+.slide-image:before{
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 100%;
+  top: -73px;
+  right: 0;
+  bottom: -20px;
+  background-color: hsl(235, 66%, 19%);
+  border-radius:100% 0% 49% 51% / 0% 100% 0% 100%  ;
+  -webkit-border-radius:100% 0% 49% 51% / 0% 100% 0% 100%  ;
+  -moz-border-radius:100% 0% 49% 51% / 0% 100% 0% 100%  ;
+  -ms-border-radius:100% 0% 49% 51% / 0% 100% 0% 100%  ;
+  -o-border-radius:100% 0% 49% 51% / 0% 100% 0% 100%  ;
+  z-index: -1;
+}
+.slide-image img{
+  width: 60%;
+  z-index: 999;
+  margin: 0 auto;
+}
+.home-slide-2 .slide-image img{
+  width: 58%;
+}
+.home-slide-2 .slide-image:before{
+  background-color: hsl(355, 66%, 19%);
+}
+.home-slide-3 .slide-image:before{
+  background-color: hsl(180, 100%, 15%);
+}
+.home-slide-4 .slide-image:before{
+  background-color: hsl(85, 66%, 19%);
+}
+
+
+/* --------- */
 .home-cover,.carousel{
   overflow: hidden;
 }
@@ -32,7 +134,8 @@ HOME - CAROUSEL
 #homeCarousel  .carousel-item{  
   /* background-color: rgba(0, 123, 255,0.6);  */
   text-align: left;   
-  background-color: #222da5;  
+  /* background-color: #222da5;   */
+  height: 100vh;
 }
 
 #homeCarousel .custom-indicator{
@@ -82,6 +185,18 @@ transition:all 0.3s ease;
   animation:forwardin 5s linear;
   -webkit-animation:forwardin 5s linear;
 }
+#homeCarousel .custom-indicator .indicator-1.active:before {
+  background-color: hsl(235, 66%, 19%) !important;
+}
+#homeCarousel .custom-indicator .indicator-2.active:before {
+  background-color: hsl(355, 66%, 19%) !important;
+}
+#homeCarousel .custom-indicator .indicator-3.active:before {
+  background-color: hsl(180, 100%, 15%) !important;
+}
+#homeCarousel .custom-indicator .indicator-4.active:before {
+  background-color: hsl(85, 66%, 19%) !important;
+}
   @keyframes forwardin {
 0%{
 width: 0%;
@@ -93,15 +208,15 @@ width: 100%;
 
 #homeCarousel .carousel-item img{
 transition: all 6s linear;
-mix-blend-mode: soft-light;
+/* mix-blend-mode: soft-light; */
 }
 /* ken burn effect */
  
-#homeCarousel .carousel-inner .active img {
+/* #homeCarousel .carousel-inner .active img {
   transition: all 6s linear;
   animation: zoom 6s linear;
   -webkit-animation: zoom 6s linear;
-}
+} */
 @keyframes zoom{
   from{
     transform: scale(1.15);
@@ -143,8 +258,8 @@ to{
   }
 }
 #homeCarousel .carousel-caption h5{
-font-size: 3.2rem;
-text-shadow: 1px 2px rgba(245, 23, 20,0.8);   
+font-size: 2.2rem;
+/* text-shadow: 1px 2px rgba(245, 23, 20,0.8);    */
 left: 10%;
 right: 10%;
 }
