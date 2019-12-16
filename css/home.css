@@ -27,7 +27,7 @@ HOME - CAROUSEL
 }
 .home-slide-1 .slide-image:before{
   
-  background-color:hsl(36, 61%, 50%);
+  background-color:hsl(36, 61%, 40%);
 }
 .home-slide-2 .slide-image:before{
   
@@ -42,13 +42,10 @@ HOME - CAROUSEL
   background-color: hsl(204, 100%, 20%);
 }
 .item .row{
-  height: 68vh;
-  /* width: 100%; */
-  /* border: 2px solid white; */
+  height: 75vh;   
   margin-top: 73px;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  justify-content: center;   
 }
 .slide-content{
   display: flex;
@@ -73,7 +70,7 @@ HOME - CAROUSEL
   content: '';
   width: 60%;
   height: 100%;
-  top: -73px;
+  top: 0;
   right: 0;
   bottom: -20px;   
   background-color:hsl(215, 27%, 57%);
@@ -146,8 +143,8 @@ transition:all 0.3s ease;
   left: 0;
   height: 4px;
   background-color: hsl(204, 100%, 20%) !important;
-  animation:forwardin 5s linear;
-  -webkit-animation:forwardin 5s linear;
+  animation:forwardin 5s ease-in-out;
+  -webkit-animation:forwardin 5s ease-in-out;
 } 
 @keyframes forwardin {
 0%{
@@ -157,11 +154,7 @@ width: 0%;
 width: 100%;
 }
 }
-
-#homeCarousel .carousel-item img{
-transition: all 6s linear; 
-} 
- 
+  
 #homeCarousel .carousel-indicators li,.industry-carousel .carousel-indicators li{
   opacity: 1 !important;
 }
