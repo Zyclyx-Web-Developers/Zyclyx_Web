@@ -5,15 +5,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- TODO - add favicon --><link rel="apple-touch-icon" href="./favicon.png">   
+  <meta name="author" content="" />   
+  <link rel="apple-touch-icon" href="./favicon.png">   
   <link rel="icon" href="./favicon.png">
-  <title>Digital Marketing - Zyclyx</title>
-  <!-- Bootstrap core CSS -->
+  <title>Digital Marketing - Zyclyx</title>   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> 
-  <!-- Custom styles -->      
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />        
   <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
   <style>   
@@ -23,16 +20,73 @@
 } 
   </style>
 </head>
-
 <body>
     <div class="se-pre-con"></div>
   <div>
     <!-- 
       ==== Navbar ====
     -->
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header class="main-navbar">
+        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+          <a class="navbar-brand ml-md-4" href="./index.html">
+            <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-master">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+              <!--  home -->
+              <li class="nav-item active mx-2 py-3">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+  
+  
+              <!-- services -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
+                    Development</a>
+                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                </div>
+              </li>
+  
+              <!-- About us -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                  <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                </div>
+              </li>
+  
+              <!-- careers -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./careers.html">Careers</a>
+              </li>
+              <!-- contact us -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./contactus.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -103,7 +157,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">            
               <img src="./images/digital_marketing/global_reach.svg" alt="supply chain">
-              <h3 class="title-2 pt-3 pb-2">Global reach</h3>
+              <h3 class="title-3 pt-3 pb-2">Global reach</h3>
               <p class="text-2">In the constantly evolving world of digital, Using Digital marketing targeted audience can be reached in a cost-effective and measurable way, digital presence allows you to find new markets and trade globally for only a small investment.</p>
             </div>          
             </div>
@@ -113,7 +167,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/digital_marketing/track_results.svg" alt="blockchain security">
-                <h3 class="title-2 pt-3 pb-2">Trackable, measurable results</h3>
+                <h3 class="title-3 pt-3 pb-2">Trackable, measurable results</h3>
                 <p class="text-2">Marketing analytics tools make it easier to establish how effective your campaign has been. It possible with the help of tools, so You can obtain detailed information about users which helps to track the behaviors of individuals within the product</p>
             </div>          
             </div>
@@ -123,7 +177,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/digital_marketing/conversion_rates.svg" alt="digital identity">
-                <h3 class="title-2 pt-3 pb-2">Improved conversion rates</h3>
+                <h3 class="title-3 pt-3 pb-2">Improved conversion rates</h3>
                 <p class="text-2">High conversion rates improve your sales, fewer lost customers, and a greater return on advertising investment. Unlike other options that require people to make a phone call, or meet in person, digital marketing can be seamless and immediate.</p>
             </div>          
             </div>
@@ -209,7 +263,45 @@
        ==== END - CONTACT US ====
       -->
     <!-- Footer  -->
-    <div id="footer"></div>
+    <footer class="container-fluid footer pt-3 pb-2">
+        <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+            <p class="f-title">Phone</p>
+            <p class="f-link mt-3"><a href="tel:+914023549363"><i class="fas fa-phone mr-2"></i>(+91) 40 2354 9363</a></p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+            <p class="f-title">Inquiries</p>
+            <p class="f-link mt-3"><a href="mailto:info@zyclyx.com"><i
+                  class="fas fa-envelope mr-2"></i>info@zyclyx.com</a>
+            </p>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+            <p class="f-title">Location</p>
+            <p class="f-link mt-3"><a
+                href="https://www.google.com/maps/place/ZYCLYX+CONSULTING+SERVICES+PVT.LTD/@17.424933,78.438608,18z/data=!4m5!3m4!1s0x0:0xa07cad29e31d4876!8m2!3d17.4249331!4d78.4386078?hl=en"><i
+                  class="fas fa-map-marker-alt mr-2"></i> Our Location</a></p>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+            <div>
+              <p class="f-title text-left">Follow us</p>
+              <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>
+                <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
+                    title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy row">
+          <p class="copy-right text-center col pt-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All rights
+            reserved</p>
+        </div>
+      </footer>
      <!-- Chat Bot -->
      
 <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
@@ -227,11 +319,7 @@
       <div class="card-body chatBot" id="scroll">
           <div class="reply-messages" id="botMessages">
 
-              <p id="botReplay">Hey I'm Zybot ! </p>
-              <!-- <p id="useTime"></p> -->
-
-              <!-- <p id="userReplay">Hi </p> -->
-              <!-- <p id="useTime"></p>-->
+              <p id="botReplay">Hey I'm Zybot ! </p> 
 
           </div>
       </div>
@@ -254,36 +342,21 @@
 </div>
   </div>
   <!-- Footer End -->
-  <!-- Bootstrap core JavaScript
-      ================================================== -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-     <script src="./js/vendor/aos.js"></script>
-     <script src="./js/chatBot.js"></script>
-  <script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-      $("#footer").load("footer.html");       
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
+ <script src="./js/vendor/aos.js"></script>
+ <script src="./js/chatBot.js"></script>
+ <script>
+    $(document).ready(function () {
+      $(".se-pre-con").fadeOut("slow");
+      AOS.init({
+        once: true,
+        mirror: false
+      });
+      document.getElementById("current-year").innerHTML = new Date().getFullYear();
     });
-  
-window.onload = function(){
-  // Initiate animate on scroll library
-  AOS.init({
-    once:true,
-    mirror:false
-  });
-}
-  </script>
+  </script> 
  
 </body>
 </html>

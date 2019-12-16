@@ -4,17 +4,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- TODO - add favicon -->
+  <meta name="description" content="Provide top-notch cyber security strategies to protect your company's information assets" />
+  <meta name="author" content="" />   
   <link rel="apple-touch-icon" href="./favicon.png">   
   <link rel="icon" href="./favicon.png">
-  <title>Cyber Seurity Services - Zyclyx</title>
-  <!-- Bootstrap core CSS -->
+  <title>Cyber Seurity Services - Zyclyx</title>   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> 
-  <!-- Custom styles -->   
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />     
   <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
   <style>
@@ -42,9 +38,67 @@ background: #2ecc71;
     <!-- 
       ==== Navbar ====
     -->
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header class="main-navbar">
+        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+          <a class="navbar-brand ml-md-4" href="./index.html">
+            <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-master">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+              <!--  home -->
+              <li class="nav-item active mx-2 py-3">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+  
+  
+              <!-- services -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
+                    Development</a>
+                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                </div>
+              </li>
+  
+              <!-- About us -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                  <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                </div>
+              </li>
+  
+              <!-- careers -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./careers.html">Careers</a>
+              </li>
+              <!-- contact us -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./contactus.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -80,13 +134,13 @@ background: #2ecc71;
         <div data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine"
           class="col-lg-5 col-12">
           <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
-          <h4>Provide top-notch cyber security strategies to protect your company's information assets</h4>
+          <h4 class="title-3">Provide top-notch cyber security strategies to protect your company's information assets</h4>
         </div>
 
         <div data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine"
           class="my-2 col-lg-7 col-12 text-left">
           <div class="">
-            <h4 class="title-2">Overview</h4>
+            <h4 class="title-3">Overview</h4>
             <p class="text-2">
               The cyber security architecture is always fundamental for any company or firm, irrespective of its sizes.
               The cyber security architecture your company incorporates is what drives and evaluates the company’s depth
@@ -120,7 +174,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
               <img src="./images/Cyber Security/cyber-security Lock.svg" height="80" alt="Virual ISO">
-              <h3 class="title-2 py-3">Virual ISO</h3>
+              <h3 class="title-3 py-3">Virual ISO</h3>
               <p class="text-2">We can act as your Virtual Chief Information Security Officer (vCISO), bringing
                 specialized cyber security expertise to your organization, designing a mature cyber security program,
                 and notably reducing risk. A dedicated CISO assigned to your organization that is not only affordable,
@@ -134,7 +188,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
               <img src="./images/Cyber Security/cyber-security (Web1).svg" height="80" alt="Cyber Security Consulting">
-              <h3 class="title-2 py-3">Cyber Security Consulting</h3>
+              <h3 class="title-3 py-3">Cyber Security Consulting</h3>
               <p class="text-2">Our Cyber Security Consulting back your organization with years of experience working on
                 projects for some of the world’s largest organizations. Tap into that expertise on demand to support
                 your projects or as you implement technical controls.</p>
@@ -147,7 +201,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
               <img src="./images/Cyber Security/web-security.svg" height="80" alt="Penetration Testing">
-              <h3 class="title-2 py-3">Penetration Testing</h3>
+              <h3 class="title-3 py-3">Penetration Testing</h3>
               <p class="text-2">Our penetration testing team can identify cybersecurity vulnerabilities before an
                 intruder has the opportunity to infiltrate your network or computer system. We’ll uncover weaknesses on
                 your network or within applications and can work with you to remediate and reduce risk.</p>
@@ -180,7 +234,7 @@ background: #2ecc71;
                 <img src="./images/Cyber Security/security.svg" height="80" alt="Personalized Solutions">
               </div>
               <div class="card-content px-3">
-                <h3 class="title-2 py-3">Personalized Solutions</h3>
+                <h3 class="title-3 py-3">Personalized Solutions</h3>
                 <p class="text-2">Cyber security threats today have become increasingly sophisticated and complex.
                   Organisations, however, have not been able evolve at the same pace. As they move ahead and embrace new
                   technologies without fully comprehending the implications these have on the entire enterprise, they
@@ -196,7 +250,7 @@ background: #2ecc71;
                 <img src="./images/Cyber Security/gdpr.svg" height="80" alt="Cross Platform">
               </div>
               <div class="card-content px-3">
-                <h3 class="title-2 py-3">Cross Platform</h3>
+                <h3 class="title-3 py-3">Cross Platform</h3>
                 <p class="text-2">security comprises cybersecurity and
                   physical security both are used by enterprises to protect against unauthorized access to data centers
                   and other computerized systems. The goal is to limit risk and protect IT assets from
@@ -213,7 +267,7 @@ background: #2ecc71;
                 <img src="./images/Cyber Security/limit (1).svg" height="80" alt="Highly Secure Solutions">
               </div>
               <div class="card-content px-3">
-                <h3 class="title-2 py-3">Highly Secure Solutions</h3>
+                <h3 class="title-3 py-3">Highly Secure Solutions</h3>
                 <p class="text-2">Our 24x7 Cyber Security Operations Center puts state-of-the-art threat intelligence
                   behind your business to detect attacks against critical assets before it leads to a data breach. Know
                   what’s happening in real-time, with continual log retention and storage built right in.</p>
@@ -245,9 +299,45 @@ background: #2ecc71;
     <!-- 
        ==== END - CONTACT US ====
       -->
-    <!-- Footer  -->
-    <div id="footer"></div>
-    <!-- Chat Bot -->
+      <footer class="container-fluid footer pt-3 pb-2">
+          <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+              <p class="f-title">Phone</p>
+              <p class="f-link mt-3"><a href="tel:+914023549363"><i class="fas fa-phone mr-2"></i>(+91) 40 2354 9363</a></p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+              <p class="f-title">Inquiries</p>
+              <p class="f-link mt-3"><a href="mailto:info@zyclyx.com"><i
+                    class="fas fa-envelope mr-2"></i>info@zyclyx.com</a>
+              </p>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+              <p class="f-title">Location</p>
+              <p class="f-link mt-3"><a
+                  href="https://www.google.com/maps/place/ZYCLYX+CONSULTING+SERVICES+PVT.LTD/@17.424933,78.438608,18z/data=!4m5!3m4!1s0x0:0xa07cad29e31d4876!8m2!3d17.4249331!4d78.4386078?hl=en"><i
+                    class="fas fa-map-marker-alt mr-2"></i> Our Location</a></p>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+              <div>
+                <p class="f-title text-left">Follow us</p>
+                <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>
+                  <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
+                      title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copy row">
+            <p class="copy-right text-center col pt-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All rights
+              reserved</p>
+          </div>
+        </footer>
     
 <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
   <i class="fab fa-rocketchat"></i>
@@ -264,11 +354,7 @@ background: #2ecc71;
       <div class="card-body chatBot" id="scroll">
           <div class="reply-messages" id="botMessages">
 
-              <p id="botReplay">Hey I'm Zybot ! </p>
-              <!-- <p id="useTime"></p> -->
-
-              <!-- <p id="userReplay">Hi </p> -->
-              <!-- <p id="useTime"></p>-->
+              <p id="botReplay">Hey I'm Zybot ! </p>      
 
           </div>
       </div>
@@ -293,35 +379,22 @@ background: #2ecc71;
   </div>
   <!-- Footer End -->
   <!-- Bootstrap core JavaScript
-      ================================================== -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-  <script src="./js/vendor/aos.js"></script>
-  <script src="./js/chatBot.js"></script>
-  <script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-      $("#footer").load("footer.html");       
-    });
-
-    window.onload = function () {
-      // Initiate animate on scroll library
-      AOS.init({
-        once: true,
-        mirror: false
-      });
-    }
-  </script>
+      ================================================== -->  
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
+     <script src="./js/vendor/aos.js"></script>
+     <script src="./js/chatBot.js"></script>
+     <script>
+        $(document).ready(function () {
+          $(".se-pre-con").fadeOut("slow");
+          AOS.init({
+            once: true,
+            mirror: false
+          });
+          document.getElementById("current-year").innerHTML = new Date().getFullYear();
+        });
+      </script> 
 
 </body>
 

@@ -516,9 +516,9 @@ body {
   .navbar .navbar-toggler .fas{
     color:#ffffff;
   }
-  .navbar .navbar-dark .navbar-toggler .fas{
-    /* color:#2a2048; */
-  }
+  /* .navbar .navbar-dark .navbar-toggler .fas{
+    color:#2a2048;
+  } */
   .navbar .navbar-light .navbar-toggler .fas{
     color:#ffffff !important;
   }   
@@ -582,9 +582,9 @@ margin-right: 10px;
 .capabilities{
 background-color:#f3f7fa; 
 }
-.service-card .title-2,.capability-card .title-2{
+/* .service-card .title-2,.capability-card .title-2{
   font-size: 18px !important;
-}
+} */
 .service-card .title-1,.capability-card .title-1{
   font-size: 28px !important;
 }
@@ -743,6 +743,9 @@ color: #ffffff;
 ==== END - FOOTER ====
 */
 @media (max-width: 575.98px) { 
+  .breadcrumb {
+    margin-left: 0.1rem;
+  }
   .header-img{
     height: 200px;
   }

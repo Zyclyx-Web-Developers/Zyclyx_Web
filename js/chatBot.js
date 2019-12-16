@@ -91,7 +91,3 @@ document
   }
 });
 
-// Page Loading Indicator
-$(document).ready(function() {   
-  $(".se-pre-con").fadeOut("slow");   
-});

@@ -5,22 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- TODO - add favicon --><link rel="apple-touch-icon" href="./favicon.png">   
+  <meta name="author" content="" />   
+  <link rel="apple-touch-icon" href="./favicon.png">   
   <link rel="icon" href="./favicon.png">
-  <title>IoT - Zyclyx</title>
-  <!-- Bootstrap core CSS -->
+  <title>IoT - Zyclyx</title>   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> 
-  <!-- Custom styles -->   
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <!-- <link rel="stylesheet" href="./css/IoT.css"> -->
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />     
+  <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
   <style>
-  
-/* Header */
+   
 .header-img{    
     background-image:url("./images/bg_header/iot.jpg");   
 }
@@ -43,9 +37,67 @@ background: #2ecc71;
     <!-- 
       ==== Navbar ====
     -->
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header class="main-navbar">
+        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+          <a class="navbar-brand ml-md-4" href="./index.html">
+            <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-master">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+              <!--  home -->
+              <li class="nav-item active mx-2 py-3">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+  
+  
+              <!-- services -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
+                    Development</a>
+                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                </div>
+              </li>
+  
+              <!-- About us -->
+              <li class="nav-item dropdown mx-2 py-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                  <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                </div>
+              </li>
+  
+              <!-- careers -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./careers.html">Careers</a>
+              </li>
+              <!-- contact us -->
+              <li class="nav-item mx-2 py-3">
+                <a class="nav-link" href="./contactus.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -80,12 +132,12 @@ background: #2ecc71;
     <div class="row py-4">
       <div data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-5 col-12">
         <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
-        <h4>Our qualified team delivers first-rated IoT Services to increase your business value</h4>
+        <h4 class="title-3">Our qualified team delivers first-rated IoT Services to increase your business value</h4>
       </div>
       
       <div  data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="my-2 col-lg-7 col-12 text-left">
         <div class="ml-3">
-            <h4 class="title-2">Overview</h4>
+            <h4 class="title-3">Overview</h4>
             <p class="text-2">
               IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking, and robotics. IoT exploits recent advances in software, falling hardware prices, and modern attitudes towards technology. Its new and advanced elements bring major changes in the delivery of products, goods, and services; and the social, economic, and political impact of those changes
             </p>       
@@ -115,7 +167,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">            
               <img src="./images/IoT/antenna.svg" height="80" alt="supply chain">
-              <h3 class="title-2 py-3">Wide-Area Network</h3>
+              <h3 class="title-3 py-3">Wide-Area Network</h3>
               <p class="text-2">These IoT applications that need wide-area coverage combined with relatively low bandwidth, good battery life, low hardware and operating cost, and high connection density. Emerging standards such as narrowband IoT will likely dominate this space.</p>
             </div>          
             </div>
@@ -125,7 +177,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/IoT/remote-control.svg" height="80" alt="blockchain security">
-                <h3 class="title-2 py-3">Short Range Iot Networks</h3>
+                <h3 class="title-3 py-3">Short Range Iot Networks</h3>
                 <p class="text-2">Low-power, short-range networks will dominate wireless IoT connectivity through 2025, far outnumbering connections using wide-area IoT networks. So, commercial and technical trade-offs mean that many solutions will coexist, with no single dominant winner.</p>
             </div>          
             </div>
@@ -135,7 +187,7 @@ background: #2ecc71;
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/IoT/smart-house.svg" height="80" alt="digital identity">
-                <h3 class="title-2 py-3">Event Stream Processing</h3>
+                <h3 class="title-3 py-3">Event Stream Processing</h3>
                 <p class="text-2">Some IoT applications will generate extremely high data rates that must be analyzed in real time. Systems creating  millions of events per second can occur in some situations. To address such requirements, distributed stream computing platforms have emerged that perform tasks such as real-time analytics and pattern identification.</p>
             </div>          
             </div>
@@ -165,7 +217,7 @@ background: #2ecc71;
                     <img src="./images/IoT/smart-city.svg" height="80" alt="smart contracts">              
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Personalized Solutions</h3>
+                      <h3 class="title-3 py-3">Personalized Solutions</h3>
                       <p class="text-2">Whether your new product is for smart homes, smart enterprises, or smart industrial manufacturing distribution environments, our years of software application development and integration expertise has made us the ideal partner to support your companies IoT device development. We have the experts that can bring the internet of things insights and intelligence that your enterprise needs to improve its efficiency and business offerings.</p>
                     </div>
              </div>
@@ -178,7 +230,7 @@ background: #2ecc71;
                     <img src="./images/IoT/smartwatch (1).svg" height="80" alt="distributed ledgers">                
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Cross-Platform Integration</h3>
+                      <h3 class="title-3 py-3">Cross-Platform Integration</h3>
                       <p class="text-2">An IoT platform is a multi-layer technology that enables straightforward provisioning, management, and automation of connected devices within the Internet of Things universe. It basically connects your hardware, however diverse, to the cloud by using flexible connectivity options, enterprise-grade security mechanisms, and broad data processing powers. For developers, an IoT platform provides a set of ready-to-use features that greatly speed up development of applications for connected devices as well as take care of scalability and cross-device compatibility.</p>
                     </div>    
             </div>    
@@ -191,7 +243,7 @@ background: #2ecc71;
                     <img src="./images/IoT/wifi.svg" height="80" alt="crypto Currency">                
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Highly Secure Solutions</h3>
+                      <h3 class="title-3 py-3">Highly Secure Solutions</h3>
                       <p class="text-2">IoT device security is completely different from that of other computing systems. Signature-based blacklisting solutions are not suitable for IoT devices due to hardware limitations. Instead, ensuring device integrity, confidentiality, identification, and operation continuity will be vital in IoT security implementation. To design appropriate security measures, we need to examine device lifecycles and make sure these security measures are truly protecting the device.</p>
                     </div>
                   </div>
@@ -221,7 +273,45 @@ background: #2ecc71;
        ==== END - CONTACT US ====
       -->
     <!-- Footer  -->
-    <div id="footer"></div>
+    <footer class="container-fluid footer pt-3 pb-2">
+        <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+            <p class="f-title">Phone</p>
+            <p class="f-link mt-3"><a href="tel:+914023549363"><i class="fas fa-phone mr-2"></i>(+91) 40 2354 9363</a></p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+            <p class="f-title">Inquiries</p>
+            <p class="f-link mt-3"><a href="mailto:info@zyclyx.com"><i
+                  class="fas fa-envelope mr-2"></i>info@zyclyx.com</a>
+            </p>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+            <p class="f-title">Location</p>
+            <p class="f-link mt-3"><a
+                href="https://www.google.com/maps/place/ZYCLYX+CONSULTING+SERVICES+PVT.LTD/@17.424933,78.438608,18z/data=!4m5!3m4!1s0x0:0xa07cad29e31d4876!8m2!3d17.4249331!4d78.4386078?hl=en"><i
+                  class="fas fa-map-marker-alt mr-2"></i> Our Location</a></p>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+            <div>
+              <p class="f-title text-left">Follow us</p>
+              <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>
+                <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
+                    title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy row">
+          <p class="copy-right text-center col pt-2 mb-0">© 2018 - <span id="current-year"></span> ZYCLYX. All rights
+            reserved</p>
+        </div>
+      </footer>
      <!-- Chat Bot -->
      
 <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
@@ -240,11 +330,6 @@ background: #2ecc71;
           <div class="reply-messages" id="botMessages">
 
               <p id="botReplay">Hey I'm Zybot ! </p>
-              <!-- <p id="useTime"></p> -->
-
-              <!-- <p id="userReplay">Hi </p> -->
-              <!-- <p id="useTime"></p>-->
-
           </div>
       </div>
       <div class="card-footer p-0 bottom-fixed">
@@ -267,37 +352,20 @@ background: #2ecc71;
 
   </div>
   <!-- Footer End -->
-  <!-- Bootstrap core JavaScript
-      ================================================== -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-     <script src="./js/vendor/aos.js"></script>
-     <script src="./js/chatBot.js"></script>
-  <script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-      $("#footer").load("footer.html");
-      // $("#chatBot").load("chat_bot.html");
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
+ <script src="./js/vendor/aos.js"></script>
+ <script src="./js/chatBot.js"></script>
+ <script>
+    $(document).ready(function () {
+      $(".se-pre-con").fadeOut("slow");
+      AOS.init({
+        once: true,
+        mirror: false
+      });
+      document.getElementById("current-year").innerHTML = new Date().getFullYear();
     });
-  
-window.onload = function(){
-  // Initiate animate on scroll library
-  AOS.init({
-    once:true,
-    mirror:false
-  });
-}
-  </script>
- 
+  </script>  
 </body>
 </html>
