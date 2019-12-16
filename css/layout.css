@@ -28,7 +28,7 @@
   --color-2-6:#f51714;
 
   --font:'custom-font', sans-serif;
-  --color:#f51714;
+  --color:#ff4500;
 }
  
 /* 
@@ -651,7 +651,7 @@ background-color:#f3f7fa;
 }
  
 .footer .f-title{     
-  color: #72757c;
+  color: #8d9096;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 5px;   
