@@ -668,7 +668,7 @@ background-color:#f3f7fa;
 color: #ffffff; 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
-  color: #f51714;
+  color:var(--color);
   font-size: 1.25rem;
   transition:all 0.2s ease-in;
   -webkit-transition:all 0.2s ease-in;
@@ -682,7 +682,7 @@ color: #ffffff;
   width: 0;
   height: 2px;
   margin-top: 5px;
-  background: #f51714;
+  background:var(--color);
   transition: width .3s;
 }
 .f-link a:hover::after {
@@ -716,7 +716,7 @@ color: #ffffff;
 }
 
 .footer .social-network .fab:hover{
-  color:#f51714;
+  color:var(--color);
   background-color: #f3f7fa;
   border: 2px solid #f4f4f4;
   transform: scale(1.1);
