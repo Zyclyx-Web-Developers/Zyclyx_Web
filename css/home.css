@@ -192,6 +192,7 @@ transition: all 6s linear;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
    background-color:hsl(1, 92%, 97%);
+   background-color: hsl(16, 100%, 95%);
    margin: 0 auto;
 }
 .welcome-card{
