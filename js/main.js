@@ -1,7 +1,6 @@
  
 // Page loading Indicator 
-$(window).on('load', function () {
-  // Animate loader off screen
+$(document).ready(function () {   
   $(".se-pre-con").fadeOut("slow");
 })
 
