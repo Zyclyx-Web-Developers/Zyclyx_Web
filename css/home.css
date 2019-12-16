@@ -184,8 +184,8 @@ width: 100%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
-   background-color:hsl(1, 92%, 97%);
-   background-color: hsl(16, 100%, 95%);
+   /* background-color:hsl(1, 92%, 97%);
+   background-color: hsl(16, 100%, 95%); */
    margin: 0 auto;
 }
 .welcome-card{
@@ -204,7 +204,7 @@ width: 100%;
   -o-transition: all 0.2s ease-in;
 }
 .welcome-card img {
-  max-width: 50px;
+  max-width: 80px;
 }
 .welcome-card:hover .welcome-card-body{    
    transition: all 0.2s ease-in;
@@ -231,7 +231,7 @@ width: 100%;
   ==== END - WELCOME SECTION
   */
  .automation .caption{
-   color: #f51714;
+   color: #ff4500;
  }
  .automation .img-box{
   display: flex;
@@ -246,7 +246,6 @@ width: 100%;
 */
 .services-wrapper{ 
 padding: 2rem; 
- 
  
 }
 /* .service-inner{
@@ -301,10 +300,10 @@ padding: 2rem;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     /* box-shadow: inset 0 0 0 1px rgba(34, 45, 165,0.2); */
-    background-color: hsl(235, 66%, 95%);
+    background-color: hsla(236, 68%, 95%, 0);
 }
 .services .service:hover{
-  background-color: hsl(235, 66%, 97%) !important;
+  background-color: hsla(234, 63%, 97%, 0) !important;
 }
 .services .service:hover .service-icon{   
     box-shadow: inset 0 0 0 70px #2e5bd7;
@@ -337,7 +336,8 @@ padding: 2rem;
 }
 .service:hover .btn-breach{
   border-color: #2138c9;
-} 
+}
+
 /* 
 ==== END - SERVICES ====
 */
