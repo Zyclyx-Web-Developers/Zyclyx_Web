@@ -52,12 +52,12 @@ const sectionOneObserver = new IntersectionObserver(function( entries ) {
     if (!entry.isIntersecting) {
         navbar.classList.remove("navbar-light")
         navbar.classList.add("navbar-dark");
-        document.getElementById('navbarLogo').setAttribute('src','./images/logo/logo-black.png');
+        document.getElementById('navbarLogo').setAttribute('src','./images/logo/logo-black-sm.png');
         document.documentElement.style.setProperty('--navbar-text','#0e0b16');
     } else {
       navbar.classList.remove("navbar-dark");
       navbar.classList.add("navbar-light");
-      document.getElementById('navbarLogo').setAttribute('src','./images/logo/logo-white.png');
+      document.getElementById('navbarLogo').setAttribute('src','./images/logo/logo-white-sm.png');
       document.documentElement.style.setProperty('--navbar-text','#f4f4f4');
     }
   });
