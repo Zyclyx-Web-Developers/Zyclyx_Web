@@ -244,9 +244,9 @@ transition: all 6s linear;
   display: flex;
   align-items: center;
  }
- /* .automation img{
-   max-width: 80%;
- } */
+ .automation img{
+width: 100%;
+ }
 
 /* 
 ==== SERVICES ====
@@ -405,29 +405,36 @@ padding: 2rem;
 */
  
 .client{
-  padding:1rem 3rem;
+  padding:2rem 3rem;
   border-radius: 0.3rem;
   margin: 1rem !important;
   max-width: 300px;
-  height: 100px;
+  height: 150px;
   display:flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  /* background-color:#f3f7fa; */
-  box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 123, 255,0.3);
-  /* margin: 0 auto;  */
-  transition: border 1s linear;
+  /*background-color:#f3f7fa;
+  */box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(211, 100%, 90%);
+  /*margin: 0 auto;
+  */transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
 }
 .our-clients img{     
   width: 100%;   
 }
 .our-clients .owl-item.center .client{
-  border: 1px solid rgba(0, 123, 255,1);
-  transition: border 1s linear;
-  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
-    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid hsl(211, 100%, 80%);
+  transition: all 1s linear;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
 }
 
 /*our clients new */

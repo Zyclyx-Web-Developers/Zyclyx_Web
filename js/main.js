@@ -10,6 +10,17 @@ window.onload = function(){
     once:true,
     mirror:false
   });
+       // our clients/partners
+       $(".clients-carousel").owlCarousel({
+        autoplay: true,
+        dots: true,
+        loop: true,
+        center:true,
+        autoplaySpeed:2000,
+        responsive: {
+          0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
+        }
+      });
 }
 
 // Home Page Slider    
@@ -17,6 +28,8 @@ window.onload = function(){
       interval: 5000,
       pause: false
     })
+
+
  
     //Home page  Active Slide Indicator
     let indicator = document.querySelector(".carousel-indicators::before");
