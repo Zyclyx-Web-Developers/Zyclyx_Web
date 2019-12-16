@@ -187,18 +187,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../images/loading.gif') center no-repeat #fff;
-}
-
-/* Polka Dots */
-.polka-dots{
- height: 10px;
- width: 100px;
- display: inline-block;
-background-image: radial-gradient(#212121 20%, transparent 20%),
-      radial-gradient(#fafafa 20%, transparent 20%);   
-  background-position: 0 0, 10px 10px;
-  background-size: 10px 10px;
+	background: url('../images/wait.svg') center no-repeat #fff;
 }
 
 html,
@@ -261,7 +250,7 @@ body {
 .text-2,
 .text-3,
 .title-caption {   
-  color:#2F4858;
+  color:#53535b;
 }
 .text-1 {
   font-size: 1.2rem !important;
@@ -282,11 +271,11 @@ body {
 }
 
 .title-1{
-  color:#152a49
+  columns: #333333;
 }
 .title-2,.title-3{
   /* color:rgba(21, 42, 73,0.9); */
-  color: #2a2048 !important;
+  color: #333333 !important;
 }
 .title-1 {
   font-size: 1.6rem !important;   
@@ -412,7 +401,7 @@ body {
     -o-transition:all 0.5s ease-in ;
 }
   .navbar-dark{
-    background-color:#E9EFFF !important;
+    background-color:#f4f4f4 !important;
     box-shadow: 0 8px 6px -6px #cccccc;
     animation: slide-in-top 1s;
     -webkit-animation: slide-in-top 1s;
@@ -449,10 +438,12 @@ body {
     font-size: 1.5rem;
   }
  
-  .navbar .navbar-toggler .fas{
-    color:#ffffff;
+  .navbar .navbar-dark .navbar-toggler .fas{
+    color:#2a2048;
   }
-      
+  .navbar .navbar-light .navbar-toggler .fas{
+    color:#ffffff;
+  }   
   .navbar-brand img{
     max-width: 200px;
     height: auto;    
@@ -462,7 +453,7 @@ body {
     margin-top: 0; 
     padding-top: 10px;   
     border-radius: 0 !important;        
-    background-color: #E9EFFF;         
+    background-color: #f4f4f4;         
   }
   .dropdown-menu .dropdown-item{     
     font-weight: 500;   
@@ -522,6 +513,15 @@ body {
   /* drop down menu width */
   @media (min-width: 992px) {
   /* show dropdown menu on hover */
+  .navbar .navbar-toggler .fas{
+    color:#ffffff;
+  }
+  .navbar .navbar-dark .navbar-toggler .fas{
+    /* color:#2a2048; */
+  }
+  .navbar .navbar-light .navbar-toggler .fas{
+    color:#ffffff !important;
+  }   
   .site-navbar .dropdown:hover > .dropdown-menu {
     display: block;
   }

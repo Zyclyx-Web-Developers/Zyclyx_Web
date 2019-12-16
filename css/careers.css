@@ -1,5 +1,5 @@
 .header-img{
-  background-image: url("../images/careerpage-img.jpg");
+  background-image: url("../images/bg_header/careers.jpg");
   background-position: center;
 }
  /* loading indicator for open jobs */
@@ -10,7 +10,7 @@
   z-index: 9999;
   width: 100%;
 	height: 100px;
-  background: url('../images/loading.gif') center no-repeat #fff;
+  background: url('../images/load.svg') center no-repeat transparent;
   background-color: transparent;
 }
 .work-with-card .card-body{

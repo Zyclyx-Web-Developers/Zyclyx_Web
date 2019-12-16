@@ -1,74 +1,10 @@
-  jQuery(document).ready(function($) {
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 800
-    });
-});
-
-window.onload = function(){
-  // Initiate animate on scroll library
+// Initiate animate on scroll library
+window.onload = function(){  
   AOS.init({
     once:true,
     mirror:false
   });
-
-  // our clients/partners
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    center:true,
-    autoplaySpeed:2000,
-    responsive: {
-      0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
-    }
-  });
-
-  // client testimonials
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,     
-    loop: true,
-    center:true,
-    autoplayTimeout:7000,
-    autoplaySpeed:2000,   
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 3
-      }
-    }
-  });
-
-  // our projects
-  $('.projects-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: false,
-    nav: true,
-    mouseDrag: false,
-    autoplay: true,
-    animateOut: 'slideOutUp',
-    stagePadding: 0,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      }
-    }
-  });
-
 }
-
 
 // Avoid `console` errors in browsers that lack a console.
 (function() {
