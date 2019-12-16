@@ -243,9 +243,9 @@ transition: all 6s linear;
   display: flex;
   align-items: center;
  }
- .automation img{
+ /* .automation img{
    max-width: 80%;
- }
+ } */
 
 /* 
 ==== SERVICES ====
