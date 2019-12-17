@@ -876,7 +876,7 @@ color: #ff4500;
 }
 
 .chat-bot .input-group-text {
-  background-color: #2138c9;
+  background-color: #007bff;
   border: none;
   outline: none;
   border-radius: 0px;
@@ -901,8 +901,8 @@ color: #ff4500;
 }
 
  .bot {
-  border: 2px solid #2138c9;
-  background: #2138c9;
+  border: 2px solid #007bff;
+  background: #007bff;
   color: #fff;
   font-size: 25px;
   border-radius: 50%;
