@@ -480,7 +480,7 @@ height: 45px;
 
 .contact-banner{
   position: relative;
-  background-image: url('/images/home/connect.jpg');
+  background-image: url('../images/home/connect.jpg');
   padding: 40px;
   background-size: cover;
   background-position: center;
