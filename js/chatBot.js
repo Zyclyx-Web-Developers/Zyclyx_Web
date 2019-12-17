@@ -37,7 +37,10 @@ document
   // disable user input
   document.getElementById('userText').setAttribute("disabled", true);
   document.querySelector('.sendBtn').setAttribute("disabled", true);
+  document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+  <span class="sr-only">Loading...</span></span>`;
   document.getElementById("userText").value = "";
+
 
   fetch("https://stark-crag-70246.herokuapp.com/zyclyx", {
     method: "post",
@@ -82,6 +85,7 @@ document
     let userInput = document.getElementById("userText")
     userInput.removeAttribute("disabled");
     document.querySelector('.sendBtn').removeAttribute("disabled");
+    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
     userInput.focus();
     })
     .then(function(){
