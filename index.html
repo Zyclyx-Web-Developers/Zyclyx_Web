@@ -31,7 +31,7 @@
   <!-- <div class="progress"></div> -->
   <div class="se-pre-con"></div>
   <header class="main-navbar" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg master-nav fixed-top site-navbar" id="navbarMaster">
+    <nav class="navbar navbar-expand-lg master-nav fixed-top site-navbar animated fadeInDown delay-1s" id="navbarMaster">
       <a class="navbar-brand ml-md-4" href="./index.html">
         <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
       </a>
@@ -50,11 +50,11 @@
 
           <!-- services -->
           <li class="nav-item dropdown mx-2 py-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
-            <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+            <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
               <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
               <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
               <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
@@ -72,7 +72,7 @@
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About us
             </a>
-            <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+            <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
               <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
               <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
             </div>
@@ -650,8 +650,8 @@
   </div>
 
   <div id="box1" class="chat-bot">
-    <div class="card shadow" style="max-width: 18rem;" id="bot">
-      <div id="close" class="card-header d-flex justify-content-between" style="color: #222da5;">Zybot
+    <div class="card shadow" id="bot">
+      <div id="close" class="card-header d-flex justify-content-between">Zybot
         <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
           <i class="fas fa-times"></i>
         </button>
