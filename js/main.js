@@ -25,10 +25,10 @@ window.onload = function () {
   $(".industry-carousel").owlCarousel({
     autoplay: false,
     dots: true,
-    loop: true,
-    center: true,
+    loop: false,
+    center: false,
     responsive: {
-      0: { items: 1 }, 768: { items: 3 }, 900: { items: 5 }
+      0: { items: 1 },  768: { items: 2 }, 1024: { items: 3 }, 1440:{ items: 5 }
     }
   });
 }
