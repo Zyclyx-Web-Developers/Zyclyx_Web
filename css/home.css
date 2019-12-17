@@ -51,6 +51,9 @@ HOME - CAROUSEL
   display: flex;
   align-items: center;
 }
+.slide-caption h3{
+  color: #ffffff;
+}
 .slide-caption{
   color: #f4f4f4;
   margin-left:1rem;
@@ -183,9 +186,8 @@ width: 100%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   /* background-color:hsl(1, 92%, 97%);
-   background-color: hsl(16, 100%, 95%); */
+   -o-border-radius: 50%; 
+   /* background-color: hsl(211, 100%, 96%); */
    margin: 0 auto;
 }
 .welcome-card{
@@ -204,7 +206,10 @@ width: 100%;
   -o-transition: all 0.2s ease-in;
 }
 .welcome-card img {
-  max-width: 80px;
+  max-width: 70px;
+}
+.welcome-card .icon-3{
+  max-width: 58px;
 }
 .welcome-card:hover .welcome-card-body{    
    transition: all 0.2s ease-in;
@@ -245,97 +250,87 @@ width: 100%;
 ==== SERVICES ====
 */
 .services-wrapper{ 
-padding: 2rem; 
+padding-top: 3rem;  
+padding-bottom: 3rem;  
+background-color: hsl(211, 100%, 98.5%);
  
-}
-/* .service-inner{
-  background-color:#f8f9ff;    
-} */
+} 
 .services .card{
   border: none;
-  background-color: #ffffff;   
+  /* background-color: #ffffff;    */
+  background-color: transparent;
 }
 .services .service {
   padding:0.8rem;
-  margin:1rem 0.1rem;
-  background-color: #fff !important;
+  margin: 0.6rem !important;
   border-radius: 8px;
-  transition: all 0.5s ease-in;
-  border: 1px solid #d8edff;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
+  transition: all 0.1s ease-in;
+  border: 1px solid hsl(211, 100%, 96%);
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
 }
-.services .card:hover .service{
-  transition: all 0.3s linear;   
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  /* box-shadow: 0 0.125rem 0.3rem -0.0625rem hsl(235, 66%, 89%),
-  0 0.275rem 0.75rem -0.0625rem hsl(235, 66%, 89%) !important;    */
-  /* box-shadow: 0 0 2px 1px #2138c9; */
-}
-
+ 
 .service .title-2{
   font-size: 19px !important;
 }
-.service .title-3{
-  color:#222da5;
-  margin-top: 5px;
-}
-.services .service .service-icon{     
+ 
+.services .service .service-icon{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;  
-    background-color:transparent;     
+    align-items: center;
+    background-color:transparent;
     height: 70px;
     width: 70px;
     padding: 12px;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    /* box-shadow: inset 0 0 0 1px rgba(34, 45, 165,0.2); */
-    background-color: hsla(236, 68%, 95%, 0);
+ 
 }
-.services .service:hover{
-  background-color: hsla(234, 63%, 97%, 0) !important;
+
+.services .service:hover{   
+  background-color: #ffffff;
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),
+  0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
 }
-.services .service:hover .service-icon{   
-    box-shadow: inset 0 0 0 70px #2e5bd7;
-    transition: all .5s ease-in-out;
+
+.services .service:hover .service-icon{
+    box-shadow: inset 0 0 0 70px hsl(16, 100%, 98%);;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
 }
 .services .service .service-icon svg{
-  fill: #222da5;
-  transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
+  fill: hsl(211, 100%, 60%);
+  transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
 }
 .services .service:hover .service-icon svg{
-      fill: #ffffff;
+      fill:#ff4500;
       height: 70px;
       width: 70px;
-      transition: all .5s ease-in-out;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      -ms-transition: all .5s ease-in-out;
-      -o-transition: all .5s ease-in-out;
-  }
+      transition: all .1s ease-in-out;
+      -webkit-transition: all .1s ease-in-out;
+      -moz-transition: all .1s ease-in-out;
+      -ms-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+}
 .service-text{
   min-height: 120px;
   margin-bottom:0 ;
 }
 .service .btn-breach{
   border-color:transparent;
+  color:hsl(211, 100%, 70%);
 }
 .service:hover .btn-breach{
-  border-color: #2138c9;
+  color: hsl(16, 100%, 55%);
+  border-color:hsl(16, 100%, 70%);
 }
 
 /* 
@@ -344,7 +339,7 @@ padding: 2rem;
 
 /*  */
 .industries{
-  background-color: rgb(243, 245, 249);
+  background-color: #fff;
 }
 .industries .card{
   border: none;
@@ -391,7 +386,13 @@ padding: 2rem;
   width: 60px;
 }
  
- 
+ /* New Industries */
+ .industries{
+   background-color: #ffffff;
+ }
+ .industry-cards .center .title-3{
+   color: #ff4500 !important;
+ }
  
 /* 
 ==== CLIENT LOGOS ====
