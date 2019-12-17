@@ -25,13 +25,14 @@
         <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner"
             id="navbarMaster">
             <a class="navbar-brand ml-md-4" href="./index.html">
-                <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>         
+          </button>
             <div class="collapse navbar-collapse" id="navbar-master">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
                     <!--  home -->
@@ -235,7 +236,7 @@
     <!-- 
     ==== CORE VALUES ====
   -->
-    <section class="container-fluid wrapper core-values px-1">
+  <section class="container-fluid wrapper core-values px-1">
         <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
             <h2 class="title-1">Our Core <span class="title-highlight">Values</span></h2>
             <p class="title-caption">Our core values shape the culture of our organization and define the character of
@@ -243,59 +244,65 @@
                 company.</p>
         </div>
 
-        <div class="container py-5 mt-sm-3 mt-md-5 text-center">
+        <div class="container-fluid mt-sm-3 mt-md-5">
             <div class="row">
+                <!-- Core value caption -->
+                <div class="col-12 col-md-5 d-flex justify-content-center align-items-center core-val-caption"
+                    data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700">
+                    <div>
+                        <p class="text-2 font-weight-bold text-center"> <i class="fa fa-quote-left mr-2 quote-left"></i> At
+                            Zyclyx, we don't
+                            just accept difference - we celebrate it, we support
+                            it, and we thrive
+                            on it for
+                            the benefit of our employees, our products, and our community</p>
+                    </div>
+                </div>
                 <!-- core values -->
-                <div class="col-12 col-md-12 " data-aos="zoom-in" data-aos-delay="300" data-aos-duration="700">
+                <div class="col-12 col-md-7 d-flex justify-content-center align-items-center" data-aos="zoom-in"
+                    data-aos-delay="300" data-aos-duration="700">
                     <div class="row core-values text-center">
-                        <div class="col-1"></div>
-                        <div class="col-3 p-1 my-2 val-1 border" style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 1 -->
+                        <div class="col-lg-4 col-6 p-1 my-2 val-1">
                             <p><img src="./images/why_zyclyx/c_val_deliver.svg" alt="Deliver Amazing Service"></p>
                             <p><span class="title-2">Deliver</span> <br /><span class="text-2">Amazing Service</span>
                             </p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 p-1 my-2 val-2 border" style=" box-shadow: 0px 3px 7px -5px black;">
+
+                        <!-- core value - 2 -->
+                        <div class="col-lg-4 col-6  p-1 my-2 val-2">
                             <p><img src="./images/why_zyclyx/c_val_ownership.svg" alt="Take Ownership"></p>
                             <p><span class="title-2">Take Ownership</span><br /><span class=" text-2">In
                                     Everything</span>
                             </p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 my-2 p-1 val-3 border" style=" box-shadow: 0px 3px 7px -5px black;">
+
+                        <!-- core value - 3 -->
+                        <div class="col-lg-4 col-6 my-2 p-1 val-3">
                             <p><img src="./images/why_zyclyx/c_val_commit.svg" alt="Continuous Improvement"></p>
                             <p><span class="title-2">Commit</span><br /><span class=" text-2">Continuous
                                     Improvement</span></p>
                         </div>
-                    </div>
 
-                    <div class="row core-values text-center">
-                        <div class="col-3"></div>
-                        <div class="col-3 my-2 p-1 val-4 border" style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 4 -->
+                        <div class="col-lg-4 col-6 my-2 p-1 val-4">
                             <p><img src="./images/why_zyclyx/c_val_embrace.svg" alt="Embrace Creativity"></p>
                             <p><span class="title-2">Embrace</span><br /><span class="text-2">Creativity &
-                                    Innovation</span>
-                            </p>
+                                    Innovation</span></p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 my-2 p-1 val-5 border" style=" box-shadow: 0px 3px 7px -5px black;">
-                            <p><img src="./images/why_zyclyx/c_val_build.svg" alt="Positive Team"></p>
+
+                        <!-- core value - 5 -->
+                        <div class="col-lg-4 col-7 my-2 p-1 val-5">
+                            <p><img src="./images/why_zyclyx/c_val_build.svg" alt="Positive Team" ></p>
                             <p><span class="title-2">Build</span><br /> <span class="text-2">Positive Team
-                                    Environment</span>
-                            </p>
+                                    Environment</span></p>
                         </div>
-                        <div class="col-1"></div>
-                    </div>
 
-                    <div class="row core-values text-center">
-                        <div class="col-5"></div>
-
-                        <div class="col-3 my-2 p-1 val-6 " style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 6 -->
+                        <div class="col-lg-4 col-5 my-2 p-1 val-6">
                             <p><img src="./images/why_zyclyx/c_val_make.svg" alt="Make it Count"></p>
                             <p><span class="title-2">Make</span><br /><span class="text-2">It Count</span></p>
                         </div>
-                        <div class="col-5"></div>
-
                     </div>
                 </div>
             </div>
@@ -393,6 +400,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/chatBot.js"></script>
     <script>

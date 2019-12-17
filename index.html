@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/animate.min.css">   
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">   
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -30,14 +31,15 @@
   <!-- <div class="progress"></div> -->
   <div class="se-pre-con"></div>
   <header class="main-navbar" id="mainNavbar">
-    <nav class="navbar navbar-expand-lg master-nav fixed-top site-navbar" id="navbarMaster">
+    <nav class="navbar navbar-expand-lg master-nav fixed-top site-navbar animated fadeInDown delay-1s" id="navbarMaster">
       <a class="navbar-brand ml-md-4" href="./index.html">
-        <img src="./images/logo/logo-white.png" alt="Zyclyx Logo" id="navbarLogo">
+        <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <i class="fas fa-bars"></i>
+      <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+        aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>         
       </button>
       <div class="collapse navbar-collapse" id="navbar-master">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
@@ -46,14 +48,13 @@
             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
 
-
           <!-- services -->
           <li class="nav-item dropdown mx-2 py-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
-            <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+            <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
               <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
               <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
               <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
@@ -71,7 +72,7 @@
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About us
             </a>
-            <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+            <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
               <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
               <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
             </div>
@@ -117,15 +118,16 @@
           <div class="row">
             <div class="col-md-6 col-12 slide-content">
               <div class="slide-caption px-md-5">
-                <h3 class="slide-title">BlockChain Solutions</h3>
-                <h4 class="slide-text mt-4">Full-service custom application development to meet the specific functional
+                <h3 class="slide-title animated bounceInLeft delay-1s">BlockChain Solutions</h3>
+                <h4 class="slide-text mt-4 animated bounceInLeft slower">Full-service custom application development to
+                  meet the specific functional
                   needs of enterprise
                   customers</h4>
                 <!-- <p class="text-center"><a href="#" class="btn btn-outline-primary px-4">Explore <i class="ml-3 fas fa-long-arrow-alt-right"></i></a></p>                       -->
               </div>
             </div>
-            <div class="col-6 slide-image">
-              <img src="./images/home/blockchain.svg" alt="">
+            <div class="col-6 slide-image d-flex justify-content-center align-items-center">
+              <img class="animated bounceInUp slower" src="./images/home/slide-blockchain.svg" alt="blockchain">
             </div>
           </div>
 
@@ -135,15 +137,15 @@
           <div class="row">
             <div class="col-md-6 col-12 slide-content">
               <div class="slide-caption px-md-5">
-                <h3 class="slide-title">AI & Automation</h3>
-                <h4 class="slide-text mt-4">We apply our technical expertise and consultative approach to best meet your
+                <h3 class="slide-title animated bounceInLeft delay-1s slower">AI & Automation</h3>
+                <h4 class="slide-text mt-4 animated bounceInLeft delay-2s slower">We apply our technical expertise and
+                  consultative approach to best meet your
                   technology and automation
                   goals</h4>
-                <!-- <p class="text-center"><a href="#" class="btn btn-outline-primary px-4">Explore <i class="ml-3 fas fa-long-arrow-alt-right"></i></a></p>                       -->
               </div>
             </div>
-            <div class="col-6 slide-image">
-              <img src="./images/home/automation.svg" alt="">
+            <div class="col-6 slide-image d-flex justify-content-center align-items-center">
+              <img class="animated bounceInRight delay-2s" src="./images/home/slide-automation.svg" alt="automation">
             </div>
           </div>
 
@@ -152,34 +154,33 @@
           <!-- <img src="./images/home/slide-3.png" class="d-block w-100" alt="enterprise solution"> -->
           <div class="row">
             <div class="col-md-6 col-12 slide-content">
-              <div class="slide-caption px-5">
-                <h3 class="slide-title">Enterprise Solutions</h3>
-                <h4 class="slide-text mt-4">Deploy cutting edge technology, optimize customer experience, automate
+              <div class="slide-caption px-md-5">
+                <h3 class="slide-title animated bounceInUp delay-1s slower">Enterprise Solutions</h3>
+                <h4 class="slide-text mt-4 animated bounceInUp delay-2s slower">Deploy cutting edge technology, optimize
+                  customer experience, automate
                   process and ensure business
                   continuity</h4>
-                <!-- <p class="text-center"><a href="#" class="btn btn-outline-primary px-4">Explore <i class="ml-3 fas fa-long-arrow-alt-right"></i></a></p>                       -->
               </div>
             </div>
-            <div class="col-6 slide-image">
-              <img src="./images/home/application.svg" alt="">
+            <div class="col-6 slide-image d-flex justify-content-center align-items-center">
+              <img class="animated bounceInDown slower delay-2s" src="./images/home/slide-application.svg" alt="">
             </div>
           </div>
 
         </div>
         <div class="carousel-item item home-slide-4">
-          <!-- <img src="./images/home/slide-3.png" class="d-block w-100" alt="enterprise solution"> -->
           <div class="row">
             <div class="col-md-6 col-12 slide-content">
-              <div class="slide-caption px-5">
-                <h3 class="slide-title">New Age Technologies</h3>
-                <h4 class="slide-text mt-4">Industry knowledge, functional experience, and technology skills to help
+              <div class="slide-caption px-md-5">
+                <h3 class="slide-title animated bounceInLeft delay-1s slower">New Age Technologies</h3>
+                <h4 class="slide-text mt-4 animated bounceInLeft delay-2s slower">Industry knowledge, functional
+                  experience, and technology skills to help
                   clients grow and creates
                   long-lasting value.</h4>
-                <!-- <p class="text-center"><a href="#" class="btn btn-outline-primary px-4">Explore <i class="ml-3 fas fa-long-arrow-alt-right"></i></a></p>                       -->
               </div>
             </div>
-            <div class="col-6 slide-image">
-              <img src="./images/home/technologies.svg" alt="">
+            <div class="col-6 slide-image d-flex justify-content-center align-items-center">
+              <img class="animated bounceInRight slower delay-2s" src="./images/home/slide-technologies.svg" alt="">
             </div>
           </div>
         </div>
@@ -206,46 +207,45 @@
           <!-- Welcome - card -1 -->
           <div class="col-12 col-lg-4 col-md-6 pt-4 pb-2 welcome-card card" data-aos="fade-up" data-aos-delay="200"
             data-aos-duration="1000">
-            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3">
-              <div class="">
-                <p class="welcome-icon">
-                  <img src="./images/home/home-ml.svg" alt="">
+            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3 pt-4">
+              <div class="px-2">
+                <p class="welcome-icon mb-4 ">
+                  <img src="./images/home/home-ml.svg" alt="machine learning">
                 </p>
-                <h3 class="py-2 title-3 ml-3 mt-2">Own Machine Learning</h3>
+                <h3 class="py-2 title-3 my-2">Own Machine Learning</h3>
+                <p class="text-2 welcome-text">Zyclyx has already developed its own Machine Learning, Neural
+                  Network, and Deep Learning models</p>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Zyclyx has already developed its own Machine Learning, Neural
-                Network, and Deep Learning models</p>
             </div>
           </div>
 
           <!-- Welcome - card - 2 -->
           <div class="col-12 col-lg-4 col-md-6 pt-4 pb-2 welcome-card card" data-aos="fade-up" data-aos-delay="300"
             data-aos-duration="1000">
-            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3">
-              <div class="">
-                <p class="welcome-icon">
-                  <img src="./images/home/home-bot.svg" alt="">
+            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3 pt-4">
+              <div class="px-2">
+                <p class="welcome-icon mb-4">
+                  <img src="./images/home/home-bot.svg" alt="bot">
                 </p>
-                <h3 class="py-2 title-3 ml-3">Chatbot Solutions</h3>
+                <h3 class="py-2 title-3 my-2">Chatbot Solutions</h3>
+                <p class="mt-2 text-2 welcome-text">In addition to our wide-ranging R&D pipeline, We already have a
+                  number of impressive chatbot products</p>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">In addition to our wide-ranging R&D pipeline, We already have a
-                number of impressive chatbot products</p>
-
             </div>
           </div>
 
           <!-- Welcome - card - 3 -->
           <div class="col-12 col-lg-4 col-md-6 pt-4 pb-2 welcome-card card" data-aos="fade-up" data-aos-delay="400"
             data-aos-duration="1000">
-            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3">
-              <div class="">
-                <p class="welcome-icon">
-                  <img src="./images/home/home-AI.svg" alt="">
+            <div class="welcome-card-body card-body shadow-sm my-2 mx-md-3 pt-4">
+              <div class="px-2">
+                <p class="welcome-icon mb-4">
+                  <img class="icon-3" src="./images/home/home-ai.svg" alt="AI">
                 </p>
-                <h3 class="py-2 title-3 ml-3">Exceptional Core AI</h3>
+                <h3 class="py-2 title-3 my-2">Exceptional Core AI</h3>
+                <p class="mt-2 text-2 welcome-text">Zyclyx research has developed exceptional core AI tools via
+                  intricate training, data usage, transfer.</p>
               </div>
-              <p class="mx-2 mt-2 text-2 welcome-text">Zyclyx research has developed exceptional core AI tools via
-                intricate training, data usage, transfer.</p>
             </div>
           </div>
         </div>
@@ -256,32 +256,35 @@
   <!-- 
     ==== END - WELCOME ====
   -->
-  <section class="container automation pb-5">
-    <div class="row  py-5 d-flex flex-md-row flex-sm-column">
-      <div class="col-md-6 col-12  mt-1">
-        <div class="mx-4">
-          <p class="caption">Automation</p>
-          <h3 class="title-2 pb-3">We love to do the work you hate</h3>
-          <p>Don't spend time on manual work. Let us do it for you. Streamline processes, make sure your team doesn't
-            miss critical steps, and deliver vlaue faster with Automation</p>
+  <section class="container-fluid automation pb-4">
+    <div class="container">
+      <div class="row py-5 d-flex flex-md-row flex-sm-column">
+        <div class="col-md-6 col-12  mt-1">
+          <div class="mx-4">
+            <p class="caption">Automation</p>
+            <h3 class="title-2 pb-3">We love to do the work you hate</h3>
+            <p>Don't spend time on manual work. Let us do it for you. Streamline processes, make sure your team doesn't
+              miss critical steps, and deliver vlaue faster with Automation</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 img-box mt-1">
+          <img class="mx-auto d-flex" src="./images/home/home-artificial-intelligence.png"
+            alt="Artificial Intelligence">
         </div>
       </div>
-      <div class="col-md-6 col-12 img-box mt-1">
-        <img class="mx-auto d-flex" src="./images/home/home-artificial-intelligence.png" alt="Artificial Intelligence">
-      </div>
-    </div>
 
 
-    <div class="row pb-5">
-      <div class="col-6 img-box d-md-flex d-none">
-        <img src="./images/home/home-blockchain.png" alt="BlockChain Solutions">
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="mx-4">
-          <p class="caption">BlockChain</p>
-          <h3 class="title-2 pb-3">Reduce bottlenecks and busy work</h3>
-          <p>Build reliable, error-proof processes you don't have to hassle with, and lead a happier, more confident
-            team</p>
+      <div class="row pb-5">
+        <div class="col-6 img-box d-md-flex d-none">
+          <img src="./images/home/home-blockchain.png" alt="BlockChain Solutions">
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="mx-4">
+            <p class="caption">BlockChain</p>
+            <h3 class="title-2 pb-3">Reduce bottlenecks and busy work</h3>
+            <p>Build reliable, error-proof processes you don't have to hassle with, and lead a happier, more confident
+              team</p>
+          </div>
         </div>
       </div>
     </div>
@@ -292,165 +295,165 @@
   -->
 
   <section class="container-fluid services-wrapper">
-    <div class="service-inner">
-      <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
-        <h2 class="title-1">Our <span class="title-highlight">Services</span></h2>
-        <p class="title-caption">We Provide Wide Range of Business Services</p>
-      </div>
-      <div class="container mx-auto mt-sm-3 mt-md-3">
-        <div class="row text-left services py-1 px-0">
-          <!-- Service - 1 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="200"
-            data-aos-duration="700">
-            <div class="card-body service service-1 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M73.483 6.88c-18.752 0-30.804 8.66-34.568 17.96-14.77 3.14-25.155 19.298-25.155 37.073 0 7.317 2.123 14.643 5.798 22.777-3.002 3.673-5.798 8.279-5.798 15.07 0 8.9 5.828 17.476 16.212 22.252-3.261 7.589-2.562 14.908 1.324 20.116 4.036 5.41 10.818 8.225 18.1 8.782 2.208 5.798 6.184 9.827 10.589 11.744 5.017 2.184 10.15 2.466 13.498 2.466 5.12 0 9.607-2.413 12.524-6.154 2.914 3.72 7.39 6.117 12.483 6.154h.007c3.165.023 8.277-.266 13.337-2.446 4.365-1.88 8.335-5.84 10.608-11.489 5.5-.177 11.19-.992 16.011-3.708 5.418-3.053 9.467-8.83 9.467-16.757 0-3.1-1.117-5.96-2.439-8.835 4.418-2.196 7.898-5.007 9.803-8.48 2.4-4.376 2.956-9.173 2.956-13.645 0-6.857-3.238-10.982-6.383-14.351 3.73-8.133 6.505-15.994 6.383-23.55-.32-20.07-13.846-34.159-28.514-37.074-3.27-8.592-12.564-17.905-31.209-17.905-4.692 0-9.252 1.205-12.127 4.911-.142.183-.257.388-.39.578-.133-.19-.248-.395-.39-.578-2.875-3.706-7.435-4.911-12.127-4.911zm0 6.88c3.711 0 5.41.591 6.692 2.244 1.282 1.653 2.385 5.363 2.385 12.154v19.424a3.44 3.44 0 000 1.122V61.92H72.24v-17.2H57.835c-1.436-3.981-5.227-6.88-9.675-6.88-5.659 0-10.32 4.661-10.32 10.32 0 5.659 4.661 10.32 10.32 10.32 4.448 0 8.24-2.899 9.675-6.88h7.525v17.2h17.2v27.52H58.48v21.285c-3.981 1.436-6.88 5.227-6.88 9.675 0 5.659 4.661 10.32 10.32 10.32 5.659 0 10.32-4.661 10.32-10.32 0-4.448-2.899-8.24-6.88-9.675V103.2h17.2v23.502a3.44 3.44 0 000 1.122v21.238c0 5.63-3.645 9.178-9.077 9.178-2.899 0-7.162-.333-10.75-1.895s-6.499-4.008-7.794-9.251l-.645-2.614H51.6c-6.309 0-11.924-2.625-14.788-6.463-2.864-3.839-3.622-8.855.544-15.857l2.177-3.661-4.038-1.358C24.997 113.613 20.64 106.557 20.64 99.76c0-5.916 2.196-8.9 5.301-12.295L27.278 86h11.207c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H24.537c-2.608-6.352-3.897-11.83-3.897-17.207 0-15.789 9.892-29.608 21.057-30.98l2.27-.275.619-2.197c1.54-5.416 11.277-14.701 28.897-14.701zm25.034 0c17.62 0 23.654 8.368 25.457 14.7l.625 2.198 2.264.275c11.6 1.425 24.213 13.201 24.497 31.04.102 6.331-2.488 14.05-6.544 22.542l-1.041 2.184 1.693 1.713c3.586 3.638 5.892 5.573 5.892 11.348 0 3.877-.529 7.451-2.11 10.333-1.007 1.837-2.529 3.457-4.77 4.858V99.76h-30.96V88.795c3.981-1.436 6.88-5.227 6.88-9.675 0-5.659-4.661-10.32-10.32-10.32-5.659 0-10.32 4.661-10.32 10.32 0 4.448 2.899 8.24 6.88 9.675v17.845h30.96v13.27a3.44 3.44 0 00.443 2.27l.007.007c1.783 3.64 2.99 6.725 2.99 8.533 0 5.834-2.225 8.656-5.966 10.763-3.741 2.108-9.254 2.997-14.674 2.997h-2.694l-.645 2.614c-1.286 5.206-4.289 7.688-7.948 9.265-3.66 1.576-7.941 1.9-10.57 1.881-5.46-.04-9.103-3.548-9.103-9.178V130.72h14.405c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H89.44v-23.502a3.44 3.44 0 000-1.122V65.938a3.44 3.44 0 000-1.122V51.6h28.165c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H89.44V28.158c0-6.791 1.103-10.501 2.385-12.154 1.283-1.653 2.98-2.244 6.692-2.244zM48.16 44.72c1.87 0 3.297 1.406 3.4 3.245a3.44 3.44 0 000 .397c-.106 1.835-1.532 3.238-3.4 3.238-1.94 0-3.44-1.5-3.44-3.44s1.5-3.44 3.44-3.44zm79.12 0c1.94 0 3.44 1.5 3.44 3.44s-1.5 3.44-3.44 3.44c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm-17.2 30.96c1.94 0 3.44 1.5 3.44 3.44 0 1.87-1.406 3.297-3.245 3.4a3.442 3.442 0 00-.397 0c-1.835-.106-3.238-1.532-3.238-3.4 0-1.94 1.5-3.44 3.44-3.44zm-61.92 3.44c1.94 0 3.44 1.5 3.44 3.44S50.1 86 48.16 86c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm65.36 44.72c1.94 0 3.44 1.5 3.44 3.44s-1.5 3.44-3.44 3.44c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm-51.795.04c.132.008.265.008.397 0 1.835.106 3.238 1.532 3.238 3.4 0 1.94-1.5 3.44-3.44 3.44s-3.44-1.5-3.44-3.44c0-1.87 1.406-3.297 3.245-3.4z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">Artificial Intelligence</h3>
-              <p class="text-2 service-text">Augmenting technology by exterminating humans for deep integration
-                into
-                learning
-                and
-                reasoning through the
-                invention of Artificial Intelligence</p>
-              <p class="text-right  mb-0"><a class="btn-custom btn-breach" href="./AI.html">Know More</a></p>
-            </div>
-          </div>
-          <!-- Service - 2 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="250"
-            data-aos-duration="1000">
-            <div class="card-body service service-2 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <!-- <img src="./images/icons/service_cloud_outline.svg" alt="cloud computing service"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M129.847 17.2c-10.752 0-19.588 6.218-23.771 15.453-1.905-1.016-4.008-1.693-6.316-1.693-6.708 0-12.085 4.973-13.27 11.355-8.503 2.618-14.25 10.294-14.25 19.907 0 11.178 9.077 20.338 20.217 20.338h60.818c10.314 0 18.725-8.487 18.725-18.84 0-9.01-6.15-16.357-13.834-18.214.014-.502.074-1.088.074-1.471 0-15.178-13.586-26.835-28.393-26.835zm0 6.88c11.164 0 21.513 8.974 21.513 19.955 0 .803-.11 3.176-.175 3.715l-.47 3.857h3.883c.424 0 .494-.007.115-.007 4.644 0 10.407 5.468 10.407 12.12 0 6.662-5.276 11.96-11.845 11.96H92.457c-7.396 0-13.337-5.97-13.337-13.458 0-7.846 4.062-12.817 10.918-14.002l2.855-.497v-2.896c0-.663-.013-.695-.013-.107 0-3.841 3.039-6.88 6.88-6.88 2.092 0 3.9.932 5.187 2.432l3.957 4.603 1.915-5.758c.247-.741.507-1.521.78-2.365 2.862-7.791 9.467-12.672 18.248-12.672zM24.08 27.52c-7.716 0-13.76 6.044-13.76 13.76v75.68c0 2.537.703 4.86 1.854 6.88H3.44A3.44 3.44 0 000 127.28c0 9.444 7.756 17.2 17.2 17.2h137.6c9.444 0 17.2-7.756 17.2-17.2 0-1.9-1.54-3.44-3.44-3.44h-8.734c1.15-2.02 1.854-4.343 1.854-6.88V87.982a25.222 25.222 0 01-6.88 1.377v27.601c0 3.922-2.958 6.88-6.88 6.88H24.08c-3.922 0-6.88-2.958-6.88-6.88V41.28c0-3.922 2.958-6.88 6.88-6.88h57.835a20.728 20.728 0 016.477-6.88zM8.304 130.72H163.696c-1.517 3.816-4.546 6.88-8.896 6.88H17.2c-4.35 0-7.38-3.064-8.896-6.88z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">Internet Of Things</h3>
-              <p class="text-2 service-text"> IOT services at zyclyx meet the future needs of your
-                business to
-                dynamically
-                scale your application
-                solutions as per your needs.</p>
-              <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./IoT.html">Know More</a></p>
-            </div>
 
-          </div>
-          <!-- service - 3 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="300"
-            data-aos-duration="1000">
-            <div class="card-body service service-3 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <!-- <img src="./images/icons/service_info_sec_outline.svg" alt="Information security service"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M72.24 0C52.823 0 35.193 3.48 22.145 9.352c-6.517 2.93-11.892 6.477-15.803 10.643C2.62 23.959.228 28.635 0 33.647a3.588 3.588 0 000 .538V68.155a2.59 2.59 0 000 .645v33.755a2.59 2.59 0 000 .645v30.96c0 9.635 7.646 17.59 18.705 23.328 11.06 5.737 26.069 9.607 43 10.75a3.453 3.453 0 003.655-3.225 3.453 3.453 0 00-3.225-3.655c-16.165-1.089-30.41-4.865-40.313-9.998-9.903-5.133-14.942-11.314-14.942-17.2v-16.017c3.857 3.937 9.017 7.296 15.265 10.105 13.048 5.872 30.678 9.352 50.095 9.352a3.46 3.46 0 003.023-1.707 3.473 3.473 0 000-3.466 3.46 3.46 0 00-3.023-1.707c-18.584 0-35.34-3.48-47.193-8.815-5.925-2.66-10.602-5.778-13.652-9.03-3.05-3.252-4.515-6.437-4.515-9.675a2.59 2.59 0 000-.645V83.743c3.857 3.937 9.017 7.296 15.265 10.105C35.193 99.72 52.823 103.2 72.24 103.2c9.917 0 19.35-.9 27.95-2.58 1.868-.363 3.104-2.163 2.741-4.031-.363-1.868-2.163-3.104-4.031-2.741-8.143 1.585-17.16 2.472-26.66 2.472-18.584 0-35.34-3.48-47.193-8.815-5.925-2.66-10.602-5.778-13.652-9.03-3.05-3.252-4.515-6.437-4.515-9.675a2.59 2.59 0 000-.645V49.343c3.857 3.937 9.017 7.296 15.265 10.105C35.193 65.32 52.823 68.8 72.24 68.8c19.417 0 37.047-3.48 50.095-9.352 6.248-2.809 11.408-6.168 15.265-10.105V65.36a3.46 3.46 0 001.707 3.023 3.473 3.473 0 003.466 0 3.46 3.46 0 001.707-3.023V34.4v-.322-.323-.107a1.604 1.604 0 00-.108-.215c-.282-4.932-2.566-9.541-6.235-13.438-3.91-4.166-9.285-7.713-15.802-10.642C109.287 3.48 91.657 0 72.24 0zm0 6.88c18.584 0 35.34 3.48 47.193 8.815 5.925 2.66 10.602 5.778 13.652 9.03 3.05 3.252 4.515 6.437 4.515 9.675 0 3.238-1.465 6.423-4.515 9.675-3.05 3.252-7.727 6.37-13.652 9.03C107.58 58.44 90.823 61.92 72.24 61.92c-18.584 0-35.34-3.48-47.192-8.815-5.926-2.66-10.603-5.778-13.653-9.03-3.05-3.252-4.515-6.437-4.515-9.675v-.322c.094-3.131 1.559-6.209 4.515-9.353 3.05-3.252 7.727-6.37 13.653-9.03C36.899 10.36 53.656 6.88 72.24 6.88zm68.8 68.8c-17.052 0-30.96 13.908-30.96 30.96 0 2.62.887 4.985 1.505 7.418l-.108.107-34.83 34.83a3.44 3.44 0 00-.967 2.365v17.2a3.447 3.447 0 003.44 3.44h17.2a3.404 3.404 0 002.472-.968l2.473-2.472h8.815a3.447 3.447 0 003.44-3.44v-6.88h6.88a3.447 3.447 0 003.44-3.44v-6.88h6.88a3.447 3.447 0 003.44-3.44v-8.277c2.27.537 4.448 1.397 6.88 1.397 17.052 0 30.96-13.908 30.96-30.96s-13.908-30.96-30.96-30.96zm0 6.88c13.33 0 24.08 10.737 24.08 24.08 0 13.343-10.75 24.08-24.08 24.08-13.33 0-24.08-10.737-24.08-24.08 0-13.343 10.75-24.08 24.08-24.08zm10.32 10.32a6.876 6.876 0 00-6.88 6.88 6.876 6.876 0 006.88 6.88 6.876 6.876 0 006.88-6.88 6.876 6.876 0 00-6.88-6.88zm-37.195 28.273c.968 1.773 2.163 3.4 3.44 4.944l-23.973 24.08a3.455 3.455 0 00-1.195 3.454 3.459 3.459 0 002.58 2.58 3.455 3.455 0 003.453-1.196l24.188-24.08c1.478 1.129 2.956 2.163 4.622 3.01v7.095h-6.88a3.447 3.447 0 00-3.44 3.44v6.88h-6.88a3.447 3.447 0 00-3.44 3.44v6.88h-6.88a3.404 3.404 0 00-2.472.967l-2.473 2.473H82.56v-12.255z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">Cyber Security</h3>
-              <p class="text-2 service-text">To Automate predictive analysis for emulating the learning
-                approach
-                used
-                by humans.
-                It
-                identifies, prepares
-                and analyses algorithms and tests.</p>
-              <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Cyber-security-services.html">Know
-                  More</a>
-              </p>
+    <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
+      <h2 class="title-1">Our <span class="title-highlight">Services</span></h2>
+      <p class="title-caption">We Provide Wide Range of Business Services</p>
+    </div>
+    <div class="container mx-auto mt-sm-3 mt-md-3 pt-5">
+      <div class="row text-left services py-1 px-0">
+        <!-- Service - 1 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="200"
+          data-aos-duration="700">
+          <div class="card-body service service-1 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M73.483 6.88c-18.752 0-30.804 8.66-34.568 17.96-14.77 3.14-25.155 19.298-25.155 37.073 0 7.317 2.123 14.643 5.798 22.777-3.002 3.673-5.798 8.279-5.798 15.07 0 8.9 5.828 17.476 16.212 22.252-3.261 7.589-2.562 14.908 1.324 20.116 4.036 5.41 10.818 8.225 18.1 8.782 2.208 5.798 6.184 9.827 10.589 11.744 5.017 2.184 10.15 2.466 13.498 2.466 5.12 0 9.607-2.413 12.524-6.154 2.914 3.72 7.39 6.117 12.483 6.154h.007c3.165.023 8.277-.266 13.337-2.446 4.365-1.88 8.335-5.84 10.608-11.489 5.5-.177 11.19-.992 16.011-3.708 5.418-3.053 9.467-8.83 9.467-16.757 0-3.1-1.117-5.96-2.439-8.835 4.418-2.196 7.898-5.007 9.803-8.48 2.4-4.376 2.956-9.173 2.956-13.645 0-6.857-3.238-10.982-6.383-14.351 3.73-8.133 6.505-15.994 6.383-23.55-.32-20.07-13.846-34.159-28.514-37.074-3.27-8.592-12.564-17.905-31.209-17.905-4.692 0-9.252 1.205-12.127 4.911-.142.183-.257.388-.39.578-.133-.19-.248-.395-.39-.578-2.875-3.706-7.435-4.911-12.127-4.911zm0 6.88c3.711 0 5.41.591 6.692 2.244 1.282 1.653 2.385 5.363 2.385 12.154v19.424a3.44 3.44 0 000 1.122V61.92H72.24v-17.2H57.835c-1.436-3.981-5.227-6.88-9.675-6.88-5.659 0-10.32 4.661-10.32 10.32 0 5.659 4.661 10.32 10.32 10.32 4.448 0 8.24-2.899 9.675-6.88h7.525v17.2h17.2v27.52H58.48v21.285c-3.981 1.436-6.88 5.227-6.88 9.675 0 5.659 4.661 10.32 10.32 10.32 5.659 0 10.32-4.661 10.32-10.32 0-4.448-2.899-8.24-6.88-9.675V103.2h17.2v23.502a3.44 3.44 0 000 1.122v21.238c0 5.63-3.645 9.178-9.077 9.178-2.899 0-7.162-.333-10.75-1.895s-6.499-4.008-7.794-9.251l-.645-2.614H51.6c-6.309 0-11.924-2.625-14.788-6.463-2.864-3.839-3.622-8.855.544-15.857l2.177-3.661-4.038-1.358C24.997 113.613 20.64 106.557 20.64 99.76c0-5.916 2.196-8.9 5.301-12.295L27.278 86h11.207c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H24.537c-2.608-6.352-3.897-11.83-3.897-17.207 0-15.789 9.892-29.608 21.057-30.98l2.27-.275.619-2.197c1.54-5.416 11.277-14.701 28.897-14.701zm25.034 0c17.62 0 23.654 8.368 25.457 14.7l.625 2.198 2.264.275c11.6 1.425 24.213 13.201 24.497 31.04.102 6.331-2.488 14.05-6.544 22.542l-1.041 2.184 1.693 1.713c3.586 3.638 5.892 5.573 5.892 11.348 0 3.877-.529 7.451-2.11 10.333-1.007 1.837-2.529 3.457-4.77 4.858V99.76h-30.96V88.795c3.981-1.436 6.88-5.227 6.88-9.675 0-5.659-4.661-10.32-10.32-10.32-5.659 0-10.32 4.661-10.32 10.32 0 4.448 2.899 8.24 6.88 9.675v17.845h30.96v13.27a3.44 3.44 0 00.443 2.27l.007.007c1.783 3.64 2.99 6.725 2.99 8.533 0 5.834-2.225 8.656-5.966 10.763-3.741 2.108-9.254 2.997-14.674 2.997h-2.694l-.645 2.614c-1.286 5.206-4.289 7.688-7.948 9.265-3.66 1.576-7.941 1.9-10.57 1.881-5.46-.04-9.103-3.548-9.103-9.178V130.72h14.405c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H89.44v-23.502a3.44 3.44 0 000-1.122V65.938a3.44 3.44 0 000-1.122V51.6h28.165c1.436 3.981 5.227 6.88 9.675 6.88 5.659 0 10.32-4.661 10.32-10.32 0-5.659-4.661-10.32-10.32-10.32-4.448 0-8.24 2.899-9.675 6.88H89.44V28.158c0-6.791 1.103-10.501 2.385-12.154 1.283-1.653 2.98-2.244 6.692-2.244zM48.16 44.72c1.87 0 3.297 1.406 3.4 3.245a3.44 3.44 0 000 .397c-.106 1.835-1.532 3.238-3.4 3.238-1.94 0-3.44-1.5-3.44-3.44s1.5-3.44 3.44-3.44zm79.12 0c1.94 0 3.44 1.5 3.44 3.44s-1.5 3.44-3.44 3.44c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm-17.2 30.96c1.94 0 3.44 1.5 3.44 3.44 0 1.87-1.406 3.297-3.245 3.4a3.442 3.442 0 00-.397 0c-1.835-.106-3.238-1.532-3.238-3.4 0-1.94 1.5-3.44 3.44-3.44zm-61.92 3.44c1.94 0 3.44 1.5 3.44 3.44S50.1 86 48.16 86c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm65.36 44.72c1.94 0 3.44 1.5 3.44 3.44s-1.5 3.44-3.44 3.44c-1.87 0-3.297-1.406-3.4-3.245a3.44 3.44 0 000-.397c.106-1.835 1.532-3.238 3.4-3.238zm-51.795.04c.132.008.265.008.397 0 1.835.106 3.238 1.532 3.238 3.4 0 1.94-1.5 3.44-3.44 3.44s-3.44-1.5-3.44-3.44c0-1.87 1.406-3.297 3.245-3.4z" />
+                </g>
+              </svg>
             </div>
-
+            <h3 class="py-3 title-3">Artificial Intelligence</h3>
+            <p class="text-2 service-text">Augmenting technology by exterminating humans for deep integration
+              into
+              learning
+              and
+              reasoning through the
+              invention of Artificial Intelligence</p>
+            <p class="text-right  mb-0"><a class="btn-custom btn-breach" href="./AI.html">Know More</a></p>
           </div>
-          <!-- Service - 4 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="300"
-            data-aos-duration="1000">
-            <div class="card-body service service-4 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <!-- <img src="./images/icons/service_blockchain_outline.svg" alt="Blockchain service"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M134.375 6.88c-2.056.47-4.098.927-6.02 1.397-.215.054-.537.336-.537.538-.04 2.016 0 4.058 0 6.235 2.15-.457 4.165-.86 6.127-1.29.161-.04.323-.282.323-.43.026-2.137.107-4.273.107-6.45zm-8.17 1.827c-1.451.296-2.795.565-4.192.86-2.218.47-2.258.511-2.258 2.795v4.193c2.258-.417 4.34-.793 6.45-1.183zm-8.063 1.613c-2.136.376-4.111.699-6.127 1.075-.134.027-.323.376-.323.537-.026 1.949 0 3.844 0 5.913 2.07-.336 4.018-.632 5.913-.968.228-.04.537-.241.537-.43.04-1.988 0-4.03 0-6.127zm-16.232 2.688c-2.19.295-4.34.577-6.45.86v6.234c2.19-.255 4.327-.604 6.45-.86zm40.42.43c-2.002.456-3.95.833-5.912 1.29-.162.04-.43.295-.43.43-.027 1.894 0 3.749 0 5.697 2.19-.457 4.246-.847 6.342-1.29v-6.128zm-48.483.644c-2.284.242-4.42.417-6.557.645v6.128c2.083-.202 4.098-.323 6.127-.537.148-.014.43-.296.43-.43.027-1.909 0-3.817 0-5.806zm-8.277.86c-2.23.189-4.327.35-6.45.538v6.02c2.177-.161 4.287-.269 6.45-.43zm-8.17.646c-2.177.12-4.367.201-6.558.322v6.128c2.218-.121 4.435-.31 6.558-.43zm-31.175.752v5.912h6.45V16.34zm8.277.108v5.805h6.45v-5.805zm71.703.43c-2.002.362-3.964.698-5.912 1.075-.202.04-.538.268-.538.43-.04 1.76 0 3.507 0 5.375 2.244-.377 4.327-.713 6.45-1.075zm-8.063 1.505c-7.592 1.061-15.17 2.163-22.79 3.225V35.26c-4.77.215-9.42.43-14.19.645v-5.482c2.043-.121 4.045-.215 6.02-.323v-7.74c-8.21.457-16.407.94-24.617 1.398v13.115h-16.34v6.772h6.342v5.16h-6.342v6.665h8.277v21.393h6.235v5.16h-6.235v8.062h6.235v5.16h-6.342v21.285h-8.17v13.438h6.342v5.16h10.105v13.222c5.55.242 10.992.51 16.556.752v-5.16c2.176.189 4.205.35 6.342.538v-8.385c3.333.255 6.584.497 9.89.752v13.545c7.633 1.062 15.17 2.164 22.79 3.225V139.32c1.357.094 2.553.134 3.763.215 4.179.296 8.264.242 12.362-.86 7.552-2.016 12.766-6.504 14.835-14.19 1.277-4.743 1.451-9.54.968-14.405-.404-4.004-1.519-7.767-3.548-11.288-.632-1.101-1.317-1.746-2.688-1.612-1.128.107-2.284-.161-3.44-.215-1.478-.067-2.983-.148-4.515-.215 0-2.217-.053-4.233 0-6.343.014-.658-.174-1.007-.752-1.182-2.553-.753-5.053-1.572-7.633-2.258-1.491-.39-3.063-.577-4.622-.86v-2.15c0-2.445.027-2.405 2.365-3.225 4.072-1.41 8.05-2.902 11.503-5.59 3.856-3.01 6.638-6.799 8.277-11.395 1.478-4.152 1.6-8.56 1.29-12.9-.242-3.332-1.008-6.476-2.58-9.46a14.243 14.243 0 00-5.268-5.59c-4.783-2.902-9.997-3.749-15.48-3.44-1.599.095-3.211.229-4.837.323-.027-.538-.08-1.035-.108-1.505-2.136.269-4.152.605-6.235.86v-5.59c2.11-.31 4.153-.55 6.235-.86zm24.188 2.687c-2.137.443-4.26.86-6.343 1.29v6.128c2.15-.404 4.287-.793 6.343-1.183zm-8.063 1.613c-2.217.403-4.286.806-6.342 1.182v5.913c2.19-.363 4.233-.726 6.343-1.075zm-79.764 1.075v5.16h6.45v-5.16zm71.702.43c-2.177.349-4.327.725-6.45 1.075v5.804c2.217-.322 4.354-.658 6.45-.967zm-79.98 6.127v5.268h6.45v-5.268zm8.277 0v5.268h6.45v-5.268zm-32.787 5.59v5.375c2.177.12 4.3.31 6.45.43v-5.375c-2.177-.12-4.287-.31-6.45-.43zm8.17.645v5.268h6.343V36.55zm8.17.323v5.267h6.45v-5.268zM77.4 42.785v5.268c-2.137.094-4.287.228-6.45.322v-5.268l6.45-.322zm-47.515.43v5.268h6.343v-5.268zm112.445 0v6.235c-2.042.255-4.112.497-6.235.752v-6.127c2.016-.296 4.072-.537 6.235-.86zm-79.55.107h6.343v5.16H62.78zm-41.172 6.343c0 1.559-.04 3.198 0 4.838 0 .147.362.322.537.322 1.975.027 3.99.107 6.02.107v-5.267zm16.447.538v5.16h6.45v-5.16zm64.715 1.182c13.438-.336 13.128 5.47 13.223 9.675.174 7.713-3.091 14.66-19.243 15.91-.55.04-13.572.537-13.76.537V52.352c.537-.04 17.71-.913 19.78-.967zM21.715 56.33v5.375h6.45V56.33zm16.34.43v5.268h6.45V56.76zm8.17.108v5.16h6.45v-5.16zm13.115 0h6.343v5.16H59.34zm82.882 2.15v6.234c-2.042.135-4.004.296-6.127.43v-6.02c2.07-.188 4.018-.443 6.128-.644zm-112.337 4.3v5.267h6.343v-5.267zm16.34.215v5.16h6.45v-5.16zm22.253 0h6.342v5.052h-6.342zm-46.763 6.342v5.268h6.45v-5.268zm8.17.108v5.267h6.343v-5.268zm8.17.107v5.16h6.45v-5.16zm0 6.665v5.16h6.45v-5.16zm8.17 0v5.16h6.45v-5.16zm-16.34 6.665v5.268h6.343V83.42zm16.34 0v5.16h6.45v-5.16zm21.5 0h6.343v5.16h-6.343zm-29.67 6.665v5.16h6.45v-5.16zm8.17 0v5.16h6.558v-5.16zm36.765 4.623c.403 0 11.852.214 13.76.322 20.21 1.075 20.734 4.999 22.79 12.255.591 2.083.134 4.233-.43 6.343-.39 1.464-1.438 7-14.405 6.987-3.171 0-21.245-.752-21.715-.752zM29.885 96.75v5.268h6.45V96.75zm8.17 0v5.16h6.45v-5.16zm-16.34.108v5.267h6.45v-5.268zm24.51 6.45v5.16h6.45v-5.16zm14.942.107h6.343v5.053h-6.343zm-31.282.107v5.16h6.343v-5.16zm-8.17.108v5.268h6.45v-5.268zm16.34 6.343v5.267h6.45v-5.268zm8.17 0v5.16h6.45v-5.16zm14.942 0h6.343v5.16h-6.343zm-31.282.107v5.268h6.343v-5.268zm106.21 3.978c2.042.201 4.112.335 6.235.537v6.235c-2.083-.242-4.139-.403-6.235-.645zm-106.21 2.794v5.16h6.343v-5.16zm8.17 6.45v5.16h6.45v-5.16zm16.555 0h6.343v5.16H54.61zm-24.725.215v5.268h6.343v-5.268zm57.727.323h6.343v5.375l-6.343-.323zm16.34.645c1.613.107 3.158.215 4.73.323.525.04 1.089.067 1.613.107v5.482c-1.572-.12-5.805-.497-6.343-.537zm-65.897 5.483v5.16h6.45v-5.16zm-9.89.322c-2.217.12-4.327.31-6.45.43v5.375c2.19-.134 4.287-.296 6.45-.43zm18.06 6.127v5.268h6.558v-5.268zm8.277 0v5.268h6.45v-5.268zm16.448.108h6.45v5.053h-6.45zm-34.723.107c-2.176.095-4.219.229-6.342.323v5.375c2.177-.094 4.22-.228 6.342-.323zm1.828 0v5.16h6.45v-5.16zm-9.89.43c-2.177.135-4.287.296-6.45.43v5.376c2.204-.148 4.3-.283 6.45-.43zm59.018.538v5.375c2.23.188 4.447.363 6.557.537.054-.174.108-.268.108-.322.013-1.062 0-2.056 0-3.118 0-1.935-.054-1.975-1.935-2.15-.189-.013-.35-.094-.538-.107-1.37-.094-2.782-.12-4.192-.215zm32.572 3.333v5.805c2.137.349 4.273.725 6.45 1.075V141.9c-2.163-.323-4.3-.645-6.45-.968zm8.063 1.29v1.612c0 .51-.014 1.008 0 1.505.013.672-.108 1.438 0 2.042.04.202.107.39.214.538.404.524 1.626.484 2.473.645 1.263.242 2.486.417 3.763.645v-5.912c-2.137-.35-4.22-.713-6.45-1.075zm-73.316.86v5.16h6.45v-5.16zm-16.447.107v5.268h6.45v-5.268zm97.933.43v6.02c2.11.43 4.219.86 6.342 1.29v-6.235c-2.123-.39-4.22-.685-6.343-1.075zm-48.698.752v5.375c2.177.202 4.233.43 6.45.645v-5.482c-2.204-.188-4.287-.35-6.45-.537zm32.465 3.87v5.698c2.137.39 4.273.793 6.45 1.183v-5.805c-2.15-.363-4.287-.713-6.45-1.076zm-65.252 1.398v5.912h6.45v-5.912zm8.17.215v5.912h6.45v-5.912zm8.17.215c0 1.922-.054 3.695 0 5.482 0 .189.403.511.644.538.955.107 1.936.054 2.903.107 1.008.054 1.989.162 3.01.215v-6.02c-2.23-.107-4.34-.215-6.558-.322zm8.277.43v6.02c2.163.175 4.22.35 6.45.537v-3.977c0-2.042 0-2.07-2.042-2.257-1.479-.135-2.876-.202-4.408-.323zm16.34 1.398v6.235c2.177.282 4.287.577 6.45.86v-6.235c-2.163-.256-4.273-.605-6.45-.86zm8.17 1.075v6.234c2.177.336 4.287.74 6.45 1.076v-6.45c-2.177-.31-4.3-.551-6.45-.86zm16.125 2.472c0 2.163-.027 4.166 0 6.128 0 .174.269.39.43.43 2.002.43 3.95.873 6.02 1.29v-6.666c-2.137-.39-4.22-.765-6.45-1.182zm8.063 1.613c0 2.136-.027 4.03 0 6.02 0 .215.255.604.43.645 1.988.483 4.03.927 6.127 1.397 0-2.177-.067-4.233-.107-6.342 0-.189-.296-.484-.538-.538-1.236-.296-2.513-.605-3.762-.86-.686-.134-1.385-.175-2.15-.322z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">Block Chain</h3>
-              <p class="text-2 service-text">It is changing the way people make approaches to sharing data, From
-                creating
-                more efficient and smarter businesses to give businesses trustful and variable networks.</p>
-              <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Blockchain.html">Know More</a></p>
+        </div>
+        <!-- Service - 2 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="250"
+          data-aos-duration="1000">
+          <div class="card-body service service-2 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <!-- <img src="./images/icons/service_cloud_outline.svg" alt="cloud computing service"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M129.847 17.2c-10.752 0-19.588 6.218-23.771 15.453-1.905-1.016-4.008-1.693-6.316-1.693-6.708 0-12.085 4.973-13.27 11.355-8.503 2.618-14.25 10.294-14.25 19.907 0 11.178 9.077 20.338 20.217 20.338h60.818c10.314 0 18.725-8.487 18.725-18.84 0-9.01-6.15-16.357-13.834-18.214.014-.502.074-1.088.074-1.471 0-15.178-13.586-26.835-28.393-26.835zm0 6.88c11.164 0 21.513 8.974 21.513 19.955 0 .803-.11 3.176-.175 3.715l-.47 3.857h3.883c.424 0 .494-.007.115-.007 4.644 0 10.407 5.468 10.407 12.12 0 6.662-5.276 11.96-11.845 11.96H92.457c-7.396 0-13.337-5.97-13.337-13.458 0-7.846 4.062-12.817 10.918-14.002l2.855-.497v-2.896c0-.663-.013-.695-.013-.107 0-3.841 3.039-6.88 6.88-6.88 2.092 0 3.9.932 5.187 2.432l3.957 4.603 1.915-5.758c.247-.741.507-1.521.78-2.365 2.862-7.791 9.467-12.672 18.248-12.672zM24.08 27.52c-7.716 0-13.76 6.044-13.76 13.76v75.68c0 2.537.703 4.86 1.854 6.88H3.44A3.44 3.44 0 000 127.28c0 9.444 7.756 17.2 17.2 17.2h137.6c9.444 0 17.2-7.756 17.2-17.2 0-1.9-1.54-3.44-3.44-3.44h-8.734c1.15-2.02 1.854-4.343 1.854-6.88V87.982a25.222 25.222 0 01-6.88 1.377v27.601c0 3.922-2.958 6.88-6.88 6.88H24.08c-3.922 0-6.88-2.958-6.88-6.88V41.28c0-3.922 2.958-6.88 6.88-6.88h57.835a20.728 20.728 0 016.477-6.88zM8.304 130.72H163.696c-1.517 3.816-4.546 6.88-8.896 6.88H17.2c-4.35 0-7.38-3.064-8.896-6.88z" />
+                </g>
+              </svg>
             </div>
-
+            <h3 class="py-2 title-3">Internet Of Things</h3>
+            <p class="text-2 service-text"> IOT services at zyclyx meet the future needs of your
+              business to
+              dynamically
+              scale your application
+              solutions as per your needs.</p>
+            <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./IoT.html">Know More</a></p>
           </div>
-          <!-- Service - 5 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="400"
-            data-aos-duration="1000">
-            <div class="card-body service service-5 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <!-- <img src="./images/icons/service_rpa_outline.svg" alt="RPA service"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M137.923 0a3.415 3.415 0 00-2.473 1.613l-5.59 9.244a32.83 32.83 0 00-5.268 0l-5.697-9.137a3.429 3.429 0 00-4.3-1.29l-9.675 4.085a3.435 3.435 0 00-2.042 3.978l2.365 10.427c-1.317 1.142-2.513 2.405-3.655 3.763l-10.535-2.365a3.437 3.437 0 00-3.87 2.15l-3.978 9.675a3.429 3.429 0 001.29 4.3l9.137 5.697c-.12 1.76-.147 3.534 0 5.267l-9.03 5.698a3.429 3.429 0 00-1.29 4.3l4.086 9.675a3.436 3.436 0 003.87 2.042l10.534-2.365c1.143 1.317 2.406 2.513 3.763 3.655L103.2 80.947a3.436 3.436 0 002.042 3.87l9.783 3.978a3.433 3.433 0 004.192-1.29l5.806-9.137c1.8.12 3.6.053 5.375-.108l5.805 9.137a3.433 3.433 0 004.192 1.29l9.783-4.084a3.45 3.45 0 001.935-3.978l-2.58-10.535c1.29-1.115 2.54-2.338 3.655-3.655l10.642 2.257a3.438 3.438 0 003.978-2.15l3.977-9.675a3.438 3.438 0 00-1.397-4.3l-9.246-5.697c.121-1.707.027-3.373-.107-5.053l9.137-6.02a3.43 3.43 0 001.398-4.192l-4.192-9.675a3.435 3.435 0 00-3.978-2.042l-10.428 2.58c-1.155-1.344-2.391-2.607-3.762-3.763l2.257-10.535a3.435 3.435 0 00-2.042-3.977L139.642.215a3.431 3.431 0 00-1.72-.215zm1.827 7.74l4.407 1.827-2.042 9.568a3.434 3.434 0 001.29 3.44 26.945 26.945 0 015.697 5.698 3.433 3.433 0 003.655 1.29l9.46-2.365 1.828 4.407-8.277 5.375a3.428 3.428 0 00-1.506 3.44c.404 2.62.39 5.254 0 7.955a3.437 3.437 0 001.613 3.44l8.385 5.16-1.827 4.3-9.568-2.043a3.427 3.427 0 00-3.547 1.398 26.775 26.775 0 01-5.59 5.697 3.447 3.447 0 00-1.29 3.548l2.365 9.568-4.408 1.827-5.375-8.277a3.437 3.437 0 00-3.44-1.613c-2.607.43-5.24.484-7.955.107a3.437 3.437 0 00-3.44 1.613l-5.267 8.277-4.408-1.827 2.15-9.46a3.447 3.447 0 00-1.29-3.547c-2.217-1.613-4.206-3.454-5.805-5.59a3.434 3.434 0 00-3.44-1.29l-9.46 2.15-1.935-4.516 8.17-5.052a3.437 3.437 0 001.613-3.44c-.43-2.66-.498-5.442-.108-8.17a3.426 3.426 0 00-1.612-3.333l-8.17-5.16 1.827-4.407 9.353 2.042a3.447 3.447 0 003.547-1.29c1.64-2.23 3.548-4.192 5.698-5.804a3.434 3.434 0 001.29-3.44l-2.15-9.46 4.407-1.828 5.16 8.17a3.428 3.428 0 003.44 1.505c2.634-.417 5.348-.403 8.063 0a3.437 3.437 0 003.44-1.613zm-12.578 19.35c-6.826.108-13.303 4.166-16.017 10.858-3.628 8.922.752 19.269 9.675 22.897 8.922 3.628 19.162-.752 22.79-9.675 3.628-8.922-.645-19.162-9.568-22.79-2.23-.9-4.609-1.33-6.88-1.29zm.108 6.772c1.384-.013 2.822.31 4.192.86 5.483 2.231 8.036 8.385 5.805 13.868-2.217 5.47-8.384 8.036-13.867 5.805-5.482-2.23-8.036-8.385-5.805-13.868a10.59 10.59 0 015.697-5.805c1.25-.524 2.594-.846 3.978-.86zM49.342 58.48a3.453 3.453 0 00-2.794 2.902l-2.15 13.868a40.95 40.95 0 00-7.096 2.902L25.8 69.983a3.44 3.44 0 00-4.407.323l-9.46 9.46a3.44 3.44 0 00-.323 4.408l8.063 11.502c-1.183 2.244-2.124 4.636-2.903 7.095l-13.867 2.365A3.428 3.428 0 000 108.468v13.33a3.44 3.44 0 002.795 3.44l13.868 2.364a39.952 39.952 0 003.01 7.203l-8.17 11.395a3.44 3.44 0 00.322 4.407l9.46 9.46a3.44 3.44 0 004.408.323l11.502-8.063c2.244 1.183 4.636 2.137 7.095 2.903l2.258 13.867a3.433 3.433 0 003.44 2.903h13.33a3.44 3.44 0 003.44-2.795l2.472-14.082c2.432-.766 4.77-1.72 6.987-2.903l11.61 8.17a3.44 3.44 0 004.408-.323l9.46-9.46a3.44 3.44 0 00.323-4.407l-8.278-11.61c1.17-2.244 2.15-4.528 2.902-6.988l14.083-2.365a3.44 3.44 0 002.795-3.44v-13.33a3.428 3.428 0 00-2.902-3.332l-14.083-2.365c-.752-2.405-1.64-4.69-2.795-6.88l8.17-11.717a3.44 3.44 0 00-.323-4.408l-9.46-9.46a3.44 3.44 0 00-4.407-.323L76.218 78.26c-2.245-1.183-4.636-2.137-7.096-2.902l-2.364-13.976a3.433 3.433 0 00-3.44-2.902H49.343zm3.656 6.88h7.417l2.258 12.9a3.42 3.42 0 002.58 2.795c3.44.86 6.718 2.19 9.675 3.978a3.444 3.444 0 003.762-.108l10.643-7.632L94.6 82.56l-7.525 10.858a3.424 3.424 0 00-.215 3.762 35.128 35.128 0 013.978 9.568 3.42 3.42 0 002.795 2.58l13.007 2.15v7.417l-13.007 2.258a3.42 3.42 0 00-2.795 2.58 34.542 34.542 0 01-3.978 9.567 3.452 3.452 0 00.215 3.87l7.633 10.643-5.268 5.267-10.75-7.525a3.444 3.444 0 00-3.762-.107c-2.93 1.787-6.235 3.104-9.675 3.977a3.44 3.44 0 00-2.473 2.795l-2.365 12.9H52.89l-2.15-12.9a3.417 3.417 0 00-2.58-2.687c-3.453-.847-6.705-2.298-9.675-4.085a3.455 3.455 0 00-3.655.215l-10.75 7.417-5.267-5.268 7.525-10.535a3.423 3.423 0 00.107-3.87c-1.8-2.983-3.117-6.208-3.977-9.675a3.42 3.42 0 00-2.795-2.58L6.88 118.895v-7.525l12.793-2.15a3.44 3.44 0 002.795-2.473c.873-3.48 2.176-6.799 3.977-9.782a3.444 3.444 0 00-.107-3.763L18.92 82.56l5.268-5.375 10.642 7.633c1.115.779 2.593.82 3.763.107 2.956-1.774 6.221-3.023 9.675-3.87a3.42 3.42 0 002.58-2.795zm3.762 28.703c-11.677 0-21.177 9.5-21.177 21.177s9.5 21.177 21.177 21.177 21.177-9.5 21.177-21.177-9.5-21.177-21.177-21.177zm0 6.88a14.223 14.223 0 0114.297 14.297 14.223 14.223 0 01-14.297 14.297 14.223 14.223 0 01-14.297-14.297 14.223 14.223 0 0114.297-14.297z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">RPA</h3>
-              <p class="text-2 service-text">Innovating, Inventing and Automating high quality business processes to
-                reduce operations cost and maximize performance.</p>
-              <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./RPA.html">Know More</a></p>
+
+        </div>
+        <!-- service - 3 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="300"
+          data-aos-duration="1000">
+          <div class="card-body service service-3 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <!-- <img src="./images/icons/service_info_sec_outline.svg" alt="Information security service"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M72.24 0C52.823 0 35.193 3.48 22.145 9.352c-6.517 2.93-11.892 6.477-15.803 10.643C2.62 23.959.228 28.635 0 33.647a3.588 3.588 0 000 .538V68.155a2.59 2.59 0 000 .645v33.755a2.59 2.59 0 000 .645v30.96c0 9.635 7.646 17.59 18.705 23.328 11.06 5.737 26.069 9.607 43 10.75a3.453 3.453 0 003.655-3.225 3.453 3.453 0 00-3.225-3.655c-16.165-1.089-30.41-4.865-40.313-9.998-9.903-5.133-14.942-11.314-14.942-17.2v-16.017c3.857 3.937 9.017 7.296 15.265 10.105 13.048 5.872 30.678 9.352 50.095 9.352a3.46 3.46 0 003.023-1.707 3.473 3.473 0 000-3.466 3.46 3.46 0 00-3.023-1.707c-18.584 0-35.34-3.48-47.193-8.815-5.925-2.66-10.602-5.778-13.652-9.03-3.05-3.252-4.515-6.437-4.515-9.675a2.59 2.59 0 000-.645V83.743c3.857 3.937 9.017 7.296 15.265 10.105C35.193 99.72 52.823 103.2 72.24 103.2c9.917 0 19.35-.9 27.95-2.58 1.868-.363 3.104-2.163 2.741-4.031-.363-1.868-2.163-3.104-4.031-2.741-8.143 1.585-17.16 2.472-26.66 2.472-18.584 0-35.34-3.48-47.193-8.815-5.925-2.66-10.602-5.778-13.652-9.03-3.05-3.252-4.515-6.437-4.515-9.675a2.59 2.59 0 000-.645V49.343c3.857 3.937 9.017 7.296 15.265 10.105C35.193 65.32 52.823 68.8 72.24 68.8c19.417 0 37.047-3.48 50.095-9.352 6.248-2.809 11.408-6.168 15.265-10.105V65.36a3.46 3.46 0 001.707 3.023 3.473 3.473 0 003.466 0 3.46 3.46 0 001.707-3.023V34.4v-.322-.323-.107a1.604 1.604 0 00-.108-.215c-.282-4.932-2.566-9.541-6.235-13.438-3.91-4.166-9.285-7.713-15.802-10.642C109.287 3.48 91.657 0 72.24 0zm0 6.88c18.584 0 35.34 3.48 47.193 8.815 5.925 2.66 10.602 5.778 13.652 9.03 3.05 3.252 4.515 6.437 4.515 9.675 0 3.238-1.465 6.423-4.515 9.675-3.05 3.252-7.727 6.37-13.652 9.03C107.58 58.44 90.823 61.92 72.24 61.92c-18.584 0-35.34-3.48-47.192-8.815-5.926-2.66-10.603-5.778-13.653-9.03-3.05-3.252-4.515-6.437-4.515-9.675v-.322c.094-3.131 1.559-6.209 4.515-9.353 3.05-3.252 7.727-6.37 13.653-9.03C36.899 10.36 53.656 6.88 72.24 6.88zm68.8 68.8c-17.052 0-30.96 13.908-30.96 30.96 0 2.62.887 4.985 1.505 7.418l-.108.107-34.83 34.83a3.44 3.44 0 00-.967 2.365v17.2a3.447 3.447 0 003.44 3.44h17.2a3.404 3.404 0 002.472-.968l2.473-2.472h8.815a3.447 3.447 0 003.44-3.44v-6.88h6.88a3.447 3.447 0 003.44-3.44v-6.88h6.88a3.447 3.447 0 003.44-3.44v-8.277c2.27.537 4.448 1.397 6.88 1.397 17.052 0 30.96-13.908 30.96-30.96s-13.908-30.96-30.96-30.96zm0 6.88c13.33 0 24.08 10.737 24.08 24.08 0 13.343-10.75 24.08-24.08 24.08-13.33 0-24.08-10.737-24.08-24.08 0-13.343 10.75-24.08 24.08-24.08zm10.32 10.32a6.876 6.876 0 00-6.88 6.88 6.876 6.876 0 006.88 6.88 6.876 6.876 0 006.88-6.88 6.876 6.876 0 00-6.88-6.88zm-37.195 28.273c.968 1.773 2.163 3.4 3.44 4.944l-23.973 24.08a3.455 3.455 0 00-1.195 3.454 3.459 3.459 0 002.58 2.58 3.455 3.455 0 003.453-1.196l24.188-24.08c1.478 1.129 2.956 2.163 4.622 3.01v7.095h-6.88a3.447 3.447 0 00-3.44 3.44v6.88h-6.88a3.447 3.447 0 00-3.44 3.44v6.88h-6.88a3.404 3.404 0 00-2.472.967l-2.473 2.473H82.56v-12.255z" />
+                </g>
+              </svg>
             </div>
-
+            <h3 class="py-3 title-3">Cyber Security</h3>
+            <p class="text-2 service-text">To Automate predictive analysis for emulating the learning
+              approach
+              used
+              by humans.
+              It
+              identifies, prepares
+              and analyses algorithms and tests.</p>
+            <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Cyber-security-services.html">Know
+                More</a>
+            </p>
           </div>
-          <!-- Service - 6 -->
-          <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="450"
-            data-aos-duration="1000">
-            <div class="card-body service service-6 mx-md-3">
-              <div class="service-icon rounded-circle">
-                <!-- <img src="./images/icons/service_bigdata_outline.svg" alt="bigdata service"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
-                  <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode:normal">
-                    <path d="M0 172V0h172v172z" fill="none" />
-                    <path
-                      d="M99.733 30.96c-17.824 0-32.255 9.969-39.425 24.967-3.941-2.6-8.429-4.327-13.384-4.327-12.734 0-21.878 10.248-22.616 22.582-5.97 2.006-11.74 5.109-16.145 10.145C3.18 90.024 0 97.889 0 107.775c0 18.33 14.932 33.265 33.265 33.265h8.015v-6.88h-8.015c-14.616 0-26.385-11.773-26.385-26.385 0-8.452 2.558-14.455 6.463-18.92 3.906-4.464 9.295-7.394 15.09-8.996l2.621-.726-.094-2.714c-.017-.482-.047-.716-.047-.739 0-9.8 6.447-17.2 16.01-17.2 4.928 0 9.148 1.644 12.189 4.69l3.796 3.803 1.867-5.04C70.212 47.241 83.072 37.84 99.733 37.84c21.278 0 37.867 16.568 37.867 37.84 0 1.566-.13 3.14-.33 4.75l-.476 3.863h3.89c.413 0 .477-.006.201-.006 12.792 0 24.235 13.057 24.235 26.136a23.685 23.685 0 01-23.744 23.737H127.28v6.88h14.096c16.874 0 30.624-13.746 30.624-30.617 0-15.752-12.16-30.195-27.695-32.23.056-.841.175-1.64.175-2.513 0-24.892-19.853-44.72-44.747-44.72zM48.16 103.2v6.88h3.44v24.08h6.88V103.2zm32.68 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm30.96 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm-30.96 6.88c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm30.96 0c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm-51.6 30.96c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm30.96 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm18.92 0v6.88h3.44V172h6.88v-30.96zm-49.88 6.88c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm30.96 0c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16z" />
-                  </g>
-                </svg>
-              </div>
-              <h3 class="py-2 title-3">Bigdata and Data Sciencne</h3>
-              <p class="text-2 service-text">Managing, analyzing and visualizing data into information and
-                information
-                into
-                insight by
-                making profitable
-                decisions.</p>
-              <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Bigdata.html">Know More</a></p>
+
+        </div>
+        <!-- Service - 4 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="300"
+          data-aos-duration="1000">
+          <div class="card-body service service-4 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <!-- <img src="./images/icons/service_blockchain_outline.svg" alt="Blockchain service"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M134.375 6.88c-2.056.47-4.098.927-6.02 1.397-.215.054-.537.336-.537.538-.04 2.016 0 4.058 0 6.235 2.15-.457 4.165-.86 6.127-1.29.161-.04.323-.282.323-.43.026-2.137.107-4.273.107-6.45zm-8.17 1.827c-1.451.296-2.795.565-4.192.86-2.218.47-2.258.511-2.258 2.795v4.193c2.258-.417 4.34-.793 6.45-1.183zm-8.063 1.613c-2.136.376-4.111.699-6.127 1.075-.134.027-.323.376-.323.537-.026 1.949 0 3.844 0 5.913 2.07-.336 4.018-.632 5.913-.968.228-.04.537-.241.537-.43.04-1.988 0-4.03 0-6.127zm-16.232 2.688c-2.19.295-4.34.577-6.45.86v6.234c2.19-.255 4.327-.604 6.45-.86zm40.42.43c-2.002.456-3.95.833-5.912 1.29-.162.04-.43.295-.43.43-.027 1.894 0 3.749 0 5.697 2.19-.457 4.246-.847 6.342-1.29v-6.128zm-48.483.644c-2.284.242-4.42.417-6.557.645v6.128c2.083-.202 4.098-.323 6.127-.537.148-.014.43-.296.43-.43.027-1.909 0-3.817 0-5.806zm-8.277.86c-2.23.189-4.327.35-6.45.538v6.02c2.177-.161 4.287-.269 6.45-.43zm-8.17.646c-2.177.12-4.367.201-6.558.322v6.128c2.218-.121 4.435-.31 6.558-.43zm-31.175.752v5.912h6.45V16.34zm8.277.108v5.805h6.45v-5.805zm71.703.43c-2.002.362-3.964.698-5.912 1.075-.202.04-.538.268-.538.43-.04 1.76 0 3.507 0 5.375 2.244-.377 4.327-.713 6.45-1.075zm-8.063 1.505c-7.592 1.061-15.17 2.163-22.79 3.225V35.26c-4.77.215-9.42.43-14.19.645v-5.482c2.043-.121 4.045-.215 6.02-.323v-7.74c-8.21.457-16.407.94-24.617 1.398v13.115h-16.34v6.772h6.342v5.16h-6.342v6.665h8.277v21.393h6.235v5.16h-6.235v8.062h6.235v5.16h-6.342v21.285h-8.17v13.438h6.342v5.16h10.105v13.222c5.55.242 10.992.51 16.556.752v-5.16c2.176.189 4.205.35 6.342.538v-8.385c3.333.255 6.584.497 9.89.752v13.545c7.633 1.062 15.17 2.164 22.79 3.225V139.32c1.357.094 2.553.134 3.763.215 4.179.296 8.264.242 12.362-.86 7.552-2.016 12.766-6.504 14.835-14.19 1.277-4.743 1.451-9.54.968-14.405-.404-4.004-1.519-7.767-3.548-11.288-.632-1.101-1.317-1.746-2.688-1.612-1.128.107-2.284-.161-3.44-.215-1.478-.067-2.983-.148-4.515-.215 0-2.217-.053-4.233 0-6.343.014-.658-.174-1.007-.752-1.182-2.553-.753-5.053-1.572-7.633-2.258-1.491-.39-3.063-.577-4.622-.86v-2.15c0-2.445.027-2.405 2.365-3.225 4.072-1.41 8.05-2.902 11.503-5.59 3.856-3.01 6.638-6.799 8.277-11.395 1.478-4.152 1.6-8.56 1.29-12.9-.242-3.332-1.008-6.476-2.58-9.46a14.243 14.243 0 00-5.268-5.59c-4.783-2.902-9.997-3.749-15.48-3.44-1.599.095-3.211.229-4.837.323-.027-.538-.08-1.035-.108-1.505-2.136.269-4.152.605-6.235.86v-5.59c2.11-.31 4.153-.55 6.235-.86zm24.188 2.687c-2.137.443-4.26.86-6.343 1.29v6.128c2.15-.404 4.287-.793 6.343-1.183zm-8.063 1.613c-2.217.403-4.286.806-6.342 1.182v5.913c2.19-.363 4.233-.726 6.343-1.075zm-79.764 1.075v5.16h6.45v-5.16zm71.702.43c-2.177.349-4.327.725-6.45 1.075v5.804c2.217-.322 4.354-.658 6.45-.967zm-79.98 6.127v5.268h6.45v-5.268zm8.277 0v5.268h6.45v-5.268zm-32.787 5.59v5.375c2.177.12 4.3.31 6.45.43v-5.375c-2.177-.12-4.287-.31-6.45-.43zm8.17.645v5.268h6.343V36.55zm8.17.323v5.267h6.45v-5.268zM77.4 42.785v5.268c-2.137.094-4.287.228-6.45.322v-5.268l6.45-.322zm-47.515.43v5.268h6.343v-5.268zm112.445 0v6.235c-2.042.255-4.112.497-6.235.752v-6.127c2.016-.296 4.072-.537 6.235-.86zm-79.55.107h6.343v5.16H62.78zm-41.172 6.343c0 1.559-.04 3.198 0 4.838 0 .147.362.322.537.322 1.975.027 3.99.107 6.02.107v-5.267zm16.447.538v5.16h6.45v-5.16zm64.715 1.182c13.438-.336 13.128 5.47 13.223 9.675.174 7.713-3.091 14.66-19.243 15.91-.55.04-13.572.537-13.76.537V52.352c.537-.04 17.71-.913 19.78-.967zM21.715 56.33v5.375h6.45V56.33zm16.34.43v5.268h6.45V56.76zm8.17.108v5.16h6.45v-5.16zm13.115 0h6.343v5.16H59.34zm82.882 2.15v6.234c-2.042.135-4.004.296-6.127.43v-6.02c2.07-.188 4.018-.443 6.128-.644zm-112.337 4.3v5.267h6.343v-5.267zm16.34.215v5.16h6.45v-5.16zm22.253 0h6.342v5.052h-6.342zm-46.763 6.342v5.268h6.45v-5.268zm8.17.108v5.267h6.343v-5.268zm8.17.107v5.16h6.45v-5.16zm0 6.665v5.16h6.45v-5.16zm8.17 0v5.16h6.45v-5.16zm-16.34 6.665v5.268h6.343V83.42zm16.34 0v5.16h6.45v-5.16zm21.5 0h6.343v5.16h-6.343zm-29.67 6.665v5.16h6.45v-5.16zm8.17 0v5.16h6.558v-5.16zm36.765 4.623c.403 0 11.852.214 13.76.322 20.21 1.075 20.734 4.999 22.79 12.255.591 2.083.134 4.233-.43 6.343-.39 1.464-1.438 7-14.405 6.987-3.171 0-21.245-.752-21.715-.752zM29.885 96.75v5.268h6.45V96.75zm8.17 0v5.16h6.45v-5.16zm-16.34.108v5.267h6.45v-5.268zm24.51 6.45v5.16h6.45v-5.16zm14.942.107h6.343v5.053h-6.343zm-31.282.107v5.16h6.343v-5.16zm-8.17.108v5.268h6.45v-5.268zm16.34 6.343v5.267h6.45v-5.268zm8.17 0v5.16h6.45v-5.16zm14.942 0h6.343v5.16h-6.343zm-31.282.107v5.268h6.343v-5.268zm106.21 3.978c2.042.201 4.112.335 6.235.537v6.235c-2.083-.242-4.139-.403-6.235-.645zm-106.21 2.794v5.16h6.343v-5.16zm8.17 6.45v5.16h6.45v-5.16zm16.555 0h6.343v5.16H54.61zm-24.725.215v5.268h6.343v-5.268zm57.727.323h6.343v5.375l-6.343-.323zm16.34.645c1.613.107 3.158.215 4.73.323.525.04 1.089.067 1.613.107v5.482c-1.572-.12-5.805-.497-6.343-.537zm-65.897 5.483v5.16h6.45v-5.16zm-9.89.322c-2.217.12-4.327.31-6.45.43v5.375c2.19-.134 4.287-.296 6.45-.43zm18.06 6.127v5.268h6.558v-5.268zm8.277 0v5.268h6.45v-5.268zm16.448.108h6.45v5.053h-6.45zm-34.723.107c-2.176.095-4.219.229-6.342.323v5.375c2.177-.094 4.22-.228 6.342-.323zm1.828 0v5.16h6.45v-5.16zm-9.89.43c-2.177.135-4.287.296-6.45.43v5.376c2.204-.148 4.3-.283 6.45-.43zm59.018.538v5.375c2.23.188 4.447.363 6.557.537.054-.174.108-.268.108-.322.013-1.062 0-2.056 0-3.118 0-1.935-.054-1.975-1.935-2.15-.189-.013-.35-.094-.538-.107-1.37-.094-2.782-.12-4.192-.215zm32.572 3.333v5.805c2.137.349 4.273.725 6.45 1.075V141.9c-2.163-.323-4.3-.645-6.45-.968zm8.063 1.29v1.612c0 .51-.014 1.008 0 1.505.013.672-.108 1.438 0 2.042.04.202.107.39.214.538.404.524 1.626.484 2.473.645 1.263.242 2.486.417 3.763.645v-5.912c-2.137-.35-4.22-.713-6.45-1.075zm-73.316.86v5.16h6.45v-5.16zm-16.447.107v5.268h6.45v-5.268zm97.933.43v6.02c2.11.43 4.219.86 6.342 1.29v-6.235c-2.123-.39-4.22-.685-6.343-1.075zm-48.698.752v5.375c2.177.202 4.233.43 6.45.645v-5.482c-2.204-.188-4.287-.35-6.45-.537zm32.465 3.87v5.698c2.137.39 4.273.793 6.45 1.183v-5.805c-2.15-.363-4.287-.713-6.45-1.076zm-65.252 1.398v5.912h6.45v-5.912zm8.17.215v5.912h6.45v-5.912zm8.17.215c0 1.922-.054 3.695 0 5.482 0 .189.403.511.644.538.955.107 1.936.054 2.903.107 1.008.054 1.989.162 3.01.215v-6.02c-2.23-.107-4.34-.215-6.558-.322zm8.277.43v6.02c2.163.175 4.22.35 6.45.537v-3.977c0-2.042 0-2.07-2.042-2.257-1.479-.135-2.876-.202-4.408-.323zm16.34 1.398v6.235c2.177.282 4.287.577 6.45.86v-6.235c-2.163-.256-4.273-.605-6.45-.86zm8.17 1.075v6.234c2.177.336 4.287.74 6.45 1.076v-6.45c-2.177-.31-4.3-.551-6.45-.86zm16.125 2.472c0 2.163-.027 4.166 0 6.128 0 .174.269.39.43.43 2.002.43 3.95.873 6.02 1.29v-6.666c-2.137-.39-4.22-.765-6.45-1.182zm8.063 1.613c0 2.136-.027 4.03 0 6.02 0 .215.255.604.43.645 1.988.483 4.03.927 6.127 1.397 0-2.177-.067-4.233-.107-6.342 0-.189-.296-.484-.538-.538-1.236-.296-2.513-.605-3.762-.86-.686-.134-1.385-.175-2.15-.322z" />
+                </g>
+              </svg>
             </div>
-
+            <h3 class="py-3 title-3">Block Chain</h3>
+            <p class="text-2 service-text">It is changing the way people make approaches to sharing data, From
+              creating
+              more efficient and smarter businesses to give businesses trustful and variable networks.</p>
+            <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Blockchain.html">Know More</a></p>
           </div>
+
+        </div>
+        <!-- Service - 5 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="400"
+          data-aos-duration="1000">
+          <div class="card-body service service-5 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <!-- <img src="./images/icons/service_rpa_outline.svg" alt="RPA service"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M137.923 0a3.415 3.415 0 00-2.473 1.613l-5.59 9.244a32.83 32.83 0 00-5.268 0l-5.697-9.137a3.429 3.429 0 00-4.3-1.29l-9.675 4.085a3.435 3.435 0 00-2.042 3.978l2.365 10.427c-1.317 1.142-2.513 2.405-3.655 3.763l-10.535-2.365a3.437 3.437 0 00-3.87 2.15l-3.978 9.675a3.429 3.429 0 001.29 4.3l9.137 5.697c-.12 1.76-.147 3.534 0 5.267l-9.03 5.698a3.429 3.429 0 00-1.29 4.3l4.086 9.675a3.436 3.436 0 003.87 2.042l10.534-2.365c1.143 1.317 2.406 2.513 3.763 3.655L103.2 80.947a3.436 3.436 0 002.042 3.87l9.783 3.978a3.433 3.433 0 004.192-1.29l5.806-9.137c1.8.12 3.6.053 5.375-.108l5.805 9.137a3.433 3.433 0 004.192 1.29l9.783-4.084a3.45 3.45 0 001.935-3.978l-2.58-10.535c1.29-1.115 2.54-2.338 3.655-3.655l10.642 2.257a3.438 3.438 0 003.978-2.15l3.977-9.675a3.438 3.438 0 00-1.397-4.3l-9.246-5.697c.121-1.707.027-3.373-.107-5.053l9.137-6.02a3.43 3.43 0 001.398-4.192l-4.192-9.675a3.435 3.435 0 00-3.978-2.042l-10.428 2.58c-1.155-1.344-2.391-2.607-3.762-3.763l2.257-10.535a3.435 3.435 0 00-2.042-3.977L139.642.215a3.431 3.431 0 00-1.72-.215zm1.827 7.74l4.407 1.827-2.042 9.568a3.434 3.434 0 001.29 3.44 26.945 26.945 0 015.697 5.698 3.433 3.433 0 003.655 1.29l9.46-2.365 1.828 4.407-8.277 5.375a3.428 3.428 0 00-1.506 3.44c.404 2.62.39 5.254 0 7.955a3.437 3.437 0 001.613 3.44l8.385 5.16-1.827 4.3-9.568-2.043a3.427 3.427 0 00-3.547 1.398 26.775 26.775 0 01-5.59 5.697 3.447 3.447 0 00-1.29 3.548l2.365 9.568-4.408 1.827-5.375-8.277a3.437 3.437 0 00-3.44-1.613c-2.607.43-5.24.484-7.955.107a3.437 3.437 0 00-3.44 1.613l-5.267 8.277-4.408-1.827 2.15-9.46a3.447 3.447 0 00-1.29-3.547c-2.217-1.613-4.206-3.454-5.805-5.59a3.434 3.434 0 00-3.44-1.29l-9.46 2.15-1.935-4.516 8.17-5.052a3.437 3.437 0 001.613-3.44c-.43-2.66-.498-5.442-.108-8.17a3.426 3.426 0 00-1.612-3.333l-8.17-5.16 1.827-4.407 9.353 2.042a3.447 3.447 0 003.547-1.29c1.64-2.23 3.548-4.192 5.698-5.804a3.434 3.434 0 001.29-3.44l-2.15-9.46 4.407-1.828 5.16 8.17a3.428 3.428 0 003.44 1.505c2.634-.417 5.348-.403 8.063 0a3.437 3.437 0 003.44-1.613zm-12.578 19.35c-6.826.108-13.303 4.166-16.017 10.858-3.628 8.922.752 19.269 9.675 22.897 8.922 3.628 19.162-.752 22.79-9.675 3.628-8.922-.645-19.162-9.568-22.79-2.23-.9-4.609-1.33-6.88-1.29zm.108 6.772c1.384-.013 2.822.31 4.192.86 5.483 2.231 8.036 8.385 5.805 13.868-2.217 5.47-8.384 8.036-13.867 5.805-5.482-2.23-8.036-8.385-5.805-13.868a10.59 10.59 0 015.697-5.805c1.25-.524 2.594-.846 3.978-.86zM49.342 58.48a3.453 3.453 0 00-2.794 2.902l-2.15 13.868a40.95 40.95 0 00-7.096 2.902L25.8 69.983a3.44 3.44 0 00-4.407.323l-9.46 9.46a3.44 3.44 0 00-.323 4.408l8.063 11.502c-1.183 2.244-2.124 4.636-2.903 7.095l-13.867 2.365A3.428 3.428 0 000 108.468v13.33a3.44 3.44 0 002.795 3.44l13.868 2.364a39.952 39.952 0 003.01 7.203l-8.17 11.395a3.44 3.44 0 00.322 4.407l9.46 9.46a3.44 3.44 0 004.408.323l11.502-8.063c2.244 1.183 4.636 2.137 7.095 2.903l2.258 13.867a3.433 3.433 0 003.44 2.903h13.33a3.44 3.44 0 003.44-2.795l2.472-14.082c2.432-.766 4.77-1.72 6.987-2.903l11.61 8.17a3.44 3.44 0 004.408-.323l9.46-9.46a3.44 3.44 0 00.323-4.407l-8.278-11.61c1.17-2.244 2.15-4.528 2.902-6.988l14.083-2.365a3.44 3.44 0 002.795-3.44v-13.33a3.428 3.428 0 00-2.902-3.332l-14.083-2.365c-.752-2.405-1.64-4.69-2.795-6.88l8.17-11.717a3.44 3.44 0 00-.323-4.408l-9.46-9.46a3.44 3.44 0 00-4.407-.323L76.218 78.26c-2.245-1.183-4.636-2.137-7.096-2.902l-2.364-13.976a3.433 3.433 0 00-3.44-2.902H49.343zm3.656 6.88h7.417l2.258 12.9a3.42 3.42 0 002.58 2.795c3.44.86 6.718 2.19 9.675 3.978a3.444 3.444 0 003.762-.108l10.643-7.632L94.6 82.56l-7.525 10.858a3.424 3.424 0 00-.215 3.762 35.128 35.128 0 013.978 9.568 3.42 3.42 0 002.795 2.58l13.007 2.15v7.417l-13.007 2.258a3.42 3.42 0 00-2.795 2.58 34.542 34.542 0 01-3.978 9.567 3.452 3.452 0 00.215 3.87l7.633 10.643-5.268 5.267-10.75-7.525a3.444 3.444 0 00-3.762-.107c-2.93 1.787-6.235 3.104-9.675 3.977a3.44 3.44 0 00-2.473 2.795l-2.365 12.9H52.89l-2.15-12.9a3.417 3.417 0 00-2.58-2.687c-3.453-.847-6.705-2.298-9.675-4.085a3.455 3.455 0 00-3.655.215l-10.75 7.417-5.267-5.268 7.525-10.535a3.423 3.423 0 00.107-3.87c-1.8-2.983-3.117-6.208-3.977-9.675a3.42 3.42 0 00-2.795-2.58L6.88 118.895v-7.525l12.793-2.15a3.44 3.44 0 002.795-2.473c.873-3.48 2.176-6.799 3.977-9.782a3.444 3.444 0 00-.107-3.763L18.92 82.56l5.268-5.375 10.642 7.633c1.115.779 2.593.82 3.763.107 2.956-1.774 6.221-3.023 9.675-3.87a3.42 3.42 0 002.58-2.795zm3.762 28.703c-11.677 0-21.177 9.5-21.177 21.177s9.5 21.177 21.177 21.177 21.177-9.5 21.177-21.177-9.5-21.177-21.177-21.177zm0 6.88a14.223 14.223 0 0114.297 14.297 14.223 14.223 0 01-14.297 14.297 14.223 14.223 0 01-14.297-14.297 14.223 14.223 0 0114.297-14.297z" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="py-3 title-3">RPA</h3>
+            <p class="text-2 service-text">Innovating, Inventing and Automating high quality business processes to
+              reduce operations cost and maximize performance.</p>
+            <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./RPA.html">Know More</a></p>
+          </div>
+
+        </div>
+        <!-- Service - 6 -->
+        <div class="col-md-6 col-lg-4 col-sm-12 card p-0 m-0" data-aos="zoom-in" data-aos-delay="450"
+          data-aos-duration="1000">
+          <div class="card-body service service-6 mx-2 p-4">
+            <div class="service-icon rounded-circle">
+              <!-- <img src="./images/icons/service_bigdata_outline.svg" alt="bigdata service"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 172 172">
+                <g stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode:normal">
+                  <path d="M0 172V0h172v172z" fill="none" />
+                  <path
+                    d="M99.733 30.96c-17.824 0-32.255 9.969-39.425 24.967-3.941-2.6-8.429-4.327-13.384-4.327-12.734 0-21.878 10.248-22.616 22.582-5.97 2.006-11.74 5.109-16.145 10.145C3.18 90.024 0 97.889 0 107.775c0 18.33 14.932 33.265 33.265 33.265h8.015v-6.88h-8.015c-14.616 0-26.385-11.773-26.385-26.385 0-8.452 2.558-14.455 6.463-18.92 3.906-4.464 9.295-7.394 15.09-8.996l2.621-.726-.094-2.714c-.017-.482-.047-.716-.047-.739 0-9.8 6.447-17.2 16.01-17.2 4.928 0 9.148 1.644 12.189 4.69l3.796 3.803 1.867-5.04C70.212 47.241 83.072 37.84 99.733 37.84c21.278 0 37.867 16.568 37.867 37.84 0 1.566-.13 3.14-.33 4.75l-.476 3.863h3.89c.413 0 .477-.006.201-.006 12.792 0 24.235 13.057 24.235 26.136a23.685 23.685 0 01-23.744 23.737H127.28v6.88h14.096c16.874 0 30.624-13.746 30.624-30.617 0-15.752-12.16-30.195-27.695-32.23.056-.841.175-1.64.175-2.513 0-24.892-19.853-44.72-44.747-44.72zM48.16 103.2v6.88h3.44v24.08h6.88V103.2zm32.68 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm30.96 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm-30.96 6.88c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm30.96 0c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm-51.6 30.96c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm30.96 0c-6.609 0-12.04 5.431-12.04 12.04v6.88c0 6.609 5.431 12.04 12.04 12.04 6.609 0 12.04-5.431 12.04-12.04v-6.88c0-6.609-5.431-12.04-12.04-12.04zm18.92 0v6.88h3.44V172h6.88v-30.96zm-49.88 6.88c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16zm30.96 0c2.892 0 5.16 2.268 5.16 5.16v6.88c0 2.892-2.268 5.16-5.16 5.16-2.892 0-5.16-2.268-5.16-5.16v-6.88c0-2.892 2.268-5.16 5.16-5.16z" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="py-3 title-3">Bigdata and Data Sciencne</h3>
+            <p class="text-2 service-text">Managing, analyzing and visualizing data into information and
+              information
+              into
+              insight by
+              making profitable
+              decisions.</p>
+            <p class="text-right mb-0"><a class="btn-custom btn-breach" href="./Bigdata.html">Know More</a></p>
+          </div>
+
         </div>
       </div>
     </div>
+
   </section>
   <!-- 
     ==== END - OUR SERVICES ====
@@ -460,140 +463,78 @@
     ==== INDUSTRIES ====
   -->
 
-  <section class="container-fluid wrapper industries">
+  <section class="container wrapper industries">
     <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
       <h2 class="title-1"><span class="title-highlight">Industries</span> We Serve</h2>
       <p class="title-caption">Zyclyx deep Industry expertise enables global brands to hit the ground running</p>
     </div>
-    <div class="row d-flex justify-content-center align-items-center mt-5">
 
-      <div class="container row">
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
+    <div class="industry-cards p-5">
+      <div class="owl-carousel industry-carousel">         
+          <div class="card border mx-3"> 
+            <img src="https://picsum.photos/150/90" class="card-img-top" alt="...">            
             <div class="card-body">
-              <div class="industry-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#3498db">
-                      <path
-                        d="M13.76,20.64v17.2l-0.43,2.9025c-0.12094,0.71219 -3.01,17.54938 -3.01,26.3375c0,5.56313 1.30344,9.9975 3.655,13.2225c-0.06719,-0.04031 -0.14781,-0.06719 -0.215,-0.1075v84.925h144.48v-84.925c-0.06719,0.04031 -0.13437,0.06719 -0.215,0.1075c2.35156,-3.225 3.655,-7.65937 3.655,-13.2225c0,-8.78812 -2.88906,-25.62531 -3.01,-26.3375l-0.5375,-2.9025h0.1075v-17.2zM19.565,44.72h14.835v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-5.71094,0 -8.6,-4.05812 -8.6,-12.04c0,-6.15437 1.57219,-17.15969 2.365,-22.36zM41.28,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM65.36,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM89.44,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM113.52,44.72h17.2v30.6375c-2.2575,2.33813 -5.42875,3.7625 -8.6,3.7625c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM137.6,44.72h14.7275c0.81969,5.20031 2.4725,16.20563 2.4725,22.36c0,7.98188 -2.88906,12.04 -8.6,12.04c-3.17125,0 -6.3425,-1.43781 -8.6,-3.7625zM34.4,103.2h55.04v41.28h-55.04zM106.64,103.2h30.96v55.04h-30.96z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
+              <h4 class="title-3 my-2">Retail Industry</h4>
+              <p>Zyclyx’s retail services cover the entire retail enablement journey, from enhancing in-store customer
+                experiences to helping retailers adopt Omni-channel capabilities.</p>
+            </div>
+          </div>         
+      </div>
+    </div>
+
+    <!-- <div class="row d-flex justify-content-center align-items-center mt-5">
+
+
+      <div class="container-fluid row">
+        <div class="col-md-2 col-sm-12">
+          <div class="card">             
+            <div class="card-body">
               <h4 class="title-3 my-2">Retail Industry</h4>
               <p>Zyclyx’s retail services cover the entire retail enablement journey, from enhancing in-store customer
                 experiences to helping retailers adopt Omni-channel capabilities.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-2 col-sm-12">
           <div class="card">
             <div class="card-body">
-              <div class="industry-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#3498db">
-                      <path
-                        d="M33.97,0.215c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-9.05687,10.81719 -14.5125,24.79219 -14.5125,39.99c0,15.02313 5.30781,28.79656 14.19,39.56c1.22281,1.47813 3.41313,1.70656 4.89125,0.48375c1.47813,-1.22281 1.70656,-3.41312 0.48375,-4.89125c-7.90125,-9.58094 -12.685,-21.75531 -12.685,-35.1525c0,-13.545 4.8375,-25.96125 12.9,-35.5825c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM136.955,0.215c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c8.0625,9.62125 12.9,22.0375 12.9,35.5825c0,13.39719 -4.78375,25.57156 -12.685,35.1525c-1.22281,1.47813 -0.99437,3.66844 0.48375,4.89125c1.47813,1.22281 3.66844,0.99438 4.89125,-0.48375c8.88219,-10.76344 14.19,-24.53687 14.19,-39.56c0,-15.19781 -5.45562,-29.17281 -14.5125,-39.99c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM53.965,11.5025c-0.88687,0.12094 -1.70656,0.57781 -2.2575,1.29c-6.50375,7.76688 -10.4275,17.79125 -10.4275,28.7025c0,10.91125 3.92375,20.93563 10.4275,28.7025c0.76594,1.03469 2.02906,1.54531 3.29219,1.35719c1.26313,-0.20156 2.31125,-1.075 2.72781,-2.28437c0.41656,-1.20938 0.12094,-2.55313 -0.7525,-3.48031c-5.50937,-6.57094 -8.815,-15.03656 -8.815,-24.295c0,-9.25844 3.30563,-17.71062 8.815,-24.295c0.95406,-1.075 1.14219,-2.62031 0.47031,-3.89687c-0.67188,-1.26313 -2.05594,-1.98875 -3.48031,-1.80063zM116.96,11.5025c-1.23625,0.22844 -2.24406,1.08844 -2.64719,2.28438c-0.40313,1.1825 -0.13438,2.48594 0.71219,3.41312c5.50938,6.58438 8.815,15.03656 8.815,24.295c0,9.25844 -3.30562,17.72406 -8.815,24.295c-0.87344,0.92719 -1.16906,2.27094 -0.7525,3.48031c0.41656,1.20937 1.46469,2.08281 2.72781,2.28437c1.26312,0.18813 2.52625,-0.3225 3.29219,-1.35719c6.50375,-7.76687 10.4275,-17.79125 10.4275,-28.7025c0,-10.91125 -3.92375,-20.93562 -10.4275,-28.7025c-0.72562,-0.91375 -1.85437,-1.3975 -3.01,-1.29c-0.1075,0 -0.215,0 -0.3225,0zM86,27.52c-7.60562,0 -13.76,6.15438 -13.76,13.76c0,4.55531 2.17688,8.57313 5.59,11.0725l-41.71,110.295c-1.33031,3.56094 0.47031,7.53844 4.03125,8.86875c3.56094,1.33031 7.53844,-0.47031 8.86875,-4.03125l4.4075,-11.5025l59.0175,-16.4475l10.535,27.95c1.33031,3.56094 5.30781,5.36156 8.86875,4.03125c3.56094,-1.33031 5.36156,-5.30781 4.03125,-8.86875l-41.71,-110.295c3.41313,-2.49937 5.59,-6.51719 5.59,-11.0725c0,-7.60562 -6.15437,-13.76 -13.76,-13.76zM86,69.875l8.815,23.22l-20.5325,7.74zM99.6525,105.8875l5.4825,14.62l-21.93,-8.2775zM66.7575,120.7225l26.23,9.89l-33.54,9.3525z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
               <h4 class="title-3 my-2">Telecom Industry</h4>
               <p>Zyclyx can play a pivotal role in driving transformation across the telecom industry, bringing
                 greater efficiency to telecommunications functions – from supply chain.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-2 col-sm-12">
           <div class="card">
+
             <div class="card-body">
-              <div class="industry-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#3498db">
-                      <path
-                        d="M85.82531,6.96734c-0.516,0 -1.02931,0.08331 -1.54531,0.25531l-75.68,35.43469c-1.032,0.688 -1.72,1.72134 -1.72,3.09734v5.84531c0,2.064 1.376,3.44 3.44,3.44h27.52c1.72,0 3.44,1.72 3.44,3.44c0,1.72 -1.72,3.44 -3.44,3.44h-3.44v72.24h103.2v-72.24h-3.44c-1.72,0 -3.44,-1.72 -3.44,-3.44c0,-1.72 1.72,-3.44 3.44,-3.44h27.52c2.064,0 3.44,-1.376 3.44,-3.44v-5.84531c0,-1.376 -0.68665,-2.40934 -2.06265,-3.09734l-75.68,-35.43469c-0.516,-0.172 -1.03603,-0.25531 -1.55203,-0.25531zM82.56,37.84h6.88v10.66265c13.072,1.72 17.2,13.76135 17.2,20.29735h-6.88c0,-1.376 -0.688,-13.76 -13.76,-13.76c-13.416,0 -13.76,9.976 -13.76,10.32c0,7.224 5.50669,9.288 14.79469,12.04c8.6,2.752 19.60531,5.848 19.60531,18.92c0,4.472 -1.37869,8.60269 -4.47469,11.35469c-3.784,3.784 -9.28531,5.15866 -12.72531,5.50266v10.66265h-6.88v-10.66265c-4.472,-0.688 -8.60269,-2.408 -11.35469,-5.16c-5.848,-6.192 -5.84531,-14.79335 -5.84531,-15.13735h6.88c0,0 -0.00135,6.192 3.78265,10.32c2.408,2.408 5.50535,3.44 9.97735,3.44c0,0 7.57069,0.00135 11.35469,-3.78265c1.72,-1.72 2.40531,-3.78535 2.40531,-6.53735c0,-7.224 -5.50669,-9.288 -14.79469,-12.04c-8.6,-2.752 -19.60531,-6.192 -19.60531,-18.92c0,-5.504 4.128,-15.48135 17.2,-16.85735zM20.64,61.92v72.24h6.88v-72.24zM144.48,61.92v72.24h6.88v-72.24zM17.2,141.04c-5.848,0 -10.32,4.472 -10.32,10.32v6.88h158.24v-6.88c0,-5.848 -4.472,-10.32 -10.32,-10.32z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
               <h4 class="title-3 my-2">Banking Industry</h4>
               <p>RPA represents the next wave of automation that will help address a slew of challenges in the
                 financial services industry.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-2 col-sm-12">
           <div class="card">
+
             <div class="card-body">
-              <div class="industry-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#3498db">
-                      <path
-                        d="M9.7825,44.72c-5.40187,0 -9.7825,4.39406 -9.7825,9.7825v89.9775c0,5.38844 4.91813,10.32 10.32,10.32h14.0825c1.63938,9.75563 10.105,17.2 20.3175,17.2c10.2125,0 18.67813,-7.44437 20.3175,-17.2h31.82c5.38844,0 9.7825,-4.39406 9.7825,-9.7825v-90.3c0,-5.50937 -4.34031,-9.9975 -9.675,-9.9975zM113.52,68.8v86c1.65281,9.74219 10.4275,17.2 20.64,17.2c10.2125,0 18.67813,-7.45781 20.3175,-17.2h7.2025c5.40188,0 10.32,-4.91812 10.32,-10.32v-33.11c0,-6.92031 -4.98531,-13.98844 -5.59,-14.835l-14.2975,-19.135c-3.27875,-3.95062 -8.42531,-8.6 -14.5125,-8.6zM130.72,86h19.2425l10.965,14.62c1.16906,1.65281 4.1925,6.71875 4.1925,10.75v2.15h-34.4c-3.44,0 -6.88,-3.44 -6.88,-6.88v-13.76c0,-3.80281 3.44,-6.88 6.88,-6.88zM44.72,137.6c7.59219,0 13.76,6.16781 13.76,13.76c0,7.59219 -6.16781,13.76 -13.76,13.76c-7.59219,0 -13.76,-6.16781 -13.76,-13.76c0,-7.59219 6.16781,-13.76 13.76,-13.76zM134.16,137.6c7.59219,0 13.76,6.16781 13.76,13.76c0,7.59219 -6.16781,13.76 -13.76,13.76c-7.59219,0 -13.76,-6.16781 -13.76,-13.76c0,-7.59219 6.16781,-13.76 13.76,-13.76z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
               <h4 class="title-3 my-2">Logistics Industry</h4>
               <p>Zyclyx helps service providers achieve operational efficiency, reduce service rollout time, propel
                 innovation and achieve business and operational objectives.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-2 col-sm-12">
           <div class="card">
+
             <div class="card-body">
-              <div class="industry-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                  style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#3498db">
-                      <path
-                        d="M167.3216,66.1512l-79.12,-61.92c-1.2728,-1.0664 -3.1304,-1.0664 -4.4032,0l-79.12,61.92c-1.4448,1.204 -1.6512,3.3712 -0.4472,4.8504c1.204,1.4448 3.3712,1.6512 4.8504,0.4472l4.6784,-3.8528v90.644c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-90.644l4.6784,3.8528c0.6536,0.516 1.4104,0.7912 2.2016,0.7912c0.9976,0 1.9608,-0.4128 2.6488,-1.2384c1.204,-1.4792 0.9976,-3.6464 -0.4472,-4.8504zM116.96,106.64h-24.08v24.08h-13.76v-24.08h-24.08v-13.76h24.08v-24.08h13.76v24.08h24.08z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
               <h4 class="title-3 my-2">Health Care Industry</h4>
               <p>Zyclyx helps many of these challenges impact healthcare service providers on a variety of fronts it
                 is particularly true in the area of healthcare companies’ revenue management.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-2 col-sm-12">
           <div class="card">
             <div class="card-body d-flex justify-content-center flex-column px-0">
               <h4 class="title-2 text-center mt-4 industry-title">Supercharge your productivity with our
@@ -607,7 +548,7 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
   </section>
   <!-- 
     ==== END - INDUSTRIES ====
@@ -616,41 +557,17 @@
   <!-- 
     ==== OUR CLIENTS ====
   -->
-  <section id="clients" class="wrapper clients-outer">
+  <section id="clients" class="container our-clients wrapper">
     <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
       <h3 class="title-1 py-3">Trusted By Industry <span class="title-highlight">Leaders</span></h3>
       <p class="title-caption">We work with some of the most successful companies</p>
     </div>
-    <div class="container-fluid">
-      <div class="container row mx-auto d-flex justify-content-center align-items-center">
-        <!-- <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div><img src="./images/clients/Intellect.png" alt=""></div>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div><img src="./images/clients/infospoke.jpg" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 d-none d-md-block">
-          <div class="card">
-            <div class="card-body">
-              <div><img src="./images/clients/blueprism.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 d-none d-md-block">
-          <div class="card">
-            <div class="card-body">
-              <div><img src="./images/clients/automation.png" alt=""></div>
-            </div>
-          </div>
-        </div>
+    <div class="container mt-sm-3 mt-md-5" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">
+      <div class="owl-carousel clients-carousel">
+        <div class="client"><img src="images/clients/infospoke.jpg" alt="client-1"></div>
+        <div class="client"><img src="images/clients/uipath.png" alt="client-3"></div>
+        <div class="client"><img src="images/clients/blueprism.png" alt="client-4"></div>
+        <div class="client"><img src="images/clients/automation.png" alt="client-5"></div>
       </div>
     </div>
   </section>
@@ -707,6 +624,7 @@
           <p class="f-title text-left">Follow us</p>
           <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+            <!-- https://www.facebook.com/zyfo.hiring?fref=search&__tn__=%2Cd%2CP-R&eid=ARCMlVynVz79FzQ8zPfoF-JxWqsrlzGO0UbNbfRDswahhB_xmrPQrLBePFMB0iEFsU2A0UTwz90lWr9h -->
             <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
             <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>
             <li><a href="https://in.linkedin.com/company/zyclyx-consulting-pvt-ltd" class="icoLinkedin"
@@ -732,8 +650,8 @@
   </div>
 
   <div id="box1" class="chat-bot">
-    <div class="card shadow" style="max-width: 18rem;" id="bot">
-      <div id="close" class="card-header d-flex justify-content-between" style="color: #222da5;">Zybot
+    <div class="card shadow" id="bot">
+      <div id="close" class="card-header d-flex justify-content-between">Zybot
         <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
           <i class="fas fa-times"></i>
         </button>
@@ -779,6 +697,7 @@
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="./js/vendor/aos.js"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
