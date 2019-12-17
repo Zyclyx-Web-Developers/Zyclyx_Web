@@ -1,43 +1,17 @@
 .header-img {   
   background-image: url("../images/bg_header/about_us.jpg");
-}
-.line{
-  position: relative;
-  margin:0 auto;
-  width:650px;
-  height: 8px;
-  background: cornflowerblue;
-}
-.line:before{
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 31px;
-  top: -23px;
-  left:0px;
-  background: cornflowerblue;
-}
-.line:after{
-  position: absolute;
-  width: 10px;
-  height: 31px;
-  content: "";
-  top:8px;
-  right:0px;
-  background: cornflowerblue;
 } 
-
 .about-vision {
   background-color: #f3f7fa;
   line-height: 1.7;
 }
 .mission-icon,
 .vission-icon {
-  box-shadow:inset 0 0 0 1px hsl(1, 92%, 72%);
+  box-shadow:inset 0 0 0 1px hsl(16, 100%, 70%);
   background: #fff;
 }
 .mission-icon svg,.vission-icon svg{
-  fill: #f51714;
+  fill: #ff4500;
   transition: all .5s ease-in-out;
 -webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;
@@ -45,7 +19,7 @@
 -o-transition: all .5s ease-in-out;
 }
  .mission:hover .mission-icon,.vission:hover .vission-icon{   
-  box-shadow: inset 0 0 0 70px #f51714;
+  box-shadow: inset 0 0 0 70px #ff4500;
   transition: all .5s ease-in-out;
 }
  
