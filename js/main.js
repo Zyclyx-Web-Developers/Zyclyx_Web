@@ -192,3 +192,9 @@ document
     })
   }
 });
+
+//API call to wake up Heroku 
+fetch('https://agile-plateau-09650.herokuapp.com/jobopenings')
+.then(function(response){
+  return response.json()
+}) 
