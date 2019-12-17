@@ -23,10 +23,10 @@ window.onload = function () {
   });
   // Industry Carousel
   $(".industry-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: false,
-    center: false,
+    autoplay: false,     
+    loop: true,
+    center: true,
+    nav:true,     
     responsive: { 
       0: { items: 1 },  768: { items: 2 }, 1024: { items: 3 }, 1440:{ items: 5 } 
     }
