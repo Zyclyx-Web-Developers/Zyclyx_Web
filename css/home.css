@@ -14,7 +14,7 @@ HOME - CAROUSEL
 
 /* ------ */
 .home-slide-1{
-  background-color:hsl(36, 61%, 54%);
+background-color: #004d80;
 }
 .home-slide-2{
   background-color:#90A959;   
@@ -22,12 +22,12 @@ HOME - CAROUSEL
 .home-slide-3{
   background-color: #1F7A8C;
 }
-.home-slide-4{
-  background-color: #004d80; 
+.home-slide-4{  
+  background-color:hsl(36, 61%, 54%); 
 }
-.home-slide-1 .slide-image:before{
-  
-  background-color:hsl(36, 61%, 40%);
+
+.home-slide-1 .slide-image:before{  
+  background-color: hsl(204, 100%, 20%);
 }
 .home-slide-2 .slide-image:before{
   
@@ -39,7 +39,7 @@ HOME - CAROUSEL
   background-color: hsl(190, 64%, 24%);
 }
 .home-slide-4 .slide-image:before{
-  background-color: hsl(204, 100%, 20%);
+  background-color:hsl(36, 61%, 40%);  
 }
 .item .row{
   height: 75vh;   
@@ -157,7 +157,18 @@ width: 0%;
 width: 100%;
 }
 }
-  
+#homeCarousel .indicator-1.active:before{
+  background-color:hsl(204, 100%, 20%) !important;
+}
+#homeCarousel .indicator-2.active:before{
+  background-color:hsl(79, 32%, 35%) !important;
+}
+#homeCarousel .indicator-3.active:before{
+  background-color:hsl(190, 64%, 24%) !important;
+}
+#homeCarousel .indicator-4.active:before{
+  background-color:hsl(36, 61%, 40%) !important;
+}  
 #homeCarousel .carousel-indicators li,.industry-carousel .carousel-indicators li{
   opacity: 1 !important;
 }
@@ -244,8 +255,9 @@ width: 100%;
  }
  .automation img{
 width: 100%;
+max-width: 400px;
  }
-
+ 
 /* 
 ==== SERVICES ====
 */
@@ -515,6 +527,16 @@ height: 45px;
   .carousel-indicators .card-body p{
     margin-bottom: 0;
   }
+
+  .blockchain-outer{
+    display: flex;
+  }
+ .blockchain-outer .img-box {
+ order: 2;
+ }
+ .blockchain-outer .content-box {
+ order: 1;
+ }
 }
 
 @media (max-width: 992px) {
