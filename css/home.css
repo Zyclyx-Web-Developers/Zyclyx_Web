@@ -369,6 +369,9 @@ background-color: hsl(211, 100%, 98.5%);
   -ms-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   border:1px solid hsl(16, 100%, 90%);
+  min-width: 18rem;
+  max-width: 24rem;
+   
 }
 .industry-cards .card:hover{
   box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),  0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
