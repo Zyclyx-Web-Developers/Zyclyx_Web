@@ -172,14 +172,10 @@ width: 100%;
 #homeCarousel .carousel-indicators li,.industry-carousel .carousel-indicators li{
   opacity: 1 !important;
 }
- /* 
- END - HOME CAROUSEL
- */
+ /* === END - HOME CAROUSEL === */
   
 
-/* 
-  ==== WELCOME SECTION
-*/
+/* === WELCOME SECTION === */
 .welcome-wrap {   
   background-color: #ffffff;
   display: flex;
@@ -197,8 +193,7 @@ width: 100%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
-   -o-border-radius: 50%; 
-   /* background-color: hsl(211, 100%, 96%); */
+   -o-border-radius: 50%;     
    margin: 0 auto;
 }
 .welcome-card{
@@ -233,19 +228,11 @@ width: 100%;
    -moz-transform: translateY(-6px);
    -ms-transform: translateY(-6px);
    -o-transform: translateY(-6px);
-}
-/* .welcome-card-body .title-3{
-  color: hsl(232, 72%, 46%);
-} */
-.welcome-card .welcome-icon{
-  margin-bottom: 0;
-}
+} 
 .welcome-card .welcome-title .title-2{
   margin-top: 12px;
 }
-/* 
-  ==== END - WELCOME SECTION
-  */
+/* === END - WELCOME SECTION === */
  .automation .caption{
    color: #ff4500;
  }
@@ -258,9 +245,7 @@ width: 100%;
 max-width: 400px;
  }
  
-/* 
-==== SERVICES ====
-*/
+/* ==== SERVICES ==== */
 .services-wrapper{ 
 padding-top: 3rem;  
 padding-bottom: 3rem;  
@@ -268,8 +253,7 @@ background-color: hsl(211, 100%, 98.5%);
  
 } 
 .services .card{
-  border: none;
-  /* background-color: #ffffff;    */
+  border: none;   
   background-color: transparent;
 }
 .services .service {
@@ -345,11 +329,9 @@ background-color: hsl(211, 100%, 98.5%);
   border-color:hsl(16, 100%, 70%);
 }
 
-/* 
-==== END - SERVICES ====
-*/
+/* ==== END - SERVICES ====*/
  
- /* Industries */
+ /* === INDUSTRIES === */
  .industries{
    background-color: hsl(0, 0%, 97%);
  }
@@ -367,8 +349,7 @@ background-color: hsl(211, 100%, 98.5%);
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  border:1px solid hsl(16, 100%, 90%);
+  -o-transition: all .2s ease-in-out;   
   min-width: 18rem;
   max-width: 24rem;
    
@@ -400,6 +381,7 @@ background-color: hsl(211, 100%, 98.5%);
    -ms-transition: all 1s ease-in-out;
    -o-transition: all 1s ease-in-out;
 }
+
 .industry-carousel .owl-nav{
   margin-top: 8px;
   display: flex;
@@ -424,6 +406,28 @@ background-color: hsl(211, 100%, 98.5%);
   background-color: #ff4500;
   color: #ffffff;
 }
+.industry-cards .card-body{  
+  border-top-color: transparent;
+}
+/* .industry-cards .owl-item.center .card-body{
+  border:1px solid hsl(16, 100%, 65%);
+  border-top-color: transparent;
+} */
+/* .industry-cards .owl-dot {   
+  border: 2px solid hsl(16, 100%, 70%) !important;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.industry-cards .owl-dot.active{
+  border-color: #ff4500 !important;
+  background-color: #ff4500;
+} */
 /* 
 ==== CLIENT LOGOS ====
 */
@@ -437,45 +441,14 @@ background-color: hsl(211, 100%, 98.5%);
   display:flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  /*background-color:#f3f7fa; */
-  /* box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1); */
-  /* border: 1px solid hsl(0, 0%, 92%); */
-  /*margin: 0 auto;
-  */transition: all 1s linear;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  -o-transition: all 1s linear;
+  border-radius: 8px; 
 }
 .our-clients img{     
   width: 100%;   
 }
-.our-clients .owl-item.center .client{
-  border: 1px solid hsl(211, 100%, 80%);
-  transition: all 1s linear;
-  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  -o-transition: all 1s linear;
-}
-
-/*our clients new */
-.clients-outer img{
-max-width: 160px;
-height: 45px;
-}
-.clients-outer .card{
-  padding:3rem 2rem;
-  margin-top: 30px;
-  border-color: hsl(232, 72%, 90%);
-}
-.clients-outer .card .card-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.our-clients .owl-item.center .client{     
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;   
+} 
 /* 
 ==== END - CLIENT LOGOS ====
 */
@@ -499,10 +472,7 @@ height: 45px;
   top: 0;
   right: 0;
   z-index:-1;
-}
-/* .contact-banner .title-1{
-  color: #efa217 ;
-} */
+} 
 .contact-banner .title-2{
   color: #fff !important;
   font-weight: 500 !important;
@@ -511,8 +481,7 @@ height: 45px;
 }
 .contact-banner .text-1{
   color: #ff4500;
-  font-size: 2rem;
-  /* font-weight: 600; */
+  font-size: 2rem;   
 }
 .contact-banner a{
   padding: 0.6rem 2rem;     
@@ -567,20 +536,7 @@ transform: translate(0,-2px);
 }
   .customize{
     display: none;
-  }
-  .contact-inner{
-    flex-direction: column;
-  }
-  .core-values .text-3{
-    font-size: 14px !important;
-  }
-  .client-details{
-    flex-direction: column;
-  }
-  .client-details p, .client-details ul{
-    margin: 0;
-    padding:0;
-  }  
+  }   
   .carousel-indicators .card-body p{
     margin-bottom: 0;
   }
@@ -599,5 +555,8 @@ transform: translate(0,-2px);
 @media (max-width: 992px) {
   #homeCarousel .carousel-caption h5{
     font-size: 1.5rem;      
+    }
+    .slide-image:before{
+      display: none;
     }
 }

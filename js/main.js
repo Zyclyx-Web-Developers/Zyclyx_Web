@@ -1,7 +1,7 @@
 
 // Page loading Indicator 
 $(document).ready(function () {
-  $(".se-pre-con").fadeOut("slow");
+  $(".se-pre-con").fadeOut("slow");  
 })
 
 // Initiate animate on scroll library
@@ -12,8 +12,7 @@ window.onload = function () {
   });
   // our clients/partners
   $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+    autoplay: true,     
     loop: true,
     center: true,
     autoplaySpeed: 2000,
@@ -26,7 +25,8 @@ window.onload = function () {
     autoplay: false,     
     loop: true,
     center: true,
-    nav:true,     
+    nav:true,
+    dotsEach:true,     
     responsive: { 
       0: { items: 1 }, 480:{items:1},600:{items:2}, 768: { items: 2 }, 1024: { items: 3 },1280:{items:3}, 1440:{ items: 5 } 
     }

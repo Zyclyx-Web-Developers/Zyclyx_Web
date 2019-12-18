@@ -53,7 +53,8 @@ document
       document.getElementById("userText").value = "";
       return response.json();
     })      
-    .then(function(output){                    
+    .then(function(output){
+      console.log(output);                    
         if(output[0]){
          if (output[0].text) {
             messagesElement.innerHTML += `<p id="botReplay">${output[0].text}</p>`;
