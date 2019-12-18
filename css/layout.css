@@ -848,7 +848,8 @@ color: #007bff;
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;
   animation: btn-pulse 1s infinite;
-  -webkit-animation: btn-pulse 1s infinite;  
+  -webkit-animation: btn-pulse 1s infinite; 
+  z-index: 99; 
 }
 .bot:hover{
   border: 2px solid hsl(211, 100%, 50%);
