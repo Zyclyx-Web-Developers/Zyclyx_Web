@@ -456,7 +456,7 @@ background-color: hsl(211, 100%, 98.5%);
 
 .contact-banner{
   position: relative;
-  background-image: url('/images/home/connect.jpg');
+  background-image: url('../images/home/connect.jpg');
   padding: 40px;
   background-size: cover;
   background-position: center;
