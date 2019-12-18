@@ -66,6 +66,10 @@
     height: 500px;
 }
 
-#btnSpinner{
+
+#contactAlert{
     display: none;
+}
+#contactAlert.show{
+    display: block;
 }
