@@ -5,7 +5,7 @@
       form.classList.add('was-validated');
     //   disable send message button
     document.getElementById("contactBtn").setAttribute("disabled",true);
-    document.getElementById("contactBtn").innerHTML = `<span>Please Wait ..<span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
+    document.getElementById("contactBtn").innerHTML = `<span>Please Wait .. <span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
     // document.getElementById("btnSpinner").style.display = "block";   
 
     // if any errors enable send message button to re-send form data
@@ -34,7 +34,7 @@
           })
               .then(function (response) {
                 document.getElementById("contactBtn").setAttribute("disabled",true);
-                document.getElementById("contactBtn").innerHTML = `<span>Please Wait ..</span><span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
+                document.getElementById("contactBtn").innerHTML = `<span>Please Wait .. </span><span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
                   return response.json();
               })                 
               .then(function (jsondata) {
