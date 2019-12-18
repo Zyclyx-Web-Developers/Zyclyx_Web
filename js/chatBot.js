@@ -1,13 +1,38 @@
+let sessionID = null;
+let timeOutID = null;
+
+// reset session after 5 minutes
+function sessionTimeOut(){
+  timeOutID=setTimeout(function(){
+    var date = new Date;
+    var seconds = date.getSeconds();
+    var minutes = date.getMinutes();
+    var hour = date.getHours();
+        console.log('reset session at - '+ seconds +"-"+ minutes +"-"+ hour);
+    sessionID = null;     
+    getNewSession();
+  },300000);
+}
+
 function show(x) {
   if (x == 0) {
     document.getElementById("box1").style.display = "none";
+    sessionID = null;
+    clearTimeout(timeOutID);
   } else {
     document.getElementById("box1").style.display = "inline";
   }
+  if(x === 1){   
+    // create a new session
+    if(!sessionID || sessionID === null){
+      getNewSession();       
+    }
+    console.log('get first message');
+  }
 }
 
-let sessionID = null;
 
+// create a new session
 function getNewSession(){
   fetch('https://stark-crag-70246.herokuapp.com/session') 
   .then(function(session){
@@ -15,11 +40,20 @@ function getNewSession(){
   })
   .then(function(data){     
     sessionID = data.session;
-  })
-}
+    var date = new Date;
+var seconds = date.getSeconds();
+var minutes = date.getMinutes();
+var hour = date.getHours();
+    console.log('new session created at - '+ seconds +"-"+ minutes +"-"+ hour);
+    console.log(sessionID);
 
-if(!sessionID){
-  getNewSession();
+  })
+  .then(function(){
+    if(timeOutID){
+      clearTimeout(timeOutID);
+    }
+    sessionTimeOut();
+  })
 }
 
 let messagesElement = document.getElementById("botMessages");
