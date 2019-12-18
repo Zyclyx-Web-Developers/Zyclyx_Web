@@ -16,9 +16,30 @@
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/animate.min.css">
   <style>
-    .header-img {
-      background-image: url("./images/bg_header/ai.jpg");
+    .ai-bg {
+      background-image: url("./images/AI/Ai-background.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-position: center center;
     }
+    .ai-bg img{
+      padding: 20px;
+    }
+    .ai-text h2{
+      font-size: 50px;
+      color: #79b8ff;
+    }
+    .ai-text{
+      text-shadow: -1px 4px 4px black;
+    }
+    .headLinks{
+      position: absolute;
+    }
+    .breadcrumb ol{
+      margin: 0px;
+    }
+
 
     .service .card-1 .card-icon {
       background: rgba(108, 117, 125, 1);
@@ -31,6 +52,7 @@
     .service .card-2 .card-icon {
       background: rgba(88, 177, 159, 1.0);
     }
+    
   </style>
 </head>
 
@@ -103,31 +125,66 @@
     <!-- 
     ==== END Navbar ====
     -->
+
+    <!-- header -->
+      <section class="container-fluid p-5 mt-5 ai-bg text-white">
+        <div class="container">
+          <div class="row mx-auto">
+            <div class="col-5 ai-text d-flex justify-content-center align-items-center">
+              <div>
+              <h2>ARTIFICIAL</h2>
+              <p class="display-3">INTELLIGENCE</p>
+
+              
+
+            </div>
+            </div>
+            <div class="col-7 text-right">
+              <img src="./images/AI/brain.svg" height="450">
+            </div>
+
+          </div>
+
+          <div class=" headLinks">
+          <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
+            <li class="breadcrumb-item" aria-current="page">Services</li>
+            <li class="breadcrumb-item active" aria-current="page">Atrificial Intelligence</li>
+          </ol>
+        </nav>
+      </div>
+
+          </div>
+      </section>
+    <!-- header end -->
+
+
     <!-- 
       ==== HEADER ====
      -->
-    <section class="container-fluid header-img overlay">
+    <!-- <section class="container-fluid header-img overlay">
       <h1 class="header-title">Atrificial Intelligence</h1>
 
-    </section>
+    </section> -->
     <!-- 
       ==== END - HEADER====
     -->
     <!-- 
       ==== BREADCRUMB ====
     -->
-
+<!-- 
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
         <li class="breadcrumb-item" aria-current="page">Services</li>
         <li class="breadcrumb-item active" aria-current="page">Atrificial Intelligence</li>
       </ol>
-    </nav>
+    </nav> -->
     <!-- 
     ==== Service Overview ====
    -->
-    <section class="container pb-4">
+    <!-- <section class="container pb-4">
       <h3 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="100"
         data-aos-duration="1000" class="title-1">Our Atrificial Intelligence Highlights</h3>
 
@@ -152,7 +209,7 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- 
     ==== END - OVERVIEW ====
    -->
