@@ -769,10 +769,10 @@ color: #ff4500;
   border: none;
   overflow: hidden;
   position: fixed;   
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   z-index:1200;
-  margin: 5px;   
+  /* margin: 5px;    */
 
 }
 .chat-bot .card-header{
@@ -835,16 +835,16 @@ color: #007bff;
   color: #fff;
   font-size: 25px;
   border-radius: 50%;
-  padding: 10px;   
+  /* padding: 10px;    */
   position: fixed;   
   height: 50px;
   width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
+  bottom: 5px;
+  right: 5px;
+  /* margin: 20px; */
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;
   animation: btn-pulse 1s infinite;
