@@ -42,6 +42,10 @@
     border-radius: 0px;
     border-bottom: 1px solid #ccc;
     outline: none !important;
+    background-color: #f3f7fa;
+}
+.form-group textarea{
+    background-color: #f3f7fa;
 }
 .form-group input:focus{
     border: none;
