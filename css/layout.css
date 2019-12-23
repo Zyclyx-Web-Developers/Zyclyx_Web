@@ -339,14 +339,7 @@ body {
   } 
   .navbar .navbar-toggler{
     outline: none;
-  }
-  .navbar button[aria-expanded="false"] .menu-icon{
-    background-image: url('../images/icons/menu.svg');
-  
-}      
-  .navbar button[aria-expanded="true"] .menu-icon{
-    background-image: url('../images/icons/x.svg');  
-}
+  } 
   .navbar-light{
     background-color: rgba(244, 244, 244,0.9);
     transition:all 0.5s ease-in ;
