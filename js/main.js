@@ -16,6 +16,7 @@ window.onload = function () {
     loop: true,
     center: true,
     autoplaySpeed: 2000,
+    margin:10,
     responsive: {
       0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 }
     }
@@ -27,7 +28,7 @@ window.onload = function () {
     center: false,
     nav:true,     
     responsive: { 
-      0: { items: 1 }, 480:{items:1},600:{items:2}, 768: { items: 2 }, 1024: { items: 3 },1280:{items:3}, 1440:{ items: 5 } 
+      0: { items: 1 }, 480:{items:1},600:{items:2}, 768: { items: 2 }, 1024: { items: 3 },1280:{items:3}, 1440:{ items: 4 },1500:{itmes:4} 
     }
   });
 }
