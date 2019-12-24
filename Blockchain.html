@@ -13,10 +13,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />  
   <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <style>
      
 .header-img{    
-    background-image:url("./images/bg_header/blockchain.jpg");     
+    background-image:url("./images/bg_header/blockchain.jpg"); 
+    background-position: center;    
 }
 .service .card-3 .card-icon{
     background: #EAB543;
@@ -38,66 +40,65 @@ background: #2ecc71;
       ==== Navbar ====
     -->
     <header class="main-navbar">
-        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
-          <a class="navbar-brand ml-md-4" href="./index.html">
-            <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-master">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-              <!--  home -->
-              <li class="nav-item active mx-2 py-3">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-  
-  
-              <!-- services -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
-                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
-                    Development</a>
-                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
-                </div>
-              </li>
-  
-              <!-- About us -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About us
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
-                  <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
-                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
-                </div>
-              </li>
-  
-              <!-- careers -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./careers.html">Careers</a>
-              </li>
-              <!-- contact us -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./contactus.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
+              <a class="navbar-brand ml-md-4" href="./index.html">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
+              </a>
+              <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>         
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-master">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                  <!--  home -->
+                  <li class="nav-item active mx-2 py-3">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+        
+                  <!-- services -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
+                        <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                        <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
+                        <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                        <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                        <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                        <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                        <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                        <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>                            
+                    </div>
+                  </li>
+        
+                  <!-- About us -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About us
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
+                      <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                      <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                    </div>
+                  </li>
+        
+                  <!-- careers -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./careers.html">Careers</a>
+                  </li>
+                  <!-- contact us -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./contactus.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+  </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -130,12 +131,12 @@ background: #2ecc71;
       data-aos-duration="1000" class="title-1">Our BlockChain Highlights</h3>     
       
       <div class="row py-4">
-        <div data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-5 col-12">
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-5 col-12">
           <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
           <h4 class="title-3"> We assist companies to explore and develop solutions based on Blockchain technology</h4>
         </div>
         
-        <div  data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="my-2 col-lg-7 col-12 text-left">
+        <div  data-aos="fade-up" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="my-2 col-lg-7 col-12 text-left">
           <div class="ml-3">
               <h4 class="title-2">Overview</h4>
               <p class="text-2">
@@ -168,7 +169,7 @@ background: #2ecc71;
               <div class="card-body shadow-sm">            
                 <img src="./images/BlockChain/blockchain.svg" height="80" alt="supply chain">
                 <h3 class="title-3 py-3">BlockChain As A Service(BaaS)</h3>
-                <p class="text-2">BaaS is offering that allows customers to leverage cloud-based solutions & services that allows customers to build their own blockchain powered products including apps, smart contracts, and use other blockchain features.</p>
+                <p class="text-2">BaaS is offering that allows customers to leverage cloud-based solutions & services that allow customers to build their own blockchain-powered products including apps, smart contracts, and use other blockchain features.</p>
               </div>          
               </div>
       
@@ -178,7 +179,7 @@ background: #2ecc71;
               <div class="card-body shadow-sm">
                   <img src="./images/BlockChain/Chain-Lock.svg" height="80" alt="blockchain security">
                   <h3 class="title-3 py-3">BlockChain security</h3>
-                  <p class="text-2">The hybrid blockchain is providing the best features and functionality of both public and private blockchain. It is unique in that it is decentralized while also making it possible to restrict the visibility of information on the network.</p>
+                  <p class="text-2">The hybrid blockchain is providing the best features and functionality of both public and private blockchain. It is unique in that it is decentralized while also making it possible to restrict the visibility of the information on the network.</p>
               </div>          
               </div>
       
@@ -188,7 +189,7 @@ background: #2ecc71;
               <div class="card-body shadow-sm">
                   <img src="./images/BlockChain/bitcoin-transaction.svg" height="80" alt="digital identity">
                   <h3 class="title-3 py-3">Federated BlockChains</h3>
-                  <p class="text-2">Federated blockchains are similar to private blockchain, many authorities can control the blockchain and pre-select nodes. The selected group of nodes then ensure that block is validated for processing transactions.</p>
+                  <p class="text-2">Federated blockchains are similar to a private blockchain, many authorities can control the blockchain and pre-select nodes. The selected group of nodes then ensures that the block is validated for processing transactions.</p>
               </div>          
               </div>
             </div>
@@ -319,7 +320,7 @@ background: #2ecc71;
 </div>
 
 <div id="box1" class="chat-bot">
-  <div class="card shadow" style="max-width: 18rem;" id="bot">
+  <div class="card shadow" id="bot">
       <div id="close" class="card-header d-flex justify-content-between">Zybot
           <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
                   <i class="fas fa-times"></i>
@@ -357,7 +358,10 @@ background: #2ecc71;
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
-     <script src="./js/vendor/aos.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+      <script src="./js/vendor/aos.js"></script>
      <script src="./js/chatBot.js"></script>
      <script>
         $(document).ready(function () {

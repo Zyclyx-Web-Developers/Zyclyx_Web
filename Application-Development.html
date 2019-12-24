@@ -13,7 +13,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />        
   <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
-
+  <link rel="stylesheet" href="css/animate.min.css">
   <style>
   .header-img{    
     background-image:url("./images/bg_header/application_development.jpg"); 
@@ -30,66 +30,65 @@
       ==== Navbar ====
     -->
     <header class="main-navbar">
-        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
-          <a class="navbar-brand ml-md-4" href="./index.html">
-            <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-            aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-master">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-              <!--  home -->
-              <li class="nav-item active mx-2 py-3">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-  
-  
-              <!-- services -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
-                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
-                    Development</a>
-                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
-                </div>
-              </li>
-  
-              <!-- About us -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About us
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
-                  <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
-                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
-                </div>
-              </li>
-  
-              <!-- careers -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./careers.html">Careers</a>
-              </li>
-              <!-- contact us -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./contactus.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
+              <a class="navbar-brand ml-md-4" href="./index.html">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
+              </a>
+              <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>         
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-master">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                  <!--  home -->
+                  <li class="nav-item active mx-2 py-3">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+        
+                  <!-- services -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
+                        <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                        <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
+                        <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                        <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                        <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                        <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                        <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                        <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>                            
+                    </div>
+                  </li>
+        
+                  <!-- About us -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About us
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
+                      <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                      <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                    </div>
+                  </li>
+        
+                  <!-- careers -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./careers.html">Careers</a>
+                  </li>
+                  <!-- contact us -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./contactus.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+  </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -121,16 +120,16 @@
     data-aos-duration="1000" class="title-1">Our Application Development Highlights</h3>     
     
     <div class="row py-4">
-      <div data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-5 col-12">
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-5 col-12">
         <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
         <h4 class="title-3"> Build powerful, process-based applications to unravel everyday business issues.</h4>
       </div>
       
-      <div  data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="my-2 col-lg-7 col-12 text-left">
+      <div  data-aos="fade-up" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="my-2 col-lg-7 col-12 text-left">
         <div class="ml-3">
             <h4 class="title-3">Overview</h4>
             <p class="text-2">
-              Whether you need a custom application to promote your business, give your users with a unique service, or simplify internal processes, we've the software development experience you need. Our programmers know their way around back-end development, front-end development, and database management systems.
+                Whether you need a custom application to promote your business, give your users a unique service, or simplify internal processes, we have the software development experience you need. Our programmers know their way around back-end development, front-end development, and database management systems.
             </p>       
         </div>
         
@@ -161,7 +160,7 @@
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1abc9c"><path d="M102.13844,6.90688c-18.3825,0.55094 -33.33844,16.0175 -33.33844,34.48062c0,10.02438 5.22719,17.845 9.83625,24.75188c2.17688,3.25187 4.24625,6.39625 5.64375,9.54062h15.48v-29.53562l-5.87219,-5.87219c-1.34375,-1.34375 -1.34375,-3.52062 0,-4.86437c1.34375,-1.34375 3.52062,-1.34375 4.86437,0l4.44781,4.44781l4.44781,-4.44781c1.34375,-1.34375 3.52062,-1.34375 4.86437,0c1.34375,1.34375 1.34375,3.52062 0,4.86437l-5.87219,5.87219v29.53562h15.43969c1.38406,-3.1175 3.45344,-6.24844 5.63031,-9.47344c4.63594,-6.94719 9.89,-14.80813 9.89,-24.92656c0,-9.37937 -3.70875,-18.15406 -10.44094,-24.69812c-6.73219,-6.53063 -15.56063,-9.9975 -25.02063,-9.675zM85.98656,82.56c0,0.06719 0.01344,0.12094 0.01344,0.17469v6.70531c0,5.68406 4.63594,10.32 10.32,10.32h0.95406c1.19594,2.0425 3.38625,3.44 5.92594,3.44c2.53969,0 4.73,-1.3975 5.92594,-3.44h0.95406c5.68406,0 10.32,-4.63594 10.32,-10.32v-6.88zM152.5425,96.29313c-2.48594,-0.08063 -5.02562,0.55094 -7.28312,1.97531l-32.16938,19.82031c2.44563,2.48594 3.87,5.87219 3.87,9.41969c0,7.47125 -6.07375,13.53156 -13.545,13.53156c-1.04812,0 -2.08281,-0.12094 -3.10406,-0.36281c-2.63375,-0.61812 -36.42906,-10.73656 -40.27219,-11.89219c-1.8275,-0.5375 -2.84875,-2.45906 -2.31125,-4.28656c0.55094,-1.81406 2.45906,-2.83531 4.28656,-2.29781c15.00969,4.50156 38.04156,11.35469 39.89594,11.79812c0.48375,0.1075 0.99438,0.17469 1.505,0.17469c3.68188,0 6.665,-2.98312 6.665,-6.665c0,-2.365 -1.23625,-4.48812 -3.29219,-5.6975c-0.99438,-0.57781 -34.95094,-15.42625 -41.79063,-18.40937c-10.69625,-4.70313 -23.03187,-4.82406 -33.82219,-0.3225l-22.17187,9.23156c-1.76031,0.72562 -2.12313,2.31125 -2.12313,4.48812v41.44125c0,1.89469 1.54531,3.44 3.44,3.44c1.04813,0 1.89469,-0.56437 2.01563,-0.65844l11.98625,-8.80156c6.11406,-4.48812 14.25719,-5.46906 21.41937,-2.52625l40.24531,14.27063c2.2575,0.80625 4.59562,1.19594 6.92031,1.19594c4.43437,0 8.815,-1.43781 12.47,-4.20594l54.13969,-41.02469c5.73781,-3.95062 7.32344,-11.69062 3.60125,-17.58969c-2.37844,-3.78937 -6.40969,-5.9125 -10.57531,-6.04687z"></path></g></g></svg></p>
               <h3 class="title-3 py-3">Optimized business process</h3>
-              <p class="text-2">Reach a better position in the business through acquiring more clients and eventually gain more profit. Our Solutions provides maintenance of huge database simpler and tracks them when it is required. It lets you to increase your performance and operates in differentiating the main business mission from other key players.</p>
+              <p class="text-2">Reach a better position in the business by acquiring more clients and eventually gain more profit. Our Solutions provides maintenance of a huge database simpler and tracks them when it is required. It lets you increase your performance and operates in differentiating the main business mission from other key players.</p>
             </div>          
             </div>
     
@@ -259,7 +258,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                     </div>
                     <div class="card-content px-3">
                       <h3 class="title-3 py-3">API Integration Development</h3>
-                      <p class="text-2">We develop API solutions for all sorts of Enterprise applications, Business Automation, and CRM's. Our API Integration Solutions helps to change existing software used in cross-platform solutions for desktop, mobile and cloud configurations.</p>
+                      <p class="text-2">We develop API solutions for all sorts of Enterprise applications, Business Automation, and CRM's. Our API Integration Solutions helps to change existing software used in cross-platform solutions for desktop, mobile, and cloud configurations.</p>
                       <p class="py-1"></p>
                     </div>
                   </div>
@@ -335,7 +334,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 </div>
 
 <div id="box1" class="chat-bot">
-  <div class="card shadow" style="max-width: 18rem;" id="bot">
+  <div class="card shadow" id="bot">
       <div id="close" class="card-header d-flex justify-content-between">Zybot
           <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
                   <i class="fas fa-times"></i>
@@ -378,7 +377,10 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
-     <script src="./js/vendor/aos.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+      <script src="./js/vendor/aos.js"></script>
      <script src="./js/chatBot.js"></script>
      <script>
         $(document).ready(function () {

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/aos.css">     
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/why-zyclyx.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -21,67 +22,65 @@
     <!-- 
       ====== Navbar ======
     -->
-    <header class="main-navbar" id="mainNavbar">
-        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner"
-            id="navbarMaster">
-            <a class="navbar-brand ml-md-4" href="./index.html">
-                <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-master">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+    <header class="main-navbar">
+        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
+                <a class="navbar-brand ml-md-4" href="./index.html">
+                  <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
+                </a>
+                <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                  aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>         
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-master">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
                     <!--  home -->
                     <li class="nav-item active mx-2 py-3">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-
-
+          
                     <!-- services -->
                     <li class="nav-item dropdown mx-2 py-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Services
-                        </a>
-                        <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                            <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                      <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
                             <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                            <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
                             <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                            <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                            <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
-                                Development</a>
-                            <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                            <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
                             <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
-                        </div>
+                            <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                            <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                            <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                            <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>                            
+                      </div>
                     </li>
-
+          
                     <!-- About us -->
                     <li class="nav-item dropdown mx-2 py-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About us
-                        </a>
-                        <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
-                            <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
-                            <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
-                        </div>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About us
+                      </a>
+                      <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
+                        <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                        <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                      </div>
                     </li>
-
+          
                     <!-- careers -->
                     <li class="nav-item mx-2 py-3">
-                        <a class="nav-link" href="./careers.html">Careers</a>
+                      <a class="nav-link" href="./careers.html">Careers</a>
                     </li>
                     <!-- contact us -->
                     <li class="nav-item mx-2 py-3">
-                        <a class="nav-link" href="./contactus.html">Contact</a>
+                      <a class="nav-link" href="./contactus.html">Contact</a>
                     </li>
-                </ul>
-            </div>
-        </nav>
+                  </ul>
+                </div>
+              </nav>
     </header>
     <!-- 
           ====== END Navbar ======
@@ -107,7 +106,7 @@
 
         <div class="row d-flex justify-content-center align-items-center py-5">
             <!-- title -->
-            <div class="col-12 col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200"
+            <div class="col-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-delay="200"
                 data-aos-easing="ease-in-sine">
                 <div class="mx-md-4 mx-sm-2">
                     <h2 class="why-choose-title">Power Your Business With Artificial Intelligence</h2>
@@ -157,8 +156,7 @@
                         <div class="card card-3" data-aos="zoom-in" data-aos-delay="450" data-aos-duration="1000">
                             <div class="card-body p-3">
                                 <h5 class="card-title title-2">Execute the Decision</h5>
-                                <p class="card-text text-2">Communicate, set goals, track and report, manage performance
-                                    and remunerate for execution of a decision.</p>
+                                <p class="card-text text-2">Communicate, set goals, track and report, manage performance and remunerate for the execution of a decision.</p>
                             </div>
                         </div>
                         <!-- card-4 -->
@@ -211,7 +209,7 @@
                         </p>
                         <h4 class="title-3 heading-blue">Maximum Query Solved</h4>
                         <p class="text-2">Ensure to provide the right quality of solutions for our in-line business and
-                            on-board clients for resolving queries.</p>
+                            onboard clients for resolving queries.</p>
                     </div>
 
                 </div>
@@ -235,7 +233,7 @@
     <!-- 
     ==== CORE VALUES ====
   -->
-    <section class="container-fluid wrapper core-values px-1">
+  <section class="container-fluid wrapper core-values px-1">
         <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
             <h2 class="title-1">Our Core <span class="title-highlight">Values</span></h2>
             <p class="title-caption">Our core values shape the culture of our organization and define the character of
@@ -243,59 +241,65 @@
                 company.</p>
         </div>
 
-        <div class="container py-5 mt-sm-3 mt-md-5 text-center">
+        <div class="container-fluid mt-sm-3 mt-md-5">
             <div class="row">
+                <!-- Core value caption -->
+                <div class="col-12 col-md-5 d-flex justify-content-center align-items-center core-val-caption"
+                    data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700">
+                    <div>
+                        <p class="text-2 font-weight-bold text-center"> <i class="fa fa-quote-left mr-2 quote-left"></i> At
+                            Zyclyx, we don't
+                            just accept difference - we celebrate it, we support
+                            it, and we thrive
+                            on it for
+                            the benefit of our employees, our products, and our community</p>
+                    </div>
+                </div>
                 <!-- core values -->
-                <div class="col-12 col-md-12 " data-aos="zoom-in" data-aos-delay="300" data-aos-duration="700">
+                <div class="col-12 col-md-7 d-flex justify-content-center align-items-center" data-aos="zoom-in"
+                    data-aos-delay="300" data-aos-duration="700">
                     <div class="row core-values text-center">
-                        <div class="col-1"></div>
-                        <div class="col-3 p-1 my-2 val-1 border" style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 1 -->
+                        <div class="col-lg-4 col-6 p-1 my-2 val-1">
                             <p><img src="./images/why_zyclyx/c_val_deliver.svg" alt="Deliver Amazing Service"></p>
                             <p><span class="title-2">Deliver</span> <br /><span class="text-2">Amazing Service</span>
                             </p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 p-1 my-2 val-2 border" style=" box-shadow: 0px 3px 7px -5px black;">
+
+                        <!-- core value - 2 -->
+                        <div class="col-lg-4 col-6  p-1 my-2 val-2">
                             <p><img src="./images/why_zyclyx/c_val_ownership.svg" alt="Take Ownership"></p>
                             <p><span class="title-2">Take Ownership</span><br /><span class=" text-2">In
                                     Everything</span>
                             </p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 my-2 p-1 val-3 border" style=" box-shadow: 0px 3px 7px -5px black;">
+
+                        <!-- core value - 3 -->
+                        <div class="col-lg-4 col-6 my-2 p-1 val-3">
                             <p><img src="./images/why_zyclyx/c_val_commit.svg" alt="Continuous Improvement"></p>
                             <p><span class="title-2">Commit</span><br /><span class=" text-2">Continuous
                                     Improvement</span></p>
                         </div>
-                    </div>
 
-                    <div class="row core-values text-center">
-                        <div class="col-3"></div>
-                        <div class="col-3 my-2 p-1 val-4 border" style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 4 -->
+                        <div class="col-lg-4 col-6 my-2 p-1 val-4">
                             <p><img src="./images/why_zyclyx/c_val_embrace.svg" alt="Embrace Creativity"></p>
                             <p><span class="title-2">Embrace</span><br /><span class="text-2">Creativity &
-                                    Innovation</span>
-                            </p>
+                                    Innovation</span></p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3 my-2 p-1 val-5 border" style=" box-shadow: 0px 3px 7px -5px black;">
-                            <p><img src="./images/why_zyclyx/c_val_build.svg" alt="Positive Team"></p>
+
+                        <!-- core value - 5 -->
+                        <div class="col-lg-4 col-7 my-2 p-1 val-5">
+                            <p><img src="./images/why_zyclyx/c_val_build.svg" alt="Positive Team" ></p>
                             <p><span class="title-2">Build</span><br /> <span class="text-2">Positive Team
-                                    Environment</span>
-                            </p>
+                                    Environment</span></p>
                         </div>
-                        <div class="col-1"></div>
-                    </div>
 
-                    <div class="row core-values text-center">
-                        <div class="col-5"></div>
-
-                        <div class="col-3 my-2 p-1 val-6 " style=" box-shadow: 0px 3px 7px -5px black;">
+                        <!-- core value - 6 -->
+                        <div class="col-lg-4 col-5 my-2 p-1 val-6">
                             <p><img src="./images/why_zyclyx/c_val_make.svg" alt="Make it Count"></p>
                             <p><span class="title-2">Make</span><br /><span class="text-2">It Count</span></p>
                         </div>
-                        <div class="col-5"></div>
-
                     </div>
                 </div>
             </div>
@@ -361,7 +365,7 @@
     </div>
 
     <div id="box1" class="chat-bot">
-        <div class="card shadow" style="max-width: 18rem;" id="bot">
+        <div class="card shadow" id="bot">
             <div id="close" class="card-header d-flex justify-content-between">Zybot
                 <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
                     <i class="fas fa-times"></i>
@@ -393,6 +397,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/chatBot.js"></script>
     <script>

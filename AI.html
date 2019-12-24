@@ -9,11 +9,12 @@
   <meta name="author" content="" />
   <link rel="apple-touch-icon" href="./favicon.png">
   <link rel="icon" href="./favicon.png">
-  <title>Atrificial Intelligence - Zyclyx</title>
+  <title>Artificial Intelligence - Zyclyx</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/layout.css" />
   <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/animate.min.css">
   <style>
     .header-img {
       background-image: url("./images/bg_header/ai.jpg");
@@ -40,66 +41,65 @@
       ==== Navbar ====
     -->
     <header class="main-navbar">
-      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
-        <a class="navbar-brand ml-md-4" href="./index.html">
-          <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-          aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-master">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-            <!--  home -->
-            <li class="nav-item active mx-2 py-3">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-
-            <!-- services -->
-            <li class="nav-item dropdown mx-2 py-3">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
+              <a class="navbar-brand ml-md-4" href="./index.html">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
               </a>
-              <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
-                <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
-                  Development</a>
-                <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+              <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>         
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-master">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                  <!--  home -->
+                  <li class="nav-item active mx-2 py-3">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+        
+                  <!-- services -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
+                        <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                        <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
+                        <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                        <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                        <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                        <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                        <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                        <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>                            
+                    </div>
+                  </li>
+        
+                  <!-- About us -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About us
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
+                      <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                      <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                    </div>
+                  </li>
+        
+                  <!-- careers -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./careers.html">Careers</a>
+                  </li>
+                  <!-- contact us -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./contactus.html">Contact</a>
+                  </li>
+                </ul>
               </div>
-            </li>
-
-            <!-- About us -->
-            <li class="nav-item dropdown mx-2 py-3">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About us
-              </a>
-              <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
-                <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
-                <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
-              </div>
-            </li>
-
-            <!-- careers -->
-            <li class="nav-item mx-2 py-3">
-              <a class="nav-link" href="./careers.html">Careers</a>
-            </li>
-            <!-- contact us -->
-            <li class="nav-item mx-2 py-3">
-              <a class="nav-link" href="./contactus.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+            </nav>
+  </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -107,7 +107,7 @@
       ==== HEADER ====
      -->
     <section class="container-fluid header-img overlay">
-      <h1 class="header-title">Atrificial Intelligence</h1>
+      <h1 class="header-title">Artificial Intelligence</h1>
 
     </section>
     <!-- 
@@ -121,7 +121,7 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
         <li class="breadcrumb-item" aria-current="page">Services</li>
-        <li class="breadcrumb-item active" aria-current="page">Atrificial Intelligence</li>
+        <li class="breadcrumb-item active" aria-current="page">Artificial Intelligence</li>
       </ol>
     </nav>
     <!-- 
@@ -129,16 +129,16 @@
    -->
     <section class="container pb-4">
       <h3 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="100"
-        data-aos-duration="1000" class="title-1">Our Atrificial Intelligence Highlights</h3>
+        data-aos-duration="1000" class="title-1">Our Artificial Intelligence Highlights</h3>
 
       <div class="row py-4">
-        <div data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine"
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine"
           class="col-lg-5 col-12">
           <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
           <h4 class="title-3"> A Product-Centric Approach to Connect to Individual Clients</h4>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine"
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine"
           class="my-2 col-lg-7 col-12 text-left">
           <div class="ml-3">
             <h4 class="title-3">Overview</h4>
@@ -162,7 +162,7 @@
     <section class="container-fluid wrapper capabilities">
       <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
         data-aos-delay="100" data-aos-duration="1000">
-        <h2 class="title-1 py-2">Atrificial Intelligence Capabilities</h2>
+        <h2 class="title-1 py-2">Artificial Intelligence Capabilities</h2>
         <!-- <p class="title-caption">A Product-Centric Approach to Connect to Individual Clients.</p> -->
       </div>
 
@@ -176,9 +176,7 @@
             <div class="card-body shadow-sm">
               <img src="./images/AI/voice-recognition.svg" height="100" alt="supply chain">
               <h3 class="title-3 py-3">Natural Language Processing</h3>
-              <p class="text-2">NLP is fast becoming an essential skill for modern-day organizations to gain a
-                competitive edge. It has become an essential tool for many new, from chatbots, intelligent
-                search,unstructured and semi-structured content.</p>
+              <p class="text-2">NLP is fast becoming an essential skill for modern-day organizations to gain a competitive edge. It has become an essential tool for many new, from chatbots, intelligent search, unstructured and semi-structured content.</p>
             </div>
           </div>
 
@@ -189,9 +187,7 @@
             <div class="card-body shadow-sm">
               <img src="./images/AI/online-learning.svg" height="100" alt="blockchain security">
               <h3 class="title-3 py-3">Machine Learning</h3>
-              <p class="text-2">ML provides systems the ability to automatically learn from experience without being
-                explicitly programmed. ML focuses on the development of computer programs that can access data and use
-                it learn for themselves.</p>
+              <p class="text-2">ML provides systems the ability to automatically learn from experience without being explicitly programmed. ML focuses on the development of computer programs that can access data and use it to learn for themselves.</p>
             </div>
           </div>
 
@@ -219,7 +215,7 @@
     <section class="container-fluid wrapper">
       <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
         data-aos-delay="100" data-aos-duration="1000">
-        <h2 class="title-1 py-2">Our Atrificial Intelligence Services</h2>
+        <h2 class="title-1 py-2">Our Artificial Intelligence Services</h2>
         <!-- <p class="title-caption">A Product-Centric Approach to Connect to Individual Clients.</p> -->
       </div>
       <div class="container">
@@ -233,10 +229,7 @@
               </div>
               <div class="card-content px-3">
                 <h3 class="title-3 py-3">Personalized Solutions</h3>
-                <p class="text-2">Zyclyx is renowned in the industry for its book bindery service but we also can also
-                  provide custom tablet covers / cases for iPads and Androids. The Virtech Binding range of tablet
-                  covers has four different styles available with one case style. All covers can be fully customised and
-                  are designed to fit most tablet sizes including iPads and android covers.</p>
+                <p class="text-2">Zyclyx is renowned in the industry for its book bindery service but we also can also provide custom tablet covers/cases for iPads and Androids. The Zyclyx Binding range of tablet covers has four different styles available with one case style. All covers can be fully customized and are designed to fit most tablet sizes including iPads and android covers.</p>
               </div>
             </div>
           </div>
@@ -249,11 +242,7 @@
               </div>
               <div class="card-content px-3">
                 <h3 class="title-3 py-3">Cross-Platform Integration</h3>
-                <p class="text-2">Zyclyx with a variety of other platforms and systems and geared to solve complex
-                  integration projects.And this is one of the reasons why we chose Zyclyx, as opposed to others, because
-                  there are many modules already integrated with our which are readily available.After working on a
-                  variety of our integration projects, our team members gained hands-on experience in solving such
-                  critical issues.</p>
+                <p class="text-2">Zyclyx with a variety of other platforms and systems and geared to solve complex integration projects. And this is one of the reasons why we chose Zyclyx, as opposed to others, because there are many modules already integrated with our which are readily available. After working on a variety of our integration projects, our team members gained hands-on experience in solving such critical issues.</p>
               </div>
             </div>
           </div>
@@ -266,10 +255,7 @@
               </div>
               <div class="card-content px-3">
                 <h3 class="title-3 py-3">Highly Secure Solutions</h3>
-                <p class="text-2">At Zyclyx we specialize in high security solutions such as high security fencing for
-                  prisons, banks, defense facilities and more. Our wide range of high security facilities are tested in
-                  the harshest conditions and against maximum force to ensure they provide the ultimate Security for
-                  your premises.</p>
+                <p class="text-2">At Zyclyx we specialize in high-security solutions such as high-security fencing for prisons, banks, defense facilities and more. Our wide range of high-security facilities is tested in the harshest conditions and against maximum force to ensure they provide the ultimate security for your premises.</p>
               </div>
             </div>
           </div>
@@ -347,7 +333,7 @@
     </div>
 
     <div id="box1" class="chat-bot">
-      <div class="card shadow" style="max-width: 18rem;" id="bot">
+      <div class="card shadow" id="bot">
         <div id="close" class="card-header d-flex justify-content-between">Zybot
           <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
             <i class="fas fa-times"></i>
@@ -387,7 +373,13 @@
   <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="./js/vendor/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script> -->
+    <script src="./js/vendor/aos.js"></script>
   <script src="./js/chatBot.js"></script>
   <script>
     $(document).ready(function () {
@@ -400,5 +392,4 @@
     });
   </script>
 </body>
-
 </html>

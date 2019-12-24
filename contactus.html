@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <style>
         #errorAlert {
             color: red;
@@ -28,14 +29,15 @@
       ====== Navbar ======
     -->
     <header class="main-navbar">
-            <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
               <a class="navbar-brand ml-md-4" href="./index.html">
-                <img src="./images/logo/logo-black.png" alt="Zyclyx Logo" id="navbarLogo">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
-                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fas fa-bars"></i>
+              <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>         
               </button>
               <div class="collapse navbar-collapse" id="navbar-master">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
@@ -43,39 +45,37 @@
                   <li class="nav-item active mx-2 py-3">
                     <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
-      
-      
+        
                   <!-- services -->
                   <li class="nav-item dropdown mx-2 py-3">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Services
                     </a>
-                    <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                      <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
-                      <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                      <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                      <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                      <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application
-                        Development</a>
-                      <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                      <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                      <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
+                        <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                        <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
+                        <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                        <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                        <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                        <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                        <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                        <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>                            
                     </div>
                   </li>
-      
+        
                   <!-- About us -->
                   <li class="nav-item dropdown mx-2 py-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About us
                     </a>
-                    <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
                       <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
                       <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
                     </div>
                   </li>
-      
+        
                   <!-- careers -->
                   <li class="nav-item mx-2 py-3">
                     <a class="nav-link" href="./careers.html">Careers</a>
@@ -87,7 +87,7 @@
                 </ul>
               </div>
             </nav>
-          </header>
+  </header>
     <!-- 
       ====== END Navbar ======
     -->
@@ -157,13 +157,11 @@
             <h2 class="title-1 py-2">Drop us a line</h2>
             <p class="title-caption">Have any questions? We'd love to hear from you</p>
         </div>
-        <div class="row d-flex justify-content-center pt-4">
-            <div data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
-                data-aos-delay="100" data-aos-duration="1000"
-                class="col-md-9 col-12 shadow my-3 getintouch-form rounded">
+        <div class="d-flex justify-content-center pt-4">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+                data-aos-delay="100" data-aos-duration="1000">
 
-                <div class="px-4 px-xl-5 text-left py-3">
-                    <!-- <h2 class="h4 my-3 py-3 text-center title-2">Drop us a line</h2> -->
+                <div class="px-4 px-xl-5 text-left py-3">                     
                     <!-- 
                         ==== CONTACT FORM ====
                      -->
@@ -219,9 +217,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-shadow-primary" id="contactBtn">
-                            <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>
-                            <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
-                                aria-hidden="true"></span>
+                            <span id="btnText"> Send message <i class="ml-2 far fa-paper-plane"></i></span>                            
                         </button>
                     </form>
 
@@ -229,20 +225,14 @@
                         ==== END - CONTACT FORM ====
                      -->
 
-                     <!-- Contact form Modal -->
-                     <div class="modal" tabindex="-1" role="dialog" id="contactModal">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">                             
-                            <div class="modal-body">
-                              <p>Hello, <span id="contactName"></span></p>
-                              <p>Thank you for Contacting Us!</p>                               
-                            </div>
-                            <div class="modal-footer">                                     
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>                            
-                          </div>
-                        </div>
-                      </div>
+                     <!-- Contact form success alert -->
+                     <div class="alert alert-success alert-dismissible fade" role="alert" id="contactAlert">
+                          <h5>Message Received Successfully</h5>
+                         <p>Thank you for Contacting us, We will get back to you soon.</p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>                       
                      <!-- END - contact form modal -->
                 </div>
             </div>
@@ -323,7 +313,7 @@
 </div>
 
 <div id="box1" class="chat-bot">
-    <div class="card shadow" style="max-width: 18rem;" id="bot">
+    <div class="card shadow" id="bot">
         <div id="close" class="card-header d-flex justify-content-between">Zybot
             <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
                     <i class="fas fa-times"></i>
@@ -361,6 +351,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
     <script src="./js/vendor/aos.js"></script>
     <script src="js/GetInTouchForm.js"></script>
     <script src="./js/chatBot.js"></script>
