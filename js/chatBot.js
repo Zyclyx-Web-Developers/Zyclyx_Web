@@ -1,26 +1,48 @@
-function show(x) {
-  if (x == 0) {
-    document.getElementById("box1").style.display = "none";
-  } else {
-    document.getElementById("box1").style.display = "inline";
-  }
+let isChatBotOpen = false;
+let sessionID = null;
+let timeOutID = null;
+
+// reset session after 5 minutes
+function sessionTimeOut(){
+  timeOutID=setTimeout(function(){     
+    sessionID = null;     
+    if(isChatBotOpen && sessionID === null){       
+      getNewSession();  
+    }    
+  },300000);
 }
 
-let sessionID = null;
-
+// create a session 
 function getNewSession(){
   fetch('https://stark-crag-70246.herokuapp.com/session') 
   .then(function(session){
     return session.json();
   })
   .then(function(data){     
-    sessionID = data.session;
+    sessionID = data.session;     
+  })
+  .then(function(){
+    if(timeOutID){
+      clearTimeout(timeOutID);
+    }
+    sessionTimeOut();
   })
 }
 
-if(!sessionID){
-  getNewSession();
+function show(x) {
+  if (x == 0) {
+    document.getElementById("box1").style.display = "none";
+    isChatBotOpen = false;
+  } else {
+    document.getElementById("box1").style.display = "inline";
+    isChatBotOpen = true;
+    if(sessionID === null){
+      getNewSession();
+    }
+  }
 }
+
+ 
 
 let messagesElement = document.getElementById("botMessages");
 document
@@ -53,8 +75,7 @@ document
       document.getElementById("userText").value = "";
       return response.json();
     })      
-    .then(function(output){
-      console.log(output);                    
+    .then(function(output){    
         if(output[0]){
          if (output[0].text) {
             messagesElement.innerHTML += `<p id="botReplay">${output[0].text}</p>`;
