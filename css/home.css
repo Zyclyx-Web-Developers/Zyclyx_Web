@@ -202,6 +202,10 @@ width: 100%;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
+  -webkit-border-radius:0.8rem !important;
+  -moz-border-radius:0.8rem !important;
+  -ms-border-radius:0.8rem !important;
+  -o-border-radius:0.8rem !important;
 }
 .welcome-card img {
   max-width: 70px;
@@ -238,7 +242,10 @@ width: 100%;
 .automation-inner img{
   width: 70%;
   border-radius: 0.6rem;
-   
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
 } 
 .blockchain-inner img{
  width: 90%;   
@@ -249,7 +256,7 @@ width: 100%;
 .services-wrapper{ 
 padding-top: 3rem;  
 padding-bottom: 3rem;  
-background-color: hsl(211, 100%, 98.5%);
+background-color: hsl(211, 100%, 99%);
  
 } 
 .services .card{
@@ -332,9 +339,6 @@ background-color: hsl(211, 100%, 98.5%);
 /* ==== END - SERVICES ====*/
  
  /* === INDUSTRIES === */
- .industries{
-   background-color: hsl(0, 0%, 97%);
- }
  .industry-cards .card img{
   height: 150px;
   transition: all 1s ease-in-out;
