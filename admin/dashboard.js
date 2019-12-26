@@ -6,7 +6,7 @@ let token = sessionStorage.getItem('token');
 function signOut(event) {
   event.preventDefault();
   sessionStorage.removeItem("token");
-  window.location = "login.html";
+  window.location = "index.html";
 }
 
 // document.getElementById("userName").textContent = sessionStorage.getItem("user");
