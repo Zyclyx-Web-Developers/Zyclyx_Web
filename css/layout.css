@@ -852,8 +852,7 @@ color: #007bff;
 .chat-bot .reply-messages{
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
-  text-transform: capitalize;
+  margin-bottom: 45px;   
 }
 .chat-bot .reply-messages p{
   margin: 0;
