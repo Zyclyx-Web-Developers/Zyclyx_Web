@@ -522,7 +522,7 @@ background-color: #f51714;
 margin-right: 10px; 
 }
 .capabilities{
-background-color:#f3f7fa; 
+  background-color: hsl(206, 41%, 98%);
 }
  
 .service-card .title-1,.capability-card .title-1{
@@ -575,7 +575,7 @@ background-color:#f3f7fa;
   border: 1px solid rgba(108, 123, 255, 0.3);
 }
 .contact-banner{
-  background-color: #f3f7fa;
+  background-color: hsl(206, 41%, 98%);
 }
 /* 
 ==== END - Inner Page Layout styles ====

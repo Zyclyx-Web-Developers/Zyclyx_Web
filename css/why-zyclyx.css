@@ -11,8 +11,8 @@ border: none !important;
     margin-top: 1rem;
 }
 .why-choose-cards .card-body{
-    background-color: #f3f7fa;
-    border: 1px solid rgba(33, 200, 122,0.5);
+    background-color: hsl(206, 41%, 99%);
+    border: 1px solid #21c87a80;
     border-radius: 0.6rem;
 }
 .why-choose-cards .card-3,.why-choose-cards .card-4{
@@ -21,7 +21,7 @@ border: none !important;
 }
 /* we are great at section */
 .great-at-section {
-    background-color: #f3f7fa;
+    background-color: hsl(206, 41%, 98%);
   }
   .great-at-cards .card {
     border: none;
@@ -41,9 +41,7 @@ border: none !important;
 /* 
   ==== CORE VALUES ====
   */
-  .core-values {            
-    background-color: #f4f7f9;  
-  }
+ 
    
   .core-values-items img {
     width: 40px;
