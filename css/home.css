@@ -105,15 +105,7 @@ background-color: #004d80;
 #homeCarousel .custom-indicator{
   border-top: 1px solid rgba(170, 221, 255,0.5);   
 }
-#homeCarousel .custom-indicator::before{
-position: absolute;
-content: '';
-height: 4px;
-width:25%;
-background-color: #9dd1ff;
-left: var(--indicator-position);
-top: -2px;
-transition:all 0.3s ease;
+#homeCarousel .custom-indicator::before{ position: absolute; content: ''; height: 4px; width:25%; background-color: #9dd1ff; left: var(--indicator-position); top: -2px; transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease;
 }
 
 #homeCarousel .custom-indicator li { 
