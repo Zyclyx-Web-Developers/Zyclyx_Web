@@ -2,6 +2,11 @@ let isChatBotOpen = false;
 let sessionID = null;
 let timeOutID = null;
 
+document.getElementById('userText').setAttribute("disabled", true);
+  document.querySelector('.sendBtn').setAttribute("disabled", true);
+  document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+  <span class="sr-only">Loading...</span></span>`;
+
 // reset session after 5 minutes
 function sessionTimeOut(){
   timeOutID=setTimeout(function(){     
@@ -19,7 +24,13 @@ function getNewSession(){
     return session.json();
   })
   .then(function(data){     
-    sessionID = data.session;     
+    sessionID = data.session;
+      // enable input and remove loading ...
+      let userInput = document.getElementById("userText")
+      userInput.removeAttribute("disabled");
+      document.querySelector('.sendBtn').removeAttribute("disabled");
+      document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
+      userInput.focus();     
   })
   .then(function(){
     if(timeOutID){
