@@ -615,7 +615,7 @@ margin-right: 10px;
 color: #ff4500; 
 }
 .f-link a:hover svg{
-  fill:var(--color);  
+  fill:var(--color);
   height: 20px;
   width:20px;
   transition:all 0.2s ease-in;
