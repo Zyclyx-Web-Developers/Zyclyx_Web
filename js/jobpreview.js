@@ -48,6 +48,7 @@ description.textContent=data.description
 
  
 jobtitle.textContent= data.title;
+title=data.title;
   // responsibilities
  let resHtml = ''
  if(data.requirements){
@@ -70,7 +71,6 @@ let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.ge
 
 let date2 = new Date(data.lastdate);
 let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
-
 startDate.textContent = startDateString;
 closeDate.textContent = closeDateString;
 jobtype.textContent=data.jobtype;
@@ -79,9 +79,7 @@ jobtype.textContent=data.jobtype;
 
 
 /* 
-
 SUBMIT JOB APPLICATION FORM DATA
-
 */
   let jobApplicationForm= document.getElementById("jobApplication");
   // var urlParams = new URLSearchParams(window.location.search);
@@ -91,14 +89,12 @@ SUBMIT JOB APPLICATION FORM DATA
     event.preventDefault();
     jobApplicationForm.classList.add('was-validated');
     document.getElementById("submitApplicationButton").setAttribute("disabled",true);
-    document.getElementById("btnText").style.display = "none";
-    document.getElementById("btnSpinner").style.display = "block";   
+    document.getElementById("submitApplicationButton").innerHTML = `<span>Please Wait .. <span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
 
     // if any errors enable send message button to re-send form data
     if(!jobApplication.checkValidity()){         
         document.getElementById("submitApplicationButton").removeAttribute("disabled");
-        document.getElementById("btnText").style.display = "block";
-        document.getElementById("btnSpinner").style.display = "none";   
+        document.getElementById("submitApplicationButton").innerHTML =`Submit Application <i class="ml-2 far fa-paper-plane"></i>`;
     }
 
     // if no errors send form data to the API
@@ -109,9 +105,8 @@ SUBMIT JOB APPLICATION FORM DATA
             lastname:formData.get('lastname'),
             email:formData.get('email'),
             phone:formData.get('phone'),
-            message:formData.get('message'),
-            resume: formData.get('resume'),
-            position:jobTitle
+            message:formData.get('message'),             
+            position:title
           }  
           
           // console.log(data);
@@ -124,15 +119,15 @@ SUBMIT JOB APPLICATION FORM DATA
           })
               .then(function (response) {
                   document.getElementById("submitApplicationButton").setAttribute("disabled",true);
-                  document.getElementById("btnText").style.display = "none";
-                  document.getElementById("btnSpinner").style.display = "block";                    
+                  document.getElementById("submitApplicationButton").innerHTML = `<span>Please Wait .. <span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;                                       
                   return response.json();
               })                 
               .then(function (jsondata) {                           
-                 console.log(jsondata);
-                 $('#JobApplicationModal').modal('show');
-                // document.getAnimations.contactName.textContent = jsondata.name;
-
+                document.getElementById("submitApplicationButton").removeAttribute("disabled");
+                document.getElementById("submitApplicationButton").innerHTML =`Submit Application <i class="ml-2 far fa-paper-plane"></i>`;
+                jobApplicationForm.reset();
+                jobApplicationForm.classList.remove('was-validated'); 
+                $('#JobApplicationModal').modal('show');                 
               })
               .catch(function (error) {
                   document.getElementById("errorAlert").textContent = "Something went wrong! Please try again"
