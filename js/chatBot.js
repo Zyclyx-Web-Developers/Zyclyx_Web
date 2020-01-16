@@ -3,9 +3,16 @@ let sessionID = null;
 let timeOutID = null;
 
 document.getElementById('userText').setAttribute("disabled", true);
-  document.querySelector('.sendBtn').setAttribute("disabled", true);
-  document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
-  <span class="sr-only">Loading...</span></span>`;
+document.querySelector('.sendBtn').setAttribute("disabled", true);
+document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+<span class="sr-only">Loading...</span></span>`;
+
+getNewSession();
+
+fetch('https://stark-crag-70246.herokuapp.com/')
+  .then(function(res){    
+    return res.json();
+  })
 
 // reset session after 5 minutes
 function sessionTimeOut(){
