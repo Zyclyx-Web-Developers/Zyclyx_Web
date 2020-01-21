@@ -859,8 +859,8 @@ color: #007bff;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5px;
-  right: 5px;
+  bottom: 25px;
+  right: 25px;
   /* margin: 20px; */
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;

@@ -1,15 +1,9 @@
 
 // Page loading Indicator 
-$(document).ready(function () {
-  $(".se-pre-con").fadeOut("slow");  
-})
 
 // Initiate animate on scroll library
 window.onload = function () {
-  AOS.init({
-    once: true,
-    mirror: false
-  });
+  
   // our clients/partners
   $(".clients-carousel").owlCarousel({
     autoplay: true,     
@@ -106,7 +100,7 @@ sectionOneObserver.observe(homeContainer);
 // END - DISABLE COPY PASTE AND RIGHT CLICK
 
 // FOOTER - COPY RIGHT YEAR
-document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
 
 // END - FOOTER - COPY RIGHT YEAR
  

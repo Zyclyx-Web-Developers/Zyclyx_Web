@@ -1,0 +1,34 @@
+{
+  "name": "zyclyxweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyclyx-Web-Developers/Zyclyx_Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zyclyx-Web-Developers/Zyclyx_Web/issues"
+  },
+  "homepage": "https://github.com/Zyclyx-Web-Developers/Zyclyx_Web#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-gtag": "^1.0.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sitemap": "^7.6.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-useref": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
