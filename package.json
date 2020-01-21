@@ -22,13 +22,12 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-gtag": "^1.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-sitemap": "^7.6.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-useref": "^4.0.1"
   },
-  "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
-  }
+  "dependencies": {}
 }
