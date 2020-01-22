@@ -33,7 +33,7 @@ let qualifyhtml='';
 if(data.requirements){
   for(let qalify in data.requirements){
     qualifyhtml +=`<li>
-    <span><i class="fa fa-check rounded-circle p-1"></i></span>
+    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 24 24" fill="none" stroke="#222da5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right"><path d="M15 10l5 5-5 5"/><path d="M4 4v7a4 4 0 004 4h12"/></svg></span>
     <p>${data.requirements[qalify]}</p>
     </li>`
   }
@@ -54,7 +54,7 @@ title=data.title;
  if(data.requirements){
   for(let res in data.requirements){     
     resHtml +=`<li>
-    <span><i class="fa fa-check rounded-circle p-1"></i></span>
+    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 24 24" fill="none" stroke="#222da5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right"><path d="M15 10l5 5-5 5"/><path d="M4 4v7a4 4 0 004 4h12"/></svg></span>
     <p>${data.requirements[res]}</p>
   </li>`
   }
