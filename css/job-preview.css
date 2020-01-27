@@ -57,7 +57,10 @@ padding: 1.4rem !important;
 .capitalize {
      text-transform: capitalize;
      }
-     
+     .error {
+        color: red;
+        font-size: 10px;
+      }
 @media (max-width: 575.98px) { 
     .address-card{
         display: none;
