@@ -166,25 +166,25 @@
                   </li>
                   <li class="list-group-item">
                     <div class="d-flex justify-content-between capitalize">
-                      <span>Job Type</span>
-                      <span id='jobtype' class="font-weight-bolder text-capitalize"></span>
+                      <span>Experience</span>
+                      <span class="font-weight-bolder text-capitalize">-</span>
 
                     </div>
                   </li>
                   <li class="list-group-item">
                     <div class="d-flex justify-content-between capitalize">
-                      <span>Date Posted</span>
-                      <span id="startDate" class="font-weight-bolder text-capitalize"></span>
+                      <span>Salary</span>
+                      <span class="font-weight-bolder text-capitalize">-</span>
 
                     </div>
                   </li>
-                  <li class="list-group-item">
+                  <!-- <li class="list-group-item">
                     <div class="d-flex justify-content-between capitalize">
                       <div>Closing Date</div>
                       <span id="closeDate" class="font-weight-bolder text-capitalize"></span>
 
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -198,10 +198,32 @@
                 </div>
               </div>
               <div class="card-body address">
-                <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>3rd Floor, Pearl Enclave,<br /> Road No.
+                <p class="d-flex">
+                  <svg class="mr-2" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z">
+                </path>
+              </svg> 
+                   <span>3rd Floor, Pearl Enclave,<br /> Road No.
                     5,Banjara Hills, Hyderabad, Telangana, India</span></p>
-                <p><i class="fa fa-envelope m-3"></i>info@zyclyx.com</p>
-                <p><i class="fa fa-phone m-3"></i>(+91) 40 2354 9363</p>
+                <p>
+                  <svg class="mr-2" xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+                  info@zyclyx.com</p>
+                <p> 
+                  <svg class="mr-2" version="1.1" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"
+                viewBox="0 0 18 18">
+                <path
+                  d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z">
+                </path>
+              </svg>
+                  (+91) 40 2354 9363</p>
               </div>
             </div>
           </div>
@@ -234,7 +256,7 @@
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="email" class="text-2">Email&nbsp;<span class="text-danger">*</span></label>
+                  <label for="email" class="text-2">Email:&nbsp;<span class="text-danger">*</span></label>
                   <input class="form-control" name="email" type="text" id="email" placeholder="" required=""
                     autocomplete="off">
                   <span class="error" id="error3"></span>
@@ -243,7 +265,7 @@
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="phone" class="text-2">Phone Number</label>
+                  <label for="phone" class="text-2">Phone Number:&nbsp;<span class="text-danger">*</span></label>
                   <input class="form-control" name="phone" type="number" id="phone" placeholder="" required>
                   <span class="error" id="error4"></span>
                 </div>

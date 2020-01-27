@@ -5,7 +5,7 @@
 UPDATE JOB DESCRIPTION PAGE CONTENT
 
 */
-let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+ // let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('id');
 let title = '';
@@ -16,8 +16,8 @@ let jobtitle=document.getElementById('jobtitle');
 let description=document.getElementById('description');
 let minqualifications=document.getElementById('qualifications');
 let location=document.getElementById('location');
-let startDate = document.getElementById('startDate');
-let closeDate = document.getElementById('closeDate');
+// let startDate = document.getElementById('startDate');
+// let closeDate = document.getElementById('closeDate');
 let jobtype=document.getElementById('jobtype');
 
 fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`) 
@@ -63,17 +63,17 @@ title=data.title;
 
 //job details
 location.textContent=data.location;
-let date1 = new Date(data.createdAt);
-let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
+// let date1 = new Date(data.createdAt);
+ // let startDateString = `${date1.getDate()} ${months[date1.getMonth()]} ${date1.getFullYear()}`;
 
 
 // let date2 = new Date(data.dateposted);
 
-let date2 = new Date(data.lastdate);
-let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
-startDate.textContent = startDateString;
-closeDate.textContent = closeDateString;
-jobtype.textContent=data.jobtype;
+// let date2 = new Date(data.lastdate);
+// let closeDateString = `${date2.getDate()} ${months[date2.getMonth()]} ${date2.getFullYear()}`;
+// startDate.textContent = startDateString;
+// closeDate.textContent = closeDateString;
+// jobtype.textContent=data.jobtype;
 })
 
 
