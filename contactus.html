@@ -27,16 +27,6 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- endbuild -->
-    <style>
-        #errorAlert {
-            color: red;
-            font-size: 10px;
-        }
-    </style>
-
-   
-
-
 </head>
 
 <body>
@@ -220,7 +210,7 @@
                                 <div class="form-group">
                                     <label for="phone-no" class="text-2">Your phone:&nbsp;<span
                                             class="text-danger">*</span></label>
-                                    <input class="form-control" type="text" name="Phone" id="phone-no" placeholder=""
+                                    <input class="form-control" type="number" name="Phone" id="phone-no" placeholder=""
                                         required>
                                     <div class="invalid-feedback">Please fill in your Phone No!</div>
                                 </div>
@@ -228,14 +218,17 @@
                             <div class="col-sm-6">
                                 <!-- Subject -->
                                 <div class="form-group">
-                                    <label for="subject" class="text-2">Subject:</label>
-                                    <input class="form-control" name="Subject" type="text" id="subject" placeholder="">
+                                    <label for="subject" class="text-2">Subject:&nbsp;<span
+                                        class="text-danger">*</span></label>
+                                    <input class="form-control" name="Subject" type="text" id="subject" placeholder="" required>
+                                    <div class="invalid-feedback">Please fill in Subject!</div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <!-- Message -->
-                            <label for="message" class="text-2">Message:</label>
+                            <label for="message" class="text-2">Message:&nbsp;<span
+                                class="text-danger">*</span></label>
                             <textarea class="form-control" name="Message" id="message" rows="4"
                                 placeholder="Please describe in detail your request" required=""></textarea>
                             <div class="invalid-feedback">Please write a message!</div>

@@ -5,7 +5,10 @@
 .overlay:before{
     background-color: rgba(0, 123, 255,0.9);
 }
-
+#errorAlert {
+    color: red;
+    font-size: 10px;
+}
 .address-card-body{     
     margin: 0.6rem;
     border: 1px solid #c4e3ff;
@@ -38,15 +41,28 @@
     border-radius: 0px;
     border-bottom: 1px solid #ccc;
     outline: none !important;
-    background-color: #f3f7fa;
+    background-color: #fff;
 }
 .form-group textarea{
-    background-color: #f3f7fa;
+    background-color: #fff;
 }
 .form-group input:focus{
     border: none;
     outline: none;
 }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance:textfield;
+    background-color: #fff;
+  }
+
 /* .getintouch-form{
     background: #fff;
     box-shadow: 0px 0px 8px -5px;
