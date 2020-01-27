@@ -18,17 +18,25 @@
 .job-desc-list li span{
     margin-right: 8px;
 }
+     /* Chrome, Safari, Edge, Opera */
+     input::-webkit-outer-spin-button,
+     input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+     }
+     
+     /* Firefox */
+     input[type=number] {
+       -moz-appearance:textfield;
+       background-color: #fff;
+     }
 
 .form-group input{
-    border: none;
-    /* outline: none; */
-    /* padding: 1rem; */
+    border: none;     
     font-size: 14px;
     border-radius: 0px;          
     padding: 1.4rem !important;
-    border-bottom: 1px solid #00b7fa;
-
-       
+    border-bottom: 1px solid #00b7fa;            
 }
 .form-group{
     text-align: left !important;
@@ -61,6 +69,7 @@ padding: 1.4rem !important;
         color: red;
         font-size: 10px;
       }
+
 @media (max-width: 575.98px) { 
     .address-card{
         display: none;
